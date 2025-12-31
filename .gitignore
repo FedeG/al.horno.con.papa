@@ -24,7 +24,7 @@ yarn-error.log*
 
 # old versions
 index_pre.html
-index.html
+/index.html
 
 # Python
 scripts/venv/
