@@ -30,6 +30,8 @@ jobs:
         
       - name: Build
         run: yarn build
+        env:
+          PUBLIC_URL: /al.horno.con.papa
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -1,4 +1,5 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
+import { Routes, Route, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import './App.css';
 import { recipesData, featuredTags } from './data/recipes';
 import { Clock } from 'lucide-react';
@@ -10,13 +11,16 @@ import Pagination from './components/Pagination';
 import RecipeDetail from './components/RecipeDetail';
 import Footer from './components/Footer';
 
-const App = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [selectedTag, setSelectedTag] = useState('All');
-  const [selectedRecipe, setSelectedRecipe] = useState(null);
-  const [currentPage, setCurrentPage] = useState(1);
+const RecipeList = () => {
+  const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
+  
+  const [searchTerm, setSearchTerm] = useState(searchParams.get('search') || '');
+  const [selectedTag, setSelectedTag] = useState(searchParams.get('tag') || 'All');
+  const [currentPage, setCurrentPage] = useState(parseInt(searchParams.get('page')) || 1);
   const [showAutocomplete, setShowAutocomplete] = useState(false);
-  const [showEasyOnly, setShowEasyOnly] = useState(false);
+  const [showEasyOnly, setShowEasyOnly] = useState(searchParams.get('easy') === 'true');
+  const isInitialLoad = useRef(true);
   const recipesPerPage = 6;
 
   // Extract all unique tags
@@ -76,17 +80,25 @@ const App = () => {
     return filteredRecipes.slice(startIndex, startIndex + recipesPerPage);
   }, [filteredRecipes, currentPage]);
 
-  // Reset to page 1 when filters change
+  // Reset to page 1 when filters change (but not on initial load)
   useEffect(() => {
-    setCurrentPage(1);
+    if (!isInitialLoad.current) {
+      setCurrentPage(1);
+    } else {
+      isInitialLoad.current = false;
+    }
   }, [searchTerm, selectedTag, showEasyOnly]);
 
-  // Get related recipes based on tags
-  const getRelatedRecipes = (recipe) => {
-    return recipesData
-      .filter(r => r.id !== recipe.id && r.tags.some(tag => recipe.tags.includes(tag)))
-      .slice(0, 3);
-  };
+  // Update URL params when filters change
+  useEffect(() => {
+    const params = {};
+    if (searchTerm) params.search = searchTerm;
+    if (selectedTag !== 'All') params.tag = selectedTag;
+    if (currentPage > 1) params.page = currentPage.toString();
+    if (showEasyOnly) params.easy = 'true';
+    
+    setSearchParams(params, { replace: true });
+  }, [searchTerm, selectedTag, currentPage, showEasyOnly, setSearchParams]);
 
   const handleSearchSelect = (suggestion) => {
     setSearchTerm(suggestion);
@@ -99,26 +111,9 @@ const App = () => {
   };
 
   const handleSelectRecipe = (recipe) => {
-    setSelectedRecipe(recipe);
+    navigate(`/recipe/${recipe.id}`);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-
-  const handleBackToList = () => {
-    setSelectedRecipe(null);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  if (selectedRecipe) {
-    const relatedRecipes = getRelatedRecipes(selectedRecipe);
-    return (
-      <RecipeDetail
-        recipe={selectedRecipe}
-        onBack={handleBackToList}
-        relatedRecipes={relatedRecipes}
-        onSelectRecipe={handleSelectRecipe}
-      />
-    );
-  }
 
   return (
     <div className="app">
@@ -168,6 +163,61 @@ const App = () => {
 
       <Footer />
     </div>
+  );
+};
+
+const RecipeDetailPage = () => {
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const recipe = recipesData.find(r => r.id === parseInt(id));
+
+  const getRelatedRecipes = (recipe) => {
+    return recipesData
+      .filter(r => r.id !== recipe.id && r.tags.some(tag => recipe.tags.includes(tag)))
+      .slice(0, 3);
+  };
+
+  const handleSelectRecipe = (recipe) => {
+    navigate(`/recipe/${recipe.id}`);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleBackToList = () => {
+    navigate('/');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  if (!recipe) {
+    return (
+      <div className="app">
+        <Header />
+        <div className="detail-content">
+          <h2>Receta no encontrada</h2>
+          <button onClick={handleBackToList}>Volver al inicio</button>
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+
+  const relatedRecipes = getRelatedRecipes(recipe);
+  
+  return (
+    <RecipeDetail
+      recipe={recipe}
+      onBack={handleBackToList}
+      relatedRecipes={relatedRecipes}
+      onSelectRecipe={handleSelectRecipe}
+    />
+  );
+};
+
+const App = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<RecipeList />} />
+      <Route path="/recipe/:id" element={<RecipeDetailPage />} />
+    </Routes>
   );
 };
 

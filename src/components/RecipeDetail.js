@@ -80,7 +80,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe }) => {
             <div className="related-grid">
               {relatedRecipes.map(relatedRecipe => (
                 <div key={relatedRecipe.id} className="related-card" onClick={() => onSelectRecipe(relatedRecipe)}>
-                  <img src={relatedRecipe.imageUrl} alt={relatedRecipe.name} />
+z                  <img src={`${process.env.PUBLIC_URL}/${relatedRecipe.imageUrl}`} alt={relatedRecipe.name} />
                   <h3>{relatedRecipe.name}</h3>
                 </div>
               ))}
