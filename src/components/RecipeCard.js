@@ -5,7 +5,7 @@ const RecipeCard = ({ recipe, onClick }) => {
   return (
     <div className="recipe-card" onClick={onClick}>
       <div className="card-image">
-        <img src={recipe.imageUrl} alt={recipe.name} />
+        <img src={`${process.env.PUBLIC_URL}/${recipe.imageUrl}`} alt={recipe.name} />
         {recipe.easy && (
           <div className="card-overlay">
             <Clock size={16} /> Rápido y Fácil
