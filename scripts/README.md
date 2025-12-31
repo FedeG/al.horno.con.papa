@@ -15,11 +15,13 @@ pip install -r requirements.txt
 
 1. **Configura tu usuario de Instagram:**
    Edita `update_recipes.py` línea 15:
+
    ```python
    INSTAGRAM_USERNAME = "tu_usuario_instagram"
    ```
 
 2. **Ejecuta el script:**
+
    ```bash
    python update_recipes.py
    ```
@@ -30,13 +32,17 @@ pip install -r requirements.txt
 ## ⚙️ Configuración Avanzada
 
 ### Login (cuenta privada)
+
 Si tu cuenta es privada, descomenta y configura:
+
 ```python
 L.login('tu_usuario', 'tu_password')
 ```
 
 ### Personalizar extracción
+
 En `update_recipes.py` puedes modificar:
+
 - `extract_hashtags()` - Cómo se extraen tags
 - `extract_ingredients()` - Detección de ingredientes
 - `extract_description()` - Limpieza de descripción

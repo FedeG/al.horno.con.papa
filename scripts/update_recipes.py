@@ -179,7 +179,7 @@ def download_image(url, shortcode):
 
         # Si ya existe, no descargar de nuevo
         if filepath.exists():
-            return f"/images/{filename}"
+            return f"images/{filename}"
 
         print(f"  ⬇️  Descargando imagen {shortcode}...")
         response = requests.get(url, timeout=10)

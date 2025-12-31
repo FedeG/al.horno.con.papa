@@ -50,6 +50,7 @@ src/
 ## 🎨 Personalizar
 
 ### Actualizar desde Instagram (Automático)
+
 ```bash
 cd scripts
 python3 -m venv venv
@@ -63,6 +64,7 @@ python update_recipes.py
 Ver [scripts/README.md](scripts/README.md) para más detalles.
 
 ### Agregar/Editar Recetas Manualmente
+
 Edita `src/data/recipes.js`:
 
 ```javascript
@@ -79,13 +81,17 @@ Edita `src/data/recipes.js`:
 ```
 
 ### Cambiar Colores
+
 En `src/App.css`, modifica:
+
 ```css
 background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 ```
 
 ### Cambiar URL del sitio
+
 En `package.json`:
+
 ```json
 "homepage": "https://TU_USUARIO.github.io/NOMBRE_REPO"
 ```
@@ -95,11 +101,13 @@ En `package.json`:
 ## 🌐 Deploy a GitHub Pages
 
 ### Método 1: Manual
+
 ```bash
 yarn deploy
 ```
 
 ### Método 2: Automático con GitHub Actions
+
 1. Sube el código a GitHub
 2. Settings → Pages → Source: "GitHub Actions"
 3. Cada push a `main` despliega automáticamente
@@ -120,6 +128,7 @@ El workflow ya está en `.github/workflows/deploy.yml`
 ## 🐛 Troubleshooting
 
 **Build falla:**
+
 ```bash
 rm -rf node_modules yarn.lock
 yarn install
@@ -127,6 +136,7 @@ yarn build
 ```
 
 **Deploy falla:**
+
 - Verifica `homepage` en `package.json`
 - Espera 2-5 minutos después del deploy
 

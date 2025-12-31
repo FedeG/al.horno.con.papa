@@ -8,7 +8,7 @@ export const recipesData = [
     tags: ["Cocina", "Fermentaciónnatural", "Gluten", "Masamadre", "Pancasero", "Tipsdecocina", "Vegano"],
     instagramUrl: "https://www.instagram.com/p/C2SWuergRz7/",
     facebookUrl: "",
-    imageUrl: "/images/C2SWuergRz7.jpg",
+    imageUrl: "images/C2SWuergRz7.jpg",
     ingredients: ["Harina (ideal integral, de centeno, o de fuerza)", "Agua"],
     easy: true
   },
@@ -19,7 +19,7 @@ export const recipesData = [
     tags: ["Aprendiendoacocinar", "Cocina", "Conceptos", "Conceptoscocina", "Condimentosenvacaciones", "Secretosdelacocina", "Teoria", "Tipsculinarios", "Vacaciones"],
     instagramUrl: "https://www.instagram.com/p/C2IQXOVgDFQ/",
     facebookUrl: "",
-    imageUrl: "/images/C2IQXOVgDFQ.jpg",
+    imageUrl: "images/C2IQXOVgDFQ.jpg",
     ingredients: [],
     easy: true
   },
@@ -30,7 +30,7 @@ export const recipesData = [
     tags: ["Navidad", "Viteltoné"],
     instagramUrl: "https://www.instagram.com/p/DS3ey0dDnuO/",
     facebookUrl: "",
-    imageUrl: "/images/DS3ey0dDnuO.jpg",
+    imageUrl: "images/DS3ey0dDnuO.jpg",
     ingredients: ["1 peceto (aprox. 1,5 kg)", "1 zanahoria", "1 cebolla", "2 hojas de laurel", "1 diente de ajo", "Verduras a elección para el caldo (puerro, zapallo, etc)", "2 latas de atún al natural (aprox. 300 g)", "1 taza de mayonesa", "1 taza de crema de leche", "2 cucharadas de mostaza", "1 cucharada de jugo de limón", "Sal y pimienta a gusto", "3 anchoas (opcional, pero le da el sabor clásico)", "Alcaparras a gusto (opcional)", "Caldo de cocción del peceto"],
     easy: true
   },
@@ -41,7 +41,7 @@ export const recipesData = [
     tags: ["Chocolate", "Navidad", "Turroncasero"],
     instagramUrl: "https://www.instagram.com/p/DSh5uVIjukz/",
     facebookUrl: "",
-    imageUrl: "/images/DSh5uVIjukz.jpg",
+    imageUrl: "images/DSh5uVIjukz.jpg",
     ingredients: ["350 g de chocolate (amargo o con leche, aproximadamente 2 tazas picado)", "270 g de leche condensada (1 taza)", "125 g de frutos secos a elección (1 taza aprox: almendras, nueces, avellanas, maní)"],
     easy: true
   },
@@ -52,7 +52,7 @@ export const recipesData = [
     tags: ["Acompañamientos", "Cocinaargentina", "Cocinafacil", "Ensaladarusa", "Findeaño", "Navidad", "Recetascaseras"],
     instagramUrl: "https://www.instagram.com/p/DSYl3xJDm4f/",
     facebookUrl: "",
-    imageUrl: "/images/DSYl3xJDm4f.jpg",
+    imageUrl: "images/DSYl3xJDm4f.jpg",
     ingredients: ["2 papas medianas", "1 zanahoria grande", "1 taza de arvejas cocidas", "2 cucharadas de mayonesa", "Sal a gusto"],
     easy: true
   },
@@ -63,7 +63,7 @@ export const recipesData = [
     tags: ["Diciembre", "Fiestas", "Findeaño", "Hongos", "Mesanavideña", "Navidad", "Pate", "Picada", "Vegano"],
     instagramUrl: "https://www.instagram.com/p/DSTcZUjDn96/",
     facebookUrl: "",
-    imageUrl: "/images/DSTcZUjDn96.jpg",
+    imageUrl: "images/DSTcZUjDn96.jpg",
     ingredients: ["250 g de hongos (portobellos o champiñones)", "2 cebollas medianas", "1 diente de ajo", "Frutos secos a gusto (yo usé castañas, nueces y maní)", "Jugo de ½ limón", "Romero", "Pimentón", "Pimienta negra y blanca", "Sal a gusto", "Aceite de oliva, cantidad necesaria"],
     easy: false
   },
@@ -74,7 +74,7 @@ export const recipesData = [
     tags: ["Caseroesmejor", "Desayuno", "Dulces", "Frutilla", "Merienda", "Mermelada", "Mermeladadefrutilla", "Recetasargentinas", "Recetascaseras"],
     instagramUrl: "https://www.instagram.com/p/DQsbiJljqcY/",
     facebookUrl: "",
-    imageUrl: "/images/DQsbiJljqcY.jpg",
+    imageUrl: "images/DQsbiJljqcY.jpg",
     ingredients: ["1kg de frutillas frescas", "600g de azúcar (3 tazas)", "Jugo de medio limón", "1 tapita o cucharadita de vinagre (para lavar las frutillas)", "Jengibre (opcional)"],
     easy: false
   },
@@ -85,7 +85,7 @@ export const recipesData = [
     tags: ["Comidaregional", "Costillitas", "Domingodecomida", "Huevofrito", "Papasespañolas", "Recetasargentinas", "Riojana"],
     instagramUrl: "https://www.instagram.com/p/DQIXIEtjpth/",
     facebookUrl: "",
-    imageUrl: "/images/DQIXIEtjpth.jpg",
+    imageUrl: "images/DQIXIEtjpth.jpg",
     ingredients: ["Costillitas de cerdo (1 por persona)", "Sal, pimienta negra y pimentón dulce", "1 cebolla grande", "1 diente de ajo", "1 morrón", "1 copa de vino blanco", "1 taza de arvejas cocidas (1 lata)", "3 papas medianas", "Huevos (1 por persona)"],
     easy: false
   },
@@ -96,7 +96,7 @@ export const recipesData = [
     tags: ["Arándanos", "Cheesecake", "Cheesecakefactory", "Frutilla", "Mermelada", "Postrescaseros", "Recetasargentinas"],
     instagramUrl: "https://www.instagram.com/p/DPup316Dt9V/",
     facebookUrl: "",
-    imageUrl: "/images/DPup316Dt9V.jpg",
+    imageUrl: "images/DPup316Dt9V.jpg",
     ingredients: ["150g de galletitas de vainilla", "80g de manteca derretida", "750g (3 tazas) de queso crema", "180g (¾ taza) de azúcar", "5 huevos", "250ml (1 taza) de crema de leche", "Ralladura y jugo de ½ limón", "1 cda de esencia de vainilla", "40g (3 cdas) de maicena"],
     easy: false
   },
@@ -107,7 +107,7 @@ export const recipesData = [
     tags: ["Argentinacocina", "Comfortfood", "Comidaregional", "Polenta", "Recetasargentinas", "Recetasfaciles", "Recetassaladas", "Salsa"],
     instagramUrl: "https://www.instagram.com/p/DPZQAJXDo5m/",
     facebookUrl: "",
-    imageUrl: "/images/DPZQAJXDo5m.jpg",
+    imageUrl: "images/DPZQAJXDo5m.jpg",
     ingredients: ["1 taza de polenta", "1 taza de agua", "2 tazas de leche", "25 g de manteca", "Sal y pimienta negra a gusto", "Cubitos de queso a gusto"],
     easy: false
   }

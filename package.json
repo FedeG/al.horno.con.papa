@@ -2,7 +2,7 @@
     "name": "recipebook",
     "version": "2.0.0",
     "private": true,
-    "homepage": ".",
+    "homepage": "https://fedeg.github.io/al.horno.con.papa",
     "dependencies": {
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
