@@ -32,8 +32,19 @@ const RecipeList = () => {
     const featured = featuredTags.filter(tag => tag === 'All' || tags.has(tag));
     const others = Array.from(tags).filter(tag => !featuredTags.includes(tag)).sort();
     
-    return [...featured, ...others];
-  }, []);
+    let result = [...featured, ...others];
+    
+    // If there's a selected tag that's not 'All', move it to position 1 (after 'All')
+    if (selectedTag !== 'All') {
+      const tagIndex = result.indexOf(selectedTag);
+      if (tagIndex > 1) {
+        result.splice(tagIndex, 1);
+        result.splice(1, 0, selectedTag);
+      }
+    }
+    
+    return result;
+  }, [selectedTag]);
 
   // Generate autocomplete suggestions
   const autocompleteSuggestions = useMemo(() => {
@@ -187,6 +198,11 @@ const RecipeDetailPage = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const handleTagClick = (tag) => {
+    navigate(`/?tag=${encodeURIComponent(tag)}`);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   if (!recipe) {
     return (
       <div className="app">
@@ -208,6 +224,7 @@ const RecipeDetailPage = () => {
       onBack={handleBackToList}
       relatedRecipes={relatedRecipes}
       onSelectRecipe={handleSelectRecipe}
+      onTagClick={handleTagClick}
     />
   );
 };

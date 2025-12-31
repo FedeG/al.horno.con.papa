@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowLeft, Tag, Sparkles, ChefHat, Instagram, Facebook } from 'lucide-react';
 import Footer from './Footer';
 
-const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe }) => {
+const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagClick }) => {
   const getInstagramEmbedUrl = (url) => {
     if (!url) return null;
     const isReel = url.includes('/reel/');
@@ -40,7 +40,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe }) => {
         <div className="detail-section">
           <div className="tags-container">
             {recipe.tags.map((tag, idx) => (
-              <span key={idx} className="detail-tag">
+              <span key={idx} className="detail-tag" onClick={() => onTagClick(tag)} style={{cursor: 'pointer'}}>
                 <Tag size={14} /> {tag}
               </span>
             ))}
