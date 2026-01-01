@@ -55,7 +55,7 @@ L = instaloader.Instaloader()
 try:
     # Mejor usar variables de entorno para las credenciales
     username = INSTAGRAM_USERNAME
-    password = 'XXXXXXXXXXXXXXXXX'
+    password = "XXXXXXXXXXXXXXXXX"
     L.login(username, password)
 except instaloader.exceptions.TwoFactorAuthRequiredException:
     # Si requiere 2FA, solicitar el código
@@ -86,9 +86,12 @@ def extract_hashtags(post):
 
         # Buscar si es sinónimo de algún tag
         main_tag = next(
-            (main for main, syns in TAG_SYNONYMS.items()
-             if tag_lower in [s.lower() for s in syns]),
-            None
+            (
+                main
+                for main, syns in TAG_SYNONYMS.items()
+                if tag_lower in [s.lower() for s in syns]
+            ),
+            None,
         )
 
         if main_tag:
@@ -116,7 +119,9 @@ def extract_ingredients(caption):
             continue
 
         # Si encontramos otra sección, salir
-        if in_ingredients_section and any(marker in line for marker in section_end_markers):
+        if in_ingredients_section and any(
+            marker in line for marker in section_end_markers
+        ):
             break
 
         # Extraer ingredientes (líneas con •)
@@ -165,18 +170,18 @@ def get_existing_recipes():
         return [], None
 
     try:
-        with recipes_path.open('r', encoding='utf-8') as f:
+        with recipes_path.open("r", encoding="utf-8") as f:
             existing_recipes = json.load(f)
 
         # Encontrar la fecha más reciente
         max_date = None
         for recipe in existing_recipes:
-            if 'date' in recipe:
+            if "date" in recipe:
                 try:
-                    date_obj = datetime.fromisoformat(recipe['date'])
+                    date_obj = datetime.fromisoformat(recipe["date"])
                     if max_date is None or date_obj > max_date:
                         max_date = date_obj
-                except:
+                except ValueError:
                     pass
 
         return existing_recipes, max_date
@@ -214,7 +219,9 @@ def get_instagram_posts(max_date=None):
     """Obtiene posts de Instagram hasta encontrar uno no pinned más antiguo que max_date"""
     print(f"📸 Obteniendo posts de @{INSTAGRAM_USERNAME}...")
     if max_date:
-        print(f"📅 Buscando posts hasta fecha: {max_date.strftime('%Y-%m-%d %H:%M:%S')}")
+        print(
+            f"📅 Buscando posts hasta fecha: {max_date.strftime('%Y-%m-%d %H:%M:%S')}"
+        )
 
     profile = instaloader.Profile.from_username(L.context, INSTAGRAM_USERNAME)
     posts = []
@@ -223,7 +230,9 @@ def get_instagram_posts(max_date=None):
     try:
         for i, post in enumerate(profile.get_posts()):
             # Incluir fotos, carruseles y reels
-            print(f"  🔍 Revisando post {i+1}: {post.shortcode} ({post.date_local.strftime('%Y-%m-%d')})")
+            print(
+                f"  🔍 Revisando post {i + 1}: {post.shortcode} ({post.date_local.strftime('%Y-%m-%d')})"
+            )
             if post.typename not in ["GraphImage", "GraphSidecar", "GraphVideo"]:
                 continue
 
@@ -231,18 +240,19 @@ def get_instagram_posts(max_date=None):
             if not post.is_pinned and max_date:
                 # Si encontramos un post más antiguo que nuestra fecha máxima, paramos
                 if post.date_local < max_date:
-                    print(f"⏹️  Post {post.shortcode} es más antiguo ({post.date_local.strftime('%Y-%m-%d')}), deteniendo búsqueda")
+                    print(
+                        f"⏹️  Post {post.shortcode} es más antiguo ({post.date_local.strftime('%Y-%m-%d')}), deteniendo búsqueda"
+                    )
                     found_older_post = True
                     break
 
             posts.append(post)
 
             # Pausa de medio segundo a un segundo para evitar rate limiting
-            time.sleep(0.5+(random.random()*0.5))
+            time.sleep(0.5 + (random.random() * 0.5))
 
         if found_older_post:
             print("📌 Se encontró un post no pinned más antiguo que la fecha máxima")
-
 
     except Exception as e:
         print(f"📦 Deteniendo búsqueda con {len(posts)} posts encontrados")
@@ -261,12 +271,12 @@ def generate_recipes_json(all_recipes):
     # Ordenar recetas por fecha (más reciente primero)
     sorted_recipes = sorted(
         all_recipes,
-        key=lambda r: datetime.fromisoformat(r.get('date', '1970-01-01')),
-        reverse=True
+        key=lambda r: datetime.fromisoformat(r.get("date", "1970-01-01")),
+        reverse=True,
     )
 
     # Guardar como JSON
-    with recipes_path.open('w', encoding='utf-8') as f:
+    with recipes_path.open("w", encoding="utf-8") as f:
         json.dump(sorted_recipes, f, ensure_ascii=False, indent=2)
 
     print(f"✅ Archivo actualizado: {recipes_path}")
@@ -279,7 +289,7 @@ def main():
 
     # Obtener recetas existentes
     existing_recipes, max_date = get_existing_recipes()
-    existing_ids = {r['id'] for r in existing_recipes if 'id' in r}
+    existing_ids = {r["id"] for r in existing_recipes if "id" in r}
 
     print(f"📚 Recetas existentes: {len(existing_recipes)}")
     if max_date:

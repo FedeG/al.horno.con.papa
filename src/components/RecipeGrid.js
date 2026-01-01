@@ -7,8 +7,8 @@ const RecipeGrid = ({ recipes, onSelectRecipe }) => {
     return (
       <div className="empty-state">
         <ChefHat size={64} />
-        <h3>No recipes found</h3>
-        <p>Try adjusting your search or filters</p>
+        <h3>No se encontraron recetas</h3>
+        <p>Intenta ajustar tu búsqueda o filtros</p>
       </div>
     );
   }
