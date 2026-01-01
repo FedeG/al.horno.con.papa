@@ -140,7 +140,7 @@ def extract_description(caption):
     # Limpiar espacios múltiples en cada línea pero mantener \n
     cleaned_lines = [" ".join(line.split()) for line in desc.split("\n")]
 
-    return "\\n".join(cleaned_lines)
+    return "\n".join(cleaned_lines)
 
 
 def extract_recipe_name(caption):
