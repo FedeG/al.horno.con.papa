@@ -8,7 +8,6 @@ import instaloader
 import re
 import json
 import requests
-from datetime import datetime
 from pathlib import Path
 
 # Configuración
@@ -104,7 +103,8 @@ def extract_ingredients(caption):
 
         # Si estamos en la sección y encontramos otra sección con emoji, salir
         if in_ingredients_section and any(
-            emoji in line for emoji in ["👣", "🔪", "👨‍🍳", "📝", "🍽️", "⏰", "💡", "pasos", "Pasos"]
+            emoji in line
+            for emoji in ["👣", "🔪", "👨‍🍳", "📝", "🍽️", "⏰", "💡", "pasos", "Pasos"]
         ):
             break
 
