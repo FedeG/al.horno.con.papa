@@ -4,17 +4,19 @@ Script para actualizar recipes.js desde Instagram
 Extrae posts nuevos y los agrega al archivo de recetas
 """
 
+import random
+import time
 import instaloader
 import re
 import json
 import requests
 from pathlib import Path
+from datetime import datetime
 
 # Configuración
 INSTAGRAM_USERNAME = "al.horno.con.papa"
-RECIPES_FILE = "../src/data/recipes.js"
+RECIPES_FILE = "../src/data/recipes.json"
 IMAGES_DIR = "../public/images"
-LAST_POST_COUNT = 10  # Número de posts a revisar
 
 # Tags a omitir
 TAGS_TO_SKIP = [
@@ -46,21 +48,33 @@ TAG_SYNONYMS = {
     "chocolate": ["chocolate", "chocolatoso"],
 }
 
-# Inicializar Instaloader
+# Crear una instancia de Instaloader
 L = instaloader.Instaloader()
+
+# Iniciar sesión para acceder a más datos
+try:
+    # Mejor usar variables de entorno para las credenciales
+    username = INSTAGRAM_USERNAME
+    password = 'XXXXXXXXXXXXXXXXX'
+    L.login(username, password)
+except instaloader.exceptions.TwoFactorAuthRequiredException:
+    # Si requiere 2FA, solicitar el código
+    two_factor_code = input("Ingresa el código de verificación de dos factores: ")
+    L.two_factor_login(two_factor_code)
+except Exception as e:
+    print(f"Error de login: {e}")
+    print("Continuando sin autenticación (datos limitados)")
 
 # Crear directorio de imágenes si no existe
 Path(__file__).parent.joinpath(IMAGES_DIR).mkdir(parents=True, exist_ok=True)
 
 
-def extract_hashtags(caption):
+def extract_hashtags(post):
     """Extrae hashtags del caption y los convierte en tags"""
-    if not caption:
+    if not post.caption:
         return []
 
-    hashtags = re.findall(r"#(\w+)", caption)
-
-    # Procesar tags
+    hashtags = post.caption_hashtags
     processed_tags = set()
 
     for tag in hashtags:
@@ -71,18 +85,18 @@ def extract_hashtags(caption):
             continue
 
         # Buscar si es sinónimo de algún tag
-        found_synonym = False
-        for main_tag, synonyms in TAG_SYNONYMS.items():
-            if tag_lower in [s.lower() for s in synonyms]:
-                processed_tags.add(main_tag.capitalize())
-                found_synonym = True
-                break
+        main_tag = next(
+            (main for main, syns in TAG_SYNONYMS.items()
+             if tag_lower in [s.lower() for s in syns]),
+            None
+        )
 
-        # Si no es sinónimo, agregar el tag original capitalizado
-        if not found_synonym:
+        if main_tag:
+            processed_tags.add(main_tag.capitalize())
+        else:
             processed_tags.add(tag.capitalize())
 
-    return sorted(list(processed_tags)) if processed_tags else ["Receta"]
+    return sorted(processed_tags)
 
 
 def extract_ingredients(caption):
@@ -90,10 +104,10 @@ def extract_ingredients(caption):
     if not caption:
         return []
 
-    # Buscar la sección de ingredientes
     lines = caption.split("\n")
     ingredients = []
     in_ingredients_section = False
+    section_end_markers = ["👣", "🔪", "👨‍🍳", "📝", "🍽️", "⏰", "💡", "pasos", "Pasos"]
 
     for line in lines:
         # Detectar inicio de sección de ingredientes
@@ -101,18 +115,14 @@ def extract_ingredients(caption):
             in_ingredients_section = True
             continue
 
-        # Si estamos en la sección y encontramos otra sección con emoji, salir
-        if in_ingredients_section and any(
-            emoji in line
-            for emoji in ["👣", "🔪", "👨‍🍳", "📝", "🍽️", "⏰", "💡", "pasos", "Pasos"]
-        ):
+        # Si encontramos otra sección, salir
+        if in_ingredients_section and any(marker in line for marker in section_end_markers):
             break
 
         # Extraer ingredientes (líneas con •)
         if in_ingredients_section:
             line = line.strip()
             if line.startswith("•"):
-                # Limpiar y agregar
                 ingredient = line.replace("•", "").strip()
                 if ingredient:
                     ingredients.append(ingredient)
@@ -128,11 +138,9 @@ def extract_description(caption):
     # Remover hashtags pero preservar saltos de línea
     desc = re.sub(r"#\w+", "", caption)
     # Limpiar espacios múltiples en cada línea pero mantener \n
-    lines = desc.split("\n")
-    cleaned_lines = [" ".join(line.split()) for line in lines]
-    desc = "\\n".join(cleaned_lines)
+    cleaned_lines = [" ".join(line.split()) for line in desc.split("\n")]
 
-    return desc
+    return "\\n".join(cleaned_lines)
 
 
 def extract_recipe_name(caption):
@@ -144,30 +152,38 @@ def extract_recipe_name(caption):
     first_line = caption.split("\n")[0].strip()
     # Remover hashtags
     name = re.sub(r"#\w+", "", first_line)
-    # Limpiar espacios múltiples
     name = " ".join(name.split())
 
-    return name if name else "Receta"
+    return name
 
 
 def get_existing_recipes():
-    """Lee el recipes.js actual y devuelve los posts existentes"""
+    """Lee el recipes.json actual y devuelve todas las recetas existentes"""
     recipes_path = Path(__file__).parent / RECIPES_FILE
 
     if not recipes_path.exists():
-        return [], 0, None
+        return [], None
 
-    content = recipes_path.read_text()
+    try:
+        with recipes_path.open('r', encoding='utf-8') as f:
+            existing_recipes = json.load(f)
 
-    # Extraer URLs existentes para evitar duplicados
-    existing_urls = re.findall(r'instagramUrl:\s*"([^"]+)"', content)
+        # Encontrar la fecha más reciente
+        max_date = None
+        for recipe in existing_recipes:
+            if 'date' in recipe:
+                try:
+                    date_obj = datetime.fromisoformat(recipe['date'])
+                    if max_date is None or date_obj > max_date:
+                        max_date = date_obj
+                except:
+                    pass
 
-    # Encontrar el ID más alto
-    ids = re.findall(r"id:\s*(\d+)", content)
-    max_id = max([int(i) for i in ids]) if ids else 0
+        return existing_recipes, max_date
 
-    # Encontrar la fecha más reciente (aproximada por el orden)
-    return existing_urls, max_id, None
+    except Exception as e:
+        print(f"⚠️  Error leyendo recetas existentes: {e}")
+        return [], None
 
 
 def download_image(url, shortcode):
@@ -194,77 +210,67 @@ def download_image(url, shortcode):
         return url  # Fallback a la URL original
 
 
-def get_instagram_posts():
-    """Obtiene posts de Instagram"""
+def get_instagram_posts(max_date=None):
+    """Obtiene posts de Instagram hasta encontrar uno no pinned más antiguo que max_date"""
     print(f"📸 Obteniendo posts de @{INSTAGRAM_USERNAME}...")
+    if max_date:
+        print(f"📅 Buscando posts hasta fecha: {max_date.strftime('%Y-%m-%d %H:%M:%S')}")
+
+    profile = instaloader.Profile.from_username(L.context, INSTAGRAM_USERNAME)
+    posts = []
+    found_older_post = False
 
     try:
-        profile = instaloader.Profile.from_username(L.context, INSTAGRAM_USERNAME)
-        posts = []
-
         for i, post in enumerate(profile.get_posts()):
-            if i >= LAST_POST_COUNT:
-                break
-
             # Incluir fotos, carruseles y reels
-            if post.typename in ["GraphImage", "GraphSidecar", "GraphVideo"]:
-                posts.append(post)
+            print(f"  🔍 Revisando post {i+1}: {post.shortcode} ({post.date_local.strftime('%Y-%m-%d')})")
+            if post.typename not in ["GraphImage", "GraphSidecar", "GraphVideo"]:
+                continue
 
-        print(f"✅ Encontrados {len(posts)} posts")
-        return posts
+            # Si el post no está pinned y tenemos fecha máxima
+            if not post.is_pinned and max_date:
+                # Si encontramos un post más antiguo que nuestra fecha máxima, paramos
+                if post.date_local < max_date:
+                    print(f"⏹️  Post {post.shortcode} es más antiguo ({post.date_local.strftime('%Y-%m-%d')}), deteniendo búsqueda")
+                    found_older_post = True
+                    break
+
+            posts.append(post)
+
+            # Pausa de medio segundo a un segundo para evitar rate limiting
+            time.sleep(0.5+(random.random()*0.5))
+
+        if found_older_post:
+            print("📌 Se encontró un post no pinned más antiguo que la fecha máxima")
+
 
     except Exception as e:
+        print(f"📦 Deteniendo búsqueda con {len(posts)} posts encontrados")
         print(f"❌ Error obteniendo posts: {e}")
         print("💡 Tip: Si es cuenta privada, necesitas login:")
         print("   L.login('tu_usuario', 'tu_password')")
-        return []
+
+    print(f"✅ Encontrados {len(posts)} posts")
+    return posts
 
 
-def generate_recipes_js(new_recipes):
-    """Genera el archivo recipes.js con las recetas nuevas y existentes"""
+def generate_recipes_json(all_recipes):
+    """Genera el archivo recipes.json con todas las recetas ordenadas por fecha"""
     recipes_path = Path(__file__).parent / RECIPES_FILE
 
-    # Leer archivo existente
-    if recipes_path.exists():
-        content = recipes_path.read_text()
-        # Encontrar el array de recetas
-        match = re.search(r"export const recipesData = \[(.*)\];", content, re.DOTALL)
-        if match:
-            existing_content = match.group(1).strip()
-        else:
-            existing_content = ""
-    else:
-        existing_content = ""
+    # Ordenar recetas por fecha (más reciente primero)
+    sorted_recipes = sorted(
+        all_recipes,
+        key=lambda r: datetime.fromisoformat(r.get('date', '1970-01-01')),
+        reverse=True
+    )
 
-    # Generar nuevas recetas
-    new_recipes_str = ""
-    for recipe in new_recipes:
-        new_recipes_str += f"""  {{
-    id: {recipe["id"]},
-    name: "{recipe["name"]}",
-    description: "{recipe["description"]}",
-    tags: {json.dumps(recipe["tags"], ensure_ascii=False)},
-    instagramUrl: "{recipe["instagramUrl"]}",
-    facebookUrl: "",
-    imageUrl: "{recipe["imageUrl"]}",
-    ingredients: {json.dumps(recipe["ingredients"], ensure_ascii=False)}
-  }},
-"""
+    # Guardar como JSON
+    with recipes_path.open('w', encoding='utf-8') as f:
+        json.dump(sorted_recipes, f, ensure_ascii=False, indent=2)
 
-    # Combinar (nuevas primero)
-    if existing_content:
-        combined = new_recipes_str + existing_content
-    else:
-        combined = new_recipes_str.rstrip(",\n")
-
-    # Generar archivo completo
-    output = f"""export const recipesData = [
-{combined}
-];
-"""
-
-    recipes_path.write_text(output, encoding="utf-8")
     print(f"✅ Archivo actualizado: {recipes_path}")
+    print(f"📊 Total de recetas: {len(sorted_recipes)}")
 
 
 def main():
@@ -272,12 +278,15 @@ def main():
     print("=" * 50)
 
     # Obtener recetas existentes
-    existing_urls, max_id, _ = get_existing_recipes()
-    print(f"📚 Recetas existentes: {len(existing_urls)}")
-    print(f"🔢 Último ID: {max_id}")
+    existing_recipes, max_date = get_existing_recipes()
+    existing_ids = {r['id'] for r in existing_recipes if 'id' in r}
+
+    print(f"📚 Recetas existentes: {len(existing_recipes)}")
+    if max_date:
+        print(f"📅 Fecha más reciente: {max_date.strftime('%Y-%m-%d %H:%M:%S')}")
 
     # Obtener posts de Instagram
-    posts = get_instagram_posts()
+    posts = get_instagram_posts(max_date)
     if not posts:
         print("\n⚠️  No se encontraron posts. Verifica:")
         print("   1. El usuario de Instagram es correcto")
@@ -287,13 +296,12 @@ def main():
 
     # Filtrar posts nuevos
     new_recipes = []
-    next_id = max_id + 1
 
     for post in posts:
         post_url = f"https://www.instagram.com/p/{post.shortcode}/"
 
-        # Skip si ya existe
-        if post_url in existing_urls:
+        # Skip si ya existe (por ID)
+        if post.mediaid in existing_ids:
             continue
 
         # Extraer datos
@@ -303,26 +311,33 @@ def main():
         local_image = download_image(post.url, post.shortcode)
 
         recipe = {
-            "id": next_id,
+            "id": post.mediaid,
             "name": extract_recipe_name(caption),
             "description": extract_description(caption),
-            "tags": extract_hashtags(caption),
+            "tags": extract_hashtags(post),
             "instagramUrl": post_url,
+            "facebookUrl": "",
             "imageUrl": local_image,
             "ingredients": extract_ingredients(caption),
+            "date": post.date_local.isoformat(),
         }
 
         new_recipes.append(recipe)
-        next_id += 1
-
         print(f"✨ Nueva: {recipe['name']} - {len(recipe['tags'])} tags")
 
-    # Generar archivo
+    # Combinar todas las recetas (existentes + nuevas)
+    all_recipes = existing_recipes + new_recipes
+
+    # Generar archivo ordenado
     if new_recipes:
         print(f"\n🎉 {len(new_recipes)} recetas nuevas encontradas")
-        generate_recipes_js(new_recipes)
+        generate_recipes_json(all_recipes)
+    elif existing_recipes:
+        # Re-ordenar recetas existentes si no hay nuevas
+        print("\n✅ No hay recetas nuevas, reordenando existentes")
+        generate_recipes_json(all_recipes)
     else:
-        print("\n✅ No hay recetas nuevas")
+        print("\n✅ No hay recetas")
 
 
 if __name__ == "__main__":
