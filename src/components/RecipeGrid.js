@@ -19,11 +19,11 @@ const RecipeGrid = ({ recipes, onSelectRecipe }) => {
         <RecipeCard 
           key={recipe.id} 
           recipe={recipe} 
-          onClick={() => onSelectRecipe(recipe)} 
+          onClick={onSelectRecipe} 
         />
       ))}
     </div>
   );
 };
 
-export default RecipeGrid;
+export default React.memo(RecipeGrid);

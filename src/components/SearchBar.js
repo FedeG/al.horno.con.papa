@@ -59,9 +59,9 @@ const SearchBar = ({
         
         {showAutocomplete && autocompleteSuggestions.length > 0 && (
           <div className="autocomplete-dropdown">
-            {autocompleteSuggestions.map((suggestion, idx) => (
+            {autocompleteSuggestions.map((suggestion) => (
               <div
-                key={idx}
+                key={suggestion}
                 className="autocomplete-item"
                 onClick={() => handleSuggestionClick(suggestion)}
               >
@@ -76,4 +76,4 @@ const SearchBar = ({
   );
 };
 
-export default SearchBar;
+export default React.memo(SearchBar);

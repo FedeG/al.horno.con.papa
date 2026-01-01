@@ -461,6 +461,18 @@
   box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
 }
 
+.pagination-ellipsis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #999;
+  user-select: none;
+}
+
 .footer {
   background: linear-gradient(135deg, #3A3632 0%, #4A4540 100%);
   color: white;

@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect, useRef } from 'react';
+import React, { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import { Routes, Route, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import './App.css';
 import { recipesData, featuredTags } from './data/recipes';
@@ -15,6 +15,7 @@ const RecipeList = () => {
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   
+  const [inputValue, setInputValue] = useState(searchParams.get('search') || '');
   const [searchTerm, setSearchTerm] = useState(searchParams.get('search') || '');
   const [selectedTag, setSelectedTag] = useState(searchParams.get('tag') || 'All');
   const [currentPage, setCurrentPage] = useState(parseInt(searchParams.get('page')) || 1);
@@ -23,12 +24,24 @@ const RecipeList = () => {
   const isInitialLoad = useRef(true);
   const recipesPerPage = 6;
 
-  // Extract all unique tags
+  // Debouncing effect para searchTerm
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setSearchTerm(inputValue);
+    }, 300); // 300ms delay
+
+    return () => clearTimeout(timeoutId);
+  }, [inputValue]);
+
+  // Extract all unique tags (optimizado - solo se ejecuta una vez)
   const allTags = useMemo(() => {
     const tags = new Set();
-    recipesData.forEach(recipe => {
-      recipe.tags.forEach(tag => tags.add(tag));
-    });
+    for (let i = 0; i < recipesData.length; i++) {
+      const recipeTags = recipesData[i].tags;
+      for (let j = 0; j < recipeTags.length; j++) {
+        tags.add(recipeTags[j]);
+      }
+    }
     const featured = featuredTags.filter(tag => tag === 'All' || tags.has(tag));
     const others = Array.from(tags).filter(tag => !featuredTags.includes(tag)).sort();
     
@@ -46,31 +59,54 @@ const RecipeList = () => {
     return result;
   }, [selectedTag]);
 
-  // Generate autocomplete suggestions
+  // Generate autocomplete suggestions (optimizado - detiene búsqueda al llegar a 5)
   const autocompleteSuggestions = useMemo(() => {
-    if (!searchTerm) return [];
+    if (!inputValue) return [];
     
-    const suggestions = new Set();
-    const term = searchTerm.toLowerCase();
+    const suggestions = [];
+    const seen = new Set();
+    const term = inputValue.toLowerCase();
+    const maxSuggestions = 5;
     
-    recipesData.forEach(recipe => {
-      if (recipe.name.toLowerCase().includes(term)) {
-        suggestions.add(recipe.name);
+    // 1. Buscar en ingredientes primero
+    for (let i = 0; i < recipesData.length && suggestions.length < maxSuggestions; i++) {
+      const ingredients = recipesData[i].ingredients;
+      for (let j = 0; j < ingredients.length && suggestions.length < maxSuggestions; j++) {
+        const ing = ingredients[j];
+        if (ing.toLowerCase().includes(term) && !seen.has(ing)) {
+          suggestions.push(ing);
+          seen.add(ing);
+        }
       }
-      recipe.ingredients.forEach(ing => {
-        if (ing.toLowerCase().includes(term)) {
-          suggestions.add(ing);
-        }
-      });
-      recipe.tags.forEach(tag => {
-        if (tag.toLowerCase().includes(term)) {
-          suggestions.add(tag);
-        }
-      });
-    });
+    }
     
-    return Array.from(suggestions).slice(0, 5);
-  }, [searchTerm]);
+    // 2. Si no llegamos a 5, buscar en nombres
+    if (suggestions.length < maxSuggestions) {
+      for (let i = 0; i < recipesData.length && suggestions.length < maxSuggestions; i++) {
+        const name = recipesData[i].name;
+        if (name.toLowerCase().includes(term) && !seen.has(name)) {
+          suggestions.push(name);
+          seen.add(name);
+        }
+      }
+    }
+    
+    // 3. Si aún no llegamos a 5, buscar en tags
+    if (suggestions.length < maxSuggestions) {
+      for (let i = 0; i < recipesData.length && suggestions.length < maxSuggestions; i++) {
+        const tags = recipesData[i].tags;
+        for (let j = 0; j < tags.length && suggestions.length < maxSuggestions; j++) {
+          const tag = tags[j];
+          if (tag.toLowerCase().includes(term) && !seen.has(tag)) {
+            suggestions.push(tag);
+            seen.add(tag);
+          }
+        }
+      }
+    }
+    
+    return suggestions;
+  }, [inputValue]);
 
   // Filter recipes based on search and tag
   const filteredRecipes = useMemo(() => {
@@ -111,28 +147,34 @@ const RecipeList = () => {
     setSearchParams(params, { replace: true });
   }, [searchTerm, selectedTag, currentPage, showEasyOnly, setSearchParams]);
 
-  const handleSearchSelect = (suggestion) => {
+  const handleSearchSelect = useCallback((suggestion) => {
+    setInputValue(suggestion);
     setSearchTerm(suggestion);
     setShowAutocomplete(false);
-  };
+  }, []);
 
-  const handlePageChange = (page) => {
+  const handleSearchChange = useCallback((value) => {
+    setInputValue(value);
+    setShowAutocomplete(true);
+  }, []);
+
+  const handlePageChange = useCallback((page) => {
     setCurrentPage(Math.max(1, Math.min(page, totalPages)));
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  }, [totalPages]);
 
-  const handleSelectRecipe = (recipe) => {
+  const handleSelectRecipe = useCallback((recipe) => {
     navigate(`/recipe/${recipe.id}`);
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  }, [navigate]);
 
   return (
     <div className="app">
       <Header />
       
       <SearchBar
-        searchTerm={searchTerm}
-        setSearchTerm={setSearchTerm}
+        searchTerm={inputValue}
+        setSearchTerm={handleSearchChange}
         showAutocomplete={showAutocomplete}
         setShowAutocomplete={setShowAutocomplete}
         autocompleteSuggestions={autocompleteSuggestions}
@@ -180,28 +222,46 @@ const RecipeList = () => {
 const RecipeDetailPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const recipe = recipesData.find(r => r.id === parseInt(id));
+  const recipeId = parseInt(id);
+  
+  const recipe = useMemo(() => 
+    recipesData.find(r => r.id === recipeId),
+    [recipeId]
+  );
 
-  const getRelatedRecipes = (recipe) => {
-    return recipesData
-      .filter(r => r.id !== recipe.id && r.tags.some(tag => recipe.tags.includes(tag)))
-      .slice(0, 3);
-  };
+  const relatedRecipes = useMemo(() => {
+    if (!recipe) return [];
+    const related = [];
+    const recipeTags = new Set(recipe.tags);
+    
+    for (let i = 0; i < recipesData.length && related.length < 3; i++) {
+      const r = recipesData[i];
+      if (r.id !== recipe.id) {
+        for (let j = 0; j < r.tags.length; j++) {
+          if (recipeTags.has(r.tags[j])) {
+            related.push(r);
+            break;
+          }
+        }
+      }
+    }
+    return related;
+  }, [recipe]);
 
-  const handleSelectRecipe = (recipe) => {
+  const handleSelectRecipe = useCallback((recipe) => {
     navigate(`/recipe/${recipe.id}`);
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  }, [navigate]);
 
-  const handleBackToList = () => {
+  const handleBackToList = useCallback(() => {
     navigate('/');
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  }, [navigate]);
 
-  const handleTagClick = (tag) => {
+  const handleTagClick = useCallback((tag) => {
     navigate(`/?tag=${encodeURIComponent(tag)}`);
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  }, [navigate]);
 
   if (!recipe) {
     return (
@@ -215,8 +275,6 @@ const RecipeDetailPage = () => {
       </div>
     );
   }
-
-  const relatedRecipes = getRelatedRecipes(recipe);
   
   return (
     <RecipeDetail

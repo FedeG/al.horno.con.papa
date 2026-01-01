@@ -49,7 +49,14 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
 
         <div className="detail-section">
           <h2><Sparkles size={20} /> Descripción</h2>
-          <p className="description">{recipe.description}</p>
+          <p className="description">
+            {recipe.description.split('\n').map((line, idx) => (
+              <React.Fragment key={idx}>
+                {line}
+                {idx < recipe.description.split('\n').length - 1 && <br />}
+              </React.Fragment>
+            ))}
+          </p>
         </div>
 
         <div className="detail-section">

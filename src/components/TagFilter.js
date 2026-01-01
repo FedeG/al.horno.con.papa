@@ -20,9 +20,9 @@ const TagFilter = ({ allTags, selectedTag, onSelectTag }) => {
         <ChevronLeft size={18} />
       </button>
       <div className="tags-scroll" ref={scrollContainerRef}>
-        {allTags.map((tag, idx) => (
+        {allTags.map((tag) => (
           <button
-            key={idx}
+            key={tag}
             className={`tag-chip ${selectedTag === tag ? 'active' : ''}`}
             onClick={() => onSelectTag(tag)}
           >
@@ -37,4 +37,4 @@ const TagFilter = ({ allTags, selectedTag, onSelectTag }) => {
   );
 };
 
-export default TagFilter;
+export default React.memo(TagFilter);
