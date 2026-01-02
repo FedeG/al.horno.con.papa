@@ -39,7 +39,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2025 Al Horno Con Papá. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Al Horno Con Papá. Todos los derechos reservados.</p>
       </div>
     </footer>
   );
