@@ -12,7 +12,7 @@ import sys
 
 # Agregar el directorio padre al path para importar constants
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from constants import TAGS_TO_SKIP, TAG_SYNONYMS, SECTION_END_MARKERS
+from constants import EASY_TAG, TAGS_TO_SKIP, TAG_SYNONYMS, SECTION_END_MARKERS
 
 
 class ParserService:
@@ -192,20 +192,106 @@ class ParserService:
         """
         caption = post.caption if post.caption else ""
         post_url = f"https://www.instagram.com/p/{post.shortcode}/"
+        tags = self.extract_hashtags(post)
 
         recipe = {
             "id": post.mediaid,
             "name": self.extract_recipe_name(caption),
             "description": self.extract_description(caption),
-            "tags": self.extract_hashtags(post),
+            "tags": tags,
             "instagramUrl": post_url,
             "facebookUrl": "",
             "imageUrl": local_image,
             "ingredients": self.extract_ingredients(caption),
             "date": post.date_local.isoformat(),
+            "easy": EASY_TAG.capitalize() in tags
         }
 
         return recipe
+
+    def normalize_tags(self, tags, recipe_name=""):
+        """
+        Normaliza una lista de tags aplicando sinónimos y filtros
+        También elimina el tag si ya está presente en el nombre de la receta.
+
+        Args:
+            tags: Lista de tags a normalizar
+
+        Returns:
+            list: Lista de tags normalizados
+        """
+        if not tags:
+            return []
+
+        processed_tags = set()
+
+        # Limpiar el nombre de la receta para comparaciones (quitar emojis y normalizar)
+        # Esto hace que "👨🏼‍🍳 Hummus 👨🏼‍🍳" sea simplemente "hummus"
+        clean_name = re.sub(r'[^\w\s]', '', recipe_name.lower()).strip()
+        clean_name_joined = clean_name.replace(" ", "")
+        name_words = set(clean_name.split())
+
+        for tag in tags:
+            tag_clean = tag.lower().replace("#", "").strip()
+
+            # 1. Omitir si está en la lista de skip o es muy corto (menos de 3 letras, ej: "de")
+            # Excepto casos especiales como "blw"
+            if tag_clean in TAGS_TO_SKIP or (len(tag_clean) < 3 and tag_clean != "blw"):
+                continue
+
+            # 2. Omitir si el tag ya es parte del nombre de la receta
+            # (Si la receta se llama "Pan casero", no hace falta el tag "pan")
+            if tag_clean in name_words or tag_clean in clean_name or tag_clean.replace(" ", "") in clean_name_joined:
+                continue
+
+            # 3. Buscar sinónimos para estandarizar
+            main_tag = next(
+                (
+                    main
+                    for main, syns in TAG_SYNONYMS.items()
+                    if tag_clean in [s.lower() for s in syns]
+                ),
+                None,
+            )
+
+            if main_tag:
+                processed_tags.add(main_tag.capitalize())
+            else:
+                processed_tags.add(tag_clean.capitalize())
+
+        return sorted(processed_tags)
+
+    def refresh_recipe(self, recipe):
+        """
+        Actualiza los tags de una receta aplicando normalización
+
+        Args:
+            recipe: Receta a actualizar
+
+        Returns:
+            tuple: (receta actualizada, bool indicando si hubo cambios)
+        """
+        current_tags = recipe.get("tags", [])
+        original_tags = recipe.get("old_tags", [])
+        if not original_tags:
+            original_tags = current_tags
+
+        recipe_name = recipe.get("name", "")
+        normalized_tags = self.normalize_tags(original_tags, recipe_name)
+
+        # Crear copia de la receta
+        updated_recipe = recipe.copy()
+        updated_recipe["old_tags"] = original_tags
+        updated_recipe["tags"] = normalized_tags
+
+        # Verificar si hubo cambios
+        changed = set(current_tags) != set(normalized_tags)
+
+        if EASY_TAG.capitalize() in normalized_tags and not recipe.get("easy", False):
+            updated_recipe["easy"] = True
+            changed = True
+
+        return updated_recipe, changed
 
     def save_recipes(self, recipes):
         """
