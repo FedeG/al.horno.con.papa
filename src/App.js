@@ -17,7 +17,7 @@ const RecipeList = () => {
   
   const [inputValue, setInputValue] = useState(searchParams.get('search') || '');
   const [searchTerm, setSearchTerm] = useState(searchParams.get('search') || '');
-  const [selectedTag, setSelectedTag] = useState(searchParams.get('tag') || 'All');
+  const [selectedTag, setSelectedTag] = useState(searchParams.get('tag') || 'Todas');
   const [currentPage, setCurrentPage] = useState(parseInt(searchParams.get('page')) || 1);
   const [showAutocomplete, setShowAutocomplete] = useState(false);
   const [showEasyOnly, setShowEasyOnly] = useState(searchParams.get('easy') === 'true');
@@ -42,13 +42,13 @@ const RecipeList = () => {
         tags.add(recipeTags[j]);
       }
     }
-    const featured = featuredTags.filter(tag => tag === 'All' || tags.has(tag));
+    const featured = featuredTags.filter(tag => tag === 'Todas' || tags.has(tag));
     const others = Array.from(tags).filter(tag => !featuredTags.includes(tag)).sort();
     
     let result = [...featured, ...others];
     
-    // If there's a selected tag that's not 'All', move it to position 1 (after 'All')
-    if (selectedTag !== 'All') {
+    // If there's a selected tag that's not 'Todas', move it to position 1 (after 'Todas')
+    if (selectedTag !== 'Todas') {
       const tagIndex = result.indexOf(selectedTag);
       if (tagIndex > 1) {
         result.splice(tagIndex, 1);
@@ -114,7 +114,7 @@ const RecipeList = () => {
       const matchesSearch = recipe.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         recipe.ingredients.some(ing => ing.toLowerCase().includes(searchTerm.toLowerCase())) || 
         recipe.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()));
-      const matchesTag = selectedTag === 'All' || recipe.tags.includes(selectedTag);
+      const matchesTag = selectedTag === 'Todas' || recipe.tags.includes(selectedTag);
       const matchesEasy = !showEasyOnly || recipe.easy;
       return matchesSearch && matchesTag && matchesEasy;
     });
@@ -140,7 +140,7 @@ const RecipeList = () => {
   useEffect(() => {
     const params = {};
     if (searchTerm) params.search = searchTerm;
-    if (selectedTag !== 'All') params.tag = selectedTag;
+    if (selectedTag !== 'Todas') params.tag = selectedTag;
     if (currentPage > 1) params.page = currentPage.toString();
     if (showEasyOnly) params.easy = 'true';
     
@@ -185,6 +185,7 @@ const RecipeList = () => {
         allTags={allTags}
         selectedTag={selectedTag}
         onSelectTag={setSelectedTag}
+        featuredTags={featuredTags}
       />
 
       <div className="results-header">

@@ -208,6 +208,9 @@
   transition: all 0.3s ease;
   white-space: nowrap;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .tag-chip:hover {
@@ -221,6 +224,30 @@
   border-color: #C4704F;
   color: white;
   box-shadow: 0 4px 12px rgba(196, 112, 79, 0.3);
+}
+
+.tag-chip.featured {
+  border-color: #FFD700;
+  background: linear-gradient(135deg, #FFFBF0 0%, #FFF8E7 100%);
+}
+
+.tag-chip.featured:hover {
+  border-color: #FFD700;
+  background: linear-gradient(135deg, #FFF8E7 0%, #FFF0D0 100%);
+}
+
+.tag-chip.featured.active {
+  background: linear-gradient(135deg, #C4704F 0%, #B85C3E 100%);
+  border-color: #C4704F;
+}
+
+.featured-icon {
+  color: #FFD700;
+  flex-shrink: 0;
+}
+
+.tag-chip.active .featured-icon {
+  color: white;
 }
 
 .results-header {

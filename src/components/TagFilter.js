@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
 
-const TagFilter = ({ allTags, selectedTag, onSelectTag }) => {
+const TagFilter = ({ allTags, selectedTag, onSelectTag, featuredTags = [] }) => {
   const scrollContainerRef = useRef(null);
 
   const scroll = (direction) => {
@@ -20,15 +20,19 @@ const TagFilter = ({ allTags, selectedTag, onSelectTag }) => {
         <ChevronLeft size={18} />
       </button>
       <div className="tags-scroll" ref={scrollContainerRef}>
-        {allTags.map((tag) => (
-          <button
-            key={tag}
-            className={`tag-chip ${selectedTag === tag ? 'active' : ''}`}
-            onClick={() => onSelectTag(tag)}
-          >
-            {tag}
-          </button>
-        ))}
+        {allTags.map((tag) => {
+          const isFeatured = featuredTags.includes(tag);
+          return (
+            <button
+              key={tag}
+              className={`tag-chip ${selectedTag === tag ? 'active' : ''} ${isFeatured ? 'featured' : ''}`}
+              onClick={() => onSelectTag(tag)}
+            >
+              {isFeatured && <Star size={14} className="featured-icon" fill="currentColor" />}
+              {tag}
+            </button>
+          );
+        })}
       </div>
       <button className="scroll-btn right" onClick={() => scroll('right')} aria-label="Scroll derecha">
         <ChevronRight size={18} />
