@@ -53,7 +53,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
       >
-        <ChevronLeft size={20} /> Previous
+        <ChevronLeft size={20} /> Anterior
       </button>
 
       <div className="pagination-numbers">
@@ -83,7 +83,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
       >
-        Next <ChevronRight size={20} />
+        Siguiente <ChevronRight size={20} />
       </button>
     </div>
   );
