@@ -5,7 +5,7 @@ import { isMobile } from "react-device-detect";
 import Footer from './Footer';
 
 const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagClick }) => {
-  
+
   const getInstagramEmbedUrl = (url) => {
     if (!url) return null;
     const isReel = url.includes('/reel/');
@@ -20,7 +20,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
     if (!url) return null;
     if (isMobile) {
       // Extraer el ID del post/reel de la URL
-      const match = url.match(/\/(p|reel)\/([^\/]+)/);
+      const match = url.match(/\/(p|reel)\/([^/]+)/);
       if (match && match[2]) {
         return `instagram://media?id=${match[2]}`;
       }
@@ -55,7 +55,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
         <div className="detail-section">
           <div className="tags-container">
             {recipe.tags.map((tag, idx) => (
-              <span key={idx} className="detail-tag" onClick={() => onTagClick(tag)} style={{cursor: 'pointer'}}>
+              <span key={idx} className="detail-tag" onClick={() => onTagClick(tag)} style={{ cursor: 'pointer' }}>
                 <Tag size={14} /> {tag}
               </span>
             ))}
@@ -85,10 +85,10 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
 
         <div className="social-links">
           {recipe.instagramUrl && (
-            <a 
-              href={getInstagramLinkUrl(recipe.instagramUrl)} 
-              target="_blank" 
-              rel="noopener noreferrer"
+            <a
+              href={getInstagramLinkUrl(recipe.instagramUrl)}
+              target='_blank'
+              rel={isMobile ? 'noreferrer' : 'noopener noreferrer'}
               className="social-btn instagram"
             >
               <Instagram size={20} /> Ver en Instagram
