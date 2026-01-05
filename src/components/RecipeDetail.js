@@ -1,5 +1,7 @@
 import React from 'react';
 import { ArrowLeft, Tag, Sparkles, ChefHat, Instagram, Facebook } from 'lucide-react';
+import { isMobile } from "react-device-detect";
+
 import Footer from './Footer';
 
 const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagClick }) => {
@@ -14,22 +16,16 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
     return null;
   };
 
-  const handleInstagramClick = (e) => {
-    e.preventDefault();
-
-    const url = recipe.instagramUrl;
-    const postCodeMatch = url.match(/\/(?:p|reel)\/([^/?#&]+)/);
-    const postCode = postCodeMatch ? postCodeMatch[1] : null;
-
-    if (postCode) {
-      const appUrl = `instagram://media?id=${postCode}`;
-      window.location.href = appUrl;
-      setTimeout(() => {
-        window.open(url, '_blank', 'noopener,noreferrer');
-      }, 500);
-    } else {
-      window.open(url, '_blank', 'noopener,noreferrer');
+  const getInstagramLinkUrl = (url) => {
+    if (!url) return null;
+    if (isMobile) {
+      // Extraer el ID del post/reel de la URL
+      const match = url.match(/\/(p|reel)\/([^\/]+)/);
+      if (match && match[2]) {
+        return `instagram://media?id=${match[2]}`;
+      }
     }
+    return url;
   };
 
   const embedUrl = getInstagramEmbedUrl(recipe.instagramUrl);
@@ -90,8 +86,9 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
         <div className="social-links">
           {recipe.instagramUrl && (
             <a 
-              href={recipe.instagramUrl} 
-              onClick={handleInstagramClick}
+              href={getInstagramLinkUrl(recipe.instagramUrl)} 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="social-btn instagram"
             >
               <Instagram size={20} /> Ver en Instagram
