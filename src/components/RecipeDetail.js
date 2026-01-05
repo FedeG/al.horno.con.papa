@@ -3,6 +3,7 @@ import { ArrowLeft, Tag, Sparkles, ChefHat, Instagram, Facebook } from 'lucide-r
 import Footer from './Footer';
 
 const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagClick }) => {
+  
   const getInstagramEmbedUrl = (url) => {
     if (!url) return null;
     const isReel = url.includes('/reel/');
@@ -11,6 +12,24 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
       return `${url}embed/`;
     }
     return null;
+  };
+
+  const handleInstagramClick = (e) => {
+    e.preventDefault();
+
+    const url = recipe.instagramUrl;
+    const postCodeMatch = url.match(/\/(?:p|reel)\/([^/?#&]+)/);
+    const postCode = postCodeMatch ? postCodeMatch[1] : null;
+
+    if (postCode) {
+      const appUrl = `instagram://media?id=${postCode}`;
+      window.location.href = appUrl;
+      setTimeout(() => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+      }, 500);
+    } else {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
   };
 
   const embedUrl = getInstagramEmbedUrl(recipe.instagramUrl);
@@ -70,7 +89,11 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
 
         <div className="social-links">
           {recipe.instagramUrl && (
-            <a href={recipe.instagramUrl} target="_blank" rel="noopener noreferrer" className="social-btn instagram">
+            <a 
+              href={recipe.instagramUrl} 
+              onClick={handleInstagramClick}
+              className="social-btn instagram"
+            >
               <Instagram size={20} /> Ver en Instagram
             </a>
           )}
