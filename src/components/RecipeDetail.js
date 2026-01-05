@@ -16,16 +16,12 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
     return null;
   };
 
-  const getInstagramLinkUrl = (url) => {
-    if (!url) return null;
+  const getInstagramLinkUrl = () => {
+    if (!recipe.instagramUrl || !recipe.id) return null;
     if (isMobile) {
-      // Extraer el ID del post/reel de la URL
-      const match = url.match(/\/(p|reel)\/([^/]+)/);
-      if (match && match[2]) {
-        return `instagram://media?id=${match[2]}`;
-      }
+      return `instagram://media?id=${recipe.id}`;
     }
-    return url;
+    return recipe.instagramUrl;
   };
 
   const embedUrl = getInstagramEmbedUrl(recipe.instagramUrl);

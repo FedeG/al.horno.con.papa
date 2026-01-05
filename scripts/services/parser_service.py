@@ -191,7 +191,8 @@ class ParserService:
             dict: Objeto de receta
         """
         caption = post.caption if post.caption else ""
-        post_url = f"https://www.instagram.com/p/{post.shortcode}/"
+        post_type = 'reel' if post.is_video else 'p'        
+        post_url = f"https://www.instagram.com/{post_type}/{post.shortcode}/"
         tags = self.extract_hashtags(post)
 
         recipe = {
