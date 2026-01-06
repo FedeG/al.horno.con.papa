@@ -24,6 +24,15 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
     return recipe.instagramUrl;
   };
 
+  const getInstagramLinkUrl2 = () => {
+    if (!recipe.instagramUrl) return null;
+    const shortcode = recipe.instagramUrl.split('/p/')[1]?.split('/')[0] || recipe.instagramUrl.split('/reel/')[1]?.split('/')[0];
+    if (isMobile) {
+      return `instagram://media?id=${shortcode}`;
+    }
+    return recipe.instagramUrl;
+  };
+
   const openLink = () => {
     if (isMobile) {
       window.location.href = 'instagram://reel?id=DS8ZtFWDmi7';
@@ -97,7 +106,17 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
               rel={isMobile ? 'noreferrer' : 'noopener noreferrer'}
               className="social-btn instagram"
             >
-              <Instagram size={20} /> Ver en Instagram
+              <Instagram size={20} /> Ver en Instagram 1
+            </a>
+          )}
+          {recipe.instagramUrl && (
+            <a
+              href={getInstagramLinkUrl2(recipe.instagramUrl)}
+              target='_blank'
+              rel={isMobile ? 'noreferrer' : 'noopener noreferrer'}
+              className="social-btn instagram"
+            >
+              <Instagram size={20} /> Ver en Instagram 2
             </a>
           )}
           {recipe.instagramUrl && (
@@ -105,7 +124,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
               onClick={openLink}
               className="social-btn instagram"
             >
-              <Instagram size={20} /> Ver en Instagram
+              <Instagram size={20} /> Ver en Instagram click
             </button>
           )}
           {recipe.facebookUrl && (
