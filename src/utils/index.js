@@ -180,7 +180,7 @@ export const getInstagramProfileUrl = (username, isMobile) => {
  */
 export const getFacebookProfileUrl = (username, isMobile) => {
     if (isMobile) {
-        return `fb://profile/${username}`;
+        return `fb://page?name=${username}`;
     }
     return `https://www.facebook.com/${username}/`;
 };
