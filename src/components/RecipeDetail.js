@@ -92,7 +92,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
               rel={isMobile ? 'noreferrer' : 'noopener noreferrer'}
               className="social-btn instagram"
             >
-              <Instagram size={20} /> Ver en Instagram 1
+              <Instagram size={20} /> Ver en Instagram
             </a>
           )}
           {recipe.facebookUrl && (
