@@ -169,7 +169,7 @@ export const getInstagramProfileUrl = (username, isMobile) => {
     if (isMobile) {
         return `instagram://user?username=${username}`;
     }
-    return `https://www.instagram.com/${username}/`;-
+    return `https://www.instagram.com/${username}/`;
 };
 
 /**
