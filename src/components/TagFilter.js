@@ -1,10 +1,10 @@
-import React, { useRef } from 'react';
+import React, { useRef, useCallback } from 'react';
 import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
 
 const TagFilter = ({ allTags, selectedTag, onSelectTag, featuredTags = [] }) => {
   const scrollContainerRef = useRef(null);
 
-  const scroll = (direction) => {
+  const scroll = useCallback((direction) => {
     if (scrollContainerRef.current) {
       const scrollAmount = 300;
       scrollContainerRef.current.scrollBy({
@@ -12,11 +12,14 @@ const TagFilter = ({ allTags, selectedTag, onSelectTag, featuredTags = [] }) => 
         behavior: 'smooth'
       });
     }
-  };
+  }, []);
+
+  const scrollLeft = useCallback(() => scroll('left'), [scroll]);
+  const scrollRight = useCallback(() => scroll('right'), [scroll]);
 
   return (
     <div className="tags-container-wrapper">
-      <button className="scroll-btn left" onClick={() => scroll('left')} aria-label="Scroll izquierda">
+      <button className="scroll-btn left" onClick={scrollLeft} aria-label="Scroll izquierda">
         <ChevronLeft size={18} />
       </button>
       <div className="tags-scroll" ref={scrollContainerRef}>
@@ -34,7 +37,7 @@ const TagFilter = ({ allTags, selectedTag, onSelectTag, featuredTags = [] }) => 
           );
         })}
       </div>
-      <button className="scroll-btn right" onClick={() => scroll('right')} aria-label="Scroll derecha">
+      <button className="scroll-btn right" onClick={scrollRight} aria-label="Scroll derecha">
         <ChevronRight size={18} />
       </button>
     </div>

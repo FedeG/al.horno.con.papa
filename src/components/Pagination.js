@@ -1,48 +1,21 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useCallback } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { generatePageNumbers } from '../utils';
 
 const Pagination = ({ currentPage, totalPages, onPageChange }) => {
   // Generar números de página inteligentes
-  const pageNumbers = useMemo(() => {
-    const pages = [];
-    const delta = 1; // Páginas a mostrar alrededor de la actual
-    
-    // Siempre mostrar primera página
-    pages.push(1);
-    
-    if (totalPages <= 7) {
-      // Si hay pocas páginas, mostrarlas todas
-      for (let i = 2; i <= totalPages; i++) {
-        pages.push(i);
-      }
-    } else {
-      // Lógica para muchas páginas
-      if (currentPage <= 3) {
-        // Cerca del inicio
-        for (let i = 2; i <= 4; i++) {
-          pages.push(i);
-        }
-        pages.push('ellipsis-1');
-        pages.push(totalPages);
-      } else if (currentPage >= totalPages - 2) {
-        // Cerca del final
-        pages.push('ellipsis-1');
-        for (let i = totalPages - 3; i <= totalPages; i++) {
-          pages.push(i);
-        }
-      } else {
-        // En el medio
-        pages.push('ellipsis-1');
-        for (let i = currentPage - delta; i <= currentPage + delta; i++) {
-          pages.push(i);
-        }
-        pages.push('ellipsis-2');
-        pages.push(totalPages);
-      }
-    }
-    
-    return pages;
-  }, [currentPage, totalPages]);
+  const pageNumbers = useMemo(() => 
+    generatePageNumbers(currentPage, totalPages),
+    [currentPage, totalPages]
+  );
+
+  const handlePrevious = useCallback(() => {
+    onPageChange(currentPage - 1);
+  }, [currentPage, onPageChange]);
+
+  const handleNext = useCallback(() => {
+    onPageChange(currentPage + 1);
+  }, [currentPage, onPageChange]);
 
   if (totalPages <= 1) return null;
 
@@ -50,7 +23,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
     <div className="pagination">
       <button
         className="pagination-btn"
-        onClick={() => onPageChange(currentPage - 1)}
+        onClick={handlePrevious}
         disabled={currentPage === 1}
       >
         <ChevronLeft size={20} /> Anterior
@@ -80,7 +53,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
 
       <button
         className="pagination-btn"
-        onClick={() => onPageChange(currentPage + 1)}
+        onClick={handleNext}
         disabled={currentPage === totalPages}
       >
         Siguiente <ChevronRight size={20} />

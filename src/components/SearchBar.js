@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { Search, X } from 'lucide-react';
 
 const SearchBar = ({ 
@@ -9,20 +9,34 @@ const SearchBar = ({
   autocompleteSuggestions, 
   onSelectSuggestion 
 }) => {
-  const handleKeyDown = (e) => {
+  const handleKeyDown = useCallback((e) => {
     if (e.key === 'Enter') {
       setShowAutocomplete(false);
     }
-  };
+  }, [setShowAutocomplete]);
 
-  const handleSuggestionClick = (suggestion) => {
+  const handleSuggestionClick = useCallback((suggestion) => {
     onSelectSuggestion(suggestion);
     setShowAutocomplete(false);
-  };
+  }, [onSelectSuggestion, setShowAutocomplete]);
 
-  const handleSearchIconClick = () => {
+  const handleSearchIconClick = useCallback(() => {
     setShowAutocomplete(false);
-  };
+  }, [setShowAutocomplete]);
+
+  const handleInputChange = useCallback((e) => {
+    setSearchTerm(e.target.value);
+    setShowAutocomplete(true);
+  }, [setSearchTerm, setShowAutocomplete]);
+
+  const handleFocus = useCallback(() => {
+    if (searchTerm) setShowAutocomplete(true);
+  }, [searchTerm, setShowAutocomplete]);
+
+  const handleClear = useCallback(() => {
+    setSearchTerm('');
+    setShowAutocomplete(false);
+  }, [setSearchTerm, setShowAutocomplete]);
 
   return (
     <div className="search-container">
@@ -37,20 +51,14 @@ const SearchBar = ({
             type="text"
             placeholder="¿Qué ingrediente tenés en la heladera?"
             value={searchTerm}
-            onChange={(e) => {
-              setSearchTerm(e.target.value);
-              setShowAutocomplete(true);
-            }}
-            onFocus={() => searchTerm && setShowAutocomplete(true)}
+            onChange={handleInputChange}
+            onFocus={handleFocus}
             onKeyDown={handleKeyDown}
           />
           {searchTerm && (
             <button 
               className="clear-btn" 
-              onClick={() => {
-                setSearchTerm('');
-                setShowAutocomplete(false);
-              }}
+              onClick={handleClear}
             >
               <X size={18} />
             </button>

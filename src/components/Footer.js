@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { ChefHat, Instagram, Facebook, Mail } from 'lucide-react';
+import { isMobile } from 'react-device-detect';
+import { getInstagramProfileUrl, getFacebookProfileUrl } from '../utils';
 
 const Footer = () => {
+  const instagramUrl = useMemo(() => 
+    getInstagramProfileUrl('al.horno.con.papa', isMobile),
+    []
+  );
+
+  const facebookUrl = useMemo(() => 
+    getFacebookProfileUrl('al.horno.con.papa', isMobile),
+    []
+  );
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -18,10 +29,10 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Seguinos</h4>
           <div className="social-icons">
-            <a href="https://www.instagram.com/al.horno.con.papa/" target="_blank" rel="noopener noreferrer" className="social-icon instagram">
+            <a href={instagramUrl} target="_blank" rel={isMobile ? 'noreferrer' : 'noopener noreferrer'} className="social-icon instagram">
               <Instagram size={20} />
             </a>
-            <a href="https://www.facebook.com/al.horno.con.papa/" target="_blank" rel="noopener noreferrer" className="social-icon facebook">
+            <a href={facebookUrl} target="_blank" rel={isMobile ? 'noreferrer' : 'noopener noreferrer'} className="social-icon facebook">
               <Facebook size={20} />
             </a>
           </div>

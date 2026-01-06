@@ -10,6 +10,13 @@ import RecipeGrid from './components/RecipeGrid';
 import Pagination from './components/Pagination';
 import RecipeDetail from './components/RecipeDetail';
 import Footer from './components/Footer';
+import {
+  extractAllTags,
+  generateAutocompleteSuggestions,
+  filterRecipes,
+  findRelatedRecipes,
+  paginateArray
+} from './utils';
 
 const RecipeList = () => {
   const navigate = useNavigate();
@@ -34,98 +41,29 @@ const RecipeList = () => {
   }, [inputValue]);
 
   // Extract all unique tags (optimizado - solo se ejecuta una vez)
-  const allTags = useMemo(() => {
-    const tags = new Set();
-    for (let i = 0; i < recipesData.length; i++) {
-      const recipeTags = recipesData[i].tags;
-      for (let j = 0; j < recipeTags.length; j++) {
-        tags.add(recipeTags[j]);
-      }
-    }
-    const featured = featuredTags.filter(tag => tag === 'Todas' || tags.has(tag));
-    const others = Array.from(tags).filter(tag => !featuredTags.includes(tag)).sort();
-    
-    let result = [...featured, ...others];
-    
-    // If there's a selected tag that's not 'Todas', move it to position 1 (after 'Todas')
-    if (selectedTag !== 'Todas') {
-      const tagIndex = result.indexOf(selectedTag);
-      if (tagIndex > 1) {
-        result.splice(tagIndex, 1);
-        result.splice(1, 0, selectedTag);
-      }
-    }
-    
-    return result;
-  }, [selectedTag]);
+  const allTags = useMemo(() => 
+    extractAllTags(recipesData, featuredTags, selectedTag),
+    [selectedTag]
+  );
 
   // Generate autocomplete suggestions (optimizado - detiene búsqueda al llegar a 5)
-  const autocompleteSuggestions = useMemo(() => {
-    if (!inputValue) return [];
-    
-    const suggestions = [];
-    const seen = new Set();
-    const term = inputValue.toLowerCase();
-    const maxSuggestions = 5;
-    
-    // 1. Buscar en ingredientes primero
-    for (let i = 0; i < recipesData.length && suggestions.length < maxSuggestions; i++) {
-      const ingredients = recipesData[i].ingredients;
-      for (let j = 0; j < ingredients.length && suggestions.length < maxSuggestions; j++) {
-        const ing = ingredients[j];
-        if (ing.toLowerCase().includes(term) && !seen.has(ing)) {
-          suggestions.push(ing);
-          seen.add(ing);
-        }
-      }
-    }
-    
-    // 2. Si no llegamos a 5, buscar en nombres
-    if (suggestions.length < maxSuggestions) {
-      for (let i = 0; i < recipesData.length && suggestions.length < maxSuggestions; i++) {
-        const name = recipesData[i].name;
-        if (name.toLowerCase().includes(term) && !seen.has(name)) {
-          suggestions.push(name);
-          seen.add(name);
-        }
-      }
-    }
-    
-    // 3. Si aún no llegamos a 5, buscar en tags
-    if (suggestions.length < maxSuggestions) {
-      for (let i = 0; i < recipesData.length && suggestions.length < maxSuggestions; i++) {
-        const tags = recipesData[i].tags;
-        for (let j = 0; j < tags.length && suggestions.length < maxSuggestions; j++) {
-          const tag = tags[j];
-          if (tag.toLowerCase().includes(term) && !seen.has(tag)) {
-            suggestions.push(tag);
-            seen.add(tag);
-          }
-        }
-      }
-    }
-    
-    return suggestions;
-  }, [inputValue]);
+  const autocompleteSuggestions = useMemo(() => 
+    generateAutocompleteSuggestions(inputValue, recipesData),
+    [inputValue]
+  );
 
   // Filter recipes based on search and tag
-  const filteredRecipes = useMemo(() => {
-    return recipesData.filter(recipe => {
-      const matchesSearch = recipe.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        recipe.ingredients.some(ing => ing.toLowerCase().includes(searchTerm.toLowerCase())) || 
-        recipe.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()));
-      const matchesTag = selectedTag === 'Todas' || recipe.tags.includes(selectedTag);
-      const matchesEasy = !showEasyOnly || recipe.easy;
-      return matchesSearch && matchesTag && matchesEasy;
-    });
-  }, [searchTerm, selectedTag, showEasyOnly]);
+  const filteredRecipes = useMemo(() => 
+    filterRecipes(recipesData, searchTerm, selectedTag, showEasyOnly),
+    [searchTerm, selectedTag, showEasyOnly]
+  );
 
   // Pagination logic
   const totalPages = Math.ceil(filteredRecipes.length / recipesPerPage);
-  const paginatedRecipes = useMemo(() => {
-    const startIndex = (currentPage - 1) * recipesPerPage;
-    return filteredRecipes.slice(startIndex, startIndex + recipesPerPage);
-  }, [filteredRecipes, currentPage]);
+  const paginatedRecipes = useMemo(() => 
+    paginateArray(filteredRecipes, currentPage, recipesPerPage),
+    [filteredRecipes, currentPage]
+  );
 
   // Reset to page 1 when filters change (but not on initial load)
   useEffect(() => {
@@ -230,24 +168,10 @@ const RecipeDetailPage = () => {
     [recipeId]
   );
 
-  const relatedRecipes = useMemo(() => {
-    if (!recipe) return [];
-    const related = [];
-    const recipeTags = new Set(recipe.tags);
-    
-    for (let i = 0; i < recipesData.length && related.length < 3; i++) {
-      const r = recipesData[i];
-      if (r.id !== recipe.id) {
-        for (let j = 0; j < r.tags.length; j++) {
-          if (recipeTags.has(r.tags[j])) {
-            related.push(r);
-            break;
-          }
-        }
-      }
-    }
-    return related;
-  }, [recipe]);
+  const relatedRecipes = useMemo(() => 
+    findRelatedRecipes(recipesData, recipe),
+    [recipe]
+  );
 
   const handleSelectRecipe = useCallback((recipe) => {
     navigate(`/recipe/${recipe.id}`);
