@@ -89,3 +89,67 @@ SECTION_END_MARKERS = ["👣", "🔪", "👨‍🍳", "📝", "🍽️", "⏰", 
 
 # Post pineados
 PINNED_MEDIAIDS = [3283787029367823611, 3280944293224657232]
+
+# ===== CONSTANTES PARA LIMPIEZA DE INGREDIENTES =====
+
+# Unidades de medida para limpiar ingredientes
+UNIDADES_MEDIDA = [
+    "g", "gr", "gramo", "gramos",
+    "kg", "kilo", "kilos", "kilogramo", "kilogramos",
+    "ml", "mililitro", "mililitros",
+    "l", "litro", "litros",
+    "cc",
+    "cucharada", "cucharadas", "cda", "cdas",
+    "cucharadita", "cucharaditas", "cdita", "cditas",
+    "taza", "tazas",
+    "pizca", "pizcas",
+    "unidad", "unidades", "u",
+    "diente", "dientes",  # diente de ajo
+    "jugo", "jugos",  # jugo de limón
+    "tapita", "tapitas",  # tapita de vinagre
+    "hoja", "hojas",  # hoja de laurel
+    "rama", "ramas",  # rama de perejil
+    "rodaja", "rodajas",  # rodaja de limón
+]
+
+# Artículos y preposiciones para limpiar ingredientes
+ARTICULOS_PREPOSICIONES = [
+    "de", "del", "la", "el", "los", "las",
+    "al", "a", "con", "en", "un", "una", "unos", "unas"
+]
+
+# Tamaños y cualidades a remover
+TAMANOS_CUALIDADES = [
+    "grande", "grandes", "chico", "chicos", "chica", "chicas",
+    "mediano", "medianos", "mediana", "medianas",
+    "pequeño", "pequeños", "pequeña", "pequeñas",
+    "fresco", "frescos", "fresca", "frescas",
+    "maduro", "maduros", "madura", "maduras"
+]
+
+# Fracciones en texto
+FRACCIONES_TEXTO = [
+    "medio", "media", "un cuarto", "un tercio", "dos tercios",
+    "tres cuartos", "y medio", "y media"
+]
+
+# Fracciones unicode a remover
+FRACCIONES_UNICODE = r'[½¼¾⅓⅔⅛⅜⅝⅞]'
+
+# Patrones regex para remover al final del ingrediente (orden importa)
+PATRONES_FINAL = [
+    (r',\s*cantidad\s+necesaria.*$', 'IGNORECASE'),  # ", cantidad necesaria"
+    (r'\s+para\s+\w+.*$', 'IGNORECASE'),  # "para freír", "para hornear"
+    (r'\s+a\s+gusto.*$', 'IGNORECASE'),    # "a gusto"
+    (r'\s+al\s+gusto.*$', 'IGNORECASE'),   # "al gusto"
+    (r'\s+c/n.*$', 'IGNORECASE'),          # "c/n" (cantidad necesaria)
+    (r'\s*\(opcional\).*$', 'IGNORECASE'), # "(opcional)" con posible texto después
+    (r'\s+opcional.*$', 'IGNORECASE'),     # "opcional" al final
+    (r'\s+a\s+elección.*$', 'IGNORECASE')  # "a elección"
+]
+
+# Patrones regex para remover al principio del ingrediente
+PATRONES_INICIO = [
+    (r'^\(opcional\)\s*', 'IGNORECASE'),   # "(opcional)" al inicio
+    (r'^opcional\s+', 'IGNORECASE'),       # "opcional" al inicio
+]

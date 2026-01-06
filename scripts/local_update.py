@@ -4,6 +4,7 @@ Local Update - Actualización local de recetas
 Procesa recetas existentes para normalizar tags, aplicar sinónimos, etc.
 """
 
+import argparse
 from constants import RECIPES_FILE
 from services.parser_service import ParserService
 
@@ -63,8 +64,21 @@ def print_statistics(recipes, title="📊 Estadísticas"):
 
 def main():
     """Función principal que ejecuta la actualización local"""
+    # Parsear argumentos de línea de comandos
+    parser_args = argparse.ArgumentParser(
+        description="Actualización local de recetas: normaliza tags, genera campos faltantes, etc."
+    )
+    parser_args.add_argument(
+        "--force",
+        action="store_true",
+        help="Forzar la actualización de todos los campos, incluso los que ya existen"
+    )
+    args = parser_args.parse_args()
+    
     print("🔄 Local Update - Actualización de Recetas")
     print("=" * 50)
+    if args.force:
+        print("⚠️  Modo FORCE activado: se actualizarán todos los campos")
 
     # Inicializar parser
     parser = ParserService(RECIPES_FILE)
@@ -85,7 +99,7 @@ def main():
     changes_count = 0
 
     for i, recipe in enumerate(recipes, 1):
-        updated_recipe, changed = parser.refresh_recipe(recipe)
+        updated_recipe, changed = parser.refresh_recipe(recipe, force=args.force)
         updated_recipes.append(updated_recipe)
 
         if changed:
