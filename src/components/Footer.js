@@ -10,7 +10,7 @@ const Footer = () => {
   );
 
   const facebookUrl = useMemo(() => 
-    getFacebookProfileUrl('al.horno.con.papa', isMobile),
+    getFacebookProfileUrl('al.horno.con.papa', isMobile, '105051402450049'),
     []
   );
   return (

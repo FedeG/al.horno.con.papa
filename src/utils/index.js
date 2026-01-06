@@ -178,9 +178,9 @@ export const getInstagramProfileUrl = (username, isMobile) => {
  * @param {boolean} isMobile - Si es dispositivo móvil
  * @returns {string} URL de perfil
  */
-export const getFacebookProfileUrl = (username, isMobile) => {
+export const getFacebookProfileUrl = (username, isMobile, pageId) => {
     if (isMobile) {
-        return `fb://page?name=${username}`;
+        return `fb://page/${pageId}`;
     }
     return `https://www.facebook.com/${username}/`;
 };
