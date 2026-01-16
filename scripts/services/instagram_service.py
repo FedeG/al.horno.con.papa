@@ -88,7 +88,7 @@ class InstagramService:
 
         profile = instaloader.Profile.from_username(self.loader.context, self.username)
         posts = []
-        found_older_post = False
+        pinned_delta = 5
 
         try:
             for i, post in enumerate(profile.get_posts()):
@@ -98,29 +98,26 @@ class InstagramService:
                 )
 
                 if post.typename not in ["GraphImage", "GraphSidecar", "GraphVideo"]:
+                    print(f"    ⚠️  Tipo de post no soportado: {post.typename}, saltando")
                     continue
 
-                # Si el post no está pinned y tenemos fecha máxima
-                if (
-                    not post.is_pinned and post.mediaid not in PINNED_MEDIAIDS
-                ) and max_date:
-                    # Si encontramos un post más antiguo que nuestra fecha máxima, paramos
-                    if post.date_local < max_date:
-                        print(
-                            f"⏹️  Post {post.shortcode} es más antiguo ({post.date_local.strftime('%Y-%m-%d')}), deteniendo búsqueda"
-                        )
-                        found_older_post = True
-                        break
+                pinned = post.is_pinned or i < pinned_delta
+                # Si encontramos un post más antiguo que nuestra fecha máxima, paramos
+                if not pinned and max_date and post.date_local < max_date:
+                    print(
+                        f"⏹️  Post {post.shortcode} es más antiguo ({post.date_local.strftime('%Y-%m-%d')}), deteniendo búsqueda"
+                    )
+                    print(
+                        "📌 Se encontró un post no pinned más antiguo que la fecha máxima"
+                    )
+                    break
 
-                posts.append(post)
+                new_post = post.mediaid not in PINNED_MEDIAIDS
+                if new_post:
+                    posts.append(post)
 
                 # Pausa de medio segundo a un segundo para evitar rate limiting
                 time.sleep(0.5 + (random.random() * 0.5))
-
-            if found_older_post:
-                print(
-                    "📌 Se encontró un post no pinned más antiguo que la fecha máxima"
-                )
 
         except Exception as e:
             print(f"📦 Deteniendo búsqueda con {len(posts)} posts encontrados")
