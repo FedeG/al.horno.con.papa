@@ -9,7 +9,7 @@ from pathlib import Path
 from constants import RECIPES_FILE
 
 
-def extract_field(field_name, unique=False):
+def extract_field(field_name, unique=False, unsort=False):
     """
     Extrae un campo de todas las recetas y lo guarda en un archivo txt
     
@@ -47,9 +47,15 @@ def extract_field(field_name, unique=False):
     # Aplicar trim (strip), eliminar duplicados (unique) y ordenar (sort a-Z)
     values = [str(v).strip() for v in values if str(v).strip()]  # Trim y filtrar vacíos
     if unique:
-        values = sorted(set(values))  # Unique y sort
-    else:
-        values = sorted(values)  # Solo sort
+        seen = set()
+        unique_values = []
+        for v in values:
+            if v not in seen:
+                seen.add(v)
+                unique_values.append(v)
+        values = unique_values  # Unique manteniendo orden
+    if not unsort:
+        values = sorted(values) # sort
     
     # Guardar en archivo
     output_path = Path(__file__).parent.parent / "src" / "data" / f"{field_name}.txt"
@@ -77,9 +83,14 @@ def main():
         action="store_true",
         help="Eliminar duplicados y mantener solo valores únicos"
     )
+    parser.add_argument(
+        "--unsort",
+        action="store_true",
+        help="No ordenar los valores extraídos"
+    )
     
     args = parser.parse_args()
-    extract_field(args.field, unique=args.unique)
+    extract_field(args.field, unique=args.unique, unsort=args.unsort)
 
 
 if __name__ == "__main__":
