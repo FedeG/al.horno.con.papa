@@ -1,5 +1,6 @@
 import React, { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import { Routes, Route, useNavigate, useParams, useSearchParams } from 'react-router-dom';
+
 import './App.css';
 import { recipesData, featuredTags } from './data/recipes';
 import { Clock } from 'lucide-react';
@@ -17,6 +18,14 @@ import {
   findRelatedRecipes,
   paginateArray
 } from './utils';
+import {
+  trackPageView,
+  trackSearch,
+  trackTagClick,
+  trackEasyFilterToggle,
+  trackPagination,
+  trackAutocompleteSelection
+} from './utils/analytics';
 
 const RecipeList = () => {
   const navigate = useNavigate();
@@ -30,6 +39,11 @@ const RecipeList = () => {
   const [showEasyOnly, setShowEasyOnly] = useState(searchParams.get('easy') === 'true');
   const isInitialLoad = useRef(true);
   const recipesPerPage = 6;
+
+  // Track pageview
+  useEffect(() => {
+    trackPageView('/', 'Listado de Recetas');
+  }, []);
 
   // Debouncing effect para searchTerm
   useEffect(() => {
@@ -57,6 +71,13 @@ const RecipeList = () => {
     filterRecipes(recipesData, searchTerm, selectedTag, showEasyOnly),
     [searchTerm, selectedTag, showEasyOnly]
   );
+
+  // Track search when searchTerm changes
+  useEffect(() => {
+    if (searchTerm && !isInitialLoad.current) {
+      trackSearch(searchTerm, filteredRecipes.length);
+    }
+  }, [searchTerm, filteredRecipes.length]);
 
   // Pagination logic
   const totalPages = Math.ceil(filteredRecipes.length / recipesPerPage);
@@ -89,6 +110,17 @@ const RecipeList = () => {
     setInputValue(suggestion);
     setSearchTerm(suggestion);
     setShowAutocomplete(false);
+    
+    // Determinar tipo de sugerencia
+    const isIngredient = recipesData.some(r => 
+      r.ingredients.some(ing => ing.toLowerCase().includes(suggestion.toLowerCase()))
+    );
+    const isRecipe = recipesData.some(r => 
+      r.name.toLowerCase().includes(suggestion.toLowerCase())
+    );
+    const searchType = isIngredient ? 'ingredient' : (isRecipe ? 'recipe' : 'tag');
+    
+    trackAutocompleteSelection(suggestion, searchType);
   }, []);
 
   const handleSearchChange = useCallback((value) => {
@@ -97,7 +129,9 @@ const RecipeList = () => {
   }, []);
 
   const handlePageChange = useCallback((page) => {
-    setCurrentPage(Math.max(1, Math.min(page, totalPages)));
+    const newPage = Math.max(1, Math.min(page, totalPages));
+    setCurrentPage(newPage);
+    trackPagination(newPage, totalPages);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [totalPages]);
 
@@ -122,7 +156,10 @@ const RecipeList = () => {
       <TagFilter
         allTags={allTags}
         selectedTag={selectedTag}
-        onSelectTag={setSelectedTag}
+        onSelectTag={(tag) => {
+          setSelectedTag(tag);
+          trackTagClick(tag, tag !== 'Todas');
+        }}
         featuredTags={featuredTags}
       />
 
@@ -135,7 +172,11 @@ const RecipeList = () => {
           </h2>
           <button 
             className={`easy-filter-btn ${showEasyOnly ? 'active' : ''}`}
-            onClick={() => setShowEasyOnly(!showEasyOnly)}
+            onClick={() => {
+              const newValue = !showEasyOnly;
+              setShowEasyOnly(newValue);
+              trackEasyFilterToggle(newValue);
+            }}
           >
             <Clock size={16} /> Solo Rápidas y Fáciles
           </button>
@@ -167,6 +208,13 @@ const RecipeDetailPage = () => {
     recipesData.find(r => r.id === recipeId),
     [recipeId]
   );
+
+  // Track pageview cuando se carga la receta
+  useEffect(() => {
+    if (recipe) {
+      trackPageView(`/recipe/${recipeId}`, recipe.name);
+    }
+  }, [recipe, recipeId]);
 
   const relatedRecipes = useMemo(() => 
     findRelatedRecipes(recipesData, recipe),

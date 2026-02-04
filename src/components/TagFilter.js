@@ -1,5 +1,6 @@
 import React, { useRef, useCallback } from 'react';
 import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
+import { trackTagScroll } from '../utils/analytics';
 
 const TagFilter = ({ allTags, selectedTag, onSelectTag, featuredTags = [] }) => {
   const scrollContainerRef = useRef(null);
@@ -11,6 +12,7 @@ const TagFilter = ({ allTags, selectedTag, onSelectTag, featuredTags = [] }) => 
         left: direction === 'left' ? -scrollAmount : scrollAmount,
         behavior: 'smooth'
       });
+      trackTagScroll(direction);
     }
   }, []);
 

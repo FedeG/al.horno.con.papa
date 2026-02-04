@@ -1,5 +1,6 @@
 import React, { useCallback } from 'react';
 import { Search, X } from 'lucide-react';
+import { trackSearchClear } from '../utils/analytics';
 
 const SearchBar = ({ 
   searchTerm, 
@@ -36,6 +37,7 @@ const SearchBar = ({
   const handleClear = useCallback(() => {
     setSearchTerm('');
     setShowAutocomplete(false);
+    trackSearchClear();
   }, [setSearchTerm, setShowAutocomplete]);
 
   return (

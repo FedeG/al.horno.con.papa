@@ -1,16 +1,35 @@
-import React, { useMemo, useCallback } from 'react';
+import React, { useMemo, useCallback, useEffect } from 'react';
 import { ArrowLeft, Tag, Sparkles, ChefHat, Instagram, Facebook } from 'lucide-react';
 import { isMobile } from "react-device-detect";
 import { getInstagramEmbedUrl, getInstagramLinkUrl } from '../utils';
+import { 
+  trackRecipeView, 
+  trackRelatedRecipeClick, 
+  trackSocialClick, 
+  trackTagClickFromDetail,
+  trackVideoEmbed 
+} from '../utils/analytics';
 
 import Footer from './Footer';
 
 const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagClick }) => {
 
+  // Track recipe view
+  useEffect(() => {
+    trackRecipeView(recipe.id, recipe.name);
+  }, [recipe.id, recipe.name]);
+
   const embedUrl = useMemo(() => 
     getInstagramEmbedUrl(recipe.instagramUrl),
     [recipe.instagramUrl]
   );
+
+  // Track video embed cuando hay URL
+  useEffect(() => {
+    if (embedUrl) {
+      trackVideoEmbed(recipe.id, recipe.name);
+    }
+  }, [embedUrl, recipe.id, recipe.name]);
 
   const instagramLinkUrl = useMemo(() => 
     getInstagramLinkUrl(recipe.instagramUrl, recipe.shortcode, isMobile),
@@ -18,12 +37,14 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
   );
 
   const handleTagClick = useCallback((tag) => {
+    trackTagClickFromDetail(tag, recipe.id);
     onTagClick(tag);
-  }, [onTagClick]);
+  }, [onTagClick, recipe.id]);
 
   const handleSelectRecipe = useCallback((relatedRecipe) => {
+    trackRelatedRecipeClick(recipe.id, relatedRecipe.id, relatedRecipe.name);
     onSelectRecipe(relatedRecipe);
-  }, [onSelectRecipe]);
+  }, [onSelectRecipe, recipe.id]);
 
   const descriptionLines = useMemo(() => 
     recipe.description.split('\n'),
@@ -91,12 +112,19 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
               target='_blank'
               rel={isMobile ? 'noreferrer' : 'noopener noreferrer'}
               className="social-btn instagram"
+              onClick={() => trackSocialClick('instagram', recipe.id, recipe.name)}
             >
               <Instagram size={20} /> Ver en Instagram
             </a>
           )}
           {recipe.facebookUrl && (
-            <a href={recipe.facebookUrl} target="_blank" rel="noopener noreferrer" className="social-btn facebook">
+            <a 
+              href={recipe.facebookUrl} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="social-btn facebook"
+              onClick={() => trackSocialClick('facebook', recipe.id, recipe.name)}
+            >
               <Facebook size={20} /> Compartir en Facebook
             </a>
           )}
