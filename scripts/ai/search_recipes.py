@@ -13,11 +13,11 @@ def buscar_recetas(consulta, archivo_recetas="src/data/recipes_enriquecidas.json
     """
     Search recipes using natural language.
     Example: "Cena rápida sin gluten" or "Postre vegano fácil"
-    
+
     Args:
         consulta: Search query in natural language
         archivo_recetas: Path to enriched recipes JSON file
-        
+
     Returns:
         List of matching recipes
     """

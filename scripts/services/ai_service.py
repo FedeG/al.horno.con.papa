@@ -92,7 +92,7 @@ class AIService:
             modelos_disponibles = [m["model"] for m in modelos.get("models", [])]
             # Check if model exists with or without :latest tag
             return any(
-                self.modelo == m or self.modelo == m.split(':')[0] 
+                self.modelo == m or self.modelo == m.split(":")[0]
                 for m in modelos_disponibles
             )
         except:

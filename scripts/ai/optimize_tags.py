@@ -43,7 +43,9 @@ def generate_recipe_context(recipes, max_recipes=100):
             {
                 "id": idx,
                 "nombre": r.get("name", ""),
-                "ingredientes_principales": r.get("ingredients", "")[:100],  # Primeros 100 chars
+                "ingredientes_principales": r.get("ingredients", "")[
+                    :100
+                ],  # Primeros 100 chars
                 "categoria": r.get("categoria_cocina", "sin categoría"),
                 "dificultad": r.get("dificultad", "no especificada"),
                 "tags_actuales": r.get("tags_salud", []) + r.get("tags", []),

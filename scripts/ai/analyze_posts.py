@@ -11,11 +11,11 @@ import json
 def analizar_post_instagram(texto_post, modelo="llama3.2"):
     """
     Analyze Instagram post content using AI.
-    
+
     Args:
         texto_post: Instagram post caption text
         modelo: Ollama model to use
-        
+
     Returns:
         Dictionary with analysis results
     """
