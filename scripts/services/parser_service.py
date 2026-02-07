@@ -13,9 +13,16 @@ import sys
 # Agregar el directorio padre al path para importar constants
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from constants import (
-    EASY_TAG, TAGS_TO_SKIP, TAG_SYNONYMS, SECTION_END_MARKERS,
-    UNIDADES_MEDIDA, ARTICULOS_PREPOSICIONES, TAMANOS_CUALIDADES,
-    FRACCIONES_TEXTO, FRACCIONES_UNICODE, PATRONES_FINAL, PATRONES_INICIO
+    EASY_TAG,
+    TAGS_TO_SKIP,
+    TAG_SYNONYMS,
+    UNIDADES_MEDIDA,
+    ARTICULOS_PREPOSICIONES,
+    TAMANOS_CUALIDADES,
+    FRACCIONES_TEXTO,
+    FRACCIONES_UNICODE,
+    PATRONES_FINAL,
+    PATRONES_INICIO,
 )
 
 
@@ -99,8 +106,8 @@ class ParserService:
         for line in lines:
             # Detectar inicio de sección de ingredientes
             # Remover todos los emojis y espacios para comparar
-            line_clean = re.sub(r'[^\w\s]', '', line.lower()).strip()
-            
+            line_clean = re.sub(r"[^\w\s]", "", line.lower()).strip()
+
             if "ingredientes" in line_clean:
                 in_ingredients_section = True
                 continue
@@ -109,19 +116,29 @@ class ParserService:
             if in_ingredients_section:
                 # Verificar si es inicio de nueva sección
                 line_stripped = line.strip()
-                
+
                 # Salir si encontramos "pasos", "tareas", u otras secciones
-                if any(keyword in line_clean for keyword in ["pasos", "tareas", "preparacion", "procedimiento"]):
+                if any(
+                    keyword in line_clean
+                    for keyword in ["pasos", "tareas", "preparacion", "procedimiento"]
+                ):
                     break
-                
+
                 # Salir si la línea empieza con emojis de sección
-                if any(line_stripped.startswith(marker) for marker in ["👣", "🔪", "📝", "🍽️", "⏰", "👨‍👦", "🧒"]):
+                if any(
+                    line_stripped.startswith(marker)
+                    for marker in ["👣", "🔪", "📝", "🍽️", "⏰", "👨‍👦", "🧒"]
+                ):
                     break
 
             # Extraer ingredientes (líneas con •, -, o 🔸)
             if in_ingredients_section:
                 line = line.strip()
-                if line.startswith("•") or line.startswith("-") or line.startswith("🔸"):
+                if (
+                    line.startswith("•")
+                    or line.startswith("-")
+                    or line.startswith("🔸")
+                ):
                     # Remover el marcador (•, -, o 🔸)
                     ingredient = line[1:].strip()
                     if ingredient:
@@ -213,7 +230,7 @@ class ParserService:
             dict: Objeto de receta
         """
         caption = post.caption if post.caption else ""
-        post_type = 'reel' if post.is_video else 'p'        
+        post_type = "reel" if post.is_video else "p"
         post_url = f"https://www.instagram.com/{post_type}/{post.shortcode}/"
         tags = self.extract_hashtags(post)
 
@@ -229,7 +246,7 @@ class ParserService:
             "date": post.date_local.isoformat(),
             "easy": EASY_TAG.capitalize() in tags,
             "hidden": False,
-            "shortcode": post.shortcode
+            "shortcode": post.shortcode,
         }
         recipe["cleaned_ingredientes"] = self.get_cleaned_ingredients(recipe)
 
@@ -238,115 +255,142 @@ class ParserService:
     def get_hidden_status(self, recipe):
         """
         Determina si una receta debe estar oculta
-        
+
         Args:
             recipe: Receta a verificar
-            
+
         Returns:
             bool: False por ahora (todas las recetas visibles)
         """
         return False
-    
+
     def get_cleaned_ingredients(self, recipe, field="ingredients"):
         """
         Limpia los ingredientes removiendo cantidades, unidades, tamaños, etc.
         Toda la configuración de qué remover está en constants.py para fácil modificación.
-        
+
         Args:
             recipe: Receta con ingredientes
-            
+
         Returns:
             list: Lista de ingredientes limpios únicos y singularizados
         """
         ingredients = recipe.get(field, [])
         if not ingredients:
             return []
-        
+
         cleaned_set = set()  # Usar set para evitar duplicados
-        
+
         for ingredient in ingredients:
             # Separar por " y " o " o " para casos como "sal y pimienta" o "tapita o cucharadita"
             # Primero separar por "o", luego cada parte por "y"
-            parts_or = ingredient.split(' o ')
+            parts_or = ingredient.split(" o ")
             parts = []
             for part_or in parts_or:
-                parts.extend(part_or.split(' y '))
-            
+                parts.extend(part_or.split(" y "))
+
             for part in parts:
                 cleaned_ing = part.strip()
-                
+
                 # 1. Remover patrones al final PRIMERO (antes de otras operaciones)
                 # Esto resuelve "Alcaparras a gusto (opcional)" correctamente
                 for patron, flag in PATRONES_FINAL:
-                    flags = re.IGNORECASE if flag == 'IGNORECASE' else 0
-                    cleaned_ing = re.sub(patron, '', cleaned_ing, flags=flags)
-                
+                    flags = re.IGNORECASE if flag == "IGNORECASE" else 0
+                    cleaned_ing = re.sub(patron, "", cleaned_ing, flags=flags)
+
                 # 2. Remover patrones al inicio
                 for patron, flag in PATRONES_INICIO:
-                    flags = re.IGNORECASE if flag == 'IGNORECASE' else 0
-                    cleaned_ing = re.sub(patron, '', cleaned_ing, flags=flags)
-                
+                    flags = re.IGNORECASE if flag == "IGNORECASE" else 0
+                    cleaned_ing = re.sub(patron, "", cleaned_ing, flags=flags)
+
                 # 3. Remover tamaños/cualidades al final (antes de procesar el inicio)
-                tamanos_pattern = '|'.join([re.escape(t) for t in TAMANOS_CUALIDADES])
-                cleaned_ing = re.sub(r'\s+(' + tamanos_pattern + r')$', '', cleaned_ing, flags=re.IGNORECASE)
-                
+                tamanos_pattern = "|".join([re.escape(t) for t in TAMANOS_CUALIDADES])
+                cleaned_ing = re.sub(
+                    r"\s+(" + tamanos_pattern + r")$",
+                    "",
+                    cleaned_ing,
+                    flags=re.IGNORECASE,
+                )
+
                 # 4. Remover fracciones unicode (½, ¼, etc)
-                cleaned_ing = re.sub(FRACCIONES_UNICODE, '', cleaned_ing)
-                
+                cleaned_ing = re.sub(FRACCIONES_UNICODE, "", cleaned_ing)
+
                 # 5. Remover fracciones en texto al inicio
-                fracciones_pattern = '|'.join([re.escape(f) for f in FRACCIONES_TEXTO])
-                cleaned_ing = re.sub(r'^(' + fracciones_pattern + r')\s+', '', cleaned_ing, flags=re.IGNORECASE)
-                
+                fracciones_pattern = "|".join([re.escape(f) for f in FRACCIONES_TEXTO])
+                cleaned_ing = re.sub(
+                    r"^(" + fracciones_pattern + r")\s+",
+                    "",
+                    cleaned_ing,
+                    flags=re.IGNORECASE,
+                )
+
                 # 6. Remover cantidades numéricas al inicio
-                cleaned_ing = re.sub(r'^\d+[\./]?\d*\s*', '', cleaned_ing)
-                
+                cleaned_ing = re.sub(r"^\d+[\./]?\d*\s*", "", cleaned_ing)
+
                 # 7. Remover unidades de medida al inicio (incluye "jugo", "diente", etc)
-                unidades_pattern = '|'.join([re.escape(u) for u in UNIDADES_MEDIDA])
-                cleaned_ing = re.sub(r'^(' + unidades_pattern + r')\b\s*', '', cleaned_ing, flags=re.IGNORECASE)
-                
+                unidades_pattern = "|".join([re.escape(u) for u in UNIDADES_MEDIDA])
+                cleaned_ing = re.sub(
+                    r"^(" + unidades_pattern + r")\b\s*",
+                    "",
+                    cleaned_ing,
+                    flags=re.IGNORECASE,
+                )
+
                 # 8. Remover artículos/preposiciones al inicio (repetir para casos como "de medio")
-                articulos_pattern = '|'.join([re.escape(a) for a in ARTICULOS_PREPOSICIONES])
+                articulos_pattern = "|".join(
+                    [re.escape(a) for a in ARTICULOS_PREPOSICIONES]
+                )
                 for _ in range(4):  # Aumentar iteraciones para casos complejos
                     before = cleaned_ing
-                    cleaned_ing = re.sub(r'^(' + articulos_pattern + r')\b\s+', '', cleaned_ing, flags=re.IGNORECASE)
+                    cleaned_ing = re.sub(
+                        r"^(" + articulos_pattern + r")\b\s+",
+                        "",
+                        cleaned_ing,
+                        flags=re.IGNORECASE,
+                    )
                     if before == cleaned_ing:
                         break
-                
+
                 # 9. Remover tamaños/cualidades al principio (si quedaron)
-                cleaned_ing = re.sub(r'^(' + tamanos_pattern + r')\s+', '', cleaned_ing, flags=re.IGNORECASE)
-                
+                cleaned_ing = re.sub(
+                    r"^(" + tamanos_pattern + r")\s+",
+                    "",
+                    cleaned_ing,
+                    flags=re.IGNORECASE,
+                )
+
                 # 10. Limpiar espacios extras
-                cleaned_ing = ' '.join(cleaned_ing.split())
-                
+                cleaned_ing = " ".join(cleaned_ing.split())
+
                 # 11. Remover paréntesis sueltos (abiertos sin cerrar o cerrados sin abrir)
                 # Contar paréntesis
-                open_count = cleaned_ing.count('(')
-                close_count = cleaned_ing.count(')')
-                
+                open_count = cleaned_ing.count("(")
+                close_count = cleaned_ing.count(")")
+
                 # Si hay desbalance, remover todos los paréntesis
                 if open_count != close_count:
-                    cleaned_ing = cleaned_ing.replace('(', '').replace(')', '')
+                    cleaned_ing = cleaned_ing.replace("(", "").replace(")", "")
                     cleaned_ing = cleaned_ing.strip()
-                
+
                 # 12. Convertir a minúsculas
                 cleaned_ing = cleaned_ing.lower()
-                
+
                 # 13. Singularizar
                 cleaned_ing = self._singularize(cleaned_ing)
-                
+
                 # Agregar al set si no está vacío
                 if cleaned_ing:
                     cleaned_set.add(cleaned_ing)
-        
+
         return sorted(list(cleaned_set))
-    
+
     def _singularize(self, word):
         """
         Convierte palabras del plural al singular (reglas básicas del español)
-        
+
         Args:
             word: Palabra o frase a singularizar
-            
+
         Returns:
             str: Palabra singularizada
         """
@@ -354,60 +398,60 @@ class ParserService:
         words = word.split()
         if len(words) > 1:
             words[-1] = self._singularize_word(words[-1])
-            return ' '.join(words)
+            return " ".join(words)
         else:
             return self._singularize_word(word)
-    
+
     def _singularize_word(self, word):
         """
         Singulariza una sola palabra
-        
+
         Args:
             word: Palabra a singularizar
-            
+
         Returns:
             str: Palabra en singular
         """
         if len(word) < 3:
             return word
-        
+
         # Reglas de singularización en español
         # -ces -> -z (nueces -> nuez)
-        if word.endswith('ces'):
-            return word[:-3] + 'z'
-        
+        if word.endswith("ces"):
+            return word[:-3] + "z"
+
         # -es después de consonante -> remover -es (limones -> limón)
-        if word.endswith('es') and len(word) > 3 and word[-3] not in 'aeiouáéíóú':
+        if word.endswith("es") and len(word) > 3 and word[-3] not in "aeiouáéíóú":
             return word[:-2]
-        
+
         # -s después de vocal -> remover -s (huevos -> huevo, tomates -> tomate)
-        if word.endswith('s') and word[-2] in 'aeiouáéíóú':
+        if word.endswith("s") and word[-2] in "aeiouáéíóú":
             return word[:-1]
-        
+
         return word
-    
+
     def get_shortcode(self, recipe):
         """
         Extrae el shortcode de la URL de Instagram
         Formatos soportados:
         - https://<dominio>/p/shortcode/
         - https://<dominio>/reel/shortcode/
-        
+
         Args:
             recipe: Receta con instagramUrl
-            
+
         Returns:
             str: Shortcode extraído o cadena vacía si no se encuentra
         """
         instagram_url = recipe.get("instagramUrl", "")
         if not instagram_url:
             return ""
-        
+
         # Patrón para extraer shortcode de URLs /p/ o /reel/
-        match = re.search(r'/(p|reel)/([A-Za-z0-9_-]+)', instagram_url)
+        match = re.search(r"/(p|reel)/([A-Za-z0-9_-]+)", instagram_url)
         if match:
             return match.group(2)
-        
+
         return ""
 
     def normalize_tags(self, tags, recipe_name=""):
@@ -428,7 +472,7 @@ class ParserService:
 
         # Limpiar el nombre de la receta para comparaciones (quitar emojis y normalizar)
         # Esto hace que "👨🏼‍🍳 Hummus 👨🏼‍🍳" sea simplemente "hummus"
-        clean_name = re.sub(r'[^\w\s]', '', recipe_name.lower()).strip()
+        clean_name = re.sub(r"[^\w\s]", "", recipe_name.lower()).strip()
         clean_name_joined = clean_name.replace(" ", "")
         name_words = set(clean_name.split())
 
@@ -442,7 +486,11 @@ class ParserService:
 
             # 2. Omitir si el tag ya es parte del nombre de la receta
             # (Si la receta se llama "Pan casero", no hace falta el tag "pan")
-            if tag_clean in name_words or tag_clean in clean_name or tag_clean.replace(" ", "") in clean_name_joined:
+            if (
+                tag_clean in name_words
+                or tag_clean in clean_name
+                or tag_clean.replace(" ", "") in clean_name_joined
+            ):
                 continue
 
             # 3. Buscar sinónimos para estandarizar
@@ -490,15 +538,17 @@ class ParserService:
         # Verificar si hubo cambios
         changed = force or set(current_tags) != set(normalized_tags)
 
-        if force or (EASY_TAG.capitalize() in normalized_tags and not recipe.get("easy", False)):
+        if force or (
+            EASY_TAG.capitalize() in normalized_tags and not recipe.get("easy", False)
+        ):
             updated_recipe["easy"] = True
             changed = True
-        
+
         # Verificar y generar campo 'hidden' si no existe
         if force or "hidden" not in recipe:
             updated_recipe["hidden"] = self.get_hidden_status(recipe)
             changed = True
-        
+
         # Verificar y generar campo 'ingredients' si no existe o está vacío
         ingredients = recipe.get("ingredients")
         if force or not ingredients:
@@ -509,12 +559,14 @@ class ParserService:
                 if extracted_ingredients:
                     updated_recipe["ingredients"] = extracted_ingredients
                     changed = True
-        
+
         # Verificar y generar campo 'cleaned_ingredientes' si no existe
         if force or "cleaned_ingredientes" not in recipe:
-            updated_recipe["cleaned_ingredientes"] = self.get_cleaned_ingredients(updated_recipe)
+            updated_recipe["cleaned_ingredientes"] = self.get_cleaned_ingredients(
+                updated_recipe
+            )
             changed = True
-        
+
         # Verificar y generar campo 'shortcode' si no existe
         if force or "shortcode" not in recipe:
             updated_recipe["shortcode"] = self.get_shortcode(recipe)

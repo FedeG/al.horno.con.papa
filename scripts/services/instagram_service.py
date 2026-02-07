@@ -98,7 +98,9 @@ class InstagramService:
                 )
 
                 if post.typename not in ["GraphImage", "GraphSidecar", "GraphVideo"]:
-                    print(f"    ⚠️  Tipo de post no soportado: {post.typename}, saltando")
+                    print(
+                        f"    ⚠️  Tipo de post no soportado: {post.typename}, saltando"
+                    )
                     continue
 
                 pinned = post.is_pinned or i < pinned_delta
