@@ -156,7 +156,11 @@ INSTRUCCIONES CRÍTICAS:
 1. TAGS (3-6 tags):
    - PRIORIZA los tags de la lista del contexto global (ya validados)
    - PUEDES agregar tags nuevos si son relevantes y útiles para búsqueda
-   - Ejemplos de tags nuevos útiles: "Fruta", "Sin gluten", "Vegano", etc.
+   - ADVERTENCIA RESTRICCIONES DIETÉTICAS: Ten MUCHO CUIDADO con tags como "Sin gluten", "Vegano", "Vegetariano"
+     * "Sin gluten": SOLO si NO tiene harina de trigo, avena, cebada o centeno
+     * "Vegano": SOLO si NO tiene ningún ingrediente animal (carne, huevo, lácteos, miel)
+     * "Vegetariano": SOLO si NO tiene carne ni pescado (puede tener huevo/lácteos)
+   - NO asumas: "harina 000" = harina de trigo (contiene gluten)
    - VERIFICA que cada tag sea RELEVANTE para esta receta específica
    - Ejemplos de errores: NO pongas "Postres" en pizza, puré o platos salados
    - Prioridad: ingrediente principal → tipo de plato → característica especial
@@ -182,7 +186,7 @@ NO agregues campos nuevos. SOLO devuelve estos 3 campos.
     )
     
     # Generar respuesta JSON usando el servicio
-    result = ai_service.generar_json(prompt, temperatura=0.3, max_tokens=400)
+    result = ai_service.generar_json(prompt, temperatura=0.3, max_tokens=600)
     
     if result:
         # Actualizar SOLO los campos que la IA devolvió

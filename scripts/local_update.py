@@ -71,10 +71,10 @@ def main():
     parser_args.add_argument(
         "--force",
         action="store_true",
-        help="Forzar la actualización de todos los campos, incluso los que ya existen"
+        help="Forzar la actualización de todos los campos, incluso los que ya existen",
     )
     args = parser_args.parse_args()
-    
+
     print("🔄 Local Update - Actualización de Recetas")
     print("=" * 50)
     if args.force:
@@ -109,7 +109,9 @@ def main():
                 original_tags = recipe.get("tags", [])
 
             print(f"  ✨ [{i}/{len(recipes)}] {recipe.get('name', 'Sin nombre')}")
-            print(f"     Easy: {recipe.get('easy', False)} -> {updated_recipe.get('easy', False)}")
+            print(
+                f"     Easy: {recipe.get('easy', False)} -> {updated_recipe.get('easy', False)}"
+            )
             print(f"     Originales: {original_tags}")
             print(f"     Antes: {recipe.get('tags', [])}")
             print(f"     Después: {updated_recipe.get('tags', [])}")
