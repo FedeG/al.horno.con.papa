@@ -96,15 +96,18 @@ Ver [scripts/README.md](scripts/README.md) para documentación completa de los s
 │   ├── App.css              # Estilos globales
 │   └── index.js             # Entry point
 ├── scripts/
-│   ├── main.py              # Sincronización desde Instagram
+│   ├── main.py               # Sincronización desde Instagram
+│   ├── ia_main.py           # Punto de entrada para features de IA
 │   ├── local_update.py      # Actualización local de recetas
 │   ├── extract_field.py     # Extractor de campos a txt
 │   ├── fix_reel_urls.py     # Corrector de URLs /p/ → /reel/
 │   ├── constants.py         # Configuración centralizada
 │   ├── requirements.txt     # Dependencias Python
+│   ├── ai/                  # Scripts de IA (Ollama, etc.)
 │   ├── services/
 │   │   ├── instagram_service.py  # Servicio de Instagram
-│   │   └── parser_service.py     # Servicio de parsing
+│   │   ├── parser_service.py     # Servicio de parsing
+│   │   └── ai_service.py         # Servicio de IA
 │   └── README.md            # Documentación de scripts
 ├── ia.md                    # 🚀 Próxima feature: IA con Ollama
 ├── deploy.sh                # Script de deploy manual
