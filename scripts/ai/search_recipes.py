@@ -60,7 +60,7 @@ def buscar_recetas(consulta, archivo_recetas="src/data/recipes_enriquecidas.json
 
         # Retornar las recetas completas
         return [recetas[i] for i in ids if i < len(recetas)]
-    except:
+    except (KeyError, ValueError, TypeError, json.JSONDecodeError):
         return []
 
 
