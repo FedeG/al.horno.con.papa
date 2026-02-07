@@ -62,7 +62,7 @@ def optimize_tags_with_context(input_file, output_file, model="llama3"):
     Usa llama3 (8B) para mejor análisis, o llama3.2 si tienes poca VRAM.
     """
     print("📚 Cargando recetas...")
-    with open(archivo_recetas, "r", encoding="utf-8") as f:
+    with open(input_file, "r", encoding="utf-8") as f:
         recetas = json.load(f)
 
     total_recetas = len(recetas)
@@ -70,7 +70,7 @@ def optimize_tags_with_context(input_file, output_file, model="llama3"):
 
     # Analizar tags existentes
     print("🔍 Analizando tags actuales...")
-    estadisticas = analizar_tags_existentes(recetas)
+    estadisticas = analyze_existing_tags(recetas)
 
     print(f"  • Tags únicos existentes: {estadisticas['total_tags_unicos']}")
     print(
@@ -83,8 +83,8 @@ def optimize_tags_with_context(input_file, output_file, model="llama3"):
 
     # Generar contexto global
     print("🧠 Generando análisis global con IA...")
-    contexto_recetas = generar_contexto_recetas(
-        recetas, max_recetas=min(100, total_recetas)
+    contexto_recetas = generate_recipe_context(
+        recetas, max_recipes=min(100, total_recetas)
     )
 
     prompt_analisis_global = f"""
@@ -116,7 +116,7 @@ def optimize_tags_with_context(input_file, output_file, model="llama3"):
     """
 
     response_global = ollama.generate(
-        model=modelo,
+        model=model,
         prompt=prompt_analisis_global,
         options={
             "temperature": 0.4,
@@ -203,7 +203,7 @@ def optimize_tags_with_context(input_file, output_file, model="llama3"):
 
         try:
             response = ollama.generate(
-                model=modelo,
+                model=model,
                 prompt=prompt_receta,
                 options={"temperature": 0.2, "num_predict": 400},
             )
@@ -246,17 +246,17 @@ def optimize_tags_with_context(input_file, output_file, model="llama3"):
         "timestamp": "2026-02-04",
     }
 
-    with open(archivo_salida, "w", encoding="utf-8") as f:
+    with open(output_file, "w", encoding="utf-8") as f:
         json.dump(resultado_final, f, indent=2, ensure_ascii=False)
 
     print("\n✅ Optimización completada!")
-    print(f"📁 Resultado guardado en: {archivo_salida}")
+    print(f"📁 Resultado guardado en: {output_file}")
 
     # Generar reporte de cambios
-    generar_reporte_optimizacion(recetas_optimizadas, analisis_global)
+    generate_optimization_report(recetas_optimizadas, analisis_global)
 
 
-def generar_reporte_optimizacion(recetas, analisis_global):
+def generate_optimization_report(recetas, analisis_global):
     """
     Genera un reporte legible de los cambios realizados.
     """

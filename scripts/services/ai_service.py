@@ -95,8 +95,9 @@ class AIService:
                 self.modelo == m or self.modelo == m.split(":")[0]
                 for m in modelos_disponibles
             )
-        except:
-            return False
+        except Exception:
+            pass
+        return False
 
     def listar_modelos_disponibles(self) -> List[str]:
         """
@@ -108,8 +109,9 @@ class AIService:
         try:
             modelos = ollama.list()
             return [m["model"] for m in modelos.get("models", [])]
-        except:
-            return []
+        except Exception:
+            pass
+        return []
 
 
 # Convenience function to create service instance

@@ -42,7 +42,7 @@ def analizar_post_instagram(texto_post, modelo="llama3.2"):
         start = clean_res.find("{")
         end = clean_res.rfind("}") + 1
         return json.loads(clean_res[start:end])
-    except:
+    except Exception:
         return None
 
 
