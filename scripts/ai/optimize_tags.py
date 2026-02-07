@@ -162,7 +162,12 @@ def optimize_tags_with_context(input_file, output_file, model="llama3"):
         # Aplicar reglas automáticas
         tags_auto = set()
         nombre_lower = receta.get("name", "").lower()
-        ingredientes_lower = receta.get("ingredients", "").lower()
+        ingredientes = receta.get("ingredients", "")
+        if isinstance(ingredientes, list):
+            ingredientes_texto = " ".join(str(i) for i in ingredientes)
+        else:
+            ingredientes_texto = str(ingredientes)
+        ingredientes_lower = ingredientes_texto.lower()
         texto_completo = f"{nombre_lower} {ingredientes_lower}"
 
         for regla in reglas:
