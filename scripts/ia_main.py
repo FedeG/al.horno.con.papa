@@ -9,8 +9,7 @@ to add additional information like tags, difficulty, times, etc.
 import argparse
 import json
 import sys
-from pathlib import Path
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any
 from collections import Counter
 
 # Import AI service
