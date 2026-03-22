@@ -15,7 +15,7 @@ export const generateRecipeSchema = (recipe, baseUrl = 'https://alhornoconpapa.c
       name: 'Al Horno Con Papá',
       url: baseUrl
     },
-    recipeCategory: recipe.tags ? recipe.tags[0] : 'recipe',
+    recipeCategory: recipe.tags?.length ? recipe.tags[0] : 'recipe',
     recipeCuisine: 'Argentine',
     prepTime: `PT${prepTime}M`,
     totalTime: `PT${prepTime}M`,
