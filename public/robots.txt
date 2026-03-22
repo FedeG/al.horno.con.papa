@@ -7,7 +7,6 @@ Disallow: /?*page=
 
 # Sitemaps
 Sitemap: https://alhornoconpapa.com.ar/sitemap.xml
-Sitemap: https://alhornoconpapa.com.ar/sitemap-recipes.xml
 
 # Google
 User-agent: Googlebot
