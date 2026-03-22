@@ -62,6 +62,18 @@ def main():
         new_recipes.append(recipe)
         print(f"✨ Nueva: {recipe['name']} - {len(recipe['tags'])} tags")
 
+    # Generar slugs únicos para las nuevas recetas
+    if new_recipes:
+        # Combinar recetas existentes + nuevas para generar slugs únicos
+        all_recipes_for_slug = existing_recipes + new_recipes
+        
+        for i, recipe in enumerate(new_recipes):
+            recipe["slug"] = parser.generate_unique_slug(
+                recipe["name"], all_recipes_for_slug
+            )
+            # Actualizar el slug en la lista combinada para evitar colisiones entre recetas nuevas
+            all_recipes_for_slug[len(existing_recipes) + i] = recipe
+
     # Combinar todas las recetas (existentes + nuevas)
     all_recipes = existing_recipes + new_recipes
 

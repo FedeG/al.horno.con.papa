@@ -9,6 +9,8 @@ import {
   trackTagClickFromDetail,
   trackVideoEmbed 
 } from '../utils/analytics';
+import SEO from './SEO';
+import { generateRecipeSchema } from '../utils/seoHelpers';
 
 import Footer from './Footer';
 
@@ -51,8 +53,35 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
     [recipe.description]
   );
 
+  const slug = recipe.slug;
+
+  const canonicalUrl = useMemo(() => 
+    `https://alhornoconpapa.com.ar/recipe/${slug}`,
+    [slug]
+  );
+
+  const recipeSchema = useMemo(() => 
+    generateRecipeSchema(recipe),
+    [recipe]
+  );
+
+  const shortDescription = useMemo(() => {
+    const descText = recipe.description.split('\n')[1] || '';
+    return descText.substring(0, 160).trim();
+  }, [recipe.description]);
+
   return (
     <div className="detail-view">
+      <SEO 
+        title={recipe.name}
+        description={shortDescription}
+        imageUrl={recipe.imageUrl}
+        imageAlt={recipe.name}
+        canonicalUrl={canonicalUrl}
+        keywords={recipe.tags.join(', ')}
+        schema={recipeSchema}
+        ogType="article"
+      />
       <div className="detail-header">
         <button className="back-btn" onClick={onBack}>
           <ArrowLeft size={24} />

@@ -6,10 +6,12 @@ const Header = () => {
     <header className="header">
       <div className="header-content">
         <div className="logo">
-          <ChefHat size={32} />
-          <h1>Al Horno Con Papá</h1>
+          <ChefHat size={64} />
+          <div className="title">
+            <h1>Al Horno Con Papá</h1>
+            <p className="subtitle">Recetas reales para cocinar en familia</p>
+          </div>
         </div>
-        <p className="subtitle">Recetas reales para cocinar en familia</p>
       </div>
     </header>
   );
