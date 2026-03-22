@@ -1,5 +1,14 @@
 import recipes from '../data/recipes.json';
 
+// Escapar caracteres especiales XML
+const escapeXml = (str) =>
+  str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+
 // Generar sitemap XML dinámico
 const generateSitemap = () => {
   const baseUrl = 'https://alhornoconpapa.com.ar';
@@ -28,7 +37,7 @@ const generateSitemap = () => {
       if (recipe.imageUrl) {
         xml += `    <image:image>\n`;
         xml += `      <image:loc>${baseUrl}/${recipe.imageUrl}</image:loc>\n`;
-        xml += `      <image:title>${recipe.name}</image:title>\n`;
+        xml += `      <image:title>${escapeXml(recipe.name)}</image:title>\n`;
         xml += `    </image:image>\n`;
       }
       xml += `  </url>\n`;

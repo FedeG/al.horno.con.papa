@@ -14,6 +14,15 @@ const path = require('path');
 const recipesPath = path.join(__dirname, '../src/data/recipes.json');
 const recipes = JSON.parse(fs.readFileSync(recipesPath, 'utf8'));
 
+// Escapar caracteres especiales XML
+const escapeXml = (str) =>
+  str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+
 // Generar sitemap XML
 const baseUrl = 'https://alhornoconpapa.com.ar';
 const today = new Date().toISOString().split('T')[0];
@@ -41,7 +50,7 @@ recipes.forEach((recipe) => {
     if (recipe.imageUrl) {
       xml += `    <image:image>\n`;
       xml += `      <image:loc>${baseUrl}/${recipe.imageUrl}</image:loc>\n`;
-      xml += `      <image:title>${recipe.name.replace(/&/g, '&amp;').replace(/"/g, '&quot;')}</image:title>\n`;
+      xml += `      <image:title>${escapeXml(recipe.name)}</image:title>\n`;
       xml += `    </image:image>\n`;
     }
     
