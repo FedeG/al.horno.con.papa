@@ -152,14 +152,13 @@ class ParserService:
         changes = []
         
         for base_slug, indices in duplicates.items():
-            # Regenerar slugs para todos los duplicados
-            for position, idx in enumerate(indices):
+            # Dejar el primero con base_slug para mantener URLs estables,
+            # regenerar slugs únicos solo para los restantes duplicados
+            for idx in indices[1:]:
                 recipe_name = updated[idx].get("name", "")
-                # Usar generate_unique_slug con las recetas actuales
+                old_slug = updated[idx].get("slug", "")
                 new_slug = self.generate_unique_slug(recipe_name, updated)
-                
-                if new_slug != base_slug:  # Solo guardar cambios reales
-                    old_slug = updated[idx].get("slug", "")
+                if new_slug != old_slug:
                     updated[idx]["slug"] = new_slug
                     changes.append({
                         "recipe": recipe_name,
