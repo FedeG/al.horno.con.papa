@@ -6,6 +6,7 @@ Maneja el procesamiento de datos: parsing de captions, manejo de JSON, etc.
 
 import re
 import json
+import unicodedata
 from pathlib import Path
 from datetime import datetime
 import sys
@@ -45,6 +46,7 @@ class ParserService:
         
         Procesa:
         - Convierte a minúsculas
+        - Remueve tildes y acentos (toné → tone, café → cafe)
         - Elimina caracteres especiales (incluyendo emojis)
         - Reemplaza espacios con guiones
         - Elimina guiones múltiples
@@ -62,17 +64,21 @@ class ParserService:
         # 1. Convertir a minúsculas
         slug = recipe_name.lower()
         
-        # 2. Eliminar caracteres especiales (mantiene solo letras, números, espacios y guiones)
+        # 2. Remover tildes y acentos normalizando a NFD y eliminando diacríticos
+        texto_normalizado = unicodedata.normalize('NFD', slug)
+        slug = ''.join(c for c in texto_normalizado if unicodedata.category(c) != 'Mn')
+        
+        # 3. Eliminar caracteres especiales (mantiene solo letras, números, espacios y guiones)
         # Esto elimina emojis y otros caracteres especiales
         slug = re.sub(r'[^\w\s-]', '', slug, flags=re.UNICODE)
         
-        # 3. Reemplazar espacios múltiples con un solo guión
+        # 4. Reemplazar espacios múltiples con un solo guión
         slug = re.sub(r'\s+', '-', slug.strip())
         
-        # 4. Eliminar guiones múltiples
+        # 5. Eliminar guiones múltiples
         slug = re.sub(r'-+', '-', slug)
         
-        # 5. Eliminar guiones al inicio y final
+        # 6. Eliminar guiones al inicio y final
         slug = slug.strip('-')
         
         return slug
