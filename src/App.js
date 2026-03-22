@@ -138,7 +138,8 @@ const RecipeList = () => {
   }, [totalPages]);
 
   const handleSelectRecipe = useCallback((recipe) => {
-    navigate(`/recipe/${recipe.slug}`);
+    const slugOrId = recipe.slug && recipe.slug.trim() ? recipe.slug : String(recipe.id);
+    navigate(`/recipe/${slugOrId}`);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [navigate]);
 
