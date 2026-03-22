@@ -33,6 +33,7 @@ xml += `  </url>\n`;
 recipes.forEach((recipe) => {
   if (!recipe.hidden) {
     const slug = recipe.slug;
+    xml += `  <url>\n`;
     xml += `    <loc>${baseUrl}/recipe/${slug}</loc>\n`;
     xml += `    <lastmod>${recipe.date ? recipe.date.split('T')[0] : today}</lastmod>\n`;
     xml += `    <changefreq>monthly</changefreq>\n`;
