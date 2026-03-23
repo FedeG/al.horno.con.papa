@@ -13,9 +13,12 @@ const parseRecipeSteps = (description, slug, imageUrl, baseUrl = 'https://alhorn
   const stepsLines = tipIndex > -1 ? stepsSection.slice(0, tipIndex) : stepsSection;
   
   return stepsLines
-    .filter(line => line.trim().startsWith('•'))
-    .map(line => line.replace(/^\s*•\s*/, '').trim())
-    .filter(line => line.length > 0)
+    // Soporta bullets con "•", "-", y listas numeradas tipo "1." o "2)"
+    .map((line) => {
+      const match = line.match(/^\s*(?:[•\-]|\d+[.)])\s*(.+)$/);
+      return match ? match[1].trim() : '';
+    })
+    .filter((text) => text.length > 0)
     .map((text, index) => ({
       '@type': 'HowToStep',
       name: `Paso ${index + 1}`,
