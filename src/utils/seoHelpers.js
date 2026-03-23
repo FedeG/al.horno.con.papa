@@ -24,9 +24,9 @@ const parseRecipeSteps = (description, slug, imageUrl, baseUrl = 'https://alhorn
 
 // Genera schema JSON-LD para una receta
 export const generateRecipeSchema = (recipe, baseUrl = 'https://alhornoconpapa.com.ar') => {
-  // Parsear tiempo de preparación del texto de descripción
+  // Parsear tiempo total de la receta desde el texto de descripción
   const timeMatch = recipe.description.match(/⏳\s*Tiempo:\s*(\d+)\s*minutos/);
-  const prepTime = timeMatch ? parseInt(timeMatch[1]) : 20;
+  const timeMinutes = timeMatch ? parseInt(timeMatch[1]) : 20;
   
   // Parsear los pasos de la receta
   const recipeSteps = parseRecipeSteps(recipe.description, recipe.slug, recipe.imageUrl, baseUrl);
@@ -59,9 +59,8 @@ export const generateRecipeSchema = (recipe, baseUrl = 'https://alhornoconpapa.c
     },
     recipeCategory: recipe.tags?.length ? recipe.tags[0] : 'Recipe',
     recipeCuisine: 'Argentine',
-    prepTime: `PT${Math.ceil(prepTime * 0.25)}M`,
-    cookTime: `PT${prepTime}M`,
-    totalTime: `PT${Math.ceil(prepTime * 1.25)}M`,
+    // Solo se publica totalTime porque la descripción no distingue entre prepTime y cookTime
+    totalTime: `PT${timeMinutes}M`,
     recipeYield: '4 porciones',
     recipeIngredient: recipe.ingredients && recipe.ingredients.length > 0 
       ? recipe.ingredients 
