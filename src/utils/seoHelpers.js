@@ -17,7 +17,7 @@ const parseRecipeSteps = (description, slug, imageUrl, baseUrl = 'https://alhorn
       '@type': 'HowToStep',
       name: `Paso ${index + 1}`,
       text: text,
-      url: `${baseUrl}/recipe/${slug}#paso-${index + 1}`,
+      url: `${baseUrl}/recipe/${slug}`,
       image: `${baseUrl}/${imageUrl}`
     }));
 };
@@ -39,7 +39,7 @@ export const generateRecipeSchema = (recipe, baseUrl = 'https://alhornoconpapa.c
           '@type': 'HowToStep',
           name: 'Paso 1',
           text: recipe.description.split('\n\n')[0] || recipe.description,
-          url: `${baseUrl}/recipe/${recipe.slug}#paso-1`,
+          url: `${baseUrl}/recipe/${recipe.slug}`,
           image: `${baseUrl}/${recipe.imageUrl}`
         }
       ];
