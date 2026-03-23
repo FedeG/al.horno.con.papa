@@ -11,6 +11,7 @@ import RecipeGrid from './components/RecipeGrid';
 import Pagination from './components/Pagination';
 import RecipeDetail from './components/RecipeDetail';
 import Footer from './components/Footer';
+import SEO from './components/SEO';
 import {
   extractAllTags,
   generateAutocompleteSuggestions,
@@ -26,6 +27,7 @@ import {
   trackPagination,
   trackAutocompleteSelection
 } from './utils/analytics';
+import { generateCollectionSchema } from './utils/seoHelpers';
 
 const RecipeList = () => {
   const navigate = useNavigate();
@@ -136,12 +138,26 @@ const RecipeList = () => {
   }, [totalPages]);
 
   const handleSelectRecipe = useCallback((recipe) => {
-    navigate(`/recipe/${recipe.id}`);
+    const slugOrId = recipe.slug && recipe.slug.trim() ? recipe.slug : String(recipe.id);
+    navigate(`/recipe/${slugOrId}`);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [navigate]);
 
+  const recipeCollectionSchema = useMemo(() => 
+    generateCollectionSchema(),
+    []
+  );
+
   return (
     <div className="app">
+      <SEO 
+        title={selectedTag !== 'Todas' ? `Recetas ${selectedTag}` : undefined}
+        description={selectedTag !== 'Todas' 
+          ? `Descubre deliciosas recetas ${selectedTag}. Cocina en familia con Al Horno Con Papá.`
+          : 'Encuentra recetas deliciosas de cocina en familia. Recetas clasicas, familiares, vegetarianas, veganas, fáciles y mucho más. ¡Cocina con amor!'}
+        keywords={selectedTag !== 'Todas' ? `recetas ${selectedTag}, cocina en familia, recetas argentinas` : 'recetas cocina en familia, recetas vegetarianas, recetas veganas, recetas fáciles, cocina argentina'}
+        schema={recipeCollectionSchema}
+      />
       <Header />
       
       <SearchBar
@@ -202,27 +218,35 @@ const RecipeList = () => {
 const RecipeDetailPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const recipeId = parseInt(id);
   
-  const recipe = useMemo(() => 
-    recipesData.find(r => r.id === recipeId),
-    [recipeId]
-  );
+  const recipe = useMemo(() => {
+    // Buscar por slug primero (strings), luego por ID para retrocompatibilidad
+    if (isNaN(id)) {
+      const normalizedId = id.toLowerCase();
+      return recipesData.find(
+        (r) => typeof r.slug === 'string' && r.slug.toLowerCase() === normalizedId
+      );
+    }
+    // Si es un número, buscar por ID (para retrocompatibilidad)
+    const recipeId = parseInt(id);
+    return recipesData.find(r => r.id === recipeId);
+  }, [id]);
 
-  // Track pageview cuando se carga la receta
+  // Track pageview cuando se carga la receta, usando el parámetro id de la URL
+  // para que el page_path coincida con la ruta real del browser (slug o ID numérico legacy)
   useEffect(() => {
     if (recipe) {
-      trackPageView(`/recipe/${recipeId}`, recipe.name);
+      trackPageView(`/recipe/${id}`, recipe.name);
     }
-  }, [recipe, recipeId]);
+  }, [recipe, id]);
 
   const relatedRecipes = useMemo(() => 
     findRelatedRecipes(recipesData, recipe),
     [recipe]
   );
 
-  const handleSelectRecipe = useCallback((recipe) => {
-    navigate(`/recipe/${recipe.id}`);
+  const handleSelectRecipe = useCallback((selectedRecipe) => {
+    navigate(`/recipe/${selectedRecipe.slug}`);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [navigate]);
 

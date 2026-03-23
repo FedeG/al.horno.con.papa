@@ -11,7 +11,7 @@
     "facebookUrl": "",
     "imageUrl": "images/DWKsSu5jo1r.jpg",
     "ingredients": [
-      "500g de filetes de pescado (brotola, merluza, abadejo o el que tengas)",
+      "500 g de filetes de pescado (merluza, abadejo o el que tengas)",
       "1 huevo",
       "1 diente de ajo rallado",
       "Sal",
@@ -30,27 +30,26 @@
     "shortcode": "DWKsSu5jo1r",
     "cleaned_ingredientes": [
       "aceite",
-      "agua",
-      "ajo",
-      "cerveza",
-      "pescado",
-      "merluza",
-      "abadejo",
+      "agua helada (cantidad necesaria)",
+      "ajo rallado",
+      "cerveza bien fría (en lugar del agua)",
+      "filetes de pescado merluza, abadejo",
       "harina",
       "huevo",
       "pimentón",
-      "pimienta",
+      "pimienta negra",
       "polvo de hornear",
+      "que tenga",
       "sal",
       "soda",
-      "maicena",
-      "fécula de maíz"
+      "taza de maicena"
     ],
     "old_tags": [
       "facil",
       "fritura",
       "pescado"
-    ]
+    ],
+    "slug": "pescado-frito"
   },
   {
     "id": 3847199831089887707,
@@ -88,7 +87,8 @@
       "Tips",
       "Vegano",
       "Vegetariano"
-    ]
+    ],
+    "slug": "choclo-al-microondas"
   },
   {
     "id": 3843589430267770145,
@@ -102,7 +102,7 @@
     "facebookUrl": "",
     "imageUrl": "images/DVXLDj9jnUh.jpg",
     "ingredients": [
-      "250g de tofu firme",
+      "250 g de tofu firme",
       "1 cucharada de maicena o fécula de maíz",
       "Aceite para saltear",
       "1 cucharadita de jengibre rallado",
@@ -122,20 +122,21 @@
       "aceite de sésamo",
       "furikake",
       "fécula de maíz",
-      "maicena",
-      "jengibre",
+      "jengibre rallado",
       "ketchup",
+      "maicena",
       "salsa de ostra",
       "salsa de soja",
-      "semillas",
-      "tofu"
+      "semillas (sésamo, mix de semillas)",
+      "tofu firme"
     ],
     "old_tags": [
       "Agridulce",
       "Tofu",
       "Vegano",
       "Vegetariano"
-    ]
+    ],
+    "slug": "tofu-agridulce"
   },
   {
     "id": 3841423351726646769,
@@ -148,7 +149,7 @@
     "facebookUrl": "",
     "imageUrl": "images/DVPei-HjqXx.jpg",
     "ingredients": [
-      "600g de carne (nalga, cuadrada, bola de lomo o el corte que prefieras)",
+      "600 g de carne (nalga, cuadrada, bola de lomo o el corte que prefieras)",
       "1 morrón",
       "1 zucchini",
       "1 berenjena",
@@ -174,21 +175,19 @@
       "aceite",
       "ají molido",
       "berenjena",
-      "carne",
-      "nalga",
-      "cuadrada",
-      "bola de lomo",
+      "carne nalga, cuadrada, bola de lomo",
       "cebolla",
-      "choclos",
+      "choclos cocido",
+      "corte que prefiera",
       "hongo",
       "limón",
       "morrón",
+      "palito",
       "panceta",
-      "perejil",
+      "perejil fresco picado",
       "pimentón",
-      "pimienta",
+      "pimienta negra",
       "sal",
-      "tomate",
       "tomates cherry",
       "zucchini"
     ],
@@ -196,7 +195,8 @@
       "Asado",
       "Brochetas",
       "Parrilla"
-    ]
+    ],
+    "slug": "brochetas-a-la-parrilla"
   },
   {
     "id": 3835606867737755462,
@@ -224,7 +224,7 @@
       "aceite",
       "aceite de sésamo",
       "agua",
-      "ajo",
+      "ajo (no lo dije en el audio 🤦‍♂)",
       "arroz",
       "sal"
     ],
@@ -232,7 +232,8 @@
       "Arroz",
       "Microondas",
       "Tips"
-    ]
+    ],
+    "slug": "arroz-en-microondas"
   },
   {
     "id": 3826899846431654667,
@@ -265,7 +266,7 @@
       "limón",
       "mayonesa",
       "palta",
-      "pollo",
+      "pollo cocido desmenuzado",
       "sal",
       "zanahoria"
     ],
@@ -273,7 +274,8 @@
       "Facil",
       "Pollo",
       "Salpicon"
-    ]
+    ],
+    "slug": "salpicon-de-ave-pollo"
   },
   {
     "id": 3824028086258528195,
@@ -300,7 +302,7 @@
     "hidden": false,
     "shortcode": "DURrUisjm_D",
     "cleaned_ingredientes": [
-      "leche",
+      "leche aprox",
       "manteca",
       "nuez moscada",
       "papa",
@@ -312,7 +314,8 @@
       "Papa",
       "Puredepapa",
       "Vegetariano"
-    ]
+    ],
+    "slug": "pure-de-papa-nube-estilo-betular"
   },
   {
     "id": 3819676244745536630,
@@ -343,29 +346,32 @@
       "Pimienta"
     ],
     "date": "2026-01-27T21:46:03-03:00",
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "shortcode": "DUCN06dDkR2",
     "cleaned_ingredientes": [
       "aceite",
-      "agua tibia",
+      "agua tibia (2 tazas)",
       "ajo",
       "ají molido",
       "azúcar",
       "cebolla",
       "harina 000",
+      "harina extra",
       "levadura",
+      "levadura seca",
       "morrón",
       "pimienta",
       "sal",
-      "tomate"
+      "tomate triturado"
     ],
     "old_tags": [
       "Masas",
       "Pizza",
       "Pizzacasera",
       "Vegetariano"
-    ]
+    ],
+    "slug": "pizza"
   },
   {
     "id": 3814600790581882617,
@@ -381,7 +387,7 @@
     "imageUrl": "images/DTwLzVajq75.jpg",
     "ingredients": [],
     "date": "2026-01-20T21:39:05-03:00",
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "shortcode": "DTwLzVajq75",
     "cleaned_ingredientes": [],
@@ -391,7 +397,8 @@
       "Vs",
       "Vegano",
       "Vegetariano"
-    ]
+    ],
+    "slug": "levadura-fresca-vs-levadura-seca"
   },
   {
     "id": 3809505069079861469,
@@ -435,9 +442,8 @@
       "mayonesa",
       "morrón",
       "pan de hamburguesa",
-      "pan rallado",
+      "pan rallado (opcional, si no tenemos tiempo de enfriar)",
       "pechugas de pollo",
-      "pollo",
       "perejil",
       "pimentón",
       "pimienta",
@@ -448,7 +454,8 @@
       "hamburguesa",
       "pollo",
       "Facil"
-    ]
+    ],
+    "slug": "hamburguesas-de-pollo"
   },
   {
     "id": 3806549167578189678,
@@ -475,26 +482,28 @@
       "Queso"
     ],
     "date": "2026-01-09T19:01:01-03:00",
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "shortcode": "DTTlEzJjo9u",
     "cleaned_ingredientes": [
-      "huevo",
+      "6 huevo",
       "arveja",
       "choclo",
       "condimento",
       "matambre de res/vaca",
       "morrón verde",
       "mostaza",
-      "perejil",
+      "opcional",
+      "perejil fresco picado",
       "queso",
-      "tomates secos",
+      "tomates secos hidratado",
       "zanahoria"
     ],
     "old_tags": [
       "Matambre",
       "Navidad"
-    ]
+    ],
+    "slug": "matambre-arrollado-2"
   },
   {
     "id": 3800025234871838907,
@@ -530,7 +539,8 @@
       "miel",
       "sal"
     ],
-    "shortcode": "DS8ZtFWDmi7"
+    "shortcode": "DS8ZtFWDmi7",
+    "slug": "pionono"
   },
   {
     "id": 3798640244401535886,
@@ -569,22 +579,23 @@
     "cleaned_ingredientes": [
       "ajo",
       "alcaparra",
-      "anchoas",
-      "caldo",
+      "anchoas (opcional, pero le da el sabor clásico)",
+      "caldo de cocción del peceto",
       "cebolla",
       "crema de leche",
       "jugo de limón",
-      "atún",
+      "latas de atún al natural (aprox. 300 g)",
       "laurel",
       "mayonesa",
       "mostaza",
-      "peceto",
+      "peceto (aprox. 1,5 kg)",
       "pimienta",
       "sal",
       "verdura",
       "zanahoria"
     ],
-    "shortcode": "DS3ey0dDnuO"
+    "shortcode": "DS3ey0dDnuO",
+    "slug": "vitel-tone-2"
   },
   {
     "id": 3792566233661892915,
@@ -612,12 +623,13 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "chocolate",
+      "chocolate amargo",
       "frutos seco",
-      "leche condensada",
-      "leche"
+      "leche condensada (1 taza)",
+      "leche, aproximadamente 2 tazas picado"
     ],
-    "shortcode": "DSh5uVIjukz"
+    "shortcode": "DSh5uVIjukz",
+    "slug": "turron-casero-2"
   },
   {
     "id": 3789945646489693727,
@@ -652,13 +664,14 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "arvejas",
+      "arvejas cocida",
       "mayonesa",
       "papa",
       "sal",
       "zanahoria"
     ],
-    "shortcode": "DSYl3xJDm4f"
+    "shortcode": "DSYl3xJDm4f",
+    "slug": "ensalada-rusa-2"
   },
   {
     "id": 3788496596900937594,
@@ -702,19 +715,20 @@
     "cleaned_ingredientes": [
       "aceite de oliva",
       "ajo",
+      "blanca",
       "cebolla",
       "champiñon",
       "frutos seco",
-      "hongo",
-      "portobello",
+      "hongos portobello",
       "limón",
       "maní",
       "pimentón",
-      "pimienta",
+      "pimienta negra",
       "romero",
       "sal"
     ],
-    "shortcode": "DSTcZUjDn96"
+    "shortcode": "DSTcZUjDn96",
+    "slug": "pate-de-hongos-2"
   },
   {
     "id": 3759500882959312664,
@@ -751,13 +765,14 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "azúcar",
+      "azúcar (3 tazas)",
       "frutilla",
       "jengibre",
-      "limón",
-      "vinagre"
+      "medio limón",
+      "vinagre (para lavar las frutillas)"
     ],
-    "shortcode": "DQsbiJljqcY"
+    "shortcode": "DQsbiJljqcY",
+    "slug": "mermelada-casera-de-frutilla"
   },
   {
     "id": 3749348399670795105,
@@ -798,18 +813,18 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
-      "arvejas",
+      "arvejas cocidas (1 lata)",
       "cebolla",
-      "vino blanco",
-      "costillitas de cerdo",
-      "huevos",
+      "copa de vino blanco",
+      "costillitas de cerdo (1 por persona)",
+      "huevos (1 por persona)",
       "morrón",
       "papa",
-      "pimentón",
-      "sal",
-      "pimienta negra"
+      "pimentón dulce",
+      "sal, pimienta negra"
     ],
-    "shortcode": "DQIXIEtjpth"
+    "shortcode": "DQIXIEtjpth",
+    "slug": "costillitas-a-la-riojana"
   },
   {
     "id": 3742112497752006485,
@@ -827,8 +842,10 @@
     "facebookUrl": "",
     "imageUrl": "images/DPup316Dt9V.jpg",
     "ingredients": [
+      "Base",
       "150g de galletitas de vainilla",
       "80g de manteca derretida",
+      "Relleno",
       "750g (3 tazas) de queso crema",
       "180g (¾ taza) de azúcar",
       "5 huevos",
@@ -850,17 +867,21 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "azúcar",
-      "crema de leche",
-      "maicena",
-      "queso crema",
+      "( taza) de azúcar",
+      "(1 taza) de crema de leche",
+      "(3 cdas) de maicena",
+      "(3 tazas) de queso crema",
+      "base",
       "esencia de vainilla",
       "galletitas de vainilla",
       "huevo",
       "limón",
-      "manteca"
+      "manteca derretida",
+      "ralladura",
+      "relleno"
     ],
-    "shortcode": "DPup316Dt9V"
+    "shortcode": "DPup316Dt9V",
+    "slug": "cheesecake-cocido-clasico"
   },
   {
     "id": 3736087744675221094,
@@ -900,14 +921,15 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
-      "queso",
+      "cubitos de queso",
       "leche",
       "manteca",
-      "pimienta",
+      "pimienta negra",
       "polenta",
       "sal"
     ],
-    "shortcode": "DPZQAJXDo5m"
+    "shortcode": "DPZQAJXDo5m",
+    "slug": "polenta"
   },
   {
     "id": 3733422410486927572,
@@ -958,7 +980,8 @@
       "papa",
       "tapas de empanada"
     ],
-    "shortcode": "DPPx-bdjlDU"
+    "shortcode": "DPPx-bdjlDU",
+    "slug": "empanadas-tipo-saltenas"
   },
   {
     "id": 3720382646112403703,
@@ -1000,22 +1023,21 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "limón",
+      "1 limón",
       "ajo",
       "cebolla",
-      "cilantro",
-      "perejil",
-      "comino",
-      "pimentón",
-      "ají molido",
-      "sal",
-      "garbanzo",
+      "cilantro (o más perejil si no tenés)",
+      "condimentos: comino, pimentón dulce, ají molido, sal",
+      "garbanzos secos 2 tazas remojada",
       "harina de garbanzo",
-      "pan rallado",
+      "latas escurrida",
+      "pan rallado solo si hace falta",
+      "perejil",
       "pimienta",
       "polvo de hornear"
     ],
-    "shortcode": "DOhdE4iDsD3"
+    "shortcode": "DOhdE4iDsD3",
+    "slug": "falafel-casero"
   },
   {
     "id": 3717488954980600869,
@@ -1069,7 +1091,8 @@
       "pimienta",
       "sal"
     ],
-    "shortcode": "DOXLIIqDowl"
+    "shortcode": "DOXLIIqDowl",
+    "slug": "higado-encebollado"
   },
   {
     "id": 3715296457089009804,
@@ -1115,7 +1138,8 @@
       "miel",
       "sal"
     ],
-    "shortcode": "DOPYnF4DsiM"
+    "shortcode": "DOPYnF4DsiM",
+    "slug": "pan-integral-2"
   },
   {
     "id": 3712872821765894637,
@@ -1158,7 +1182,8 @@
       "salsa base aceite",
       "seca"
     ],
-    "shortcode": "DOGxijljvHt"
+    "shortcode": "DOGxijljvHt",
+    "slug": "mantecatura"
   },
   {
     "id": 3710947766295199832,
@@ -1205,7 +1230,8 @@
       "riñón grande de re",
       "sal"
     ],
-    "shortcode": "DN_71T-DgBY"
+    "shortcode": "DN_71T-DgBY",
+    "slug": "rinon-a-la-provenzal"
   },
   {
     "id": 3707323832187256597,
@@ -1257,7 +1283,8 @@
       "sal",
       "salsa de soja"
     ],
-    "shortcode": "DNzD2IU3H8V"
+    "shortcode": "DNzD2IU3H8V",
+    "slug": "pechuga-a-la-plancha"
   },
   {
     "id": 3704394110262278412,
@@ -1313,7 +1340,8 @@
       "sal",
       "vinagre de alcohol"
     ],
-    "shortcode": "DNoptEKO3kM"
+    "shortcode": "DNoptEKO3kM",
+    "slug": "salsa-sweet-chili"
   },
   {
     "id": 3701270008739657437,
@@ -1363,7 +1391,8 @@
       "pimienta",
       "sal"
     ],
-    "shortcode": "DNdjXZ4u_bd"
+    "shortcode": "DNdjXZ4u_bd",
+    "slug": "tonkatsu-japones"
   },
   {
     "id": 3696179700699961881,
@@ -1423,7 +1452,8 @@
       "taza de vinagre de vino",
       "tomate"
     ],
-    "shortcode": "DNLd9rGOxoZ"
+    "shortcode": "DNLd9rGOxoZ",
+    "slug": "salsa-criolla"
   },
   {
     "id": 3691103888627901102,
@@ -1441,7 +1471,7 @@
     "imageUrl": "images/DM5b24uuqKu.jpg",
     "ingredients": [
       "Salsa bolognesa 🍅 (usé mí receta pero le puse más carne)",
-      "Salsa blanca🥛",
+      "Salsa blanca 🥛",
       "Salteado de acelga (rápido, ajo, cebolla, morrón y acelga con sal y pimienta)",
       "Jamón y queso",
       "Tapas de lasaña (las de súper, hidratadas 2 min en agua caliente)"
@@ -1461,19 +1491,17 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "sal",
+      "acelga con sal",
       "jamón",
       "pimienta",
       "queso",
-      "salsa blanca",
-      "salsa bolognesa",
-      "salteado de acelga",
-      "ajo",
-      "cebolla",
-      "morrón",
-      "tapas de lasaña"
+      "salsa blanca 🥛",
+      "salsa bolognesa 🍅 (usé mí receta pero le puse más carne)",
+      "salteado de acelga rápido, ajo, cebolla, morrón",
+      "tapas de lasaña (las de súper, hidratadas 2 min en agua caliente)"
     ],
-    "shortcode": "DM5b24uuqKu"
+    "shortcode": "DM5b24uuqKu",
+    "slug": "competencia-de-lasana-con-feli"
   },
   {
     "id": 3686350578570090705,
@@ -1516,19 +1544,18 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "agua",
+      "agua cantidad necesaria",
       "ajo",
-      "ají picante",
-      "arvejas",
+      "ají picante (al gusto, podes ponerle mas si te gusta el picante)",
+      "arvejas cocidas (aunque me olvidé 🤦‍♂️)",
       "cebolla",
-      "sal",
-      "pimienta",
-      "comino",
+      "condimentos: sal, pimienta negra, comino",
       "morrón rojo",
       "pata muslo de pollo",
       "tomate"
     ],
-    "shortcode": "DMojFHxOdjR"
+    "shortcode": "DMojFHxOdjR",
+    "slug": "picante-de-pollo"
   },
   {
     "id": 3684890020784221355,
@@ -1568,11 +1595,12 @@
       "azúcar",
       "harina 0000",
       "jamón cocido",
-      "manteca",
+      "manteca fría en cubo",
       "queso",
       "sal"
     ],
-    "shortcode": "DMjW_NVOayr"
+    "shortcode": "DMjW_NVOayr",
+    "slug": "fosforitos-de-jamon-y-queso"
   },
   {
     "id": 3683135040196719928,
@@ -1609,18 +1637,18 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
-      "arroz",
-      "caldo",
+      "arroz (ideal carnaroli, si no, doble carolina)",
+      "caldo si no tenes de antes, hace uno rapido con agua",
       "cebolla",
-      "vino blanco",
-      "hongos",
-      "portobellos)",
+      "copa de vino blanco",
+      "hongos (yo usé portobellos)",
       "manteca",
       "pimienta",
       "sal",
-      "verdura"
+      "verduras que tenga"
     ],
-    "shortcode": "DMdH84SuDU4"
+    "shortcode": "DMdH84SuDU4",
+    "slug": "risotto-de-hongos"
   },
   {
     "id": 3680962510824535605,
@@ -1657,14 +1685,16 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "azúcar",
-      "chocolate",
+      "azúcar ( de taza)",
+      "chocolate semiamargo",
       "frutos rojo",
       "huevo",
       "manteca",
-      "merengue",
-      "frutilla"
+      "merengue + frutilla",
+      "opcional"
     ],
-    "shortcode": "DMVZ-apOfY1"
+    "shortcode": "DMVZ-apOfY1",
+    "slug": "marquise-de-chocolate"
   },
   {
     "id": 3678281787416195252,
@@ -1699,13 +1729,14 @@
     "cleaned_ingredientes": [
       "chocolatada",
       "dulce de leche",
-      "galletitas",
-      "leche",
-      "café",
-      "chocolate",
+      "galletitas las clásicas de chocolate",
+      "leche también podés usar café",
+      "opcional: chocolate amargo",
+      "podés combinar",
       "queso crema"
     ],
-    "shortcode": "DML4cwauzC0"
+    "shortcode": "DML4cwauzC0",
+    "slug": "chocotorta"
   },
   {
     "id": 3675896022925121703,
@@ -1747,24 +1778,19 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "laurel",
-      "sal",
-      "pimienta",
-      "pimentón",
-      "ají molido",
+      "laurel, sal, pimienta negra, pimentón, ají molido",
       "matambre vacuno (de res)",
       "orégano",
+      "para que sea a la pizza:",
       "queso muzzarella",
       "sal",
-      "salsa",
-      "ajo",
-      "cebolla",
-      "tomate triturado",
-      "leche",
-      "agua",
+      "salsa: ajo, cebolla, tomate triturado",
+      "vaso de leche",
+      "vasos de agua",
       "verdura"
     ],
-    "shortcode": "DMDZ_UFuRin"
+    "shortcode": "DMDZ_UFuRin",
+    "slug": "matambre-a-la-pizza"
   },
   {
     "id": 3670806469180862227,
@@ -1798,15 +1824,12 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
-      "ají molido",
-      "orégano",
-      "pimienta",
-      "sal",
-      "ajo",
+      "condimentos varios, yo usé ají molido, orégano, pimienta negra, sal, ajo en polvo",
       "limón",
       "pollo"
     ],
-    "shortcode": "DLxUwjyuy8T"
+    "shortcode": "DLxUwjyuy8T",
+    "slug": "pollo-al-horno"
   },
   {
     "id": 3668670732125839585,
@@ -1843,15 +1866,18 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "harina leudante",
-      "azúcar",
+      "(170g) de azúcar",
+      "(280g) de harina leudante",
+      "azúcar común",
       "azúcar impalpable",
       "esencia de vainilla",
       "huevo",
-      "limón",
-      "manteca"
+      "jugo de limón",
+      "manteca pomada",
+      "ralladura de 2 limon"
     ],
-    "shortcode": "DLpvJfqO6Dh"
+    "shortcode": "DLpvJfqO6Dh",
+    "slug": "galletitas-crackeladas-de-limon"
   },
   {
     "id": 3666011991710410983,
@@ -1891,17 +1917,18 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "agua",
+      "agua tibia",
       "azúcar",
       "harina 000",
-      "huevo",
+      "huevo (para pincelar)",
       "levadura seca",
-      "manteca",
-      "papa",
+      "manteca pomada",
+      "papa (una grande)",
       "sal",
       "sésamo"
     ],
-    "shortcode": "DLgSnusOKjn"
+    "shortcode": "DLgSnusOKjn",
+    "slug": "pan-de-papa-casero"
   },
   {
     "id": 3661651826735537089,
@@ -1943,9 +1970,10 @@
       "ajo",
       "papin",
       "perejil",
-      "sal"
+      "sal gruesa"
     ],
-    "shortcode": "DLQzO-nu1vB"
+    "shortcode": "DLQzO-nu1vB",
+    "slug": "papines-a-la-provenzal"
   },
   {
     "id": 3659485693416813984,
@@ -1991,7 +2019,7 @@
       "aceite",
       "ajo",
       "ají molido",
-      "botella de tomate triturado",
+      "botella de tomate triturado (800g aprox)",
       "carne picada",
       "cebolla",
       "lata",
@@ -2003,7 +2031,8 @@
       "sal",
       "zanahoria"
     ],
-    "shortcode": "DLJGtlwu7Wg"
+    "shortcode": "DLJGtlwu7Wg",
+    "slug": "salsa-bolonesa"
   },
   {
     "id": 3656589200389197371,
@@ -2042,7 +2071,8 @@
       "servilleta, gasa",
       "tapa con agujero"
     ],
-    "shortcode": "DK-0IEauk47"
+    "shortcode": "DK-0IEauk47",
+    "slug": "brotes-de-lentejas"
   },
   {
     "id": 3654410106436117232,
@@ -2078,7 +2108,8 @@
       "crema",
       "leche condensada (medio pote)"
     ],
-    "shortcode": "DK3EqFBuOLw"
+    "shortcode": "DK3EqFBuOLw",
+    "slug": "mousse-de-chocolate"
   },
   {
     "id": 3650539507544591071,
@@ -2127,7 +2158,8 @@
       "tapa",
       "verdeo"
     ],
-    "shortcode": "DKpUlc5uYrf"
+    "shortcode": "DKpUlc5uYrf",
+    "slug": "empanadas-de-carne-a-cuchillo"
   },
   {
     "id": 3649339452284465345,
@@ -2159,14 +2191,15 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "ajo",
+      "3 dientes de ajo partidos al medio",
       "aceite de oliva",
-      "orégano",
+      "orégano seco",
       "pimienta",
       "sal",
-      "tomate cherry"
+      "tomates cherry (la cantidad que quieras)"
     ],
-    "shortcode": "DKlDuWWO_DB"
+    "shortcode": "DKlDuWWO_DB",
+    "slug": "tomates-cherries-confitados"
   },
   {
     "id": 3645452133613487393,
@@ -2215,23 +2248,21 @@
       "ají molido",
       "caldo",
       "cebolla",
-      "sal",
-      "pimienta",
-      "orégano",
-      "pimentón",
+      "condimentos: sal, pimienta, orégano, pimentón",
       "copa de vino tinto",
       "lata de tomate perita",
       "laurel",
-      "lentejas",
+      "lentejas (remojadas 8hs)",
       "morrón rojo",
       "papa",
-      "roast beef",
+      "roast beef en cubo",
+      "triturado",
       "verdeo",
-      "cebolla de verdeo",
       "zanahoria",
       "zapallo cabutia"
     ],
-    "shortcode": "DKXP2atuMUh"
+    "shortcode": "DKXP2atuMUh",
+    "slug": "guiso-de-lentejas-2"
   },
   {
     "id": 3644262487139377127,
@@ -2275,7 +2306,8 @@
       "polvo",
       "sal"
     ],
-    "shortcode": "DKTBWyGOV_n"
+    "shortcode": "DKTBWyGOV_n",
+    "slug": "hotcakes-2"
   },
   {
     "id": 3640662478703759352,
@@ -2327,18 +2359,17 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "aceite de sésamo",
+      "aceite de sésamo (si tenés)",
       "agua",
-      "fideos",
-      "huesos",
+      "fideos (yo usé udon, pero podés usar los que tengas, incluso fideos de fábrica de pastas)",
+      "huesos con carne yo usé falda",
       "morrón",
-      "pimienta",
-      "jengibre",
-      "cúrcuma",
-      "pechito de cerdo",
+      "pimienta, jengibre, cúrcuma",
+      "punta de pechito de cerdo",
       "verdura"
     ],
-    "shortcode": "DKGOzw-Ow_4"
+    "shortcode": "DKGOzw-Ow_4",
+    "slug": "recetas-del-mundo-2"
   },
   {
     "id": 3639196309442492470,
@@ -2386,14 +2417,15 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite de oliva",
-      "aceite",
-      "ajo",
+      "aceite neutro (girasol, maíz, etc.)",
+      "cabeza de ajo (al menos 4 dientes)",
       "leche",
       "limón",
       "pimienta",
       "sal"
     ],
-    "shortcode": "DKBBcMcO3g2"
+    "shortcode": "DKBBcMcO3g2",
+    "slug": "salsa-de-ajo"
   },
   {
     "id": 3635570338399134963,
@@ -2438,17 +2470,17 @@
     "cleaned_ingredientes": [
       "aceite",
       "ajo",
-      "harina leudante",
-      "espinaca",
+      "aprox de harina leudante (ir viendo la textura)",
+      "atado de espinaca",
       "cebolla",
-      "sal",
-      "pimienta",
-      "ají molido",
+      "condimentos: sal, pimienta negra, ají molido",
+      "espinaca congelada",
       "huevo",
       "nuez moscada",
-      "queso"
+      "queso semiduro rallado (gouda, pategrás, etc)"
     ],
-    "shortcode": "DJ0I_XwOiTz"
+    "shortcode": "DJ0I_XwOiTz",
+    "slug": "bunuelos-de-espinaca"
   },
   {
     "id": 3634115665490281272,
@@ -2494,13 +2526,14 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "harina de almendras",
+      "harina de almendras (o de avena)",
       "huevo",
-      "semilla",
+      "opcional: semilla",
       "polvo de hornear",
       "sal"
     ],
-    "shortcode": "DJu-PGCOwM4"
+    "shortcode": "DJu-PGCOwM4",
+    "slug": "pan-rapido-sin-tacc"
   },
   {
     "id": 3630242659277936281,
@@ -2536,14 +2569,15 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "coliflor",
+      "coliflor grande yo usé uno agroecológico de @almacen_vida_organica",
       "crema",
       "leche",
       "manteca",
       "pimienta",
       "sal"
     ],
-    "shortcode": "DJhNnb6uxaZ"
+    "shortcode": "DJhNnb6uxaZ",
+    "slug": "pure-de-coliflor"
   },
   {
     "id": 3629045890892380095,
@@ -2588,14 +2622,15 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "queso crema",
+      "(pero mejora mucho): 2 cdas de queso crema",
       "aceite de oliva",
-      "harina de almendras",
+      "harina de almendras y un poco má",
       "harina de chía",
       "huevo",
       "sal"
     ],
-    "shortcode": "DJc9gKgOze_"
+    "shortcode": "DJc9gKgOze_",
+    "slug": "tortillas-sin-trigo-ni-gluten"
   },
   {
     "id": 3625171213979661073,
@@ -2635,21 +2670,18 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "aceite",
-      "aceite de girasol",
-      "azúcar integral",
-      "azúcar",
-      "leche",
-      "harina integral",
-      "bananas",
+      "(1 taza) de aceite de girasol",
+      "(1 taza) de azúcar integral",
+      "(2 cdas) de leche",
+      "(3 tazas) de harina integral fina",
+      "bananas medianas maduras negras yo usé agroecológicas de @almacen_vida_organica",
       "esencia de vainilla",
       "huevo",
-      "nueces",
-      "pasas de uva",
-      "chips de chocolate",
+      "opcional: nueces, pasas de uva, chips de chocolate, etc.",
       "polvo de hornear"
     ],
-    "shortcode": "DJPMgMbOrMR"
+    "shortcode": "DJPMgMbOrMR",
+    "slug": "budin-de-banana-2"
   },
   {
     "id": 3623980771963539757,
@@ -2700,7 +2732,8 @@
       "poco de sardo",
       "quesos semiduros yo usé gouda, pategra"
     ],
-    "shortcode": "DJK90-5u5Et"
+    "shortcode": "DJK90-5u5Et",
+    "slug": "crackers-rapidas"
   },
   {
     "id": 3621795706487700397,
@@ -2741,17 +2774,18 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "aceite",
-      "ajo",
-      "alcaparras",
+      "aceite (e ir sumando más si querés más firmeza)",
+      "ajo chiquito",
+      "alcaparras (opcional, pero suman mucho sabor)",
       "anchoa",
-      "limón",
+      "jugo de limón (medio limón aprox.)",
       "leche",
-      "mostaza",
+      "mostaza (ideal si tenés de dijon)",
       "pimienta",
       "sal"
     ],
-    "shortcode": "DJDNAGGO_ut"
+    "shortcode": "DJDNAGGO_ut",
+    "slug": "salsa-cesar-o-caesar-casera"
   },
   {
     "id": 3620090472056771947,
@@ -2797,21 +2831,22 @@
     "cleaned_ingredientes": [
       "aceite de oliva",
       "ajo",
-      "cabutia",
+      "cabutia de @almacen_vida_organica",
       "cebolla",
       "crema",
-      "curry",
+      "curry suave",
       "huesos de carne",
       "jengibre",
       "pimienta",
-      "pollo",
-      "cebolla de verdeo",
+      "pollo opcional",
+      "ramita de verdeo",
       "sal",
       "semillas del zapallo",
-      "verdura",
-      "zapallo"
+      "verduras varia",
+      "zapallo grande yo usé medio anco"
     ],
-    "shortcode": "DI9JRqxuFVr"
+    "shortcode": "DI9JRqxuFVr",
+    "slug": "sopa-de-zapallo"
   },
   {
     "id": 3614283436492815155,
@@ -2850,17 +2885,15 @@
       "ajo",
       "arroz",
       "cebolla",
-      "arveja",
+      "lata de arveja",
       "morrón",
-      "pimentón",
-      "ají molido",
-      "laurel",
-      "sal",
+      "pimentón, ají molido, laurel, sal",
       "pimienta",
       "pollo",
       "zanahoria"
     ],
-    "shortcode": "DIog6Ldu3sz"
+    "shortcode": "DIog6Ldu3sz",
+    "slug": "arroz-con-pollo-2"
   },
   {
     "id": 3610570869370927724,
@@ -2905,16 +2938,15 @@
       "aceite",
       "ajo",
       "cebolla",
-      "ají molido",
-      "pimentón",
-      "pimienta",
+      "condimentos: ají molido, pimentón, pimienta",
       "huevo",
       "queso",
       "sal",
       "zanahoria",
-      "zapallitos verdes"
+      "zapallitos verdes (yo usé agroecológicos de @almacen_vida_organica)"
     ],
-    "shortcode": "DIbUxN5Ojps"
+    "shortcode": "DIbUxN5Ojps",
+    "slug": "tortilla-de-zapallitos-verdes"
   },
   {
     "id": 3608744355675459206,
@@ -2947,14 +2979,15 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "azúcar",
+      "azúcar (para el caramelo)",
       "esencia de vainilla",
       "huevo",
       "leche condensada",
-      "leche",
-      "ron"
+      "leche entera",
+      "ron (opcional, pero tradicional)"
     ],
-    "shortcode": "DIU1d8dO06G"
+    "shortcode": "DIU1d8dO06G",
+    "slug": "recetas-del-mundo-3"
   },
   {
     "id": 3605524834231673997,
@@ -2997,7 +3030,8 @@
       "repollo morado (aprox. 1kg, yo usé agroecológicos de @almacen_vida_organica)",
       "sal (una cucharada colmada)"
     ],
-    "shortcode": "DIJZbvdOmSN"
+    "shortcode": "DIJZbvdOmSN",
+    "slug": "chucrut-repollo-morado"
   },
   {
     "id": 3604041958235527527,
@@ -3035,9 +3069,11 @@
       "laurel",
       "molleja",
       "pimienta",
+      "pimienta negra en grano",
       "sal"
     ],
-    "shortcode": "DIEIRDkO1ln"
+    "shortcode": "DIEIRDkO1ln",
+    "slug": "mollejas-al-verdeo"
   },
   {
     "id": 3599799759486501938,
@@ -3081,17 +3117,16 @@
     "cleaned_ingredientes": [
       "aceite de girasol",
       "ajo",
-      "perejil",
-      "orégano",
-      "pimentón",
-      "ají molido",
+      "especias: perejil, orégano, pimentón, ají molido",
       "laurel",
-      "morrones",
-      "pimienta",
-      "sal",
+      "morrones (yo usé agroecológicos de @almacen_vida_organica)",
+      "pimienta negra",
+      "pimienta negra en grano",
+      "sal gruesa",
       "vinagre de alcohol"
     ],
-    "shortcode": "DH1Ds8GusQy"
+    "shortcode": "DH1Ds8GusQy",
+    "slug": "morrones-al-escabeche"
   },
   {
     "id": 3598603012214949462,
@@ -3122,7 +3157,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "DHwzl-WuQZW"
+    "shortcode": "DHwzl-WuQZW",
+    "slug": "esterilizar-frascos"
   },
   {
     "id": 3594727340463842331,
@@ -3166,17 +3202,16 @@
     "cleaned_ingredientes": [
       "aceite de girasol",
       "ajo",
-      "berenjenas",
-      "perejil",
-      "orégano",
-      "pimentón",
-      "ají molido",
+      "berenjenas (yo usé agroecológicas de @almacen_vida_organica)",
+      "especias: perejil, orégano, pimentón, ají molido",
       "laurel",
-      "pimienta",
-      "sal",
+      "pimienta negra",
+      "pimienta negra en grano",
+      "sal gruesa",
       "vinagre de alcohol"
     ],
-    "shortcode": "DHjCXhwu2Qb"
+    "shortcode": "DHjCXhwu2Qb",
+    "slug": "berenjenas-al-escabeche"
   },
   {
     "id": 3593552396895699307,
@@ -3221,18 +3256,16 @@
       "carne",
       "cebolla",
       "cebollitas de verdeo",
-      "sal",
-      "pimentón",
-      "ají molido",
-      "comino",
-      "fideos secos",
+      "especias: sal, pimentón, ají molido, comino",
+      "fideos secos (para tostar)",
       "huevo",
       "pan rallado",
       "papa",
-      "tomate",
+      "tomate triturado",
       "zanahoria"
     ],
-    "shortcode": "DHe3N2SuMFr"
+    "shortcode": "DHe3N2SuMFr",
+    "slug": "recetas-del-mundo-4"
   },
   {
     "id": 3589641815843205086,
@@ -3286,15 +3319,16 @@
       "canela",
       "esencia de vainilla",
       "frutos seco",
-      "harina",
+      "harina (yo usé integral)",
       "huevo",
       "manteca",
-      "manzanas",
-      "maní",
-      "limón",
+      "manzanas (yo usé rojas agroecológicas de @almacen_vida_organica)",
+      "maní sin sal queda muy bien",
+      "medio limón",
       "sal"
     ],
-    "shortcode": "DHQ-DZ4OO_e"
+    "shortcode": "DHQ-DZ4OO_e",
+    "slug": "crumble-de-manzana-2"
   },
   {
     "id": 3588475878058433032,
@@ -3351,7 +3385,8 @@
       "vinagre de arroz",
       "zanahoria en tiras fina"
     ],
-    "shortcode": "DHM08xsuxoI"
+    "shortcode": "DHM08xsuxoI",
+    "slug": "sushi-casero"
   },
   {
     "id": 3584844738130981428,
@@ -3400,7 +3435,8 @@
       "leche",
       "manzanas (idealmente verdes)"
     ],
-    "shortcode": "DG_7UvHObI0"
+    "shortcode": "DG_7UvHObI0",
+    "slug": "torta-invertida-de-manzana"
   },
   {
     "id": 3583389053723859889,
@@ -3451,7 +3487,8 @@
       "salsa blanca podés buscar mi receta en mi perfil",
       "tapa"
     ],
-    "shortcode": "DG6wVvXO9ux"
+    "shortcode": "DG6wVvXO9ux",
+    "slug": "empanadas-de-verdura-y-salsa-blanca"
   },
   {
     "id": 3580491219282177231,
@@ -3493,7 +3530,8 @@
       "sal",
       "zapallo yo usé medio de princesa"
     ],
-    "shortcode": "DGwdcsuuCzP"
+    "shortcode": "DGwdcsuuCzP",
+    "slug": "zapallo-al-horno"
   },
   {
     "id": 3578785275745754837,
@@ -3530,7 +3568,8 @@
       "nuez moscada, sal",
       "pimienta"
     ],
-    "shortcode": "DGqZj9AOV7V"
+    "shortcode": "DGqZj9AOV7V",
+    "slug": "salsa-bechamel-o-salsa-blanca"
   },
   {
     "id": 3573244086166696038,
@@ -3579,7 +3618,8 @@
       "tomat",
       "violeta con ralla"
     ],
-    "shortcode": "DGWtpCDuzBm"
+    "shortcode": "DGWtpCDuzBm",
+    "slug": "fideos-con-berenjena-y-tomate"
   },
   {
     "id": 3567174666965184694,
@@ -3613,7 +3653,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "DGBJnW8O3C2"
+    "shortcode": "DGBJnW8O3C2",
+    "slug": "sanitizar-frutas-y-verduras"
   },
   {
     "id": 3558489683966697527,
@@ -3663,7 +3704,8 @@
       "pimienta",
       "sal"
     ],
-    "shortcode": "DFiS4ONuiA3"
+    "shortcode": "DFiS4ONuiA3",
+    "slug": "faina-casera"
   },
   {
     "id": 3555039197988981261,
@@ -3707,7 +3749,8 @@
       "sal (1/2 cucharada)",
       "yogur natural"
     ],
-    "shortcode": "DFWCVCuuQoN"
+    "shortcode": "DFWCVCuuQoN",
+    "slug": "pan-naan-2"
   },
   {
     "id": 3549051951318090623,
@@ -3762,7 +3805,8 @@
       "sal",
       "vino blanco"
     ],
-    "shortcode": "DFAw_IvuMN_"
+    "shortcode": "DFAw_IvuMN_",
+    "slug": "risotto-de-hongos-y-mani"
   },
   {
     "id": 3544052157155793062,
@@ -3810,7 +3854,8 @@
       "polvo de hornear",
       "sal entre fina"
     ],
-    "shortcode": "DEvAKjkulim"
+    "shortcode": "DEvAKjkulim",
+    "slug": "galletitas-de-chocolate"
   },
   {
     "id": 3541341536345816024,
@@ -3849,7 +3894,8 @@
       "perejil",
       "sal"
     ],
-    "shortcode": "DElX11OOnvY"
+    "shortcode": "DElX11OOnvY",
+    "slug": "milanesas-de-berenjena-2"
   },
   {
     "id": 3535398971310306094,
@@ -3900,7 +3946,8 @@
       "tomates secos hidratado",
       "zanahoria"
     ],
-    "shortcode": "DEQQqIQO3Mu"
+    "shortcode": "DEQQqIQO3Mu",
+    "slug": "matambre-arrollado-3"
   },
   {
     "id": 3530202892914427869,
@@ -3945,7 +3992,8 @@
       "leche condensada",
       "que más te gusten"
     ],
-    "shortcode": "DD9zNPJOIfd"
+    "shortcode": "DD9zNPJOIfd",
+    "slug": "turron-casero-3"
   },
   {
     "id": 3524411531028187637,
@@ -3988,7 +4036,8 @@
       "miel",
       "sal"
     ],
-    "shortcode": "DDpOZ1FOcn1"
+    "shortcode": "DDpOZ1FOcn1",
+    "slug": "pionono-casero"
   },
   {
     "id": 3522956054784141513,
@@ -4041,7 +4090,8 @@
       "sal",
       "zapallo cocido pisado"
     ],
-    "shortcode": "DDkDd3MuGjJ"
+    "shortcode": "DDkDd3MuGjJ",
+    "slug": "bizcochuelo-de-zapallo"
   },
   {
     "id": 3518623892089900820,
@@ -4106,7 +4156,8 @@
       "sal",
       "zanahoria"
     ],
-    "shortcode": "DDUqcmSOI8U"
+    "shortcode": "DDUqcmSOI8U",
+    "slug": "vitel-tone-3"
   },
   {
     "id": 3517353515932956516,
@@ -4161,7 +4212,8 @@
       "zanahoria",
       "zucchini"
     ],
-    "shortcode": "DDQJmMSp7dk"
+    "shortcode": "DDQJmMSp7dk",
+    "slug": "salteado-de-fideos-estilo-yakisoba"
   },
   {
     "id": 3513554334329081935,
@@ -4203,7 +4255,8 @@
       "pimienta",
       "sal"
     ],
-    "shortcode": "DDCpw0suBBP"
+    "shortcode": "DDCpw0suBBP",
+    "slug": "mayonesa-vegana-casera-veganesa"
   },
   {
     "id": 3512132722190986455,
@@ -4249,7 +4302,8 @@
       "sal",
       "zanahoria"
     ],
-    "shortcode": "DC9mhpOOCzX"
+    "shortcode": "DC9mhpOOCzX",
+    "slug": "ensalada-rusa-3"
   },
   {
     "id": 3507187449550120907,
@@ -4288,7 +4342,8 @@
       "huevo",
       "manteca"
     ],
-    "shortcode": "DCsCGdLJKfL"
+    "shortcode": "DCsCGdLJKfL",
+    "slug": "galletitas-caseras"
   },
   {
     "id": 3505559748113702321,
@@ -4336,7 +4391,8 @@
       "zanahoria",
       "zapallitos verde"
     ],
-    "shortcode": "DCmQASFOZ2x"
+    "shortcode": "DCmQASFOZ2x",
+    "slug": "tortilla-de-zapallito"
   },
   {
     "id": 3496859101545704507,
@@ -4389,7 +4445,8 @@
       "similar",
       "solo agrega en el caso de que no se esté pudiendo licuar correctamente"
     ],
-    "shortcode": "DCHVtNhOSw7"
+    "shortcode": "DCHVtNhOSw7",
+    "slug": "helado-casero"
   },
   {
     "id": 3490338983835835340,
@@ -4456,7 +4513,8 @@
       "sal 🧂: realza el sabor de la carne",
       "seco."
     ],
-    "shortcode": "DBwLNAtO5vM"
+    "shortcode": "DBwLNAtO5vM",
+    "slug": "condimento-casero-para-carnes-rojas"
   },
   {
     "id": 3485440589009616452,
@@ -4497,7 +4555,8 @@
       "manteca",
       "sal"
     ],
-    "shortcode": "DBexb_BpX5E"
+    "shortcode": "DBexb_BpX5E",
+    "slug": "cebolla-caramelizada"
   },
   {
     "id": 3481833328178995898,
@@ -4556,7 +4615,8 @@
       "leche",
       "una"
     ],
-    "shortcode": "DBR9PblOaK6"
+    "shortcode": "DBR9PblOaK6",
+    "slug": "muffins-marmolados"
   },
   {
     "id": 3475386728447575959,
@@ -4583,7 +4643,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "DA7DdDuOYeX"
+    "shortcode": "DA7DdDuOYeX",
+    "slug": "curar-tu-tabla-de-madera"
   },
   {
     "id": 3470268765499739081,
@@ -4631,7 +4692,8 @@
       "semilla",
       "semillas las que gustes, yo use chia, sésamo"
     ],
-    "shortcode": "DAo3w5SvsvJ"
+    "shortcode": "DAo3w5SvsvJ",
+    "slug": "crackers-de-semillas-2"
   },
   {
     "id": 3466661986375212323,
@@ -4681,7 +4743,8 @@
       "romero, pimentón, pimienta negra",
       "sal"
     ],
-    "shortcode": "DAcDrWePp0j"
+    "shortcode": "DAcDrWePp0j",
+    "slug": "pate-de-hongos-3"
   },
   {
     "id": 3465169478974257447,
@@ -4717,7 +4780,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "DAWwUgoyTkn"
+    "shortcode": "DAWwUgoyTkn",
+    "slug": "cocinar-en-vacaciones-2"
   },
   {
     "id": 3462086018855823603,
@@ -4761,7 +4825,8 @@
       "sal",
       "zanahoria"
     ],
-    "shortcode": "DALzOQnv2jz"
+    "shortcode": "DALzOQnv2jz",
+    "slug": "dip-de-zanahoria-2"
   },
   {
     "id": 3451442543822919931,
@@ -4812,7 +4877,8 @@
       "taza perejil fresco picado",
       "vinagre de vino"
     ],
-    "shortcode": "C_l_LUDPFj7"
+    "shortcode": "C_l_LUDPFj7",
+    "slug": "chimichurri-argentino"
   },
   {
     "id": 3447573132230317733,
@@ -4856,7 +4922,8 @@
       "salsas adecuadas: si vas a usar salsa de soja, que sea reducida en sodio",
       "tamaño de las porciones: hace rolls más pequeños que sean fáciles de comer, manipular"
     ],
-    "shortcode": "C_YPX9rxNal"
+    "shortcode": "C_YPX9rxNal",
+    "slug": "sushi-para-ninos"
   },
   {
     "id": 3444938941268167779,
@@ -4894,7 +4961,8 @@
       "quinoa roja",
       "sal"
     ],
-    "shortcode": "C_O4bcLMwxj"
+    "shortcode": "C_O4bcLMwxj",
+    "slug": "quinoa-roja"
   },
   {
     "id": 3441290949047484482,
@@ -4944,7 +5012,8 @@
       "tomate triturado 1 lata",
       "yogur natural"
     ],
-    "shortcode": "C_B6-KqvgBC"
+    "shortcode": "C_B6-KqvgBC",
+    "slug": "pollo-tikka-masala"
   },
   {
     "id": 3439858214285351104,
@@ -4973,7 +5042,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "C-81NIcMBjA"
+    "shortcode": "C-81NIcMBjA",
+    "slug": "como-descongelar-carne"
   },
   {
     "id": 3434070188296914268,
@@ -5016,7 +5086,8 @@
       "sal",
       "zanahoria"
     ],
-    "shortcode": "C-oRKRLMkVc"
+    "shortcode": "C-oRKRLMkVc",
+    "slug": "salchichas-de-pollo-caseras"
   },
   {
     "id": 3429692435674842919,
@@ -5064,7 +5135,8 @@
       "sal",
       "seca (1 sobre)"
     ],
-    "shortcode": "C-YtxlVPkcn"
+    "shortcode": "C-YtxlVPkcn",
+    "slug": "figacitas-caseras"
   },
   {
     "id": 3425352216444131488,
@@ -5102,7 +5174,8 @@
       "colmadas de harina leudante",
       "si querés podés agregarle una pizca de sal"
     ],
-    "shortcode": "C-JS7FLv9ig"
+    "shortcode": "C-JS7FLv9ig",
+    "slug": "masa-para-tarta-2"
   },
   {
     "id": 3420316829895455231,
@@ -5154,7 +5227,8 @@
       "zanahoria",
       "zapallo cabutia"
     ],
-    "shortcode": "C93aAkBNXH_"
+    "shortcode": "C93aAkBNXH_",
+    "slug": "puchero-argentino"
   },
   {
     "id": 3418826977279084973,
@@ -5198,7 +5272,8 @@
       "opcional: azúcar (opción vegana)",
       "pera con espinaca"
     ],
-    "shortcode": "C9yHQWpPgmt"
+    "shortcode": "C9yHQWpPgmt",
+    "slug": "gomitas-caseras"
   },
   {
     "id": 3414411383846964607,
@@ -5236,7 +5311,8 @@
       "pimentón",
       "sal"
     ],
-    "shortcode": "C9ibRAzP41_"
+    "shortcode": "C9ibRAzP41_",
+    "slug": "papas-al-horno"
   },
   {
     "id": 3411360278505579826,
@@ -5272,7 +5348,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "C9XlhlhM-Uy"
+    "shortcode": "C9XlhlhM-Uy",
+    "slug": "sanitizacion-de-verduras-y-frutas"
   },
   {
     "id": 3408706125551412083,
@@ -5302,7 +5379,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "C9OKCk9MKNz"
+    "shortcode": "C9OKCk9MKNz",
+    "slug": "nutrikids"
   },
   {
     "id": 3405145693872439412,
@@ -5332,7 +5410,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "C9Bgfejt8B0"
+    "shortcode": "C9Bgfejt8B0",
+    "slug": "curado-de-mate-de-calabaza"
   },
   {
     "id": 3403669984423274472,
@@ -5371,7 +5450,8 @@
       "sal",
       "verdura"
     ],
-    "shortcode": "C88Q9FCNWfo"
+    "shortcode": "C88Q9FCNWfo",
+    "slug": "arroz-perfecto"
   },
   {
     "id": 3399282333721284895,
@@ -5419,7 +5499,8 @@
       "vino tinto",
       "zanahoria"
     ],
-    "shortcode": "C8srUW4t9Ef"
+    "shortcode": "C8srUW4t9Ef",
+    "slug": "bifes-a-la-portuguesa"
   },
   {
     "id": 3394168046644727543,
@@ -5467,7 +5548,8 @@
       "sal",
       "zanahoria mediana, en tira"
     ],
-    "shortcode": "C8agdr4PY73"
+    "shortcode": "C8agdr4PY73",
+    "slug": "salteado-de-girgolas"
   },
   {
     "id": 3390576203906158033,
@@ -5495,7 +5577,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "C8NvxfpuA3R"
+    "shortcode": "C8NvxfpuA3R",
+    "slug": "reemplazos-veganos-para-huevo"
   },
   {
     "id": 3388418159218738751,
@@ -5540,7 +5623,8 @@
       "pimienta",
       "sal"
     ],
-    "shortcode": "C8GFFz6t0Y_"
+    "shortcode": "C8GFFz6t0Y_",
+    "slug": "milanesas-de-girgolas"
   },
   {
     "id": 3385519457646737968,
@@ -5568,7 +5652,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "C77yAJtNPow"
+    "shortcode": "C77yAJtNPow",
+    "slug": "tablas-de-cocina-guia-de-colores"
   },
   {
     "id": 3384065603491158342,
@@ -5595,7 +5680,8 @@
       "alitas de pollo",
       "elemento"
     ],
-    "shortcode": "C72nbygtVlG"
+    "shortcode": "C72nbygtVlG",
+    "slug": "alitas-de-pollo-marinadas"
   },
   {
     "id": 3379687287942074937,
@@ -5630,7 +5716,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "C7nD66ZsNI5"
+    "shortcode": "C7nD66ZsNI5",
+    "slug": "tipos-de-harina"
   },
   {
     "id": 3378233336789026693,
@@ -5671,7 +5758,8 @@
       "pimienta",
       "rebanadas de pan"
     ],
-    "shortcode": "C7h5VI3sUeF"
+    "shortcode": "C7h5VI3sUeF",
+    "slug": "segunda-oportunidad-pollo"
   },
   {
     "id": 3375339140973366721,
@@ -5701,7 +5789,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "C7XnRC-MI3B"
+    "shortcode": "C7XnRC-MI3B",
+    "slug": "tablas-de-cocina"
   },
   {
     "id": 3373890469131985035,
@@ -5755,7 +5844,8 @@
       "miel",
       "naranja"
     ],
-    "shortcode": "C7Sd4GLsCCL"
+    "shortcode": "C7Sd4GLsCCL",
+    "slug": "alfajores-caseros"
   },
   {
     "id": 3371493174297921890,
@@ -5780,7 +5870,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "C7J8y3Yroli"
+    "shortcode": "C7J8y3Yroli",
+    "slug": "comidas-para-cumpleanos"
   },
   {
     "id": 3368125317275642463,
@@ -5830,7 +5921,8 @@
       "tomates triturado",
       "zanahoria"
     ],
-    "shortcode": "C69_CGHNupf"
+    "shortcode": "C69_CGHNupf",
+    "slug": "guiso-de-mondongo"
   },
   {
     "id": 3366404153758662167,
@@ -5878,7 +5970,8 @@
       "sal",
       "tahini (pasta de sésamo)"
     ],
-    "shortcode": "C633r3rLz4X"
+    "shortcode": "C633r3rLz4X",
+    "slug": "hummus-2"
   },
   {
     "id": 3363017605348825377,
@@ -5919,7 +6012,8 @@
       "sal",
       "zanahoria"
     ],
-    "shortcode": "C6r1rGsM5kh"
+    "shortcode": "C6r1rGsM5kh",
+    "slug": "salteado-de-carne-con-mani"
   },
   {
     "id": 3360136372516242969,
@@ -5979,7 +6073,8 @@
       "verduras cocidas: 6-8 mes",
       "verduras crudas: 8-12 mes"
     ],
-    "shortcode": "C6hmjpgs0YZ"
+    "shortcode": "C6hmjpgs0YZ",
+    "slug": "tiempos-en-el-freezer"
   },
   {
     "id": 3357907319144106329,
@@ -6035,7 +6130,8 @@
       "tomat",
       "zanahoria"
     ],
-    "shortcode": "C6ZrupyRMlZ"
+    "shortcode": "C6ZrupyRMlZ",
+    "slug": "guiso-de-lentejas-3"
   },
   {
     "id": 3354998829819544776,
@@ -6062,7 +6158,8 @@
       "activación: el bicarbonato de sodio requiere una fuente externa de ácido",
       "calor."
     ],
-    "shortcode": "C6PWakBPsTI"
+    "shortcode": "C6PWakBPsTI",
+    "slug": "bicarbonato-de-sodio-vs-polvo-de-hornear"
   },
   {
     "id": 3352919143882332731,
@@ -6105,7 +6202,8 @@
       "sal",
       "tasa de crema"
     ],
-    "shortcode": "C6H9jJjtpo7"
+    "shortcode": "C6H9jJjtpo7",
+    "slug": "salsa-de-hongos"
   },
   {
     "id": 3349296933728723059,
@@ -6131,7 +6229,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "C57F9DeNKBz"
+    "shortcode": "C57F9DeNKBz",
+    "slug": "frutas-y-verduras-de-estacion"
   },
   {
     "id": 3347829570525249038,
@@ -6173,7 +6272,8 @@
       "tomate triturado",
       "zanahoria"
     ],
-    "shortcode": "C514UG_tL4O"
+    "shortcode": "C514UG_tL4O",
+    "slug": "estofado-de-pollo"
   },
   {
     "id": 3326609181018727625,
@@ -6216,7 +6316,8 @@
       "salsa de soja",
       "vinagre de manzana"
     ],
-    "shortcode": "C4qfWzNLKTJ"
+    "shortcode": "C4qfWzNLKTJ",
+    "slug": "pollo-con-salsa-de-miel-y-ajo"
   },
   {
     "id": 3314267024761236331,
@@ -6261,7 +6362,8 @@
       "pimienta",
       "sal"
     ],
-    "shortcode": "C3-pEydrytr"
+    "shortcode": "C3-pEydrytr",
+    "slug": "milanesas"
   },
   {
     "id": 3296923663462199846,
@@ -6301,7 +6403,8 @@
       "masa madre bien activa",
       "sal"
     ],
-    "shortcode": "C3BBpqkPnIm"
+    "shortcode": "C3BBpqkPnIm",
+    "slug": "pan-con-masa-madre"
   },
   {
     "id": 3287476633564358156,
@@ -6339,7 +6442,8 @@
       "masa madre activa",
       "sal"
     ],
-    "shortcode": "C2fdpSXACYM"
+    "shortcode": "C2fdpSXACYM",
+    "slug": "pizza-con-masa-madre"
   },
   {
     "id": 3283787029367823611,
@@ -6373,7 +6477,8 @@
       "fuerza",
       "harina ideal integral, de centeno,"
     ],
-    "shortcode": "C2SWuergRz7"
+    "shortcode": "C2SWuergRz7",
+    "slug": "masa-madre"
   },
   {
     "id": 3280944293224657232,
@@ -6403,7 +6508,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "C2IQXOVgDFQ"
+    "shortcode": "C2IQXOVgDFQ",
+    "slug": "cocinar-en-vacaciones-3"
   },
   {
     "id": 3214357831176118713,
@@ -6419,7 +6525,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "CybsWrEP2G5"
+    "shortcode": "CybsWrEP2G5",
+    "slug": "feliz-dia-a-anushcuidarte"
   },
   {
     "id": 3204992661454779795,
@@ -6448,7 +6555,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "Cx6a9hFvvWT"
+    "shortcode": "Cx6a9hFvvWT",
+    "slug": "guia-de-equivalencias-en-la-cocina"
   },
   {
     "id": 3202825004420947108,
@@ -6489,7 +6597,8 @@
       "similar",
       "verdura"
     ],
-    "shortcode": "CxyuF9KP9yk"
+    "shortcode": "CxyuF9KP9yk",
+    "slug": "medallones-de-lentejas"
   },
   {
     "id": 3194852843001460019,
@@ -6537,7 +6646,8 @@
       "manteca pomada (a temperatura ambiente)",
       "ralladura de medio limón (4gr)"
     ],
-    "shortcode": "CxWZbvQv7Uz"
+    "shortcode": "CxWZbvQv7Uz",
+    "slug": "tarta-de-crema-pastelera-con-frutas"
   },
   {
     "id": 3189782315920244660,
@@ -6580,7 +6690,8 @@
       "lima",
       "opcional: ralladura de limón"
     ],
-    "shortcode": "CxEYh27P7-0"
+    "shortcode": "CxEYh27P7-0",
+    "slug": "crema-pastelera"
   },
   {
     "id": 3187627992033276556,
@@ -6671,7 +6782,8 @@
       "zanahoria",
       "zapallo/calabaza"
     ],
-    "shortcode": "Cw8usUdPDKM"
+    "shortcode": "Cw8usUdPDKM",
+    "slug": "como-hacer-un-buen-salteado"
   },
   {
     "id": 3184703452844334328,
@@ -6719,7 +6831,8 @@
       "pimienta",
       "sal"
     ],
-    "shortcode": "CwyVurFvxz4"
+    "shortcode": "CwyVurFvxz4",
+    "slug": "pastel-de-papa-alternativo"
   },
   {
     "id": 3179642081197799001,
@@ -6758,19 +6871,18 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "limón",
+      "1 limón",
       "aceite de oliva",
-      "ajo",
+      "ajo (puede ser crudos, pero yo prefiero asarlos también)",
       "berenjena",
-      "comino",
-      "pimentón",
-      "sal",
-      "perejil,",
+      "comino, pimentón, sal",
+      "perejil fresco opcional,",
+      "pimentón ahumado opcional,",
       "pimienta",
-      "tahini",
-      "pasta de sésamo"
+      "tahini (pasta de sésamo) (si no tenés queda riquísimo igual)"
     ],
-    "shortcode": "CwgW6BarbZZ"
+    "shortcode": "CwgW6BarbZZ",
+    "slug": "baba-ganoush"
   },
   {
     "id": 3175286192055922454,
@@ -6809,14 +6921,16 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "limón",
-      "aceite",
+      "1 limón",
+      "aceite neutro",
       "azúcar",
       "harina",
       "huevo",
-      "polvo de hornear"
+      "polvo",
+      "ralladura de 1 limón"
     ],
-    "shortcode": "CwQ4ffhsi8W"
+    "shortcode": "CwQ4ffhsi8W",
+    "slug": "budin-de-limon"
   },
   {
     "id": 3170217780640108178,
@@ -6853,7 +6967,8 @@
       "nuez moscada, sal",
       "pimienta"
     ],
-    "shortcode": "Cv-4EZjrk6S"
+    "shortcode": "Cv-4EZjrk6S",
+    "slug": "salsa-bechamel"
   },
   {
     "id": 3168000524703727690,
@@ -6905,7 +7020,8 @@
       "vainillas (tiene que ser algo seco)",
       "yema"
     ],
-    "shortcode": "Cv2_7FDN4BK"
+    "shortcode": "Cv2_7FDN4BK",
+    "slug": "tiramisu"
   },
   {
     "id": 3166229213346890064,
@@ -6942,7 +7058,8 @@
       "crema de leche (de batir, mínimo 30% de materia grasa)",
       "jugo de limón 🍋"
     ],
-    "shortcode": "CvwtLGzAYFQ"
+    "shortcode": "CvwtLGzAYFQ",
+    "slug": "queso-mascarpone-casero"
   },
   {
     "id": 3164435187751661568,
@@ -6980,7 +7097,8 @@
       "colmadas de harina leudante",
       "si querés podés agregarle una pizca de sal"
     ],
-    "shortcode": "CvqVQmQrzAA"
+    "shortcode": "CvqVQmQrzAA",
+    "slug": "masa-para-tarta-3"
   },
   {
     "id": 3160778467628544373,
@@ -7027,7 +7145,8 @@
       "zanahoria",
       "zapallo cabutia"
     ],
-    "shortcode": "CvdV0UQs_F1"
+    "shortcode": "CvdV0UQs_F1",
+    "slug": "carbonada-criolla"
   },
   {
     "id": 3157191918159734942,
@@ -7071,7 +7190,8 @@
       "sal",
       "zapallo"
     ],
-    "shortcode": "CvQmVJxpSie"
+    "shortcode": "CvQmVJxpSie",
+    "slug": "sopa-crema-de-calabaza"
   },
   {
     "id": 3139811650760932730,
@@ -7098,7 +7218,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "CuS2g-ZPP16"
+    "shortcode": "CuS2g-ZPP16",
+    "slug": "viandas-para-ninos"
   },
   {
     "id": 3117257510506240103,
@@ -7124,7 +7245,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "CtCuTCbJJhn"
+    "shortcode": "CtCuTCbJJhn",
+    "slug": "tipos-de-cortes"
   },
   {
     "id": 3115859865469710296,
@@ -7174,7 +7296,8 @@
       "semilla",
       "sésamo"
     ],
-    "shortcode": "Cs9wgoDN-_Y"
+    "shortcode": "Cs9wgoDN-_Y",
+    "slug": "pan-integral-3"
   },
   {
     "id": 3105744074832724152,
@@ -7221,7 +7344,8 @@
       "negro",
       "porotos pesados ya cocidos, yo usé colorado"
     ],
-    "shortcode": "CsZ0cf3rcC4"
+    "shortcode": "CsZ0cf3rcC4",
+    "slug": "brownie-de-porotos"
   },
   {
     "id": 3096286885739229787,
@@ -7269,7 +7393,8 @@
       "semilla",
       "semillas las que gustes, yo use chia, sésamo"
     ],
-    "shortcode": "Cr4OISLL_Jb"
+    "shortcode": "Cr4OISLL_Jb",
+    "slug": "crackers-de-semillas-3"
   },
   {
     "id": 3084660573602809547,
@@ -7292,7 +7417,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "CrO6nLOP4bL"
+    "shortcode": "CrO6nLOP4bL",
+    "slug": "tipos-de-coccion-de-alimentos-2"
   },
   {
     "id": 3074510921653993469,
@@ -7315,7 +7441,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "Cqq22TPPr_9"
+    "shortcode": "Cqq22TPPr_9",
+    "slug": "tipos-de-coccion-de-alimentos-3"
   },
   {
     "id": 3073125547395833151,
@@ -7364,7 +7491,8 @@
       "polvo de hornear",
       "taza bebida de almendra, maní, ..."
     ],
-    "shortcode": "Cql72c6tN0_"
+    "shortcode": "Cql72c6tN0_",
+    "slug": "cereal-casero-de-legumbres"
   },
   {
     "id": 3069435649237806664,
@@ -7387,7 +7515,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "CqY03XdvW5I"
+    "shortcode": "CqY03XdvW5I",
+    "slug": "tipos-de-coccion-de-alimentos-4"
   },
   {
     "id": 3056218302770962563,
@@ -7432,7 +7561,8 @@
       "polvo",
       "sal"
     ],
-    "shortcode": "Cpp3lqUteCD"
+    "shortcode": "Cpp3lqUteCD",
+    "slug": "hotcakes-3"
   },
   {
     "id": 3029573667718140826,
@@ -7485,7 +7615,8 @@
       "su ralladura",
       "yogurt (podes ver la receta en mi instagram)"
     ],
-    "shortcode": "CoLNTMNN5Oa"
+    "shortcode": "CoLNTMNN5Oa",
+    "slug": "salsa-de-yogurt"
   },
   {
     "id": 3028941501570672073,
@@ -7511,7 +7642,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "CoI9j9mjuXJ"
+    "shortcode": "CoI9j9mjuXJ",
+    "slug": "escherichia-coli-salmonela"
   },
   {
     "id": 3023056074752447271,
@@ -7544,11 +7676,14 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "leche",
-      "leche en polvo",
-      "yogurt natural"
+      "@familiabeaudroit",
+      "gusto, es solo por si querés más firmeza",
+      "leche entera",
+      "opcional: leche en polvo 2 cucharada",
+      "pote de yogurt natural recomiendo usar el yogurt natural @dahioficial"
     ],
-    "shortcode": "Cn0DXuvtNMn"
+    "shortcode": "Cn0DXuvtNMn",
+    "slug": "multiplicar-yogurt"
   },
   {
     "id": 3020165395799385336,
@@ -7590,7 +7725,8 @@
       "manteca",
       "nueces picada"
     ],
-    "shortcode": "CnpyG0LjKT4"
+    "shortcode": "CnpyG0LjKT4",
+    "slug": "brownie-de-chocolate-con-nueces"
   },
   {
     "id": 2984599844946852058,
@@ -7628,7 +7764,8 @@
       "limon",
       "nata de leche"
     ],
-    "shortcode": "Clrbb7yvjja"
+    "shortcode": "Clrbb7yvjja",
+    "slug": "helado-de-mousse-de-limon"
   },
   {
     "id": 2983765738127237083,
@@ -7673,7 +7810,8 @@
       "granola, frutos secos, otros cereal",
       "manteca de maní"
     ],
-    "shortcode": "ClodyFSDh_b"
+    "shortcode": "ClodyFSDh_b",
+    "slug": "galletitas-de-cereales"
   },
   {
     "id": 2962169494181341194,
@@ -7712,7 +7850,8 @@
       "quino",
       "sal"
     ],
-    "shortcode": "CkbvXXxLWgK"
+    "shortcode": "CkbvXXxLWgK",
+    "slug": "bastoncitos-milanesas-de-quinoa"
   },
   {
     "id": 2957093282585936392,
@@ -7758,7 +7897,8 @@
       "polvo de hornear",
       "sal"
     ],
-    "shortcode": "CkJtKxUOoII"
+    "shortcode": "CkJtKxUOoII",
+    "slug": "tortillas-de-trigo"
   },
   {
     "id": 2952749614831839382,
@@ -7799,7 +7939,8 @@
       "leche (aprox.)",
       "media"
     ],
-    "shortcode": "Cj6RiFeuSiW"
+    "shortcode": "Cj6RiFeuSiW",
+    "slug": "helado-de-arandano"
   },
   {
     "id": 2943337430166528365,
@@ -7853,7 +7994,8 @@
       "otra de la base anterior",
       "sal"
     ],
-    "shortcode": "CjY1cxbL-Ft"
+    "shortcode": "CjY1cxbL-Ft",
+    "slug": "crumble-de-manzana-3"
   },
   {
     "id": 2934645175529119355,
@@ -7876,7 +8018,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "Ci59D0dOh57"
+    "shortcode": "Ci59D0dOh57",
+    "slug": "que-es-sabor-umami"
   },
   {
     "id": 2928830416581084447,
@@ -7915,7 +8058,8 @@
       "huevo",
       "manteca"
     ],
-    "shortcode": "CilS78LrMUf"
+    "shortcode": "CilS78LrMUf",
+    "slug": "tarta-de-coco-y-dulce-de-leche"
   },
   {
     "id": 2925922136390613402,
@@ -7952,7 +8096,8 @@
       "orégano",
       "pan rallado"
     ],
-    "shortcode": "Cia9q5MA7ma"
+    "shortcode": "Cia9q5MA7ma",
+    "slug": "milanesas-de-garbanzo"
   },
   {
     "id": 2920860377060116266,
@@ -7988,7 +8133,8 @@
       "pan",
       "ralladura de medio limón"
     ],
-    "shortcode": "CiI-wmdLocq"
+    "shortcode": "CiI-wmdLocq",
+    "slug": "segunda-oportunidad-pan"
   },
   {
     "id": 2920812955857131777,
@@ -8016,7 +8162,8 @@
     "cleaned_ingredientes": [
       "azúcar"
     ],
-    "shortcode": "CiIz-iBORkB"
+    "shortcode": "CiIz-iBORkB",
+    "slug": "caramelo"
   },
   {
     "id": 2919944241854547183,
@@ -8051,7 +8198,8 @@
       "cucharita de vinagre",
       "esencia de vainilla"
     ],
-    "shortcode": "CiFudFDsATv"
+    "shortcode": "CiFudFDsATv",
+    "slug": "crema-vegana"
   },
   {
     "id": 2917057743707873407,
@@ -8079,7 +8227,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "Ch7eJALAqB_"
+    "shortcode": "Ch7eJALAqB_",
+    "slug": "dinoquesadilla"
   },
   {
     "id": 2916510253349641726,
@@ -8115,7 +8264,8 @@
       "harina de maíz precocida",
       "zanahoria"
     ],
-    "shortcode": "Ch5hp-CsJ3-"
+    "shortcode": "Ch5hp-CsJ3-",
+    "slug": "arepas-de-zanahoria"
   },
   {
     "id": 2911431153648013635,
@@ -8148,7 +8298,8 @@
       "para el relleno de la segunda opción: dulce de leche, queso crema, crema, banana",
       "queso crema"
     ],
-    "shortcode": "ChnezV1MhFD"
+    "shortcode": "ChnezV1MhFD",
+    "slug": "segunda-oportunidad-bizcochuelo"
   },
   {
     "id": 2905610974259242309,
@@ -8194,7 +8345,8 @@
       "pimienta",
       "sal"
     ],
-    "shortcode": "ChSzclYMuVF"
+    "shortcode": "ChSzclYMuVF",
+    "slug": "muhammara"
   },
   {
     "id": 2904750811335808998,
@@ -8238,7 +8390,8 @@
       "pan yo usé la pureza violeta, esto es",
       "sal"
     ],
-    "shortcode": "ChPv3kOstfm"
+    "shortcode": "ChPv3kOstfm",
+    "slug": "pan-relleno"
   },
   {
     "id": 2902016121275534244,
@@ -8285,7 +8438,8 @@
       "sal",
       "zanahoria"
     ],
-    "shortcode": "ChGCElpFcuk"
+    "shortcode": "ChGCElpFcuk",
+    "slug": "merluza-al-limon"
   },
   {
     "id": 2899119893145812759,
@@ -8333,7 +8487,8 @@
       "sal",
       "tomate"
     ],
-    "shortcode": "Cg7vi7AOX8X"
+    "shortcode": "Cg7vi7AOX8X",
+    "slug": "salsa-tatemada"
   },
   {
     "id": 2898392209847743210,
@@ -8379,7 +8534,8 @@
       "sal",
       "usar alguna harina sin tacc en la misma cantidad"
     ],
-    "shortcode": "Cg5KFvHu_Lq"
+    "shortcode": "Cg5KFvHu_Lq",
+    "slug": "galletitas-de-lentejas"
   },
   {
     "id": 2897670170547399083,
@@ -8426,7 +8582,8 @@
       "sal",
       "zanahoria"
     ],
-    "shortcode": "Cg2l6rnuSmr"
+    "shortcode": "Cg2l6rnuSmr",
+    "slug": "tortilla-de-acelga"
   },
   {
     "id": 2896940236174295582,
@@ -8457,12 +8614,13 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "coles de brusela",
-      "pimienta",
+      "bandeja de coles de brusela",
+      "pimienta negra",
       "queso",
       "sal"
     ],
-    "shortcode": "Cgz_8vQtIIe"
+    "shortcode": "Cgz_8vQtIIe",
+    "slug": "coles-de-bruselas-gratinados"
   },
   {
     "id": 2896215418651500641,
@@ -8494,14 +8652,14 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "avena",
-      "canela",
-      "canela en polvo",
-      "pasta de maní",
-      "huevo ",
-      "manzanas"
+      "avena 1/2 taza (80gr)",
+      "canela en polvo 1/2 cucharadita",
+      "cucharita de pasta de maní mega",
+      "huevo 1",
+      "manzanas 2 unidad"
     ],
-    "shortcode": "CgxbJQVu2Bh"
+    "shortcode": "CgxbJQVu2Bh",
+    "slug": "galletitas-de-manzana-y-avena"
   },
   {
     "id": 2895493636177136688,
@@ -8540,12 +8698,13 @@
     "cleaned_ingredientes": [
       "aceite",
       "ajo",
-      "limón",
-      "pimienta",
+      "medio limón",
+      "pimienta negra",
       "sal",
       "zanahoria"
     ],
-    "shortcode": "Cgu3B8Bvgww"
+    "shortcode": "Cgu3B8Bvgww",
+    "slug": "dip-de-zanahoria-3"
   },
   {
     "id": 2892590973252745774,
@@ -8584,12 +8743,14 @@
       "agua",
       "ajo",
       "cebolla",
-      "cebolla de verdeo",
+      "cebollitas de verdeo",
+      "huevo versión vegana con una cuchara de alguna fécula",
       "perejil",
       "tomates seco",
       "trigo burgol"
     ],
-    "shortcode": "CgkjCohOzou"
+    "shortcode": "CgkjCohOzou",
+    "slug": "hamburguesas-de-trigo-burgol"
   },
   {
     "id": 2891865988744955692,
@@ -8623,19 +8784,18 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "aceite",
-      "azúcar",
-      "leche",
-      "harina integral",
-      "bananas",
+      "(1 taza) de aceite de girasol",
+      "(1 taza) de azúcar integral",
+      "(2 cdas) de leche",
+      "(3 tazas) de harina integral fina",
+      "bananas medianas maduras (negras)",
       "esencia de vainilla",
       "huevo",
-      "nueces",
-      "pasas de uva",
-      "chips de chocolate",
+      "opcional: nueces, pasas de uva, chips de chocolate, etc.",
       "polvo de hornear"
     ],
-    "shortcode": "Cgh-MuFLUcs"
+    "shortcode": "Cgh-MuFLUcs",
+    "slug": "budin-de-banana-3"
   },
   {
     "id": 2890423068218010132,
@@ -8668,15 +8828,15 @@
     "cleaned_ingredientes": [
       "ajo",
       "berenjena",
-      "mostaza",
-      "pan rallado",
-      "panko",
-      "avena",
+      "condimento",
+      "cucharadita de mostaza",
+      "empanado puede ser pan rallado, panko, avena",
       "huevo",
       "perejil",
       "salvado"
     ],
-    "shortcode": "Cgc2HdnuqoU"
+    "shortcode": "Cgc2HdnuqoU",
+    "slug": "milanesas-de-berenjena-3"
   },
   {
     "id": 2887541849218325466,
@@ -8709,14 +8869,16 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "arroz",
-      "azúcar",
-      "limón",
-      "agua",
-      "leche",
-      "canela"
+      "arroz carnaroli",
+      "azúcar yo usé mascabo",
+      "bomba sería lo mejor si no doble carolina",
+      "cáscara de medio limón",
+      "diluí en agua",
+      "leche entera",
+      "ramitas de canela"
     ],
-    "shortcode": "CgSnANUu5va"
+    "shortcode": "CgSnANUu5va",
+    "slug": "arroz-con-leche"
   },
   {
     "id": 2883965321174385376,
@@ -8757,10 +8919,11 @@
     "cleaned_ingredientes": [
       "azúcar impalpable",
       "esencia de vainilla",
-      "manteca",
-      "queso crema"
+      "manteca (a temperatura ambiente)",
+      "queso crema (a temperatura ambiente)"
     ],
-    "shortcode": "CgF5y4BJQLg"
+    "shortcode": "CgF5y4BJQLg",
+    "slug": "cream-cheese"
   },
   {
     "id": 2883186807995352076,
@@ -8799,9 +8962,9 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "frutos seco",
+      ". de frutos seco",
       "aceite",
-      "azúcar",
+      "azúcar (en mi caso mascabo)",
       "canela",
       "esencia de vainilla",
       "harina no leudante",
@@ -8809,9 +8972,10 @@
       "jengibre",
       "polvo",
       "sal",
-      "zanahoria"
+      "zanahoria rallada"
     ],
-    "shortcode": "CgDIyBHp8QM"
+    "shortcode": "CgDIyBHp8QM",
+    "slug": "carrot-cake"
   },
   {
     "id": 2882450209419972656,
@@ -8847,12 +9011,10 @@
       "cebolla morada",
       "cebollas de verdeo",
       "puerro",
-      "sal",
-      "pimentón",
-      "ají molido",
-      "paprika"
+      "sal, pimentón, ají molido, paprika"
     ],
-    "shortcode": "CgAhTGPOlAw"
+    "shortcode": "CgAhTGPOlAw",
+    "slug": "salsa-para-locro"
   },
   {
     "id": 2881000421273029199,
@@ -8888,22 +9050,19 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "maíz blanco partido",
-      "poroto blanco",
-      "hongo",
-      "portobello",
+      ". de maíz blanco partido",
+      ". de porotos blancos (yo usé mitad alubia, mitad poroto manteca)",
+      "algunos hongos seco",
+      "bandeja de portobello",
       "cebolla",
       "cebollas de verdeo",
       "puerro",
-      "sal",
-      "pimienta",
-      "pimentón",
-      "ají molido",
-      "paprika",
+      "sal, pimienta, pimentón, ají molido, paprika",
       "tofu",
-      "zapallo"
+      "zapallo (prefiero cabutia)"
     ],
-    "shortcode": "Cf7Xp5zuspP"
+    "shortcode": "Cf7Xp5zuspP",
+    "slug": "locro-vegano"
   },
   {
     "id": 2879389758213904266,
@@ -8945,8 +9104,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "maíz blanco partido",
-      "porotos blancos",
+      ". de maíz blanco partido",
+      ". de porotos blancos (yo usé mitad alubia, mitad poroto manteca)",
       "cebolla",
       "cebollas de verdeo",
       "chorizo colorado",
@@ -8958,15 +9117,11 @@
       "patitas de cerdo cortada",
       "pechito de cerdo",
       "puerro",
-      "sal",
-      "pimienta",
-      "pimentón",
-      "ají molido",
-      "paprika",
-      "zapallo",
-      "cabutia"
+      "sal, pimienta, pimentón, ají molido, paprika",
+      "zapallo (prefiero cabutia)"
     ],
-    "shortcode": "Cf1pbq8PNeK"
+    "shortcode": "Cf1pbq8PNeK",
+    "slug": "locro-tradicional"
   },
   {
     "id": 2876635228842400674,
@@ -8997,11 +9152,12 @@
     "cleaned_ingredientes": [
       "aceite",
       "limón",
-      "pimienta",
+      "pimienta negra",
       "sal",
       "semillas de girasol"
     ],
-    "shortcode": "Cfr3H_jhpui"
+    "shortcode": "Cfr3H_jhpui",
+    "slug": "untable-de-girasol"
   },
   {
     "id": 2875910318056608665,
@@ -9042,12 +9198,12 @@
       "leche",
       "manteca",
       "pimienta",
-      "queso mozzarella",
-      "queso cremoso",
+      "queso mozzarella, cremoso, blando",
       "sal",
       "semiduro"
     ],
-    "shortcode": "CfpSTJxpROZ"
+    "shortcode": "CfpSTJxpROZ",
+    "slug": "chipa-guazu"
   },
   {
     "id": 2874477172757081630,
@@ -9082,14 +9238,15 @@
     "cleaned_ingredientes": [
       "aceite",
       "barbacoa",
-      "bondiola",
-      "limón",
+      "bondiola aprox 1,5kg",
+      "medio limón",
       "paprika",
       "pimienta",
       "sal",
-      "salsa katsu"
+      "salsa katsu en mi caso"
     ],
-    "shortcode": "CfkMcJNJ64e"
+    "shortcode": "CfkMcJNJ64e",
+    "slug": "bondiola-desmechada"
   },
   {
     "id": 2873017135474182442,
@@ -9129,23 +9286,20 @@
     "cleaned_ingredientes": [
       "ajo",
       "akusay",
-      "carne",
-      "carne picada",
+      "carne en este caso tenía de otra comida, pero si no tienen previamente hecho pueden hacerlo con carne picada",
       "cebolla",
       "cuchillo",
       "morrón",
-      "pimentón",
-      "laurel",
-      "sal",
+      "pimentón, laurel, sal",
       "pimienta",
-      "puré",
-      "repollo",
-      "col",
-      "tomate",
-      "arroz",
+      "puré (en mi caso tenía papines del día anterior que hice puré)",
+      "repollo/col",
+      "simplemente de tómate",
+      "taza de arroz cocido",
       "zanahoria"
     ],
-    "shortcode": "CffAdzhjIkq"
+    "shortcode": "CffAdzhjIkq",
+    "slug": "arrollados-de-akusay"
   },
   {
     "id": 2872305844105539390,
@@ -9188,11 +9342,12 @@
       "huevo",
       "leche",
       "manteca",
-      "sal",
+      "pizca de sal (opcional porque depende de lo salado que sea el queso)",
       "polvo de hornear",
-      "queso"
+      "queso (semiduro generalmente, pero pueden combinar, yo usé 70% fontina, 15% mozzarella, 15% parmesano)"
     ],
-    "shortcode": "CfcevJ0MG8-"
+    "shortcode": "CfcevJ0MG8-",
+    "slug": "chipa"
   },
   {
     "id": 2870850475245083366,
@@ -9232,16 +9387,15 @@
       "ajo",
       "arroz",
       "cebolla",
-      "arveja",
+      "lata de arveja",
       "morrón",
-      "pimentón",
-      "laurel",
-      "sal",
+      "pimentón, laurel, sal",
       "pimienta",
       "pollo",
       "zanahoria"
     ],
-    "shortcode": "CfXT0v8Pprm"
+    "shortcode": "CfXT0v8Pprm",
+    "slug": "arroz-con-pollo-3"
   },
   {
     "id": 2866521208722078412,
@@ -9275,9 +9429,10 @@
     "cleaned_ingredientes": [
       "fécula de mandioca",
       "manteca",
-      "queso"
+      "queso fresco (queso paraguay, cuartirolo, muzarella, podrás usar cualquier de esos, si el queso no es húmedo es recomendable agregar 1 cucharada de agua)"
     ],
-    "shortcode": "CfH7doTALrM"
+    "shortcode": "CfH7doTALrM",
+    "slug": "mbeju"
   },
   {
     "id": 2865098342322151836,
@@ -9297,7 +9452,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
-    "shortcode": "CfC38MsrCGc"
+    "shortcode": "CfC38MsrCGc",
+    "slug": "cocinar-en-familia"
   },
   {
     "id": 2862150153139917811,
@@ -9336,14 +9492,16 @@
       "agregando",
       "ajo",
       "cebolla",
-      "pimentón",
+      "condimento que gustes, yo use pimentón dulce una cucharada",
       "espinaca",
-      "garbanzo",
+      "garbanzo cocido 150g secos si vas a hidratar",
+      "lata",
       "pimienta",
-      "aceite",
+      "poco de aceite",
       "sal"
     ],
-    "shortcode": "Ce4ZmZjvBPz"
+    "shortcode": "Ce4ZmZjvBPz",
+    "slug": "nuggets-de-garbanzo-y-espinaca"
   },
   {
     "id": 2861436538397511708,
@@ -9384,19 +9542,19 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
+      "agregando",
       "ajo",
       "cebolla",
       "cilantro",
-      "morrón",
-      "pimiento",
-      "palta",
-      "aguacate",
+      "morrón verde (pimiento verde)",
+      "paltas (aguacates) tamaño medio",
       "perejil",
       "pimienta",
       "sal",
       "vinagre"
     ],
-    "shortcode": "Ce13V8CgdAc"
+    "shortcode": "Ce13V8CgdAc",
+    "slug": "salsa-guasacaca"
   },
   {
     "id": 2860703577829171564,
@@ -9442,7 +9600,8 @@
       "queso llanero",
       "sal"
     ],
-    "shortcode": "CezQr9UMmFs"
+    "shortcode": "CezQr9UMmFs",
+    "slug": "tequenos"
   },
   {
     "id": 2857880562263182824,
@@ -9471,17 +9630,15 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "careés de cerdo",
-      "costillita de cerdo",
+      "careés de cerdo deshuesado o comprar costillita de cerdo",
       "huevo",
       "pan rallado",
       "panko",
-      "sal",
-      "pimienta",
-      "pimentón",
-      "provenzal"
+      "sacar el hueso",
+      "sal, pimienta, pimentón, provenzal"
     ],
-    "shortcode": "CepOzrMMM3o"
+    "shortcode": "CepOzrMMM3o",
+    "slug": "tonkatsu"
   },
   {
     "id": 2854909275122683702,
@@ -9513,19 +9670,20 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "harina leudante",
-      "crema de leche",
+      "harina leudante si tené",
+      "partes iguales de crema (a mas % graso mejor)",
+      "pizza mejor, en mi caso media taza de cada uno.",
       "sal"
     ],
-    "shortcode": "CeerNwZp882"
+    "shortcode": "CeerNwZp882",
+    "slug": "bizcochitos"
   },
   {
     "id": 2854027432816047201,
-    "name": "🅕🅐🅛🅐🅕🅔🅛",
-    "description": "🅕🅐🅛🅐🅕🅔🅛\n\n⏳Tiempo: 45 minutos (10 de preparación, 15 minutos de reposo y 15/20 de armado y cocción)\n\n👨🏼‍🍳Ingredientes (aproximadamente para 25/30 falafels):\n\n- Garbanzos (2 taza remojados, 250g secos)\n- Cebolla (una mediana, en este caso use dos variedades)\n- Ajo (un diente)\n- Perejil (media taza)\n- Cilantro (media taza, si no tenes reemplazalo con perejil)\n- Limón (uno para jugo, opcional)\n- Condimentos (comino, paprika o pimentón dulce, pimienta negra y sal)\n- Polvo de hornear (opcional)\n\nSi falta consistencia harina (de garbanzos, de arvejas, la que quieras) o pan rallado\n\n🐾 Pasos 🐾\n\nRemojar los garbanzos, mínimo 10 horas (ideal mas de 12).\nPaso super importante ya que los garbanzos no se van a hervir.\n\nEscurrimos y procesar los garbanzos (si tenes procesadora mejor, sino licuadora) hasta tener una consistencia granulada\n\nProcesar la cebolla junto con el ajo, perejil y cilantro. Se puede procesar aparte o junto con los garbanzo, yo recomiendo aparte si es una licuadora o con la mitad del garbanzo si es procesadora.\n\nMezclar las cosas procesadas y agregar condimentos y polvo de hornear: 1 cucharada de paprika o pimentón dulce, 2 cucharaditas de comino, 1 cucharadita de polvo de hornear y una pizca de pimienta. En este paso si las personas que van a comer consumen sal, se agregaría dicho ingrediente (2 cucharaditas).\n\nYa en ese paso tenemos que tener una masa maleable, es decir, que podamos hacer las forma que buscamos y que no se desarme. Si le sobra líquido se le agrega pan rallado o harina para lograr que sea húmeda pero que no pierda líquido al armar los falafels. Si está muy seca, se puede hidratar con limon oagua, y si te pasas compensar con harina o pan rallado.\n\nDejar reposar 15 minutos en la heladera\n\nArmar las formas que busques (lo más típico son pelotitas pero dejen volar la imaginación) y cocinarlas.\nFreírlas con aceite a 170 grados hasta que se vean doradas o hacer al horno (medio-alto) hasta dorarlas.\n\nY a comer!!! Puede ser en pan con alguna salsa o directamente como entrada 🥙\n\nEspero que les guste!\n\nCualquier duda les leo! 🧐\n\n",
+    "name": "Falafel",
+    "description": "Falafel\n\n⏳Tiempo: 45 minutos (10 de preparación, 15 minutos de reposo y 15/20 de armado y cocción)\n\n👨🏼‍🍳Ingredientes (aproximadamente para 25/30 falafels):\n\n- Garbanzos (2 taza remojados, 250g secos)\n- Cebolla (una mediana, en este caso use dos variedades)\n- Ajo (un diente)\n- Perejil (media taza)\n- Cilantro (media taza, si no tenes reemplazalo con perejil)\n- Limón (uno para jugo, opcional)\n- Condimentos (comino, paprika o pimentón dulce, pimienta negra y sal)\n- Polvo de hornear (opcional)\n\nSi falta consistencia harina (de garbanzos, de arvejas, la que quieras) o pan rallado\n\n🐾 Pasos 🐾\n\nRemojar los garbanzos, mínimo 10 horas (ideal mas de 12).\nPaso super importante ya que los garbanzos no se van a hervir.\n\nEscurrimos y procesar los garbanzos (si tenes procesadora mejor, sino licuadora) hasta tener una consistencia granulada\n\nProcesar la cebolla junto con el ajo, perejil y cilantro. Se puede procesar aparte o junto con los garbanzo, yo recomiendo aparte si es una licuadora o con la mitad del garbanzo si es procesadora.\n\nMezclar las cosas procesadas y agregar condimentos y polvo de hornear: 1 cucharada de paprika o pimentón dulce, 2 cucharaditas de comino, 1 cucharadita de polvo de hornear y una pizca de pimienta. En este paso si las personas que van a comer consumen sal, se agregaría dicho ingrediente (2 cucharaditas).\n\nYa en ese paso tenemos que tener una masa maleable, es decir, que podamos hacer las forma que buscamos y que no se desarme. Si le sobra líquido se le agrega pan rallado o harina para lograr que sea húmeda pero que no pierda líquido al armar los falafels. Si está muy seca, se puede hidratar con limon oagua, y si te pasas compensar con harina o pan rallado.\n\nDejar reposar 15 minutos en la heladera\n\nArmar las formas que busques (lo más típico son pelotitas pero dejen volar la imaginación) y cocinarlas.\nFreírlas con aceite a 170 grados hasta que se vean doradas o hacer al horno (medio-alto) hasta dorarlas.\n\nY a comer!!! Puede ser en pan con alguna salsa o directamente como entrada 🥙\n\nEspero que les guste!\n\nCualquier duda les leo! 🧐\n\n",
     "tags": [
       "Blw",
-      "Falafel",
       "Garbanzos",
       "Legumbres",
       "Vegano"
@@ -9557,17 +9715,19 @@
       "ajo",
       "cebolla",
       "cilantro",
+      "condimentos",
       "comino",
       "paprika",
-      "garbanzo",
+      "garbanzos",
       "limón",
       "perejil",
-      "pimentón",
+      "pimentón dulce",
       "pimienta",
       "polvo de hornear",
       "sal"
     ],
-    "shortcode": "CebitQwOHRh"
+    "shortcode": "CebitQwOHRh",
+    "slug": "falafel"
   },
   {
     "id": 2851368708607607508,
@@ -9611,13 +9771,14 @@
       "ajo",
       "brócoli",
       "coliflor (o ambas)",
-      "pimienta",
-      "harina",
-      "comino",
-      "pan rallado",
+      "condimentos: pimienta blanca",
+      "harina (yo use de maíz)",
+      "negra, comino (a gusto)",
+      "pan rallado (para apanar)",
       "perejil"
     ],
-    "shortcode": "CeSGLu4OILU"
+    "shortcode": "CeSGLu4OILU",
+    "slug": "patitas-de-brocolicoliflor"
   },
   {
     "id": 2847759569454913686,
@@ -9652,13 +9813,14 @@
     "cleaned_ingredientes": [
       "aceite",
       "ajo",
-      "leche",
-      "limón",
+      "leche 🥛",
+      "limón 🍋",
       "perejil",
       "pimienta",
       "sal"
     ],
-    "shortcode": "CeFRj2HFFiW"
+    "shortcode": "CeFRj2HFFiW",
+    "slug": "lactonesa"
   },
   {
     "id": 2846311302475326472,
@@ -9697,13 +9859,14 @@
     "cleaned_ingredientes": [
       "aceite",
       "agua",
-      "azúcar",
-      "harina de trigo",
+      "azúcar (media cucharada)",
+      "harina de trigo c/ levadura (2 tazas) tipo pureza",
       "leche",
-      "sal",
-      "yogur natural"
+      "sal (media cucharada)",
+      "yogur natural (1/4 taza)"
     ],
-    "shortcode": "CeAIQyYOKQI"
+    "shortcode": "CeAIQyYOKQI",
+    "slug": "pan-naan-3"
   },
   {
     "id": 2844918667852510200,
@@ -9738,16 +9901,16 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite de oliva",
-      "agua",
-      "ajo",
-      "comino",
-      "pimentón",
-      "garbanzos",
-      "limón",
+      "agua cantidad necesaria (mejor si es la de la cocción)",
+      "ajo (a gusto)",
+      "cdta de comino",
+      "cdta de pimentón",
+      "garbanzos (una taza ya cocidos)",
+      "medio limón chiquito",
       "sal",
-      "tahini",
-      "pasta de sésamo"
+      "tahini (pasta de sésamo)"
     ],
-    "shortcode": "Cd7LnSUOfP4"
+    "shortcode": "Cd7LnSUOfP4",
+    "slug": "hummus-3"
   }
 ]

@@ -99,24 +99,32 @@ def main():
     changes_count = 0
 
     for i, recipe in enumerate(recipes, 1):
-        updated_recipe, changed = parser.refresh_recipe(recipe, force=args.force)
+        # Pasar recetas originales + las ya actualizadas para que tenga contexto completo
+        all_recipes_context = recipes + updated_recipes
+        
+        updated_recipe, changed = parser.refresh_recipe(
+            recipe, force=args.force, existing_recipes=all_recipes_context
+        )
         updated_recipes.append(updated_recipe)
 
         if changed:
             changes_count += 1
-            original_tags = recipe.get("old_tags", [])
-            if not original_tags:
-                original_tags = recipe.get("tags", [])
-
             print(f"  ✨ [{i}/{len(recipes)}] {recipe.get('name', 'Sin nombre')}")
-            print(
-                f"     Easy: {recipe.get('easy', False)} -> {updated_recipe.get('easy', False)}"
-            )
-            print(f"     Originales: {original_tags}")
-            print(f"     Antes: {recipe.get('tags', [])}")
-            print(f"     Después: {updated_recipe.get('tags', [])}")
         else:
             print(f"  ✓ [{i}/{len(recipes)}] {recipe.get('name', 'Sin nombre')}")
+
+    # Al final, corregir cualquier slug duplicado que haya quedado
+    print("\n🔍 Corrigiendo slugs duplicados...")
+    updated_recipes, slug_changes = parser.fix_all_duplicate_slugs(updated_recipes)
+    
+    if slug_changes:
+        changes_count += len(slug_changes)
+        print(f"⚠️  Se corrigieron {len(slug_changes)} slugs duplicados:\n")
+        for change in slug_changes:
+            print(f"  🔗 {change['recipe']}")
+            print(f"     {change['old_slug']} → {change['new_slug']}")
+    else:
+        print("✓ No se encontraron slugs duplicados")
 
     # Mostrar estadísticas finales
     print_statistics(updated_recipes, "\n📊 Estadísticas DESPUÉS del refresh")

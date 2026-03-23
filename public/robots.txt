@@ -1,0 +1,18 @@
+# Robots.txt para Al Horno Con Papá
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /?*search=
+Disallow: /?*page=
+Crawl-delay: 1
+
+# Sitemaps
+Sitemap: https://alhornoconpapa.com.ar/sitemap.xml
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /

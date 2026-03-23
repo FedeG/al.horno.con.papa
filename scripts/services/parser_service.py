@@ -6,6 +6,7 @@ Maneja el procesamiento de datos: parsing de captions, manejo de JSON, etc.
 
 import re
 import json
+import unicodedata
 from pathlib import Path
 from datetime import datetime
 import sys
@@ -38,6 +39,134 @@ class ParserService:
         """
         self.recipes_file = recipes_file
         self.recipes_path = Path(__file__).parent.parent.parent / self.recipes_file
+
+    def generate_slug(self, recipe_name):
+        """
+        Genera un slug SEO-friendly a partir del nombre de la receta.
+        
+        Procesa:
+        - Convierte a minúsculas
+        - Remueve tildes y acentos (toné → tone, café → cafe)
+        - Elimina caracteres especiales (incluyendo emojis)
+        - Reemplaza espacios con guiones
+        - Elimina guiones múltiples
+        - Elimina guiones al inicio y final
+
+        Args:
+            recipe_name: Nombre de la receta
+
+        Returns:
+            str: Slug limpio y SEO-friendly
+        """
+        if not recipe_name:
+            return ""
+        
+        # 1. Convertir a minúsculas
+        slug = recipe_name.lower()
+        
+        # 2. Remover tildes y acentos normalizando a NFD y eliminando diacríticos
+        texto_normalizado = unicodedata.normalize('NFD', slug)
+        slug = ''.join(c for c in texto_normalizado if unicodedata.category(c) != 'Mn')
+        
+        # 3. Eliminar caracteres especiales (mantiene solo letras, números, espacios y guiones)
+        # Esto elimina emojis y otros caracteres especiales
+        slug = re.sub(r'[^\w\s-]', '', slug, flags=re.UNICODE)
+        
+        # 4. Reemplazar espacios múltiples con un solo guión
+        slug = re.sub(r'\s+', '-', slug.strip())
+        
+        # 5. Eliminar guiones múltiples
+        slug = re.sub(r'-+', '-', slug)
+        
+        # 6. Eliminar guiones al inicio y final
+        slug = slug.strip('-')
+        
+        return slug
+
+    def generate_unique_slug(self, recipe_name, existing_recipes):
+        """
+        Genera un slug único verificando que no exista un duplicado en las recetas existentes.
+        Si hay un duplicado, agrega un sufijo numérico (-2, -3, -4, ...) al final.
+
+        Args:
+            recipe_name: Nombre de la receta
+            existing_recipes: Lista de recetas existentes
+
+        Returns:
+            str: Slug único con sufijo si es necesario
+        """
+        # Generar el slug base
+        base_slug = self.generate_slug(recipe_name)
+        
+        if not base_slug:
+            return ""
+        
+        # Obtener todos los slugs existentes
+        existing_slugs = set()
+        for recipe in existing_recipes:
+            if "slug" in recipe and recipe["slug"]:
+                existing_slugs.add(recipe["slug"])
+        
+        # Si el slug base no existe, devolverlo tal cual
+        if base_slug not in existing_slugs:
+            return base_slug
+        
+        # Si existe un duplicado, agregar sufijos -2, -3, -4, ...
+        counter = 2
+        while True:
+            new_slug = f"{base_slug}-{counter}"
+            if new_slug not in existing_slugs:
+                return new_slug
+            counter += 1
+
+    def fix_all_duplicate_slugs(self, recipes):
+        """
+        Busca y corrige TODOS los slugs duplicados en las recetas.
+        Regenera los slugs usando generate_unique_slug para asegurar unicidad.
+
+        Args:
+            recipes: Lista de recetas
+
+        Returns:
+            tuple: (recetas corregidas, lista de cambios realizados)
+        """
+        if not recipes:
+            return recipes, []
+        
+        # Encontrar duplicados
+        slug_map = {}
+        for i, r in enumerate(recipes):
+            slug = r.get("slug", "")
+            if slug:
+                if slug not in slug_map:
+                    slug_map[slug] = []
+                slug_map[slug].append(i)
+        
+        # Procesar solo los que tienen duplicados
+        duplicates = {slug: indices for slug, indices in slug_map.items() if len(indices) > 1}
+        
+        if not duplicates:
+            return recipes, []
+        
+        updated = [r.copy() for r in recipes]
+        changes = []
+        
+        for base_slug, indices in duplicates.items():
+            # Dejar el primero con base_slug para mantener URLs estables,
+            # regenerar slugs únicos solo para los restantes duplicados
+            for idx in indices[1:]:
+                recipe_name = updated[idx].get("name", "")
+                old_slug = updated[idx].get("slug", "")
+                new_slug = self.generate_unique_slug(recipe_name, updated)
+                if new_slug != old_slug:
+                    updated[idx]["slug"] = new_slug
+                    changes.append({
+                        "recipe": recipe_name,
+                        "old_slug": old_slug,
+                        "new_slug": new_slug
+                    })
+        
+        return updated, changes
 
     def extract_hashtags(self, post):
         """
@@ -510,14 +639,15 @@ class ParserService:
 
         return sorted(processed_tags)
 
-    def refresh_recipe(self, recipe, force=False):
+    def refresh_recipe(self, recipe, force=False, existing_recipes=None):
         """
         Actualiza los tags de una receta aplicando normalización
-        También verifica y genera campos faltantes: hidden, cleaned_ingredientes, shortcode
+        También verifica y genera campos faltantes: hidden, cleaned_ingredientes, shortcode, slug
 
         Args:
             recipe: Receta a actualizar
             force: Forzar la actualización de todos los campos
+            existing_recipes: Lista de recetas existentes para generar slug único. Si no se proporciona, se obtiene del archivo.
 
         Returns:
             tuple: (receta actualizada, bool indicando si hubo cambios)
@@ -570,6 +700,25 @@ class ParserService:
         # Verificar y generar campo 'shortcode' si no existe
         if force or "shortcode" not in recipe:
             updated_recipe["shortcode"] = self.get_shortcode(recipe)
+            changed = True
+
+        # Verificar y generar campo 'slug' si no existe o forzar regeneración
+        if force or "slug" not in recipe:
+            # Obtener recetas existentes si no se proporcionaron
+            if existing_recipes is None:
+                existing_recipes, _ = self.get_existing_recipes()
+
+            # Excluir la propia receta (por slug actual) para no generar sufijos innecesarios
+            current_slug = recipe.get("slug")
+            if current_slug:
+                filtered_existing_recipes = [
+                    r for r in existing_recipes if r.get("slug") != current_slug
+                ]
+            else:
+                filtered_existing_recipes = existing_recipes
+
+            generated_slug = self.generate_unique_slug(recipe_name, filtered_existing_recipes)
+            updated_recipe["slug"] = generated_slug
             changed = True
 
         return updated_recipe, changed
