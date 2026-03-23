@@ -707,8 +707,17 @@ class ParserService:
             # Obtener recetas existentes si no se proporcionaron
             if existing_recipes is None:
                 existing_recipes, _ = self.get_existing_recipes()
-            
-            generated_slug = self.generate_unique_slug(recipe_name, existing_recipes)
+
+            # Excluir la propia receta (por slug actual) para no generar sufijos innecesarios
+            current_slug = recipe.get("slug")
+            if current_slug:
+                filtered_existing_recipes = [
+                    r for r in existing_recipes if r.get("slug") != current_slug
+                ]
+            else:
+                filtered_existing_recipes = existing_recipes
+
+            generated_slug = self.generate_unique_slug(recipe_name, filtered_existing_recipes)
             updated_recipe["slug"] = generated_slug
             changed = True
 
