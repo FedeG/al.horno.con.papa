@@ -222,7 +222,10 @@ const RecipeDetailPage = () => {
   const recipe = useMemo(() => {
     // Buscar por slug primero (strings), luego por ID para retrocompatibilidad
     if (isNaN(id)) {
-      return recipesData.find(r => r.slug === id);
+      const normalizedId = id.toLowerCase();
+      return recipesData.find(
+        (r) => typeof r.slug === 'string' && r.slug.toLowerCase() === normalizedId
+      );
     }
     // Si es un número, buscar por ID (para retrocompatibilidad)
     const recipeId = parseInt(id);
