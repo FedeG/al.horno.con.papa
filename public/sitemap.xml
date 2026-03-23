@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://alhornoconpapa.com.ar/</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -2157,13 +2157,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/2854027432816047000</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/Falafel</loc>
     <lastmod>2022-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://alhornoconpapa.com.ar/images/CebitQwOHRh.jpg</image:loc>
-      <image:title>🅕🅐🅛🅐🅕🅔🅛</image:title>
+      <image:title>Falafel</image:title>
     </image:image>
   </url>
   <url>
