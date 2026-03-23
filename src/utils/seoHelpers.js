@@ -1,3 +1,6 @@
+// Elimina emojis de un string usando Unicode property escapes
+const removeEmojis = (str) => (str || '').replace(/\p{Extended_Pictographic}/gu, '').trim();
+
 // Parsea los pasos de la receta desde la descripción
 const parseRecipeSteps = (description, slug, imageUrl, baseUrl = 'https://alhornoconpapa.com.ar') => {
   const lines = description.split('\n');
@@ -24,9 +27,9 @@ const parseRecipeSteps = (description, slug, imageUrl, baseUrl = 'https://alhorn
 
 // Genera schema JSON-LD para una receta
 export const generateRecipeSchema = (recipe, baseUrl = 'https://alhornoconpapa.com.ar') => {
-  // Parsear tiempo de preparación del texto de descripción
+  // Parsear tiempo total de la receta desde el texto de descripción
   const timeMatch = recipe.description.match(/⏳\s*Tiempo:\s*(\d+)\s*minutos/);
-  const prepTime = timeMatch ? parseInt(timeMatch[1]) : 20;
+  const timeMinutes = timeMatch ? parseInt(timeMatch[1]) : 20;
   
   // Parsear los pasos de la receta
   const recipeSteps = parseRecipeSteps(recipe.description, recipe.slug, recipe.imageUrl, baseUrl);
@@ -47,7 +50,7 @@ export const generateRecipeSchema = (recipe, baseUrl = 'https://alhornoconpapa.c
   const schema = {
     '@context': 'https://schema.org/',
     '@type': 'Recipe',
-    name: recipe.name.replace(/[🐟🍗🍕🥗🍰🥘🍜🍲🥙🌮]/g, '').trim(),
+    name: removeEmojis(recipe.name),
     description: recipe.description.split('\n').filter(line => line.trim().length > 0)[1] || 'Receta deliciosa lista para preparar',
     image: `${baseUrl}/${recipe.imageUrl}`,
     url: `${baseUrl}/recipe/${recipe.slug}`,
@@ -59,22 +62,26 @@ export const generateRecipeSchema = (recipe, baseUrl = 'https://alhornoconpapa.c
     },
     recipeCategory: recipe.tags?.length ? recipe.tags[0] : 'Recipe',
     recipeCuisine: 'Argentine',
-    prepTime: `PT${Math.ceil(prepTime * 0.25)}M`,
-    cookTime: `PT${prepTime}M`,
-    totalTime: `PT${Math.ceil(prepTime * 1.25)}M`,
+    // Solo se publica totalTime porque la descripción no distingue entre prepTime y cookTime
+    totalTime: `PT${timeMinutes}M`,
     recipeYield: '4 porciones',
     recipeIngredient: recipe.ingredients && recipe.ingredients.length > 0 
       ? recipe.ingredients 
       : [],
     recipeInstructions: recipeInstructions,
-    nutrition: {
-      '@type': 'NutritionInformation',
-      calories: '300 calories',
-      carbohydrateContent: '40 g',
-      proteinContent: '15 g',
-      fatContent: '8 g',
-      fiberContent: '3 g'
-    },
+    ...(recipe.nutrition ? {
+      nutrition: {
+        '@type': 'NutritionInformation',
+        ...(recipe.nutrition.calories !== undefined && { calories: recipe.nutrition.calories }),
+        ...(recipe.nutrition.carbohydrateContent !== undefined && { carbohydrateContent: recipe.nutrition.carbohydrateContent }),
+        ...(recipe.nutrition.proteinContent !== undefined && { proteinContent: recipe.nutrition.proteinContent }),
+        ...(recipe.nutrition.fatContent !== undefined && { fatContent: recipe.nutrition.fatContent }),
+        ...(recipe.nutrition.fiberContent !== undefined && { fiberContent: recipe.nutrition.fiberContent }),
+        ...(recipe.nutrition.sugarContent !== undefined && { sugarContent: recipe.nutrition.sugarContent }),
+        ...(recipe.nutrition.sodiumContent !== undefined && { sodiumContent: recipe.nutrition.sodiumContent }),
+        ...(recipe.nutrition.servingSize !== undefined && { servingSize: recipe.nutrition.servingSize })
+      }
+    } : {}),
     keywords: recipe.tags ? recipe.tags.join(', ') : '',
     aggregateRating: {
       '@type': 'AggregateRating',
@@ -88,12 +95,16 @@ export const generateRecipeSchema = (recipe, baseUrl = 'https://alhornoconpapa.c
   
   // Agregar video si existe
   if (recipe.instagramUrl) {
+    const instagramEmbedUrl = recipe.instagramUrl.endsWith('/')
+      ? `${recipe.instagramUrl}embed/`
+      : `${recipe.instagramUrl}/embed/`;
+
     schema.video = {
       '@type': 'VideoObject',
-      name: recipe.name.replace(/[🐟🍗🍕🥗🍰🥘🍜🍲🥙🌮]/g, '').trim(),
+      name: removeEmojis(recipe.name),
       description: recipe.description.split('\n').filter(line => line.trim().length > 0)[1] || 'Video receta',
       contentUrl: recipe.instagramUrl,
-      embedUrl: `https://www.instagram.com/reel/${recipe.shortcode}/embed`,
+      embedUrl: instagramEmbedUrl,
       uploadDate: recipe.date || new Date().toISOString(),
       thumbnailUrl: `${baseUrl}/${recipe.imageUrl}`,
       url: recipe.instagramUrl
