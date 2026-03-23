@@ -4,6 +4,7 @@ Allow: /
 Disallow: /admin/
 Disallow: /?*search=
 Disallow: /?*page=
+Crawl-delay: 1
 
 # Sitemaps
 Sitemap: https://alhornoconpapa.com.ar/sitemap.xml
@@ -15,7 +16,3 @@ Allow: /
 # Bing
 User-agent: Bingbot
 Allow: /
-
-# Others
-User-agent: *
-Crawl-delay: 1
