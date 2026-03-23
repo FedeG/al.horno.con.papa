@@ -1,6 +1,9 @@
-// Elimina emojis de un string usando Unicode property escapes
-const removeEmojis = (str) => (str || '').replace(/\p{Extended_Pictographic}/gu, '').trim();
+import emojiRegex from 'emoji-regex';
 
+const emojiRegexPattern = emojiRegex();
+
+// Elimina emojis de un string usando un regex compatible con todos los navegadores soportados
+const removeEmojis = (str) => (str || '').replace(emojiRegexPattern, '').trim();
 // Parsea los pasos de la receta desde la descripción
 const parseRecipeSteps = (description, slug, imageUrl, baseUrl = 'https://alhornoconpapa.com.ar') => {
   const lines = description.split('\n');
