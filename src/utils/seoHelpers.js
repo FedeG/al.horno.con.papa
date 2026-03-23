@@ -88,12 +88,16 @@ export const generateRecipeSchema = (recipe, baseUrl = 'https://alhornoconpapa.c
   
   // Agregar video si existe
   if (recipe.instagramUrl) {
+    const instagramEmbedUrl = recipe.instagramUrl.endsWith('/')
+      ? `${recipe.instagramUrl}embed/`
+      : `${recipe.instagramUrl}/embed/`;
+
     schema.video = {
       '@type': 'VideoObject',
       name: recipe.name.replace(/[🐟🍗🍕🥗🍰🥘🍜🍲🥙🌮]/g, '').trim(),
       description: recipe.description.split('\n').filter(line => line.trim().length > 0)[1] || 'Video receta',
       contentUrl: recipe.instagramUrl,
-      embedUrl: `https://www.instagram.com/reel/${recipe.shortcode}/embed`,
+      embedUrl: instagramEmbedUrl,
       uploadDate: recipe.date || new Date().toISOString(),
       thumbnailUrl: `${baseUrl}/${recipe.imageUrl}`,
       url: recipe.instagramUrl
