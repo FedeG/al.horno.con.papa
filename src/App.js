@@ -232,12 +232,13 @@ const RecipeDetailPage = () => {
     return recipesData.find(r => r.id === recipeId);
   }, [id]);
 
-  // Track pageview cuando se carga la receta
+  // Track pageview cuando se carga la receta, usando el parámetro id de la URL
+  // para que el page_path coincida con la ruta real del browser (slug o ID numérico legacy)
   useEffect(() => {
     if (recipe) {
-      trackPageView(`/recipe/${recipe.slug}`, recipe.name);
+      trackPageView(`/recipe/${id}`, recipe.name);
     }
-  }, [recipe]);
+  }, [recipe, id]);
 
   const relatedRecipes = useMemo(() => 
     findRelatedRecipes(recipesData, recipe),
