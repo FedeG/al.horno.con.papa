@@ -1,3 +1,6 @@
+// Elimina emojis de un string usando Unicode property escapes
+const removeEmojis = (str) => (str || '').replace(/\p{Extended_Pictographic}/gu, '').trim();
+
 // Parsea los pasos de la receta desde la descripción
 const parseRecipeSteps = (description, slug, imageUrl, baseUrl = 'https://alhornoconpapa.com.ar') => {
   const lines = description.split('\n');
@@ -47,7 +50,7 @@ export const generateRecipeSchema = (recipe, baseUrl = 'https://alhornoconpapa.c
   const schema = {
     '@context': 'https://schema.org/',
     '@type': 'Recipe',
-    name: recipe.name.replace(/[🐟🍗🍕🥗🍰🥘🍜🍲🥙🌮]/g, '').trim(),
+    name: removeEmojis(recipe.name),
     description: recipe.description.split('\n').filter(line => line.trim().length > 0)[1] || 'Receta deliciosa lista para preparar',
     image: `${baseUrl}/${recipe.imageUrl}`,
     url: `${baseUrl}/recipe/${recipe.slug}`,
@@ -93,7 +96,7 @@ export const generateRecipeSchema = (recipe, baseUrl = 'https://alhornoconpapa.c
 
     schema.video = {
       '@type': 'VideoObject',
-      name: recipe.name.replace(/[🐟🍗🍕🥗🍰🥘🍜🍲🥙🌮]/g, '').trim(),
+      name: removeEmojis(recipe.name),
       description: recipe.description.split('\n').filter(line => line.trim().length > 0)[1] || 'Video receta',
       contentUrl: recipe.instagramUrl,
       embedUrl: instagramEmbedUrl,
