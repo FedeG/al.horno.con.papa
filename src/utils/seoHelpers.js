@@ -67,14 +67,19 @@ export const generateRecipeSchema = (recipe, baseUrl = 'https://alhornoconpapa.c
       ? recipe.ingredients 
       : [],
     recipeInstructions: recipeInstructions,
-    nutrition: {
-      '@type': 'NutritionInformation',
-      calories: '300 calories',
-      carbohydrateContent: '40 g',
-      proteinContent: '15 g',
-      fatContent: '8 g',
-      fiberContent: '3 g'
-    },
+    ...(recipe.nutrition ? {
+      nutrition: {
+        '@type': 'NutritionInformation',
+        ...(recipe.nutrition.calories !== undefined && { calories: recipe.nutrition.calories }),
+        ...(recipe.nutrition.carbohydrateContent !== undefined && { carbohydrateContent: recipe.nutrition.carbohydrateContent }),
+        ...(recipe.nutrition.proteinContent !== undefined && { proteinContent: recipe.nutrition.proteinContent }),
+        ...(recipe.nutrition.fatContent !== undefined && { fatContent: recipe.nutrition.fatContent }),
+        ...(recipe.nutrition.fiberContent !== undefined && { fiberContent: recipe.nutrition.fiberContent }),
+        ...(recipe.nutrition.sugarContent !== undefined && { sugarContent: recipe.nutrition.sugarContent }),
+        ...(recipe.nutrition.sodiumContent !== undefined && { sodiumContent: recipe.nutrition.sodiumContent }),
+        ...(recipe.nutrition.servingSize !== undefined && { servingSize: recipe.nutrition.servingSize })
+      }
+    } : {}),
     keywords: recipe.tags ? recipe.tags.join(', ') : '',
     aggregateRating: {
       '@type': 'AggregateRating',
