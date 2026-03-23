@@ -18,7 +18,7 @@ const parseRecipeSteps = (description, slug, imageUrl, baseUrl = 'https://alhorn
   return stepsLines
     // Soporta bullets con "•", "-", y listas numeradas tipo "1." o "2)"
     .map((line) => {
-      const match = line.match(/^\s*(?:[•\-]|\d+[.)])\s*(.+)$/);
+      const match = line.match(/^\s*(?:[•-]|\d+[.)])\s*(.+)$/);
       return match ? match[1].trim() : '';
     })
     .filter((text) => text.length > 0)
