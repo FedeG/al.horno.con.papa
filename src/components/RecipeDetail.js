@@ -83,7 +83,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
       />
       <main>
       <div className="detail-header">
-        <button className="back-btn" onClick={onBack}>
+        <button className="back-btn" onClick={onBack} aria-label="Volver al listado de recetas">
           <ArrowLeft size={24} />
         </button>
         <h1>{recipe.name}</h1>
@@ -140,6 +140,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
               target='_blank'
               rel={isMobile ? 'noreferrer' : 'noopener noreferrer'}
               className="social-btn instagram"
+              aria-label={`Ver esta receta en Instagram: ${recipe.name}`}
               onClick={() => trackSocialClick('instagram', recipe.id, recipe.name)}
             >
               <Instagram size={20} /> Ver en Instagram
@@ -151,6 +152,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
               target="_blank" 
               rel="noopener noreferrer" 
               className="social-btn facebook"
+              aria-label={`Compartir esta receta en Facebook: ${recipe.name}`}
               onClick={() => trackSocialClick('facebook', recipe.id, recipe.name)}
             >
               <Facebook size={20} /> Compartir en Facebook
