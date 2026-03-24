@@ -11,7 +11,6 @@ import {
 } from '../utils/analytics';
 import SEO from './SEO';
 import { generateRecipeSchema } from '../utils/seoHelpers';
-
 import Footer from './Footer';
 
 const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagClick }) => {
@@ -82,6 +81,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
         schema={recipeSchema}
         ogType="article"
       />
+      <main>
       <div className="detail-header">
         <button className="back-btn" onClick={onBack}>
           <ArrowLeft size={24} />
@@ -164,7 +164,11 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
             <div className="related-grid">
               {relatedRecipes.map(relatedRecipe => (
                 <div key={relatedRecipe.id} className="related-card" onClick={() => handleSelectRecipe(relatedRecipe)}>
-                  <img src={`${process.env.PUBLIC_URL}/${relatedRecipe.imageUrl}`} alt={relatedRecipe.name} />
+                  <img 
+                    src={`${process.env.PUBLIC_URL}/${relatedRecipe.imageUrl}`} 
+                    alt={relatedRecipe.name}
+                    loading="lazy"
+                  />
                   <h3>{relatedRecipe.name}</h3>
                 </div>
               ))}
@@ -172,7 +176,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
           </div>
         )}
       </div>
-
+      </main>
       <Footer />
     </div>
   );

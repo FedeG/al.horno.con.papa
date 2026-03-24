@@ -823,3 +823,18 @@
   color: #333;
   background: white;
 }
+
+/* Loading Container */
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #F5F3ED;
+}
+
+.loading-container p {
+  font-size: 16px;
+  color: #666;
+  font-weight: 600;
+}

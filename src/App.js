@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useMemo, useEffect, useRef, useCallback, Suspense } from 'react';
 import { Routes, Route, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 
 import './App.css';
@@ -9,7 +9,6 @@ import SearchBar from './components/SearchBar';
 import TagFilter from './components/TagFilter';
 import RecipeGrid from './components/RecipeGrid';
 import Pagination from './components/Pagination';
-import RecipeDetail from './components/RecipeDetail';
 import Footer from './components/Footer';
 import SEO from './components/SEO';
 import {
@@ -28,6 +27,9 @@ import {
   trackAutocompleteSelection
 } from './utils/analytics';
 import { generateCollectionSchema } from './utils/seoHelpers';
+
+// Lazy load RecipeDetail for code splitting
+const RecipeDetail = React.lazy(() => import('./components/RecipeDetail'));
 
 const RecipeList = () => {
   const navigate = useNavigate();
@@ -88,14 +90,15 @@ const RecipeList = () => {
     [filteredRecipes, currentPage]
   );
 
-  // Reset to page 1 when filters change (but not on initial load)
+  // Sync page from URL and reset to 1 when filters change (but not on initial load)
   useEffect(() => {
     if (!isInitialLoad.current) {
-      setCurrentPage(1);
+      const pageFromUrl = parseInt(searchParams.get('page')) || 1;
+      setCurrentPage(pageFromUrl);
     } else {
       isInitialLoad.current = false;
     }
-  }, [searchTerm, selectedTag, showEasyOnly]);
+  }, [searchTerm, selectedTag, showEasyOnly, searchParams]);
 
   // Update URL params when filters change
   useEffect(() => {
@@ -159,6 +162,7 @@ const RecipeList = () => {
         schema={recipeCollectionSchema}
       />
       <Header />
+      <main>
       
       <SearchBar
         searchTerm={inputValue}
@@ -209,7 +213,7 @@ const RecipeList = () => {
         totalPages={totalPages}
         onPageChange={handlePageChange}
       />
-
+      </main>
       <Footer />
     </div>
   );
@@ -273,14 +277,17 @@ const RecipeDetailPage = () => {
     );
   }
   
+  
   return (
-    <RecipeDetail
-      recipe={recipe}
-      onBack={handleBackToList}
-      relatedRecipes={relatedRecipes}
-      onSelectRecipe={handleSelectRecipe}
-      onTagClick={handleTagClick}
-    />
+    <Suspense fallback={<div className="loading-container"><p>Cargando receta...</p></div>}>
+      <RecipeDetail
+        recipe={recipe}
+        onBack={handleBackToList}
+        relatedRecipes={relatedRecipes}
+        onSelectRecipe={handleSelectRecipe}
+        onTagClick={handleTagClick}
+      />
+    </Suspense>
   );
 };
 
