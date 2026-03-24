@@ -119,7 +119,7 @@ export const generateRecipeSchema = (recipe, baseUrl = 'https://alhornoconpapa.c
           '@type': 'HowToStep',
           name: 'Paso 1',
           text: recipe.description.split('\n\n')[0] || recipe.description,
-          url: `${baseUrl}/recipe/${recipe.slug}`,
+          url: `${baseUrl}/#/recipe/${recipe.slug}`,
           image: `${baseUrl}/${recipe.imageUrl}`
         }
       ];
@@ -130,7 +130,7 @@ export const generateRecipeSchema = (recipe, baseUrl = 'https://alhornoconpapa.c
     name: removeEmojis(recipe.name),
     description: recipe.description.split('\n').filter(line => line.trim().length > 0)[1] || 'Receta deliciosa lista para preparar',
     image: `${baseUrl}/${recipe.imageUrl}`,
-    url: `${baseUrl}/recipe/${recipe.slug}`,
+    url: `${baseUrl}/#/recipe/${recipe.slug}`,
     author: {
       '@type': 'Organization',
       name: 'Al Horno Con Papá',
