@@ -11,7 +11,6 @@ import {
 } from '../utils/analytics';
 import SEO from './SEO';
 import { generateRecipeSchema } from '../utils/seoHelpers';
-import Header from './Header';
 import Footer from './Footer';
 
 const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagClick }) => {
@@ -82,7 +81,6 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
         schema={recipeSchema}
         ogType="article"
       />
-      <Header />
       <main>
       <div className="detail-header">
         <button className="back-btn" onClick={onBack}>

@@ -90,14 +90,15 @@ const RecipeList = () => {
     [filteredRecipes, currentPage]
   );
 
-  // Reset to page 1 when filters change (but not on initial load)
+  // Sync page from URL and reset to 1 when filters change (but not on initial load)
   useEffect(() => {
     if (!isInitialLoad.current) {
-      setCurrentPage(1);
+      const pageFromUrl = parseInt(searchParams.get('page')) || 1;
+      setCurrentPage(pageFromUrl);
     } else {
       isInitialLoad.current = false;
     }
-  }, [searchTerm, selectedTag, showEasyOnly]);
+  }, [searchTerm, selectedTag, showEasyOnly, searchParams]);
 
   // Update URL params when filters change
   useEffect(() => {
