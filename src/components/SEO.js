@@ -34,6 +34,8 @@ const SEO = ({
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={fullDescription} />
       <meta property="og:image" content={fullImageUrl} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       <meta property="og:image:alt" content={imageAlt || fullTitle} />
       <meta property="og:url" content={fullCanonicalUrl} />
       <meta property="og:site_name" content={siteName} />

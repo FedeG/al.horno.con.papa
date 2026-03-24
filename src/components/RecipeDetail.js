@@ -96,8 +96,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
               src={embedUrl}
               frameBorder="0"
               scrolling="no"
-              allowFullScreen="true"
-              allowTransparency="true"
+              allowFullScreen={true}
               title={recipe.name}
             />
           </div>
