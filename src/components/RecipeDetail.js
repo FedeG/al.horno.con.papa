@@ -56,7 +56,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
   const slug = recipe.slug;
 
   const canonicalUrl = useMemo(() => 
-    `https://alhornoconpapa.com.ar/recipe/${slug}`,
+    `https://alhornoconpapa.com.ar/#/recipe/${slug}`,
     [slug]
   );
 
