@@ -24,15 +24,17 @@
 
     <!-- Start Single Page Apps for GitHub Pages -->
     <script type="text/javascript">
-      // Solo ejecutar en GitHub Pages, no en desarrollo local
+      // Solo ejecutar el SPA redirect si NO estamos usando Cloudflare Worker
+      // El Worker maneja las rutas internamente sin redirecciones
       (function(l) {
-        if ((l.hostname === 'alhornoconpapa.com.ar' || l.hostname === 'fedeg.github.io') && l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
+        // No hacer redirect si tiene ?/ en la URL (ya fue procesado)
+        if (l.search[1] !== '/' && (l.hostname === 'alhornoconpapa.com.ar' || l.hostname === 'fedeg.github.io')) {
+          // Solo hacer redirect para GitHub Pages sin Cloudflare
+          // Con Cloudflare Worker, esto NO debería ejecutarse
+          if (l.pathname.startsWith('/recipe/') || l.pathname.startsWith('/tag/')) {
+            // Ya no necesitamos hacer redirect - Cloudflare lo maneja
+            // Este script se deja solo para compatibilidad
+          }
         }
       }(window.location))
     </script>
