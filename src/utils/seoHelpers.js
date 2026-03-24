@@ -93,7 +93,7 @@ const parseRecipeTime = (description) => {
   if (m) return parseInt(m[1]) * 60;
 
   // Formato "X-Y min(utos)" o "X/Y min(utos)" (rango, tomar el mínimo para no sobrestimar)
-  m = timeText.match(/^(\d+)[-\/](\d+)\s*min/i);
+  m = timeText.match(/^(\d+)[-/](\d+)\s*min/i);
   if (m) return parseInt(m[1]);
 
   // Formato "X min(utos)" (ej: "20 minutos", "15 min")
