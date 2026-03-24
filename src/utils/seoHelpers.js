@@ -31,11 +31,82 @@ const parseRecipeSteps = (description, slug, imageUrl, baseUrl = 'https://alhorn
     }));
 };
 
+// Parsea el tiempo total de la receta desde el texto de descripción.
+// Soporta formatos de minutos, horas, combinaciones y rangos.
+// Retorna los minutos como número, o null si no se puede parsear con certeza.
+const parseRecipeTime = (description) => {
+  if (!description) return null;
+
+  // Buscar la línea que contiene el emoji de tiempo
+  const timeLine = description.split('\n').find(line => line.includes('⏳'));
+  if (!timeLine) return null;
+
+  // Extraer el texto después del emoji ⏳
+  const afterEmoji = timeLine.replace(/^[^⏳]*⏳\s*/, '');
+
+  // Remover etiquetas comunes: "Tiempo:", "Tiempo total:", "Tiempo de preparación:"
+  const timeText = afterEmoji
+    .replace(/^Tiempo(?:\s+de\s+preparaci[oó]n|\s+total)?\s*:\s*/i, '')
+    .replace(/[⏳⌛️].*$/, '')
+    .trim();
+
+  if (!timeText) return null;
+
+  // No parsear si contiene días o semanas (no representan minutos de cocción útiles)
+  if (/\bd[ií]as?\b|\bsemanas?\b/i.test(timeText)) return null;
+
+  // No parsear si hay una segunda fase con número después de "+" (múltiples etapas)
+  if (/\+/.test(timeText) && /\d/.test(timeText.replace(/^[^+]*\+/, ''))) return null;
+
+  // No parsear si hay fases etiquetadas (ej: "10 minutos de preparación y 45 de cocción")
+  if (/\d+\s*(?:minutos?|min|horas?|h)\s+de\s+(?:preparaci[oó]n|cocci[oó]n|horno|reposo|armado)/i.test(timeText)) return null;
+
+  // Formato "X:Y horas" (ej: "2:30 horas") — validar que los minutos sean < 60
+  let m = timeText.match(/^(\d+):(\d+)\s*horas?/i);
+  if (m) {
+    const mins = parseInt(m[2]);
+    if (mins >= 60) return null;
+    return parseInt(m[1]) * 60 + mins;
+  }
+
+  // Formato "X hora(s) y media" (ej: "1 hora y media", "2 horas y media")
+  m = timeText.match(/^(\d+)\s*horas?\s+y\s+media\b/i);
+  if (m) return parseInt(m[1]) * 60 + 30;
+
+  // Formato "X hora(s) y Y min(utos)" (ej: "1 hora y 30 minutos")
+  m = timeText.match(/^(\d+)\s*horas?\s+y\s+(\d+)\s*min/i);
+  if (m) return parseInt(m[1]) * 60 + parseInt(m[2]);
+
+  // Formato "X h(ora(s)?) Y min(utos)?" (ej: "1 hora 30 minutos", "1 h 30 min")
+  m = timeText.match(/^(\d+)\s*h(?:oras?)?\s+(\d+)\s*min/i);
+  if (m) return parseInt(m[1]) * 60 + parseInt(m[2]);
+
+  // "media hora" → 30 minutos
+  if (/^media\s+hora/i.test(timeText)) return 30;
+
+  // Formato "X/Y hora(s)" (rango de horas, tomar el mínimo para no sobrestimar) (ej: "3/4 horas")
+  m = timeText.match(/^(\d+)\/(\d+)\s*horas?/i);
+  if (m) return parseInt(m[1]) * 60;
+
+  // Formato "X hora(s)..." (ej: "1 hora", "2 horas aprox", "1h", "2h aprox")
+  m = timeText.match(/^(\d+)\s*h(?:oras?)?(?:\b|\s|$)/i);
+  if (m) return parseInt(m[1]) * 60;
+
+  // Formato "X-Y min(utos)" o "X/Y min(utos)" (rango, tomar el mínimo para no sobrestimar)
+  m = timeText.match(/^(\d+)[-\/](\d+)\s*min/i);
+  if (m) return parseInt(m[1]);
+
+  // Formato "X min(utos)" (ej: "20 minutos", "15 min")
+  m = timeText.match(/^(\d+)\s*min/i);
+  if (m) return parseInt(m[1]);
+
+  return null;
+};
+
 // Genera schema JSON-LD para una receta
 export const generateRecipeSchema = (recipe, baseUrl = 'https://alhornoconpapa.com.ar') => {
   // Parsear tiempo total de la receta desde el texto de descripción
-  const timeMatch = recipe.description.match(/⏳\s*Tiempo:\s*(\d+)\s*minutos/);
-  const timeMinutes = timeMatch ? parseInt(timeMatch[1]) : 20;
+  const timeMinutes = parseRecipeTime(recipe.description);
   
   // Parsear los pasos de la receta
   const recipeSteps = parseRecipeSteps(recipe.description, recipe.slug, recipe.imageUrl, baseUrl);
@@ -68,8 +139,8 @@ export const generateRecipeSchema = (recipe, baseUrl = 'https://alhornoconpapa.c
     },
     recipeCategory: recipe.tags?.length ? recipe.tags[0] : 'Recipe',
     recipeCuisine: 'Argentine',
-    // Solo se publica totalTime porque la descripción no distingue entre prepTime y cookTime
-    totalTime: `PT${timeMinutes}M`,
+    // Solo se publica totalTime cuando se puede parsear con certeza (se omite si no)
+    ...(timeMinutes !== null ? { totalTime: `PT${timeMinutes}M` } : {}),
     recipeYield: '4 porciones',
     recipeIngredient: recipe.ingredients && recipe.ingredients.length > 0 
       ? recipe.ingredients 
