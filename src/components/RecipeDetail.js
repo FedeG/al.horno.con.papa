@@ -165,7 +165,8 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
             <h2>Recetas Relacionadas</h2>
             <div className="related-grid">
               {relatedRecipes.map(relatedRecipe => {
-                const relatedImageUrl = `${process.env.PUBLIC_URL}/${relatedRecipe.imageUrl}`;
+                const baseUrl = (process.env.PUBLIC_URL || '').replace(/\/$/, '');
+                const relatedImageUrl = `${baseUrl}/${relatedRecipe.imageUrl}`;
                 const relatedWebpUrl = relatedImageUrl.replace(/\.(jpg|jpeg|png)$/i, '.webp');
                 return (
                   <div key={relatedRecipe.id} className="related-card" onClick={() => handleSelectRecipe(relatedRecipe)}>
