@@ -1,10 +1,10 @@
 import React from 'react';
 import { Clock } from 'lucide-react';
+import { getImageUrl } from '../utils';
 
 const RecipeCard = ({ recipe, onClick, isHighPriority = false }) => {
   const handleClick = () => onClick(recipe);
-  const baseUrl = (process.env.PUBLIC_URL || '').replace(/\/$/, '');
-  const imageUrl = `${baseUrl}/${recipe.imageUrl}`;
+  const imageUrl = getImageUrl(recipe.imageUrl);
   const webpUrl = imageUrl.replace(/\.(jpg|jpeg|png)$/i, '.webp');
   
   return (

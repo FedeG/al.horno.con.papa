@@ -1,4 +1,14 @@
 /**
+ * Construye la URL de una imagen evitando doble slash cuando PUBLIC_URL termina en '/'
+ * @param {string} imageUrl - Ruta relativa de la imagen
+ * @returns {string} URL completa de la imagen
+ */
+export const getImageUrl = (imageUrl) => {
+    const baseUrl = (process.env.PUBLIC_URL || '').replace(/\/$/, '');
+    return `${baseUrl}/${(imageUrl || '').replace(/^\//, '')}`;
+};
+
+/**
  * Extrae todas las tags únicas de las recetas
  * @param {Array} recipes - Array de recetas
  * @param {Array} featuredTags - Tags destacadas para priorizar

@@ -1,7 +1,7 @@
 import React, { useMemo, useCallback, useEffect } from 'react';
 import { ArrowLeft, Tag, Sparkles, ChefHat, Instagram, Facebook } from 'lucide-react';
 import { isMobile } from "react-device-detect";
-import { getInstagramEmbedUrl, getInstagramLinkUrl } from '../utils';
+import { getInstagramEmbedUrl, getInstagramLinkUrl, getImageUrl } from '../utils';
 import { 
   trackRecipeView, 
   trackRelatedRecipeClick, 
@@ -165,8 +165,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
             <h2>Recetas Relacionadas</h2>
             <div className="related-grid">
               {relatedRecipes.map(relatedRecipe => {
-                const baseUrl = (process.env.PUBLIC_URL || '').replace(/\/$/, '');
-                const relatedImageUrl = `${baseUrl}/${relatedRecipe.imageUrl}`;
+                const relatedImageUrl = getImageUrl(relatedRecipe.imageUrl);
                 const relatedWebpUrl = relatedImageUrl.replace(/\.(jpg|jpeg|png)$/i, '.webp');
                 return (
                   <div key={relatedRecipe.id} className="related-card" onClick={() => handleSelectRecipe(relatedRecipe)}>

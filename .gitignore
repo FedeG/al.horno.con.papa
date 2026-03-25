@@ -34,4 +34,3 @@ scripts/__pycache__/
 *.pyo
 *.pyd
 .Python
-package-lock.json
