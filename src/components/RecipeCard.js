@@ -15,7 +15,7 @@ const RecipeCard = ({ recipe, onClick, isHighPriority = false }) => {
             src={imageUrl}
             alt={recipe.name}
             loading={isHighPriority ? 'eager' : 'lazy'}
-            fetchPriority={isHighPriority ? 'high' : 'auto'}
+            fetchpriority={isHighPriority ? 'high' : 'auto'}
             decoding={isHighPriority ? 'sync' : 'async'}
           />
         </picture>

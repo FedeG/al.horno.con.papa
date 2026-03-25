@@ -51,8 +51,9 @@ recipes.forEach((recipe) => {
     xml += `    <priority>0.8</priority>\n`;
     
     if (recipe.imageUrl) {
+      const webpImageUrl = recipe.imageUrl.replace(/\.(jpg|jpeg|png)$/i, '.webp');
       xml += `    <image:image>\n`;
-      xml += `      <image:loc>${baseUrl}/${recipe.imageUrl}</image:loc>\n`;
+      xml += `      <image:loc>${baseUrl}/${webpImageUrl}</image:loc>\n`;
       xml += `      <image:title>${escapeXml(recipe.name)}</image:title>\n`;
       xml += `    </image:image>\n`;
     }
