@@ -15,11 +15,12 @@ const RecipeGrid = ({ recipes, onSelectRecipe }) => {
 
   return (
     <div className="recipe-grid">
-      {recipes.map(recipe => (
+      {recipes.map((recipe, index) => (
         <RecipeCard 
           key={recipe.id} 
           recipe={recipe} 
-          onClick={onSelectRecipe} 
+          onClick={onSelectRecipe}
+          isHighPriority={index < 3}
         />
       ))}
     </div>
