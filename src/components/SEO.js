@@ -10,7 +10,8 @@ const SEO = ({
   schema,
   keywords,
   ogType = 'website',
-  twitterHandle = null
+  twitterHandle = null,
+  preloadImages = []
 }) => {
   const siteName = 'Al Horno Con Papá - Cocina en familia';
   const defaultImage = 'https://alhornoconpapa.com.ar/og-default.jpg';
@@ -28,6 +29,14 @@ const SEO = ({
       <meta name="description" content={fullDescription} />
       {keywords && <meta name="keywords" content={keywords} />}
       <link rel="canonical" href={fullCanonicalUrl} />
+      
+      {/* Preload images para las primeras 3 recetas */}
+      {preloadImages.map((imgUrl, idx) => {
+        const webpUrl = imgUrl.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+        return (
+          <link key={`preload-${idx}`} rel="preload" as="image" href={`${siteUrl}/${webpUrl}`} type="image/webp" />
+        );
+      })}
       
       {/* Open Graph para redes sociales */}
       <meta property="og:type" content={ogType} />

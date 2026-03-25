@@ -149,6 +149,11 @@ const RecipeList = () => {
     []
   );
 
+  const preloadImages = useMemo(() => 
+    paginatedRecipes.slice(0, 3).map(recipe => recipe.imageUrl),
+    [paginatedRecipes]
+  );
+
   return (
     <div className="app">
       <SEO 
@@ -158,6 +163,7 @@ const RecipeList = () => {
           : 'Encuentra recetas deliciosas de cocina en familia. Recetas clasicas, familiares, vegetarianas, veganas, fáciles y mucho más. ¡Cocina con amor!'}
         keywords={selectedTag !== 'Todas' ? `recetas ${selectedTag}, cocina en familia, recetas argentinas` : 'recetas cocina en familia, recetas vegetarianas, recetas veganas, recetas fáciles, cocina argentina'}
         schema={recipeCollectionSchema}
+        preloadImages={preloadImages}
       />
       <Header />
       <main>

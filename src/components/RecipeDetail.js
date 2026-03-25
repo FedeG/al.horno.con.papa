@@ -164,16 +164,23 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
           <div className="detail-section related-section">
             <h2>Recetas Relacionadas</h2>
             <div className="related-grid">
-              {relatedRecipes.map(relatedRecipe => (
-                <div key={relatedRecipe.id} className="related-card" onClick={() => handleSelectRecipe(relatedRecipe)}>
-                  <img 
-                    src={`${process.env.PUBLIC_URL}/${relatedRecipe.imageUrl}`} 
-                    alt={relatedRecipe.name}
-                    loading="lazy"
-                  />
-                  <h3>{relatedRecipe.name}</h3>
-                </div>
-              ))}
+              {relatedRecipes.map(relatedRecipe => {
+                const relatedImageUrl = `${process.env.PUBLIC_URL}/${relatedRecipe.imageUrl}`;
+                const relatedWebpUrl = relatedImageUrl.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+                return (
+                  <div key={relatedRecipe.id} className="related-card" onClick={() => handleSelectRecipe(relatedRecipe)}>
+                    <picture>
+                      <source srcSet={relatedWebpUrl} type="image/webp" />
+                      <img 
+                        src={relatedImageUrl}
+                        alt={relatedRecipe.name}
+                        loading="lazy"
+                      />
+                    </picture>
+                    <h3>{relatedRecipe.name}</h3>
+                  </div>
+                );
+              })}
             </div>
           </div>
         )}
