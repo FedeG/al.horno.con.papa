@@ -2,6 +2,7 @@ import React, { useMemo, useCallback, useEffect } from 'react';
 import { ArrowLeft, Tag, Sparkles, ChefHat, Instagram, Facebook } from 'lucide-react';
 import { isMobile } from "react-device-detect";
 import { getInstagramEmbedUrl, getInstagramLinkUrl } from '../utils';
+import { URLS } from '../utils/constants';
 import { 
   trackRecipeView, 
   trackRelatedRecipeClick, 
@@ -55,7 +56,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
   const slug = recipe.slug;
 
   const canonicalUrl = useMemo(() => 
-    `https://alhornoconpapa.com.ar/#/recipe/${slug}`,
+    URLS.getRecipeUrl(slug),
     [slug]
   );
 

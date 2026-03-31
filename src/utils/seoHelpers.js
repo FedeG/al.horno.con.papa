@@ -1,18 +1,63 @@
 import emojiRegex from 'emoji-regex';
+import {
+  BASE_URL,
+  ORGANIZATION,
+  SOCIAL_MEDIA_ARRAY,
+  CONTACT_POINT,
+  RECIPE_DEFAULTS,
+  CSS_SELECTORS,
+  ASSETS,
+  URLS,
+  RECIPE_EMOJIS,
+  RECIPE_LABELS,
+} from './constants';
 
 const emojiRegexPattern = emojiRegex();
 
 // Elimina emojis de un string usando un regex compatible con todos los navegadores soportados
 const removeEmojis = (str) => (str || '').replace(emojiRegexPattern, '').trim();
+
+// Genera el schema de Organization mejorado para SEO y AIO
+const generateOrganizationSchema = (baseUrl = BASE_URL) => {
+  return {
+    '@type': 'Organization',
+    name: ORGANIZATION.name,
+    url: baseUrl,
+    logo: ASSETS.logo,
+    image: ASSETS.logo,
+    description: ORGANIZATION.description,
+    sameAs: SOCIAL_MEDIA_ARRAY,
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: CONTACT_POINT.type,
+      email: CONTACT_POINT.email,
+      url: baseUrl,
+    },
+    address: {
+      '@type': 'PostalAddress',
+      addressCountry: ORGANIZATION.addressCountry,
+      addressLocality: ORGANIZATION.addressLocality,
+    },
+    founder: {
+      '@type': 'Person',
+      name: ORGANIZATION.name,
+    },
+  };
+};
+
 // Parsea los pasos de la receta desde la descripción
-const parseRecipeSteps = (description, slug, imageUrl, baseUrl = 'https://alhornoconpapa.com.ar') => {
+const parseRecipeSteps = (description, slug, imageUrl, baseUrl = BASE_URL) => {
   const lines = description.split('\n');
-  const pasoIndex = lines.findIndex(line => line.includes('👣') || line.includes('Pasos'));
+  const pasoIndex = lines.findIndex(line => 
+    line.includes(RECIPE_EMOJIS.steps) || line.includes(RECIPE_LABELS.steps)
+  );
   
   if (pasoIndex === -1) return [];
   
   const stepsSection = lines.slice(pasoIndex + 1);
-  const tipIndex = stepsSection.findIndex(line => line.includes('💡') || line.includes('Tip'));
+  const tipIndex = stepsSection.findIndex(line => 
+    line.includes(RECIPE_EMOJIS.tips) || line.includes(RECIPE_LABELS.tips)
+  );
   const stepsLines = tipIndex > -1 ? stepsSection.slice(0, tipIndex) : stepsSection;
   
   return stepsLines
@@ -24,10 +69,10 @@ const parseRecipeSteps = (description, slug, imageUrl, baseUrl = 'https://alhorn
     .filter((text) => text.length > 0)
     .map((text, index) => ({
       '@type': 'HowToStep',
-      name: `Paso ${index + 1}`,
+      name: `${RECIPE_LABELS.stepPrefix} ${index + 1}`,
       text: text,
-      url: `${baseUrl}/recipe/${slug}`,
-      image: `${baseUrl}/${imageUrl}`
+      url: URLS.getRecipeUrl(slug),
+      image: URLS.getRecipeImageUrl(imageUrl),
     }));
 };
 
@@ -38,11 +83,12 @@ const parseRecipeTime = (description) => {
   if (!description) return null;
 
   // Buscar la línea que contiene el emoji de tiempo
-  const timeLine = description.split('\n').find(line => line.includes('⏳'));
+  const timeLine = description.split('\n').find(line => line.includes(RECIPE_EMOJIS.time));
   if (!timeLine) return null;
 
-  // Extraer el texto después del emoji ⏳
-  const afterEmoji = timeLine.replace(/^[^⏳]*⏳\s*/, '');
+  // Extraer el texto después del emoji de tiempo
+  const timeEmojiRegex = new RegExp(`^[^${RECIPE_EMOJIS.time}]*${RECIPE_EMOJIS.time}\\s*`);
+  const afterEmoji = timeLine.replace(timeEmojiRegex, '');
 
   // Remover etiquetas comunes: "Tiempo:", "Tiempo total:", "Tiempo de preparación:"
   const timeText = afterEmoji
@@ -104,7 +150,7 @@ const parseRecipeTime = (description) => {
 };
 
 // Genera schema JSON-LD para una receta
-export const generateRecipeSchema = (recipe, baseUrl = 'https://alhornoconpapa.com.ar') => {
+export const generateRecipeSchema = (recipe, baseUrl = BASE_URL) => {
   // Parsear tiempo total de la receta desde el texto de descripción
   const timeMinutes = parseRecipeTime(recipe.description);
   
@@ -119,8 +165,8 @@ export const generateRecipeSchema = (recipe, baseUrl = 'https://alhornoconpapa.c
           '@type': 'HowToStep',
           name: 'Paso 1',
           text: recipe.description.split('\n\n')[0] || recipe.description,
-          url: `${baseUrl}/#/recipe/${recipe.slug}`,
-          image: `${baseUrl}/${recipe.imageUrl}`
+          url: URLS.getRecipeUrl(recipe.slug),
+          image: URLS.getRecipeImageUrl(recipe.imageUrl),
         }
       ];
 
@@ -129,19 +175,15 @@ export const generateRecipeSchema = (recipe, baseUrl = 'https://alhornoconpapa.c
     '@type': 'Recipe',
     name: removeEmojis(recipe.name),
     description: recipe.description.split('\n').filter(line => line.trim().length > 0)[1] || 'Receta deliciosa lista para preparar',
-    image: `${baseUrl}/${recipe.imageUrl}`,
-    url: `${baseUrl}/#/recipe/${recipe.slug}`,
-    author: {
-      '@type': 'Organization',
-      name: 'Al Horno Con Papá',
-      url: baseUrl,
-      logo: `${baseUrl}/logo.jpg`
-    },
+    image: URLS.getRecipeImageUrl(recipe.imageUrl),
+    url: URLS.getRecipeUrl(recipe.slug),
+    sameAs: URLS.getRecipeUrl(recipe.slug),
+    author: generateOrganizationSchema(baseUrl),
     recipeCategory: recipe.tags?.length ? recipe.tags[0] : 'Recipe',
-    recipeCuisine: 'Argentine',
+    recipeCuisine: RECIPE_DEFAULTS.cuisine,
     // Solo se publica totalTime cuando se puede parsear con certeza (se omite si no)
     ...(timeMinutes !== null ? { totalTime: `PT${timeMinutes}M` } : {}),
-    recipeYield: '4 porciones',
+    recipeYield: RECIPE_DEFAULTS.servings,
     recipeIngredient: recipe.ingredients && recipe.ingredients.length > 0 
       ? recipe.ingredients 
       : [],
@@ -162,9 +204,14 @@ export const generateRecipeSchema = (recipe, baseUrl = 'https://alhornoconpapa.c
     keywords: recipe.tags ? recipe.tags.join(', ') : '',
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: '5',
-      reviewCount: '1',
-      ratingCount: '1'
+      ratingValue: RECIPE_DEFAULTS.rating.value,
+      reviewCount: RECIPE_DEFAULTS.rating.reviewCount,
+      ratingCount: RECIPE_DEFAULTS.rating.ratingCount,
+    },
+    // speakable para búsqueda por voz y AI Overviews
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: CSS_SELECTORS.recipe,
     },
     datePublished: recipe.date || new Date().toISOString(),
     isAccessibleForFree: true
@@ -183,7 +230,7 @@ export const generateRecipeSchema = (recipe, baseUrl = 'https://alhornoconpapa.c
       contentUrl: recipe.instagramUrl,
       embedUrl: instagramEmbedUrl,
       uploadDate: recipe.date || new Date().toISOString(),
-      thumbnailUrl: `${baseUrl}/${recipe.imageUrl}`,
+      thumbnailUrl: URLS.getRecipeImageUrl(recipe.imageUrl),
       url: recipe.instagramUrl
     };
   }
@@ -192,25 +239,31 @@ export const generateRecipeSchema = (recipe, baseUrl = 'https://alhornoconpapa.c
 };
 
 // Genera schema para página de listado de recetas
-export const generateCollectionSchema = (baseUrl = 'https://alhornoconpapa.com.ar') => {
+export const generateCollectionSchema = (baseUrl = BASE_URL) => {
   return {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
     name: 'Al Horno Con Papá - Recetas de cocina',
-    description: 'Encuentra recetas deliciosas compartidas con amor. Cocina en familia con recetas vegetarianas, veganas, fáciles y más.',
+    description: ORGANIZATION.description,
     url: baseUrl,
-    image: `${baseUrl}/og-default.jpg`,
-    publisher: {
-      '@type': 'Organization',
-      name: 'Al Horno Con Papá',
-      url: baseUrl,
-      logo: `${baseUrl}/logo.jpg`
+    image: ASSETS.defaultImage,
+    sameAs: baseUrl,
+    // speakable para búsqueda por voz y AI Overviews
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: CSS_SELECTORS.collection,
+    },
+    publisher: generateOrganizationSchema(baseUrl),
+    mainEntity: {
+      '@type': 'ItemList',
+      name: 'Recetas',
+      description: 'Todas nuestras recetas deliciosas'
     }
   };
 };
 
 // Genera schema para breadcrumbs
-export const generateBreadcrumbSchema = (items, baseUrl = 'https://alhornoconpapa.com.ar') => {
+export const generateBreadcrumbSchema = (items, baseUrl = BASE_URL) => {
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -218,8 +271,14 @@ export const generateBreadcrumbSchema = (items, baseUrl = 'https://alhornoconpap
       '@type': 'ListItem',
       position: index + 1,
       name: item.label,
-      item: `${baseUrl}${item.url}`
-    }))
+      item: `${baseUrl}${item.url}`,
+      sameAs: `${baseUrl}${item.url}`
+    })),
+    // speakable para compatibilidad con Google Assistant
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: CSS_SELECTORS.breadcrumb,
+    }
   };
 };
 
