@@ -109,6 +109,6 @@ export const URLS = {
   home: BASE_URL,
   sitemap: `${BASE_URL}/sitemap.xml`,
   robots: `${BASE_URL}/robots.txt`,
-  getRecipeUrl: (slug) => `${BASE_URL}/#/recipe/${slug}`,
+  getRecipeUrl: (slug) => `${BASE_URL}/recipe/${slug}`,
   getRecipeImageUrl: (imagePath) => `${BASE_URL}/${imagePath}`,
 };
