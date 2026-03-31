@@ -1,0 +1,18 @@
+/* TEAM */
+Chef & Creador de recetas: Federico Gonzalez
+Instagram: @al.horno.con.papa
+Facebook: @al.horno.con.papa
+Localización: Argentina
+
+/* SITE */
+Última actualización: 2026-03-31
+Lenguajes: JavaScript (React), Python, CSS
+Software: React 18, React Router, GitHub Pages
+Estándar: HTML5, CSS3
+Componentes: Lucide React, Instaloader
+Hosting: GitHub Pages
+Dominio: alhornoconpapa.com.ar
+
+/* THANKS */
+A toda la familia y amigos que prueban las recetas
+A la comunidad de Instagram que sigue @al.horno.con.papa

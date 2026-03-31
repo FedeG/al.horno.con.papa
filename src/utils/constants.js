@@ -7,6 +7,7 @@ export const BASE_URL = 'https://alhornoconpapa.com.ar';
 // Información de la Organización
 export const ORGANIZATION = {
   name: 'Al Horno Con Papá',
+  founderName: 'Federico Gonzalez',
   url: BASE_URL,
   email: 'contacto@alhornoconpapa.com.ar',
   addressCountry: 'AR',
@@ -16,12 +17,12 @@ export const ORGANIZATION = {
 
 // Información del Creador/Autor
 export const AUTHOR = {
-  name: 'Fede',
+  name: 'Federico Gonzalez',
   bio: 'Soy Fede, ingeniero en sistemas.',
   hobby: 'Mi hobby es cocinar y compartir la cocina en familia 👨‍🍳😊',
   ctaText: 'Si hacés una receta, etiquetame en Instagram para que la vea 📸',
 };
-
+  
 // Información para el Header
 export const HEADER = {
   title: ORGANIZATION.name,

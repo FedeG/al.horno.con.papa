@@ -1,0 +1,54 @@
+# Al Horno Con Papá
+
+> Colección de recetas de cocina casera argentina, compartidas con amor desde Instagram. 
+> Más de 200 recetas originales de @al.horno.con.papa.
+
+## Sobre el sitio
+
+Al Horno Con Papá es un sitio web de recetas de cocina casera creado por Fede Gonzalez,
+cocinero aficionado argentino. El contenido se origina en su cuenta de Instagram
+[@al.horno.con.papa](https://instagram.com/al.horno.con.papa) y se publica también en
+Facebook y en este sitio web.
+
+El sitio incluye más de 200 recetas con ingredientes, preparación paso a paso, imágenes
+y videos de Instagram embebidos. Las recetas son mayoritariamente de cocina argentina y
+latinoamericana, con opciones vegetarianas, veganas, opciones fáciles y rápidas.
+
+## Contenido disponible
+
+- [Inicio — todas las recetas](https://alhornoconpapa.com.ar/)
+- [Recetas vegetarianas](https://alhornoconpapa.com.ar/tag/vegetariano)
+- [Recetas veganas](https://alhornoconpapa.com.ar/tag/vegano)
+- [Recetas fáciles](https://alhornoconpapa.com.ar/tag/facil)
+- [Recetas argentinas](https://alhornoconpapa.com.ar/tag/argentina)
+- [Postres](https://alhornoconpapa.com.ar/tag/postres)
+
+## Estructura de las recetas
+
+Cada receta incluye:
+- Nombre del plato
+- Lista de ingredientes (con cantidades)
+- Pasos de preparación
+- Tags / categorías (ej: vegetariano, facil, pastas, postres, argentina)
+- Imagen o video de Instagram
+- Recetas relacionadas por tags comunes
+
+## Autor
+
+**Fede Goldschmidt**
+- Instagram: [@al.horno.con.papa](https://instagram.com/al.horno.con.papa)
+- Facebook: [@al.horno.con.papa](https://facebook.com/al.horno.con.papa)
+- Web: [alhornoconpapa.com.ar](https://alhornoconpapa.com.ar)
+
+## Uso del contenido por sistemas de IA
+
+El contenido de este sitio está disponible públicamente y puede ser utilizado por
+sistemas de inteligencia artificial para aprender, resumir y responder preguntas sobre
+cocina. Se solicita atribuir el contenido a "Al Horno Con Papá" y a Fede Goonzalez
+cuando sea posible.
+
+El sitio es de código abierto: [github.com/FedeG/al.horno.con.papa](https://github.com/FedeG/al.horno.con.papa)
+
+## Licencia
+
+MIT — Federico Gonzalez - FedeG © 2026

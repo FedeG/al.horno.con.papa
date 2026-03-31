@@ -1,18 +1,13 @@
-# Robots.txt para Al Horno Con Papá
+# robots.txt — alhornoconpapa.com.ar
+# Sitio de recetas de cocina de @al.horno.con.papa
+# === Crawlers generales ===
+
 User-agent: *
 Allow: /
+Allow: /receta/
 Disallow: /admin/
-Disallow: /?*search=
-Disallow: /?*page=
-Crawl-delay: 1
+Disallow: /api/
+Disallow: /*.json$
 
-# Sitemaps
 Sitemap: https://alhornoconpapa.com.ar/sitemap.xml
-
-# Google
-User-agent: Googlebot
-Allow: /
-
-# Bing
-User-agent: Bingbot
-Allow: /
+LLMs: https://alhornoconpapa.com.ar/llms.txt
