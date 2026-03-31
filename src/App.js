@@ -295,6 +295,7 @@ const RecipeDetailPage = () => {
 
 const App = () => {
   return (
+    <HashRedirect />
     <Routes>
       <Route path="/" element={<RecipeList />} />
       <Route path="/recipe/:id" element={<RecipeDetailPage />} />
