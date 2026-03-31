@@ -141,7 +141,7 @@ const RecipeList = () => {
 
   const handleSelectRecipe = useCallback((recipe) => {
     const slugOrId = recipe.slug && recipe.slug.trim() ? recipe.slug : String(recipe.id);
-    navigate(`/recipe/${slugOrId}`);
+    navigate(`/recipe/${slugOrId}/`);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [navigate]);
 
@@ -245,7 +245,7 @@ const RecipeDetailPage = () => {
   // para que el page_path coincida con la ruta real del browser (slug o ID numérico legacy)
   useEffect(() => {
     if (recipe) {
-      trackPageView(`/recipe/${id}`, recipe.name);
+      trackPageView(`/recipe/${id}/`, recipe.name);
     }
   }, [recipe, id]);
 
@@ -255,7 +255,7 @@ const RecipeDetailPage = () => {
   );
 
   const handleSelectRecipe = useCallback((selectedRecipe) => {
-    navigate(`/recipe/${selectedRecipe.slug}`);
+    navigate(`/recipe/${selectedRecipe.slug}/`);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [navigate]);
 
@@ -300,7 +300,7 @@ const App = () => {
       <HashRedirect />
       <Routes>
         <Route path="/" element={<RecipeList />} />
-        <Route path="/recipe/:id" element={<RecipeDetailPage />} />
+        <Route path="/recipe/:id/" element={<RecipeDetailPage />} />
       </Routes>
     </>
   );

@@ -15,7 +15,7 @@ const SEO = ({
 }) => {
   const siteName = 'Al Horno Con Papá - Cocina en familia';
   const defaultImage = 'https://alhornoconpapa.com.ar/og-default.jpg';
-  const siteUrl = 'https://alhornoconpapa.com.ar';
+  const siteUrl = 'https://alhornoconpapa.com.ar/';
   
   const fullTitle = title ? `${title} | Al Horno Con Papá` : siteName;
   const fullDescription = description || 'Al Horno Con Papá - Cocina en familia. Recetas deliciosas compartidas con amor.';
