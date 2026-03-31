@@ -45,6 +45,42 @@ const generateOrganizationSchema = (baseUrl = BASE_URL) => {
   };
 };
 
+// Genera el schema de Person para el autor
+const generatePersonSchema = (baseUrl = BASE_URL) => {
+  return {
+    '@type': 'Person',
+    name: ORGANIZATION.founderName,
+    url: baseUrl,
+    sameAs: SOCIAL_MEDIA_ARRAY,
+    worksFor: {
+      '@type': 'Organization',
+      name: ORGANIZATION.name,
+    },
+  };
+};
+
+// Genera el schema de WebSite con SearchAction
+const generateWebSiteSchema = (baseUrl = BASE_URL) => {
+  return {
+    '@type': 'WebSite',
+    url: baseUrl,
+    name: ORGANIZATION.name,
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: `${baseUrl}/?search={search_term_string}`,
+      'query-input': 'required name=search_term_string',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: ORGANIZATION.name,
+      logo: {
+        '@type': 'ImageObject',
+        url: ASSETS.logo,
+      },
+    },
+  };
+};
+
 // Parsea los pasos de la receta desde la descripción
 const parseRecipeSteps = (description, slug, imageUrl, baseUrl = BASE_URL) => {
   const lines = description.split('\n');
@@ -170,18 +206,16 @@ export const generateRecipeSchema = (recipe, baseUrl = BASE_URL) => {
         }
       ];
 
-  const schema = {
-    '@context': 'https://schema.org/',
+  const recipeSchema = {
     '@type': 'Recipe',
     name: removeEmojis(recipe.name),
     description: recipe.description.split('\n').filter(line => line.trim().length > 0)[1] || 'Receta deliciosa lista para preparar',
     image: URLS.getRecipeImageUrl(recipe.imageUrl),
     url: URLS.getRecipeUrl(recipe.slug),
     sameAs: URLS.getRecipeUrl(recipe.slug),
-    author: generateOrganizationSchema(baseUrl),
+    author: generatePersonSchema(baseUrl),
     recipeCategory: recipe.tags?.length ? recipe.tags[0] : 'Recipe',
     recipeCuisine: RECIPE_DEFAULTS.cuisine,
-    // Solo se publica totalTime cuando se puede parsear con certeza (se omite si no)
     ...(timeMinutes !== null ? { totalTime: `PT${timeMinutes}M` } : {}),
     recipeYield: RECIPE_DEFAULTS.servings,
     recipeIngredient: recipe.ingredients && recipe.ingredients.length > 0 
@@ -208,13 +242,20 @@ export const generateRecipeSchema = (recipe, baseUrl = BASE_URL) => {
       reviewCount: RECIPE_DEFAULTS.rating.reviewCount,
       ratingCount: RECIPE_DEFAULTS.rating.ratingCount,
     },
-    // speakable para búsqueda por voz y AI Overviews
     speakable: {
       '@type': 'SpeakableSpecification',
       cssSelector: CSS_SELECTORS.recipe,
     },
     datePublished: recipe.date || new Date().toISOString(),
     isAccessibleForFree: true
+  };
+
+  const schema = {
+    '@context': 'https://schema.org/',
+    '@graph': [
+      generateWebSiteSchema(baseUrl),
+      recipeSchema
+    ]
   };
   
   // Agregar video si existe
@@ -223,7 +264,7 @@ export const generateRecipeSchema = (recipe, baseUrl = BASE_URL) => {
       ? `${recipe.instagramUrl}embed/`
       : `${recipe.instagramUrl}/embed/`;
 
-    schema.video = {
+    recipeSchema.video = {
       '@type': 'VideoObject',
       name: removeEmojis(recipe.name),
       description: recipe.description.split('\n').filter(line => line.trim().length > 0)[1] || 'Video receta',
