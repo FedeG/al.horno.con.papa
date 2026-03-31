@@ -36,12 +36,18 @@ jobs:
         run: yarn test --watchAll=false --passWithNoTests
         env:
           CI: true
+      
+      - name: Install Chromium
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser
 
       - name: Build
         run: yarn build
         env:
           PUBLIC_URL: /
           REACT_APP_GA_MEASUREMENT_ID: ${{ secrets.REACT_APP_GA_MEASUREMENT_ID }}
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4

@@ -45,7 +45,7 @@ recipes.forEach((recipe) => {
     const slug = recipe.slug || String(recipe.id);
     if (!slug) return;
     xml += `  <url>\n`;
-    xml += `    <loc>${baseUrl}/#/recipe/${slug}</loc>\n`;
+    xml += `    <loc>${baseUrl}/recipe/${slug}</loc>\n`;
     xml += `    <lastmod>${recipe.date ? recipe.date.split('T')[0] : today}</lastmod>\n`;
     xml += `    <changefreq>monthly</changefreq>\n`;
     xml += `    <priority>0.8</priority>\n`;
@@ -70,3 +70,21 @@ fs.writeFileSync(sitemapPath, xml, 'utf8');
 
 console.log(`✅ Sitemap generado exitosamente: ${sitemapPath}`);
 console.log(`📋 Total de recetas indexadas: ${recipes.filter(r => !r.hidden).length}`);
+
+// Generar routes.json para react-snap
+const urls = recipes.filter(r => !r.hidden).map(r => `${baseUrl}/recipe/${r.slug || r.id}`);
+const routes = ['/'];
+urls.forEach(url => {
+  const path = url
+    .replace(baseUrl, '')
+    .replace(/^#/, '');
+  if (path && path !== '/') routes.push(path);
+});
+
+const routesPath = path.join(__dirname, '../src/data/routes.json');
+fs.writeFileSync(
+  routesPath,
+  JSON.stringify(routes, null, 2)
+);
+console.log(`✅ Routes json generado exitosamente: ${routesPath}`);
+console.log(`routes.json generado con ${routes.length} rutas`);
