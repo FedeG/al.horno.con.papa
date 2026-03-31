@@ -28,6 +28,7 @@ import {
   trackAutocompleteSelection
 } from './utils/analytics';
 import { generateCollectionSchema } from './utils/seoHelpers';
+import HashRedirect from './components/HashRedirect';
 
 const RecipeList = () => {
   const navigate = useNavigate();
@@ -295,10 +296,13 @@ const RecipeDetailPage = () => {
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<RecipeList />} />
-      <Route path="/recipe/:id" element={<RecipeDetailPage />} />
-    </Routes>
+    <>
+      <HashRedirect />
+      <Routes>
+        <Route path="/" element={<RecipeList />} />
+        <Route path="/recipe/:id" element={<RecipeDetailPage />} />
+      </Routes>
+    </>
   );
 };
 
