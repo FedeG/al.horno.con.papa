@@ -26,6 +26,8 @@
   align-items: center;
   gap: 12px;
   margin-bottom: 8px;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
 .logo h1 {

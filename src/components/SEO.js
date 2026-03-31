@@ -25,6 +25,7 @@ const SEO = ({
   return (
     <Helmet>
       {/* Meta básicos */}
+      <html lang="es" />
       <title>{fullTitle}</title>
       <meta name="description" content={fullDescription} />
       {keywords && <meta name="keywords" content={keywords} />}

@@ -242,16 +242,20 @@ export const generateRecipeSchema = (recipe, baseUrl = BASE_URL) => {
       reviewCount: RECIPE_DEFAULTS.rating.reviewCount,
       ratingCount: RECIPE_DEFAULTS.rating.ratingCount,
     },
-    speakable: {
-      '@type': 'SpeakableSpecification',
-      cssSelector: CSS_SELECTORS.recipe,
-    },
     datePublished: recipe.date || new Date().toISOString(),
     isAccessibleForFree: true
   };
 
   const schema = {
     '@context': 'https://schema.org/',
+    '@type': 'WebPage',
+    mainEntity: recipeSchema,
+    publisher: generateOrganizationSchema(baseUrl),
+    url: URLS.getRecipeUrl(recipe.slug),
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: CSS_SELECTORS.recipe,
+    },
     '@graph': [
       generateWebSiteSchema(baseUrl),
       recipeSchema
