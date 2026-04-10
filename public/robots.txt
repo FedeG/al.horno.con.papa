@@ -4,10 +4,9 @@
 
 User-agent: *
 Allow: /
-Allow: /receta/
+Allow: /recipe/
 Disallow: /admin/
 Disallow: /api/
-Disallow: /*.json$
 
 Sitemap: https://alhornoconpapa.com.ar/sitemap.xml
 # LLMs: https://alhornoconpapa.com.ar/llms.txt
