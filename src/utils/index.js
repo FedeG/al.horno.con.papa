@@ -104,28 +104,23 @@ export const filterRecipes = (recipes, searchTerm, selectedTag, showEasyOnly) =>
 };
 
 /**
- * Encuentra recetas relacionadas basadas en tags comunes
+ * Obtiene recetas relacionadas usando el campo pre-computado related_recipes
  * @param {Array} recipes - Array de todas las recetas
  * @param {Object} recipe - Receta actual
- * @param {number} maxResults - Número máximo de resultados (default: 3)
- * @returns {Array} Array de recetas relacionadas
+ * @returns {Array} Array de recetas relacionadas completas
  */
-export const findRelatedRecipes = (recipes, recipe, maxResults = 3) => {
-    if (!recipe) return [];
+export const findRelatedRecipes = (recipes, recipe) => {
+    if (!recipe || !recipe.related_recipes) return [];
+    
     const related = [];
-    const recipeTags = new Set(recipe.tags);
 
-    for (let i = 0; i < recipes.length && related.length < maxResults; i++) {
-        const r = recipes[i];
-        if (r.id !== recipe.id) {
-            for (let j = 0; j < r.tags.length; j++) {
-                if (recipeTags.has(r.tags[j])) {
-                    related.push(r);
-                    break;
-                }
-            }
+    for (const rel of recipe.related_recipes) {
+        const found = recipes.find(r => r.id === rel.recipe_id);
+        if (found) {
+            related.push(found);
         }
     }
+
     return related;
 };
 

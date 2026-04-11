@@ -24,7 +24,7 @@
       "2 cucharadas de leche"
     ],
     "date": "2026-04-09T21:22:43-03:00",
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "shortcode": "DW7kxG-jpCH",
     "cleaned_ingredientes": [
@@ -43,6 +43,20 @@
       "Banana",
       "Bizcochuelo",
       "Marmolado"
+    ],
+    "related_recipes": [
+      {
+        "recipe_id": 3584844738130981428,
+        "score": 8
+      },
+      {
+        "recipe_id": 3522956054784141513,
+        "score": 7
+      },
+      {
+        "recipe_id": 3644262487139377127,
+        "score": 6
+      }
     ]
   },
   {
@@ -94,6 +108,20 @@
     "old_tags": [
       "Facil",
       "Sopa"
+    ],
+    "related_recipes": [
+      {
+        "recipe_id": 3357907319144106329,
+        "score": 10
+      },
+      {
+        "recipe_id": 3809505069079861469,
+        "score": 9
+      },
+      {
+        "recipe_id": 3707323832187256597,
+        "score": 8
+      }
     ]
   },
   {
@@ -146,7 +174,21 @@
       "fritura",
       "pescado"
     ],
-    "slug": "pescado-frito"
+    "slug": "pescado-frito",
+    "related_recipes": [
+      {
+        "recipe_id": 3809505069079861469,
+        "score": 6
+      },
+      {
+        "recipe_id": 3634115665490281272,
+        "score": 6
+      },
+      {
+        "recipe_id": 3610570869370927724,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3847199831089887707,
@@ -185,7 +227,21 @@
       "Vegano",
       "Vegetariano"
     ],
-    "slug": "choclo-al-microondas"
+    "slug": "choclo-al-microondas",
+    "related_recipes": [
+      {
+        "recipe_id": 3835606867737755462,
+        "score": 5
+      },
+      {
+        "recipe_id": 3824028086258528195,
+        "score": 5
+      },
+      {
+        "recipe_id": 3630242659277936281,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3843589430267770145,
@@ -233,7 +289,21 @@
       "Vegano",
       "Vegetariano"
     ],
-    "slug": "tofu-agridulce"
+    "slug": "tofu-agridulce",
+    "related_recipes": [
+      {
+        "recipe_id": 3819676244745536630,
+        "score": 4
+      },
+      {
+        "recipe_id": 3704394110262278412,
+        "score": 4
+      },
+      {
+        "recipe_id": 3661651826735537089,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 3841423351726646769,
@@ -293,7 +363,21 @@
       "Brochetas",
       "Parrilla"
     ],
-    "slug": "brochetas-a-la-parrilla"
+    "slug": "brochetas-a-la-parrilla",
+    "related_recipes": [
+      {
+        "recipe_id": 3717488954980600869,
+        "score": 8
+      },
+      {
+        "recipe_id": 3363017605348825377,
+        "score": 7
+      },
+      {
+        "recipe_id": 3696179700699961881,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3835606867737755462,
@@ -330,7 +414,21 @@
       "Microondas",
       "Tips"
     ],
-    "slug": "arroz-en-microondas"
+    "slug": "arroz-en-microondas",
+    "related_recipes": [
+      {
+        "recipe_id": 3403669984423274472,
+        "score": 6
+      },
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 5
+      },
+      {
+        "recipe_id": 3614283436492815155,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3826899846431654667,
@@ -372,7 +470,21 @@
       "Pollo",
       "Salpicon"
     ],
-    "slug": "salpicon-de-ave-pollo"
+    "slug": "salpicon-de-ave-pollo",
+    "related_recipes": [
+      {
+        "recipe_id": 3809505069079861469,
+        "score": 6
+      },
+      {
+        "recipe_id": 3789945646489693727,
+        "score": 6
+      },
+      {
+        "recipe_id": 3512132722190986455,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3824028086258528195,
@@ -412,7 +524,21 @@
       "Puredepapa",
       "Vegetariano"
     ],
-    "slug": "pure-de-papa-nube-estilo-betular"
+    "slug": "pure-de-papa-nube-estilo-betular",
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 5
+      },
+      {
+        "recipe_id": 3630242659277936281,
+        "score": 5
+      },
+      {
+        "recipe_id": 3589641815843205086,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3819676244745536630,
@@ -468,7 +594,21 @@
       "Pizzacasera",
       "Vegetariano"
     ],
-    "slug": "pizza"
+    "slug": "pizza",
+    "related_recipes": [
+      {
+        "recipe_id": 3184703452844334328,
+        "score": 8
+      },
+      {
+        "recipe_id": 2899119893145812759,
+        "score": 8
+      },
+      {
+        "recipe_id": 3620090472056771947,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3814600790581882617,
@@ -495,7 +635,21 @@
       "Vegano",
       "Vegetariano"
     ],
-    "slug": "levadura-fresca-vs-levadura-seca"
+    "slug": "levadura-fresca-vs-levadura-seca",
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      },
+      {
+        "recipe_id": 3843589430267770145,
+        "score": 3
+      },
+      {
+        "recipe_id": 3835606867737755462,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3809505069079861469,
@@ -552,7 +706,21 @@
       "pollo",
       "Facil"
     ],
-    "slug": "hamburguesas-de-pollo"
+    "slug": "hamburguesas-de-pollo",
+    "related_recipes": [
+      {
+        "recipe_id": 3869698535436761209,
+        "score": 9
+      },
+      {
+        "recipe_id": 3707323832187256597,
+        "score": 9
+      },
+      {
+        "recipe_id": 3683135040196719928,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3806549167578189678,
@@ -600,7 +768,21 @@
       "Matambre",
       "Navidad"
     ],
-    "slug": "matambre-arrollado-2"
+    "slug": "matambre-arrollado",
+    "related_recipes": [
+      {
+        "recipe_id": 3535398971310306094,
+        "score": 14
+      },
+      {
+        "recipe_id": 3798640244401535886,
+        "score": 5
+      },
+      {
+        "recipe_id": 3518623892089900820,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3800025234871838907,
@@ -637,7 +819,21 @@
       "sal"
     ],
     "shortcode": "DS8ZtFWDmi7",
-    "slug": "pionono"
+    "slug": "pionono",
+    "related_recipes": [
+      {
+        "recipe_id": 3524411531028187637,
+        "score": 9
+      },
+      {
+        "recipe_id": 3798640244401535886,
+        "score": 4
+      },
+      {
+        "recipe_id": 3789945646489693727,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 3798640244401535886,
@@ -692,7 +888,21 @@
       "zanahoria"
     ],
     "shortcode": "DS3ey0dDnuO",
-    "slug": "vitel-tone-2"
+    "slug": "vitel-tone",
+    "related_recipes": [
+      {
+        "recipe_id": 3518623892089900820,
+        "score": 13
+      },
+      {
+        "recipe_id": 3789945646489693727,
+        "score": 6
+      },
+      {
+        "recipe_id": 3788496596900937594,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3792566233661892915,
@@ -727,7 +937,21 @@
       "leche, aproximadamente 2 tazas picado"
     ],
     "shortcode": "DSh5uVIjukz",
-    "slug": "turron-casero-2"
+    "slug": "turron-casero",
+    "related_recipes": [
+      {
+        "recipe_id": 3788496596900937594,
+        "score": 4
+      },
+      {
+        "recipe_id": 3530202892914427869,
+        "score": 4
+      },
+      {
+        "recipe_id": 2983765738127237083,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 3789945646489693727,
@@ -769,7 +993,21 @@
       "zanahoria"
     ],
     "shortcode": "DSYl3xJDm4f",
-    "slug": "ensalada-rusa-2"
+    "slug": "ensalada-rusa",
+    "related_recipes": [
+      {
+        "recipe_id": 3512132722190986455,
+        "score": 8
+      },
+      {
+        "recipe_id": 3869698535436761209,
+        "score": 6
+      },
+      {
+        "recipe_id": 3826899846431654667,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3788496596900937594,
@@ -826,7 +1064,21 @@
       "sal"
     ],
     "shortcode": "DSTcZUjDn96",
-    "slug": "pate-de-hongos-2"
+    "slug": "pate-de-hongos",
+    "related_recipes": [
+      {
+        "recipe_id": 3466661986375212323,
+        "score": 10
+      },
+      {
+        "recipe_id": 3549051951318090623,
+        "score": 7
+      },
+      {
+        "recipe_id": 3184703452844334328,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3759500882959312664,
@@ -871,7 +1123,21 @@
       "vinagre (para lavar las frutillas)"
     ],
     "shortcode": "DQsbiJljqcY",
-    "slug": "mermelada-casera-de-frutilla"
+    "slug": "mermelada-casera-de-frutilla",
+    "related_recipes": [
+      {
+        "recipe_id": 3620090472056771947,
+        "score": 4
+      },
+      {
+        "recipe_id": 3589641815843205086,
+        "score": 4
+      },
+      {
+        "recipe_id": 3496859101545704507,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 3749348399670795105,
@@ -923,7 +1189,21 @@
       "sal, pimienta negra"
     ],
     "shortcode": "DQIXIEtjpth",
-    "slug": "costillitas-a-la-riojana"
+    "slug": "costillitas-a-la-riojana",
+    "related_recipes": [
+      {
+        "recipe_id": 3683135040196719928,
+        "score": 6
+      },
+      {
+        "recipe_id": 3645452133613487393,
+        "score": 6
+      },
+      {
+        "recipe_id": 3614283436492815155,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3742112497752006485,
@@ -981,7 +1261,21 @@
       "relleno"
     ],
     "shortcode": "DPup316Dt9V",
-    "slug": "cheesecake-cocido-clasico"
+    "slug": "cheesecake-cocido-clasico",
+    "related_recipes": [
+      {
+        "recipe_id": 3522956054784141513,
+        "score": 6
+      },
+      {
+        "recipe_id": 3871850009075814535,
+        "score": 5
+      },
+      {
+        "recipe_id": 3668670732125839585,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3736087744675221094,
@@ -1029,7 +1323,21 @@
       "sal"
     ],
     "shortcode": "DPZQAJXDo5m",
-    "slug": "polenta"
+    "slug": "polenta",
+    "related_recipes": [
+      {
+        "recipe_id": 3630242659277936281,
+        "score": 6
+      },
+      {
+        "recipe_id": 3717488954980600869,
+        "score": 5
+      },
+      {
+        "recipe_id": 3704394110262278412,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3733422410486927572,
@@ -1081,7 +1389,21 @@
       "tapas de empanada"
     ],
     "shortcode": "DPPx-bdjlDU",
-    "slug": "empanadas-tipo-saltenas"
+    "slug": "empanadas-tipo-saltenas",
+    "related_recipes": [
+      {
+        "recipe_id": 3749348399670795105,
+        "score": 5
+      },
+      {
+        "recipe_id": 3645452133613487393,
+        "score": 5
+      },
+      {
+        "recipe_id": 3583389053723859889,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3720382646112403703,
@@ -1137,7 +1459,21 @@
       "polvo de hornear"
     ],
     "shortcode": "DOhdE4iDsD3",
-    "slug": "falafel-casero"
+    "slug": "falafel-casero",
+    "related_recipes": [
+      {
+        "recipe_id": 3819676244745536630,
+        "score": 6
+      },
+      {
+        "recipe_id": 3620090472056771947,
+        "score": 6
+      },
+      {
+        "recipe_id": 3583389053723859889,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3717488954980600869,
@@ -1192,7 +1528,21 @@
       "sal"
     ],
     "shortcode": "DOXLIIqDowl",
-    "slug": "higado-encebollado"
+    "slug": "higado-encebollado",
+    "related_recipes": [
+      {
+        "recipe_id": 3363017605348825377,
+        "score": 9
+      },
+      {
+        "recipe_id": 3841423351726646769,
+        "score": 8
+      },
+      {
+        "recipe_id": 3710947766295199832,
+        "score": 8
+      }
+    ]
   },
   {
     "id": 3715296457089009804,
@@ -1239,7 +1589,21 @@
       "sal"
     ],
     "shortcode": "DOPYnF4DsiM",
-    "slug": "pan-integral-2"
+    "slug": "pan-integral",
+    "related_recipes": [
+      {
+        "recipe_id": 3115859865469710296,
+        "score": 9
+      },
+      {
+        "recipe_id": 3429692435674842919,
+        "score": 6
+      },
+      {
+        "recipe_id": 3666011991710410983,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3712872821765894637,
@@ -1283,7 +1647,21 @@
       "seca"
     ],
     "shortcode": "DOGxijljvHt",
-    "slug": "mantecatura"
+    "slug": "mantecatura",
+    "related_recipes": [
+      {
+        "recipe_id": 3736087744675221094,
+        "score": 3
+      },
+      {
+        "recipe_id": 3704394110262278412,
+        "score": 3
+      },
+      {
+        "recipe_id": 3701270008739657437,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3710947766295199832,
@@ -1331,7 +1709,21 @@
       "sal"
     ],
     "shortcode": "DN_71T-DgBY",
-    "slug": "rinon-a-la-provenzal"
+    "slug": "rinon-a-la-provenzal",
+    "related_recipes": [
+      {
+        "recipe_id": 3717488954980600869,
+        "score": 8
+      },
+      {
+        "recipe_id": 2902016121275534244,
+        "score": 6
+      },
+      {
+        "recipe_id": 2861436538397511708,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3707323832187256597,
@@ -1384,7 +1776,21 @@
       "salsa de soja"
     ],
     "shortcode": "DNzD2IU3H8V",
-    "slug": "pechuga-a-la-plancha"
+    "slug": "pechuga-a-la-plancha",
+    "related_recipes": [
+      {
+        "recipe_id": 3809505069079861469,
+        "score": 9
+      },
+      {
+        "recipe_id": 3869698535436761209,
+        "score": 8
+      },
+      {
+        "recipe_id": 3326609181018727625,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3704394110262278412,
@@ -1441,7 +1847,21 @@
       "vinagre de alcohol"
     ],
     "shortcode": "DNoptEKO3kM",
-    "slug": "salsa-sweet-chili"
+    "slug": "salsa-sweet-chili",
+    "related_recipes": [
+      {
+        "recipe_id": 3588475878058433032,
+        "score": 6
+      },
+      {
+        "recipe_id": 3736087744675221094,
+        "score": 5
+      },
+      {
+        "recipe_id": 3696179700699961881,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3701270008739657437,
@@ -1492,7 +1912,21 @@
       "sal"
     ],
     "shortcode": "DNdjXZ4u_bd",
-    "slug": "tonkatsu-japones"
+    "slug": "tonkatsu-japones",
+    "related_recipes": [
+      {
+        "recipe_id": 3573244086166696038,
+        "score": 6
+      },
+      {
+        "recipe_id": 2874477172757081630,
+        "score": 6
+      },
+      {
+        "recipe_id": 3659485693416813984,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3696179700699961881,
@@ -1553,7 +1987,21 @@
       "tomate"
     ],
     "shortcode": "DNLd9rGOxoZ",
-    "slug": "salsa-criolla"
+    "slug": "salsa-criolla",
+    "related_recipes": [
+      {
+        "recipe_id": 3869698535436761209,
+        "score": 6
+      },
+      {
+        "recipe_id": 3841423351726646769,
+        "score": 6
+      },
+      {
+        "recipe_id": 3809505069079861469,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3691103888627901102,
@@ -1601,7 +2049,21 @@
       "tapas de lasaña (las de súper, hidratadas 2 min en agua caliente)"
     ],
     "shortcode": "DM5b24uuqKu",
-    "slug": "competencia-de-lasana-con-feli"
+    "slug": "competencia-de-lasana-con-feli",
+    "related_recipes": [
+      {
+        "recipe_id": 3701270008739657437,
+        "score": 4
+      },
+      {
+        "recipe_id": 3583389053723859889,
+        "score": 4
+      },
+      {
+        "recipe_id": 3580491219282177231,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 3686350578570090705,
@@ -1655,7 +2117,21 @@
       "tomate"
     ],
     "shortcode": "DMojFHxOdjR",
-    "slug": "picante-de-pollo"
+    "slug": "picante-de-pollo",
+    "related_recipes": [
+      {
+        "recipe_id": 3809505069079861469,
+        "score": 6
+      },
+      {
+        "recipe_id": 3614283436492815155,
+        "score": 5
+      },
+      {
+        "recipe_id": 3593552396895699307,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3684890020784221355,
@@ -1700,7 +2176,21 @@
       "sal"
     ],
     "shortcode": "DMjW_NVOayr",
-    "slug": "fosforitos-de-jamon-y-queso"
+    "slug": "fosforitos-de-jamon-y-queso",
+    "related_recipes": [
+      {
+        "recipe_id": 3819676244745536630,
+        "score": 5
+      },
+      {
+        "recipe_id": 3666011991710410983,
+        "score": 5
+      },
+      {
+        "recipe_id": 3644262487139377127,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3683135040196719928,
@@ -1748,7 +2238,21 @@
       "verduras que tenga"
     ],
     "shortcode": "DMdH84SuDU4",
-    "slug": "risotto-de-hongos"
+    "slug": "risotto-de-hongos",
+    "related_recipes": [
+      {
+        "recipe_id": 3809505069079861469,
+        "score": 7
+      },
+      {
+        "recipe_id": 3717488954980600869,
+        "score": 7
+      },
+      {
+        "recipe_id": 3620090472056771947,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3680962510824535605,
@@ -1795,7 +2299,21 @@
       "opcional"
     ],
     "shortcode": "DMVZ-apOfY1",
-    "slug": "marquise-de-chocolate"
+    "slug": "marquise-de-chocolate",
+    "related_recipes": [
+      {
+        "recipe_id": 3589641815843205086,
+        "score": 6
+      },
+      {
+        "recipe_id": 3020165395799385336,
+        "score": 6
+      },
+      {
+        "recipe_id": 2943337430166528365,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3678281787416195252,
@@ -1838,7 +2356,21 @@
       "queso crema"
     ],
     "shortcode": "DML4cwauzC0",
-    "slug": "chocotorta"
+    "slug": "chocotorta",
+    "related_recipes": [
+      {
+        "recipe_id": 2928830416581084447,
+        "score": 4
+      },
+      {
+        "recipe_id": 3869698535436761209,
+        "score": 3
+      },
+      {
+        "recipe_id": 3858090832151088491,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3675896022925121703,
@@ -1892,7 +2424,21 @@
       "verdura"
     ],
     "shortcode": "DMDZ_UFuRin",
-    "slug": "matambre-a-la-pizza"
+    "slug": "matambre-a-la-pizza",
+    "related_recipes": [
+      {
+        "recipe_id": 3841423351726646769,
+        "score": 4
+      },
+      {
+        "recipe_id": 3819676244745536630,
+        "score": 4
+      },
+      {
+        "recipe_id": 3789945646489693727,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 3670806469180862227,
@@ -1931,7 +2477,21 @@
       "pollo"
     ],
     "shortcode": "DLxUwjyuy8T",
-    "slug": "pollo-al-horno"
+    "slug": "pollo-al-horno",
+    "related_recipes": [
+      {
+        "recipe_id": 3661651826735537089,
+        "score": 4
+      },
+      {
+        "recipe_id": 3584844738130981428,
+        "score": 4
+      },
+      {
+        "recipe_id": 3580491219282177231,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 3668670732125839585,
@@ -1980,7 +2540,21 @@
       "ralladura de 2 limon"
     ],
     "shortcode": "DLpvJfqO6Dh",
-    "slug": "galletitas-crackeladas-de-limon"
+    "slug": "galletitas-crackeladas-de-limon",
+    "related_recipes": [
+      {
+        "recipe_id": 3544052157155793062,
+        "score": 6
+      },
+      {
+        "recipe_id": 3871850009075814535,
+        "score": 5
+      },
+      {
+        "recipe_id": 3742112497752006485,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3666011991710410983,
@@ -2031,7 +2605,21 @@
       "sésamo"
     ],
     "shortcode": "DLgSnusOKjn",
-    "slug": "pan-de-papa-casero"
+    "slug": "pan-de-papa-casero",
+    "related_recipes": [
+      {
+        "recipe_id": 3429692435674842919,
+        "score": 7
+      },
+      {
+        "recipe_id": 3115859865469710296,
+        "score": 7
+      },
+      {
+        "recipe_id": 2904750811335808998,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3661651826735537089,
@@ -2076,7 +2664,21 @@
       "sal gruesa"
     ],
     "shortcode": "DLQzO-nu1vB",
-    "slug": "papines-a-la-provenzal"
+    "slug": "papines-a-la-provenzal",
+    "related_recipes": [
+      {
+        "recipe_id": 2892590973252745774,
+        "score": 6
+      },
+      {
+        "recipe_id": 2851368708607607508,
+        "score": 6
+      },
+      {
+        "recipe_id": 2847759569454913686,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3659485693416813984,
@@ -2135,7 +2737,21 @@
       "zanahoria"
     ],
     "shortcode": "DLJGtlwu7Wg",
-    "slug": "salsa-bolonesa"
+    "slug": "salsa-bolonesa",
+    "related_recipes": [
+      {
+        "recipe_id": 3357907319144106329,
+        "score": 8
+      },
+      {
+        "recipe_id": 3717488954980600869,
+        "score": 7
+      },
+      {
+        "recipe_id": 3573244086166696038,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3656589200389197371,
@@ -2175,7 +2791,21 @@
       "tapa con agujero"
     ],
     "shortcode": "DK-0IEauk47",
-    "slug": "brotes-de-lentejas"
+    "slug": "brotes-de-lentejas",
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 4
+      },
+      {
+        "recipe_id": 3661651826735537089,
+        "score": 4
+      },
+      {
+        "recipe_id": 3645452133613487393,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 3654410106436117232,
@@ -2212,7 +2842,21 @@
       "leche condensada (medio pote)"
     ],
     "shortcode": "DK3EqFBuOLw",
-    "slug": "mousse-de-chocolate"
+    "slug": "mousse-de-chocolate",
+    "related_recipes": [
+      {
+        "recipe_id": 3620090472056771947,
+        "score": 4
+      },
+      {
+        "recipe_id": 2984599844946852058,
+        "score": 4
+      },
+      {
+        "recipe_id": 3869698535436761209,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3650539507544591071,
@@ -2262,7 +2906,21 @@
       "verdeo"
     ],
     "shortcode": "DKpUlc5uYrf",
-    "slug": "empanadas-de-carne-a-cuchillo"
+    "slug": "empanadas-de-carne-a-cuchillo",
+    "related_recipes": [
+      {
+        "recipe_id": 3645452133613487393,
+        "score": 7
+      },
+      {
+        "recipe_id": 3659485693416813984,
+        "score": 6
+      },
+      {
+        "recipe_id": 3809505069079861469,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3649339452284465345,
@@ -2302,7 +2960,21 @@
       "tomates cherry (la cantidad que quieras)"
     ],
     "shortcode": "DKlDuWWO_DB",
-    "slug": "tomates-cherries-confitados"
+    "slug": "tomates-cherries-confitados",
+    "related_recipes": [
+      {
+        "recipe_id": 3573244086166696038,
+        "score": 5
+      },
+      {
+        "recipe_id": 3659485693416813984,
+        "score": 4
+      },
+      {
+        "recipe_id": 3670806469180862227,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3645452133613487393,
@@ -2365,7 +3037,21 @@
       "zapallo cabutia"
     ],
     "shortcode": "DKXP2atuMUh",
-    "slug": "guiso-de-lentejas-2"
+    "slug": "guiso-de-lentejas",
+    "related_recipes": [
+      {
+        "recipe_id": 3357907319144106329,
+        "score": 9
+      },
+      {
+        "recipe_id": 3717488954980600869,
+        "score": 7
+      },
+      {
+        "recipe_id": 3650539507544591071,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3644262487139377127,
@@ -2411,7 +3097,21 @@
       "sal"
     ],
     "shortcode": "DKTBWyGOV_n",
-    "slug": "hotcakes-2"
+    "slug": "hotcakes",
+    "related_recipes": [
+      {
+        "recipe_id": 3056218302770962563,
+        "score": 10
+      },
+      {
+        "recipe_id": 3522956054784141513,
+        "score": 8
+      },
+      {
+        "recipe_id": 3481833328178995898,
+        "score": 8
+      }
+    ]
   },
   {
     "id": 3640662478703759352,
@@ -2473,7 +3173,21 @@
       "verdura"
     ],
     "shortcode": "DKGOzw-Ow_4",
-    "slug": "recetas-del-mundo-2"
+    "slug": "recetas-del-mundo",
+    "related_recipes": [
+      {
+        "recipe_id": 3869698535436761209,
+        "score": 4
+      },
+      {
+        "recipe_id": 3749348399670795105,
+        "score": 4
+      },
+      {
+        "recipe_id": 3593552396895699307,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 3639196309442492470,
@@ -2529,7 +3243,21 @@
       "sal"
     ],
     "shortcode": "DKBBcMcO3g2",
-    "slug": "salsa-de-ajo"
+    "slug": "salsa-de-ajo",
+    "related_recipes": [
+      {
+        "recipe_id": 3707323832187256597,
+        "score": 6
+      },
+      {
+        "recipe_id": 3630242659277936281,
+        "score": 6
+      },
+      {
+        "recipe_id": 3621795706487700397,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3635570338399134963,
@@ -2584,7 +3312,21 @@
       "queso semiduro rallado (gouda, pategrás, etc)"
     ],
     "shortcode": "DJ0I_XwOiTz",
-    "slug": "bunuelos-de-espinaca"
+    "slug": "bunuelos-de-espinaca",
+    "related_recipes": [
+      {
+        "recipe_id": 3610570869370927724,
+        "score": 7
+      },
+      {
+        "recipe_id": 3505559748113702321,
+        "score": 7
+      },
+      {
+        "recipe_id": 3819676244745536630,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3634115665490281272,
@@ -2637,7 +3379,21 @@
       "sal"
     ],
     "shortcode": "DJu-PGCOwM4",
-    "slug": "pan-rapido-sin-tacc"
+    "slug": "pan-rapido-sin-tacc",
+    "related_recipes": [
+      {
+        "recipe_id": 3858090832151088491,
+        "score": 6
+      },
+      {
+        "recipe_id": 3809505069079861469,
+        "score": 5
+      },
+      {
+        "recipe_id": 3644262487139377127,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3630242659277936281,
@@ -2681,7 +3437,21 @@
       "sal"
     ],
     "shortcode": "DJhNnb6uxaZ",
-    "slug": "pure-de-coliflor"
+    "slug": "pure-de-coliflor",
+    "related_recipes": [
+      {
+        "recipe_id": 3736087744675221094,
+        "score": 6
+      },
+      {
+        "recipe_id": 3717488954980600869,
+        "score": 6
+      },
+      {
+        "recipe_id": 3683135040196719928,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3629045890892380095,
@@ -2734,7 +3504,21 @@
       "sal"
     ],
     "shortcode": "DJc9gKgOze_",
-    "slug": "tortillas-sin-trigo-ni-gluten"
+    "slug": "tortillas-sin-trigo-ni-gluten",
+    "related_recipes": [
+      {
+        "recipe_id": 3858090832151088491,
+        "score": 5
+      },
+      {
+        "recipe_id": 3809505069079861469,
+        "score": 5
+      },
+      {
+        "recipe_id": 3644262487139377127,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3625171213979661073,
@@ -2785,7 +3569,21 @@
       "polvo de hornear"
     ],
     "shortcode": "DJPMgMbOrMR",
-    "slug": "budin-de-banana-2"
+    "slug": "budin-de-banana",
+    "related_recipes": [
+      {
+        "recipe_id": 2891865988744955692,
+        "score": 11
+      },
+      {
+        "recipe_id": 3544052157155793062,
+        "score": 6
+      },
+      {
+        "recipe_id": 3871850009075814535,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3623980771963539757,
@@ -2837,7 +3635,21 @@
       "quesos semiduros yo usé gouda, pategra"
     ],
     "shortcode": "DJK90-5u5Et",
-    "slug": "crackers-rapidas"
+    "slug": "crackers-rapidas",
+    "related_recipes": [
+      {
+        "recipe_id": 3869698535436761209,
+        "score": 3
+      },
+      {
+        "recipe_id": 3858090832151088491,
+        "score": 3
+      },
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3621795706487700397,
@@ -2889,7 +3701,21 @@
       "sal"
     ],
     "shortcode": "DJDNAGGO_ut",
-    "slug": "salsa-cesar-o-caesar-casera"
+    "slug": "salsa-cesar-o-caesar-casera",
+    "related_recipes": [
+      {
+        "recipe_id": 3639196309442492470,
+        "score": 6
+      },
+      {
+        "recipe_id": 3869698535436761209,
+        "score": 5
+      },
+      {
+        "recipe_id": 3809505069079861469,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3620090472056771947,
@@ -2950,7 +3776,21 @@
       "zapallo grande yo usé medio anco"
     ],
     "shortcode": "DI9JRqxuFVr",
-    "slug": "sopa-de-zapallo"
+    "slug": "sopa-de-zapallo",
+    "related_recipes": [
+      {
+        "recipe_id": 3157191918159734942,
+        "score": 8
+      },
+      {
+        "recipe_id": 3819676244745536630,
+        "score": 7
+      },
+      {
+        "recipe_id": 3809505069079861469,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3614283436492815155,
@@ -2997,7 +3837,21 @@
       "zanahoria"
     ],
     "shortcode": "DIog6Ldu3sz",
-    "slug": "arroz-con-pollo-2"
+    "slug": "arroz-con-pollo",
+    "related_recipes": [
+      {
+        "recipe_id": 2870850475245083366,
+        "score": 12
+      },
+      {
+        "recipe_id": 3434070188296914268,
+        "score": 8
+      },
+      {
+        "recipe_id": 3809505069079861469,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3610570869370927724,
@@ -3050,7 +3904,21 @@
       "zapallitos verdes (yo usé agroecológicos de @almacen_vida_organica)"
     ],
     "shortcode": "DIbUxN5Ojps",
-    "slug": "tortilla-de-zapallitos-verdes"
+    "slug": "tortilla-de-zapallitos-verdes",
+    "related_recipes": [
+      {
+        "recipe_id": 3505559748113702321,
+        "score": 9
+      },
+      {
+        "recipe_id": 2897670170547399083,
+        "score": 8
+      },
+      {
+        "recipe_id": 3819676244745536630,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3608744355675459206,
@@ -3091,7 +3959,21 @@
       "ron (opcional, pero tradicional)"
     ],
     "shortcode": "DIU1d8dO06G",
-    "slug": "recetas-del-mundo-3"
+    "slug": "recetas-del-mundo-2",
+    "related_recipes": [
+      {
+        "recipe_id": 3742112497752006485,
+        "score": 5
+      },
+      {
+        "recipe_id": 3589641815843205086,
+        "score": 5
+      },
+      {
+        "recipe_id": 3584844738130981428,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3605524834231673997,
@@ -3135,7 +4017,21 @@
       "sal (una cucharada colmada)"
     ],
     "shortcode": "DIJZbvdOmSN",
-    "slug": "chucrut-repollo-morado"
+    "slug": "chucrut-casero-de-repollo-morado",
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 4
+      },
+      {
+        "recipe_id": 3661651826735537089,
+        "score": 4
+      },
+      {
+        "recipe_id": 3656589200389197371,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 3604041958235527527,
@@ -3177,7 +4073,21 @@
       "sal"
     ],
     "shortcode": "DIEIRDkO1ln",
-    "slug": "mollejas-al-verdeo"
+    "slug": "mollejas-al-verdeo",
+    "related_recipes": [
+      {
+        "recipe_id": 3717488954980600869,
+        "score": 8
+      },
+      {
+        "recipe_id": 3518623892089900820,
+        "score": 7
+      },
+      {
+        "recipe_id": 3505559748113702321,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3599799759486501938,
@@ -3230,7 +4140,21 @@
       "vinagre de alcohol"
     ],
     "shortcode": "DH1Ds8GusQy",
-    "slug": "morrones-al-escabeche"
+    "slug": "morrones-al-escabeche",
+    "related_recipes": [
+      {
+        "recipe_id": 3594727340463842331,
+        "score": 11
+      },
+      {
+        "recipe_id": 3788496596900937594,
+        "score": 5
+      },
+      {
+        "recipe_id": 3717488954980600869,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3598603012214949462,
@@ -3262,7 +4186,21 @@
     "hidden": false,
     "cleaned_ingredientes": [],
     "shortcode": "DHwzl-WuQZW",
-    "slug": "esterilizar-frascos"
+    "slug": "esterilizar-frascos",
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      },
+      {
+        "recipe_id": 3835606867737755462,
+        "score": 3
+      },
+      {
+        "recipe_id": 3814600790581882617,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3594727340463842331,
@@ -3315,7 +4253,21 @@
       "vinagre de alcohol"
     ],
     "shortcode": "DHjCXhwu2Qb",
-    "slug": "berenjenas-al-escabeche"
+    "slug": "berenjenas-al-escabeche",
+    "related_recipes": [
+      {
+        "recipe_id": 3599799759486501938,
+        "score": 11
+      },
+      {
+        "recipe_id": 3788496596900937594,
+        "score": 5
+      },
+      {
+        "recipe_id": 3717488954980600869,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3593552396895699307,
@@ -3369,7 +4321,21 @@
       "zanahoria"
     ],
     "shortcode": "DHe3N2SuMFr",
-    "slug": "recetas-del-mundo-4"
+    "slug": "recetas-del-mundo-3",
+    "related_recipes": [
+      {
+        "recipe_id": 3399282333721284895,
+        "score": 6
+      },
+      {
+        "recipe_id": 2873017135474182442,
+        "score": 6
+      },
+      {
+        "recipe_id": 3686350578570090705,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3589641815843205086,
@@ -3432,7 +4398,21 @@
       "sal"
     ],
     "shortcode": "DHQ-DZ4OO_e",
-    "slug": "crumble-de-manzana-2"
+    "slug": "crumble-de-manzana",
+    "related_recipes": [
+      {
+        "recipe_id": 2943337430166528365,
+        "score": 13
+      },
+      {
+        "recipe_id": 3644262487139377127,
+        "score": 7
+      },
+      {
+        "recipe_id": 3524411531028187637,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3588475878058433032,
@@ -3490,7 +4470,21 @@
       "zanahoria en tiras fina"
     ],
     "shortcode": "DHM08xsuxoI",
-    "slug": "sushi-casero"
+    "slug": "sushi-casero",
+    "related_recipes": [
+      {
+        "recipe_id": 3704394110262278412,
+        "score": 6
+      },
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 5
+      },
+      {
+        "recipe_id": 3819676244745536630,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3584844738130981428,
@@ -3540,7 +4534,21 @@
       "manzanas (idealmente verdes)"
     ],
     "shortcode": "DG_7UvHObI0",
-    "slug": "torta-invertida-de-manzana"
+    "slug": "torta-invertida-de-manzana",
+    "related_recipes": [
+      {
+        "recipe_id": 3871850009075814535,
+        "score": 8
+      },
+      {
+        "recipe_id": 3481833328178995898,
+        "score": 7
+      },
+      {
+        "recipe_id": 3522956054784141513,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3583389053723859889,
@@ -3592,7 +4600,21 @@
       "tapa"
     ],
     "shortcode": "DG6wVvXO9ux",
-    "slug": "empanadas-de-verdura-y-salsa-blanca"
+    "slug": "empanadas-de-verdura-y-salsa-blanca",
+    "related_recipes": [
+      {
+        "recipe_id": 3819676244745536630,
+        "score": 7
+      },
+      {
+        "recipe_id": 3184703452844334328,
+        "score": 7
+      },
+      {
+        "recipe_id": 2899119893145812759,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3580491219282177231,
@@ -3635,7 +4657,21 @@
       "zapallo yo usé medio de princesa"
     ],
     "shortcode": "DGwdcsuuCzP",
-    "slug": "zapallo-al-horno"
+    "slug": "zapallo-al-horno",
+    "related_recipes": [
+      {
+        "recipe_id": 3717488954980600869,
+        "score": 7
+      },
+      {
+        "recipe_id": 3869698535436761209,
+        "score": 6
+      },
+      {
+        "recipe_id": 3858090832151088491,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3578785275745754837,
@@ -3673,7 +4709,21 @@
       "pimienta"
     ],
     "shortcode": "DGqZj9AOV7V",
-    "slug": "salsa-bechamel-o-salsa-blanca"
+    "slug": "salsa-bechamel-o-salsa-blanca",
+    "related_recipes": [
+      {
+        "recipe_id": 3170217780640108178,
+        "score": 8
+      },
+      {
+        "recipe_id": 3630242659277936281,
+        "score": 5
+      },
+      {
+        "recipe_id": 3505559748113702321,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3573244086166696038,
@@ -3723,7 +4773,21 @@
       "violeta con ralla"
     ],
     "shortcode": "DGWtpCDuzBm",
-    "slug": "fideos-con-berenjena-y-tomate"
+    "slug": "fideos-con-berenjena-y-tomate",
+    "related_recipes": [
+      {
+        "recipe_id": 3717488954980600869,
+        "score": 8
+      },
+      {
+        "recipe_id": 3809505069079861469,
+        "score": 7
+      },
+      {
+        "recipe_id": 3683135040196719928,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3567174666965184694,
@@ -3758,7 +4822,21 @@
     "hidden": false,
     "cleaned_ingredientes": [],
     "shortcode": "DGBJnW8O3C2",
-    "slug": "sanitizar-frutas-y-verduras"
+    "slug": "sanitizar-frutas-y-verduras",
+    "related_recipes": [
+      {
+        "recipe_id": 3871850009075814535,
+        "score": 3
+      },
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      },
+      {
+        "recipe_id": 3835606867737755462,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3558489683966697527,
@@ -3809,7 +4887,21 @@
       "sal"
     ],
     "shortcode": "DFiS4ONuiA3",
-    "slug": "faina-casera"
+    "slug": "faina-casera",
+    "related_recipes": [
+      {
+        "recipe_id": 3639196309442492470,
+        "score": 6
+      },
+      {
+        "recipe_id": 3620090472056771947,
+        "score": 6
+      },
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3555039197988981261,
@@ -3854,7 +4946,21 @@
       "yogur natural"
     ],
     "shortcode": "DFWCVCuuQoN",
-    "slug": "pan-naan-2"
+    "slug": "pan-naan",
+    "related_recipes": [
+      {
+        "recipe_id": 2846311302475326472,
+        "score": 6
+      },
+      {
+        "recipe_id": 3425352216444131488,
+        "score": 5
+      },
+      {
+        "recipe_id": 3164435187751661568,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3549051951318090623,
@@ -3910,7 +5016,21 @@
       "vino blanco"
     ],
     "shortcode": "DFAw_IvuMN_",
-    "slug": "risotto-de-hongos-y-mani"
+    "slug": "risotto-de-hongos-y-mani",
+    "related_recipes": [
+      {
+        "recipe_id": 2897670170547399083,
+        "score": 8
+      },
+      {
+        "recipe_id": 3819676244745536630,
+        "score": 7
+      },
+      {
+        "recipe_id": 3788496596900937594,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3544052157155793062,
@@ -3959,7 +5079,21 @@
       "sal entre fina"
     ],
     "shortcode": "DEvAKjkulim",
-    "slug": "galletitas-de-chocolate"
+    "slug": "galletitas-de-chocolate",
+    "related_recipes": [
+      {
+        "recipe_id": 3668670732125839585,
+        "score": 6
+      },
+      {
+        "recipe_id": 3625171213979661073,
+        "score": 6
+      },
+      {
+        "recipe_id": 3105744074832724152,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3541341536345816024,
@@ -4000,6 +5134,20 @@
     ],
     "shortcode": "DElX11OOnvY",
     "slug": "milanesas-de-berenjena-2"
+    "related_recipes": [
+      {
+        "recipe_id": 3388418159218738751,
+        "score": 7
+      },
+      {
+        "recipe_id": 2890423068218010132,
+        "score": 7
+      },
+      {
+        "recipe_id": 3610570869370927724,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3535398971310306094,
@@ -4052,6 +5200,20 @@
     ],
     "shortcode": "DEQQqIQO3Mu",
     "slug": "matambre-arrollado-3"
+    "related_recipes": [
+      {
+        "recipe_id": 3806549167578189678,
+        "score": 14
+      },
+      {
+        "recipe_id": 3610570869370927724,
+        "score": 6
+      },
+      {
+        "recipe_id": 3798640244401535886,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3530202892914427869,
@@ -4098,6 +5260,20 @@
     ],
     "shortcode": "DD9zNPJOIfd",
     "slug": "turron-casero-3"
+    "related_recipes": [
+      {
+        "recipe_id": 3792566233661892915,
+        "score": 4
+      },
+      {
+        "recipe_id": 3736087744675221094,
+        "score": 4
+      },
+      {
+        "recipe_id": 3717488954980600869,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 3524411531028187637,
@@ -4141,7 +5317,21 @@
       "sal"
     ],
     "shortcode": "DDpOZ1FOcn1",
-    "slug": "pionono-casero"
+    "slug": "pionono-casero",
+    "related_recipes": [
+      {
+        "recipe_id": 3800025234871838907,
+        "score": 9
+      },
+      {
+        "recipe_id": 3589641815843205086,
+        "score": 7
+      },
+      {
+        "recipe_id": 3522956054784141513,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3522956054784141513,
@@ -4195,7 +5385,21 @@
       "zapallo cocido pisado"
     ],
     "shortcode": "DDkDd3MuGjJ",
-    "slug": "bizcochuelo-de-zapallo"
+    "slug": "bizcochuelo-de-zapallo",
+    "related_recipes": [
+      {
+        "recipe_id": 3644262487139377127,
+        "score": 8
+      },
+      {
+        "recipe_id": 3056218302770962563,
+        "score": 8
+      },
+      {
+        "recipe_id": 3871850009075814535,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3518623892089900820,
@@ -4262,6 +5466,20 @@
     ],
     "shortcode": "DDUqcmSOI8U",
     "slug": "vitel-tone-3"
+    "related_recipes": [
+      {
+        "recipe_id": 3798640244401535886,
+        "score": 13
+      },
+      {
+        "recipe_id": 3717488954980600869,
+        "score": 8
+      },
+      {
+        "recipe_id": 3363017605348825377,
+        "score": 8
+      }
+    ]
   },
   {
     "id": 3517353515932956516,
@@ -4317,7 +5535,21 @@
       "zucchini"
     ],
     "shortcode": "DDQJmMSp7dk",
-    "slug": "salteado-de-fideos-estilo-yakisoba"
+    "slug": "salteado-de-fideos-estilo-yakisoba",
+    "related_recipes": [
+      {
+        "recipe_id": 3659485693416813984,
+        "score": 7
+      },
+      {
+        "recipe_id": 3363017605348825377,
+        "score": 5
+      },
+      {
+        "recipe_id": 3187627992033276556,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3513554334329081935,
@@ -4360,7 +5592,21 @@
       "sal"
     ],
     "shortcode": "DDCpw0suBBP",
-    "slug": "mayonesa-vegana-casera-veganesa"
+    "slug": "mayonesa-vegana-casera-veganesa",
+    "related_recipes": [
+      {
+        "recipe_id": 3462086018855823603,
+        "score": 6
+      },
+      {
+        "recipe_id": 3352919143882332731,
+        "score": 6
+      },
+      {
+        "recipe_id": 3184703452844334328,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3512132722190986455,
@@ -4408,6 +5654,20 @@
     ],
     "shortcode": "DC9mhpOOCzX",
     "slug": "ensalada-rusa-3"
+    "related_recipes": [
+      {
+        "recipe_id": 3789945646489693727,
+        "score": 8
+      },
+      {
+        "recipe_id": 3869698535436761209,
+        "score": 6
+      },
+      {
+        "recipe_id": 3826899846431654667,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3507187449550120907,
@@ -4447,7 +5707,21 @@
       "manteca"
     ],
     "shortcode": "DCsCGdLJKfL",
-    "slug": "galletitas-caseras"
+    "slug": "galletitas-caseras",
+    "related_recipes": [
+      {
+        "recipe_id": 3589641815843205086,
+        "score": 6
+      },
+      {
+        "recipe_id": 3584844738130981428,
+        "score": 6
+      },
+      {
+        "recipe_id": 3522956054784141513,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3505559748113702321,
@@ -4496,7 +5770,21 @@
       "zapallitos verde"
     ],
     "shortcode": "DCmQASFOZ2x",
-    "slug": "tortilla-de-zapallito"
+    "slug": "tortilla-de-zapallito",
+    "related_recipes": [
+      {
+        "recipe_id": 3610570869370927724,
+        "score": 9
+      },
+      {
+        "recipe_id": 2897670170547399083,
+        "score": 8
+      },
+      {
+        "recipe_id": 3819676244745536630,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3496859101545704507,
@@ -4550,7 +5838,21 @@
       "solo agrega en el caso de que no se esté pudiendo licuar correctamente"
     ],
     "shortcode": "DCHVtNhOSw7",
-    "slug": "helado-casero"
+    "slug": "helado-casero",
+    "related_recipes": [
+      {
+        "recipe_id": 3759500882959312664,
+        "score": 4
+      },
+      {
+        "recipe_id": 2952749614831839382,
+        "score": 4
+      },
+      {
+        "recipe_id": 3871850009075814535,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3490338983835835340,
@@ -4618,7 +5920,21 @@
       "seco."
     ],
     "shortcode": "DBwLNAtO5vM",
-    "slug": "condimento-casero-para-carnes-rojas"
+    "slug": "condimento-casero-para-carnes-rojas",
+    "related_recipes": [
+      {
+        "recipe_id": 3841423351726646769,
+        "score": 5
+      },
+      {
+        "recipe_id": 3696179700699961881,
+        "score": 5
+      },
+      {
+        "recipe_id": 3749348399670795105,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 3485440589009616452,
@@ -4660,7 +5976,21 @@
       "sal"
     ],
     "shortcode": "DBexb_BpX5E",
-    "slug": "cebolla-caramelizada"
+    "slug": "cebolla-caramelizada",
+    "related_recipes": [
+      {
+        "recipe_id": 3819676244745536630,
+        "score": 7
+      },
+      {
+        "recipe_id": 3610570869370927724,
+        "score": 7
+      },
+      {
+        "recipe_id": 3505559748113702321,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3481833328178995898,
@@ -4720,7 +6050,21 @@
       "una"
     ],
     "shortcode": "DBR9PblOaK6",
-    "slug": "muffins-marmolados"
+    "slug": "muffins-marmolados",
+    "related_recipes": [
+      {
+        "recipe_id": 3644262487139377127,
+        "score": 8
+      },
+      {
+        "recipe_id": 3584844738130981428,
+        "score": 7
+      },
+      {
+        "recipe_id": 3189782315920244660,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3475386728447575959,
@@ -4749,6 +6093,20 @@
     "cleaned_ingredientes": [],
     "shortcode": "DA7DdDuOYeX",
     "slug": "curar-tu-tabla-de-madera"
+    "related_recipes": [
+      {
+        "recipe_id": 3841423351726646769,
+        "score": 3
+      },
+      {
+        "recipe_id": 3789945646489693727,
+        "score": 3
+      },
+      {
+        "recipe_id": 3759500882959312664,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3470268765499739081,
@@ -4798,6 +6156,20 @@
     ],
     "shortcode": "DAo3w5SvsvJ",
     "slug": "crackers-de-semillas-2"
+    "related_recipes": [
+      {
+        "recipe_id": 3096286885739229787,
+        "score": 11
+      },
+      {
+        "recipe_id": 3115859865469710296,
+        "score": 7
+      },
+      {
+        "recipe_id": 3296923663462199846,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3466661986375212323,
@@ -4849,6 +6221,20 @@
     ],
     "shortcode": "DAcDrWePp0j",
     "slug": "pate-de-hongos-3"
+    "related_recipes": [
+      {
+        "recipe_id": 3788496596900937594,
+        "score": 10
+      },
+      {
+        "recipe_id": 3549051951318090623,
+        "score": 7
+      },
+      {
+        "recipe_id": 3819676244745536630,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3465169478974257447,
@@ -4886,6 +6272,20 @@
     "cleaned_ingredientes": [],
     "shortcode": "DAWwUgoyTkn",
     "slug": "cocinar-en-vacaciones-2"
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      },
+      {
+        "recipe_id": 3835606867737755462,
+        "score": 3
+      },
+      {
+        "recipe_id": 3814600790581882617,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3462086018855823603,
@@ -4931,6 +6331,20 @@
     ],
     "shortcode": "DALzOQnv2jz",
     "slug": "dip-de-zanahoria-2"
+    "related_recipes": [
+      {
+        "recipe_id": 2895493636177136688,
+        "score": 9
+      },
+      {
+        "recipe_id": 3610570869370927724,
+        "score": 7
+      },
+      {
+        "recipe_id": 2902016121275534244,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3451442543822919931,
@@ -4982,7 +6396,21 @@
       "vinagre de vino"
     ],
     "shortcode": "C_l_LUDPFj7",
-    "slug": "chimichurri-argentino"
+    "slug": "chimichurri-argentino",
+    "related_recipes": [
+      {
+        "recipe_id": 3696179700699961881,
+        "score": 6
+      },
+      {
+        "recipe_id": 3841423351726646769,
+        "score": 5
+      },
+      {
+        "recipe_id": 3599799759486501938,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3447573132230317733,
@@ -5027,7 +6455,21 @@
       "tamaño de las porciones: hace rolls más pequeños que sean fáciles de comer, manipular"
     ],
     "shortcode": "C_YPX9rxNal",
-    "slug": "sushi-para-ninos"
+    "slug": "sushi-para-ninos",
+    "related_recipes": [
+      {
+        "recipe_id": 3701270008739657437,
+        "score": 3
+      },
+      {
+        "recipe_id": 3640662478703759352,
+        "score": 3
+      },
+      {
+        "recipe_id": 3588475878058433032,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3444938941268167779,
@@ -5066,7 +6508,21 @@
       "sal"
     ],
     "shortcode": "C_O4bcLMwxj",
-    "slug": "quinoa-roja"
+    "slug": "quinoa-roja",
+    "related_recipes": [
+      {
+        "recipe_id": 3558489683966697527,
+        "score": 5
+      },
+      {
+        "recipe_id": 2962169494181341194,
+        "score": 5
+      },
+      {
+        "recipe_id": 3634115665490281272,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 3441290949047484482,
@@ -5117,7 +6573,21 @@
       "yogur natural"
     ],
     "shortcode": "C_B6-KqvgBC",
-    "slug": "pollo-tikka-masala"
+    "slug": "pollo-tikka-masala",
+    "related_recipes": [
+      {
+        "recipe_id": 3809505069079861469,
+        "score": 6
+      },
+      {
+        "recipe_id": 3614283436492815155,
+        "score": 6
+      },
+      {
+        "recipe_id": 3434070188296914268,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3439858214285351104,
@@ -5147,7 +6617,21 @@
     "hidden": false,
     "cleaned_ingredientes": [],
     "shortcode": "C-81NIcMBjA",
-    "slug": "como-descongelar-carne"
+    "slug": "como-descongelar-carne",
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      },
+      {
+        "recipe_id": 3835606867737755462,
+        "score": 3
+      },
+      {
+        "recipe_id": 3814600790581882617,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3434070188296914268,
@@ -5191,7 +6675,21 @@
       "zanahoria"
     ],
     "shortcode": "C-oRKRLMkVc",
-    "slug": "salchichas-de-pollo-caseras"
+    "slug": "salchichas-de-pollo-caseras",
+    "related_recipes": [
+      {
+        "recipe_id": 3614283436492815155,
+        "score": 8
+      },
+      {
+        "recipe_id": 2870850475245083366,
+        "score": 8
+      },
+      {
+        "recipe_id": 3869698535436761209,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3429692435674842919,
@@ -5240,7 +6738,21 @@
       "seca (1 sobre)"
     ],
     "shortcode": "C-YtxlVPkcn",
-    "slug": "figacitas-caseras"
+    "slug": "figacitas-caseras",
+    "related_recipes": [
+      {
+        "recipe_id": 3115859865469710296,
+        "score": 8
+      },
+      {
+        "recipe_id": 3666011991710410983,
+        "score": 7
+      },
+      {
+        "recipe_id": 3715296457089009804,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3425352216444131488,
@@ -5280,6 +6792,20 @@
     ],
     "shortcode": "C-JS7FLv9ig",
     "slug": "masa-para-tarta-2"
+    "related_recipes": [
+      {
+        "recipe_id": 3164435187751661568,
+        "score": 7
+      },
+      {
+        "recipe_id": 3661651826735537089,
+        "score": 5
+      },
+      {
+        "recipe_id": 3555039197988981261,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3420316829895455231,
@@ -5332,7 +6858,21 @@
       "zapallo cabutia"
     ],
     "shortcode": "C93aAkBNXH_",
-    "slug": "puchero-argentino"
+    "slug": "puchero-argentino",
+    "related_recipes": [
+      {
+        "recipe_id": 3645452133613487393,
+        "score": 7
+      },
+      {
+        "recipe_id": 3357907319144106329,
+        "score": 7
+      },
+      {
+        "recipe_id": 3160778467628544373,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3418826977279084973,
@@ -5377,7 +6917,21 @@
       "pera con espinaca"
     ],
     "shortcode": "C9yHQWpPgmt",
-    "slug": "gomitas-caseras"
+    "slug": "gomitas-caseras",
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 4
+      },
+      {
+        "recipe_id": 3661651826735537089,
+        "score": 4
+      },
+      {
+        "recipe_id": 3656589200389197371,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 3414411383846964607,
@@ -5416,7 +6970,21 @@
       "sal"
     ],
     "shortcode": "C9ibRAzP41_",
-    "slug": "papas-al-horno"
+    "slug": "papas-al-horno",
+    "related_recipes": [
+      {
+        "recipe_id": 3788496596900937594,
+        "score": 5
+      },
+      {
+        "recipe_id": 3580491219282177231,
+        "score": 5
+      },
+      {
+        "recipe_id": 3184703452844334328,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3411360278505579826,
@@ -5453,7 +7021,21 @@
     "hidden": false,
     "cleaned_ingredientes": [],
     "shortcode": "C9XlhlhM-Uy",
-    "slug": "sanitizacion-de-verduras-y-frutas"
+    "slug": "sanitizacion-de-verduras-y-frutas",
+    "related_recipes": [
+      {
+        "recipe_id": 3871850009075814535,
+        "score": 3
+      },
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      },
+      {
+        "recipe_id": 3835606867737755462,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3408706125551412083,
@@ -5515,7 +7097,21 @@
     "hidden": false,
     "cleaned_ingredientes": [],
     "shortcode": "C9Bgfejt8B0",
-    "slug": "curado-de-mate-de-calabaza"
+    "slug": "curado-de-mate-de-calabaza",
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      },
+      {
+        "recipe_id": 3835606867737755462,
+        "score": 3
+      },
+      {
+        "recipe_id": 3814600790581882617,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3403669984423274472,
@@ -5555,7 +7151,21 @@
       "verdura"
     ],
     "shortcode": "C88Q9FCNWfo",
-    "slug": "arroz-perfecto"
+    "slug": "arroz-perfecto",
+    "related_recipes": [
+      {
+        "recipe_id": 3835606867737755462,
+        "score": 6
+      },
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 4
+      },
+      {
+        "recipe_id": 3683135040196719928,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 3399282333721284895,
@@ -5604,7 +7214,21 @@
       "zanahoria"
     ],
     "shortcode": "C8srUW4t9Ef",
-    "slug": "bifes-a-la-portuguesa"
+    "slug": "bifes-a-la-portuguesa",
+    "related_recipes": [
+      {
+        "recipe_id": 3593552396895699307,
+        "score": 6
+      },
+      {
+        "recipe_id": 3518623892089900820,
+        "score": 6
+      },
+      {
+        "recipe_id": 3363017605348825377,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3394168046644727543,
@@ -5653,7 +7277,21 @@
       "zanahoria mediana, en tira"
     ],
     "shortcode": "C8agdr4PY73",
-    "slug": "salteado-de-girgolas"
+    "slug": "salteado-de-girgolas",
+    "related_recipes": [
+      {
+        "recipe_id": 3819676244745536630,
+        "score": 7
+      },
+      {
+        "recipe_id": 2847759569454913686,
+        "score": 7
+      },
+      {
+        "recipe_id": 3388418159218738751,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3390576203906158033,
@@ -5682,7 +7320,21 @@
     "hidden": false,
     "cleaned_ingredientes": [],
     "shortcode": "C8NvxfpuA3R",
-    "slug": "reemplazos-veganos-para-huevo"
+    "slug": "reemplazos-veganos-para-huevo",
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      },
+      {
+        "recipe_id": 3843589430267770145,
+        "score": 3
+      },
+      {
+        "recipe_id": 3824028086258528195,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3388418159218738751,
@@ -5728,7 +7380,21 @@
       "sal"
     ],
     "shortcode": "C8GFFz6t0Y_",
-    "slug": "milanesas-de-girgolas"
+    "slug": "milanesas-de-girgolas",
+    "related_recipes": [
+      {
+        "recipe_id": 3541341536345816024,
+        "score": 7
+      },
+      {
+        "recipe_id": 3314267024761236331,
+        "score": 7
+      },
+      {
+        "recipe_id": 2897670170547399083,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3385519457646737968,
@@ -5757,7 +7423,21 @@
     "hidden": false,
     "cleaned_ingredientes": [],
     "shortcode": "C77yAJtNPow",
-    "slug": "tablas-de-cocina-guia-de-colores"
+    "slug": "tablas-de-cocina-guia-de-colores",
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      },
+      {
+        "recipe_id": 3835606867737755462,
+        "score": 3
+      },
+      {
+        "recipe_id": 3814600790581882617,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3384065603491158342,
@@ -5785,7 +7465,21 @@
       "elemento"
     ],
     "shortcode": "C72nbygtVlG",
-    "slug": "alitas-de-pollo-marinadas"
+    "slug": "alitas-de-pollo-marinadas",
+    "related_recipes": [
+      {
+        "recipe_id": 3826899846431654667,
+        "score": 3
+      },
+      {
+        "recipe_id": 3809505069079861469,
+        "score": 3
+      },
+      {
+        "recipe_id": 3707323832187256597,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3379687287942074937,
@@ -5822,6 +7516,20 @@
     "cleaned_ingredientes": [],
     "shortcode": "C7nD66ZsNI5",
     "slug": "tipos-de-harina"
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      },
+      {
+        "recipe_id": 3835606867737755462,
+        "score": 3
+      },
+      {
+        "recipe_id": 3819676244745536630,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3378233336789026693,
@@ -5863,7 +7571,21 @@
       "rebanadas de pan"
     ],
     "shortcode": "C7h5VI3sUeF",
-    "slug": "segunda-oportunidad-pollo"
+    "slug": "segunda-oportunidad-pollo",
+    "related_recipes": [
+      {
+        "recipe_id": 3809505069079861469,
+        "score": 5
+      },
+      {
+        "recipe_id": 2920860377060116266,
+        "score": 5
+      },
+      {
+        "recipe_id": 3707323832187256597,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 3375339140973366721,
@@ -5894,7 +7616,21 @@
     "hidden": false,
     "cleaned_ingredientes": [],
     "shortcode": "C7XnRC-MI3B",
-    "slug": "tablas-de-cocina"
+    "slug": "tablas-de-cocina",
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      },
+      {
+        "recipe_id": 3835606867737755462,
+        "score": 3
+      },
+      {
+        "recipe_id": 3814600790581882617,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3373890469131985035,
@@ -5949,7 +7685,21 @@
       "naranja"
     ],
     "shortcode": "C7Sd4GLsCCL",
-    "slug": "alfajores-caseros"
+    "slug": "alfajores-caseros",
+    "related_recipes": [
+      {
+        "recipe_id": 3020165395799385336,
+        "score": 6
+      },
+      {
+        "recipe_id": 3742112497752006485,
+        "score": 5
+      },
+      {
+        "recipe_id": 3680962510824535605,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3371493174297921890,
@@ -5975,7 +7725,13 @@
     "hidden": false,
     "cleaned_ingredientes": [],
     "shortcode": "C7J8y3Yroli",
-    "slug": "comidas-para-cumpleanos"
+    "slug": "comidas-para-cumpleanos",
+    "related_recipes": [
+      {
+        "recipe_id": 3360136372516242969,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3368125317275642463,
@@ -6026,7 +7782,21 @@
       "zanahoria"
     ],
     "shortcode": "C69_CGHNupf",
-    "slug": "guiso-de-mondongo"
+    "slug": "guiso-de-mondongo",
+    "related_recipes": [
+      {
+        "recipe_id": 3614283436492815155,
+        "score": 6
+      },
+      {
+        "recipe_id": 3869698535436761209,
+        "score": 5
+      },
+      {
+        "recipe_id": 3749348399670795105,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3366404153758662167,
@@ -6076,6 +7846,20 @@
     ],
     "shortcode": "C633r3rLz4X",
     "slug": "hummus-2"
+    "related_recipes": [
+      {
+        "recipe_id": 2844918667852510200,
+        "score": 11
+      },
+      {
+        "recipe_id": 3788496596900937594,
+        "score": 5
+      },
+      {
+        "recipe_id": 3558489683966697527,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3363017605348825377,
@@ -6117,7 +7901,21 @@
       "zanahoria"
     ],
     "shortcode": "C6r1rGsM5kh",
-    "slug": "salteado-de-carne-con-mani"
+    "slug": "salteado-de-carne-con-mani",
+    "related_recipes": [
+      {
+        "recipe_id": 3717488954980600869,
+        "score": 9
+      },
+      {
+        "recipe_id": 3518623892089900820,
+        "score": 8
+      },
+      {
+        "recipe_id": 3357907319144106329,
+        "score": 8
+      }
+    ]
   },
   {
     "id": 3360136372516242969,
@@ -6178,7 +7976,21 @@
       "verduras crudas: 8-12 mes"
     ],
     "shortcode": "C6hmjpgs0YZ",
-    "slug": "tiempos-en-el-freezer"
+    "slug": "tiempos-en-el-freezer",
+    "related_recipes": [
+      {
+        "recipe_id": 3598603012214949462,
+        "score": 3
+      },
+      {
+        "recipe_id": 3567174666965184694,
+        "score": 3
+      },
+      {
+        "recipe_id": 3439858214285351104,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3357907319144106329,
@@ -6237,6 +8049,20 @@
     ],
     "shortcode": "C6ZrupyRMlZ",
     "slug": "guiso-de-lentejas-3"
+    "related_recipes": [
+      {
+        "recipe_id": 3869698535436761209,
+        "score": 10
+      },
+      {
+        "recipe_id": 3645452133613487393,
+        "score": 9
+      },
+      {
+        "recipe_id": 3659485693416813984,
+        "score": 8
+      }
+    ]
   },
   {
     "id": 3354998829819544776,
@@ -6264,7 +8090,21 @@
       "calor."
     ],
     "shortcode": "C6PWakBPsTI",
-    "slug": "bicarbonato-de-sodio-vs-polvo-de-hornear"
+    "slug": "bicarbonato-de-sodio-vs-polvo-de-hornear",
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      },
+      {
+        "recipe_id": 3835606867737755462,
+        "score": 3
+      },
+      {
+        "recipe_id": 3814600790581882617,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3352919143882332731,
@@ -6308,7 +8148,21 @@
       "tasa de crema"
     ],
     "shortcode": "C6H9jJjtpo7",
-    "slug": "salsa-de-hongos"
+    "slug": "salsa-de-hongos",
+    "related_recipes": [
+      {
+        "recipe_id": 3683135040196719928,
+        "score": 7
+      },
+      {
+        "recipe_id": 3549051951318090623,
+        "score": 7
+      },
+      {
+        "recipe_id": 3513554334329081935,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3349296933728723059,
@@ -6336,6 +8190,20 @@
     "cleaned_ingredientes": [],
     "shortcode": "C57F9DeNKBz",
     "slug": "frutas-y-verduras-de-estacion"
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      },
+      {
+        "recipe_id": 3835606867737755462,
+        "score": 3
+      },
+      {
+        "recipe_id": 3814600790581882617,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3347829570525249038,
@@ -6378,7 +8246,21 @@
       "zanahoria"
     ],
     "shortcode": "C514UG_tL4O",
-    "slug": "estofado-de-pollo"
+    "slug": "estofado-de-pollo",
+    "related_recipes": [
+      {
+        "recipe_id": 3357907319144106329,
+        "score": 8
+      },
+      {
+        "recipe_id": 3434070188296914268,
+        "score": 7
+      },
+      {
+        "recipe_id": 3869698535436761209,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3326609181018727625,
@@ -6422,7 +8304,21 @@
       "vinagre de manzana"
     ],
     "shortcode": "C4qfWzNLKTJ",
-    "slug": "pollo-con-salsa-de-miel-y-ajo"
+    "slug": "pollo-con-salsa-de-miel-y-ajo",
+    "related_recipes": [
+      {
+        "recipe_id": 3707323832187256597,
+        "score": 7
+      },
+      {
+        "recipe_id": 3809505069079861469,
+        "score": 6
+      },
+      {
+        "recipe_id": 3434070188296914268,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3314267024761236331,
@@ -6468,7 +8364,21 @@
       "sal"
     ],
     "shortcode": "C3-pEydrytr",
-    "slug": "milanesas"
+    "slug": "milanesas",
+    "related_recipes": [
+      {
+        "recipe_id": 3717488954980600869,
+        "score": 8
+      },
+      {
+        "recipe_id": 3518623892089900820,
+        "score": 7
+      },
+      {
+        "recipe_id": 3388418159218738751,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3296923663462199846,
@@ -6509,7 +8419,21 @@
       "sal"
     ],
     "shortcode": "C3BBpqkPnIm",
-    "slug": "pan-con-masa-madre"
+    "slug": "pan-con-masa-madre",
+    "related_recipes": [
+      {
+        "recipe_id": 3470268765499739081,
+        "score": 6
+      },
+      {
+        "recipe_id": 3096286885739229787,
+        "score": 6
+      },
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3287476633564358156,
@@ -6548,7 +8472,21 @@
       "sal"
     ],
     "shortcode": "C2fdpSXACYM",
-    "slug": "pizza-con-masa-madre"
+    "slug": "pizza-con-masa-madre",
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 5
+      },
+      {
+        "recipe_id": 3558489683966697527,
+        "score": 5
+      },
+      {
+        "recipe_id": 3470268765499739081,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3283787029367823611,
@@ -6583,7 +8521,21 @@
       "harina ideal integral, de centeno,"
     ],
     "shortcode": "C2SWuergRz7",
-    "slug": "masa-madre"
+    "slug": "masa-madre",
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 4
+      },
+      {
+        "recipe_id": 3661651826735537089,
+        "score": 4
+      },
+      {
+        "recipe_id": 3605524834231673997,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 3280944293224657232,
@@ -6615,6 +8567,20 @@
     "cleaned_ingredientes": [],
     "shortcode": "C2IQXOVgDFQ",
     "slug": "cocinar-en-vacaciones-3"
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      },
+      {
+        "recipe_id": 3835606867737755462,
+        "score": 3
+      },
+      {
+        "recipe_id": 3814600790581882617,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3214357831176118713,
@@ -6661,7 +8627,21 @@
     "hidden": false,
     "cleaned_ingredientes": [],
     "shortcode": "Cx6a9hFvvWT",
-    "slug": "guia-de-equivalencias-en-la-cocina"
+    "slug": "guia-de-equivalencias-en-la-cocina",
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      },
+      {
+        "recipe_id": 3835606867737755462,
+        "score": 3
+      },
+      {
+        "recipe_id": 3814600790581882617,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3202825004420947108,
@@ -6703,7 +8683,21 @@
       "verdura"
     ],
     "shortcode": "CxyuF9KP9yk",
-    "slug": "medallones-de-lentejas"
+    "slug": "medallones-de-lentejas",
+    "related_recipes": [
+      {
+        "recipe_id": 3819676244745536630,
+        "score": 4
+      },
+      {
+        "recipe_id": 3809505069079861469,
+        "score": 4
+      },
+      {
+        "recipe_id": 3656589200389197371,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 3194852843001460019,
@@ -6752,7 +8746,21 @@
       "ralladura de medio limón (4gr)"
     ],
     "shortcode": "CxWZbvQv7Uz",
-    "slug": "tarta-de-crema-pastelera-con-frutas"
+    "slug": "tarta-de-crema-pastelera-con-frutas",
+    "related_recipes": [
+      {
+        "recipe_id": 3871850009075814535,
+        "score": 6
+      },
+      {
+        "recipe_id": 3644262487139377127,
+        "score": 6
+      },
+      {
+        "recipe_id": 3584844738130981428,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3189782315920244660,
@@ -6796,7 +8804,21 @@
       "opcional: ralladura de limón"
     ],
     "shortcode": "CxEYh27P7-0",
-    "slug": "crema-pastelera"
+    "slug": "crema-pastelera",
+    "related_recipes": [
+      {
+        "recipe_id": 3644262487139377127,
+        "score": 7
+      },
+      {
+        "recipe_id": 3481833328178995898,
+        "score": 7
+      },
+      {
+        "recipe_id": 3589641815843205086,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3187627992033276556,
@@ -6888,7 +8910,21 @@
       "zapallo/calabaza"
     ],
     "shortcode": "Cw8usUdPDKM",
-    "slug": "como-hacer-un-buen-salteado"
+    "slug": "como-hacer-un-buen-salteado",
+    "related_recipes": [
+      {
+        "recipe_id": 3363017605348825377,
+        "score": 6
+      },
+      {
+        "recipe_id": 3610570869370927724,
+        "score": 5
+      },
+      {
+        "recipe_id": 3517353515932956516,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3184703452844334328,
@@ -6937,7 +8973,21 @@
       "sal"
     ],
     "shortcode": "CwyVurFvxz4",
-    "slug": "pastel-de-papa-alternativo"
+    "slug": "pastel-de-papa-alternativo",
+    "related_recipes": [
+      {
+        "recipe_id": 3819676244745536630,
+        "score": 8
+      },
+      {
+        "recipe_id": 2899119893145812759,
+        "score": 8
+      },
+      {
+        "recipe_id": 3788496596900937594,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3179642081197799001,
@@ -6987,7 +9037,21 @@
       "tahini (pasta de sésamo) (si no tenés queda riquísimo igual)"
     ],
     "shortcode": "CwgW6BarbZZ",
-    "slug": "baba-ganoush"
+    "slug": "baba-ganoush",
+    "related_recipes": [
+      {
+        "recipe_id": 3720382646112403703,
+        "score": 5
+      },
+      {
+        "recipe_id": 3639196309442492470,
+        "score": 5
+      },
+      {
+        "recipe_id": 3620090472056771947,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3175286192055922454,
@@ -7035,7 +9099,21 @@
       "ralladura de 1 limón"
     ],
     "shortcode": "CwQ4ffhsi8W",
-    "slug": "budin-de-limon"
+    "slug": "budin-de-limon",
+    "related_recipes": [
+      {
+        "recipe_id": 3644262487139377127,
+        "score": 6
+      },
+      {
+        "recipe_id": 3481833328178995898,
+        "score": 6
+      },
+      {
+        "recipe_id": 3056218302770962563,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3170217780640108178,
@@ -7073,7 +9151,21 @@
       "pimienta"
     ],
     "shortcode": "Cv-4EZjrk6S",
-    "slug": "salsa-bechamel"
+    "slug": "salsa-bechamel",
+    "related_recipes": [
+      {
+        "recipe_id": 3578785275745754837,
+        "score": 8
+      },
+      {
+        "recipe_id": 3630242659277936281,
+        "score": 5
+      },
+      {
+        "recipe_id": 3505559748113702321,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3168000524703727690,
@@ -7126,7 +9218,21 @@
       "yema"
     ],
     "shortcode": "Cv2_7FDN4BK",
-    "slug": "tiramisu"
+    "slug": "tiramisu",
+    "related_recipes": [
+      {
+        "recipe_id": 3588475878058433032,
+        "score": 5
+      },
+      {
+        "recipe_id": 3020165395799385336,
+        "score": 5
+      },
+      {
+        "recipe_id": 3871850009075814535,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 3166229213346890064,
@@ -7164,7 +9270,21 @@
       "jugo de limón 🍋"
     ],
     "shortcode": "CvwtLGzAYFQ",
-    "slug": "queso-mascarpone-casero"
+    "slug": "queso-mascarpone-casero",
+    "related_recipes": [
+      {
+        "recipe_id": 3871850009075814535,
+        "score": 3
+      },
+      {
+        "recipe_id": 3869698535436761209,
+        "score": 3
+      },
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3164435187751661568,
@@ -7204,6 +9324,20 @@
     ],
     "shortcode": "CvqVQmQrzAA",
     "slug": "masa-para-tarta-3"
+    "related_recipes": [
+      {
+        "recipe_id": 3425352216444131488,
+        "score": 7
+      },
+      {
+        "recipe_id": 3661651826735537089,
+        "score": 5
+      },
+      {
+        "recipe_id": 3555039197988981261,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3160778467628544373,
@@ -7251,7 +9385,21 @@
       "zapallo cabutia"
     ],
     "shortcode": "CvdV0UQs_F1",
-    "slug": "carbonada-criolla"
+    "slug": "carbonada-criolla",
+    "related_recipes": [
+      {
+        "recipe_id": 3614283436492815155,
+        "score": 7
+      },
+      {
+        "recipe_id": 3518623892089900820,
+        "score": 7
+      },
+      {
+        "recipe_id": 3420316829895455231,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3157191918159734942,
@@ -7296,7 +9444,21 @@
       "zapallo"
     ],
     "shortcode": "CvQmVJxpSie",
-    "slug": "sopa-crema-de-calabaza"
+    "slug": "sopa-crema-de-calabaza",
+    "related_recipes": [
+      {
+        "recipe_id": 3620090472056771947,
+        "score": 8
+      },
+      {
+        "recipe_id": 3357907319144106329,
+        "score": 7
+      },
+      {
+        "recipe_id": 3184703452844334328,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3139811650760932730,
@@ -7351,7 +9513,21 @@
     "hidden": false,
     "cleaned_ingredientes": [],
     "shortcode": "CtCuTCbJJhn",
-    "slug": "tipos-de-cortes"
+    "slug": "tipos-de-cortes",
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      },
+      {
+        "recipe_id": 3835606867737755462,
+        "score": 3
+      },
+      {
+        "recipe_id": 3814600790581882617,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3115859865469710296,
@@ -7403,6 +9579,20 @@
     ],
     "shortcode": "Cs9wgoDN-_Y",
     "slug": "pan-integral-3"
+    "related_recipes": [
+      {
+        "recipe_id": 3715296457089009804,
+        "score": 9
+      },
+      {
+        "recipe_id": 3429692435674842919,
+        "score": 8
+      },
+      {
+        "recipe_id": 3666011991710410983,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 3105744074832724152,
@@ -7450,7 +9640,21 @@
       "porotos pesados ya cocidos, yo usé colorado"
     ],
     "shortcode": "CsZ0cf3rcC4",
-    "slug": "brownie-de-porotos"
+    "slug": "brownie-de-porotos",
+    "related_recipes": [
+      {
+        "recipe_id": 3544052157155793062,
+        "score": 6
+      },
+      {
+        "recipe_id": 3481833328178995898,
+        "score": 6
+      },
+      {
+        "recipe_id": 3644262487139377127,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3096286885739229787,
@@ -7500,6 +9704,20 @@
     ],
     "shortcode": "Cr4OISLL_Jb",
     "slug": "crackers-de-semillas-3"
+    "related_recipes": [
+      {
+        "recipe_id": 3470268765499739081,
+        "score": 11
+      },
+      {
+        "recipe_id": 3115859865469710296,
+        "score": 7
+      },
+      {
+        "recipe_id": 3296923663462199846,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3084660573602809547,
@@ -7524,6 +9742,20 @@
     "cleaned_ingredientes": [],
     "shortcode": "CrO6nLOP4bL",
     "slug": "tipos-de-coccion-de-alimentos-2"
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      },
+      {
+        "recipe_id": 3835606867737755462,
+        "score": 3
+      },
+      {
+        "recipe_id": 3814600790581882617,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3074510921653993469,
@@ -7548,6 +9780,20 @@
     "cleaned_ingredientes": [],
     "shortcode": "Cqq22TPPr_9",
     "slug": "tipos-de-coccion-de-alimentos-3"
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      },
+      {
+        "recipe_id": 3835606867737755462,
+        "score": 3
+      },
+      {
+        "recipe_id": 3814600790581882617,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3073125547395833151,
@@ -7597,7 +9843,21 @@
       "taza bebida de almendra, maní, ..."
     ],
     "shortcode": "Cql72c6tN0_",
-    "slug": "cereal-casero-de-legumbres"
+    "slug": "cereal-casero-de-legumbres",
+    "related_recipes": [
+      {
+        "recipe_id": 3544052157155793062,
+        "score": 6
+      },
+      {
+        "recipe_id": 3644262487139377127,
+        "score": 5
+      },
+      {
+        "recipe_id": 3625171213979661073,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 3069435649237806664,
@@ -7622,6 +9882,20 @@
     "cleaned_ingredientes": [],
     "shortcode": "CqY03XdvW5I",
     "slug": "tipos-de-coccion-de-alimentos-4"
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      },
+      {
+        "recipe_id": 3835606867737755462,
+        "score": 3
+      },
+      {
+        "recipe_id": 3814600790581882617,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3056218302770962563,
@@ -7668,6 +9942,20 @@
     ],
     "shortcode": "Cpp3lqUteCD",
     "slug": "hotcakes-3"
+    "related_recipes": [
+      {
+        "recipe_id": 3644262487139377127,
+        "score": 10
+      },
+      {
+        "recipe_id": 3522956054784141513,
+        "score": 8
+      },
+      {
+        "recipe_id": 2883186807995352076,
+        "score": 8
+      }
+    ]
   },
   {
     "id": 3029573667718140826,
@@ -7722,6 +10010,21 @@
     ],
     "shortcode": "CoLNTMNN5Oa",
     "slug": "salsa-de-yogurt"
+    "slug": "salsa-de-yogurt",
+    "related_recipes": [
+      {
+        "recipe_id": 3819676244745536630,
+        "score": 6
+      },
+      {
+        "recipe_id": 3620090472056771947,
+        "score": 6
+      },
+      {
+        "recipe_id": 3589641815843205086,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 3028941501570672073,
@@ -7749,6 +10052,20 @@
     "cleaned_ingredientes": [],
     "shortcode": "CoI9j9mjuXJ",
     "slug": "escherichia-coli-salmonela"
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      },
+      {
+        "recipe_id": 3835606867737755462,
+        "score": 3
+      },
+      {
+        "recipe_id": 3814600790581882617,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3023056074752447271,
@@ -7788,7 +10105,21 @@
       "pote de yogurt natural recomiendo usar el yogurt natural @dahioficial"
     ],
     "shortcode": "Cn0DXuvtNMn",
-    "slug": "multiplicar-yogurt"
+    "slug": "multiplicar-yogurt",
+    "related_recipes": [
+      {
+        "recipe_id": 3578785275745754837,
+        "score": 4
+      },
+      {
+        "recipe_id": 3170217780640108178,
+        "score": 4
+      },
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 3020165395799385336,
@@ -7831,7 +10162,21 @@
       "nueces picada"
     ],
     "shortcode": "CnpyG0LjKT4",
-    "slug": "brownie-de-chocolate-con-nueces"
+    "slug": "brownie-de-chocolate-con-nueces",
+    "related_recipes": [
+      {
+        "recipe_id": 2928830416581084447,
+        "score": 7
+      },
+      {
+        "recipe_id": 3680962510824535605,
+        "score": 6
+      },
+      {
+        "recipe_id": 3589641815843205086,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 2984599844946852058,
@@ -7870,7 +10215,21 @@
       "nata de leche"
     ],
     "shortcode": "Clrbb7yvjja",
-    "slug": "helado-de-mousse-de-limon"
+    "slug": "helado-de-mousse-de-limon",
+    "related_recipes": [
+      {
+        "recipe_id": 3654410106436117232,
+        "score": 4
+      },
+      {
+        "recipe_id": 3630242659277936281,
+        "score": 4
+      },
+      {
+        "recipe_id": 3620090472056771947,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 2983765738127237083,
@@ -7916,7 +10275,21 @@
       "manteca de maní"
     ],
     "shortcode": "ClodyFSDh_b",
-    "slug": "galletitas-de-cereales"
+    "slug": "galletitas-de-cereales",
+    "related_recipes": [
+      {
+        "recipe_id": 3792566233661892915,
+        "score": 4
+      },
+      {
+        "recipe_id": 3530202892914427869,
+        "score": 4
+      },
+      {
+        "recipe_id": 2928830416581084447,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 2962169494181341194,
@@ -7956,7 +10329,21 @@
       "sal"
     ],
     "shortcode": "CkbvXXxLWgK",
-    "slug": "bastoncitos-milanesas-de-quinoa"
+    "slug": "bastoncitos-de-quinoa-o-milanesas-de-quinoa",
+    "related_recipes": [
+      {
+        "recipe_id": 3819676244745536630,
+        "score": 6
+      },
+      {
+        "recipe_id": 3549051951318090623,
+        "score": 6
+      },
+      {
+        "recipe_id": 3184703452844334328,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 2957093282585936392,
@@ -8003,7 +10390,21 @@
       "sal"
     ],
     "shortcode": "CkJtKxUOoII",
-    "slug": "tortillas-de-trigo"
+    "slug": "tortillas-de-trigo",
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 5
+      },
+      {
+        "recipe_id": 3634115665490281272,
+        "score": 5
+      },
+      {
+        "recipe_id": 3588475878058433032,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 2952749614831839382,
@@ -8045,7 +10446,21 @@
       "media"
     ],
     "shortcode": "Cj6RiFeuSiW",
-    "slug": "helado-de-arandano"
+    "slug": "helado-de-arandano",
+    "related_recipes": [
+      {
+        "recipe_id": 3496859101545704507,
+        "score": 4
+      },
+      {
+        "recipe_id": 3871850009075814535,
+        "score": 3
+      },
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 2943337430166528365,
@@ -8100,7 +10515,21 @@
       "sal"
     ],
     "shortcode": "CjY1cxbL-Ft",
-    "slug": "crumble-de-manzana-3"
+    "slug": "crumble-de-manzana-2",
+    "related_recipes": [
+      {
+        "recipe_id": 3589641815843205086,
+        "score": 13
+      },
+      {
+        "recipe_id": 3644262487139377127,
+        "score": 7
+      },
+      {
+        "recipe_id": 3524411531028187637,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 2934645175529119355,
@@ -8124,7 +10553,21 @@
     "hidden": false,
     "cleaned_ingredientes": [],
     "shortcode": "Ci59D0dOh57",
-    "slug": "que-es-sabor-umami"
+    "slug": "que-es-sabor-umami",
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      },
+      {
+        "recipe_id": 3835606867737755462,
+        "score": 3
+      },
+      {
+        "recipe_id": 3814600790581882617,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 2928830416581084447,
@@ -8164,7 +10607,21 @@
       "manteca"
     ],
     "shortcode": "CilS78LrMUf",
-    "slug": "tarta-de-coco-y-dulce-de-leche"
+    "slug": "tarta-de-coco-y-dulce-de-leche",
+    "related_recipes": [
+      {
+        "recipe_id": 3020165395799385336,
+        "score": 7
+      },
+      {
+        "recipe_id": 3589641815843205086,
+        "score": 6
+      },
+      {
+        "recipe_id": 3175286192055922454,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 2925922136390613402,
@@ -8202,7 +10659,21 @@
       "pan rallado"
     ],
     "shortcode": "Cia9q5MA7ma",
-    "slug": "milanesas-de-garbanzo"
+    "slug": "milanesas-de-garbanzo",
+    "related_recipes": [
+      {
+        "recipe_id": 3388418159218738751,
+        "score": 5
+      },
+      {
+        "recipe_id": 3157191918159734942,
+        "score": 5
+      },
+      {
+        "recipe_id": 2890423068218010132,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 2920860377060116266,
@@ -8239,7 +10710,21 @@
       "ralladura de medio limón"
     ],
     "shortcode": "CiI-wmdLocq",
-    "slug": "segunda-oportunidad-pan"
+    "slug": "segunda-oportunidad-pan",
+    "related_recipes": [
+      {
+        "recipe_id": 3644262487139377127,
+        "score": 6
+      },
+      {
+        "recipe_id": 3481833328178995898,
+        "score": 6
+      },
+      {
+        "recipe_id": 3189782315920244660,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 2920812955857131777,
@@ -8268,7 +10753,21 @@
       "azúcar"
     ],
     "shortcode": "CiIz-iBORkB",
-    "slug": "caramelo"
+    "slug": "caramelo",
+    "related_recipes": [
+      {
+        "recipe_id": 3819676244745536630,
+        "score": 4
+      },
+      {
+        "recipe_id": 3644262487139377127,
+        "score": 4
+      },
+      {
+        "recipe_id": 3589641815843205086,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 2919944241854547183,
@@ -8304,7 +10803,21 @@
       "esencia de vainilla"
     ],
     "shortcode": "CiFudFDsATv",
-    "slug": "crema-vegana"
+    "slug": "crema-vegana",
+    "related_recipes": [
+      {
+        "recipe_id": 3644262487139377127,
+        "score": 5
+      },
+      {
+        "recipe_id": 3589641815843205086,
+        "score": 5
+      },
+      {
+        "recipe_id": 3481833328178995898,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 2917057743707873407,
@@ -8333,7 +10846,21 @@
     "hidden": false,
     "cleaned_ingredientes": [],
     "shortcode": "Ch7eJALAqB_",
-    "slug": "dinoquesadilla"
+    "slug": "dinoquesadilla",
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      },
+      {
+        "recipe_id": 3843589430267770145,
+        "score": 3
+      },
+      {
+        "recipe_id": 3824028086258528195,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 2916510253349641726,
@@ -8370,7 +10897,21 @@
       "zanahoria"
     ],
     "shortcode": "Ch5hp-CsJ3-",
-    "slug": "arepas-de-zanahoria"
+    "slug": "arepas-de-zanahoria",
+    "related_recipes": [
+      {
+        "recipe_id": 3610570869370927724,
+        "score": 4
+      },
+      {
+        "recipe_id": 3512132722190986455,
+        "score": 4
+      },
+      {
+        "recipe_id": 3505559748113702321,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 2911431153648013635,
@@ -8404,7 +10945,21 @@
       "queso crema"
     ],
     "shortcode": "ChnezV1MhFD",
-    "slug": "segunda-oportunidad-bizcochuelo"
+    "slug": "segunda-oportunidad-bizcochuelo",
+    "related_recipes": [
+      {
+        "recipe_id": 3588475878058433032,
+        "score": 4
+      },
+      {
+        "recipe_id": 3168000524703727690,
+        "score": 4
+      },
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 2905610974259242309,
@@ -8451,7 +11006,21 @@
       "sal"
     ],
     "shortcode": "ChSzclYMuVF",
-    "slug": "muhammara"
+    "slug": "muhammara",
+    "related_recipes": [
+      {
+        "recipe_id": 3549051951318090623,
+        "score": 7
+      },
+      {
+        "recipe_id": 2897670170547399083,
+        "score": 7
+      },
+      {
+        "recipe_id": 3819676244745536630,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 2904750811335808998,
@@ -8496,7 +11065,21 @@
       "sal"
     ],
     "shortcode": "ChPv3kOstfm",
-    "slug": "pan-relleno"
+    "slug": "pan-relleno",
+    "related_recipes": [
+      {
+        "recipe_id": 3666011991710410983,
+        "score": 6
+      },
+      {
+        "recipe_id": 3644262487139377127,
+        "score": 6
+      },
+      {
+        "recipe_id": 3429692435674842919,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 2902016121275534244,
@@ -8544,7 +11127,21 @@
       "zanahoria"
     ],
     "shortcode": "ChGCElpFcuk",
-    "slug": "merluza-al-limon"
+    "slug": "merluza-al-limon",
+    "related_recipes": [
+      {
+        "recipe_id": 2899119893145812759,
+        "score": 8
+      },
+      {
+        "recipe_id": 2897670170547399083,
+        "score": 8
+      },
+      {
+        "recipe_id": 3462086018855823603,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 2899119893145812759,
@@ -8593,7 +11190,21 @@
       "tomate"
     ],
     "shortcode": "Cg7vi7AOX8X",
-    "slug": "salsa-tatemada"
+    "slug": "salsa-tatemada",
+    "related_recipes": [
+      {
+        "recipe_id": 3819676244745536630,
+        "score": 8
+      },
+      {
+        "recipe_id": 3184703452844334328,
+        "score": 8
+      },
+      {
+        "recipe_id": 2902016121275534244,
+        "score": 8
+      }
+    ]
   },
   {
     "id": 2898392209847743210,
@@ -8640,7 +11251,21 @@
       "usar alguna harina sin tacc en la misma cantidad"
     ],
     "shortcode": "Cg5KFvHu_Lq",
-    "slug": "galletitas-de-lentejas"
+    "slug": "galletitas-de-lentejas",
+    "related_recipes": [
+      {
+        "recipe_id": 3634115665490281272,
+        "score": 5
+      },
+      {
+        "recipe_id": 2957093282585936392,
+        "score": 5
+      },
+      {
+        "recipe_id": 2854027432816047201,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 2897670170547399083,
@@ -8688,7 +11313,21 @@
       "zanahoria"
     ],
     "shortcode": "Cg2l6rnuSmr",
-    "slug": "tortilla-de-acelga"
+    "slug": "tortilla-de-acelga",
+    "related_recipes": [
+      {
+        "recipe_id": 3610570869370927724,
+        "score": 8
+      },
+      {
+        "recipe_id": 3549051951318090623,
+        "score": 8
+      },
+      {
+        "recipe_id": 3505559748113702321,
+        "score": 8
+      }
+    ]
   },
   {
     "id": 2896940236174295582,
@@ -8725,7 +11364,21 @@
       "sal"
     ],
     "shortcode": "Cgz_8vQtIIe",
-    "slug": "coles-de-bruselas-gratinados"
+    "slug": "coles-de-bruselas-gratinados",
+    "related_recipes": [
+      {
+        "recipe_id": 3824028086258528195,
+        "score": 5
+      },
+      {
+        "recipe_id": 3610570869370927724,
+        "score": 5
+      },
+      {
+        "recipe_id": 3462086018855823603,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 2896215418651500641,
@@ -8764,7 +11417,21 @@
       "manzanas 2 unidad"
     ],
     "shortcode": "CgxbJQVu2Bh",
-    "slug": "galletitas-de-manzana-y-avena"
+    "slug": "galletitas-de-manzana-y-avena",
+    "related_recipes": [
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 3
+      },
+      {
+        "recipe_id": 3843589430267770145,
+        "score": 3
+      },
+      {
+        "recipe_id": 3824028086258528195,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 2895493636177136688,
@@ -8809,7 +11476,21 @@
       "zanahoria"
     ],
     "shortcode": "Cgu3B8Bvgww",
-    "slug": "dip-de-zanahoria-3"
+    "slug": "dip-de-zanahoria-2",
+    "related_recipes": [
+      {
+        "recipe_id": 3462086018855823603,
+        "score": 9
+      },
+      {
+        "recipe_id": 3610570869370927724,
+        "score": 7
+      },
+      {
+        "recipe_id": 2902016121275534244,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 2892590973252745774,
@@ -8855,7 +11536,21 @@
       "trigo burgol"
     ],
     "shortcode": "CgkjCohOzou",
-    "slug": "hamburguesas-de-trigo-burgol"
+    "slug": "hamburguesas-de-trigo-burgol",
+    "related_recipes": [
+      {
+        "recipe_id": 3720382646112403703,
+        "score": 6
+      },
+      {
+        "recipe_id": 3661651826735537089,
+        "score": 6
+      },
+      {
+        "recipe_id": 2851368708607607508,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 2891865988744955692,
@@ -8900,7 +11595,21 @@
       "polvo de hornear"
     ],
     "shortcode": "Cgh-MuFLUcs",
-    "slug": "budin-de-banana-3"
+    "slug": "budin-de-banana-2",
+    "related_recipes": [
+      {
+        "recipe_id": 3625171213979661073,
+        "score": 11
+      },
+      {
+        "recipe_id": 3544052157155793062,
+        "score": 6
+      },
+      {
+        "recipe_id": 3644262487139377127,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 2890423068218010132,
@@ -8941,7 +11650,21 @@
       "salvado"
     ],
     "shortcode": "Cgc2HdnuqoU",
-    "slug": "milanesas-de-berenjena-3"
+    "slug": "milanesas-de-berenjena-2",
+    "related_recipes": [
+      {
+        "recipe_id": 3541341536345816024,
+        "score": 7
+      },
+      {
+        "recipe_id": 3388418159218738751,
+        "score": 6
+      },
+      {
+        "recipe_id": 3720382646112403703,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 2887541849218325466,
@@ -8983,7 +11706,21 @@
       "ramitas de canela"
     ],
     "shortcode": "CgSnANUu5va",
-    "slug": "arroz-con-leche"
+    "slug": "arroz-con-leche",
+    "related_recipes": [
+      {
+        "recipe_id": 3608744355675459206,
+        "score": 4
+      },
+      {
+        "recipe_id": 3835606867737755462,
+        "score": 3
+      },
+      {
+        "recipe_id": 3789945646489693727,
+        "score": 3
+      }
+    ]
   },
   {
     "id": 2883965321174385376,
@@ -9028,7 +11765,21 @@
       "queso crema (a temperatura ambiente)"
     ],
     "shortcode": "CgF5y4BJQLg",
-    "slug": "cream-cheese"
+    "slug": "cream-cheese",
+    "related_recipes": [
+      {
+        "recipe_id": 3871850009075814535,
+        "score": 4
+      },
+      {
+        "recipe_id": 3742112497752006485,
+        "score": 4
+      },
+      {
+        "recipe_id": 3644262487139377127,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 2883186807995352076,
@@ -9080,7 +11831,21 @@
       "zanahoria rallada"
     ],
     "shortcode": "CgDIyBHp8QM",
-    "slug": "carrot-cake"
+    "slug": "carrot-cake",
+    "related_recipes": [
+      {
+        "recipe_id": 3644262487139377127,
+        "score": 8
+      },
+      {
+        "recipe_id": 3056218302770962563,
+        "score": 8
+      },
+      {
+        "recipe_id": 3589641815843205086,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 2882450209419972656,
@@ -9119,7 +11884,21 @@
       "sal, pimentón, ají molido, paprika"
     ],
     "shortcode": "CgAhTGPOlAw",
-    "slug": "salsa-para-locro"
+    "slug": "salsa-para-locro",
+    "related_recipes": [
+      {
+        "recipe_id": 2881000421273029199,
+        "score": 6
+      },
+      {
+        "recipe_id": 2879389758213904266,
+        "score": 6
+      },
+      {
+        "recipe_id": 3420316829895455231,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 2881000421273029199,
@@ -9167,7 +11946,21 @@
       "zapallo (prefiero cabutia)"
     ],
     "shortcode": "Cf7Xp5zuspP",
-    "slug": "locro-vegano"
+    "slug": "locro-vegano",
+    "related_recipes": [
+      {
+        "recipe_id": 2879389758213904266,
+        "score": 10
+      },
+      {
+        "recipe_id": 2882450209419972656,
+        "score": 6
+      },
+      {
+        "recipe_id": 3420316829895455231,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 2879389758213904266,
@@ -9226,7 +12019,21 @@
       "zapallo (prefiero cabutia)"
     ],
     "shortcode": "Cf1pbq8PNeK",
-    "slug": "locro-tradicional"
+    "slug": "locro-tradicional",
+    "related_recipes": [
+      {
+        "recipe_id": 2881000421273029199,
+        "score": 10
+      },
+      {
+        "recipe_id": 2882450209419972656,
+        "score": 6
+      },
+      {
+        "recipe_id": 3841423351726646769,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 2876635228842400674,
@@ -9262,7 +12069,21 @@
       "semillas de girasol"
     ],
     "shortcode": "Cfr3H_jhpui",
-    "slug": "untable-de-girasol"
+    "slug": "untable-de-girasol",
+    "related_recipes": [
+      {
+        "recipe_id": 3788496596900937594,
+        "score": 6
+      },
+      {
+        "recipe_id": 3462086018855823603,
+        "score": 6
+      },
+      {
+        "recipe_id": 2895493636177136688,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 2875910318056608665,
@@ -9308,7 +12129,21 @@
       "semiduro"
     ],
     "shortcode": "CfpSTJxpROZ",
-    "slug": "chipa-guazu"
+    "slug": "chipa-guazu",
+    "related_recipes": [
+      {
+        "recipe_id": 3717488954980600869,
+        "score": 7
+      },
+      {
+        "recipe_id": 3518623892089900820,
+        "score": 6
+      },
+      {
+        "recipe_id": 3363017605348825377,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 2874477172757081630,
@@ -9351,7 +12186,21 @@
       "salsa katsu en mi caso"
     ],
     "shortcode": "CfkMcJNJ64e",
-    "slug": "bondiola-desmechada"
+    "slug": "bondiola-desmechada",
+    "related_recipes": [
+      {
+        "recipe_id": 3717488954980600869,
+        "score": 6
+      },
+      {
+        "recipe_id": 3701270008739657437,
+        "score": 6
+      },
+      {
+        "recipe_id": 3604041958235527527,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 2873017135474182442,
@@ -9404,7 +12253,21 @@
       "zanahoria"
     ],
     "shortcode": "CffAdzhjIkq",
-    "slug": "arrollados-de-akusay"
+    "slug": "arrollados-de-akusay",
+    "related_recipes": [
+      {
+        "recipe_id": 3593552396895699307,
+        "score": 6
+      },
+      {
+        "recipe_id": 3441290949047484482,
+        "score": 6
+      },
+      {
+        "recipe_id": 2870850475245083366,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 2872305844105539390,
@@ -9452,7 +12315,21 @@
       "queso (semiduro generalmente, pero pueden combinar, yo usé 70% fontina, 15% mozzarella, 15% parmesano)"
     ],
     "shortcode": "CfcevJ0MG8-",
-    "slug": "chipa"
+    "slug": "chipa",
+    "related_recipes": [
+      {
+        "recipe_id": 2875910318056608665,
+        "score": 6
+      },
+      {
+        "recipe_id": 3644262487139377127,
+        "score": 5
+      },
+      {
+        "recipe_id": 3589641815843205086,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 2870850475245083366,
@@ -9500,7 +12377,21 @@
       "zanahoria"
     ],
     "shortcode": "CfXT0v8Pprm",
-    "slug": "arroz-con-pollo-3"
+    "slug": "arroz-con-pollo-2",
+    "related_recipes": [
+      {
+        "recipe_id": 3614283436492815155,
+        "score": 12
+      },
+      {
+        "recipe_id": 3434070188296914268,
+        "score": 8
+      },
+      {
+        "recipe_id": 3809505069079861469,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 2866521208722078412,
@@ -9537,7 +12428,21 @@
       "queso fresco (queso paraguay, cuartirolo, muzarella, podrás usar cualquier de esos, si el queso no es húmedo es recomendable agregar 1 cucharada de agua)"
     ],
     "shortcode": "CfH7doTALrM",
-    "slug": "mbeju"
+    "slug": "mbeju",
+    "related_recipes": [
+      {
+        "recipe_id": 2872305844105539390,
+        "score": 5
+      },
+      {
+        "recipe_id": 2875910318056608665,
+        "score": 4
+      },
+      {
+        "recipe_id": 2860703577829171564,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 2865098342322151836,
@@ -9606,7 +12511,21 @@
       "sal"
     ],
     "shortcode": "Ce4ZmZjvBPz",
-    "slug": "nuggets-de-garbanzo-y-espinaca"
+    "slug": "nuggets-de-garbanzo-y-espinaca",
+    "related_recipes": [
+      {
+        "recipe_id": 3357907319144106329,
+        "score": 8
+      },
+      {
+        "recipe_id": 3720382646112403703,
+        "score": 6
+      },
+      {
+        "recipe_id": 3645452133613487393,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 2861436538397511708,
@@ -9659,7 +12578,21 @@
       "vinagre"
     ],
     "shortcode": "Ce13V8CgdAc",
-    "slug": "salsa-guasacaca"
+    "slug": "salsa-guasacaca",
+    "related_recipes": [
+      {
+        "recipe_id": 2899119893145812759,
+        "score": 7
+      },
+      {
+        "recipe_id": 3710947766295199832,
+        "score": 6
+      },
+      {
+        "recipe_id": 3635570338399134963,
+        "score": 6
+      }
+    ]
   },
   {
     "id": 2860703577829171564,
@@ -9706,7 +12639,21 @@
       "sal"
     ],
     "shortcode": "CezQr9UMmFs",
-    "slug": "tequenos"
+    "slug": "tequenos",
+    "related_recipes": [
+      {
+        "recipe_id": 2875910318056608665,
+        "score": 6
+      },
+      {
+        "recipe_id": 3704394110262278412,
+        "score": 5
+      },
+      {
+        "recipe_id": 3593552396895699307,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 2857880562263182824,
@@ -9743,7 +12690,21 @@
       "sal, pimienta, pimentón, provenzal"
     ],
     "shortcode": "CepOzrMMM3o",
-    "slug": "tonkatsu"
+    "slug": "tonkatsu",
+    "related_recipes": [
+      {
+        "recipe_id": 3593552396895699307,
+        "score": 2
+      },
+      {
+        "recipe_id": 3388418159218738751,
+        "score": 2
+      },
+      {
+        "recipe_id": 3378233336789026693,
+        "score": 2
+      }
+    ]
   },
   {
     "id": 2854909275122683702,
@@ -9781,7 +12742,21 @@
       "sal"
     ],
     "shortcode": "CeerNwZp882",
-    "slug": "bizcochitos"
+    "slug": "bizcochitos",
+    "related_recipes": [
+      {
+        "recipe_id": 3869698535436761209,
+        "score": 4
+      },
+      {
+        "recipe_id": 3858090832151088491,
+        "score": 4
+      },
+      {
+        "recipe_id": 3826899846431654667,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 2854027432816047201,
@@ -9832,7 +12807,21 @@
       "sal"
     ],
     "shortcode": "CebitQwOHRh",
-    "slug": "falafel"
+    "slug": "falafel",
+    "related_recipes": [
+      {
+        "recipe_id": 2957093282585936392,
+        "score": 5
+      },
+      {
+        "recipe_id": 2898392209847743210,
+        "score": 5
+      },
+      {
+        "recipe_id": 3847199831089887707,
+        "score": 4
+      }
+    ]
   },
   {
     "id": 2851368708607607508,
@@ -9883,7 +12872,21 @@
       "perejil"
     ],
     "shortcode": "CeSGLu4OILU",
-    "slug": "patitas-de-brocolicoliflor"
+    "slug": "patitas-de-brocolicoliflor",
+    "related_recipes": [
+      {
+        "recipe_id": 3661651826735537089,
+        "score": 6
+      },
+      {
+        "recipe_id": 2892590973252745774,
+        "score": 6
+      },
+      {
+        "recipe_id": 3720382646112403703,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 2847759569454913686,
@@ -9925,7 +12928,21 @@
       "sal"
     ],
     "shortcode": "CeFRj2HFFiW",
-    "slug": "lactonesa"
+    "slug": "lactonesa",
+    "related_recipes": [
+      {
+        "recipe_id": 3819676244745536630,
+        "score": 7
+      },
+      {
+        "recipe_id": 3394168046644727543,
+        "score": 7
+      },
+      {
+        "recipe_id": 3388418159218738751,
+        "score": 7
+      }
+    ]
   },
   {
     "id": 2846311302475326472,
@@ -9971,7 +12988,21 @@
       "yogur natural (1/4 taza)"
     ],
     "shortcode": "CeAIQyYOKQI",
-    "slug": "pan-naan-3"
+    "slug": "pan-naan-2",
+    "related_recipes": [
+      {
+        "recipe_id": 3555039197988981261,
+        "score": 6
+      },
+      {
+        "recipe_id": 3425352216444131488,
+        "score": 5
+      },
+      {
+        "recipe_id": 3164435187751661568,
+        "score": 5
+      }
+    ]
   },
   {
     "id": 2844918667852510200,
@@ -10016,6 +13047,20 @@
       "tahini (pasta de sésamo)"
     ],
     "shortcode": "Cd7LnSUOfP4",
-    "slug": "hummus-3"
+    "slug": "hummus-2",
+    "related_recipes": [
+      {
+        "recipe_id": 3366404153758662167,
+        "score": 11
+      },
+      {
+        "recipe_id": 3788496596900937594,
+        "score": 5
+      },
+      {
+        "recipe_id": 3558489683966697527,
+        "score": 5
+      }
+    ]
   }
 ]
