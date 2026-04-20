@@ -8732,7 +8732,7 @@
     "cleaned_ingredientes": [
       "azúcar",
       "azúcar impalpable",
-      "frutas"
+      "frutas",
       "frutos rojo",
       "harina",
       "huevo",
@@ -9088,7 +9088,7 @@
       "azúcar",
       "harina",
       "huevo",
-      "polvo de hornear",
+      "polvo de hornear"
     ],
     "shortcode": "CwQ4ffhsi8W",
     "slug": "budin-de-limón",
@@ -9383,7 +9383,7 @@
       "queso mozzarella",
       "sal",
       "zanahoria",
-      "zapallo"
+      "zapallo",
       "zapallo cabutia"
     ],
     "shortcode": "CvdV0UQs_F1",
@@ -12789,7 +12789,7 @@
       "Internacional",
       "Garbanzos",
       "Legumbres",
-      "Vegetariano"
+      "Vegetariano",
       "Vegano"
     ],
     "instagramUrl": "https://www.instagram.com/p/CebitQwOHRh/",
@@ -12926,8 +12926,8 @@
     "imageUrl": "images/CeFRj2HFFiW.jpg",
     "ingredients": [
       "1/2 diente de ajo",
-      "1/2 taza de leche 🥛",
-      "1/2 limón 🍋",
+      "1/2 taza de leche",
+      "1/2 limón",
       "1 taza de aceite",
       "Sal y pimienta al gusto",
       "Perejil para decorar"
