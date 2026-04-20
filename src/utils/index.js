@@ -1,4 +1,23 @@
 /**
+ * Normaliza una cadena quitando acentos y diacríticos para búsqueda flexible
+ * @param {string} str - Cadena a normalizar
+ * @returns {string} Cadena normalizada sin acentos
+ */
+const normalizeForSearch = (str) => {
+    if (!str) return '';
+    return str
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '');
+};
+
+const includesNormalized = (text, search) => {
+    const normalizedText = normalizeForSearch(text).replace(/ñ/g, 'n');
+    const normalizedSearch = normalizeForSearch(search).replace(/ñ/g, 'n');
+    return normalizedText.includes(normalizedSearch);
+};
+
+/**
  * Extrae todas las tags únicas de las recetas
  * @param {Array} recipes - Array de recetas
  * @param {Array} featuredTags - Tags destacadas para priorizar
@@ -42,14 +61,13 @@ export const generateAutocompleteSuggestions = (inputValue, recipes, maxSuggesti
 
     const suggestions = [];
     const seen = new Set();
-    const term = inputValue.toLowerCase();
 
     // 1. Buscar en ingredientes (cleaned_ingredientes) primero
     for (let i = 0; i < recipes.length && suggestions.length < maxSuggestions; i++) {
         const ingredients = recipes[i].cleaned_ingredientes;
         for (let j = 0; j < ingredients.length && suggestions.length < maxSuggestions; j++) {
             const ing = ingredients[j];
-            if (ing.toLowerCase().includes(term) && !seen.has(ing)) {
+            if (includesNormalized(ing, inputValue) && !seen.has(ing)) {
                 suggestions.push(ing);
                 seen.add(ing);
             }
@@ -60,7 +78,7 @@ export const generateAutocompleteSuggestions = (inputValue, recipes, maxSuggesti
     if (suggestions.length < maxSuggestions) {
         for (let i = 0; i < recipes.length && suggestions.length < maxSuggestions; i++) {
             const name = recipes[i].name;
-            if (name.toLowerCase().includes(term) && !seen.has(name)) {
+            if (includesNormalized(name, inputValue) && !seen.has(name)) {
                 suggestions.push(name);
                 seen.add(name);
             }
@@ -73,7 +91,7 @@ export const generateAutocompleteSuggestions = (inputValue, recipes, maxSuggesti
             const tags = recipes[i].tags;
             for (let j = 0; j < tags.length && suggestions.length < maxSuggestions; j++) {
                 const tag = tags[j];
-                if (tag.toLowerCase().includes(term) && !seen.has(tag)) {
+                if (includesNormalized(tag, inputValue) && !seen.has(tag)) {
                     suggestions.push(tag);
                     seen.add(tag);
                 }
@@ -94,9 +112,9 @@ export const generateAutocompleteSuggestions = (inputValue, recipes, maxSuggesti
  */
 export const filterRecipes = (recipes, searchTerm, selectedTag, showEasyOnly) => {
     return recipes.filter(recipe => {
-        const matchesSearch = recipe.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            recipe.cleaned_ingredientes.some(ing => ing.toLowerCase().includes(searchTerm.toLowerCase())) ||
-            recipe.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()));
+        const matchesSearch = includesNormalized(recipe.name, searchTerm) ||
+            recipe.cleaned_ingredientes.some(ing => includesNormalized(ing, searchTerm)) ||
+            recipe.tags.some(tag => includesNormalized(tag, searchTerm));
         const matchesTag = selectedTag === 'Todas' || recipe.tags.includes(selectedTag);
         const matchesEasy = !showEasyOnly || recipe.easy;
         return matchesSearch && matchesTag && matchesEasy;
