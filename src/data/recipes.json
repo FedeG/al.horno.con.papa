@@ -30,11 +30,11 @@
     "cleaned_ingredientes": [
       "aceite",
       "azúcar",
-      "bananas",
+      "banana",
       "cacao",
       "esencia de vainilla",
       "harina",
-      "harina leudante",
+      "harina",
       "huevo",
       "leche"
     ],
@@ -154,19 +154,19 @@
     "shortcode": "DWKsSu5jo1r",
     "cleaned_ingredientes": [
       "aceite",
-      "agua helada (cantidad necesaria)",
-      "ajo rallado",
-      "cerveza bien fría (en lugar del agua)",
-      "filetes de pescado merluza, abadejo",
+      "agua",
+      "ajo",
+      "cerveza",
+      "pescado",
+      "merluza",
       "harina",
       "huevo",
       "pimentón",
-      "pimienta negra",
+      "pimienta",
       "polvo de hornear",
-      "que tenga",
       "sal",
       "soda",
-      "taza de maicena"
+      "maicena"
     ],
     "old_tags": [
       "facil",
@@ -218,8 +218,7 @@
       "agua",
       "choclo",
       "manteca",
-      "sal",
-      "servilletas de papel"
+      "sal"
     ],
     "old_tags": [
       "Choclo",
@@ -276,15 +275,14 @@
     "cleaned_ingredientes": [
       "aceite",
       "aceite de sésamo",
-      "furikake",
       "fécula de maíz",
-      "jengibre rallado",
-      "ketchup",
       "maicena",
+      "jengibre",
+      "ketchup",
       "salsa de ostra",
       "salsa de soja",
-      "semillas (sésamo, mix de semillas)",
-      "tofu firme"
+      "semilla",
+      "tofu"
     ],
     "old_tags": [
       "Agridulce",
@@ -346,20 +344,19 @@
       "aceite",
       "ají molido",
       "berenjena",
-      "carne nalga, cuadrada, bola de lomo",
+      "carne",
       "cebolla",
-      "choclos cocido",
-      "corte que prefiera",
+      "choclo",
       "hongo",
       "limón",
       "morrón",
-      "palito",
       "panceta",
-      "perejil fresco picado",
+      "perejil",
       "pimentón",
-      "pimienta negra",
+      "pimienta",
       "sal",
-      "tomates cherry",
+      "tomate",
+      "tomate cherry",
       "zucchini"
     ],
     "old_tags": [
@@ -411,7 +408,7 @@
       "aceite",
       "aceite de sésamo",
       "agua",
-      "ajo (no lo dije en el audio 🤦‍♂)",
+      "ajo",
       "arroz",
       "sal"
     ],
@@ -442,8 +439,7 @@
     "description": "🥗 Salpicón de ave (pollo) 🥗\n\nSi te sobró pollo, en 1 minuto tenés una cena fresca, liviana y súper práctica\n\n⏳ Tiempo: 5 minutos ⏳\n\n🥣 Ingredientes 🥣\n• Pollo cocido desmenuzado\n• Lechuga\n• Zanahoria\n• Palta\n• Arvejas\n• Jugo de limón\n• Mayonesa\n• Sal\n\n👣 Pasos 👣\n• Lavamos y cortamos la lechuga\n• Cortamos la zanahoria en láminas finas, podés hacerlo con pelapapas\n• En un bowl colocamos la lechuga, zanahoria, palta, arvejas y el pollo\n• Agregamos jugo de limón y mayonesa\n• Sumamos una pizca de sal\n• Mezclamos bien y listo\n\n💡 Tip 💡\n• Podés agregar tomate, huevo duro, cebolla, papa en cubitos o la verdura que tengas en la heladera\n• Ideal para aprovechar sobras de pollo.\n\n🥗 Cena rápida, fresca y sin complicaciones 🥗\n\nSeguime para más ideas prácticas y recetas de todos los días\n\n",
     "tags": [
       "Facil",
-      "Pollo",
-      "Salpicon"
+      "Pollo"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DUb4SJxjkML/",
     "facebookUrl": "",
@@ -468,7 +464,7 @@
       "limón",
       "mayonesa",
       "palta",
-      "pollo cocido desmenuzado",
+      "pollo",
       "sal",
       "zanahoria"
     ],
@@ -498,7 +494,7 @@
     "name": "🥔 Puré de papa nube (estilo Betular) 🥔",
     "description": "🥔 Puré de papa nube (estilo Betular) 🥔\n\nUn puré bien simple, súper cremoso y lleno de sabor, ideal para acompañar cualquier plato\n\n⏳ Tiempo: 30 minutos ⏳\n\n🥣 Ingredientes 🥣\n• 1 kg de papas\n• 50 g de manteca\n• 150 ml de leche aprox\n• 1 pizca de nuez moscada\n• Pimienta negra\n• Sal\n\n👣 Pasos 👣\n• Lavamos y pelamos las papas (si tenés tiempo probá cocinarlas con las cáscaras así absorben menos agua)\n• Cortamos en pedazos grandes\n• Ponemos una olla con agua y sal a fuego fuerte\n• Cuando hierve, agregamos las papas y tapamos\n• Cocinamos hasta que al pincharlas no ofrezcan resistencia\n• Colamos y reservamos un poco del agua de cocción\n• En un bowl colocamos las papas calientes\n• Agregamos la manteca, un poco del agua de cocción, nuez moscada y pimienta\n• Pisamos hasta comenzar a integrar\n• Sumamos la leche de a poco mientras seguimos pisando\n• Lo probamos y ajustamos lo que haga falta\n• Mezclamos con tenedor para terminar de activar el almidón\n\n🥔 Ideal como guarnición de cualquier cosa 🥔\n\nSeguime para más recetas fáciles y caseras\n\n",
     "tags": [
-      "Guarniciones",
+      "Acompañamiento",
       "Papa",
       "Vegetariano"
     ],
@@ -518,15 +514,15 @@
     "hidden": false,
     "shortcode": "DURrUisjm_D",
     "cleaned_ingredientes": [
-      "leche aprox",
+      "leche",
       "manteca",
       "nuez moscada",
       "papa",
-      "pimienta negra",
+      "pimienta",
       "sal"
     ],
     "old_tags": [
-      "Guarniciones",
+      "Acompañamiento",
       "Papa",
       "Puredepapa",
       "Vegetariano"
@@ -582,19 +578,17 @@
     "shortcode": "DUCN06dDkR2",
     "cleaned_ingredientes": [
       "aceite",
-      "agua tibia (2 tazas)",
+      "agua",
       "ajo",
       "ají molido",
       "azúcar",
       "cebolla",
-      "harina 000",
-      "harina extra",
+      "harina",
       "levadura",
-      "levadura seca",
       "morrón",
       "pimienta",
       "sal",
-      "tomate triturado"
+      "tomate"
     ],
     "old_tags": [
       "Masas",
@@ -705,8 +699,8 @@
       "mayonesa",
       "morrón",
       "pan de hamburguesa",
-      "pan rallado (opcional, si no tenemos tiempo de enfriar)",
-      "pechugas de pollo",
+      "pan rallado",
+      "pechuga de pollo",
       "perejil",
       "pimentón",
       "pimienta",
@@ -764,17 +758,16 @@
     "hidden": false,
     "shortcode": "DTTlEzJjo9u",
     "cleaned_ingredientes": [
-      "6 huevo",
+      "huevo",
       "arveja",
       "choclo",
-      "condimento",
-      "matambre de res/vaca",
-      "morrón verde",
+      "matambre de vaca",
+      "matambre de res",
+      "morrón",
       "mostaza",
-      "opcional",
-      "perejil fresco picado",
+      "perejil",
       "queso",
-      "tomates secos hidratado",
+      "tomate",
       "zanahoria"
     ],
     "old_tags": [
@@ -826,7 +819,7 @@
     "cleaned_ingredientes": [
       "azúcar",
       "esencia de vainilla",
-      "harina 0000 (no leudante)",
+      "harina",
       "huevo",
       "miel",
       "sal"
@@ -885,16 +878,16 @@
     "cleaned_ingredientes": [
       "ajo",
       "alcaparra",
-      "anchoas (opcional, pero le da el sabor clásico)",
-      "caldo de cocción del peceto",
+      "anchoa",
+      "caldo",
       "cebolla",
-      "crema de leche",
-      "jugo de limón",
-      "latas de atún al natural (aprox. 300 g)",
+      "crema",
+      "limón",
+      "atún",
       "laurel",
       "mayonesa",
       "mostaza",
-      "peceto (aprox. 1,5 kg)",
+      "peceto",
       "pimienta",
       "sal",
       "verdura",
@@ -944,10 +937,9 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "chocolate amargo",
+      "chocolate",
       "frutos seco",
-      "leche condensada (1 taza)",
-      "leche, aproximadamente 2 tazas picado"
+      "leche"
     ],
     "shortcode": "DSh5uVIjukz",
     "slug": "turron-casero",
@@ -971,7 +963,7 @@
     "name": "🥔 Ensalada Rusa 🥕",
     "description": "🥔 Ensalada Rusa 🥕\n\n🎄 Seguimos armando la mesa de las fiestas, receta a receta 🎄\nDurante todo diciembre voy a ir subiendo una receta por vez para que llegues a Navidad y Año Nuevo con la mesa completa, combinando clásicos infaltables y opciones nuevas fáciles y rapidas.\n\n⏳ Tiempo: 30 minutos ⌛\n\n🥣 Ingredientes 🥣\n• 2 papas medianas\n• 1 zanahoria grande\n• 1 taza de arvejas cocidas\n• 2 cucharadas de mayonesa\n• Sal a gusto\n\n👣 Pasos 👣\n• Pelamos y cortamos las papas en cubitos de aproximadamente 1 cm y la zanahoria en cubos más chicos para que se cocinen parejo\n• Hervimos las papas y zanahorias en abundante agua con sal hasta que estén tiernas pero firmes, que se puedan pinchar sin romperse (unos 10 minutos)\n• Retiramos del fuego, colamos y pasamos por agua fría para cortar la cocción\n• Colamos bien todos los ingredientes\n• En un bowl grande mezclamos las papas, zanahorias y arvejas con la mayonesa, con cuidado de no romper la papa\n• Llevamos a la heladera al menos 1 hora antes de servir para que tome más sabor\n\n🧊 Conservación 🧊\n• Dura entre 3 y 4 días en heladera en un recipiente hermético\n• Si querés que dure más, podés guardar las verduras cocidas por separado y mezclar con la mayonesa justo antes de servir\n\n⚠️ Importante ⚠️\n• No dejar más de 2 horas fuera de la heladera\n\n🎄 Ideal para acompañar asados, la cena navideña o cualquier mesa fría de fiestas 🎄\n\n👉 Próxima receta: turrón de chocolate, listo en menos de 10 minutos y con solo 3 ingredientes 🍫✨\n\nSeguime para no perderte ninguna y armar juntos la mesa completa de las fiestas 🎅🎄\n\n",
     "tags": [
-      "Acompañamientos",
+      "Acompañamiento",
       "Argentina",
       "Facil",
       "Navidad"
@@ -999,7 +991,7 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "arvejas cocida",
+      "arveja",
       "mayonesa",
       "papa",
       "sal",
@@ -1027,11 +1019,10 @@
     "name": "🍄 Paté de hongos 🍄",
     "description": "🍄 Paté de hongos 🍄\n\n🎄 Arrancamos con la primera receta de la mesa de fiestas 🎄\nDurante todo diciembre voy a ir subiendo receta por receta para que armes una mesa completa, combinando clásicos y opciones nuevas, fáciles y caseras para estás fiestas.\n\n⏳ Tiempo de preparación: 15 minutos ⏳\n✨ Fácil, rapido y perfecto para compartir en Navidad y fin de año con todo el mundo ✨\n\n🥣 Ingredientes 🥣\n• 250 g de hongos (portobellos o champiñones)\n• 2 cebollas medianas\n• 1 diente de ajo\n• Frutos secos a gusto (yo usé castañas, nueces y maní)\n• Jugo de ½ limón\n• Romero\n• Pimentón\n• Pimienta negra y blanca\n• Sal a gusto\n• Aceite de oliva, cantidad necesaria\n\n👣 Pasos 👣\n• Hidratamos los frutos secos con agua caliente y los dejamos reposar\n• En una sartén a fuego medio alto salteamos con un poco de aceite el ajo y la cebolla picados, junto con pimentón y pimientas\n• Cuando la cebolla esté transparente, agregamos los hongos picados, el romero, el jugo de limón y la sal\n• Cocinamos hasta que los hongos estén bien tiernos\n• Apagamos el fuego y pasamos todo a un bowl o a la licuadora\n• Colamos los frutos secos y los agregamos al salteado\n• Sumamos aceite de oliva y procesamos hasta lograr una pasta cremosa\n• Pasamos a un frasco y llevamos a la heladera al menos 30 minutos para que tome consistencia\n\n✨ Ideal para picadas o entradas ✨\n\nSeguime porque en los próximos días voy a ir subiendo una receta tras otra para completar toda la mesa de las fiestas 🎅🎄\n\n",
     "tags": [
-      "Diciembre",
       "Hongos",
       "Navidad",
-      "Pate",
       "Picada",
+      "Vegetariano",
       "Vegano"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DSTcZUjDn96/",
@@ -1064,16 +1055,17 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite de oliva",
+      "aceite",
       "ajo",
-      "blanca",
       "cebolla",
       "champiñon",
-      "frutos seco",
-      "hongos portobello",
+      "frutos secos",
+      "hongo",
+      "portobello",
       "limón",
       "maní",
       "pimentón",
-      "pimienta negra",
+      "pimienta",
       "romero",
       "sal"
     ],
@@ -1104,8 +1096,9 @@
       "Desayuno y merienda",
       "Frutas",
       "Mermelada",
-      "Mermeladadefrutilla",
-      "Postres"
+      "Postres",
+      "Vegentariano",
+      "Vegano"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DQsbiJljqcY/",
     "facebookUrl": "",
@@ -1132,11 +1125,11 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "azúcar (3 tazas)",
+      "azúcar",
       "frutilla",
       "jengibre",
-      "medio limón",
-      "vinagre (para lavar las frutillas)"
+      "limón",
+      "vinagre"
     ],
     "shortcode": "DQsbiJljqcY",
     "slug": "mermelada-casera-de-frutilla",
@@ -1193,15 +1186,17 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
-      "arvejas cocidas (1 lata)",
+      "arveja",
       "cebolla",
-      "copa de vino blanco",
-      "costillitas de cerdo (1 por persona)",
-      "huevos (1 por persona)",
+      "vino",
+      "costillita de cerdo",
+      "cerdo",
+      "huevo",
       "morrón",
       "papa",
-      "pimentón dulce",
-      "sal, pimienta negra"
+      "pimentón",
+      "sal",
+      "pimienta"
     ],
     "shortcode": "DQIXIEtjpth",
     "slug": "costillitas-a-la-riojana",
@@ -1227,12 +1222,8 @@
     "tags": [
       "Dulce",
       "Argentina",
-      "Arándanos",
-      "Cheesecakefactory",
-      "Frutilla",
+      "Postre",
       "Frutas",
-      "Mermelada",
-      "Postres",
       "Torta"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DPup316Dt9V/",
@@ -1264,18 +1255,16 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "( taza) de azúcar",
-      "(1 taza) de crema de leche",
-      "(3 cdas) de maicena",
-      "(3 tazas) de queso crema",
-      "base",
+      "azúcar",
+      "crema",
+      "maicena",
+      "queso crema",
+      "queso",
       "esencia de vainilla",
       "galletitas de vainilla",
       "huevo",
       "limón",
-      "manteca derretida",
-      "ralladura",
-      "relleno"
+      "manteca"
     ],
     "shortcode": "DPup316Dt9V",
     "slug": "cheesecake-cocido-clasico",
@@ -1328,10 +1317,10 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
-      "cubitos de queso",
+      "queso",
       "leche",
       "manteca",
-      "pimienta negra",
+      "pimienta",
       "polenta",
       "sal"
     ],
@@ -1390,12 +1379,15 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
-      "blanca",
-      "carne cortada a cuchillo (yo usé roast beef)",
-      "cebollas de verdeo",
-      "cebollas grandes yo usé 1 cebolla morada",
-      "condimentos: pimentón, ají molido, comino, pimienta negra, sal",
-      "huevos duro",
+      "carne",
+      "cebolla de verdeo",
+      "cebolla",
+      "pimentón",
+      "ají molido",
+      "comino",
+      "pimienta",
+      "sal",
+      "huevos",
       "papa",
       "tapas de empanada"
     ],
@@ -1456,16 +1448,18 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "1 limón",
+      "limón",
       "ajo",
       "cebolla",
-      "cilantro (o más perejil si no tenés)",
-      "condimentos: comino, pimentón dulce, ají molido, sal",
-      "garbanzos secos 2 tazas remojada",
-      "harina de garbanzo",
-      "latas escurrida",
-      "pan rallado solo si hace falta",
+      "cilantro",
       "perejil",
+      "comino",
+      "pimentón",
+      "ají molido",
+      "sal",
+      "garbanzo",
+      "harina",
+      "pan rallado",
       "pimienta",
       "polvo de hornear"
     ],
@@ -1587,10 +1581,9 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
-      "agua tibia",
-      "harina común",
-      "harina integral",
-      "levadura seca ( sobre típico)",
+      "agua",
+      "harina",
+      "levadura",
       "miel",
       "sal"
     ],
@@ -1616,7 +1609,6 @@
     "name": "🍝 Mantecatura 🍝",
     "description": "🍝 Mantecatura 🍝\n\nEl secreto de por qué en los restaurantes la pasta tiene otro nivel.\nUn truco clásico de la cocina italiana para lograr que la salsa se integre perfecto con la pasta.\n\n⏳ Tiempo: 10 minutos ⏳\n\n🥣 Ingredientes 🥣\n• Pasta fresca o seca\n• Una salsa base (aceite y ajo, manteca, filete, bolognesa, carbonara, etc.), yo usé manteca, ajo y cebolla de verdeo.\n• Agua de cocción de la pasta (fundamental)\n\n👣 Pasos 👣\n• Preparamos la salsa: en sartén derretimos manteca, salteamos ajo picado y cebolla de verdeo, y condimentamos con pimienta (esta usé yo pero podes hacer la que quieras).\n• Cocinamos la pasta en abundante agua con sal hasta que esté al dente (1 minuto menos de lo indicado en el paquete).\n• En una sartén a fuego medio alto y con la salsa caliente, agregamos la pasta.\n• Agregamos una cucharada del agua de cocción y, si querés, un poco más de manteca.\n• Movemos enérgicamente la sartén para emulsionar la salsa con el almidón del agua.\n• Servimos bien caliente.\n\n🔥 Tip: podés aplicar la misma técnica con cualquier salsa y pasta.\n💡 Ese minuto de diferencia y la emulsión hacen toda la magia.\n\n¿Ya probaste hacer la mantecatura en casa? ¿sentis la diferencia? 👇\n\n",
     "tags": [
-      "Italiana",
       "Internacional",
       "Pasta",
       "Salsa"
@@ -1644,12 +1636,11 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "agua de cocción de la pasta (fundamental)",
-      "ajo, manteca, filete, bolognesa, carbonara, etc., yo usé manteca, ajo",
-      "cebolla de verdeo.",
-      "pasta",
-      "salsa base aceite",
-      "seca"
+      "agua",
+      "ajo",
+      "manteca",
+      "cebolla de verdeo",
+      "pasta"
     ],
     "shortcode": "DOGxijljvHt",
     "slug": "mantecatura",
@@ -1673,9 +1664,8 @@
     "name": "🥩 Riñón a la provenzal 🧄🌿",
     "description": "🥩 Riñón a la provenzal 🧄🌿\n\nUna receta distinta, económica y muy nutritiva.\nIdeal si querés animarte a probar algo nuevo y hacerlo fuera de la parrilla.\n\n⏳ Tiempo: 40 minutos ⏳\n\n🥣 Ingredientes 🥣\n• 1 riñón grande de res\n• 1 limón\n• Un chorrito de vinagre\n• 1 cebolla\n• 2 dientes de ajo\n• Perejil fresco\n• Aceite\n• Sal y pimienta\n\n👣 Pasos 👣\n• Limpiamos bien el riñón, retiramos la membrana, sacamos la grasa\n• Cortamos en fetas de 1 cm.\n• Lo dejamos en un bowl con agua, jugo de 1 limón y un chorrito de vinagre por 30 minutos. Tiene que cubrilo, así que agrega agua hasta que eso pase\n• Mientras, picamos cebolla, ajo y perejil.\n• Mezclamos el ajo y perejil con un poco de aceite para tener la provenzal lista.\n• Escurrimos el riñón y calentamos bien una sartén con un chorrito de aceite.\n• Sellamos los riñones de ambos lados.\n• Sumamos la cebolla picada, y cuando esté transparente agregamos la provenzal.\n• Cocinamos todo junto al menos 5 minutos más.\n\n🔥 Tip: usá sartén bien caliente para sellar, si no se va a hervir en vez de dorar.\n\nUn plato simple, lleno de sabor y una excelente fuente de proteínas.\n\n¿Lo probarías? 👇\n\n",
     "tags": [
-      "Provensal",
-      "Recetaseconomicas",
-      "Riñon"
+      "Argetina",
+      "Carne"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DN_71T-DgBY/",
     "facebookUrl": "",
@@ -1705,11 +1695,11 @@
       "aceite",
       "ajo",
       "cebolla",
-      "chorrito de vinagre",
+      "vinagre",
       "limón",
       "perejil",
       "pimienta",
-      "riñón grande de re",
+      "riñón",
       "sal"
     ],
     "shortcode": "DN_71T-DgBY",
@@ -1735,9 +1725,7 @@
     "description": "🍗 Pechuga a la plancha 🍗\nSimple, rápida y con 2 marinadas distintas para que quede jugosa y tierna, ¡nada de pollo seco!\n\n⏳ Tiempo: 15 minutos ⏳\n\n🥣 Ingredientes 🥣\n• 2 pechugas de pollo\n\n🌿 Opción 1:\n• Medio diente de ajo\n• Medio limón\n• Orégano\n• Sal y pimienta\n\n🌶 Opción 2:\n• Medio diente de ajo\n• Medio limón\n• Pimentón\n• Ají molido\n• Salsa de soja\n\n👣 Pasos 👣\n• Marinada 1: picamos medio diente de ajo y mezclamos con orégano, jugo de medio limón, sal y pimienta.\n• Marinada 2: medio diente de ajo picado, pimentón, ají molido, jugo de medio limón y un chorrito de salsa de soja (sin sal extra, porque la salsa de soja ya tiene).\n• Bañamos las pechugas con la marinada elegida y dejamos reposar un ratito.\n• Calentamos bien una plancha o bifera a fuego alto.\n• Sellamos las pechugas de ambos lados hasta dorar.\n• Bajamos a fuego medio, tapamos y dejamos que se cocinen por dentro.\n• Truco para el punto: tocá la zona debajo del pulgar al juntar dedos, la firmeza indica el punto de cocción, para cocido seria el dedo gordo con el anular (ante último).\n• Una vez cocidas, dejamos reposar 5 minutos antes de cortar.\n• En esos 5 minutos podes saltearse unas cebollitas en la misma plancha con un poquito de manteca.\n\n🔥 Tip extra: si querés que se hagan más rápido, filetéalas a 1 cm de ancho.\n🥗 Acompañalas con cebolla salteada, verduras al horno o una ensalada fresca.\n\n¡Jugosas, tiernas y listas en minutos!\n\n",
     "tags": [
       "Facil",
-      "Marinada",
-      "Pollo",
-      "Recetassanas"
+      "Pollo"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DNzD2IU3H8V/",
     "facebookUrl": "",
@@ -1773,7 +1761,7 @@
       "ají molido",
       "limón",
       "orégano",
-      "pechugas de pollo",
+      "pechuga de pollo",
       "pimentón",
       "pimienta",
       "sal",
@@ -1801,11 +1789,11 @@
     "name": "🌶 Salsa Sweet Chili 🌶",
     "description": "🌶 Salsa Sweet Chili 🌶\n\nPicante, dulce y perfecta para acompañar cualquier comida.\nAdemás, te dejo una versión de salsa agridulce sin picante (2x1).\n\n⏳ Tiempo: 15 minutos ⏳\n\n🥣 Ingredientes 🥣\n\n• 100 ml de agua\n• 100 ml de vinagre de alcohol\n• 4 cdas de azúcar\n• 2 cdas de miel\n• Sal\n• Pimentón\n• Opcional: ½ cdita de maicena para espesar\n\n🌶 Para Versíón picante 🌶\n• 2 ajíes picantes (o reemplazá uno por morrón rojo si querés menos picante)\n• Ají molido\n\n🍯 Para Versíón agridulce sin picante 🍯\n• 2 ajíes picantes (o reemplazá uno por morrón rojo si querés menos picante)\n• 2 cucharadas de ketchup\n\n👣 Pasos 👣\n• Si va a ser picante, picamos bien chiquito los ajíes (y/o morrón rojo).\n• En una ollita a fuego medio-alto mezclamos agua, vinagre, azúcar y miel.\n• Cuando se integre, en la versión picante agregamos los ajíes picados, sal, ají molido y pimentón o en la version agridulce agregamos el ketchup, sal y ají molido.\n• Revolvemos y dejamos hervir.\n• Bajamos a fuego medio-bajo y seguimos mezclando para que evapore el agua.\n• A los 5 minutos, sumamos la maicena disuelta en un poquito de la mezcla (opcional) y cocinamos 2 minutos más.\n• Dejamos enfriar 10 minutos, pasamos a un frasco y guardamos en heladera.\n\n¿Con cuál te quedás, la picante o la agridulce? 👇\n\n",
     "tags": [
-      "Agridulce",
       "Internacional",
+      "Japonesa",
+      "Agridulce",
       "Picante",
-      "Salsa",
-      "Sweetchili"
+      "Salsa"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DNoptEKO3kM/",
     "facebookUrl": "",
@@ -1840,7 +1828,7 @@
     "cleaned_ingredientes": [
       "agua",
       "ají molido",
-      "ajíes picantes",
+      "ají picante",
       "picante",
       "azúcar",
       "ketchup",
@@ -1848,7 +1836,7 @@
       "maicena",
       "pimentón",
       "sal",
-      "vinagre de alcohol"
+      "vinagre"
     ],
     "shortcode": "DNoptEKO3kM",
     "slug": "salsa-sweet-chili",
@@ -1905,10 +1893,12 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
-      "carne de cerdo (bifes magros, costillita, carre deshuesado, paleta de cerdo, etc)",
+      "carne",
+      "cerdo",
       "harina",
       "huevo",
-      "panko (pan rallado japonés)",
+      "panko",
+      "pan rallado",
       "pimienta",
       "sal"
     ],
@@ -1972,18 +1962,16 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "aceite de girasol",
+      "aceite",
       "ají molido",
-      "cebolla común",
-      "cebolla morada",
-      "jalapeño verde",
+      "cebolla",
+      "jalapeño",
       "manzana",
-      "morrón rojo",
-      "morrón verde",
-      "pimienta negra",
-      "rojo (también podés usar rocoto u otro ají picante)",
+      "morrón",
+      "pimienta",
+      "ají picante",
       "sal",
-      "taza de vinagre de vino",
+      "vinagre",
       "tomate"
     ],
     "shortcode": "DNLd9rGOxoZ",
@@ -2038,14 +2026,14 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "acelga con sal",
+      "acelga",
       "jamón",
       "pimienta",
       "queso",
-      "salsa blanca 🥛",
-      "salsa bolognesa 🍅 (usé mí receta pero le puse más carne)",
-      "salteado de acelga rápido, ajo, cebolla, morrón",
-      "tapas de lasaña (las de súper, hidratadas 2 min en agua caliente)"
+      "ajo",
+      "cebolla",
+      "morrón",
+      "tapas de lasaña"
     ],
     "shortcode": "DM5b24uuqKu",
     "slug": "competencia-de-lasana-con-feli",
@@ -2103,14 +2091,16 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "agua cantidad necesaria",
+      "agua",
       "ajo",
-      "ají picante (al gusto, podes ponerle mas si te gusta el picante)",
-      "arvejas cocidas (aunque me olvidé 🤦‍♂️)",
+      "ají picante",
+      "arveja",
       "cebolla",
-      "condimentos: sal, pimienta negra, comino",
-      "morrón rojo",
-      "pata muslo de pollo",
+      "sal",
+      "pimienta",
+      "comino",
+      "morrón",
+      "pollo",
       "tomate"
     ],
     "shortcode": "DMojFHxOdjR",
@@ -2164,11 +2154,11 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "agua fría",
+      "agua",
       "azúcar",
-      "harina 0000",
-      "jamón cocido",
-      "manteca fría en cubo",
+      "harina",
+      "jamón",
+      "manteca",
       "queso",
       "sal"
     ],
@@ -2196,7 +2186,6 @@
     "tags": [
       "Argentina",
       "Arroz",
-      "Arrozcremoso",
       "Facil",
       "Hongos"
     ],
@@ -2226,15 +2215,17 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
-      "arroz (ideal carnaroli, si no, doble carolina)",
-      "caldo si no tenes de antes, hace uno rapido con agua",
+      "arroz",
+      "agua",
+      "caldo",
       "cebolla",
-      "copa de vino blanco",
-      "hongos (yo usé portobellos)",
+      "vino",
+      "hongos",
+      "portobello",
       "manteca",
       "pimienta",
       "sal",
-      "verduras que tenga"
+      "verdura"
     ],
     "shortcode": "DMdH84SuDU4",
     "slug": "risotto-de-hongos",
@@ -2419,11 +2410,11 @@
       "matambre",
       "carne",
       "orégano",
-      "queso muzzarella",
+      "muzzarella",
       "queso",
       "ajo",
       "cebolla",
-      "tomate triturado",
+      "tomate",
       "tomate",
       "leche",
       "verdura"
@@ -2535,15 +2526,13 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "(170g) de azúcar",
-      "(280g) de harina leudante",
-      "azúcar común",
+      "azúcar",
+      "harina",
       "azúcar impalpable",
       "esencia de vainilla",
       "huevo",
-      "jugo de limón",
-      "manteca pomada",
-      "ralladura de 2 limón"
+      "limón",
+      "manteca"
     ],
     "shortcode": "DLpvJfqO6Dh",
     "slug": "galletitas-crackeladas-de-limon",
@@ -2598,13 +2587,13 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "agua tibia",
+      "agua",
       "azúcar",
-      "harina 000",
-      "huevo (para pincelar)",
-      "levadura seca",
-      "manteca pomada",
-      "papa (una grande)",
+      "harina",
+      "huevo",
+      "levadura",
+      "manteca",
+      "papa",
       "sal",
       "sésamo"
     ],
@@ -2665,7 +2654,7 @@
       "ajo",
       "papin",
       "perejil",
-      "sal gruesa"
+      "sal"
     ],
     "shortcode": "DLQzO-nu1vB",
     "slug": "papines-a-la-provenzal",
@@ -2689,8 +2678,6 @@
     "name": "🍝 Salsa boloñesa 🍅",
     "description": "🍝 Salsa boloñesa 🍅\nUna receta ideal para tener en el freezer y resolver una comida en 15 minutos\n\n⏳ Tiempo: 1 hora y media ⏳\n\n🥣 Ingredientes 🥣\n• 1kg de carne picada\n• 2 dientes de ajo\n• 2 cebolla\n• 1 zanahoria grande\n• 1/2 morrón rojo\n• 1/2 morrón verde\n• 1 cda de pimentón\n• Ají molido y pimienta negra\n• 3 hojas de laurel\n• 2 latas o un botella de tomate triturado (800g aprox)\n• Aceite\n• Sal a gusto\n\n👣 Pasos 👣\n• En una olla con aceite a fuego medio-alto, doramos los ajos.\n• Sumamos las cebollas picadas y condimentamos con pimentón, ají molido y pimienta.\n• Agregamos la zanahoria en cubitos y mezclamos.\n• Cuando la cebolla esté transparente, incorporamos el morrón picado.\n• Luego de 2 minutos, agregamos la carne picada.\n• Cocinamos hasta que esté completamente cocida superficialmente al menos.\n• Sumamos el tomate triturado y las hojas de laurel.\n• Cuando hierva el tomate, bajamos el fuego al mínimo y cocinamos con tapa entreabierta hasta que reduzca y espese.\n• Dejamos enfriar y guardamos en bolsas herméticas.\n• Tip: cuando congeles, marcá las porciones y agregale la fecha. Dura hasta 6 meses.\n\n🔥 EXTRA: usá la técnica de mantecatura para un plato de pastas perfecto 🔥\n• Calenta la salsa en una sarten mientras se hace la pasta\n• Agregá la pasta a punto a la salsa caliente con un poco del agua de cocción\n• Mezclá bien antes de servir.\n\n¡Listo! Una salsa casera que te salva muchas comidas 🙌\n\n¡Espero que les guste!\n\nCualquier duda les leo 🧐\n\n",
     "tags": [
-      "Frozen",
-      "Mealprep",
       "Pasta",
       "Salsa"
     ],
@@ -2728,15 +2715,15 @@
       "aceite",
       "ajo",
       "ají molido",
-      "botella de tomate triturado (800g aprox)",
+      "tomate",
+      "carne",
       "carne picada",
       "cebolla",
       "lata",
       "laurel",
-      "morrón rojo",
-      "morrón verde",
+      "morrón",
       "pimentón",
-      "pimienta negra",
+      "pimienta",
       "sal",
       "zanahoria"
     ],
@@ -2790,11 +2777,7 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
-      "bowl",
-      "frasco",
-      "lenteja",
-      "servilleta, gasa",
-      "tapa con agujero"
+      "lenteja"
     ],
     "shortcode": "DK-0IEauk47",
     "slug": "brotes-de-lentejas",
@@ -2842,9 +2825,9 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "chocolate semi amargo",
+      "chocolate",
       "crema",
-      "leche condensada (medio pote)"
+      "leche condensada"
     ],
     "shortcode": "DK3EqFBuOLw",
     "slug": "mousse-de-chocolate",
@@ -2870,9 +2853,7 @@
     "tags": [
       "Argentina",
       "Carne",
-      "Empanadascaseras",
-      "Facil",
-      "Mealprep"
+      "Facil"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DKpUlc5uYrf/",
     "facebookUrl": "",
@@ -2902,14 +2883,16 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
-      "caldo (o agua si no tenés)",
-      "carne (yo usé roast beef, podés usar osobuco)",
+      "caldo",
+      "carne",
       "cebolla",
-      "condimentos: ají molido, orégano, sal, pimienta",
-      "huevos duros picado",
-      "morrón rojo",
-      "tapa",
-      "verdeo"
+      "ají molido",
+      "orégano",
+      "sal",
+      "pimienta",
+      "huevos",
+      "morrón",
+      "cebolla de verdeo"
     ],
     "shortcode": "DKpUlc5uYrf",
     "slug": "empanadas-de-carne-a-cuchillo",
@@ -2933,8 +2916,8 @@
     "name": "🍅 Tomates cherries confitados 🍅",
     "description": "🍅 Tomates cherries confitados 🍅\n\nUna receta simple, rápida y deliciosa acompañar cualquier plato.\nIdeal para tener siempre en la heladera y usar en pizzas, tostadas o ensaladas de otro nivel 😎\n\n⏳ Tiempo: 25 minutos ⏳\n🥫 Conservación: hasta 1 semana en heladera\n\n🥣 Ingredientes 🥣\n• Tomates cherry (la cantidad que quieras)\n• 2 a 3 dientes de ajo partidos al medio\n• Orégano seco\n• Sal y pimienta\n• Aceite de oliva\n\n👣 Pasos 👣\n• En una fuente para horno colocá los tomates cherry lavados.\n• Sumá los dientes de ajo, orégano, sal, pimienta y un buen chorro de aceite de oliva.\n• Llevá a horno fuerte (200/250°C aprox) por unos 20 minutos, hasta que se empiecen a arrugar y largar jugo.\n• Dejalos enfriar y guardalos en un frasco con tapa en la heladera.\n• Se conservan en la heladera hasta una semana.\n\n✨ Podes usarlos en:\n• Pizzas caseras\n• Ensaladas frescas\n• Tostadas con queso crema o ricota\n• Tacos\n• O para lo que se te ocurra\n\n",
     "tags": [
-      "Mealprep",
-      "Tomate"
+      "Vegentariano",
+      "Vegano"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DKlDuWWO_DB/",
     "facebookUrl": "",
@@ -2957,12 +2940,14 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "3 dientes de ajo partidos al medio",
+      "ajo",
+      "aceite",
       "aceite de oliva",
-      "orégano seco",
+      "orégano",
       "pimienta",
       "sal",
-      "tomates cherry (la cantidad que quieras)"
+      "tomate",
+      "tomate cherry"
     ],
     "shortcode": "DKlDuWWO_DB",
     "slug": "tomates-cherries-confitados",
@@ -3028,18 +3013,19 @@
       "ají molido",
       "caldo",
       "cebolla",
-      "condimentos: sal, pimienta, orégano, pimentón",
-      "copa de vino tinto",
-      "lata de tomate perita",
+      "sal",
+      "pimienta",
+      "orégano",
+      "pimentón",
+      "vino",
+      "tomate",
       "laurel",
-      "lentejas (remojadas 8hs)",
-      "morrón rojo",
+      "lenteja",
+      "morrón",
       "papa",
-      "roast beef en cubo",
-      "triturado",
-      "verdeo",
+      "cebolla de verdeo",
       "zanahoria",
-      "zapallo cabutia"
+      "zapallo"
     ],
     "shortcode": "DKXP2atuMUh",
     "slug": "guiso-de-lentejas",
@@ -3095,10 +3081,9 @@
       "aceite",
       "azúcar",
       "esencia de vainilla",
-      "harina leudante",
+      "harina",
       "huevo",
       "leche",
-      "polvo",
       "sal"
     ],
     "shortcode": "DKTBWyGOV_n",
@@ -3157,13 +3142,14 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "aceite de sésamo (si tenés)",
+      "aceite",
+      "aceite de sésamo",
       "agua",
-      "fideos (yo usé udon, pero podés usar los que tengas, incluso fideos de fábrica de pastas)",
-      "huesos con carne yo usé falda",
+      "fideo",
       "morrón",
-      "pimienta, jengibre, cúrcuma",
-      "punta de pechito de cerdo",
+      "pimienta",
+      "jengibre",
+      "cúrcuma",
       "verdura"
     ],
     "shortcode": "DKGOzw-Ow_4",
@@ -3226,8 +3212,8 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite de oliva",
-      "aceite neutro (girasol, maíz, etc.)",
-      "cabeza de ajo (al menos 4 dientes)",
+      "aceite",
+      "ajo",
       "leche",
       "limón",
       "pimienta",
@@ -3255,9 +3241,7 @@
     "name": "🥬 Buñuelos de espinaca 🥬",
     "description": "🥬 Buñuelos de espinaca 🥬\n\nUna opción rica, crocante y perfecta para cumpleaños o picadas.\n\n🌱 Vegetariano y receta fácil\n\n⏳ Tiempo: 30 minutos ⏳\n\n🥣 Ingredientes 🥣\n\n• 1 cebolla grande\n• 1 diente de ajo\n• Aceite\n• 500g de espinaca congelada o 1 atado de espinaca fresca\n• 2 huevos\n• 100g de queso semiduro rallado (gouda, pategrás, etc)\n• 150g aprox de harina leudante (ir viendo la textura)\n• Condimentos: sal, pimienta negra, ají molido y nuez moscada\n\n👣 Pasos 👣\n\n• Salteamos el ajo y la cebolla picada en aceite a fuego medio con pimienta y ají molido\n• Agregamos la espinaca, si tenés congelada, descongelala antes y escurrila; si tenes fresca, picala chiquita.\n• Condimentamos con nuez moscada\n• Cocinamos hasta que esté listo el salteado y lo sacamos del fuego\n• En un bowl, mezclamos los huevos, el queso semiduro rallado y sal\n• Con todo integrado, le incorporamos el salteado\n• Agregamos 100g de harina leudante, mezclamos y después vamos agregando más harina hasta lograr una mezcla con la textura que ves en el video\n• Si vas a freírlas: en una olla chica (o hervidor/lecherita) con aceite, vamos friendo a fuego medio/medio-alto\n• Si vas a hornearlas: agrega más harina para poder darle forma, dale forma de pelotitas y llevarlas a horno alto por 15 minutos.\n\n✨ Acompañalos con alguna salsita, quedan increíbles. En mi canal podés encontrar varias o pedirme en los comentarios.\n\n¿Los vas a probar?\n\n¡Espero que les guste!\n\nCualquier duda te leo 🧐\n\n",
     "tags": [
-      "Buñuelos",
       "Facil",
-      "Fingerfood",
       "Salsa",
       "Vegetariano",
       "Verduras"
@@ -3294,14 +3278,15 @@
     "cleaned_ingredientes": [
       "aceite",
       "ajo",
-      "aprox de harina leudante (ir viendo la textura)",
-      "atado de espinaca",
+      "harina",
+      "espinaca",
       "cebolla",
-      "condimentos: sal, pimienta negra, ají molido",
-      "espinaca congelada",
+      "sal",
+      "pimienta",
+      "ají molido",
       "huevo",
       "nuez moscada",
-      "queso semiduro rallado (gouda, pategrás, etc)"
+      "queso"
     ],
     "shortcode": "DJ0I_XwOiTz",
     "slug": "bunuelos-de-espinaca",
@@ -3404,7 +3389,7 @@
     "facebookUrl": "",
     "imageUrl": "images/DJhNnb6uxaZ.jpg",
     "ingredients": [
-      "1 coliflor grande (yo usé uno agroecológico de @almacen_vida_organica))",
+      "1 coliflor grande",
       "50g de manteca",
       "50ml de crema o leche",
       "Sal y pimienta a gusto"
@@ -3424,7 +3409,7 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "coliflor grande yo usé uno agroecológico de @almacen_vida_organica",
+      "coliflor",
       "crema",
       "leche",
       "manteca",
@@ -3455,7 +3440,6 @@
     "tags": [
       "Facil",
       "Keto",
-      "Recetasaludable",
       "Semillas",
       "Sin gluten",
       "Vegetariano"
@@ -3490,10 +3474,12 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "(pero mejora mucho): 2 cdas de queso crema",
+      "queso crema",
+      "aceite",
       "aceite de oliva",
-      "harina de almendras y un poco má",
+      "harina de almendras",
       "harina de chía",
+      "harina",
       "huevo",
       "sal"
     ],
@@ -3557,7 +3543,7 @@
       "azúcar",
       "leche",
       "harina",
-      "bananas",
+      "banana",
       "esencia de vainilla",
       "huevo",
       "polvo de hornear"
@@ -3644,12 +3630,10 @@
   },
   {
     "id": 3621795706487700397,
-    "name": "🥗 Salsa César (o Caesar) Casera 🥗",
-    "description": "🥗 Salsa César (o Caesar) Casera 🥗\n\n⏳Tiempo: 5 minutos ⏳\n\n🥣 Ingredientes 🥣\n\n• 1 diente de ajo chiquito\n• 2 anchoas\n• 1 cda de jugo de limón (medio limón aprox.)\n• 150ml de leche\n• 200ml de aceite (e ir sumando más si querés más firmeza)\n• 1 cdita de mostaza (ideal si tenés de Dijon)\n• 2 alcaparras (opcional, pero suman mucho sabor)\n• Sal y pimienta a gusto\n\n📚 Nota: podes usar aceite de oliva una parte o todo directamente si te gusta\n\n👣 Pasos 👣\n\n• El ajo y las anchoas las picamos antes, lo más posible\n• En un vaso alto ponemos el ajo, las anchoas, el jugo del medio limón, la leche, el aceite, la mostaza, la sal, la pimienta y las alcaparras.\n• Con la mixer apoyada en el fondo, procesás sin mover hasta que empiece a emulsionar.\n• Una vez que veas que se está integrando todo y emulsionando, podés mover la mixer.\n• Si la textura te parece muy líquida, podés seguir mixeando y agrega más aceite de a poco, eso le va a ir dando más firmeza.\n• ¡Listo! Tenés una salsa césar (o caesar) cremosa, rápida y con un sabor increíble.\n\n💡 Ideal para ensaladas, wraps o como aderezo para lo que más te guste.\n\n¿La probás en casa?\n\n¡Espero que les guste!\n\nCualquier duda los leo 🧐\n\n",
+    "name": "🥗 Salsa César (o Caesar) 🥗",
+    "description": "🥗 Salsa César (o Caesar) 🥗\n\n⏳Tiempo: 5 minutos ⏳\n\n🥣 Ingredientes 🥣\n\n• 1 diente de ajo chiquito\n• 2 anchoas\n• 1 cda de jugo de limón (medio limón aprox.)\n• 150ml de leche\n• 200ml de aceite (e ir sumando más si querés más firmeza)\n• 1 cdita de mostaza (ideal si tenés de Dijon)\n• 2 alcaparras (opcional, pero suman mucho sabor)\n• Sal y pimienta a gusto\n\n📚 Nota: podes usar aceite de oliva una parte o todo directamente si te gusta\n\n👣 Pasos 👣\n\n• El ajo y las anchoas las picamos antes, lo más posible\n• En un vaso alto ponemos el ajo, las anchoas, el jugo del medio limón, la leche, el aceite, la mostaza, la sal, la pimienta y las alcaparras.\n• Con la mixer apoyada en el fondo, procesás sin mover hasta que empiece a emulsionar.\n• Una vez que veas que se está integrando todo y emulsionando, podés mover la mixer.\n• Si la textura te parece muy líquida, podés seguir mixeando y agrega más aceite de a poco, eso le va a ir dando más firmeza.\n• ¡Listo! Tenés una salsa césar (o caesar) cremosa, rápida y con un sabor increíble.\n\n💡 Ideal para ensaladas, wraps o como aderezo para lo que más te guste.\n\n¿La probás en casa?\n\n¡Espero que les guste!\n\nCualquier duda los leo 🧐\n\n",
     "tags": [
       "Facil",
-      "Salsacaesar",
-      "Salsacesar",
       "Salsa"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DJDNAGGO_ut/",
@@ -3681,13 +3665,13 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "aceite (e ir sumando más si querés más firmeza)",
-      "ajo chiquito",
-      "alcaparras (opcional, pero suman mucho sabor)",
+      "aceite",
+      "ajo",
+      "alcaparra",
       "anchoa",
-      "jugo de limón (medio limón aprox.)",
+      "limón",
       "leche",
-      "mostaza (ideal si tenés de dijon)",
+      "mostaza",
       "pimienta",
       "sal"
     ],
@@ -3751,21 +3735,18 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
+      "aceite",
       "aceite de oliva",
       "ajo",
-      "cabutia de @almacen_vida_organica",
       "cebolla",
       "crema",
-      "curry suave",
-      "huesos de carne",
+      "curry",
       "jengibre",
       "pimienta",
-      "pollo opcional",
-      "ramita de verdeo",
+      "pollo",
+      "cebolla de verdeo",
       "sal",
-      "semillas del zapallo",
-      "verduras varia",
-      "zapallo grande yo usé medio anco"
+      "zapallo"
     ],
     "shortcode": "DI9JRqxuFVr",
     "slug": "sopa-de-zapallo",
@@ -3823,9 +3804,12 @@
       "ajo",
       "arroz",
       "cebolla",
-      "lata de arveja",
+      "arveja",
       "morrón",
-      "pimentón, ají molido, laurel, sal",
+      "pimentón",
+      "ají molido",
+      "laurel",
+      "sal",
       "pimienta",
       "pollo",
       "zanahoria"
@@ -3854,7 +3838,6 @@
     "tags": [
       "Argentina",
       "Facil",
-      "Fermentados",
       "Vegetariano",
       "Verduras"
     ],
@@ -3862,7 +3845,7 @@
     "facebookUrl": "",
     "imageUrl": "images/DIbUxN5Ojps.jpg",
     "ingredients": [
-      "5 zapallitos verdes (yo usé agroecológicos de @almacen_vida_organica)",
+      "5 zapallitos verdes",
       "1 cebolla grande",
       "1 zanahoria",
       "1 diente de ajo",
@@ -3891,12 +3874,14 @@
       "aceite",
       "ajo",
       "cebolla",
-      "condimentos: ají molido, pimentón, pimienta",
+      "ají molido",
+      "pimentón",
+      "pimienta",
       "huevo",
       "queso",
       "sal",
       "zanahoria",
-      "zapallitos verdes (yo usé agroecológicos de @almacen_vida_organica)"
+      "zapallito verde"
     ],
     "shortcode": "DIbUxN5Ojps",
     "slug": "tortilla-de-zapallitos-verdes",
@@ -3946,12 +3931,12 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "azúcar (para el caramelo)",
+      "azúcar",
       "esencia de vainilla",
       "huevo",
       "leche condensada",
-      "leche entera",
-      "ron (opcional, pero tradicional)"
+      "leche",
+      "ron"
     ],
     "shortcode": "DIU1d8dO06G",
     "slug": "recetas-del-mundo-2",
@@ -4007,9 +3992,8 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
-      "frasco de vidrio esterilizado",
-      "repollo morado (aprox. 1kg, yo usé agroecológicos de @almacen_vida_organica)",
-      "sal (una cucharada colmada)"
+      "repollo",
+      "sal"
     ],
     "shortcode": "DIJZbvdOmSN",
     "slug": "chucrut-casero-de-repollo-morado",
@@ -4060,12 +4044,11 @@
     "cleaned_ingredientes": [
       "aceite",
       "ajo",
-      "cebollas de verdeo",
+      "cebolla de verdeo",
       "crema",
       "laurel",
       "molleja",
       "pimienta",
-      "pimienta negra en grano",
       "sal"
     ],
     "shortcode": "DIEIRDkO1ln",
@@ -4088,7 +4071,7 @@
   {
     "id": 3599799759486501938,
     "name": "🫑 Morrones al escabeche 🌶",
-    "description": "🫑 Morrones al escabeche 🌶\n\n✨ Receta fácil y deliciosa para aprovechar la temporada de morrones.\n\n⏳ 30 minutos de preparación + 6 de reposo ⏳\n\n🥣 Ingredientes 🥣\n• Morrones (yo usé agroecológicos de @almacen_vida_organica)\n• Vinagre de alcohol\n• Ajo\n• Pimienta negra en grano\n• Hojas de laurel\n• Sal gruesa\n• Aceite de girasol\n• Especias: perejil, orégano, pimentón, ají molido y pimienta negra\n\n👣 Pasos 👣\n\n• Cortamos los morrones en tiras de 1 cm.\n• En una olla, calentamos vinagre con pimienta negra en grano, laurel y ajo entero.\n• Hervimos las tiras de morron en tandas por 3/4 minutos o hasta la textura que más te guste para escabeche.\n• Preparamos el escabeche mezclando ajo, perejil, orégano, pimentón, ají molido (para el toque picantito), pimienta negra y aceite de girasol.\n• 🗒 Nota: No se usa aceite de oliva porque en la heladera se solidifica.\n• En un frasco esterilizado, agregamos un poco de aceite, las tiras de morron y una hoja de laurel. Es ideal si los morrones todavía está un poco caliente, al menos.\n• Movemos bien para integrar los sabores y cerramos los frascos.\n• Dejamos enfriar 10 minutos y llevamos a la heladera.\n• Pasadas 3 horas, los frascos van a sellarse por el cambio de temperatura, si la tapa está para adentro y no se puede abrir, ese frasco se puede guardar hasta 6 meses.\n• Los que no se sellen, consumilos idealmente esa misma semana.\n\n📢 Si tenes dudas, podes ver mi reel de cómo esterilizar bien los frascos.\n\n🍽 ¡Listas para disfrutar! ¡Queda riquísimo para acompañar cualquier picada! Si lo probás, contame qué te pareció 😋\n\n💚 Si querés probar verduras agroecológicas, comentá \"QUIERO\" y tenés un 10% de descuento en tu primer pedido en @almacen_vida_organica.\n\nCualquier duda, te leo 🧐.\n\n",
+    "description": "🫑 Morrones al escabeche 🌶\n\n✨ Receta fácil y deliciosa para aprovechar la temporada de morrones.\n\n⏳ 30 minutos de preparación + 6 de reposo ⏳\n\n🥣 Ingredientes 🥣\n• Morrones (yo usé agroecológicos de @almacen_vida_organica)\n• Vinagre de alcohol\n• Ajo\n• Pimienta negra en grano\n• Hojas de laurel\n• Sal gruesa\n• Aceite de girasol\n• Especias: perejil, orégano, pimentón, ají molido y pimienta negra\n\n👣 Pasos 👣\n\n• Cortamos los morrones en tiras de 1 cm.\n• En una olla, calentamos vinagre con pimienta negra en grano, laurel y ajo entero.\n• Hervimos las tiras de morrón en tandas por 3/4 minutos o hasta la textura que más te guste para escabeche.\n• Preparamos el escabeche mezclando ajo, perejil, orégano, pimentón, ají molido (para el toque picantito), pimienta negra y aceite de girasol.\n• 🗒 Nota: No se usa aceite de oliva porque en la heladera se solidifica.\n• En un frasco esterilizado, agregamos un poco de aceite, las tiras de morrón y una hoja de laurel. Es ideal si los morrones todavía está un poco caliente, al menos.\n• Movemos bien para integrar los sabores y cerramos los frascos.\n• Dejamos enfriar 10 minutos y llevamos a la heladera.\n• Pasadas 3 horas, los frascos van a sellarse por el cambio de temperatura, si la tapa está para adentro y no se puede abrir, ese frasco se puede guardar hasta 6 meses.\n• Los que no se sellen, consumilos idealmente esa misma semana.\n\n📢 Si tenes dudas, podes ver mi reel de cómo esterilizar bien los frascos.\n\n🍽 ¡Listas para disfrutar! ¡Queda riquísimo para acompañar cualquier picada! Si lo probás, contame qué te pareció 😋\n\n💚 Si querés probar verduras agroecológicas, comentá \"QUIERO\" y tenés un 10% de descuento en tu primer pedido en @almacen_vida_organica.\n\nCualquier duda, te leo 🧐.\n\n",
     "tags": [
       "Argentina",
       "Conservas",
@@ -4132,7 +4115,7 @@
       "pimentón",
       "ají molido",
       "laurel",
-      "morrones",
+      "morrón",
       "sal",
       "vinagre"
     ],
@@ -4158,7 +4141,6 @@
     "name": "🥫 Esterilizar frascos 🥫",
     "description": "🥫 Esterilizar frascos 🥫\n\nPaso clave para conservar alimentos de manera segura.\n\n⏳ Tiempo: 30 minutos ⏳\n\n👣 Pasos 👣\n\n• Lavamos los frascos y tapas con agua y detergente, y los secamos bien.\n• En una olla grande con agua a temperatura ambiente, colocamos los frascos y tapas.\n• Llevamos a fuego medio y, una vez que el agua hierva, tapamos la olla y dejamos hervir por al menos 15 minutos.\n• Apagamos el fuego y los retiramos con una pinza.\n• Dejamos secar boca abajo sobre servilletas.\n• Solo los damos vuelta cuando vayamos a llenarlos.\n\n✨ ¡Tips! ✨\n\n• El agua debe estar a temperatura ambiente al inicio para evitar que los frascos se rompan por el cambio brusco de temperatura.\n• Lo ideal es llenar los frascos con el contenido algo caliente para ayudar a sellar la tapa.\n• Si al enfriarse la tapa no se selló, el frasco no es hermético y no servirá para conservar por mucho tiempo.\n• Si la tapa se sella bien, el contenido se puede almacenar como conserva por varios meses.\n• No dejes mucho aire, ya que esto favorece a la oxidación del alimento y generación de hongos o bacterias.\n• Tanto los frascos como las tapas deben ser de vidrio y no de plástico.\n• Todos los utensilios que uses deben estar limpios y secos.\n• Asegúrate de que los frascos estén completamente secos antes de llenarlos.\n\n",
     "tags": [
-      "Bacterias",
       "Conservas",
       "Salud o seguridad",
       "Tips"
@@ -4205,7 +4187,6 @@
     "tags": [
       "Argentina",
       "Conservas",
-      "Escabeche",
       "Facil",
       "Vegano",
       "Vegetariano",
@@ -4215,7 +4196,7 @@
     "facebookUrl": "",
     "imageUrl": "images/DHjCXhwu2Qb.jpg",
     "ingredients": [
-      "Berenjenas (yo usé agroecológicas de @almacen_vida_organica)",
+      "Berenjenas",
       "Vinagre de alcohol",
       "Ajo",
       "Pimienta negra en grano",
@@ -4240,15 +4221,17 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "aceite de girasol",
+      "aceite",
       "ajo",
-      "berenjenas (yo usé agroecológicas de @almacen_vida_organica)",
-      "especias: perejil, orégano, pimentón, ají molido",
+      "berenjena",
+      "perejil",
+      "orégano",
+      "pimentón",
+      "ají molido",
       "laurel",
-      "pimienta negra",
-      "pimienta negra en grano",
-      "sal gruesa",
-      "vinagre de alcohol"
+      "pimienta",
+      "sal",
+      "vinagre"
     ],
     "shortcode": "DHjCXhwu2Qb",
     "slug": "berenjenas-al-escabeche",
@@ -4307,13 +4290,16 @@
       "arveja",
       "carne",
       "cebolla",
-      "cebollitas de verdeo",
-      "especias: sal, pimentón, ají molido, comino",
-      "fideos secos (para tostar)",
+      "cebolla de verdeo",
+      "sal",
+      "pimentón",
+      "ají molido",
+      "comino",
+      "fideos",
       "huevo",
       "pan rallado",
       "papa",
-      "tomate triturado",
+      "tomate",
       "zanahoria"
     ],
     "shortcode": "DHe3N2SuMFr",
@@ -4386,12 +4372,12 @@
       "canela",
       "esencia de vainilla",
       "frutos seco",
-      "harina (yo usé integral)",
+      "harina",
       "huevo",
       "manteca",
-      "manzanas (yo usé rojas agroecológicas de @almacen_vida_organica)",
-      "maní sin sal queda muy bien",
-      "medio limón",
+      "manzana",
+      "maní",
+      "limón",
       "sal"
     ],
     "shortcode": "DHQ-DZ4OO_e",
@@ -4416,11 +4402,8 @@
     "name": "🍣 SUSHI CASERO 🍣",
     "description": "🍣 SUSHI CASERO 🍣\n\n⏳ Tiempo de preparación: 1 hora y media ⏳\n\n¡Ideal para compartir y disfrutar en casa! 🎌🍱\n\n🥣 Ingredientes 🥣\n\nPara el arroz de sushi\n• 2 tazas de arroz para sushi (yo usé Koshihikari, pero si no podés usar doble carolina)\n• 2 tazas de agua\n• 1/2 taza de vinagre de arroz\n• 2 cucharadas de azúcar\n• 1 cucharadita de sal\n\nPara los rolls y nigiris:\n• Alga nori\n• Pepino en tiras\n• Queso crema\n• Zanahoria en tiras finas\n• Palta\n• Salmón rosado crudo\n• Langostinos apanados y fritos\n• Opcional: Puedes añadir tus ingredientes favoritos\n\n👣 Paso a paso 👣\n\n📌 Arroz de sushi (método 11-11-11)\n• Lavamos bien el arroz con agua fría hasta que salga transparente, mínimo 5 veces y no por más de 5 minutos.\n• Lo ponemos en una olla con 2 tazas de agua, tapamos y llevamos a fuego alto por 11 minutos.\n• Pasado ese tiempo, pasamos a fuego mínimo por 11 minutos.\n• Pasado ese tiempo, apagamos el fuego y dejamos reposar otros 11 minutos sin destaparlo.\n• Pasado ese tiempo, lo destapamos y pasamos a una fuente grande\n\n📌 Aliño para el arroz\n• Mezclamos el vinagre de arroz, el azúcar y la sal hasta que se disuelva.\n• Lo incorporamos al arroz en forma de lluvia y con movimientos suaves.\n\n📌 Armado de los rolls y nigiris\n\nTIP: Mojate las manos con agua tibia para que no se pegue el arroz.\n\n🍥 Makis (rolls):\n• Sobre el alga nori, ponemos una capa de arroz y agregamos los ingredientes a elección:\n1- Salmón + palta + pepino\n2- Pepino + zanahoria + queso crema\n3- Langostino apanado + queso crema + palta\n• Enrollamos con ayuda de una esterilla y cortamos con cuchillo húmedo.\n\n🍣 Nigiris:\n• Tomamos un poco de arroz, le damos forma ovalada con las manos.\n• Ponemos arriba una lámina de salmón o palta.\n\n🍙 Temakis (cono de alga nori):\n• Cortamos el alga nori en mitades.\n• Ponemos arroz en una esquina y agregamos los ingredientes elegidos.\n• Enrollamos en forma de cono y ¡listo!\n\n🎉 ¡Ahora sí, a disfrutar del sushi casero! 🎉\n\n¿Te animás a hacerlo en casa? Cualquier duda, te leo en los comentarios 🧐\n\n",
     "tags": [
-      "Comidaasiatica",
+      "Internacional",
       "Japonesa",
-      "Maki",
-      "Nigiri",
-      "Temaki",
       "Vegetariano"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DHM08xsuxoI/",
@@ -4457,15 +4440,15 @@
       "alga nori",
       "arroz",
       "azúcar",
-      "frito",
-      "langostinos apanado",
+      "langostino",
       "palta",
-      "pepino en tira",
+      "pepino",
       "queso crema",
       "sal",
-      "salmón rosado crudo",
-      "vinagre de arroz",
-      "zanahoria en tiras fina"
+      "salmón",
+      "pescado",
+      "vinagre",
+      "zanahoria"
     ],
     "shortcode": "DHM08xsuxoI",
     "slug": "sushi-casero",
@@ -4525,12 +4508,12 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
-      "azúcar (yo usé mitad blanca, mitad mascabo)",
+      "azúcar",
       "esencia de vainilla",
-      "harina leudante",
+      "harina",
       "huevo",
       "leche",
-      "manzanas (idealmente verdes)"
+      "manzana"
     ],
     "shortcode": "DG_7UvHObI0",
     "slug": "torta-invertida-de-manzana",
@@ -4589,14 +4572,12 @@
       "acelga",
       "ajo",
       "cebolla",
-      "cebollas de verdeo",
+      "cebolla de verdeo",
       "espinaca",
       "morrón",
-      "pedímela en los comentarios si no la encontrá",
       "pimienta",
-      "sal, pimentón",
-      "salsa blanca podés buscar mi receta en mi perfil",
-      "tapa"
+      "sal",
+      "pimentón"
     ],
     "shortcode": "DG6wVvXO9ux",
     "slug": "empanadas-de-verdura-y-salsa-blanca",
@@ -4650,12 +4631,11 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
-      "anco, agroecológicos, pero cualquier zapallo un poco dulce queda excelente",
-      "curry suave",
+      "zapallo",
+      "curry",
       "pimentón",
       "pimienta",
-      "sal",
-      "zapallo yo usé medio de princesa"
+      "sal"
     ],
     "shortcode": "DGwdcsuuCzP",
     "slug": "zapallo-al-horno",
@@ -4704,10 +4684,11 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "harina (0000 común, no leudante)",
-      "leche entera",
+      "harina",
+      "leche",
       "manteca",
-      "nuez moscada, sal",
+      "nuez moscada",
+      "sal",
       "pimienta"
     ],
     "shortcode": "DGqZj9AOV7V",
@@ -4735,8 +4716,9 @@
       "Argentina",
       "Facil",
       "Pasta",
-      "Tomate",
-      "Verduras"
+      "Verduras",
+      "Vegentariano",
+      "Vegano"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DGWtpCDuzBm/",
     "facebookUrl": "",
@@ -4767,14 +4749,13 @@
     "cleaned_ingredientes": [
       "aceite",
       "ajo",
-      "berenjena grande yo usé mitad de blanca",
+      "berenjena",
       "cebolla",
-      "fideos (los que más te gusten)",
-      "pimentón (o los condimentos que prefieras)",
+      "fideos",
+      "pimentón",
       "pimienta",
       "sal",
-      "tomat",
-      "violeta con ralla"
+      "tomate"
     ],
     "shortcode": "DGWtpCDuzBm",
     "slug": "fideos-con-berenjena-y-tomate",
@@ -4798,11 +4779,8 @@
     "name": "🍎🥕 Sanitizar Frutas y Verduras 🥦🍇",
     "description": "🍎🥕 Sanitizar Frutas y Verduras 🥦🍇\n\nHoy me llegó un combo mixto de frutas y verduras agroecológicas de @almacen_vida_organica, y quiero mostrarles cómo sanitizarlas correctamente para que sean seguras y estén listas para consumir.\n\n🔍 ¿Por qué es importante sanitizar?\n\nSanitizar frutas y verduras ayuda a eliminar bacterias, parásitos y residuos, asegurando que lo que comemos sea seguro y saludable.\nDeberíamos hacerlo con cualquier fruta o verdura que compramos.\n\n🔧 Pasos para sanitizar correctamente 🔧\n\n• Lava bien con agua corriente para retirar la suciedad visible.\n• En la bacha, prepara agua con lavandina apta para desinfectar verduras (3 gotas por litro de agua).\n• Deja los alimentos por 10 minutos en esa agua.\n• Sacalos del agua.\n• Seca bien antes de guardar o consumir.\n\n🛡 Beneficios 🛡\n\n• Elimina bacterias y parásitos.\n• Aumenta la seguridad alimentaria.\n• Prolonga la frescura de los alimentos.\n• Si no conoces su origen o tratamiento, reduce residuos de pesticidas si tenían.\n\n💡 Cuidar lo que comemos empieza desde la elección de los ingredientes hasta su correcto manejo y cuidado.\n\n💚 Si querés probar verduras agroecológicas, comentá \"QUIERO\" y tenés un 10% de descuento en tu primer pedido en @almacen_vida_organica.\n\n¡Espero que les guste!\n\nCualquier duda, te leo 🧐.\n\n",
     "tags": [
-      "Agroecologia",
       "Argentina",
-      "Cocinasegura",
       "Frutas",
-      "Salud",
       "Salud o seguridad",
       "Tips",
       "Verduras"
@@ -4941,11 +4919,11 @@
     "cleaned_ingredientes": [
       "aceite",
       "agua",
-      "azúcar (1/2 cucharada)",
-      "harina de trigo con levadura 2 tazas, tipo",
+      "azúcar",
+      "harina",
       "leche",
-      "sal (1/2 cucharada)",
-      "yogur natural"
+      "sal",
+      "yogur"
     ],
     "shortcode": "DFWCVCuuQoN",
     "slug": "pan-naan",
@@ -5003,20 +4981,21 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "aceite de oliva y manteca",
+      "aceite",
       "ajo",
-      "arroz doble carolina",
-      "caldo de verdura",
+      "arroz",
+      "caldo",
       "carnaroli",
       "cebolla",
       "cebolla de verdeo",
       "champiñon",
-      "hongos frescos yo usé portobello",
-      "maní blanco crudo sin sal",
-      "pimentón dulce",
+      "hongo",
+      "portobello",
+      "maní",
+      "pimentón",
       "pimienta",
       "sal",
-      "vino blanco"
+      "vino"
     ],
     "shortcode": "DFAw_IvuMN_",
     "slug": "risotto-de-hongos-y-mani",
@@ -5072,15 +5051,14 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "azúcar yo use usar mitad mascabo",
-      "cacao amargo",
+      "azúcar",
+      "cacao",
       "esencia de vainilla",
-      "harina 0000",
+      "harina",
       "huevo",
-      "manteca pomada",
-      "mitad blanca",
+      "manteca",
       "polvo de hornear",
-      "sal entre fina"
+      "sal"
     ],
     "shortcode": "DEvAKjkulim",
     "slug": "galletitas-de-chocolate",
@@ -5130,10 +5108,10 @@
     "cleaned_ingredientes": [
       "ajo",
       "berenjena",
-      "condimentos, yo usé pimentón, pimienta",
+      "pimentón",
+      "pimienta",
       "huevo",
-      "mezclado",
-      "pan rallado puede ser pan rallado, panko, avena, salvado",
+      "pan rallado",
       "perejil",
       "sal"
     ],
@@ -5193,15 +5171,14 @@
     "cleaned_ingredientes": [
       "arveja",
       "choclo",
-      "condimento",
       "huevo",
-      "matambre de res/vaca",
-      "morrón verde",
+      "matambre de res",
+      "matambre de vaca",
+      "morrón",
       "mostaza",
-      "opcional",
-      "perejil fresco picado",
+      "perejil",
       "queso",
-      "tomates secos hidratado",
+      "tomate seco",
       "zanahoria"
     ],
     "shortcode": "DEQQqIQO3Mu",
@@ -5256,11 +5233,14 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
+      "chocolate",
       "chocolate amargo",
-      "frutos secos almendras, nueces, avellana",
+      "frutos secos",
+      "almendras",
+      "nuez",
+      "avellana",
       "leche",
-      "leche condensada",
-      "que más te gusten"
+      "leche condensada"
     ],
     "shortcode": "DD9zNPJOIfd",
     "slug": "turron-casero-3",
@@ -5315,7 +5295,7 @@
     "cleaned_ingredientes": [
       "azúcar",
       "esencia de vainilla",
-      "harina 0000 (no leudante)",
+      "harina",
       "huevo",
       "miel",
       "sal"
@@ -5385,7 +5365,7 @@
       "manteca",
       "maíz",
       "canela",
-      "ralladura de naranja",
+      "naranja",
       "sal",
       "zapallo"
     ],
@@ -5451,19 +5431,21 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
-      "alcaparras (opcional, pero le suma sabor)",
-      "anchoas (opcional, pero le da el sabor que conocemos)",
-      "caldo donde hicimos el peceto",
+      "alcaparra",
+      "anchoa",
+      "caldo",
+      "carne",
       "cebolla",
-      "crema de leche",
-      "jugo de limón",
-      "latas de atún al natural (aprox. 300g)",
+      "crema",
+      "limón",
+      "atún",
       "laurel",
       "mayonesa",
       "mostaza",
-      "peceto (aproximadamente 1,5 kg)",
+      "peceto",
       "pimienta",
-      "podés usar otras verduras como puerro, zapallo, etc, es",
+      "zapallo",
+      "puerro",
       "sal",
       "zanahoria"
     ],
@@ -5619,13 +5601,13 @@
     "name": "🥔 Ensalada Rusa 🥕",
     "description": "🥔 Ensalada Rusa 🥕\n\n⏳ Tiempo: 30 minutos ⏳\n\n🥣 Ingredientes 🥣\n• 2 papas medianas\n• 1 zanahorias grandes\n• 1 taza de arvejas cocidas\n• 2 cucharadas de mayonesa\n• Sal a gusto\n\n👣 Pasos 👣\n• Pelá y cortá las papas y zanahorias en cubitos pequeños. La papa idealmente de 1 cm de lado, y la zanahoria para poder cocinar todo junto, de la mitad que la papa\n• Herví las papas y zanahorias en abundante agua con un poco de sal hasta que estén tiernas las papas, pero firmes (aproximadamente 10 minutos), que las puedas pinchar fácil, pero no se rompan.\n• Retira del fuego, sacale el agua calienta y pasalo por agua fría para cortar rápido la cocción\n• Colá bien todos los ingredientes\n• En un bowl grande, mezclá las papas, zanahorias y arvejas con la mayonesa sin romper la papa.\n• Dejá reposar en la heladera al menos 1 hora antes de servir para que tome más sabor.\n\n🧊 Conservación 🧊\nEsta ensalada dura de 3 a 4 días en la heladera si la guardás en un recipiente hermético.\nSi querés que dure más, podés guardar las verduras cocidas por separado y mezclar con la mayonesa justo antes de servir.\n\n⚠️ Advertencia ⚠️\nNo puede estar más de 2 horas fuera de la heladera\n\n👨🏼‍🍳 El domingo voy a subir una receta de cómo hacer mayonesa vegana con el agua de las arvejas, lo que te permite reutilizar ese ingrediente y hacer esta receta vegana.\n\n¡Perfecta para acompañar un asado, la cena navideña o cualquier comida!\n\nCualquier duda, te leo 🧐 y si la preparás, contame cómo te quedó.\n\n",
     "tags": [
-      "Acompañamientos",
+      "Acompañamiento",
       "Argentina",
-      "Ensaladas",
+      "Ensalada",
       "Facil",
       "Navidad",
-      "Vegano",
-      "Vegetariano"
+      "Vegetariano",
+      "Vegano"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DC9mhpOOCzX/",
     "facebookUrl": "",
@@ -5652,7 +5634,7 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "arvejas",
+      "arveja",
       "mayonesa",
       "papa",
       "sal",
@@ -5706,9 +5688,7 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "azúcar",
-      "común",
       "esencia de vainilla",
-      "harina leudante",
       "harina",
       "huevo",
       "manteca"
@@ -5834,7 +5814,7 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "banana",
-      "arándanos",
+      "arándano",
       "frutilla",
       "agua",
       "leche"
@@ -5902,7 +5882,7 @@
       "cebolla deshidratada",
       "pimienta",
       "pimentón",
-      "sal."
+      "sal"
     ],
     "shortcode": "DBwLNAtO5vM",
     "slug": "condimento-casero-para-carnes-rojas",
@@ -6053,7 +6033,6 @@
     "tags": [
       "A la parrilla",
       "Argentina",
-      "Curado",
       "Tips"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DA7DdDuOYeX/",
@@ -6130,10 +6109,9 @@
       "agua",
       "avena",
       "girasol",
-      "harina integral",
+      "harina",
       "sal",
-      "semilla",
-      "semillas las que gustes, yo use chia, sésamo"
+      "semilla"
     ],
     "shortcode": "DAo3w5SvsvJ",
     "slug": "crackers-de-semillas-2",
@@ -6190,14 +6168,16 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
-      "blanca",
       "cebolla",
       "champiñon",
-      "frutos secos los que gustes, yo usé castañas, nuez",
-      "hongos portobello",
+      "frutos secos",
+      "hongo",
+      "portobello",
       "limón",
-      "mani",
-      "romero, pimentón, pimienta negra",
+      "maní",
+      "romero",
+      "pimentón",
+      "pimienta",
       "sal"
     ],
     "shortcode": "DAcDrWePp0j",
@@ -6222,14 +6202,7 @@
     "name": "✈️ Cocinar en vacaciones 🌍",
     "description": "✈️ Cocinar en vacaciones 🌍\nCondimentero de viaje\n\n¿Nunca te paso querer cocinar en vacaciones y extrañar un condimento? No te preocupes, aquí tienes un truco: ¡ un pastillero ! 🧳\n\n🍳 Yo me traje\n\n1. Pimienta Negra 🌶\n2. Garam Masala 🍲\n3. Ají Molido 🌶\n4. Comino 🌰\n5. Orégano 🌿\n6. Pimentón 🌶\n7. Pimienta Blanca 🍚\n8. Sal Gruesa 🧂\n\nNo hay excusas para no disfrutar de tus mejores comidas durante las vacaciones 😁\n\n¡Espero que les guste!\n\nCualquier duda les leo 🧐\n\n",
     "tags": [
-      "Condimentero",
-      "Condimenterodeviaje",
-      "Condimentosenvacaciones",
-      "Secretosdelacocina",
-      "Tips",
-      "Tipsculinarios",
-      "Vacaciones",
-      "Viaje"
+      "Tips"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DAWwUgoyTkn/",
     "facebookUrl": "",
@@ -6306,8 +6279,8 @@
     "cleaned_ingredientes": [
       "aceite",
       "ajo",
-      "medio limón",
-      "pimienta negra",
+      "limón",
+      "pimienta",
       "sal",
       "zanahoria"
     ],
@@ -6364,17 +6337,17 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "aceite de girasol",
-      "ajo picado",
+      "aceite",
+      "ajo",
       "ají molido",
       "limón",
       "manzana",
-      "orégano seco",
-      "pimentón ahumado",
-      "pimienta negra molida",
-      "sal gruesa",
-      "taza perejil fresco picado",
-      "vinagre de vino"
+      "orégano",
+      "pimentón",
+      "pimienta",
+      "sal",
+      "perejil",
+      "vinagre"
     ],
     "shortcode": "C_l_LUDPFj7",
     "slug": "chimichurri-argentino",
@@ -6424,18 +6397,16 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "deliciosa.",
-      "evitas que se rompan mucho.",
-      "fácil de comer",
-      "fáciles de masticar.",
-      "pepino: suav",
-      "pollo cocido con zanahoria cocida: ideal",
-      "queso crema: una combinación cremosa",
-      "rollitos de aguacate, zanahoria cocida",
-      "rollitos de huevo (tamago sushi): dulce",
-      "salmón cocido",
-      "salsas adecuadas: si vas a usar salsa de soja, que sea reducida en sodio",
-      "tamaño de las porciones: hace rolls más pequeños que sean fáciles de comer, manipular"
+      "pepino",
+      "pollo",
+      "zanahoria",
+      "queso crema",
+      "queso",
+      "aguacate",
+      "palta",
+      "huevo",
+      "salmón",
+      "pescado"
     ],
     "shortcode": "C_YPX9rxNal",
     "slug": "sushi-para-ninos",
@@ -6487,7 +6458,7 @@
       "aceite",
       "agua",
       "ajo",
-      "quinoa roja",
+      "quinoa",
       "sal"
     ],
     "shortcode": "C_O4bcLMwxj",
@@ -6513,7 +6484,6 @@
     "description": "🍛 Pollo Tikka Masala 🍛\n\n⏳ Tiempo: 2 horas ⏳\n\n🥣 Ingredientes 🥣\n\n• 500g de pechuga de pollo\n• 1 taza de yogur natural\n• 2 cucharadas de jugo de limón\n• 400g de tomate triturado (1 lata o media botella)\n• 2 dientes de ajo\n• 1 cebolla mediana\n• 200ml de crema de leche o leche de coco (receta tradicional)\n• Condimentos varios: jengibre, garam masala, pimentón, ají molido, sal y pimienta a gusto\n\n🗒 Notas 🗒\n\n1: Masala significa mix de condimentos, el garam masala es la combinación de canela, cardamomo, clavo de olor, nuez moscada, pimienta, comino y laurel (puede variar igual)\n2: Tengo ya subida receta para multiplicar yogur natural, si te interesa.\n\n👣 Pasos 👣\n\n• En un bowl, agrega el pollo en cuadraditos y luego el yogur, el ajo picado, los condimentos y el jugo de limón.\n• Tapa el bowl y llevalo a la heladera por al menos 1 hora (también si está bien tapado puede ser toda la noche para más sabor).\n• En una sartén grande, calienta un poco de aceite a fuego medio y dora los cuadraditos de pollo junto con su marinada.\n• Retira el pollo y en la misma sartén agrega la cebolla picada, un diente de ajo a la mitad, pimentón y cocina hasta que esté dorada de cebolla.\n• Agrega el tomate triturado, mezclá y dejá cocinar a fuego medio durante 10 o 15 minutos, revolviendo de vez en cuando.\n• Agrega el pollo y dejalo cocinar por al menos 10 minutos a fuego medio bajo.\n• Por último, incorporá la crema de leche o leche de coco y mezclá todo hasta que la salsa esté suave y cremosa.\n• A fuego bajo, dejalo cocinar un poco más (10 minutos para que la salsa esté mas espesa y garantizar la cocción del pollo).\n\n¡Listo! 👨‍🍳 😋 Un plato lleno de sabor, se suele acompañar con arroz (tradicionalmente basmati) y comer con pan naan (tengo receta subida si querés hacerlo casero).\n\nCualquier duda les leo 🧐\n\n",
     "tags": [
       "Internacional",
-      "India",
       "Pollo"
     ],
     "instagramUrl": "https://www.instagram.com/reel/C_B6-KqvgBC/",
@@ -6544,16 +6514,20 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
-      "botella",
       "cebolla",
-      "condimentos varios: jengibre, garam masala, pimentón, ají molido, sal",
-      "crema de leche",
-      "jugo de limón",
-      "leche de coco (receta tradicional)",
-      "pechuga de pollo",
+      "jengibre",
+      "garam masala",
+      "pimentón",
+      "ají molido",
+      "sal",
+      "crema",
+      "limón",
+      "leche de coco",
+      "leche",
+      "pollo",
       "pimienta",
-      "tomate triturado 1 lata",
-      "yogur natural"
+      "tomate",
+      "yogur"
     ],
     "shortcode": "C_B6-KqvgBC",
     "slug": "pollo-tikka-masala",
@@ -6648,11 +6622,12 @@
     "cleaned_ingredientes": [
       "agua",
       "ajo",
-      "cd de mostaza",
+      "mostaza",
       "cebolla",
-      "pechuga de pollo cocida (aprox. 400g)",
+      "pollo",
+      "pechuga de pollo",
       "pimienta",
-      "puré de zapallo cabutia (aprox. 1/4)",
+      "zapallo",
       "sal",
       "zanahoria"
     ],
@@ -6679,7 +6654,6 @@
     "description": "🥯 Figacitas Caseras 🥯\n\n🥣 Ingredientes 🥣\n⌛️ Tiempo de preparación: 60 minutos ⌛️\n\n• 500gr de harina 000 (yo uso mitad blanca mitad integral)\n• 25gr de levadura fresca o 10gr seca (1 sobre)\n• 1 cda de miel o azúcar\n• 10gr de sal\n• 50gr de manteca pomada\n• 300ml de agua tibia\n• Algo de manteca derretida para pintar\n\n👣 Pasos 👣\n\n• En un bowl grande, agregamos harina y en centro incorporamos sal, azúcar, la levadura y el agua para mezclar.\n• Agregar la manteca y armar la masa.\n• Amasar 5/7 minutos y dejar reposar 15 tapada.\n• La destapamos, estiramos y armamos los bollos o cortamos de la forma a gusto.\n• Ya con su forma, pintamos con manteca (si queres le tiras un poco de harina por encima) y dejas reposar hasta que dupliquen su tamaño.\n• Cocinamos a horno precalentado a 190°C por 15/20 minutos.\n\nTIP: si le das un toque desde la base al pan, tiene que sonar hueco para saber si está cocido\n\n¡Listo! 👨‍🍳 😋 Una gran receta para hacer en familia y disfrutar en un pícnic después !\n\n¡Espero que les guste!\n\nCualquier duda les leo 🧐\n\n",
     "tags": [
       "Argentina",
-      "Cocinarenfamilia",
       "Facil",
       "Panadería"
     ],
@@ -6709,15 +6683,13 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "agua tibia",
-      "algo de manteca derretida",
+      "agua",
+      "manteca",
       "azúcar",
-      "harina 000 (yo uso mitad blanca mitad integral)",
+      "harina",
       "levadura",
-      "manteca pomada",
       "miel",
-      "sal",
-      "seca (1 sobre)"
+      "sal"
     ],
     "shortcode": "C-YtxlVPkcn",
     "slug": "figacitas-caseras",
@@ -6834,11 +6806,14 @@
       "batata",
       "cebolla",
       "choclo",
-      "osobuco (tambien se suele hacer con pata-muslo de pollo)",
+      "osobuco",
+      "carne",
+      "pollo",
       "papa",
       "puerro",
       "sal",
       "zanahoria",
+      "zapallo",
       "zapallo cabutia"
     ],
     "shortcode": "C93aAkBNXH_",
@@ -6863,7 +6838,6 @@
     "name": "🍬 Gomitas caseras 🍬",
     "description": "🍬 Gomitas caseras 🍬\n🌱 veganas 🌱\n\n⏳ 30 minutos ⏳\n¡Golosinas a base de frutas y verduras aptas para toda la familia!\n\n🥣 Ingredientes 🥣\n• 1/2 taza fruta/verdura procesada (yo hice de frutilla, de naranja con zanahoria y de pera con espinaca)\n• 1 taza de agua\n• 1 cucharada de agar-agar (opción vegana) o 2 cucharaditas de gelatina sin sabor\n• Opcional: Azúcar (opción vegana) o miel (yo usé solo para la mezcla de pera y espinaca, azúcar)\n\nNota: las que hice en el vídeo son la opción 100% vegana.\n\n👣 Pasos 👣\n• Procesa las frutas y verduras juntas hasta que sea una preparación líquida y pásala por tamizador para sacar cualquier parte sólida.\n• Proba el líquido para tener idea si está dulce o no, si no te parece dulce o es amargo, agrégale 2 cucharaditas de azúcar o 1 de miel (no te olvides que los niños de menos de 1 año no deberían consumir miel por el riesgo a botulismo).\n• Calenta el agua en una olla a fuego medio, cuando veas burbujas en el fondo, agregale agar-agar o la gelatina y mezclar bien para evitar grumos\n• Herví durante 2 en el caso de agar-agar o 1 minuto en caso de gelatina, siempre removiendo.\n• Pone el fuego a mínimo y agrega la media taza de juego de frutas/verduras.\n• Revolver durante un minuto buscando que se integre todo y retira del fuego.\n• Pone la mezcla en moldes de silicona y dejar enfriar a temperatura ambiente por unos minutos.\n• Después llévalo a la heladera por al menos 2 horas.\n• Desmolda las gomitas y listas !\n\n¡Espero que les guste!\n\nCualquier duda les leo 🧐\n\n",
     "tags": [
-      "Golosinas",
       "Postres",
       "Dulce",
       "Vegetariano",
@@ -6922,11 +6896,9 @@
     "name": "🥔 Papas al Horno 🍠",
     "description": "🥔 Papas al Horno 🍠\n\n⏳ 30-45 minutos ⏳\nComida para toda la familia !!!\n\n🥣 Ingredientes 🥣\n\n• 1 kg Papa, 1kg batatas ó un zapallo cabutia, tambien podes combinar\n• 2 cucharadas de pimentón\n• 1 cucharadas de sal\n• 4 cucharadas de aceite de girasol aprox\n\nNota: Las cantidades son medio a ojo, lo mas importante es que cuando lo mezcles veas que el condimento este presente y que cada cuadrado, rodaja o gajo tenga aceite alrededor sin que sobre aceite en el fondo (con que sobre poco esta bien).\n\n👣 Pasos 👣\n\n• Precalenta el horno a 200°C (horno medio-alto).\n• Lava bien las papas, batatas y/o zapallo.\n• Corta en cuadraditos, gajos o rodajas, como más te guste.\n• Coloca todas las verduras cortadas en un bol grande.\n• Agrega el pimentón y la sal a gusto y mezcla\n• Agrega el aceite\n• Mezcla bien para que todas las verduras queden bien cubiertas con los condimentos y aceite.\n• Coloca las verduras en una fuente para horno, distribuyendo de manera uniforme.\n• Hornea durante 30 minutos o hasta que estén doradas y tiernas. Remove a mitad de cocción para asegurar que se cocinen de manera uniforme o si podes ponelas en la parte de abajo de tu horno si tiene para que le de calor desde arriba y se doren.\n• Saca del horno y deja reposar unos minutos para no quemarte.\n\nListo !! Ideal para acompañar cualquier plato, acompañar cualquier película o comerlas solas como snack en una picada 👨‍🍳😋\n\n¡Espero que les guste!\n\nCualquier duda les leo 🧐\n\n",
     "tags": [
-      "Batatas",
-      "Papa",
       "Vegetariano",
       "Vegano",
-      "Zapallo"
+      "Verduras"
     ],
     "instagramUrl": "https://www.instagram.com/reel/C9ibRAzP41_/",
     "facebookUrl": "",
@@ -6951,7 +6923,7 @@
     "cleaned_ingredientes": [
       "aceite",
       "papa",
-      "batatas",
+      "batata",
       "zapallo",
       "pimentón",
       "sal"
@@ -7028,9 +7000,7 @@
     "id": 3408706125551412083,
     "name": "🎓 Proyectos Universitarios de Viandas Saludables para niños en etapa escolar 🥗",
     "description": "🎓 Proyectos Universitarios de Viandas Saludables para niños en etapa escolar 🥗\n\nHoy algo que no es una receta.\n\nEstoy en mis últimas 4 materias de Ingeniería en Sistemas, y dentro de una materia teníamos que inventar un modelo de negocio y presentarnos ante una ronda de inversionistas para venderles la idea (tipo Shark Tank).\n\nEl proyecto se llamo NutriKids, y la idea era la venta de viandas saludables para niños en etapa escolar y ademas para facilitar el tema de cocinas, las mismas iban a ser cocinas del microcentro que postpandemia quedaron con menos ventas y ya cuentan con conocimiento, habilitaciones, personal, etc\n\nPara la presentación armamos propaganda, hicimos cálculos completamente reales y obviamente hice viandas caseras para repartir en toda el aula.\n\n🙌 Agradecimientos:\n\n1- A mis compañeros de equipo que apoyaron la idea, simulamos la presentación como 6 veces y dejamos atrás muchas horas\n2- A nuestro tutor @fedebrest por su orientación y el equipo docente.\n3- A Fabio de @xxlcomidas que nos dio información de verdad de su negocio y nos respondió todas las dudas sobre locales gastronómicos.\n4- A @santimrizzo que nos prestó su voz de locutor para la publicidad.\n5- A @anush.cuidarte por bancarme los domingos perdidos en trabajos de la facultad\n6- A quién llego acá leyendo también\n\n¡Fue una experiencia increíble!\n\n",
-    "tags": [
-      "Viandas"
-    ],
+    "tags": [],
     "instagramUrl": "https://www.instagram.com/reel/C9OKCk9MKNz/",
     "facebookUrl": "",
     "imageUrl": "images/C9OKCk9MKNz.jpg",
@@ -7136,9 +7106,8 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
-      "agua hirviendo",
+      "agua",
       "arroz",
-      "diente de ajo",
       "sal",
       "verdura"
     ],
@@ -7164,7 +7133,7 @@
     "name": "🥩 Bifes a la Portuguesa 🍅",
     "description": "🥩 Bifes a la Portuguesa 🍅\n\n⏳ Tiempo de preparación: 40 minutos ⏳\n\n🥣 Ingredientes 🥣\n\n• 2 dientes de ajo\n• 1 cebolla grand\n• 1/2 morrón grande\n• 1 zanahoria grande\n• 700g de carne\n• 1 taza de puré de tomate\n• 1/2 taza de vino tinto\n• 1 taza de agua\n• 1/2 taza de arvejas\n• 3 huevos\n• Pimentón, sal, ají molido, pimienta y laurel al gusto\n\n👣 Pasos 👣\n\n• Sella los bifes salpimentados en una sartén caliente con un poco de aceite.\n• Retiralos y en la sartén directamente agrega los dientes de ajo cortados a la mitad, la cebolla en tiras y el morón en tiras también.\n• Agrega las zanahorias en rodajas, agrega pimentón y ají molido y cocinar un poco.\n• Agrega el vino tinto, después el puré de tomate.\n• Una vez que esté hirviendo, pone el fuego en mínimo y agrega la papa junto con la sal que gustes.\n• Deja hervir todo junto a fuego mínimo por unos 10 minutos.\n• Incorpora los bifes sellados, agrega el laurel y cocina a fuego mínimo por otros 15 minutos.\n• Si lo ves seco agregale agua caliente\n• Agrega las arvejas y cocinar por 3 minutos más.\n• Rompe los huevos en un bowl aparte e incorporarlos uno a uno, deja reposar con el fuego apagado por 2 minutos para que los huevos se cocinen con el calor residual.\n• Servir caliente, y si querés acompañado de un buen pan para mojar en la salsa.\n\n¡Espero que les guste!\n\nCualquier duda les leo 🧐\n\n",
     "tags": [
-      "Argetina",
+      "Argentina",
       "Carne"
     ],
     "instagramUrl": "https://www.instagram.com/reel/C8srUW4t9Ef/",
@@ -7205,6 +7174,7 @@
       "sal",
       "ají molido",
       "pimienta",
+      "tomate",
       "puré de tomate",
       "vino",
       "zanahoria"
@@ -7265,7 +7235,7 @@
       "ajo",
       "ají molido",
       "cebolla",
-      "girgolas",
+      "girgola",
       "perejil",
       "pimienta",
       "repollo",
@@ -7554,13 +7524,12 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "condimento",
       "huevo",
       "leche",
       "pan rallado",
-      "pechugas de pollo cocido",
+      "pechuga de pollo",
       "pimienta",
-      "rebanadas de pan"
+      "pan"
     ],
     "shortcode": "C7h5VI3sUeF",
     "slug": "segunda-oportunidad-pollo",
@@ -7758,7 +7727,7 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
-      "carne de cerdo",
+      "cerdo",
       "carne",
       "cebolla",
       "garbanzo",
@@ -7769,7 +7738,7 @@
       "pimienta",
       "ají molido",
       "cebolla de verdeo",
-      "tomates",
+      "tomate",
       "zanahoria"
     ],
     "shortcode": "C69_CGHNupf",
@@ -7831,7 +7800,7 @@
       "ajo",
       "comino",
       "pimentón",
-      "garbanzos",
+      "garbanzo",
       "limón",
       "sal",
       "tahini",
@@ -7953,23 +7922,18 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "carne vacuna: 6-12 mes",
-      "cerdo: 4-6 mes",
-      "embutidos: 1-2 mes",
-      "empanadas horneadas: 2-3 mes",
-      "frutas cortadas: 3-6 mes",
-      "frutas enteras: 8-12 mes",
+      "carne",
+      "cerdo",
+      "fruta",
       "guiso",
-      "masa",
-      "pan: 2-3 mes",
-      "pastas con salsa: 1-2 mes",
-      "pescado: 2-3 meses (si son magros pueden estar hasta 6-8 meses)",
-      "pollo: 9-12 mes",
-      "salsas caseras: 2-3 mes",
-      "sopas: 2-3 mes",
+      "pan",
+      "pasta",
+      "salsa",
+      "pescado",
+      "pollo",
+      "sopa",
       "tarta",
-      "verduras cocidas: 6-8 mes",
-      "verduras crudas: 8-12 mes"
+      "verdura"
     ],
     "shortcode": "C6hmjpgs0YZ",
     "slug": "tiempos-en-el-freezer",
@@ -8032,15 +7996,14 @@
       "ají molido",
       "carne",
       "cebolla",
-      "cebollas de verdeo",
-      "lata",
+      "cebolla de verdeo",
       "laurel",
       "lenteja",
       "papa",
       "pimentón",
       "pimienta",
       "sal",
-      "tomat",
+      "tomate",
       "zanahoria"
     ],
     "shortcode": "C6ZrupyRMlZ",
@@ -8135,13 +8098,13 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
-      "caldo de verdura",
-      "cebollas",
+      "caldo",
+      "cebolla",
       "hongos",
       "champiñon",
       "manteca",
       "pimienta",
-      "portobellos",
+      "portobello",
       "sal",
       "crema"
     ],
@@ -8294,7 +8257,7 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
-      "caldo de pollo",
+      "caldo",
       "miel",
       "muslos de pollo",
       "pollo",
@@ -8732,8 +8695,8 @@
     "cleaned_ingredientes": [
       "azúcar",
       "azúcar impalpable",
-      "frutas",
-      "frutos rojo",
+      "fruta",
+      "frutos rojos",
       "harina",
       "huevo",
       "leche",
@@ -8883,16 +8846,17 @@
       "aceite de sésamo",
       "ajo",
       "jengibre",
-      "garbanzos",
-      "legumbres",
-      "locoto/rocoto",
+      "garbanzo",
+      "legumbre",
+      "locoto",
+      "rocoto",
       "papa",
       "perejil",
-      "espinacas",
-      "pimientos",
-      "morron",
+      "espinaca",
+      "pimiento",
+      "morrón",
       "limón",
-      "semillas",
+      "semilla",
       "tofu",
       "tomate",
       "orégano",
@@ -8955,10 +8919,10 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
-      "batatas",
+      "batata",
       "cebolla",
-      "garbanzos",
-      "huevos",
+      "garbanzo",
+      "huevo",
       "morrón",
       "papa",
       "pimentón",
@@ -9376,11 +9340,11 @@
       "carne",
       "cerdo",
       "cebolla",
-      "cebollas de verdeo",
+      "cebolla de verdeo",
       "morrón",
       "pimienta",
       "queso",
-      "queso mozzarella",
+      "muzzarella",
       "sal",
       "zanahoria",
       "zapallo",
@@ -9445,7 +9409,7 @@
       "jengibre",
       "morrón",
       "puerro",
-      "verdeo",
+      "cebolla de verdeo",
       "pimienta",
       "sal"
     ],
@@ -9471,7 +9435,6 @@
     "name": "🌱 Viandas para Niños 🌱",
     "description": "🌱 Viandas para Niños 🌱\n\n🍱 Ejemplos y Consejos 🍱\n\n• Comida Real, No Ultraprocesados 🍎\n• Conservá Sabores y Texturas Auténticas 😋\n• Incorporá Nuevos Sabores 🌈\n• Descubrí Diferentes Texturas 🥕\n• Probá Varias Cocciones 🍳\n• Equilibrio de Grupos de Alimentos 🥦\n• Aprovechá las Sobras ♻️\n• Colores Vibrantes y Atractivos 🌈\n• Fomentá la Participación Activa 🤝\n• Aprovecha sus Preferencias 🍽\n\n¡Recordá que cada niño es único! Adaptá las viandas según sus gustos y necesidades. ¡ disfrutar la creatividad en la cocina! 👨‍🍳\n\nCualquier duda les leo 🧐\n\nSeguime para más recetas y conceptos.\nSi querés proponer un próximo tema, dejalo en los comentarios\n\n",
     "tags": [
-      "Viandas",
       "Tips"
     ],
     "instagramUrl": "https://www.instagram.com/p/CuS2g-ZPP16/",
@@ -9648,7 +9611,7 @@
       "bicarbonato de sodio",
       "esencia de vainilla",
       "huevo",
-      "porotos"
+      "poroto"
     ],
     "shortcode": "CsZ0cf3rcC4",
     "slug": "brownie-de-porotos",
@@ -9813,7 +9776,7 @@
     "tags": [
       "Desayuno y merienda",
       "Dulce",
-      "Legumbre",
+      "Legumbres",
       "Vegetariano",
       "Vegano"
     ],
@@ -9836,7 +9799,7 @@
       "Comidasana",
       "Desayuno",
       "Instafood",
-      "Legumbre",
+      "Legumbres",
       "Merienda",
       "Saludable",
       "Vegano",
@@ -9850,7 +9813,7 @@
       "cacao ",
       "azúcar",
       "esencia de vainilla",
-      "garbanzos",
+      "garbanzo",
       "leche",
       "polvo de hornear"
     ],
@@ -10009,6 +9972,7 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite de oliva",
+      "aceite",
       "ajo",
       "azúcar",
       "comino",
@@ -10016,7 +9980,7 @@
       "limón",
       "perejil",
       "sal",
-      "yogurt"
+      "yogur"
     ],
     "shortcode": "CoLNTMNN5Oa",
     "slug": "salsa-de-yogurt",
@@ -10106,7 +10070,7 @@
     "cleaned_ingredientes": [
       "leche",
       "leche en polvo",
-      "yogurt"
+      "yogur"
     ],
     "shortcode": "Cn0DXuvtNMn",
     "slug": "multiplicar-yogurt",
@@ -10166,7 +10130,7 @@
       "harina",
       "huevo",
       "manteca",
-      "nueces picada"
+      "nuez"
     ],
     "shortcode": "CnpyG0LjKT4",
     "slug": "brownie-de-chocolate-con-nueces",
@@ -10314,7 +10278,7 @@
     "facebookUrl": "",
     "imageUrl": "images/CkbvXXxLWgK.jpg",
     "ingredients": [
-      "1 taza de quino",
+      "1 taza de quinoa",
       "1 cebolla",
       "Medio morrón",
       "1 cebolla de verdeo",
@@ -10335,7 +10299,7 @@
       "cebolla",
       "cebolla de verdeo",
       "morrón",
-      "quino",
+      "quinoa",
       "sal"
     ],
     "shortcode": "CkbvXXxLWgK",
@@ -10447,7 +10411,7 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "arándanos",
+      "arándano",
       "banana",
       "leche"
     ],
@@ -10512,11 +10476,11 @@
       "azúcar",
       "canela",
       "esencia de vainilla",
-      "frutos seco",
+      "frutos secos",
       "harina",
       "huevo",
       "manteca",
-      "manzanas",
+      "manzana",
       "maní",
       "limón",
       "sal"
@@ -10664,8 +10628,7 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
-      "condimento",
-      "garbanzos cocido",
+      "garbanzo",
       "harina",
       "orégano",
       "pan rallado"
@@ -10902,7 +10865,8 @@
     "cleaned_ingredientes": [
       "agua",
       "sal",
-      "harina de maíz precocida",
+      "harina",
+      "harina de maíz",
       "zanahoria"
     ],
     "shortcode": "Ch5hp-CsJ3-",
@@ -11014,7 +10978,7 @@
       "aceite",
       "limón",
       "nuez",
-      "pimentón dulce",
+      "pimentón",
       "pimienta",
       "sal"
     ],
@@ -11257,7 +11221,7 @@
       "aceite",
       "azúcar",
       "harina",
-      "lentejas",
+      "lenteja",
       "polvo de hornear",
       "sal"
     ],
@@ -11313,7 +11277,6 @@
     "cleaned_ingredientes": [
       "acelga",
       "ajo",
-      "aprox",
       "cebolla",
       "aceite",
       "huevo",
@@ -11423,7 +11386,7 @@
       "canela",
       "pasta de maní",
       "huevo",
-      "manzanas"
+      "manzana"
     ],
     "shortcode": "CgxbJQVu2Bh",
     "slug": "galletitas-de-manzana-y-avena",
@@ -11479,7 +11442,7 @@
       "aceite",
       "ajo",
       "limón",
-      "pimienta negra",
+      "pimienta",
       "sal",
       "zanahoria"
     ],
@@ -11539,7 +11502,7 @@
       "cebolla de verdeo",
       "huevo",
       "perejil",
-      "tomates seco",
+      "tomate seco",
       "trigo burgol"
     ],
     "shortcode": "CgkjCohOzou",
@@ -11596,10 +11559,10 @@
       "azúcar",
       "leche",
       "harina",
-      "bananas",
+      "banana",
       "esencia de vainilla",
       "huevo",
-      "nueces",
+      "nuez",
       "pasas de uva",
       "chips de chocolate",
       "polvo de hornear"
@@ -11653,12 +11616,10 @@
     "cleaned_ingredientes": [
       "ajo",
       "berenjena",
-      "condimento",
-      "cucharadita de mostaza",
-      "empanado puede ser pan rallado, panko, avena",
+      "mostaza",
+      "pan rallado",
       "huevo",
-      "perejil",
-      "salvado"
+      "perejil"
     ],
     "shortcode": "Cgc2HdnuqoU",
     "slug": "milanesas-de-berenjena-2",
@@ -11713,9 +11674,9 @@
       "arroz",
       "azúcar",
       "limón",
-      "diluí en agua",
-      "leche entera",
-      "ramitas de canela"
+      "agua",
+      "leche",
+      "canela"
     ],
     "shortcode": "CgSnANUu5va",
     "slug": "arroz-con-leche",
@@ -11740,10 +11701,8 @@
     "description": "Cream cheese 🍰\nCrema de queso 👨‍🍳\n\n⏳ 5 minutos ⏳\n\n🥣 Ingredientes 🥣\n- 220g de queso crema (a temperatura ambiente)\n- 100g manteca (a temperatura ambiente)\n- 100g de azúcar impalpable\n- Esencia de vainilla\n\n👣 Pasos 👣\n\n- Mezclar la manteca con el azúcar impalpable tamizada, y batir hasta hacer una crema\n- Agregar el queso crema y batir hasta obtener una crema homogénea\n\nListos !!\nCombina de 10 con la carrot cake (receta anterior en lo perfil) y para rellenos de cualquier torta.\n\nTambién si te gusta el dulce de leche, podes agregarle dos cucharas de dulce de leche y hacer una crema de queso y dulce riquísima.\n\nTareas para Feli 👦:\n- Preparación de algunos ingredientes\n- Mezcla de ingredientes\n\n¡Espero que les guste!\n\nCualquier duda les leo 🧐\n\n",
     "tags": [
       "Argentina",
-      "Carrot",
-      "Carrotcake",
-      "Cream",
-      "Creamcheese",
+      "Dulce",
+      "Postre",
       "Sopas",
       "Torta",
       "Vegetariano"
@@ -11774,8 +11733,8 @@
     "cleaned_ingredientes": [
       "azúcar impalpable",
       "esencia de vainilla",
-      "manteca (a temperatura ambiente)",
-      "queso crema (a temperatura ambiente)"
+      "manteca",
+      "queso crema"
     ],
     "shortcode": "CgF5y4BJQLg",
     "slug": "cream-cheese",
@@ -11800,8 +11759,7 @@
     "description": "🥕 Carrot cake 🎂🥕\n\n⏳ 1 hora ⏳\n\n🥣 Ingredientes 🥣\n- 3 huevos\n- 180ml de aceite\n- 220g de azúcar (en mi caso mascabo)\n- 200g de harina no leudante\n- 200g de zanahoria rallada\n- 1 pizca de sal\n- 2 cditas de polvo para hornear\n- 1 cdita canela\n- 1 cdita jengibre\n- 100g. de frutos secos\n- Esencia de vainilla\n\n👣 Pasos 👣\n\n- Mezclar huevo, aceite, esencia de vainilla y azúcar\n- En otro lado el resto de ingredientes\n- Unir los dos\n- Poner en un molde en mantecado y enharinado\n- Dejar 45 minutos a horno 170 grados precalentado (medio o medio/bajo)\n- Listo, en este caso decoré con cream cheese (siguiente receta en el perfil)\n\nListos !!\n\nTareas para Feli 👦:\n- Preparación de algunos ingredientes\n- Mezcla de ingredientes\n\n¡Espero que les guste!\n\nCualquier duda les leo 🧐\n\n",
     "tags": [
       "Argentina",
-      "Carrot",
-      "Carrotcake",
+      "Dulce",
       "Torta",
       "Vegetariano"
     ],
@@ -11834,17 +11792,17 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      ". de frutos seco",
+      "frutos seco",
       "aceite",
-      "azúcar (en mi caso mascabo)",
+      "azúcar",
       "canela",
       "esencia de vainilla",
-      "harina no leudante",
+      "harina",
       "huevo",
       "jengibre",
       "polvo",
       "sal",
-      "zanahoria rallada"
+      "zanahoria"
     ],
     "shortcode": "CgDIyBHp8QM",
     "slug": "carrot-cake",
@@ -11895,9 +11853,12 @@
     "cleaned_ingredientes": [
       "cebolla",
       "cebolla morada",
-      "cebollas de verdeo",
+      "cebolla de verdeo",
       "puerro",
-      "sal, pimentón, ají molido, paprika"
+      "sal",
+      "pimentón",
+      "ají molido",
+      "paprika"
     ],
     "shortcode": "CgAhTGPOlAw",
     "slug": "salsa-para-locro",
@@ -11922,6 +11883,7 @@
     "description": "🇦🇷 Locro vegano 🥘 🇦🇷\n\n⏳ 3/4 horas ⏳\n\n🥣 Ingredientes 🥣\nLos siguientes ingredientes son como para 4 personas\n\n- 100g. de porotos blancos (yo usé mitad alubia, mitad poroto manteca)\n- 250g. de maíz blanco partido\n- 2 cebollas\n- 2 cebollas de verdeo\n- 1 puerro\n- 1 zapallo (prefiero cabutia)\n- Una bandeja de portobellos\n- Algunos hongos secos\n- 100g de tofu\n- sal, pimienta, pimentón, ají molido, paprika\n\n👣 Pasos 👣\n\n- Dejar remojando 12 horas los porotos y el maíz\n- En una olla muy grande (esto es importantísimo), saltear la cebolla de verdeo con la cebolla comun y el puerro picado, cuando esté la cebolla ya trasparente, incorporar el maíz ya colado, porotos ya colados y agua. El agua tiene que cubrir todo y agregar 4 dedos más de altura en agua. Tapar la olla e ir revolviendo cada 10/15 minutos para que no se pegue.\n- Una hora y media más tarde, agregar el zapallo ya cortado en cubitos, y los condimentos que gustes (los típicos son pimentón dulce y ají molido). Mezclar y cubrir con agua. Tapar e ir revolviendo cada 5/10 minutos\n- Luego de otra hora y media, agregar los hongos y el tofu.\n- Después de media hora, ya esta listo.\n\nListos !!\nIdeal y tradicional de fechas patrias Argentinas 🇦🇷 y buenísimo para congelar (el tofu no congelarlo, agregar al descongelar) y calentar cuando haga frío.\nSe suele comer con una salsita que esta semana subo la receta.\n\nTareas para Feli 👦:\n- Remojo\n- Preparación de algunos ingredientes\n- Incorporación de los mismos\n\n¡Espero que les guste!\n\nCualquier duda les leo 🧐\n\n",
     "tags": [
       "Argentina",
+      "Vegetariano",
       "Vegano"
     ],
     "instagramUrl": "https://www.instagram.com/reel/Cf7Xp5zuspP/",
@@ -11951,16 +11913,20 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      ". de maíz blanco partido",
-      ". de porotos blancos (yo usé mitad alubia, mitad poroto manteca)",
-      "algunos hongos seco",
-      "bandeja de portobello",
+      "maíz",
+      "porotos",
+      "hongos",
+      "portobello",
       "cebolla",
-      "cebollas de verdeo",
+      "cebolla de verdeo",
       "puerro",
-      "sal, pimienta, pimentón, ají molido, paprika",
+      "sal",
+      "pimienta",
+      "pimentón",
+      "ají molido",
+      "paprika",
       "tofu",
-      "zapallo (prefiero cabutia)"
+      "zapallo"
     ],
     "shortcode": "Cf7Xp5zuspP",
     "slug": "locro-vegano",
@@ -12019,21 +11985,27 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      ". de maíz blanco partido",
-      ". de porotos blancos (yo usé mitad alubia, mitad poroto manteca)",
+      "maíz blanco",
+      "porotos",
       "cebolla",
-      "cebollas de verdeo",
+      "cebolla de verdeo",
       "chorizo colorado",
-      "chorizo criollo",
+      "chorizo",
       "cuerito de cerdo",
       "falda",
+      "carne",
+      "cerdo",
       "mondongo",
       "panceta",
-      "patitas de cerdo cortada",
+      "patitas de cerdo",
       "pechito de cerdo",
       "puerro",
-      "sal, pimienta, pimentón, ají molido, paprika",
-      "zapallo (prefiero cabutia)"
+      "sal",
+      "pimienta",
+      "pimentón",
+      "ají molido",
+      "paprika",
+      "zapallo"
     ],
     "shortcode": "Cf1pbq8PNeK",
     "slug": "locro-tradicional",
@@ -12082,9 +12054,10 @@
     "cleaned_ingredientes": [
       "aceite",
       "limón",
-      "pimienta negra",
+      "pimienta",
       "sal",
-      "semillas de girasol"
+      "semilla",
+      "semilla de girasol"
     ],
     "shortcode": "Cfr3H_jhpui",
     "slug": "untable-de-girasol",
@@ -12108,8 +12081,6 @@
     "name": "🇵🇾 Chipa guazú 🇵🇾",
     "description": "🇵🇾 Chipa guazú 🇵🇾\n\n⏳ 20 minutos preparación + 40 minutos de horno ⏳\n\n🥣 Ingredientes 🥣\n- 5 choclos medianos\n- 2 cebollas\n- 100g de manteca\n- 5 huevos\n- 1 taza de leche\n- 300g de queso (mozzarella, cremoso, blandos o semiduros)\n- sal y pimienta\n\n👣 Pasos 👣\n\n- Rallar el choclo (también se puede sacar con cuchillo y licuar o procesar los granos de choclo)\n- Rehogar la cebolla con 50g de manteca, algo de aceite y una cucharada de azúcar para caramelizarla (poner sal y pimienta cuando ya esté algo trasparente)\n- Sacamos del fuego la cebolla y dejamos reposar en un bowl mientras preparamos el resto\n- Mezclar el choclo rallado con los huevos, el resto de manteca, leche, quesos y por último, la cebolla\n- Se suele agregar algo de sal, pero si el queso es muy salado por las dudas no tanta\n- Precalentar el horno unos 5 minutos a fuego medio-alto\n- Preparar una fuente para horno algo profunda con aceite o manteca y poner la mezcla\n- Dejar cocinar a horno a fuego medio 40 minutos hasta que dore\n\nListos !!\n\nTareas para Feli 🧒:\n- Preparación de ingredientes y mezcla de los mismos\n\n¡Espero que les guste!\n\nCualquier duda les leo 🧐\n\n",
     "tags": [
-      "Carne",
-      "Chipaguazu",
       "Internacional"
     ],
     "instagramUrl": "https://www.instagram.com/reel/CfpSTJxpROZ/",
@@ -12142,9 +12113,9 @@
       "leche",
       "manteca",
       "pimienta",
-      "queso mozzarella, cremoso, blando",
-      "sal",
-      "semiduro"
+      "muzzarella",
+      "queso",
+      "sal"
     ],
     "shortcode": "CfpSTJxpROZ",
     "slug": "chipa-guazu",
@@ -12196,12 +12167,12 @@
     "cleaned_ingredientes": [
       "aceite",
       "barbacoa",
-      "bondiola aprox 1,5kg",
-      "medio limón",
+      "cerdo",
+      "bondiola",
+      "limón",
       "paprika",
       "pimienta",
-      "sal",
-      "salsa katsu en mi caso"
+      "sal"
     ],
     "shortcode": "CfkMcJNJ64e",
     "slug": "bondiola-desmechada",
@@ -12239,7 +12210,7 @@
       "300g de carne (en este caso tenía de otra comida, pero si no tienen previamente hecho pueden hacerlo con carne picada o a cuchillo)",
       "Una taza de arroz cocido o de puré (en mi caso tenía papines del día anterior que hice puré)",
       "Pimentón, laurel, sal y pimienta",
-      "Simplemente de tómate"
+      "Simplemente de tomate"
     ],
     "date": "2022-07-01T18:19:51-03:00",
     "old_tags": [
@@ -12258,16 +12229,18 @@
     "cleaned_ingredientes": [
       "ajo",
       "akusay",
-      "carne en este caso tenía de otra comida, pero si no tienen previamente hecho pueden hacerlo con carne picada",
+      "carne",
       "cebolla",
-      "cuchillo",
       "morrón",
-      "pimentón, laurel, sal",
+      "pimentón",
+      "laurel",
+      "sal",
       "pimienta",
-      "puré (en mi caso tenía papines del día anterior que hice puré)",
-      "repollo/col",
-      "simplemente de tómate",
-      "taza de arroz cocido",
+      "puré",
+      "repollo",
+      "col",
+      "tomate",
+      "arroz",
       "zanahoria"
     ],
     "shortcode": "CffAdzhjIkq",
@@ -12328,9 +12301,9 @@
       "huevo",
       "leche",
       "manteca",
-      "pizca de sal (opcional porque depende de lo salado que sea el queso)",
+      "sal",
       "polvo de hornear",
-      "queso (semiduro generalmente, pero pueden combinar, yo usé 70% fontina, 15% mozzarella, 15% parmesano)"
+      "queso"
     ],
     "shortcode": "CfcevJ0MG8-",
     "slug": "chipa",
@@ -12390,9 +12363,11 @@
       "ajo",
       "arroz",
       "cebolla",
-      "lata de arveja",
+      "arveja",
       "morrón",
-      "pimentón, laurel, sal",
+      "pimentón",
+      "laurel",
+      "sal",
       "pimienta",
       "pollo",
       "zanahoria"
@@ -12521,15 +12496,12 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "agregando",
       "ajo",
       "cebolla",
-      "condimento que gustes, yo use pimentón dulce una cucharada",
       "espinaca",
-      "garbanzo cocido 150g secos si vas a hidratar",
-      "lata",
+      "garbanzo",
       "pimienta",
-      "poco de aceite",
+      "aceite",
       "sal"
     ],
     "shortcode": "Ce4ZmZjvBPz",
@@ -12588,12 +12560,12 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
-      "agregando",
       "ajo",
       "cebolla",
       "cilantro",
-      "morrón verde (pimiento verde)",
-      "paltas (aguacates) tamaño medio",
+      "morrón",
+      "palta",
+      "aguacate",
       "perejil",
       "pimienta",
       "sal",
@@ -12653,7 +12625,7 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
-      "harina de trigo",
+      "harina",
       "huevo",
       "manteca",
       "polvo",
@@ -12705,12 +12677,14 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "careés de cerdo deshuesado o comprar costillita de cerdo",
+      "cerdo",
       "huevo",
       "pan rallado",
       "panko",
-      "sacar el hueso",
-      "sal, pimienta, pimentón, provenzal"
+      "sal",
+      "pimienta",
+      "pimentón",
+      "provenzal"
     ],
     "shortcode": "CepOzrMMM3o",
     "slug": "tonkatsu",
@@ -12759,9 +12733,8 @@
     "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
-      "harina leudante si tené",
-      "partes iguales de crema (a mas % graso mejor)",
-      "pizza mejor, en mi caso media taza de cada uno.",
+      "harina",
+      "crema",
       "sal"
     ],
     "shortcode": "CeerNwZp882",
@@ -12819,13 +12792,12 @@
       "ajo",
       "cebolla",
       "cilantro",
-      "condimentos",
       "comino",
       "paprika",
-      "garbanzos",
+      "garbanzo",
       "limón",
       "perejil",
-      "pimentón dulce",
+      "pimentón",
       "pimienta",
       "polvo de hornear",
       "sal"
@@ -12876,7 +12848,7 @@
       "Brocoli",
       "Coliflor",
       "Horno",
-      "Picadas",
+      "Picada",
       "Realfood",
       "Vegano",
       "Vegfood",
@@ -12917,7 +12889,7 @@
     "name": "Lactonesa 😋",
     "description": "Lactonesa 😋\n\n⏳Tiempo: 3 minutos\n\n🥣Ingredientes:\n\n- 1/2 diente de ajo\n- 1/2 taza de leche 🥛\n- 1/2 limón 🍋\n- 1 taza de aceite\n- Sal y pimienta al gusto\n- Perejil para decorar\n\nLo más importa es la proporción entre leche, aceite y limón, que es lo que genera la emulsión. Siempre el doble de aceite que de leche 📏\n\nPoner los ingredientes (menos el perejil) en orden, y mixear. Y LISTO !!!\n\nLo ideal es mixear desde abajo para que se emulsiones e integre todo, y después ir subiendo para integrar si ven que hay aceite que no se unió todavía.\n\nIdeal para acompañar todo 😉\nSe le puede incorporar algún extra para darle un sabor más: condimentos, especias, cilantro, perejil, albahaca, etc.\n\nTareas para Feli 🧒:\n- Ayudar a preparar los ingredientes\n- Poner los ingredientes para procesar\n\n¡ Esperamos que les guste !\n\nCualquier duda les leo 🧐\n\n\n\n\n\n\n\n\n\n",
     "tags": [
-      "Picadas",
+      "Picada",
       "Salsa",
       "Vegetariano"
     ],
@@ -13062,11 +13034,12 @@
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite de oliva",
+      "aceite",
       "agua",
       "ajo",
       "comino",
       "pimentón",
-      "garbanzos",
+      "garbanzo",
       "limón",
       "sal",
       "tahini",
