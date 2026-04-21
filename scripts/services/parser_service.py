@@ -587,10 +587,11 @@ class ParserService:
 
         return ""
 
-    def normalize_tags(self, tags, recipe_name=""):
+    def normalize_tags(self, tags):
         """
-        Normaliza una lista de tags aplicando sinónimos y filtros
-        También elimina el tag si ya está presente en el nombre de la receta.
+        Normaliza una lista de tags aplicando sinónimos y filtros.
+        Solo elimina tags genéricos/marketing de TAGS_TO_SKIP.
+        Los tags significativos se mantienen aunque aparezcan en el nombre.
 
         Args:
             tags: Lista de tags a normalizar
@@ -603,30 +604,15 @@ class ParserService:
 
         processed_tags = set()
 
-        # Limpiar el nombre de la receta para comparaciones (quitar emojis y normalizar)
-        # Esto hace que "👨🏼‍🍳 Hummus 👨🏼‍🍳" sea simplemente "hummus"
-        clean_name = re.sub(r"[^\w\s]", "", recipe_name.lower()).strip()
-        clean_name_joined = clean_name.replace(" ", "")
-        name_words = set(clean_name.split())
-
         for tag in tags:
             tag_clean = tag.lower().replace("#", "").strip()
 
-            # 1. Omitir si está en la lista de skip o es muy corto (menos de 3 letras, ej: "de")
-            # Excepto casos especiales como "blw"
-            if tag_clean in TAGS_TO_SKIP or (len(tag_clean) < 3 and tag_clean != "blw"):
+            if len(tag_clean) < 3:
                 continue
 
-            # 2. Omitir si el tag ya es parte del nombre de la receta
-            # (Si la receta se llama "Pan casero", no hace falta el tag "pan")
-            if (
-                tag_clean in name_words
-                or tag_clean in clean_name
-                or tag_clean.replace(" ", "") in clean_name_joined
-            ):
+            if tag_clean in TAGS_TO_SKIP:
                 continue
 
-            # 3. Buscar sinónimos para estandarizar
             main_tag = next(
                 (
                     main
@@ -661,8 +647,8 @@ class ParserService:
         if not original_tags:
             original_tags = current_tags
 
+        normalized_tags = self.normalize_tags(original_tags)
         recipe_name = recipe.get("name", "")
-        normalized_tags = self.normalize_tags(original_tags, recipe_name)
 
         # Crear copia de la receta
         updated_recipe = recipe.copy()
