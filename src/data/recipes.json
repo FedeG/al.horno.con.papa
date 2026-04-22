@@ -24,7 +24,7 @@
       "2 cucharadas de leche"
     ],
     "date": "2026-04-09T21:22:43-03:00",
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "shortcode": "DW7kxG-jpCH",
     "cleaned_ingredientes": [
@@ -85,7 +85,7 @@
       "Sal y pimienta"
     ],
     "date": "2026-04-06T22:14:03-03:00",
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "shortcode": "DWz7lDAjrh5",
     "cleaned_ingredientes": [
@@ -149,7 +149,7 @@
       "Soda o cerveza bien fría (en lugar del agua)"
     ],
     "date": "2026-03-21T21:46:20-03:00",
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "shortcode": "DWKsSu5jo1r",
     "cleaned_ingredientes": [
@@ -211,7 +211,7 @@
       "Sal"
     ],
     "date": "2026-03-06T21:11:48-03:00",
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "shortcode": "DVj_9zwDjnb",
     "cleaned_ingredientes": [
@@ -269,7 +269,7 @@
       "Furikake (opcional)"
     ],
     "date": "2026-03-01T21:34:48-03:00",
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "shortcode": "DVXLDj9jnUh",
     "cleaned_ingredientes": [
@@ -337,7 +337,7 @@
       "Choclos cocidos"
     ],
     "date": "2026-02-26T21:51:18-03:00",
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "shortcode": "DVPei-HjqXx",
     "cleaned_ingredientes": [
@@ -401,7 +401,7 @@
       "Aceite de sésamo para darle un toque distinto"
     ],
     "date": "2026-02-18T21:13:41-03:00",
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "shortcode": "DU60B_Rjr9G",
     "cleaned_ingredientes": [
@@ -455,7 +455,7 @@
       "Sal"
     ],
     "date": "2026-02-06T20:54:44-03:00",
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "shortcode": "DUb4SJxjkML",
     "cleaned_ingredientes": [
@@ -510,7 +510,7 @@
       "Sal"
     ],
     "date": "2026-02-02T21:52:27-03:00",
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "shortcode": "DURrUisjm_D",
     "cleaned_ingredientes": [
@@ -573,7 +573,7 @@
       "Pimienta"
     ],
     "date": "2026-01-27T21:46:03-03:00",
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "shortcode": "DUCN06dDkR2",
     "cleaned_ingredientes": [
@@ -686,7 +686,7 @@
       "Tomate"
     ],
     "date": "2026-01-13T20:55:09-03:00",
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "shortcode": "DTeFK08jhjd",
     "cleaned_ingredientes": [
@@ -934,7 +934,7 @@
       "Navidad",
       "Turroncasero"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "chocolate",
@@ -988,7 +988,7 @@
       "Navidad",
       "Recetascaseras"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "arveja",
@@ -1051,7 +1051,7 @@
       "Picada",
       "Vegano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite de oliva",
@@ -1122,7 +1122,7 @@
       "Recetasargentinas",
       "Recetascaseras"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "azúcar",
@@ -1182,7 +1182,7 @@
       "Recetasargentinas",
       "Riojana"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -1252,7 +1252,7 @@
       "Postrescaseros",
       "Recetasargentinas"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "azúcar",
@@ -1313,7 +1313,7 @@
       "Recetassaladas",
       "Salsa"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -1445,7 +1445,7 @@
       "Recetasveganas",
       "Veggiefood"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "limón",
@@ -1633,7 +1633,7 @@
       "Recetasfaciles",
       "Sorrentinos"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -1689,7 +1689,7 @@
       "Recetassaludables",
       "Riñon"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -1754,7 +1754,7 @@
       "Recetassaludables",
       "Recetassanas"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -1823,7 +1823,7 @@
       "Sweetchili",
       "Thai"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -1889,7 +1889,7 @@
       "Recetasricas",
       "Tonkatsu"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -1959,7 +1959,7 @@
       "Salsacriolla",
       "Salsa"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -2023,7 +2023,7 @@
       "Salsablanca",
       "Salsabolognesa"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "acelga",
@@ -2088,7 +2088,7 @@
       "Recetasricas",
       "Saborlatino"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -2151,7 +2151,7 @@
       "Recetacasera",
       "Recetarapida"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -2211,7 +2211,7 @@
       "Recetasfaciles",
       "Risotto"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -2277,7 +2277,7 @@
       "Sinharina",
       "Sintacc"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "azúcar",
@@ -2333,7 +2333,7 @@
       "Postres",
       "Recetasargentinas"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "chocolatada",
@@ -2399,7 +2399,7 @@
       "Recetasfaciles",
       "Recetasricas"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "laurel",
@@ -2463,7 +2463,7 @@
       "Recetasfaciles",
       "Tomate"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -2523,7 +2523,7 @@
       "Limón",
       "Recetafacil"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "azúcar",
@@ -2584,7 +2584,7 @@
       "Recetafacil",
       "Sandwich"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -2646,7 +2646,7 @@
       "Vegetales",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -2709,7 +2709,7 @@
       "Recetasfaciles",
       "Salsaboloñesa"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -2773,7 +2773,7 @@
       "Recetafacil",
       "Recetasveggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -2822,7 +2822,7 @@
       "Recetafacil",
       "Recetasfáciles"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "chocolate",
@@ -2879,7 +2879,7 @@
       "Mealprep",
       "Recetafacil"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -2937,7 +2937,7 @@
       "Tomates",
       "Tomatescherry"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -3005,7 +3005,7 @@
       "Recetasfaciles",
       "Recetatradicional"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -3075,7 +3075,7 @@
       "Merienda",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -3139,7 +3139,7 @@
       "Soparamen",
       "Tofu"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -3208,7 +3208,7 @@
       "Snack",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite de oliva",
@@ -3273,7 +3273,7 @@
       "Snack",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -3347,7 +3347,7 @@
       "Sintacc",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "harina",
@@ -3406,7 +3406,7 @@
       "Pure",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "coliflor",
@@ -3471,7 +3471,7 @@
       "Snack",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "queso crema",
@@ -3536,7 +3536,7 @@
       "Comidasana",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -3602,7 +3602,7 @@
       "Snack",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "harina",
@@ -3662,7 +3662,7 @@
       "Salsacasera",
       "Salsacesar"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -3732,7 +3732,7 @@
       "Sopadezapallo",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -3797,7 +3797,7 @@
       "Pollo",
       "Receta"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -3868,7 +3868,7 @@
       "Vegetariano",
       "Zapallitos"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -3928,7 +3928,7 @@
       "Recetasdelmundo",
       "Venezuela"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "azúcar",
@@ -3988,7 +3988,7 @@
       "Repollo",
       "Vegano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -4105,7 +4105,7 @@
       "Vegano",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -4218,7 +4218,7 @@
       "Vegano",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -4365,7 +4365,7 @@
       "Recetasfaciles",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "azúcar",
@@ -4433,7 +4433,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -4504,7 +4504,7 @@
       "Recetasfaciles",
       "Tortainvertida"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -4566,7 +4566,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "acelga",
@@ -4627,7 +4627,7 @@
       "Verduras",
       "Zapallo"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -4681,7 +4681,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "harina",
@@ -4744,7 +4744,7 @@
       "Tomate",
       "Verduras"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -4856,7 +4856,7 @@
       "Vegano",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite de oliva",
@@ -4914,7 +4914,7 @@
       "Recetacasera",
       "Recetasfaciles"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -4978,7 +4978,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -5048,7 +5048,7 @@
       "Galletitasdechocolate",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "azúcar",
@@ -5103,7 +5103,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -5166,7 +5166,7 @@
       "Navidad",
       "Recetanavideña"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "arveja",
@@ -5230,7 +5230,7 @@
       "Turron",
       "Turroncasero"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "chocolate",
@@ -5290,7 +5290,7 @@
       "Recetasdulces",
       "Recetasfaciles"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "azúcar",
@@ -5354,7 +5354,7 @@
       "Recetafacil",
       "Zapallo"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -5427,7 +5427,7 @@
       "Recetasclásicas",
       "Viteltoné"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -5503,7 +5503,7 @@
       "Salteado",
       "Yakisoba"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -5569,7 +5569,7 @@
       "Veganesa",
       "Veganfood"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -5631,7 +5631,7 @@
       "Vegana",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "arveja",
@@ -5684,7 +5684,7 @@
       "Recetasdulces",
       "Recetasfaciles"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "azúcar",
@@ -5744,7 +5744,7 @@
       "Vegetariano",
       "Zapallito"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -5810,7 +5810,7 @@
       "Receta",
       "Verano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "banana",
@@ -5875,7 +5875,7 @@
       "Saborencasa",
       "Saboresintensos"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ají molido",
@@ -5930,7 +5930,7 @@
       "Vegano",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -5997,7 +5997,7 @@
       "Vainialla",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -6102,7 +6102,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -6164,7 +6164,7 @@
       "Vegano",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -6274,7 +6274,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -6334,7 +6334,7 @@
       "Chimichurri",
       "Cocinaenfamilia"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -6394,7 +6394,7 @@
       "Sushi",
       "Sushiparaniños"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "pepino",
@@ -6452,7 +6452,7 @@
       "Singlúten",
       "Superalimento"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -6510,7 +6510,7 @@
       "Saboresdelmundo",
       "Tikkamasala"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -6617,7 +6617,7 @@
       "Pollo",
       "Salchichas"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -6680,7 +6680,7 @@
       "Masa",
       "Pan"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -6739,7 +6739,7 @@
       "Tarta",
       "Vegano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -6799,7 +6799,7 @@
       "Recetasargentinas",
       "Zapallo"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "apio",
@@ -6862,7 +6862,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agar-agar",
@@ -6918,7 +6918,7 @@
       "Vegetariano",
       "Zapallo"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -7102,7 +7102,7 @@
       "Conceptos",
       "Delicioso"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -7159,7 +7159,7 @@
       "Delicioso",
       "Portuguesa"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -7228,7 +7228,7 @@
       "Vegetariano",
       "Wok"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -7332,7 +7332,7 @@
       "Natural",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -7424,7 +7424,7 @@
       "Delicioso",
       "Pollo"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "alitas de pollo"
@@ -7624,7 +7624,7 @@
       "Delicioso",
       "Dulcedeleche"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "almidón de maíz",
@@ -7723,7 +7723,7 @@
       "Guisodemondongo",
       "Mondongo"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -7791,7 +7791,7 @@
       "Realfood",
       "Vegano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite de oliva",
@@ -7852,7 +7852,7 @@
       "Maní",
       "Salteado"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -7989,7 +7989,7 @@
       "Invierno",
       "Lentejas"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -8094,7 +8094,7 @@
       "Salsa",
       "Salsadehongos"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -8194,7 +8194,7 @@
       "Invierno",
       "Pollo"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -8253,7 +8253,7 @@
       "Pollo",
       "Sinhorno"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -8312,7 +8312,7 @@
       "Milanesas",
       "Stokeando"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -8373,7 +8373,7 @@
       "Pancasero",
       "Vegano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -8426,7 +8426,7 @@
       "Pizza",
       "Vegano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -8475,7 +8475,7 @@
       "Pancasero",
       "Vegano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -8628,7 +8628,7 @@
       "Vegano",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "avena",
@@ -8690,7 +8690,7 @@
       "Tarta",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "azúcar",
@@ -8749,7 +8749,7 @@
       "Reposteria",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "azúcar",
@@ -8915,7 +8915,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -8979,7 +8979,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "limón",
@@ -9044,7 +9044,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "limón",
@@ -9098,7 +9098,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "harina",
@@ -9162,7 +9162,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -9276,7 +9276,7 @@
       "Tarta",
       "Vegano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -9334,7 +9334,7 @@
       "Instafood",
       "Zapallo"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "carne",
@@ -9398,7 +9398,7 @@
       "Vegano",
       "Zapallo"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -9450,7 +9450,7 @@
       "Viandas",
       "Viandasparaniños"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [],
     "shortcode": "CuS2g-ZPP16",
@@ -9536,7 +9536,7 @@
       "Pan",
       "Saludable"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -9602,7 +9602,7 @@
       "Saludable",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -9665,7 +9665,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -9806,7 +9806,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "avena",
@@ -9904,7 +9904,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -9968,7 +9968,7 @@
       "Yogurt",
       "Yogurtcasero"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite de oliva",
@@ -10122,7 +10122,7 @@
       "Vegetariano",
       "Verano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "azúcar",
@@ -10179,7 +10179,7 @@
       "Vegetariano",
       "Verano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "crema",
@@ -10238,7 +10238,7 @@
       "Vegano",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "cereal",
@@ -10292,7 +10292,7 @@
       "Vegano",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -10349,7 +10349,7 @@
       "Vegano",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -10408,7 +10408,7 @@
       "Vegetariano",
       "Verano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "arándano",
@@ -10470,7 +10470,7 @@
       "Merienda",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "azúcar",
@@ -10570,7 +10570,7 @@
       "Dulcedeleche",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "azúcar",
@@ -10624,7 +10624,7 @@
       "Vegano",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -10724,7 +10724,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "azúcar"
@@ -10770,7 +10770,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aquafaba",
@@ -10860,7 +10860,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -10969,7 +10969,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -11087,7 +11087,7 @@
       "Merluzaalhorno",
       "Pezcado"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -11152,7 +11152,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -11215,7 +11215,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -11272,7 +11272,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "acelga",
@@ -11327,7 +11327,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "coles de brusela",
@@ -11379,7 +11379,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "avena",
@@ -11436,7 +11436,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -11493,7 +11493,7 @@
       "Vegetariano",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -11552,7 +11552,7 @@
       "Vegfood",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -11611,7 +11611,7 @@
       "Vegfood",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -11668,7 +11668,7 @@
       "Reels",
       "Reelsinstagram"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "arroz",
@@ -11728,7 +11728,7 @@
       "Torta",
       "Vegetariano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "azúcar impalpable",
@@ -11848,7 +11848,7 @@
       "Reelsinstagram",
       "Vegano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "cebolla",
@@ -11910,7 +11910,7 @@
       "Reelsinstagram",
       "Vegano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "maíz",
@@ -11982,7 +11982,7 @@
       "Reels",
       "Reelsinstagram"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "maíz blanco",
@@ -12049,7 +12049,7 @@
       "Reelsinstagram",
       "Vegano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -12104,7 +12104,7 @@
       "Reels",
       "Reelsinstagram"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "cebolla",
@@ -12224,7 +12224,7 @@
       "Reels",
       "Reelsinstagram"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -12294,7 +12294,7 @@
       "Reels",
       "Reelsinstagram"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "fécula de mandioca",
@@ -12356,7 +12356,7 @@
       "Reels",
       "Reelsinstagram"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -12416,7 +12416,7 @@
       "Reels",
       "Reelsinstagram"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "fécula de mandioca",
@@ -12493,7 +12493,7 @@
       "Reels",
       "Reelsinstagram"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -12556,7 +12556,7 @@
       "Tequeños",
       "Venezuela"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -12621,7 +12621,7 @@
       "Tequeños",
       "Venezuela"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -12674,7 +12674,7 @@
       "Reels",
       "Reelsinstagram"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "cerdo",
@@ -12730,7 +12730,7 @@
       "Recetafacil",
       "Salada"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "harina",
@@ -12786,7 +12786,7 @@
       "Legumbres",
       "Vegano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "ajo",
@@ -12854,7 +12854,7 @@
       "Vegfood",
       "Veggie"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "agua",
@@ -12881,7 +12881,7 @@
       {
         "recipe_id": 3720382646112403703,
         "score": 5
-      }
+      }1
     ]
   },
   {
@@ -12912,7 +12912,7 @@
       "Veggie",
       "Veggiefood"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -12971,7 +12971,7 @@
       "Pan",
       "Realfood"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite",
@@ -13030,7 +13030,7 @@
       "Realfood",
       "Vegano"
     ],
-    "easy": false,
+    "easy": true,
     "hidden": false,
     "cleaned_ingredientes": [
       "aceite de oliva",
