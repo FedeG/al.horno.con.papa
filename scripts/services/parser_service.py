@@ -607,7 +607,7 @@ class ParserService:
         for tag in tags:
             tag_clean = tag.lower().replace("#", "").strip()
 
-            if len(tag_clean) < 3:
+            if len(tag_clean) < 3 and tag_clean != 'vs':
                 continue
 
             if tag_clean in TAGS_TO_SKIP:
@@ -644,10 +644,12 @@ class ParserService:
         """
         current_tags = recipe.get("tags", [])
         original_tags = recipe.get("old_tags", [])
+
+        normalized_tags = self.normalize_tags(current_tags)
         if not original_tags:
             original_tags = current_tags
+            normalized_tags = self.normalize_tags(original_tags)
 
-        normalized_tags = self.normalize_tags(original_tags)
         recipe_name = recipe.get("name", "")
 
         # Crear copia de la receta

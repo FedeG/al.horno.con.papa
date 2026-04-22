@@ -41,9 +41,8 @@ TAGS_TO_SKIP = [
     "recetasparaproteína", "calentar", "calentarcomida",
     "almuerzo", "almuerzos", "cena", "cenas", "comidassanas", "comidavegetariana",
     "comidaparaantesydespués", "comidastradicionales", "cocinafácil",
-    "platoprincipal", "platos", "plato", "entrada", "entradas",
-    "acompañamiento", "acompañamientos", "guarnición", "guarniciones",
-    "picada", "picadas", "picnik", "picnic", "brunch", "snack", "snacks",
+    "platoprincipal", "platos", "plato",
+    "picnik", "picnic", "brunch", "snack", "snacks",
     "antojo", "antojos", "comfortfood", "foodlover",
     "comidabalanceada", "recetasconhistoria", "comidatradicional",
     "cocinasaludable", "recetasfáciles", "recetasfaciles",
@@ -69,7 +68,7 @@ TAG_SYNONYMS = {
         "vegan", "vegano", "vegana", "veganfood", "proteinavegana", 
         "recetasveganas", "cocinavegana", "comidavegana", "plantbased", "veganesa"
     ],
-    "vegetariano": ["vegetariano", "vegetarian", "veggie", "veggiefood", "recetasveggie", "vegfood", "vegetariano"],
+    "vegetariano": ["vegetariano", "vegetarian", "veggie", "veggiefood", "recetasveggie", "vegfood"],
     "sin_gluten": ["sintacc", "glutenfree", "singluten", "singlúten", "sinharina", "libredecereales", "sintacc"],
     "sin_lactosa": ["sinlactosa", "lactosefree", "dlactosa"],
     "keto": ["keto", "cetogénica", "cetogenico", "lowcarb", "bajosencarbohidratos"],
@@ -226,7 +225,7 @@ TAG_SYNONYMS = {
     "a la parrilla": ["a la parrilla", "parrilla", " BBQ", "bbq", "barbacoa"],
     "hervido": ["hervido", "hervida", "hervidos", "cocido", "cocida", "cocción lenta", "slow cook"],
     "microondas": ["microondas", "microONDAS", "micro-ondas"],
-    "sin cocinar": ["sin cocinar", "sin horno", "frío", "frio", "crudo", "cruda"],
+    "sin cocinar": ["sin cocinar", "sin horno", "crudo", "cruda"],
     
     # Estacional / Festividades
     "navidad": [
@@ -339,7 +338,7 @@ TAG_SYNONYMS = {
     
     # Otros
     "helado": ["helado", "helados", "ice cream", "gelato", "sorbete", "sorbetes"],
-    "mermelada": ["mermelada", "mermeladas", "confitura", "confituras", "dulce"],
+    "mermelada": ["mermelada", "mermeladas", "confitura", "confituras"],
     "golosinas": ["golosinas", "golosina", "caramelo", "caramelos", "chicle", "candy"],
     "yerra": ["yogur", "yogurt", "yoghurt", "yogur casero", "yogurtcasero"],
     "fermentados": ["fermentados", "fermentado", "probióticos", "probioticos", "kefir", "kombucha"],
