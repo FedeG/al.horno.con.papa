@@ -66,7 +66,7 @@ def main():
     if new_recipes:
         # Combinar recetas existentes + nuevas para generar slugs únicos
         all_recipes_for_slug = existing_recipes + new_recipes
-        
+
         for i, recipe in enumerate(new_recipes):
             recipe["slug"] = parser.generate_unique_slug(
                 recipe["name"], all_recipes_for_slug
@@ -76,6 +76,10 @@ def main():
 
     # Combinar todas las recetas (existentes + nuevas)
     all_recipes = existing_recipes + new_recipes
+
+    # Calcular recetas relacionadas
+    print("\n🔗 Calculando recetas relacionadas...")
+    all_recipes = parser.compute_related_recipes(all_recipes)
 
     # Guardar archivo actualizado
     if new_recipes:

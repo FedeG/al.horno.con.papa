@@ -24,6 +24,9 @@ from constants import (
     FRACCIONES_UNICODE,
     PATRONES_FINAL,
     PATRONES_INICIO,
+    TAG_SCORE,
+    INGREDIENT_SCORE,
+    EASY_SCORE,
 )
 
 
@@ -43,7 +46,7 @@ class ParserService:
     def generate_slug(self, recipe_name):
         """
         Genera un slug SEO-friendly a partir del nombre de la receta.
-        
+
         Procesa:
         - Convierte a minúsculas
         - Remueve tildes y acentos (toné → tone, café → cafe)
@@ -60,27 +63,27 @@ class ParserService:
         """
         if not recipe_name:
             return ""
-        
+
         # 1. Convertir a minúsculas
         slug = recipe_name.lower()
-        
+
         # 2. Remover tildes y acentos normalizando a NFD y eliminando diacríticos
-        texto_normalizado = unicodedata.normalize('NFD', slug)
-        slug = ''.join(c for c in texto_normalizado if unicodedata.category(c) != 'Mn')
-        
+        texto_normalizado = unicodedata.normalize("NFD", slug)
+        slug = "".join(c for c in texto_normalizado if unicodedata.category(c) != "Mn")
+
         # 3. Eliminar caracteres especiales (mantiene solo letras, números, espacios y guiones)
         # Esto elimina emojis y otros caracteres especiales
-        slug = re.sub(r'[^\w\s-]', '', slug, flags=re.UNICODE)
-        
+        slug = re.sub(r"[^\w\s-]", "", slug, flags=re.UNICODE)
+
         # 4. Reemplazar espacios múltiples con un solo guión
-        slug = re.sub(r'\s+', '-', slug.strip())
-        
+        slug = re.sub(r"\s+", "-", slug.strip())
+
         # 5. Eliminar guiones múltiples
-        slug = re.sub(r'-+', '-', slug)
-        
+        slug = re.sub(r"-+", "-", slug)
+
         # 6. Eliminar guiones al inicio y final
-        slug = slug.strip('-')
-        
+        slug = slug.strip("-")
+
         return slug
 
     def generate_unique_slug(self, recipe_name, existing_recipes):
@@ -97,20 +100,20 @@ class ParserService:
         """
         # Generar el slug base
         base_slug = self.generate_slug(recipe_name)
-        
+
         if not base_slug:
             return ""
-        
+
         # Obtener todos los slugs existentes
         existing_slugs = set()
         for recipe in existing_recipes:
             if "slug" in recipe and recipe["slug"]:
                 existing_slugs.add(recipe["slug"])
-        
+
         # Si el slug base no existe, devolverlo tal cual
         if base_slug not in existing_slugs:
             return base_slug
-        
+
         # Si existe un duplicado, agregar sufijos -2, -3, -4, ...
         counter = 2
         while True:
@@ -132,7 +135,7 @@ class ParserService:
         """
         if not recipes:
             return recipes, []
-        
+
         # Encontrar duplicados
         slug_map = {}
         for i, r in enumerate(recipes):
@@ -141,16 +144,18 @@ class ParserService:
                 if slug not in slug_map:
                     slug_map[slug] = []
                 slug_map[slug].append(i)
-        
+
         # Procesar solo los que tienen duplicados
-        duplicates = {slug: indices for slug, indices in slug_map.items() if len(indices) > 1}
-        
+        duplicates = {
+            slug: indices for slug, indices in slug_map.items() if len(indices) > 1
+        }
+
         if not duplicates:
             return recipes, []
-        
+
         updated = [r.copy() for r in recipes]
         changes = []
-        
+
         for base_slug, indices in duplicates.items():
             # Dejar el primero con base_slug para mantener URLs estables,
             # regenerar slugs únicos solo para los restantes duplicados
@@ -160,12 +165,14 @@ class ParserService:
                 new_slug = self.generate_unique_slug(recipe_name, updated)
                 if new_slug != old_slug:
                     updated[idx]["slug"] = new_slug
-                    changes.append({
-                        "recipe": recipe_name,
-                        "old_slug": old_slug,
-                        "new_slug": new_slug
-                    })
-        
+                    changes.append(
+                        {
+                            "recipe": recipe_name,
+                            "old_slug": old_slug,
+                            "new_slug": new_slug,
+                        }
+                    )
+
         return updated, changes
 
     def extract_hashtags(self, post):
@@ -583,10 +590,11 @@ class ParserService:
 
         return ""
 
-    def normalize_tags(self, tags, recipe_name=""):
+    def normalize_tags(self, tags):
         """
-        Normaliza una lista de tags aplicando sinónimos y filtros
-        También elimina el tag si ya está presente en el nombre de la receta.
+        Normaliza una lista de tags aplicando sinónimos y filtros.
+        Solo elimina tags genéricos/marketing de TAGS_TO_SKIP.
+        Los tags significativos se mantienen aunque aparezcan en el nombre.
 
         Args:
             tags: Lista de tags a normalizar
@@ -599,30 +607,15 @@ class ParserService:
 
         processed_tags = set()
 
-        # Limpiar el nombre de la receta para comparaciones (quitar emojis y normalizar)
-        # Esto hace que "👨🏼‍🍳 Hummus 👨🏼‍🍳" sea simplemente "hummus"
-        clean_name = re.sub(r"[^\w\s]", "", recipe_name.lower()).strip()
-        clean_name_joined = clean_name.replace(" ", "")
-        name_words = set(clean_name.split())
-
         for tag in tags:
             tag_clean = tag.lower().replace("#", "").strip()
 
-            # 1. Omitir si está en la lista de skip o es muy corto (menos de 3 letras, ej: "de")
-            # Excepto casos especiales como "blw"
-            if tag_clean in TAGS_TO_SKIP or (len(tag_clean) < 3 and tag_clean != "blw"):
+            if len(tag_clean) < 3 and tag_clean != "vs":
                 continue
 
-            # 2. Omitir si el tag ya es parte del nombre de la receta
-            # (Si la receta se llama "Pan casero", no hace falta el tag "pan")
-            if (
-                tag_clean in name_words
-                or tag_clean in clean_name
-                or tag_clean.replace(" ", "") in clean_name_joined
-            ):
+            if tag_clean in TAGS_TO_SKIP:
                 continue
 
-            # 3. Buscar sinónimos para estandarizar
             main_tag = next(
                 (
                     main
@@ -654,11 +647,13 @@ class ParserService:
         """
         current_tags = recipe.get("tags", [])
         original_tags = recipe.get("old_tags", [])
+
+        normalized_tags = self.normalize_tags(current_tags)
         if not original_tags:
             original_tags = current_tags
+            normalized_tags = self.normalize_tags(original_tags)
 
         recipe_name = recipe.get("name", "")
-        normalized_tags = self.normalize_tags(original_tags, recipe_name)
 
         # Crear copia de la receta
         updated_recipe = recipe.copy()
@@ -717,7 +712,9 @@ class ParserService:
             else:
                 filtered_existing_recipes = existing_recipes
 
-            generated_slug = self.generate_unique_slug(recipe_name, filtered_existing_recipes)
+            generated_slug = self.generate_unique_slug(
+                recipe_name, filtered_existing_recipes
+            )
             updated_recipe["slug"] = generated_slug
             changed = True
 
@@ -743,3 +740,70 @@ class ParserService:
 
         print(f"✅ Archivo actualizado: {self.recipes_path}")
         print(f"📊 Total de recetas: {len(sorted_recipes)}")
+
+    def compute_related_recipes(self, recipes, max_results=3):
+        """
+        Calcula las recetas relacionadas para cada receta basándose en tags e ingredientes.
+        Agrega un campo 'related_recipes' a cada receta con una lista de objetos
+        {recipe_id: <id>, recipe_name: <name>, score: <score>} ordenados por
+        score descendente.
+
+        Args:
+            recipes: Lista de todas las recetas
+            max_results: Número máximo de recetas relacionadas por receta
+
+        Returns:
+            Lista de recetas con el campo related_recipes agregado
+        """
+        recipes_with_related = []
+
+        for recipe in recipes:
+            recipe_id = recipe["id"]
+            recipe_tags = set(t.lower() for t in recipe.get("tags", []))
+            recipe_ingredients = set(
+                i.lower() for i in recipe.get("cleaned_ingredientes", [])
+            )
+
+            scored = []
+
+            for other in recipes:
+                if other["id"] == recipe_id:
+                    continue
+
+                score = 0
+
+                other_tags = other.get("tags", [])
+                for tag in other_tags:
+                    if tag.lower() in recipe_tags:
+                        score += TAG_SCORE
+                        break
+
+                other_ingredients = other.get("cleaned_ingredientes", [])
+                for ing in other_ingredients:
+                    if ing.lower() in recipe_ingredients:
+                        score += INGREDIENT_SCORE
+
+                if recipe.get("easy", False) == other.get("easy", False):
+                    score += EASY_SCORE
+
+                if score > 0:
+                    scored.append(
+                        {
+                            "recipe_id": other["id"],
+                            "recipe_name": other["name"],
+                            "score": score,
+                        }
+                    )
+
+            scored.sort(key=lambda x: x["score"], reverse=True)
+            top_related = scored[:max_results]
+
+            print(f"Recipe: {recipe['name']}")
+            for top in top_related:
+                print(f"Score: {top['score']} - {top['recipe_name']}")
+
+            updated = recipe.copy()
+            updated["related_recipes"] = top_related
+            recipes_with_related.append(updated)
+
+        return recipes_with_related

@@ -101,7 +101,7 @@ def main():
     for i, recipe in enumerate(recipes, 1):
         # Pasar recetas originales + las ya actualizadas para que tenga contexto completo
         all_recipes_context = recipes + updated_recipes
-        
+
         updated_recipe, changed = parser.refresh_recipe(
             recipe, force=args.force, existing_recipes=all_recipes_context
         )
@@ -116,7 +116,7 @@ def main():
     # Al final, corregir cualquier slug duplicado que haya quedado
     print("\n🔍 Corrigiendo slugs duplicados...")
     updated_recipes, slug_changes = parser.fix_all_duplicate_slugs(updated_recipes)
-    
+
     if slug_changes:
         changes_count += len(slug_changes)
         print(f"⚠️  Se corrigieron {len(slug_changes)} slugs duplicados:\n")
@@ -125,6 +125,12 @@ def main():
             print(f"     {change['old_slug']} → {change['new_slug']}")
     else:
         print("✓ No se encontraron slugs duplicados")
+
+    # Calcular recetas relacionadas
+    print("\n🔗 Calculando recetas relacionadas...")
+    updated_recipes = parser.compute_related_recipes(updated_recipes)
+    changes_count += 1
+    print(f"✓ {len(updated_recipes)} recetas procesadas con related_recipes")
 
     # Mostrar estadísticas finales
     print_statistics(updated_recipes, "\n📊 Estadísticas DESPUÉS del refresh")

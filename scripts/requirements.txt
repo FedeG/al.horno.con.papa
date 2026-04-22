@@ -1,5 +1,7 @@
+httplib2==0.31.2
 instaloader==4.11
-python-dateutil==2.8.2
-requests==2.31.0
+oauth2client==4.1.3
 ollama==0.6.1
-
+pandas==2.3.3
+python-dateutil==2.8.2
+requests==2.32.5
