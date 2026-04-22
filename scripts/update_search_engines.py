@@ -4,17 +4,20 @@ Ejecutar como: python update_search_engines.py
 """
 
 import httplib2
+import json
 import requests
+from pathlib import Path
 from time import sleep
 from random import random
 from xml.etree import ElementTree
 from oauth2client.service_account import ServiceAccountCredentials
 
-from constants import BING_API_KEY, JSON_KEY_FILE, SITE_URL
+from constants import BING_API_KEY, BING_BULK_SIZE, JSON_KEY_FILE, SITE_URL
 
 
 # ============= CONFIGURACIÓN =============
-SITEMAP_PATH = "../public/sitemap.xml"
+SCRIPT_DIR = Path(__file__).resolve().parent
+SITEMAP_PATH = SCRIPT_DIR.parent / "public" / "sitemap.xml"
 
 
 # ============= FUNCIONES =============
@@ -25,7 +28,7 @@ def extraer_urls_del_sitemap(sitemap_path):
     Extrae todas las URLs del archivo sitemap.xml.
 
     Args:
-        sitemap_path (str): Ruta al archivo sitemap.xml
+        sitemap_path (str | Path): Ruta al archivo sitemap.xml
 
     Returns:
         list: Lista de URLs extraídas del sitemap
@@ -79,12 +82,12 @@ def solicitar_indexacion_google(url_list):
 
         print("📍 Enviando URLs a Google...")
         for idx, url in enumerate(url_list, 1):
-            content = f"""{{
-                "url": "{url}",
-                "type": "URL_UPDATED"
-            }}"""
+            payload = json.dumps({"url": url, "type": "URL_UPDATED"})
+            headers = {"Content-Type": "application/json"}
 
-            response, content = http.request(ENDPOINT, method="POST", body=content)
+            response, _ = http.request(
+                ENDPOINT, method="POST", body=payload, headers=headers
+            )
             status_symbol = "✅" if response.status == 200 else "❌"
             print(
                 f"  {status_symbol} [{idx}/{len(url_list)}] {url} - Status: {response.status}"
@@ -108,7 +111,7 @@ def solicitar_indexacion_google(url_list):
 
 def enviar_a_bing(url_list, api_key):
     """
-    Envía una lista de URLs al índice de Bing en bulks de 25.
+    Envía una lista de URLs al índice de Bing en bulks (máximo {BING_BULK_SIZE} URLs por request).
     Maneja timeout de quota diaria automáticamente.
 
     Args:
@@ -117,19 +120,19 @@ def enviar_a_bing(url_list, api_key):
     """
     url_api = "https://www.bing.com/webmaster/api.svc/json/SubmitUrlbatch"
     params = {"apikey": api_key}
-    BULK_SIZE = 10
     urls_enviadas = 0
 
     try:
-        print("📍 Enviando URLs a Bing en bulks de 25...")
+        print(f"📍 Enviando URLs a Bing en bulks de {BING_BULK_SIZE}...")
 
-        # Dividir URLs en bulks de 25
-        for bulk_idx, i in enumerate(range(0, len(url_list), BULK_SIZE), 1):
-            bulk_urls = url_list[i : i + BULK_SIZE]
+        # Dividir URLs en bulks de BING_BULK_SIZE
+        for bulk_idx, i in enumerate(range(0, len(url_list), BING_BULK_SIZE), 1):
+            bulk_urls = url_list[i : i + BING_BULK_SIZE]
 
             payload = {"siteUrl": SITE_URL, "urlList": bulk_urls}
-
-            response = requests.post(url_api, params=params, json=payload)
+            response = requests.post(
+                url_api, params=params, json=payload, timeout=(5, 10)
+            )
 
             if response.status_code == 200:
                 urls_enviadas += len(bulk_urls)

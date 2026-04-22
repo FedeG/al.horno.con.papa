@@ -2,9 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://alhornoconpapa.com.ar/</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://alhornoconpapa.com.ar/recipe/canelones-de-carne/</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://alhornoconpapa.com.ar/images/DXacCIMjr1C.webp</image:loc>
+      <image:title>🌯 Canelones de carne 🌯</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://alhornoconpapa.com.ar/recipe/panqueques/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://alhornoconpapa.com.ar/images/DXUWKKzjifY.webp</image:loc>
+      <image:title>🥞 Panqueques 🥞</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://alhornoconpapa.com.ar/recipe/arroz-con-leche-2/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://alhornoconpapa.com.ar/images/DXLAeA9jizi.webp</image:loc>
+      <image:title>🍚 Arroz con leche 🍚</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://alhornoconpapa.com.ar/recipe/bizcochuelo-marmolado-de-banana/</loc>
@@ -127,7 +157,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/matambre-arrollado-2/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/matambre-arrollado/</loc>
     <lastmod>2026-01-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -147,7 +177,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/vitel-tone-2/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/vitel-tone/</loc>
     <lastmod>2025-12-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -157,17 +187,17 @@
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/turron-casero-2/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/turron-casero/</loc>
     <lastmod>2025-12-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://alhornoconpapa.com.ar/images/DSh5uVIjukz.webp</image:loc>
-      <image:title>🍫 Turrón casero 🍫</image:title>
+      <image:title>🍫 Turrón 🍫</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/ensalada-rusa-2/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/ensalada-rusa/</loc>
     <lastmod>2025-12-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -177,7 +207,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/pate-de-hongos-2/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/pate-de-hongos/</loc>
     <lastmod>2025-12-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -243,7 +273,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://alhornoconpapa.com.ar/images/DOhdE4iDsD3.webp</image:loc>
-      <image:title>🧆 Falafel casero 🌿✨</image:title>
+      <image:title>🧆 Falafel 🌿✨</image:title>
     </image:image>
   </url>
   <url>
@@ -257,7 +287,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/pan-integral-2/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/pan-integral/</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -423,7 +453,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://alhornoconpapa.com.ar/images/DLgSnusOKjn.webp</image:loc>
-      <image:title>🍞 Pan de papa casero 🥔</image:title>
+      <image:title>🍞 Pan de papa 🥔</image:title>
     </image:image>
   </url>
   <url>
@@ -487,7 +517,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/guiso-de-lentejas-2/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/guiso-de-lentejas/</loc>
     <lastmod>2025-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -497,7 +527,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/hotcakes-2/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/hotcakes/</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -507,13 +537,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/recetas-del-mundo-2/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/recetas-del-mundo/</loc>
     <lastmod>2025-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://alhornoconpapa.com.ar/images/DKGOzw-Ow_4.webp</image:loc>
-      <image:title>🌎 Recetas del Mundo 🌎</image:title>
+      <image:title>🌎 Recetas del mundo: ramen 🍜</image:title>
     </image:image>
   </url>
   <url>
@@ -567,7 +597,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/budin-de-banana-2/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/budin-de-banana/</loc>
     <lastmod>2025-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -593,7 +623,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://alhornoconpapa.com.ar/images/DJDNAGGO_ut.webp</image:loc>
-      <image:title>🥗 Salsa César (o Caesar) Casera 🥗</image:title>
+      <image:title>🥗 Salsa César (o Caesar) 🥗</image:title>
     </image:image>
   </url>
   <url>
@@ -607,7 +637,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/arroz-con-pollo-2/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/arroz-con-pollo/</loc>
     <lastmod>2025-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -627,23 +657,23 @@
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/recetas-del-mundo-3/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/recetas-del-mundo-2/</loc>
     <lastmod>2025-04-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://alhornoconpapa.com.ar/images/DIU1d8dO06G.webp</image:loc>
-      <image:title>🌎 Recetas del Mundo 🌎</image:title>
+      <image:title>🌎 Recetas del mundo: quesillo 🇻🇪</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/chucrut-repollo-morado/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/chucrut-casero-de-repollo-morado/</loc>
     <lastmod>2025-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://alhornoconpapa.com.ar/images/DIJZbvdOmSN.webp</image:loc>
-      <image:title>🌈 Chucrut casero de repollo morado 🥬🫙</image:title>
+      <image:title>🌈 Chucrut de repollo morado 🥬🫙</image:title>
     </image:image>
   </url>
   <url>
@@ -687,17 +717,17 @@
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/recetas-del-mundo-4/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/recetas-del-mundo-3/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://alhornoconpapa.com.ar/images/DHe3N2SuMFr.webp</image:loc>
-      <image:title>🌎 Recetas del Mundo 🌎</image:title>
+      <image:title>🌎 Recetas del mundo: falso fonejo 🇧🇴</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/crumble-de-manzana-2/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/crumble-de-manzana/</loc>
     <lastmod>2025-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -713,7 +743,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://alhornoconpapa.com.ar/images/DHM08xsuxoI.webp</image:loc>
-      <image:title>🍣 SUSHI CASERO 🍣</image:title>
+      <image:title>🍣 SUSHI 🍣</image:title>
     </image:image>
   </url>
   <url>
@@ -787,7 +817,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/pan-naan-2/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/pan-naan/</loc>
     <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -843,7 +873,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://alhornoconpapa.com.ar/images/DD9zNPJOIfd.webp</image:loc>
-      <image:title>🍫 Turrón casero 🍫</image:title>
+      <image:title>🍫 Turrón 🍫</image:title>
     </image:image>
   </url>
   <url>
@@ -853,7 +883,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://alhornoconpapa.com.ar/images/DDpOZ1FOcn1.webp</image:loc>
-      <image:title>🎄 Pionono casero 🎄</image:title>
+      <image:title>🎄 Pionono 🎄</image:title>
     </image:image>
   </url>
   <url>
@@ -933,7 +963,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://alhornoconpapa.com.ar/images/DCHVtNhOSw7.webp</image:loc>
-      <image:title>🍦 Helado casero 🍨</image:title>
+      <image:title>🍦 Helado 🍨</image:title>
     </image:image>
   </url>
   <url>
@@ -1143,7 +1173,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://alhornoconpapa.com.ar/images/C9OKCk9MKNz.webp</image:loc>
-      <image:title>🎓 Proyectos Universitarios de Viandas Saludables para niños en etapa escolar 🥗</image:title>
+      <image:title>🎓 Proyectos Universitarios de viandas saludables para niños 🥗</image:title>
     </image:image>
   </url>
   <url>
@@ -1543,7 +1573,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://alhornoconpapa.com.ar/images/CvwtLGzAYFQ.webp</image:loc>
-      <image:title>🍨 Queso Mascarpone Casero 🍨</image:title>
+      <image:title>🍨 Queso Mascarpone 🍨</image:title>
     </image:image>
   </url>
   <url>
@@ -1653,7 +1683,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://alhornoconpapa.com.ar/images/Cql72c6tN0_.webp</image:loc>
-      <image:title>🥣 Cereal casero de legumbres 🥣</image:title>
+      <image:title>🥣 Cereal de legumbres 🥣</image:title>
     </image:image>
   </url>
   <url>
@@ -1693,7 +1723,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://alhornoconpapa.com.ar/images/CoI9j9mjuXJ.webp</image:loc>
-      <image:title>🚨 Con @anush.cuidarte vimos que hay muchas dudas sobre los casos de escherichia coli o salmonela, por lo que decidimos hacer en conjunto publicaciones explicando conceptos y dando posibles opciones para remplazo o manejo de determinados alimentos 👨‍🍳</image:title>
+      <image:title>🚨 Escherichia coli y salmonela 👨‍🍳</image:title>
     </image:image>
   </url>
   <url>
@@ -1737,13 +1767,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/bastoncitos-milanesas-de-quinoa/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/bastoncitos-de-quinoa-o-milanesas-de-quinoa/</loc>
     <lastmod>2022-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://alhornoconpapa.com.ar/images/CkbvXXxLWgK.webp</image:loc>
-      <image:title>Bastoncitos de quinoa o milanesas de quinoa</image:title>
+      <image:title>Bastoncitos/milanesas de quinoa</image:title>
     </image:image>
   </url>
   <url>
@@ -1767,7 +1797,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/crumble-de-manzana-3/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/crumble-de-manzana-2/</loc>
     <lastmod>2022-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1947,7 +1977,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/dip-de-zanahoria-3/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/dip-de-zanahoria/</loc>
     <lastmod>2022-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1967,7 +1997,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/budin-de-banana-3/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/budin-de-banana-2/</loc>
     <lastmod>2022-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1977,7 +2007,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/milanesas-de-berenjena-3/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/milanesas-de-berenjena/</loc>
     <lastmod>2022-07-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2097,7 +2127,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/arroz-con-pollo-3/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/arroz-con-pollo-2/</loc>
     <lastmod>2022-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2193,7 +2223,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://alhornoconpapa.com.ar/images/CeSGLu4OILU.webp</image:loc>
-      <image:title>PATITAS DE BROCOLI/COLIFLOR</image:title>
+      <image:title>Patitas de brocoli/coliflor</image:title>
     </image:image>
   </url>
   <url>
@@ -2207,7 +2237,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/pan-naan-3/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/pan-naan-2/</loc>
     <lastmod>2022-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2217,7 +2247,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://alhornoconpapa.com.ar/recipe/hummus-3/</loc>
+    <loc>https://alhornoconpapa.com.ar/recipe/hummus/</loc>
     <lastmod>2022-05-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
