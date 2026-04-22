@@ -782,7 +782,7 @@ class ParserService:
                     if ing.lower() in recipe_ingredients:
                         score += INGREDIENT_SCORE
 
-                if recipe["easy"] == other["easy"]:
+                if recipe.get("easy", False) == other.get("easy", False):
                     score += EASY_SCORE
 
                 if score > 0:
