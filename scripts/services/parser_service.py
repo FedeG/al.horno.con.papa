@@ -745,7 +745,8 @@ class ParserService:
         """
         Calcula las recetas relacionadas para cada receta basándose en tags e ingredientes.
         Agrega un campo 'related_recipes' a cada receta con una lista de objetos
-        {recipe_id: <id>, score: <score>} ordenados por score descendente.
+        {recipe_id: <id>, recipe_name: <name>, score: <score>} ordenados por
+        score descendente.
 
         Args:
             recipes: Lista de todas las recetas
