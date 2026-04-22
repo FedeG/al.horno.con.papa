@@ -610,7 +610,7 @@ class ParserService:
         for tag in tags:
             tag_clean = tag.lower().replace("#", "").strip()
 
-            if len(tag_clean) < 3 and tag_clean != 'vs':
+            if len(tag_clean) < 3 and tag_clean != "vs":
                 continue
 
             if tag_clean in TAGS_TO_SKIP:
@@ -782,11 +782,17 @@ class ParserService:
                     if ing.lower() in recipe_ingredients:
                         score += INGREDIENT_SCORE
 
-                if recipe['easy'] == other['easy']:
+                if recipe["easy"] == other["easy"]:
                     score += EASY_SCORE
 
                 if score > 0:
-                    scored.append({"recipe_id": other["id"], "recipe_name": other["name"], "score": score})
+                    scored.append(
+                        {
+                            "recipe_id": other["id"],
+                            "recipe_name": other["name"],
+                            "score": score,
+                        }
+                    )
 
             scored.sort(key=lambda x: x["score"], reverse=True)
             top_related = scored[:max_results]
