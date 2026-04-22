@@ -24,6 +24,9 @@ from constants import (
     FRACCIONES_UNICODE,
     PATRONES_FINAL,
     PATRONES_INICIO,
+    TAG_SCORE,
+    INGREDIENT_SCORE,
+    EASY_SCORE,
 )
 
 
@@ -751,9 +754,6 @@ class ParserService:
         Returns:
             Lista de recetas con el campo related_recipes agregado
         """
-        TAG_SCORE = 3
-        INGREDIENT_SCORE = 1
-
         recipes_with_related = []
 
         for recipe in recipes:
@@ -782,11 +782,18 @@ class ParserService:
                     if ing.lower() in recipe_ingredients:
                         score += INGREDIENT_SCORE
 
+                if recipe['easy'] == other['easy']:
+                    score += EASY_SCORE
+
                 if score > 0:
-                    scored.append({"recipe_id": other["id"], "score": score})
+                    scored.append({"recipe_id": other["id"], "recipe_name": other["name"], "score": score})
 
             scored.sort(key=lambda x: x["score"], reverse=True)
             top_related = scored[:max_results]
+
+            print(f"Recipe: {recipe['name']}")
+            for top in top_related:
+                print(f"Score: {top['score']} - {top['recipe_name']}")
 
             updated = recipe.copy()
             updated["related_recipes"] = top_related

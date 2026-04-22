@@ -425,3 +425,8 @@ JSON_KEY_FILE = 'credentials/al-horno-con-papa-xxxxxxxxx.json'
 
 # Reemplaza con tu API key de Bing
 BING_API_KEY = "xxxxxxxx"
+
+# Relación entre recetas
+TAG_SCORE = 3
+EASY_SCORE = 2
+INGREDIENT_SCORE = 1
