@@ -340,7 +340,7 @@ TAG_SYNONYMS = {
     "helado": ["helado", "helados", "ice cream", "gelato", "sorbete", "sorbetes"],
     "mermelada": ["mermelada", "mermeladas", "confitura", "confituras"],
     "golosinas": ["golosinas", "golosina", "caramelo", "caramelos", "chicle", "candy"],
-    "yerra": ["yogur", "yogurt", "yoghurt", "yogur casero", "yogurtcasero"],
+    "yogur": ["yogur", "yogurt", "yoghurt", "yogur casero", "yogurtcasero"],
     "fermentados": ["fermentados", "fermentado", "probióticos", "probioticos", "kefir", "kombucha"],
     "curado": ["curado", "curada", "curar", "curado de tablas", "curadodetablas", "tabla"],
     "proteína": ["proteína", "proteina", "proteinas", "musculo", "gym", "fit"],
