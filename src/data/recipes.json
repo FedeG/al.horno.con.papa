@@ -52,16 +52,20 @@
     "related_recipes": [
       {
         "recipe_id": 3659485693416813984,
+        "score": 14
+      },
+      {
+        "recipe_id": 2873017135474182442,
         "score": 12
       },
       {
-        "recipe_id": 3869698535436761209,
-        "score": 8
-      },
-      {
-        "recipe_id": 3691103888627901102,
-        "score": 8
+        "recipe_id": 3593552396895699307,
+        "score": 11
       }
+    ],
+    "old_tags": [
+      "Internacional",
+      "Pasta"
     ]
   },
   {
@@ -97,16 +101,22 @@
     "related_recipes": [
       {
         "recipe_id": 3644262487139377127,
-        "score": 6
+        "score": 7
       },
       {
         "recipe_id": 3056218302770962563,
-        "score": 6
+        "score": 7
       },
       {
-        "recipe_id": 2872305844105539390,
+        "recipe_id": 3635570338399134963,
         "score": 6
       }
+    ],
+    "old_tags": [
+      "Argentina",
+      "Desayuno y merienda",
+      "Dulce",
+      "Vegetariano"
     ]
   },
   {
@@ -116,8 +126,8 @@
     "tags": [
       "Argentina",
       "Arroz",
-      "Postres",
       "Dulce",
+      "Postres",
       "Vegetariano"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DXLAeA9jizi/",
@@ -149,17 +159,24 @@
     "slug": "arroz-con-leche-2",
     "related_recipes": [
       {
-        "recipe_id": 3589641815843205086,
-        "score": 5
-      },
-      {
-        "recipe_id": 3522956054784141513,
-        "score": 4
+        "recipe_id": 2887541849218325466,
+        "score": 9
       },
       {
         "recipe_id": 2943337430166528365,
-        "score": 4
+        "score": 7
+      },
+      {
+        "recipe_id": 3589641815843205086,
+        "score": 6
       }
+    ],
+    "old_tags": [
+      "Argentina",
+      "Arroz",
+      "Postres",
+      "Dulce",
+      "Vegetariano"
     ]
   },
   {
@@ -168,9 +185,9 @@
     "description": "🍌🍫 Bizcochuelo marmolado de banana 🍌🍫\n\nHúmedo, esponjoso y con ese mix de banana y chocolate que nunca falla\nIdeal para la merienda o para aprovechar bananas maduras\n\n⏳ Tiempo: 1 hora ⏳\n\n🥣 Ingredientes 🥣\n• 2 bananas pisadas\n• 2 tazas de harina leudante\n• 3/4 taza de azúcar\n• 1/4 taza de leche\n• 2 huevos\n• 4 cucharadas de aceite\n• 1 cucharadita de esencia de vainilla\n\nPara la parte de chocolate:\n• 2 cucharadas de cacao en polvo\n• 2 cucharadas de leche\n\n👣 Pasos 👣\n• En un bowl mezclamos los huevos, el azúcar y la esencia de vainilla\n• Batimos hasta lograr una mezcla cremosa y aireada\n• Pisamos las bananas y las mezclamos con la leche\n• Sumamos a la preparación anterior e integramos\n• Agregamos el aceite y mezclamos\n• Incorporamos la harina de a poco hasta lograr una mezcla homogénea\n• En otro bowl colocamos el cacao con la leche y mezclamos bien\n• Agregamos la mitad de la mezcla de banana y unificamos\n• Si queda más líquido que la mezcla base, sumamos un poco de harina para igualar la textura\n• Enmantecamos y enharinamos un molde\n• Volcamos intercalando la mezcla de banana y la de chocolate\n• Llevamos a horno precalentado a 180°C por 40 minutos o hasta que al pinchar salga seco\n\n💡 Tip 💡\n• Usar bananas bien maduras (las olvidados de la heladera) le da más sabor y humedad\n• No sobremezclar el marmolado para que se vean bien las vetas\n• Podés agregar coco rallado o ralladura de naranja para variar el sabor\n\n🍰 Queda súper esponjoso y perfecto para la merienda 🍰\n\nSeguime para más recetas dulces y caseras\n\n",
     "tags": [
       "Dulce",
-      "Vegetariano",
       "Frutas",
-      "Torta"
+      "Torta",
+      "Vegetariano"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DW7kxG-jpCH/",
     "facebookUrl": "",
@@ -213,12 +230,12 @@
         "score": 10
       },
       {
-        "recipe_id": 3481833328178995898,
-        "score": 10
+        "recipe_id": 3584844738130981428,
+        "score": 9
       },
       {
-        "recipe_id": 2891865988744955692,
-        "score": 10
+        "recipe_id": 3522956054784141513,
+        "score": 8
       }
     ]
   },
@@ -276,11 +293,11 @@
         "score": 12
       },
       {
-        "recipe_id": 3733422410486927572,
-        "score": 11
+        "recipe_id": 3809505069079861469,
+        "score": 10
       },
       {
-        "recipe_id": 3809505069079861469,
+        "recipe_id": 3650539507544591071,
         "score": 10
       }
     ]
@@ -460,11 +477,11 @@
         "score": 8
       },
       {
-        "recipe_id": 3704394110262278412,
-        "score": 5
+        "recipe_id": 3640662478703759352,
+        "score": 6
       },
       {
-        "recipe_id": 3620090472056771947,
+        "recipe_id": 3704394110262278412,
         "score": 5
       }
     ]
@@ -805,15 +822,15 @@
     "slug": "levadura-fresca-vs-levadura-seca",
     "related_recipes": [
       {
-        "recipe_id": 3871850009075814535,
+        "recipe_id": 3878822634893223896,
+        "score": 3
+      },
+      {
+        "recipe_id": 3876193966899473634,
         "score": 3
       },
       {
         "recipe_id": 3847199831089887707,
-        "score": 3
-      },
-      {
-        "recipe_id": 3843589430267770145,
         "score": 3
       }
     ]
@@ -1108,15 +1125,15 @@
     "slug": "turron-casero",
     "related_recipes": [
       {
-        "recipe_id": 3678281787416195252,
-        "score": 5
-      },
-      {
         "recipe_id": 3530202892914427869,
         "score": 5
       },
       {
-        "recipe_id": 3871850009075814535,
+        "recipe_id": 3680962510824535605,
+        "score": 4
+      },
+      {
+        "recipe_id": 3481833328178995898,
         "score": 4
       }
     ]
@@ -1127,6 +1144,7 @@
     "description": "🥔 Ensalada Rusa 🥕\n\n🎄 Seguimos armando la mesa de las fiestas, receta a receta 🎄\nDurante todo diciembre voy a ir subiendo una receta por vez para que llegues a Navidad y Año Nuevo con la mesa completa, combinando clásicos infaltables y opciones nuevas fáciles y rapidas.\n\n⏳ Tiempo: 30 minutos ⌛\n\n🥣 Ingredientes 🥣\n• 2 papas medianas\n• 1 zanahoria grande\n• 1 taza de arvejas cocidas\n• 2 cucharadas de mayonesa\n• Sal a gusto\n\n👣 Pasos 👣\n• Pelamos y cortamos las papas en cubitos de aproximadamente 1 cm y la zanahoria en cubos más chicos para que se cocinen parejo\n• Hervimos las papas y zanahorias en abundante agua con sal hasta que estén tiernas pero firmes, que se puedan pinchar sin romperse (unos 10 minutos)\n• Retiramos del fuego, colamos y pasamos por agua fría para cortar la cocción\n• Colamos bien todos los ingredientes\n• En un bowl grande mezclamos las papas, zanahorias y arvejas con la mayonesa, con cuidado de no romper la papa\n• Llevamos a la heladera al menos 1 hora antes de servir para que tome más sabor\n\n🧊 Conservación 🧊\n• Dura entre 3 y 4 días en heladera en un recipiente hermético\n• Si querés que dure más, podés guardar las verduras cocidas por separado y mezclar con la mayonesa justo antes de servir\n\n⚠️ Importante ⚠️\n• No dejar más de 2 horas fuera de la heladera\n\n🎄 Ideal para acompañar asados, la cena navideña o cualquier mesa fría de fiestas 🎄\n\n👉 Próxima receta: turrón de chocolate, listo en menos de 10 minutos y con solo 3 ingredientes 🍫✨\n\nSeguime para no perderte ninguna y armar juntos la mesa completa de las fiestas 🎅🎄\n\n",
     "tags": [
       "Acompañamiento",
+      "Acompañamientos",
       "Argentina",
       "Facil",
       "Navidad"
@@ -1298,11 +1316,11 @@
     "slug": "mermelada-casera-de-frutilla",
     "related_recipes": [
       {
-        "recipe_id": 3742112497752006485,
+        "recipe_id": 3876193966899473634,
         "score": 5
       },
       {
-        "recipe_id": 3680962510824535605,
+        "recipe_id": 3742112497752006485,
         "score": 5
       },
       {
@@ -1373,8 +1391,8 @@
         "score": 11
       },
       {
-        "recipe_id": 3184703452844334328,
-        "score": 11
+        "recipe_id": 3614283436492815155,
+        "score": 10
       }
     ]
   },
@@ -1558,15 +1576,15 @@
     "slug": "empanadas-tipo-saltenas",
     "related_recipes": [
       {
-        "recipe_id": 3357907319144106329,
-        "score": 12
-      },
-      {
-        "recipe_id": 3869698535436761209,
+        "recipe_id": 3650539507544591071,
         "score": 11
       },
       {
-        "recipe_id": 3650539507544591071,
+        "recipe_id": 3645452133613487393,
+        "score": 11
+      },
+      {
+        "recipe_id": 3368125317275642463,
         "score": 11
       }
     ]
@@ -1634,11 +1652,11 @@
         "score": 14
       },
       {
-        "recipe_id": 3593552396895699307,
+        "recipe_id": 3388418159218738751,
         "score": 10
       },
       {
-        "recipe_id": 3441290949047484482,
+        "recipe_id": 3179642081197799001,
         "score": 10
       }
     ]
@@ -1809,16 +1827,16 @@
     "slug": "mantecatura",
     "related_recipes": [
       {
-        "recipe_id": 3593552396895699307,
-        "score": 6
-      },
-      {
         "recipe_id": 3736087744675221094,
         "score": 5
       },
       {
-        "recipe_id": 3686350578570090705,
+        "recipe_id": 3352919143882332731,
         "score": 5
+      },
+      {
+        "recipe_id": 3880537320474983746,
+        "score": 4
       }
     ]
   },
@@ -1869,16 +1887,16 @@
     "slug": "rinon-a-la-provenzal",
     "related_recipes": [
       {
-        "recipe_id": 3451442543822919931,
-        "score": 10
-      },
-      {
-        "recipe_id": 3841423351726646769,
-        "score": 9
-      },
-      {
         "recipe_id": 3717488954980600869,
         "score": 8
+      },
+      {
+        "recipe_id": 3451442543822919931,
+        "score": 7
+      },
+      {
+        "recipe_id": 2861436538397511708,
+        "score": 7
       }
     ]
   },
@@ -2069,15 +2087,15 @@
     "slug": "tonkatsu-japones",
     "related_recipes": [
       {
-        "recipe_id": 3749348399670795105,
+        "recipe_id": 3659485693416813984,
         "score": 7
       },
       {
-        "recipe_id": 3720382646112403703,
+        "recipe_id": 3160778467628544373,
         "score": 7
       },
       {
-        "recipe_id": 3593552396895699307,
+        "recipe_id": 2874477172757081630,
         "score": 7
       }
     ]
@@ -2145,12 +2163,12 @@
         "score": 10
       },
       {
-        "recipe_id": 3659485693416813984,
+        "recipe_id": 2899119893145812759,
         "score": 10
       },
       {
-        "recipe_id": 2899119893145812759,
-        "score": 10
+        "recipe_id": 3809505069079861469,
+        "score": 9
       }
     ]
   },
@@ -2202,15 +2220,15 @@
     "slug": "competencia-de-lasana-con-feli",
     "related_recipes": [
       {
-        "recipe_id": 3583389053723859889,
-        "score": 8
-      },
-      {
         "recipe_id": 3880537320474983746,
         "score": 8
       },
       {
-        "recipe_id": 3686350578570090705,
+        "recipe_id": 3583389053723859889,
+        "score": 8
+      },
+      {
+        "recipe_id": 3675896022925121703,
         "score": 7
       }
     ]
@@ -2515,11 +2533,11 @@
         "score": 6
       },
       {
-        "recipe_id": 2911431153648013635,
-        "score": 6
+        "recipe_id": 3530202892914427869,
+        "score": 5
       },
       {
-        "recipe_id": 3871850009075814535,
+        "recipe_id": 3481833328178995898,
         "score": 5
       }
     ]
@@ -2594,8 +2612,8 @@
         "score": 12
       },
       {
-        "recipe_id": 3357907319144106329,
-        "score": 12
+        "recipe_id": 3717488954980600869,
+        "score": 11
       }
     ]
   },
@@ -2641,16 +2659,16 @@
     "slug": "pollo-al-horno",
     "related_recipes": [
       {
-        "recipe_id": 3707323832187256597,
-        "score": 8
-      },
-      {
-        "recipe_id": 3441290949047484482,
-        "score": 8
-      },
-      {
         "recipe_id": 3675896022925121703,
         "score": 7
+      },
+      {
+        "recipe_id": 3649339452284465345,
+        "score": 7
+      },
+      {
+        "recipe_id": 3580491219282177231,
+        "score": 6
       }
     ]
   },
@@ -2705,11 +2723,11 @@
         "score": 9
       },
       {
-        "recipe_id": 3373890469131985035,
+        "recipe_id": 3194852843001460019,
         "score": 9
       },
       {
-        "recipe_id": 3194852843001460019,
+        "recipe_id": 2943337430166528365,
         "score": 9
       }
     ]
@@ -2895,14 +2913,14 @@
     "related_recipes": [
       {
         "recipe_id": 3880537320474983746,
-        "score": 12
+        "score": 14
       },
       {
         "recipe_id": 3399282333721284895,
         "score": 11
       },
       {
-        "recipe_id": 3696179700699961881,
+        "recipe_id": 3675896022925121703,
         "score": 10
       }
     ]
@@ -2950,11 +2968,11 @@
         "score": 5
       },
       {
-        "recipe_id": 3858090832151088491,
+        "recipe_id": 3876193966899473634,
         "score": 4
       },
       {
-        "recipe_id": 3847199831089887707,
+        "recipe_id": 3858090832151088491,
         "score": 4
       }
     ]
@@ -3116,16 +3134,16 @@
     "slug": "tomates-cherries-confitados",
     "related_recipes": [
       {
-        "recipe_id": 3788496596900937594,
-        "score": 8
-      },
-      {
-        "recipe_id": 3594727340463842331,
+        "recipe_id": 3659485693416813984,
         "score": 8
       },
       {
         "recipe_id": 3573244086166696038,
         "score": 8
+      },
+      {
+        "recipe_id": 3670806469180862227,
+        "score": 7
       }
     ]
   },
@@ -3194,15 +3212,15 @@
     "slug": "guiso-de-lentejas",
     "related_recipes": [
       {
-        "recipe_id": 3399282333721284895,
-        "score": 15
-      },
-      {
         "recipe_id": 3357907319144106329,
         "score": 15
       },
       {
         "recipe_id": 3675896022925121703,
+        "score": 13
+      },
+      {
+        "recipe_id": 3614283436492815155,
         "score": 13
       }
     ]
@@ -3253,15 +3271,15 @@
     "slug": "hotcakes",
     "related_recipes": [
       {
-        "recipe_id": 3871850009075814535,
-        "score": 10
-      },
-      {
         "recipe_id": 3056218302770962563,
         "score": 10
       },
       {
         "recipe_id": 3625171213979661073,
+        "score": 9
+      },
+      {
+        "recipe_id": 3522956054784141513,
         "score": 9
       }
     ]
@@ -3323,11 +3341,11 @@
         "score": 7
       },
       {
-        "recipe_id": 3686350578570090705,
+        "recipe_id": 3843589430267770145,
         "score": 6
       },
       {
-        "recipe_id": 3157191918159734942,
+        "recipe_id": 3686350578570090705,
         "score": 6
       }
     ]
@@ -3386,16 +3404,16 @@
     "slug": "salsa-de-ajo",
     "related_recipes": [
       {
-        "recipe_id": 3788496596900937594,
-        "score": 9
-      },
-      {
         "recipe_id": 3621795706487700397,
         "score": 9
       },
       {
         "recipe_id": 2847759569454913686,
         "score": 9
+      },
+      {
+        "recipe_id": 3620090472056771947,
+        "score": 8
       }
     ]
   },
@@ -3650,15 +3668,15 @@
     "slug": "tortillas-sin-trigo-ni-gluten",
     "related_recipes": [
       {
-        "recipe_id": 3871850009075814535,
-        "score": 7
-      },
-      {
         "recipe_id": 3858090832151088491,
         "score": 7
       },
       {
         "recipe_id": 3644262487139377127,
+        "score": 7
+      },
+      {
+        "recipe_id": 3635570338399134963,
         "score": 7
       }
     ]
@@ -3778,15 +3796,15 @@
     "slug": "crackers-rapidas",
     "related_recipes": [
       {
-        "recipe_id": 3871850009075814535,
-        "score": 5
-      },
-      {
         "recipe_id": 3684890020784221355,
         "score": 5
       },
       {
         "recipe_id": 3675896022925121703,
+        "score": 5
+      },
+      {
+        "recipe_id": 3635570338399134963,
         "score": 5
       }
     ]
@@ -3846,11 +3864,11 @@
         "score": 9
       },
       {
-        "recipe_id": 2847759569454913686,
-        "score": 9
+        "recipe_id": 3513554334329081935,
+        "score": 8
       },
       {
-        "recipe_id": 3513554334329081935,
+        "recipe_id": 3462086018855823603,
         "score": 8
       }
     ]
@@ -3919,11 +3937,11 @@
         "score": 10
       },
       {
-        "recipe_id": 3788496596900937594,
+        "recipe_id": 3645452133613487393,
         "score": 9
       },
       {
-        "recipe_id": 3645452133613487393,
+        "recipe_id": 3549051951318090623,
         "score": 9
       }
     ]
@@ -3985,12 +4003,12 @@
         "score": 15
       },
       {
-        "recipe_id": 3399282333721284895,
-        "score": 14
-      },
-      {
         "recipe_id": 3645452133613487393,
         "score": 13
+      },
+      {
+        "recipe_id": 3686350578570090705,
+        "score": 11
       }
     ]
   },
@@ -4058,7 +4076,7 @@
         "score": 11
       },
       {
-        "recipe_id": 3399282333721284895,
+        "recipe_id": 2897670170547399083,
         "score": 11
       }
     ]
@@ -4105,16 +4123,16 @@
     "slug": "recetas-del-mundo-2",
     "related_recipes": [
       {
-        "recipe_id": 3871850009075814535,
+        "recipe_id": 3584844738130981428,
         "score": 7
       },
       {
-        "recipe_id": 3644262487139377127,
-        "score": 7
+        "recipe_id": 3742112497752006485,
+        "score": 6
       },
       {
-        "recipe_id": 3625171213979661073,
-        "score": 7
+        "recipe_id": 3589641815843205086,
+        "score": 6
       }
     ]
   },
@@ -4218,16 +4236,16 @@
     "slug": "mollejas-al-verdeo",
     "related_recipes": [
       {
-        "recipe_id": 3620090472056771947,
-        "score": 9
-      },
-      {
         "recipe_id": 3717488954980600869,
         "score": 8
       },
       {
-        "recipe_id": 3645452133613487393,
+        "recipe_id": 3518623892089900820,
         "score": 8
+      },
+      {
+        "recipe_id": 3675896022925121703,
+        "score": 7
       }
     ]
   },
@@ -4469,12 +4487,12 @@
     "slug": "recetas-del-mundo-3",
     "related_recipes": [
       {
-        "recipe_id": 3399282333721284895,
+        "recipe_id": 3880537320474983746,
         "score": 11
       },
       {
-        "recipe_id": 3720382646112403703,
-        "score": 10
+        "recipe_id": 3399282333721284895,
+        "score": 11
       },
       {
         "recipe_id": 3686350578570090705,
@@ -4625,7 +4643,7 @@
         "score": 7
       },
       {
-        "recipe_id": 3819676244745536630,
+        "recipe_id": 3876193966899473634,
         "score": 6
       }
     ]
@@ -4750,11 +4768,11 @@
         "score": 9
       },
       {
-        "recipe_id": 3659485693416813984,
+        "recipe_id": 3549051951318090623,
         "score": 9
       },
       {
-        "recipe_id": 3549051951318090623,
+        "recipe_id": 3184703452844334328,
         "score": 9
       }
     ]
@@ -4866,7 +4884,7 @@
         "score": 8
       },
       {
-        "recipe_id": 3736087744675221094,
+        "recipe_id": 3635570338399134963,
         "score": 7
       }
     ]
@@ -4932,7 +4950,7 @@
         "score": 10
       },
       {
-        "recipe_id": 3809505069079861469,
+        "recipe_id": 3880537320474983746,
         "score": 9
       }
     ]
@@ -4972,15 +4990,15 @@
     "slug": "sanitizar-frutas-y-verduras",
     "related_recipes": [
       {
+        "recipe_id": 3878822634893223896,
+        "score": 3
+      },
+      {
+        "recipe_id": 3876193966899473634,
+        "score": 3
+      },
+      {
         "recipe_id": 3871850009075814535,
-        "score": 3
-      },
-      {
-        "recipe_id": 3847199831089887707,
-        "score": 3
-      },
-      {
-        "recipe_id": 3835606867737755462,
         "score": 3
       }
     ]
@@ -5041,7 +5059,7 @@
         "score": 7
       },
       {
-        "recipe_id": 3649339452284465345,
+        "recipe_id": 3639196309442492470,
         "score": 7
       }
     ]
@@ -5096,11 +5114,11 @@
         "score": 10
       },
       {
-        "recipe_id": 3871850009075814535,
+        "recipe_id": 3115859865469710296,
         "score": 8
       },
       {
-        "recipe_id": 3819676244745536630,
+        "recipe_id": 2904750811335808998,
         "score": 8
       }
     ]
@@ -5227,15 +5245,15 @@
     "slug": "galletitas-de-chocolate",
     "related_recipes": [
       {
-        "recipe_id": 3871850009075814535,
-        "score": 9
-      },
-      {
         "recipe_id": 3589641815843205086,
         "score": 9
       },
       {
         "recipe_id": 3373890469131985035,
+        "score": 9
+      },
+      {
+        "recipe_id": 2943337430166528365,
         "score": 9
       }
     ]
@@ -5352,11 +5370,11 @@
         "score": 13
       },
       {
-        "recipe_id": 3399282333721284895,
-        "score": 7
+        "recipe_id": 3749348399670795105,
+        "score": 6
       },
       {
-        "recipe_id": 3841423351726646769,
+        "recipe_id": 3614283436492815155,
         "score": 6
       }
     ]
@@ -5409,15 +5427,15 @@
     "slug": "turron-casero-3",
     "related_recipes": [
       {
+        "recipe_id": 3876193966899473634,
+        "score": 5
+      },
+      {
         "recipe_id": 3792566233661892915,
         "score": 5
       },
       {
         "recipe_id": 3678281787416195252,
-        "score": 5
-      },
-      {
-        "recipe_id": 3654410106436117232,
         "score": 5
       }
     ]
@@ -10872,7 +10890,7 @@
         "score": 7
       },
       {
-        "recipe_id": 3871850009075814535,
+        "recipe_id": 3876193966899473634,
         "score": 6
       }
     ]
@@ -10911,7 +10929,7 @@
         "score": 5
       },
       {
-        "recipe_id": 3871850009075814535,
+        "recipe_id": 3876193966899473634,
         "score": 4
       },
       {
@@ -10956,15 +10974,15 @@
     "slug": "crema-vegana",
     "related_recipes": [
       {
-        "recipe_id": 3871850009075814535,
-        "score": 5
-      },
-      {
-        "recipe_id": 3759500882959312664,
-        "score": 5
-      },
-      {
         "recipe_id": 3644262487139377127,
+        "score": 5
+      },
+      {
+        "recipe_id": 3625171213979661073,
+        "score": 5
+      },
+      {
+        "recipe_id": 3589641815843205086,
         "score": 5
       }
     ]
