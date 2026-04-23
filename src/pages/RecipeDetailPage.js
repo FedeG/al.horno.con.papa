@@ -1,7 +1,7 @@
 import React, { useMemo, useEffect, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
-import { recipesData } from '../data/recipes';
+import { useRecipes } from '../context/RecipesContext';
 import Header from '../components/Header';
 import RecipeDetail from '../components/RecipeDetail';
 import Footer from '../components/Footer';
@@ -15,6 +15,7 @@ import {
 const RecipeDetailPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { recipesData } = useRecipes();
   
   const recipe = useMemo(() => {
     // Buscar por slug primero (strings), luego por ID para retrocompatibilidad
@@ -27,7 +28,7 @@ const RecipeDetailPage = () => {
     // Si es un número, buscar por ID (para retrocompatibilidad)
     const recipeId = parseInt(id);
     return recipesData.find(r => r.id === recipeId);
-  }, [id]);
+  }, [id, recipesData]);
 
   // Track pageview cuando se carga la receta, usando el parámetro id de la URL
   // para que el page_path coincida con la ruta real del browser (slug o ID numérico legacy)
@@ -39,7 +40,7 @@ const RecipeDetailPage = () => {
 
   const relatedRecipes = useMemo(() => 
     findRelatedRecipes(recipesData, recipe),
-    [recipe]
+    [recipe, recipesData]
   );
 
   const handleSelectRecipe = useCallback((selectedRecipe) => {

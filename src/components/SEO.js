@@ -16,11 +16,12 @@ const SEO = ({
   const siteName = 'Al Horno Con Papá - Cocina en familia';
   const defaultImage = 'https://alhornoconpapa.com.ar/og-default.jpg';
   const siteUrl = 'https://alhornoconpapa.com.ar/';
+  const baseUrl = (process.env.PUBLIC_URL || '').replace(/\/$/, '');
   
   const fullTitle = title ? `${title} | Al Horno Con Papá` : siteName;
   const fullDescription = description || 'Al Horno Con Papá - Cocina en familia. Recetas deliciosas compartidas con amor.';
-  const fullImageUrl = imageUrl ? `${siteUrl}/${imageUrl}` : defaultImage;
-  const fullCanonicalUrl = canonicalUrl || siteUrl;
+  const fullImageUrl = (imageUrl ? `${siteUrl}/${imageUrl}` : defaultImage).replace(/\/\//g, '/');
+  const fullCanonicalUrl = (canonicalUrl || siteUrl).replace(/\/\//g, '/');
 
   return (
     <Helmet>
@@ -32,10 +33,11 @@ const SEO = ({
       <link rel="canonical" href={fullCanonicalUrl} />
       
       {/* Preload images para las primeras 3 recetas */}
-      {preloadImages.map((imgUrl, idx) => {
-        const webpUrl = imgUrl.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+      {preloadImages.map((imgUrl) => {
+        const imageUrl = `${baseUrl}/${imgUrl}`.replace(/\/\//g, '/');
+        const webpUrl = imageUrl.replace(/\.(jpg|jpeg|png)$/i, '.webp');
         return (
-          <link key={`preload-${idx}`} rel="preload" as="image" href={`${siteUrl}/${webpUrl}`} type="image/webp" />
+          <link key={webpUrl} rel="preload" as="image" href={webpUrl} type="image/webp" fetchPriority="high" />
         );
       })}
       

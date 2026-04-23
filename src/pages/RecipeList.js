@@ -1,7 +1,8 @@
 import React, { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 
-import { recipesData, featuredTags } from '../data/recipes';
+import { featuredTags } from '../data/recipes';
+import { useRecipes } from '../context/RecipesContext';
 import { Clock } from 'lucide-react';
 import Header from '../components/Header';
 import SearchBar from '../components/SearchBar';
@@ -29,6 +30,7 @@ import { generateCollectionSchema } from '../utils/seoHelpers';
 const RecipeList = () => {
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
+  const { recipesData } = useRecipes();
   
   const [inputValue, setInputValue] = useState(searchParams.get('search') || '');
   const [searchTerm, setSearchTerm] = useState(searchParams.get('search') || '');
@@ -56,19 +58,19 @@ const RecipeList = () => {
   // Extract all unique tags (optimizado - solo se ejecuta una vez)
   const allTags = useMemo(() => 
     extractAllTags(recipesData, featuredTags, selectedTag),
-    [selectedTag]
+    [selectedTag, recipesData]
   );
 
   // Generate autocomplete suggestions (optimizado - detiene búsqueda al llegar a 5)
   const autocompleteSuggestions = useMemo(() => 
     generateAutocompleteSuggestions(inputValue, recipesData),
-    [inputValue]
+    [inputValue, recipesData]
   );
 
   // Filter recipes based on search and tag
   const filteredRecipes = useMemo(() => 
     filterRecipes(recipesData, searchTerm, selectedTag, showEasyOnly),
-    [searchTerm, selectedTag, showEasyOnly]
+    [searchTerm, selectedTag, showEasyOnly, recipesData]
   );
 
   // Track search when searchTerm changes
@@ -121,7 +123,7 @@ const RecipeList = () => {
     const searchType = isIngredient ? 'ingredient' : (isRecipe ? 'recipe' : 'tag');
     
     trackAutocompleteSelection(suggestion, searchType);
-  }, []);
+  }, [recipesData]);
 
   const handleSearchChange = useCallback((value) => {
     setInputValue(value);

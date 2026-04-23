@@ -17,16 +17,6 @@ const includesNormalized = (text, search) => {
     return normalizedText.includes(normalizedSearch);
 };
 
-/**
- * Detecta si el usuario está en un dispositivo móvil
- */
-export const getIsMobileDevice = () => {
-  return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(
-    navigator.userAgent
-  )
-}
-export const isMobileDevice = getIsMobileDevice();
-
 
 /**
  * Extrae todas las tags únicas de las recetas
@@ -172,11 +162,12 @@ export const getInstagramEmbedUrl = (url) => {
  * Obtiene la URL de link de Instagram según el dispositivo
  * @param {string} instagramUrl - URL de Instagram
  * @param {string} shortcode - Shortcode del post
+ * @param {boolean} isMobile - Si es dispositivo móvil (pasado desde useIsMobile hook)
  * @returns {string|null} URL de link o null
  */
-export const getInstagramLinkUrl = (instagramUrl, shortcode) => {
+export const getInstagramLinkUrl = (instagramUrl, shortcode, isMobile) => {
     if (!instagramUrl || !shortcode) return null;
-    if (isMobileDevice) {
+    if (isMobile) {
         return `instagram://media?id=${shortcode}`;
     }
     return instagramUrl;
@@ -185,10 +176,11 @@ export const getInstagramLinkUrl = (instagramUrl, shortcode) => {
 /**
  * Obtiene la URL de perfil de Instagram según el dispositivo
  * @param {string} username - Username de Instagram (sin @)
+ * @param {boolean} isMobile - Si es dispositivo móvil (pasado desde useIsMobile hook)
  * @returns {string} URL de perfil
  */
-export const getInstagramProfileUrl = (username) => {
-    if (isMobileDevice) {
+export const getInstagramProfileUrl = (username, isMobile) => {
+    if (isMobile) {
         return `instagram://user?username=${username}`;
     }
     return `https://www.instagram.com/${username}/`;
@@ -198,10 +190,11 @@ export const getInstagramProfileUrl = (username) => {
  * Obtiene la URL de perfil de Facebook según el dispositivo
  * @param {string} username - Username de Facebook
  * @param {string} pageId - ID de la página de Facebook
+ * @param {boolean} isMobile - Si es dispositivo móvil (pasado desde useIsMobile hook)
  * @returns {string} URL de perfil
  */
-export const getFacebookProfileUrl = (username, pageId) => {
-    if (isMobileDevice) {
+export const getFacebookProfileUrl = (username, pageId, isMobile) => {
+    if (isMobile) {
         return `fb://page/${pageId}`;
     }
     return `https://www.facebook.com/${username}/`;

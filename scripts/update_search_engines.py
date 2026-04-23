@@ -174,6 +174,46 @@ def enviar_a_bing(url_list, api_key):
         print(f"❌ Error al conectar con Bing: {str(e)}\n")
 
 
+def submit_urls_to_indexnow(urls: list[str], api_key: str) -> dict:
+    """
+    Envía una lista de URLs a IndexNow (distribuye a Bing, Yandex y otros).
+    
+    Args:
+        urls: Lista de URLs a indexar
+        api_key: Tu key de Bing Webmaster (es la misma para IndexNow)
+    
+    Returns:
+        dict con status_code y respuesta
+    """
+    endpoint = "https://api.indexnow.org/indexnow"
+    payload = {
+        "host": 'alhornoconpapa.com.ar',
+        "key": api_key,
+        "urlList": urls
+    }
+    
+    response = requests.post(
+        endpoint,
+        headers={"Content-Type": "application/json; charset=utf-8"},
+        data=json.dumps(payload)
+    )
+
+    message = {
+            200: "✅ URLs enviadas correctamente",
+            202: "✅ URLs aceptadas (procesando)",
+            400: "❌ Request inválido — revisá el formato de las URLs",
+            403: "❌ Key inválida o keyLocation no accesible",
+            422: "❌ URLs no pertenecen al host indicado",
+            429: "⚠️ Demasiadas requests — esperá antes de reintentar",
+        }.get(response.status_code, f"⚠️ Respuesta inesperada: {response.text}")
+
+    print(f"📍 Enviando URLs a IndexNow... Status: {response.status_code} - {message}\n")
+    return {
+        "status_code": response.status_code,
+        "message": message
+    }
+
+
 def main():
     """
     Función principal que ejecuta la actualización de ambos buscadores.
@@ -194,6 +234,7 @@ def main():
     # Ejecutar actualizaciones
     solicitar_indexacion_google(urls)
     enviar_a_bing(urls, BING_API_KEY)
+    submit_urls_to_indexnow(urls, BING_API_KEY)
 
     print("=" * 50)
     print("✅ Proceso completado")

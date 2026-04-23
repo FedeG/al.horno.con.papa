@@ -36,7 +36,7 @@
             "--disable-setuid-sandbox"
         ],
         "inlineCss": true,
-        "waitFor": 1000
+        "waitFor": 1500
     },
     "eslintConfig": {
         "extends": [
