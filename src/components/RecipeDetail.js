@@ -1,7 +1,6 @@
 import React, { useMemo, useCallback, useEffect } from 'react';
 import { ArrowLeft, Tag, Sparkles, ChefHat, Instagram, Facebook } from 'lucide-react';
-import { isMobile } from "react-device-detect";
-import { getInstagramEmbedUrl, getInstagramLinkUrl } from '../utils';
+import { getInstagramEmbedUrl, getInstagramLinkUrl, isMobileDevice } from '../utils';
 import { URLS } from '../utils/constants';
 import { 
   trackRecipeView, 
@@ -34,7 +33,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
   }, [embedUrl, recipe.id, recipe.name]);
 
   const instagramLinkUrl = useMemo(() => 
-    getInstagramLinkUrl(recipe.instagramUrl, recipe.shortcode, isMobile),
+    getInstagramLinkUrl(recipe.instagramUrl, recipe.shortcode),
     [recipe.instagramUrl, recipe.shortcode]
   );
 
@@ -139,7 +138,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
             <a
               href={instagramLinkUrl}
               target='_blank'
-              rel={isMobile ? 'noreferrer' : 'noopener noreferrer'}
+              rel={isMobileDevice ? 'noreferrer' : 'noopener noreferrer'}
               className="social-btn instagram"
               aria-label={`Ver esta receta en Instagram: ${recipe.name}`}
               onClick={() => trackSocialClick('instagram', recipe.id, recipe.name)}
@@ -151,7 +150,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
             <a 
               href={recipe.facebookUrl} 
               target="_blank" 
-              rel="noopener noreferrer" 
+              rel={isMobileDevice ? 'noreferrer' : 'noopener noreferrer'}
               className="social-btn facebook"
               aria-label={`Compartir esta receta en Facebook: ${recipe.name}`}
               onClick={() => trackSocialClick('facebook', recipe.id, recipe.name)}

@@ -1,17 +1,16 @@
 import React, { useMemo } from 'react';
 import { ChefHat, Instagram, Facebook, Mail } from 'lucide-react';
-import { isMobile } from 'react-device-detect';
-import { getInstagramProfileUrl, getFacebookProfileUrl } from '../utils';
+import { getInstagramProfileUrl, getFacebookProfileUrl, isMobileDevice } from '../utils';
 import { ORGANIZATION, AUTHOR, SOCIAL_HANDLES, CONTACT } from '../utils/constants';
 
 const Footer = () => {
   const instagramUrl = useMemo(() => 
-    getInstagramProfileUrl(SOCIAL_HANDLES.instagram, isMobile),
+    getInstagramProfileUrl(SOCIAL_HANDLES.instagram),
     []
   );
 
   const facebookUrl = useMemo(() => 
-    getFacebookProfileUrl(SOCIAL_HANDLES.instagram, isMobile, SOCIAL_HANDLES.facebookId),
+    getFacebookProfileUrl(SOCIAL_HANDLES.instagram, SOCIAL_HANDLES.facebookId),
     []
   );
   return (
@@ -30,10 +29,10 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Seguinos</h4>
           <div className="social-icons">
-            <a href={instagramUrl} target="_blank" rel={isMobile ? 'noreferrer' : 'noopener noreferrer'} className="social-icon instagram" aria-label="Seguir en Instagram">
+            <a href={instagramUrl} target="_blank" rel={isMobileDevice ? 'noreferrer' : 'noopener noreferrer'} className="social-icon instagram" aria-label="Seguir en Instagram">
               <Instagram size={20} />
             </a>
-            <a href={facebookUrl} target="_blank" rel={isMobile ? 'noreferrer' : 'noopener noreferrer'} className="social-icon facebook" aria-label="Seguir en Facebook">
+            <a href={facebookUrl} target="_blank" rel={isMobileDevice ? 'noreferrer' : 'noopener noreferrer'} className="social-icon facebook" aria-label="Seguir en Facebook">
               <Facebook size={20} />
             </a>
           </div>
