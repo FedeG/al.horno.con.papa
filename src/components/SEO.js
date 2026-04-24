@@ -34,7 +34,11 @@ const SEO = ({
       
       {/* Preload images para las primeras 3 recetas */}
       {preloadImages.map((imgUrl) => {
-        const imageUrl = `${baseUrl}/${imgUrl}`.replace(/\/\//g, '/');
+        const rawImageUrl = imgUrl || '';
+        const isAbsoluteImageUrl = /^(?:[a-z]+:)?\/\//i.test(rawImageUrl);
+        const imageUrl = isAbsoluteImageUrl
+          ? rawImageUrl
+          : `${baseUrl}/${rawImageUrl.replace(/^\/+/, '')}`;
         const webpUrl = imageUrl.replace(/\.(jpg|jpeg|png)$/i, '.webp');
         return (
           <link key={webpUrl} rel="preload" as="image" href={webpUrl} type="image/webp" fetchPriority="high" />
