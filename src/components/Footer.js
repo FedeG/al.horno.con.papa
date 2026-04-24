@@ -1,18 +1,20 @@
 import React, { useMemo } from 'react';
 import { ChefHat, Instagram, Facebook, Mail } from 'lucide-react';
-import { isMobile } from 'react-device-detect';
 import { getInstagramProfileUrl, getFacebookProfileUrl } from '../utils';
 import { ORGANIZATION, AUTHOR, SOCIAL_HANDLES, CONTACT } from '../utils/constants';
+import { useIsMobile } from '../hooks/useIsMobile';
 
 const Footer = () => {
+  const isMobile = useIsMobile();
+
   const instagramUrl = useMemo(() => 
     getInstagramProfileUrl(SOCIAL_HANDLES.instagram, isMobile),
-    []
+    [isMobile]
   );
 
   const facebookUrl = useMemo(() => 
-    getFacebookProfileUrl(SOCIAL_HANDLES.instagram, isMobile, SOCIAL_HANDLES.facebookId),
-    []
+    getFacebookProfileUrl(SOCIAL_HANDLES.instagram, SOCIAL_HANDLES.facebookId, isMobile),
+    [isMobile]
   );
   return (
     <footer className="footer">

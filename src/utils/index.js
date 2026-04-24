@@ -17,6 +17,7 @@ const includesNormalized = (text, search) => {
     return normalizedText.includes(normalizedSearch);
 };
 
+
 /**
  * Extrae todas las tags únicas de las recetas
  * @param {Array} recipes - Array de recetas
@@ -161,7 +162,7 @@ export const getInstagramEmbedUrl = (url) => {
  * Obtiene la URL de link de Instagram según el dispositivo
  * @param {string} instagramUrl - URL de Instagram
  * @param {string} shortcode - Shortcode del post
- * @param {boolean} isMobile - Si es dispositivo móvil
+ * @param {boolean} isMobile - Si es dispositivo móvil (pasado desde useIsMobile hook)
  * @returns {string|null} URL de link o null
  */
 export const getInstagramLinkUrl = (instagramUrl, shortcode, isMobile) => {
@@ -175,7 +176,7 @@ export const getInstagramLinkUrl = (instagramUrl, shortcode, isMobile) => {
 /**
  * Obtiene la URL de perfil de Instagram según el dispositivo
  * @param {string} username - Username de Instagram (sin @)
- * @param {boolean} isMobile - Si es dispositivo móvil
+ * @param {boolean} isMobile - Si es dispositivo móvil (pasado desde useIsMobile hook)
  * @returns {string} URL de perfil
  */
 export const getInstagramProfileUrl = (username, isMobile) => {
@@ -188,10 +189,11 @@ export const getInstagramProfileUrl = (username, isMobile) => {
 /**
  * Obtiene la URL de perfil de Facebook según el dispositivo
  * @param {string} username - Username de Facebook
- * @param {boolean} isMobile - Si es dispositivo móvil
+ * @param {string} pageId - ID de la página de Facebook
+ * @param {boolean} isMobile - Si es dispositivo móvil (pasado desde useIsMobile hook)
  * @returns {string} URL de perfil
  */
-export const getFacebookProfileUrl = (username, isMobile, pageId) => {
+export const getFacebookProfileUrl = (username, pageId, isMobile) => {
     if (isMobile) {
         return `fb://page/${pageId}`;
     }

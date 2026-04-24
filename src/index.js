@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import './index.css';
 import App from './App';
+import { RecipesProvider } from './context/RecipesContext';
 import { initGA } from './utils/analytics';
 
 // Inicializar Google Analytics
@@ -14,7 +15,9 @@ const app = (
   <React.StrictMode>
     <HelmetProvider>
       <BrowserRouter>
-        <App />
+        <RecipesProvider>
+          <App />
+        </RecipesProvider>
       </BrowserRouter>
     </HelmetProvider>
   </React.StrictMode>
