@@ -87,16 +87,33 @@ const RecipeList = () => {
     [filteredRecipes, currentPage]
   );
 
-  // Sync page from URL and reset to 1 when filters change (but not on initial load)
+  // Reset to page 1 when filters change (but not on initial load)
   useEffect(() => {
     if (!isInitialLoad.current) {
-      const pageFromUrl = parseInt(searchParams.get('page')) || 1;
-      setCurrentPage(pageFromUrl);
+      setCurrentPage(1);
     } else {
       isInitialLoad.current = false;
     }
-  }, [searchTerm, selectedTag, showEasyOnly, searchParams]);
+  }, [searchTerm, selectedTag, showEasyOnly]);
 
+  // Sync page from URL
+  useEffect(() => {
+    const rawPage = parseInt(searchParams.get('page'), 10);
+    const pageFromUrl = Number.isNaN(rawPage) || rawPage < 1 ? 1 : rawPage;
+
+    setCurrentPage((prevPage) => (
+      prevPage === pageFromUrl ? prevPage : pageFromUrl
+    ));
+  }, [searchParams]);
+
+  // Clamp current page when filtered results reduce the available pages
+  useEffect(() => {
+    const maxPage = totalPages > 0 ? totalPages : 1;
+
+    if (currentPage > maxPage) {
+      setCurrentPage(maxPage);
+    }
+  }, [currentPage, totalPages]);
   // Update URL params when filters change
   useEffect(() => {
     const params = {};
