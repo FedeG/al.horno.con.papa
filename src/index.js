@@ -12,7 +12,7 @@ initGA();
 
 const rootElement = document.getElementById('root');
 const app = (
-  <React.StrictMode>
+  <React.StrictMode suppressHydrationWarning>
     <HelmetProvider>
       <BrowserRouter>
         <RecipesProvider>
