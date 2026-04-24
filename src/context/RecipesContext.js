@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext } from 'react';
 import recipesData from '../data/recipes.json';
 
 const RecipesContext = createContext();
