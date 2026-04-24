@@ -192,11 +192,20 @@ def submit_urls_to_indexnow(urls: list[str], api_key: str) -> dict:
         "urlList": urls
     }
     
-    response = requests.post(
-        endpoint,
-        headers={"Content-Type": "application/json; charset=utf-8"},
-        data=json.dumps(payload)
-    )
+    try:
+        response = requests.post(
+            endpoint,
+            headers={"Content-Type": "application/json; charset=utf-8"},
+            data=json.dumps(payload),
+            timeout=(5, 30)
+        )
+    except requests.exceptions.RequestException as e:
+        message = f"❌ Error al enviar URLs a IndexNow: {e}"
+        print(f"📍 Enviando URLs a IndexNow... Status: 0 - {message}\n")
+        return {
+            "status_code": 0,
+            "message": message
+        }
 
     message = {
             200: "✅ URLs enviadas correctamente",
