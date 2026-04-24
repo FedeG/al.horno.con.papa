@@ -4,7 +4,11 @@ import { Clock } from 'lucide-react';
 const RecipeCard = ({ recipe, onClick, isHighPriority = false }) => {
   const handleClick = () => onClick(recipe);
   const baseUrl = (process.env.PUBLIC_URL || '').replace(/\/$/, '');
-  const imageUrl = `${baseUrl}/${recipe.imageUrl}`.replace(/\/\//g, '/');
+  const rawImageUrl = recipe.imageUrl || '';
+  const isAbsoluteImageUrl = /^(?:[a-z]+:)?\/\//i.test(rawImageUrl);
+  const imageUrl = isAbsoluteImageUrl
+    ? rawImageUrl
+    : `${baseUrl}/${rawImageUrl.replace(/^\/+/, '')}`;
   const webpUrl = imageUrl.replace(/\.(jpg|jpeg|png)$/i, '.webp');
 
   return (
