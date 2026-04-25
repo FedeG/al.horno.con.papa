@@ -211,14 +211,14 @@ const RecipeList = () => {
               : 'No encontramos recetas con esos filtros'}
           </h2>
           <button 
-            className={`easy-filter-btn ${showEasyOnly ? 'active' : ''}`}
+            className={['easy-filter-btn', showEasyOnly ? 'active' : ''].filter(Boolean).join(' ')}
             onClick={() => {
               const newValue = !showEasyOnly;
               setShowEasyOnly(newValue);
               trackEasyFilterToggle(newValue);
             }}
           >
-            <Clock size={16} /> Solo Rápidas y Fáciles
+            <Clock size={16} suppressHydrationWarning/> Solo Rápidas y Fáciles
           </button>
         </div>
       </div>

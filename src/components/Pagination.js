@@ -26,7 +26,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
         onClick={handlePrevious}
         disabled={currentPage === 1}
       >
-        <ChevronLeft size={20} /> Anterior
+        <ChevronLeft size={20} suppressHydrationWarning/> Anterior
       </button>
 
       <div className="pagination-numbers">
@@ -42,7 +42,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
           return (
             <button
               key={page}
-              className={`pagination-number ${currentPage === page ? 'active' : ''}`}
+              className={`pagination-number${currentPage === page ? ' active' : ''}`}
               onClick={() => onPageChange(page)}
             >
               {page}
@@ -56,7 +56,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
         onClick={handleNext}
         disabled={currentPage === totalPages}
       >
-        Siguiente <ChevronRight size={20} />
+        Siguiente <ChevronRight size={20} suppressHydrationWarning/>
       </button>
     </div>
   );

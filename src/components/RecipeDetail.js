@@ -86,7 +86,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
       <main>
       <div className="detail-header">
         <button className="back-btn" onClick={onBack} aria-label="Volver al listado de recetas">
-          <ArrowLeft size={24} />
+          <ArrowLeft size={24} suppressHydrationWarning/>
         </button>
         <h1>{recipe.name}</h1>
       </div>
@@ -108,14 +108,14 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
           <div className="tags-container">
             {recipe.tags.map((tag, idx) => (
               <span key={idx} className="detail-tag" onClick={() => handleTagClick(tag)} style={{ cursor: 'pointer' }}>
-                <Tag size={14} /> {tag}
+                <Tag size={14} suppressHydrationWarning/>{` ${tag}`}
               </span>
             ))}
           </div>
         </div>
 
         <div className="detail-section">
-          <h2><Sparkles size={20} /> Descripción</h2>
+          <h2><Sparkles size={20} suppressHydrationWarning/> Descripción</h2>
           <p className="description">
             {descriptionLines.map((line, idx) => (
               <React.Fragment key={idx}>
@@ -127,7 +127,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
         </div>
 
         <div className="detail-section">
-          <h2><ChefHat size={20} /> Ingredientes</h2>
+          <h2><ChefHat size={20} suppressHydrationWarning/> Ingredientes</h2>
           <ul className="ingredients-list">
             {recipe.ingredients.map((ingredient, idx) => (
               <li key={idx}>{ingredient}</li>
@@ -145,7 +145,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
               aria-label={`Ver esta receta en Instagram: ${recipe.name}`}
               onClick={() => trackSocialClick('instagram', recipe.id, recipe.name)}
             >
-              <Instagram size={20} /> Ver en Instagram
+              <Instagram size={20} suppressHydrationWarning/> Ver en Instagram
             </a>
           )}
           {recipe.facebookUrl && (
@@ -157,7 +157,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
               aria-label={`Compartir esta receta en Facebook: ${recipe.name}`}
               onClick={() => trackSocialClick('facebook', recipe.id, recipe.name)}
             >
-              <Facebook size={20} /> Compartir en Facebook
+              <Facebook size={20} suppressHydrationWarning/> Compartir en Facebook
             </a>
           )}
         </div>

@@ -18,9 +18,8 @@ const Header = () => {
           className="logo" 
           onClick={handleLogoClick}
           aria-label="Volver al inicio"
-          style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
         >
-          <ChefHat size={64} />
+          <ChefHat size={64} suppressHydrationWarning/>
           <div className="title">
             <h1>{HEADER.title}</h1>
             <p className="subtitle">{HEADER.subtitle}</p>

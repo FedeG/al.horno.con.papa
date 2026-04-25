@@ -28,6 +28,10 @@
   margin-bottom: 8px;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
 
 .logo h1 {

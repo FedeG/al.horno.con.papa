@@ -24,7 +24,8 @@
         "eject": "react-scripts eject",
         "predeploy": "yarn build",
         "deploy": "gh-pages -d build",
-        "analyze": "npx cra-bundle-analyzer"
+        "analyze": "npx cra-bundle-analyzer",
+        "debug:hydrate": "node scripts/debug-hydration.js"
     },
     "reactSnap": {
         "source": "build",
@@ -57,6 +58,7 @@
     },
     "devDependencies": {
         "cra-bundle-analyzer": "^0.1.1",
+        "express": "^5.2.1",
         "gh-pages": "^6.1.0",
         "source-map-explorer": "^2.5.3",
         "webpack-bundle-analyzer": "^5.3.0"

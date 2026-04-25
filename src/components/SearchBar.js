@@ -48,6 +48,7 @@ const SearchBar = ({
             size={20} 
             style={{ cursor: 'pointer' }}
             onClick={handleSearchIconClick}
+            suppressHydrationWarning
           />
           <input
             type="text"
@@ -62,7 +63,7 @@ const SearchBar = ({
               className="clear-btn" 
               onClick={handleClear}
             >
-              <X size={18} />
+              <X size={18} suppressHydrationWarning/>
             </button>
           )}
         </div>
@@ -75,7 +76,7 @@ const SearchBar = ({
                 className="autocomplete-item"
                 onClick={() => handleSuggestionClick(suggestion)}
               >
-                <Search size={16} />
+                <Search size={16} suppressHydrationWarning/>
                 <span>{suggestion}</span>
               </div>
             ))}

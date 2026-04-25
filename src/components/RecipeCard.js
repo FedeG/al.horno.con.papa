@@ -26,7 +26,7 @@ const RecipeCard = ({ recipe, onClick, isHighPriority = false }) => {
         </picture>
         {recipe.easy && (
           <div className="card-overlay">
-            <Clock size={16} /> Rápido y Fácil
+            <Clock size={16} suppressHydrationWarning/> Rápido y Fácil
           </div>
         )}
       </div>

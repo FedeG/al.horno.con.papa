@@ -22,7 +22,7 @@ const TagFilter = ({ allTags, selectedTag, onSelectTag, featuredTags = [] }) => 
   return (
     <div className="tags-container-wrapper">
       <button className="scroll-btn left" onClick={scrollLeft} aria-label="Scroll izquierda">
-        <ChevronLeft size={18} />
+        <ChevronLeft size={18} suppressHydrationWarning/>
       </button>
       <div className="tags-scroll" ref={scrollContainerRef}>
         {allTags.map((tag) => {
@@ -30,17 +30,17 @@ const TagFilter = ({ allTags, selectedTag, onSelectTag, featuredTags = [] }) => 
           return (
             <button
               key={tag}
-              className={`tag-chip ${selectedTag === tag ? 'active' : ''} ${isFeatured ? 'featured' : ''}`}
+              className={['tag-chip', selectedTag === tag ? 'active' : '', isFeatured ? 'featured' : ''].filter(Boolean).join(' ')}
               onClick={() => onSelectTag(tag)}
             >
-              {isFeatured && <Star size={14} className="featured-icon" fill="currentColor" />}
+              {isFeatured && <Star size={14} className="featured-icon" fill="currentColor" suppressHydrationWarning/>}
               {tag}
             </button>
           );
         })}
       </div>
       <button className="scroll-btn right" onClick={scrollRight} aria-label="Scroll derecha">
-        <ChevronRight size={18} />
+        <ChevronRight size={18} suppressHydrationWarning/>
       </button>
     </div>
   );

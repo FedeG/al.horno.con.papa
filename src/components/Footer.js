@@ -21,7 +21,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section">
           <div className="footer-logo">
-            <ChefHat size={32} />
+            <ChefHat size={32} suppressHydrationWarning/>
             <h3>{ORGANIZATION.name}</h3>
           </div>
           <p className="footer-desc">{AUTHOR.bio}</p>
@@ -33,10 +33,10 @@ const Footer = () => {
           <h4>Seguinos</h4>
           <div className="social-icons">
             <a href={instagramUrl} target="_blank" rel={isMobile ? 'noreferrer' : 'noopener noreferrer'} className="social-icon instagram" aria-label="Seguir en Instagram">
-              <Instagram size={20} />
+              <Instagram size={20} suppressHydrationWarning/>
             </a>
             <a href={facebookUrl} target="_blank" rel={isMobile ? 'noreferrer' : 'noopener noreferrer'} className="social-icon facebook" aria-label="Seguir en Facebook">
-              <Facebook size={20} />
+              <Facebook size={20} suppressHydrationWarning/>
             </a>
           </div>
         </div>
@@ -45,7 +45,7 @@ const Footer = () => {
           <h4>Contacto</h4>
           <div className="contact-info">
             <a href={`mailto:${CONTACT.email}`} className="contact-link">
-              <Mail size={18} />
+              <Mail size={18} suppressHydrationWarning/>
               {CONTACT.email}
             </a>
           </div>
@@ -53,7 +53,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2026 {ORGANIZATION.name}. Todos los derechos reservados.</p>
+        <p>{`© 2026 ${ORGANIZATION.name}. Todos los derechos reservados.`}</p>
       </div>
     </footer>
   );
