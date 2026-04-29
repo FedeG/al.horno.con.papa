@@ -1,5 +1,75 @@
 [
   {
+    "id": 3884166691706281534,
+    "name": "🥣 Vichyssoise (sopa de Ratatouille) 🥣",
+    "description": "🥣 Vichyssoise (sopa de Ratatouille) 🥣\n\nLa famosa sopa de Remy 🐭 de Ratatouille.\nCremosa, suave y perfecta para cualquier día porque se puede comer fría o caliente 👨🏻‍🍳\n\n⏳ Tiempo: 35 minutos ⏳\n\n🥣 Ingredientes 🥣\n• 3 puerros grandes\n• 1 cebolla\n• 2 papas medianas\n• 1 diente de ajo\n• 1 cucharada de manteca\n• 1 cucharada de aceite\n• 1 litro de caldo de pollo\n• 200 ml de crema de leche (1 taza aprox)\n• Sal y pimienta\n\n✨ Opcional para terminar ✨\n• Queso en cubitos\n• Semillas\n• Croutones\n• Aceite de oliva\n\n👣 Pasos 👣\n• En una olla a fuego medio-alto ponemos la manteca, el aceite y salteamos el ajo, la cebolla y el puerro cortado\n• Condimentamos con pimienta y cocinamos hasta que la cebolla esté transparente\n• Agregamos las papas en cubos y mezclamos bien\n• Cubrimos con el caldo de pollo y agregamos sal\n• Cocinamos hasta que la papa esté tierna\n• Procesamos o licuamos todo hasta lograr una textura bien cremosa\n• A fuego pero ahora medio-bajo y agregamos la crema de leche\n• Mezclamos bien hasta integrar y calentamos unos minutos más\n\n💡 Tip 💡\n• Si te gusta más liviana, podés agregar un poco más de caldo\n• Se puede comer caliente o fría, las dos formas quedan espectaculares\n• Ajustá la sal al final para no pasarte\n\n🥄 Cremosa, suave y lista para disfrutar 🥄\n\nSeguime para más recetas caseras y fáciles\n\n",
+    "tags": [
+      "Sopas",
+      "Internacional",
+      "Invierno",
+      "Papa",
+      "Sin gluten",
+      "Vegetariano",
+      "Verduras"
+    ],
+    "instagramUrl": "https://www.instagram.com/reel/DXnVQbjjp4-/",
+    "facebookUrl": "",
+    "imageUrl": "images/DXnVQbjjp4-.jpg",
+    "ingredients": [
+      "3 puerros grandes",
+      "1 cebolla",
+      "2 papas medianas",
+      "1 diente de ajo",
+      "1 cucharada de manteca",
+      "1 cucharada de aceite",
+      "1 litro de caldo de pollo",
+      "200 ml de crema de leche (1 taza aprox)",
+      "Sal y pimienta",
+      "Queso en cubitos",
+      "Semillas",
+      "Croutones",
+      "Aceite de oliva"
+    ],
+    "date": "2026-04-26T21:14:00-03:00",
+    "easy": false,
+    "hidden": false,
+    "shortcode": "DXnVQbjjp4-",
+    "cleaned_ingredientes": [
+      "aceite",
+      "aceite de oliva",
+      "ajo",
+      "caldo",
+      "cebolla",
+      "crema",
+      "crouton",
+      "manteca",
+      "papa",
+      "pimienta",
+      "puerro",
+      "queso",
+      "sal",
+      "semilla"
+    ],
+    "slug": "vichyssoise-sopa-de-ratatouille",
+    "related_recipes": [
+      {
+        "recipe_id": 3869698535436761209,
+        "recipe_name": "🍲 Sopa de pollo 🍲",
+        "score": 8
+      },
+      {
+        "recipe_id": 3357907319144106329,
+        "recipe_name": "🍲 Guiso de Lentejas 🥔🥕",
+        "score": 8
+      },
+      {
+        "recipe_id": 3157191918159734942,
+        "recipe_name": "🎃 Sopa Crema de Calabaza 🎃",
+        "score": 8
+      }
+    ]
+  },
+  {
     "id": 3880537320474983746,
     "name": "🌯 Canelones de carne 🌯",
     "description": "🌯 Canelones de carne 🌯\n\nAprovechando mi receta de panqueques\n\n⏳ Tiempo: 40 minutos ⏳\n\n🥣 Ingredientes 🥣\n• Panqueques (ver receta anterior)\n• 500 g de carne picada\n• 1 cebolla\n• ½ morrón\n• 1 zanahoria\n• 2 dientes de ajo\n• 250g de espinaca\n• 1 cucharada de pimentón\n• 1 cucharada de ají molido\n• Sal\n• Pimienta\n• Salsa de tomate\n• Salsa blanca\n• Queso\n\n👣 Pasos 👣\n• En una sartén con aceite salteamos el ajo, la cebolla, el morrón y la zanahoria con pimentón y ají molido\n• Cuando la cebolla esté transparente agregamos la espinaca y cocinamos hasta que reduzca\n• Sumamos la carne picada, salpimentamos y cocinamos hasta que esté bien hecha\n• Retiramos y dejamos enfriar. Si tenés mucho líquido escurrirlo un poco.\n• Rellenamos los panqueques con la mezcla y enrollamos\n• En una fuente para horno colocamos una base de salsa de tomate\n• Acomodamos los canelones y cubrimos con más salsa\n• Agregamos salsa blanca (podés pedirme la receta que ya la tengo subida) por arriba y terminamos con queso rallado\n• Llevamos a horno fuerte por 10 minutos hasta gratinar\n\n💡 Tip 💡\n• Podés sumar un poco de queso al relleno para que quede más cremoso\n• Si te sobra relleno, va perfecto para empanadas, pastel de papa o tartas\n• Gratinar bien al final le da ese toque clave\n\n🧀 Bien gratinados y listos para la cena 🧀\n\nSeguime para más recetas caseras y fáciles\n\n",
@@ -1342,7 +1412,7 @@
       "Mermelada",
       "Postres",
       "Vegano",
-      "Vegentariano"
+      "Vegetariano"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DQsbiJljqcY/",
     "facebookUrl": "",
@@ -3247,7 +3317,7 @@
     "description": "🍅 Tomates cherries confitados 🍅\n\nUna receta simple, rápida y deliciosa acompañar cualquier plato.\nIdeal para tener siempre en la heladera y usar en pizzas, tostadas o ensaladas de otro nivel 😎\n\n⏳ Tiempo: 25 minutos ⏳\n🥫 Conservación: hasta 1 semana en heladera\n\n🥣 Ingredientes 🥣\n• Tomates cherry (la cantidad que quieras)\n• 2 a 3 dientes de ajo partidos al medio\n• Orégano seco\n• Sal y pimienta\n• Aceite de oliva\n\n👣 Pasos 👣\n• En una fuente para horno colocá los tomates cherry lavados.\n• Sumá los dientes de ajo, orégano, sal, pimienta y un buen chorro de aceite de oliva.\n• Llevá a horno fuerte (200/250°C aprox) por unos 20 minutos, hasta que se empiecen a arrugar y largar jugo.\n• Dejalos enfriar y guardalos en un frasco con tapa en la heladera.\n• Se conservan en la heladera hasta una semana.\n\n✨ Podes usarlos en:\n• Pizzas caseras\n• Ensaladas frescas\n• Tostadas con queso crema o ricota\n• Tacos\n• O para lo que se te ocurra\n\n",
     "tags": [
       "Vegano",
-      "Vegentariano"
+      "Vegetariano"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DKlDuWWO_DB/",
     "facebookUrl": "",
@@ -5130,7 +5200,7 @@
       "Facil",
       "Pasta",
       "Vegano",
-      "Vegentariano",
+      "Vegetariano",
       "Verduras"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DGWtpCDuzBm/",
