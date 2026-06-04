@@ -1,5 +1,174 @@
 [
   {
+    "id": 3902279073337575125,
+    "name": "🍛 Pollo al curry 🍛",
+    "description": "🍛 Pollo al curry 🍛\n\nUna receta llena de sabor, cremosa y perfecta para acompañar con arroz o pan naan\nFácil de hacer y lista en pocos minutos\n\n⏳ Tiempo: 25 minutos ⏳\n\n🥣 Ingredientes 🥣\n\n• 2 pechugas de pollo\n• 2 dientes de ajo\n• 1 taza de tomate triturado\n• 1 pote de yogur natural (200g aprox)\n• 1 cucharada de curry\n• 1 cucharada de pimentón\n• Sal y pimienta\n\n✨ Para acompañar ✨\n\n• Arroz blanco\n• Pan naan\n• Perejil fresco\n\n👣 Pasos 👣\n\n• Cortamos el pollo en cubos y condimentamos con sal y pimienta\n• En una sartén a fuego alto ponemos un chorrito de aceite\n• Cuando esté caliente agregamos el pollo y cocinamos hasta dorar\n• Retiramos y reservamos\n• En la misma sartén agregamos el ajo picado, el pimentón y el curry\n• Cocinamos unos segundos para que largue todo el aroma\n• Sumamos el tomate triturado y dejamos que tome temperatura\n• Agregamos el yogur natural y mezclamos bien\n• Volvemos a incorporar el pollo\n• Cocinamos a fuego medio-bajo mientras revolvemos hasta que la salsa espese un poco\n\n💡 Tip 💡\n\n• También podés hacerlo con leche de coco para una versión más clásica\n• El curry cambia mucho según la mezcla de especias, así que ajustalo a tu gusto\n• Queda excelente con arroz blanco, pan naan o incluso unas papas\n\n🍚 Bien calentito y lleno de sabor 🍚\n👉 La receta del yogur y del pan naan ya la subí, pedímela en comentarios\n\nSeguime para más recetas fáciles y caseras\n\n",
+    "tags": [
+      "Internacional",
+      "Arroz",
+      "Pollo"
+    ],
+    "instagramUrl": "https://www.instagram.com/reel/DYnriRcugbV/",
+    "facebookUrl": "",
+    "imageUrl": "images/DYnriRcugbV.jpg",
+    "ingredients": [
+      "2 pechugas de pollo",
+      "2 dientes de ajo",
+      "1 taza de tomate triturado",
+      "1 pote de yogur natural (200g aprox)",
+      "1 cucharada de curry",
+      "1 cucharada de pimentón",
+      "Sal y pimienta",
+      "Arroz blanco",
+      "Pan naan",
+      "Perejil fresco"
+    ],
+    "date": "2026-05-21T20:59:45-03:00",
+    "easy": false,
+    "hidden": false,
+    "shortcode": "DYnriRcugbV",
+    "cleaned_ingredientes": [
+      "ajo",
+      "arroz",
+      "curry",
+      "pan naan",
+      "pechugas de pollo",
+      "pollo",
+      "perejil",
+      "pimentón",
+      "pimienta",
+      "yogur",
+      "sal",
+      "tomate"
+    ],
+    "slug": "pollo-al-curry",
+    "related_recipes": [
+      {
+        "recipe_id": 3809505069079861469,
+        "recipe_name": "🍔 Hamburguesas de pollo 🍔",
+        "score": 8
+      },
+      {
+        "recipe_id": 3707323832187256597,
+        "recipe_name": "🍗 Pechuga a la plancha 🍗",
+        "score": 7
+      },
+      {
+        "recipe_id": 3614283436492815155,
+        "recipe_name": "🍚 Arroz con pollo 🍗",
+        "score": 7
+      }
+    ]
+  },
+  {
+    "id": 3896488480963465982,
+    "name": "🍳 Huevos revueltos 🍳",
+    "description": "🍳 Huevos revueltos 🍳\n\nUn desayuno simple, rápido y perfecto para arrancar el día\nY esta vez, hechos por Feli 😄\n\n⏳ Tiempo: 5 minutos ⏳\n\n🥣 Ingredientes 🥣\n\n• 3 huevos\n• 20g de manteca\n• Una pizca de sal\n\n✨ Opcional ✨\n\n• Un chorrito de leche\n\n👣 Pasos 👣\n\n• En un bowl rompemos los huevos y agregamos la sal\n• Sumamos un chorrito de leche si queremos que queden más cremosos\n• Mezclamos bien hasta integrar\n• En una sartén a fuego medio-bajo ponemos la manteca\n• Cuando esté derretida agregamos los huevos\n• Vamos moviendo constantemente para que se cocinen parejo\n• Los retiramos antes del punto final porque siguen cocinándose con el calor residual\n\n💡 Tip 💡\n\n• Cocinarlos a fuego bajo hace que queden más cremosos\n• Si los dejás demasiado tiempo en el fuego se secan rápido\n• Quedan excelentes con pan tostado y un té o café\n\n🍞 Desayuno rápido, casero y bien rico 🍞\n\nSeguime para más recetas fáciles y caseras\n\n",
+    "tags": [
+      "Desayuno y merienda",
+      "Huevos"
+    ],
+    "instagramUrl": "https://www.instagram.com/reel/DYTG6EDOpL-/",
+    "facebookUrl": "",
+    "imageUrl": "images/DYTG6EDOpL-.jpg",
+    "ingredients": [
+      "3 huevos",
+      "20g de manteca",
+      "Una pizca de sal",
+      "Un chorrito de leche"
+    ],
+    "date": "2026-05-13T21:14:52-03:00",
+    "easy": true,
+    "hidden": false,
+    "shortcode": "DYTG6EDOpL-",
+    "cleaned_ingredientes": [
+      "leche",
+      "huevo",
+      "manteca",
+      "sal"
+    ],
+    "slug": "huevos-revueltos",
+    "related_recipes": [
+      {
+        "recipe_id": 3589641815843205086,
+        "recipe_name": "🍎 Crumble de manzana 🍏",
+        "score": 5
+      },
+      {
+        "recipe_id": 3522956054784141513,
+        "recipe_name": "🍰 Bizcochuelo de zapallo 🎃",
+        "score": 5
+      },
+      {
+        "recipe_id": 3505559748113702321,
+        "recipe_name": "🧅 Tortilla de zapallito 🥕",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 3886363710766726947,
+    "name": "🥛 Lactonesa 🥛",
+    "description": "🥛 Lactonesa 🥛\n\nUna mayonesa sin huevo, fácil, rápida y súper versátil\nTe dejo dos versiones: con perejil y picante\n\n⏳ Tiempo: 5 minutos ⏳\n\n🥣 Ingredientes 🥣\n• media taza de leche\n• 1 taza de aceite (el doble que de leche)\n• 1 diente de ajo\n• Jugo de medio limón\n• Sal\n• Pimienta negra\n\n🌿 Versión con perejil 🌿\n• Un puñado de perejil fresco\n\n🌶 Versión picante 🌶\n• Pimentón ahumado\n• Ají molido\n• Locoto o ají picante\n\n👣 Pasos 👣\n• En un vaso de licuadora o mixer colocamos la leche, el aceite, el ajo, el jugo de limón, sal y pimienta\n• Procesamos sin mover hasta que emulsione y después movemos sin problema\n• Una vez lista, ya tenemos la lactonesa base\n• Para la versión con perejil, agregamos el perejil y procesamos nuevamente\n• Para la versión picante, sumamos pimentón ahumado, ají molido y locoto picante y volvemos a procesar\n• Pasamos a un frasco limpio y llevamos a la heladera\n\n💡 Tip 💡\n• Es clave respetar la proporción: el doble de aceite que de leche, a menos aceite más líquida queda y a las aceite más se pone firme\n• Usá aceite neutro para no tapar sabores\n• Dura hasta 1 semana en heladera bien cerrada\n\n🥪 Ideal para sándwiches, picadas o cualquier comida 🥪\n\nSeguime para más recetas fáciles y caseras\n\n",
+    "tags": [
+      "Vegetariano",
+      "Salsas",
+      "Picante"
+    ],
+    "instagramUrl": "https://www.instagram.com/reel/DXvIzRAOD8j/",
+    "facebookUrl": "",
+    "imageUrl": "images/DXvIzRAOD8j.jpg",
+    "ingredients": [
+      "media taza de leche",
+      "1 taza de aceite (el doble que de leche)",
+      "1 diente de ajo",
+      "Jugo de medio limón",
+      "Sal",
+      "Pimienta negra",
+      "Un puñado de perejil fresco",
+      "Pimentón ahumado",
+      "Ají molido",
+      "Locoto o ají picante"
+    ],
+    "date": "2026-04-29T22:01:07-03:00",
+    "easy": true,
+    "hidden": false,
+    "shortcode": "DXvIzRAOD8j",
+    "cleaned_ingredientes": [
+      "aceite",
+      "ajo",
+      "ají molido",
+      "ají picante",
+      "picante",
+      "leche",
+      "locoto",
+      "limón",
+      "pimentón",
+      "pimienta",
+      "pimienta negra",
+      "perejil",
+      "sal"
+    ],
+    "slug": "lactonesa-2",
+    "related_recipes": [
+      {
+        "recipe_id": 3717488954980600869,
+        "recipe_name": "🥩 Hígado encebollado 🧅",
+        "score": 6
+      },
+      {
+        "recipe_id": 3704394110262278412,
+        "recipe_name": "🌶 Salsa Sweet Chili 🌶",
+        "score": 6
+      },
+      {
+        "recipe_id": 3696179700699961881,
+        "recipe_name": "🫑🍅 Salsa Criolla 🧅🍶",
+        "score": 6
+      }
+    ]
+  },
+  {
     "id": 3884166691706281534,
     "name": "🥣 Vichyssoise (sopa de Ratatouille) 🥣",
     "description": "🥣 Vichyssoise (sopa de Ratatouille) 🥣\n\nLa famosa sopa de Remy 🐭 de Ratatouille.\nCremosa, suave y perfecta para cualquier día porque se puede comer fría o caliente 👨🏻‍🍳\n\n⏳ Tiempo: 35 minutos ⏳\n\n🥣 Ingredientes 🥣\n• 3 puerros grandes\n• 1 cebolla\n• 2 papas medianas\n• 1 diente de ajo\n• 1 cucharada de manteca\n• 1 cucharada de aceite\n• 1 litro de caldo de pollo\n• 200 ml de crema de leche (1 taza aprox)\n• Sal y pimienta\n\n✨ Opcional para terminar ✨\n• Queso en cubitos\n• Semillas\n• Croutones\n• Aceite de oliva\n\n👣 Pasos 👣\n• En una olla a fuego medio-alto ponemos la manteca, el aceite y salteamos el ajo, la cebolla y el puerro cortado\n• Condimentamos con pimienta y cocinamos hasta que la cebolla esté transparente\n• Agregamos las papas en cubos y mezclamos bien\n• Cubrimos con el caldo de pollo y agregamos sal\n• Cocinamos hasta que la papa esté tierna\n• Procesamos o licuamos todo hasta lograr una textura bien cremosa\n• A fuego pero ahora medio-bajo y agregamos la crema de leche\n• Mezclamos bien hasta integrar y calentamos unos minutos más\n\n💡 Tip 💡\n• Si te gusta más liviana, podés agregar un poco más de caldo\n• Se puede comer caliente o fría, las dos formas quedan espectaculares\n• Ajustá la sal al final para no pasarte\n\n🥄 Cremosa, suave y lista para disfrutar 🥄\n\nSeguime para más recetas caseras y fáciles\n\n",
@@ -53,19 +222,19 @@
     "slug": "vichyssoise-sopa-de-ratatouille",
     "related_recipes": [
       {
-        "recipe_id": 3869698535436761209,
-        "recipe_name": "🍲 Sopa de pollo 🍲",
-        "score": 8
+        "recipe_id": 3880537320474983746,
+        "recipe_name": "🌯 Canelones de carne 🌯",
+        "score": 10
       },
       {
-        "recipe_id": 3357907319144106329,
-        "recipe_name": "🍲 Guiso de Lentejas 🥔🥕",
-        "score": 8
+        "recipe_id": 3620090472056771947,
+        "recipe_name": "🍂 Sopa de Zapallo 🍂",
+        "score": 10
       },
       {
-        "recipe_id": 3157191918159734942,
-        "recipe_name": "🎃 Sopa Crema de Calabaza 🎃",
-        "score": 8
+        "recipe_id": 3505559748113702321,
+        "recipe_name": "🧅 Tortilla de zapallito 🥕",
+        "score": 10
       }
     ]
   },
@@ -931,6 +1100,11 @@
     "slug": "levadura-fresca-vs-levadura-seca",
     "related_recipes": [
       {
+        "recipe_id": 3884166691706281534,
+        "recipe_name": "🥣 Vichyssoise (sopa de Ratatouille) 🥣",
+        "score": 5
+      },
+      {
         "recipe_id": 3876193966899473634,
         "recipe_name": "🍚 Arroz con leche 🍚",
         "score": 5
@@ -938,11 +1112,6 @@
       {
         "recipe_id": 3871850009075814535,
         "recipe_name": "🍌🍫 Bizcochuelo marmolado de banana 🍌🍫",
-        "score": 5
-      },
-      {
-        "recipe_id": 3715296457089009804,
-        "recipe_name": "🍞 Pan integral 🍞",
         "score": 5
       }
     ]
@@ -1203,14 +1372,14 @@
         "score": 18
       },
       {
-        "recipe_id": 3788496596900937594,
-        "recipe_name": "🍄 Paté de hongos 🍄",
+        "recipe_id": 3884166691706281534,
+        "recipe_name": "🥣 Vichyssoise (sopa de Ratatouille) 🥣",
         "score": 8
       },
       {
-        "recipe_id": 3880537320474983746,
-        "recipe_name": "🌯 Canelones de carne 🌯",
-        "score": 7
+        "recipe_id": 3788496596900937594,
+        "recipe_name": "🍄 Paté de hongos 🍄",
+        "score": 8
       }
     ]
   },
@@ -3353,18 +3522,18 @@
     "slug": "tomates-cherries-confitados",
     "related_recipes": [
       {
+        "recipe_id": 3819676244745536630,
+        "recipe_name": "🍕 Pizza 🍕",
+        "score": 10
+      },
+      {
         "recipe_id": 3788496596900937594,
         "recipe_name": "🍄 Paté de hongos 🍄",
         "score": 10
       },
       {
-        "recipe_id": 3594727340463842331,
-        "recipe_name": "🍆 Berenjenas al escabeche 🍆",
-        "score": 10
-      },
-      {
-        "recipe_id": 3573244086166696038,
-        "recipe_name": "🍆🍅 Fideos con berenjena y tomate 🍝✨",
+        "recipe_id": 3639196309442492470,
+        "recipe_name": "🧄 Salsa de ajo 🧄",
         "score": 10
       }
     ]
@@ -5254,8 +5423,8 @@
         "score": 12
       },
       {
-        "recipe_id": 3809505069079861469,
-        "recipe_name": "🍔 Hamburguesas de pollo 🍔",
+        "recipe_id": 3819676244745536630,
+        "recipe_name": "🍕 Pizza 🍕",
         "score": 11
       }
     ]
@@ -5295,6 +5464,11 @@
     "slug": "sanitizar-frutas-y-verduras",
     "related_recipes": [
       {
+        "recipe_id": 3884166691706281534,
+        "recipe_name": "🥣 Vichyssoise (sopa de Ratatouille) 🥣",
+        "score": 5
+      },
+      {
         "recipe_id": 3876193966899473634,
         "recipe_name": "🍚 Arroz con leche 🍚",
         "score": 5
@@ -5302,11 +5476,6 @@
       {
         "recipe_id": 3871850009075814535,
         "recipe_name": "🍌🍫 Bizcochuelo marmolado de banana 🍌🍫",
-        "score": 5
-      },
-      {
-        "recipe_id": 3814600790581882617,
-        "recipe_name": "🍞 Levadura fresca vs. levadura seca 🍞",
         "score": 5
       }
     ]
@@ -7054,7 +7223,8 @@
     "description": "🍛 Pollo Tikka Masala 🍛\n\n⏳ Tiempo: 2 horas ⏳\n\n🥣 Ingredientes 🥣\n\n• 500g de pechuga de pollo\n• 1 taza de yogur natural\n• 2 cucharadas de jugo de limón\n• 400g de tomate triturado (1 lata o media botella)\n• 2 dientes de ajo\n• 1 cebolla mediana\n• 200ml de crema de leche o leche de coco (receta tradicional)\n• Condimentos varios: jengibre, garam masala, pimentón, ají molido, sal y pimienta a gusto\n\n🗒 Notas 🗒\n\n1: Masala significa mix de condimentos, el garam masala es la combinación de canela, cardamomo, clavo de olor, nuez moscada, pimienta, comino y laurel (puede variar igual)\n2: Tengo ya subida receta para multiplicar yogur natural, si te interesa.\n\n👣 Pasos 👣\n\n• En un bowl, agrega el pollo en cuadraditos y luego el yogur, el ajo picado, los condimentos y el jugo de limón.\n• Tapa el bowl y llevalo a la heladera por al menos 1 hora (también si está bien tapado puede ser toda la noche para más sabor).\n• En una sartén grande, calienta un poco de aceite a fuego medio y dora los cuadraditos de pollo junto con su marinada.\n• Retira el pollo y en la misma sartén agrega la cebolla picada, un diente de ajo a la mitad, pimentón y cocina hasta que esté dorada de cebolla.\n• Agrega el tomate triturado, mezclá y dejá cocinar a fuego medio durante 10 o 15 minutos, revolviendo de vez en cuando.\n• Agrega el pollo y dejalo cocinar por al menos 10 minutos a fuego medio bajo.\n• Por último, incorporá la crema de leche o leche de coco y mezclá todo hasta que la salsa esté suave y cremosa.\n• A fuego bajo, dejalo cocinar un poco más (10 minutos para que la salsa esté mas espesa y garantizar la cocción del pollo).\n\n¡Listo! 👨‍🍳 😋 Un plato lleno de sabor, se suele acompañar con arroz (tradicionalmente basmati) y comer con pan naan (tengo receta subida si querés hacerlo casero).\n\nCualquier duda les leo 🧐\n\n",
     "tags": [
       "Internacional",
-      "Pollo"
+      "Pollo",
+      "Arroz"
     ],
     "instagramUrl": "https://www.instagram.com/reel/C_B6-KqvgBC/",
     "facebookUrl": "",
@@ -7577,6 +7747,11 @@
     "slug": "sanitizacion-de-verduras-y-frutas",
     "related_recipes": [
       {
+        "recipe_id": 3884166691706281534,
+        "recipe_name": "🥣 Vichyssoise (sopa de Ratatouille) 🥣",
+        "score": 5
+      },
+      {
         "recipe_id": 3876193966899473634,
         "recipe_name": "🍚 Arroz con leche 🍚",
         "score": 5
@@ -7584,11 +7759,6 @@
       {
         "recipe_id": 3871850009075814535,
         "recipe_name": "🍌🍫 Bizcochuelo marmolado de banana 🍌🍫",
-        "score": 5
-      },
-      {
-        "recipe_id": 3814600790581882617,
-        "recipe_name": "🍞 Levadura fresca vs. levadura seca 🍞",
         "score": 5
       }
     ]
@@ -7623,6 +7793,11 @@
     "slug": "nutrikids",
     "related_recipes": [
       {
+        "recipe_id": 3884166691706281534,
+        "recipe_name": "🥣 Vichyssoise (sopa de Ratatouille) 🥣",
+        "score": 2
+      },
+      {
         "recipe_id": 3880537320474983746,
         "recipe_name": "🌯 Canelones de carne 🌯",
         "score": 2
@@ -7630,11 +7805,6 @@
       {
         "recipe_id": 3876193966899473634,
         "recipe_name": "🍚 Arroz con leche 🍚",
-        "score": 2
-      },
-      {
-        "recipe_id": 3871850009075814535,
-        "recipe_name": "🍌🍫 Bizcochuelo marmolado de banana 🍌🍫",
         "score": 2
       }
     ]
@@ -7907,6 +8077,11 @@
     "slug": "reemplazos-veganos-para-huevo",
     "related_recipes": [
       {
+        "recipe_id": 3884166691706281534,
+        "recipe_name": "🥣 Vichyssoise (sopa de Ratatouille) 🥣",
+        "score": 5
+      },
+      {
         "recipe_id": 3876193966899473634,
         "recipe_name": "🍚 Arroz con leche 🍚",
         "score": 5
@@ -7914,11 +8089,6 @@
       {
         "recipe_id": 3871850009075814535,
         "recipe_name": "🍌🍫 Bizcochuelo marmolado de banana 🍌🍫",
-        "score": 5
-      },
-      {
-        "recipe_id": 3814600790581882617,
-        "recipe_name": "🍞 Levadura fresca vs. levadura seca 🍞",
         "score": 5
       }
     ]
@@ -8180,9 +8350,9 @@
         "score": 7
       },
       {
-        "recipe_id": 3707323832187256597,
-        "recipe_name": "🍗 Pechuga a la plancha 🍗",
-        "score": 5
+        "recipe_id": 3902279073337575125,
+        "recipe_name": "🍛 Pollo al curry 🍛",
+        "score": 6
       }
     ]
   },
@@ -9258,6 +9428,11 @@
     "slug": "feliz-dia-a-anushcuidarte",
     "related_recipes": [
       {
+        "recipe_id": 3884166691706281534,
+        "recipe_name": "🥣 Vichyssoise (sopa de Ratatouille) 🥣",
+        "score": 2
+      },
+      {
         "recipe_id": 3880537320474983746,
         "recipe_name": "🌯 Canelones de carne 🌯",
         "score": 2
@@ -9265,11 +9440,6 @@
       {
         "recipe_id": 3876193966899473634,
         "recipe_name": "🍚 Arroz con leche 🍚",
-        "score": 2
-      },
-      {
-        "recipe_id": 3871850009075814535,
-        "recipe_name": "🍌🍫 Bizcochuelo marmolado de banana 🍌🍫",
         "score": 2
       }
     ]
@@ -9597,6 +9767,11 @@
     "slug": "como-hacer-un-buen-salteado",
     "related_recipes": [
       {
+        "recipe_id": 3884166691706281534,
+        "recipe_name": "🥣 Vichyssoise (sopa de Ratatouille) 🥣",
+        "score": 10
+      },
+      {
         "recipe_id": 3880537320474983746,
         "recipe_name": "🌯 Canelones de carne 🌯",
         "score": 9
@@ -9604,11 +9779,6 @@
       {
         "recipe_id": 3184703452844334328,
         "recipe_name": "🥔 Pastel de papa alternativo 🌱",
-        "score": 9
-      },
-      {
-        "recipe_id": 3157191918159734942,
-        "recipe_name": "🎃 Sopa Crema de Calabaza 🎃",
         "score": 9
       }
     ]
@@ -9978,6 +10148,11 @@
     "slug": "queso-mascarpone-casero",
     "related_recipes": [
       {
+        "recipe_id": 3884166691706281534,
+        "recipe_name": "🥣 Vichyssoise (sopa de Ratatouille) 🥣",
+        "score": 6
+      },
+      {
         "recipe_id": 3876193966899473634,
         "recipe_name": "🍚 Arroz con leche 🍚",
         "score": 6
@@ -9985,11 +10160,6 @@
       {
         "recipe_id": 3187627992033276556,
         "recipe_name": "📖 ¿Cómo hacer un buen salteado? 📖",
-        "score": 6
-      },
-      {
-        "recipe_id": 2920860377060116266,
-        "recipe_name": "🍞 Segunda oportunidad: Pan 🥖",
         "score": 6
       }
     ]
@@ -11666,6 +11836,11 @@
     "slug": "dinoquesadilla",
     "related_recipes": [
       {
+        "recipe_id": 3884166691706281534,
+        "recipe_name": "🥣 Vichyssoise (sopa de Ratatouille) 🥣",
+        "score": 5
+      },
+      {
         "recipe_id": 3876193966899473634,
         "recipe_name": "🍚 Arroz con leche 🍚",
         "score": 5
@@ -11673,11 +11848,6 @@
       {
         "recipe_id": 3871850009075814535,
         "recipe_name": "🍌🍫 Bizcochuelo marmolado de banana 🍌🍫",
-        "score": 5
-      },
-      {
-        "recipe_id": 3814600790581882617,
-        "recipe_name": "🍞 Levadura fresca vs. levadura seca 🍞",
         "score": 5
       }
     ]
@@ -11783,8 +11953,8 @@
         "score": 6
       },
       {
-        "recipe_id": 3876193966899473634,
-        "recipe_name": "🍚 Arroz con leche 🍚",
+        "recipe_id": 3884166691706281534,
+        "recipe_name": "🥣 Vichyssoise (sopa de Ratatouille) 🥣",
         "score": 5
       }
     ]
@@ -13391,6 +13561,11 @@
     "slug": "cocinar-en-familia",
     "related_recipes": [
       {
+        "recipe_id": 3884166691706281534,
+        "recipe_name": "🥣 Vichyssoise (sopa de Ratatouille) 🥣",
+        "score": 2
+      },
+      {
         "recipe_id": 3880537320474983746,
         "recipe_name": "🌯 Canelones de carne 🌯",
         "score": 2
@@ -13398,11 +13573,6 @@
       {
         "recipe_id": 3876193966899473634,
         "recipe_name": "🍚 Arroz con leche 🍚",
-        "score": 2
-      },
-      {
-        "recipe_id": 3871850009075814535,
-        "recipe_name": "🍌🍫 Bizcochuelo marmolado de banana 🍌🍫",
         "score": 2
       }
     ]
