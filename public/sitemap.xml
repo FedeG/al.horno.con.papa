@@ -2,9 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://alhornoconpapa.com.ar/</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://alhornoconpapa.com.ar/recipe/pollo-al-curry/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://alhornoconpapa.com.ar/images/DYnriRcugbV.webp</image:loc>
+      <image:title>🍛 Pollo al curry 🍛</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://alhornoconpapa.com.ar/recipe/huevos-revueltos/</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://alhornoconpapa.com.ar/images/DYTG6EDOpL-.webp</image:loc>
+      <image:title>🍳 Huevos revueltos 🍳</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://alhornoconpapa.com.ar/recipe/lactonesa-2/</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://alhornoconpapa.com.ar/images/DXvIzRAOD8j.webp</image:loc>
+      <image:title>🥛 Lactonesa 🥛</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://alhornoconpapa.com.ar/recipe/vichyssoise-sopa-de-ratatouille/</loc>
