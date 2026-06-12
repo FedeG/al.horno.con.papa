@@ -55,11 +55,23 @@ const RecipeList = () => {
     return () => clearTimeout(timeoutId);
   }, [inputValue]);
 
-  // Extract all unique tags (optimizado - solo se ejecuta una vez)
-  const allTags = useMemo(() => 
-    extractAllTags(recipesData, featuredTags, selectedTag),
-    [selectedTag, recipesData]
+  // Extract all unique tags (solo se ejecuta cuando cambian las recetas)
+  const allTagsBase = useMemo(() => 
+    extractAllTags(recipesData, featuredTags),
+    [recipesData]
   );
+
+  // Reordenamiento barato: solo mueve la tag seleccionada al tope
+  const allTags = useMemo(() => {
+    if (selectedTag === 'Todas') return allTagsBase;
+    const result = [...allTagsBase];
+    const idx = result.indexOf(selectedTag);
+    if (idx > 1) {
+      result.splice(idx, 1);
+      result.splice(1, 0, selectedTag);
+    }
+    return result;
+  }, [allTagsBase, selectedTag]);
 
   // Generate autocomplete suggestions (optimizado - detiene búsqueda al llegar a 5)
   const autocompleteSuggestions = useMemo(() => 
@@ -107,13 +119,11 @@ const RecipeList = () => {
   }, [searchParams]);
 
   // Clamp current page when filtered results reduce the available pages
+  // Sin currentPage como dependencia para evitar posibles loops de re-render
   useEffect(() => {
     const maxPage = totalPages > 0 ? totalPages : 1;
-
-    if (currentPage > maxPage) {
-      setCurrentPage(maxPage);
-    }
-  }, [currentPage, totalPages]);
+    setCurrentPage(prev => Math.min(prev, maxPage));
+  }, [totalPages]);
   // Update URL params when filters change
   useEffect(() => {
     const params = {};
@@ -185,8 +195,8 @@ const RecipeList = () => {
       <main>
       
       <SearchBar
-        searchTerm={inputValue}
-        setSearchTerm={handleSearchChange}
+        value={inputValue}
+        onChange={handleSearchChange}
         showAutocomplete={showAutocomplete}
         setShowAutocomplete={setShowAutocomplete}
         autocompleteSuggestions={autocompleteSuggestions}

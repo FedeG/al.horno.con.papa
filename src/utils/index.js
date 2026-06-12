@@ -19,13 +19,12 @@ const includesNormalized = (text, search) => {
 
 
 /**
- * Extrae todas las tags únicas de las recetas
+ * Extrae todas las tags únicas de las recetas, ordenadas: destacadas primero, luego resto alfabéticamente
  * @param {Array} recipes - Array de recetas
  * @param {Array} featuredTags - Tags destacadas para priorizar
- * @param {string} selectedTag - Tag actualmente seleccionada
- * @returns {Array} Array de tags ordenadas
+ * @returns {Array} Array de tags ordenadas (sin reordenar por selección)
  */
-export const extractAllTags = (recipes, featuredTags, selectedTag) => {
+export const extractAllTags = (recipes, featuredTags) => {
     const tags = new Set();
     for (let i = 0; i < recipes.length; i++) {
         const recipeTags = recipes[i].tags;
@@ -36,18 +35,7 @@ export const extractAllTags = (recipes, featuredTags, selectedTag) => {
     const featured = featuredTags.filter(tag => tag === 'Todas' || tags.has(tag));
     const others = Array.from(tags).filter(tag => !featuredTags.includes(tag)).sort();
 
-    let result = [...featured, ...others];
-
-    // Si hay una tag seleccionada que no es 'Todas', moverla a posición 1 (después de 'Todas')
-    if (selectedTag !== 'Todas') {
-        const tagIndex = result.indexOf(selectedTag);
-        if (tagIndex > 1) {
-            result.splice(tagIndex, 1);
-            result.splice(1, 0, selectedTag);
-        }
-    }
-
-    return result;
+    return [...featured, ...others];
 };
 
 /**

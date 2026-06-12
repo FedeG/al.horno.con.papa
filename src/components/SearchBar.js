@@ -1,15 +1,28 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useRef, useEffect } from 'react';
 import { Search, X } from 'lucide-react';
 import { trackSearchClear } from '../utils/analytics';
 
 const SearchBar = ({ 
-  searchTerm, 
-  setSearchTerm, 
+  value, 
+  onChange, 
   showAutocomplete, 
   setShowAutocomplete, 
   autocompleteSuggestions, 
   onSelectSuggestion 
 }) => {
+  const wrapperRef = useRef(null);
+
+  // Cerrar autocomplete al hacer clic fuera
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (wrapperRef.current && !wrapperRef.current.contains(e.target)) {
+        setShowAutocomplete(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [setShowAutocomplete]);
+
   const handleKeyDown = useCallback((e) => {
     if (e.key === 'Enter') {
       setShowAutocomplete(false);
@@ -26,23 +39,23 @@ const SearchBar = ({
   }, [setShowAutocomplete]);
 
   const handleInputChange = useCallback((e) => {
-    setSearchTerm(e.target.value);
+    onChange(e.target.value);
     setShowAutocomplete(true);
-  }, [setSearchTerm, setShowAutocomplete]);
+  }, [onChange, setShowAutocomplete]);
 
   const handleFocus = useCallback(() => {
-    if (searchTerm) setShowAutocomplete(true);
-  }, [searchTerm, setShowAutocomplete]);
+    if (value) setShowAutocomplete(true);
+  }, [value, setShowAutocomplete]);
 
   const handleClear = useCallback(() => {
-    setSearchTerm('');
+    onChange('');
     setShowAutocomplete(false);
     trackSearchClear();
-  }, [setSearchTerm, setShowAutocomplete]);
+  }, [onChange, setShowAutocomplete]);
 
   return (
     <div className="search-container">
-      <div className="search-box-wrapper">
+      <div className="search-box-wrapper" ref={wrapperRef}>
         <div className="search-box">
           <Search 
             size={20} 
@@ -53,12 +66,12 @@ const SearchBar = ({
           <input
             type="text"
             placeholder="¿Qué ingrediente tenés en la heladera?"
-            value={searchTerm}
+            value={value}
             onChange={handleInputChange}
             onFocus={handleFocus}
             onKeyDown={handleKeyDown}
           />
-          {searchTerm && (
+          {value && (
             <button 
               className="clear-btn" 
               onClick={handleClear}

@@ -32,7 +32,7 @@ export const HEADER = {
 // Redes Sociales
 export const SOCIAL_MEDIA = {
   instagram: 'https://www.instagram.com/alhornoconpapa/',
-  facebook: 'https://www.facebook.com/alhornoconpapa/',
+  facebook: 'https://www.facebook.com/al.horno.con.papa/',
   tiktok: 'https://www.tiktok.com/@alhornoconpapa/',
   youtube: 'https://www.youtube.com/@alhornoconpapa/',
 };
@@ -40,7 +40,7 @@ export const SOCIAL_MEDIA = {
 // Handles/Usernames para redes sociales
 export const SOCIAL_HANDLES = {
   instagram: 'al.horno.con.papa',
-  facebook: 'alhornoconpapa',
+  facebook: 'al.horno.con.papa',
   facebookId: '105051402450049',
 };
 
