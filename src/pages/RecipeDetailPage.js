@@ -6,7 +6,8 @@ import Header from '../components/Header';
 import RecipeDetail from '../components/RecipeDetail';
 import Footer from '../components/Footer';
 import {
-  findRelatedRecipes
+  findRelatedRecipes,
+  scrollToTop
 } from '../utils';
 import {
   trackPageView
@@ -45,17 +46,17 @@ const RecipeDetailPage = () => {
 
   const handleSelectRecipe = useCallback((selectedRecipe) => {
     navigate(`/recipe/${selectedRecipe.slug}/`);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    scrollToTop();
   }, [navigate]);
 
   const handleBackToList = useCallback(() => {
     navigate('/');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    scrollToTop();
   }, [navigate]);
 
   const handleTagClick = useCallback((tag) => {
     navigate(`/?tag=${encodeURIComponent(tag)}`);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    scrollToTop();
   }, [navigate]);
 
   if (!recipe) {

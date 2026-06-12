@@ -15,7 +15,8 @@ import {
   extractAllTags,
   generateAutocompleteSuggestions,
   filterRecipes,
-  paginateArray
+  paginateArray,
+  scrollToTop
 } from '../utils';
 import {
   trackPageView,
@@ -161,13 +162,13 @@ const RecipeList = () => {
     const newPage = Math.max(1, Math.min(page, totalPages));
     setCurrentPage(newPage);
     trackPagination(newPage, totalPages);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    scrollToTop();
   }, [totalPages]);
 
   const handleSelectRecipe = useCallback((recipe) => {
     const slugOrId = recipe.slug && recipe.slug.trim() ? recipe.slug : String(recipe.id);
     navigate(`/recipe/${slugOrId}/`);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    scrollToTop();
   }, [navigate]);
 
   const recipeCollectionSchema = useMemo(() => 

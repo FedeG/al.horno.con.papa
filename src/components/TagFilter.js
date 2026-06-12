@@ -35,9 +35,10 @@ const TagFilter = ({ allTags, selectedTag, onSelectTag, featuredTags = [] }) => 
   const scroll = useCallback((direction) => {
     if (scrollContainerRef.current) {
       const scrollAmount = 300;
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       scrollContainerRef.current.scrollBy({
         left: direction === 'left' ? -scrollAmount : scrollAmount,
-        behavior: 'smooth'
+        behavior: prefersReduced ? 'auto' : 'smooth'
       });
       trackTagScroll(direction);
       // Actualizar botones después del scroll animado

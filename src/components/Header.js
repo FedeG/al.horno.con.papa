@@ -2,13 +2,14 @@ import React, { useCallback } from 'react';
 import { ChefHat } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { HEADER } from '../utils/constants';
+import { scrollToTop } from '../utils';
 
 const Header = () => {
   const navigate = useNavigate();
   
   const handleLogoClick = useCallback(() => {
     navigate('/');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    scrollToTop();
   }, [navigate]);
 
   return (

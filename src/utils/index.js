@@ -1,4 +1,13 @@
 /**
+ * Hace scroll al tope de la página respetando prefers-reduced-motion.
+ * Si el usuario prefiere movimiento reducido, el scroll es instantáneo.
+ */
+export const scrollToTop = () => {
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  window.scrollTo({ top: 0, behavior: prefersReduced ? 'auto' : 'smooth' });
+};
+
+/**
  * Normaliza una cadena quitando acentos y diacríticos para búsqueda flexible
  * @param {string} str - Cadena a normalizar
  * @returns {string} Cadena normalizada sin acentos
