@@ -106,8 +106,8 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
 
         <div className="detail-section">
           <div className="tags-container">
-            {recipe.tags.map((tag, idx) => (
-              <span key={idx} className="detail-tag" onClick={() => handleTagClick(tag)} style={{ cursor: 'pointer' }}>
+            {recipe.tags.map((tag) => (
+              <span key={tag} className="detail-tag" onClick={() => handleTagClick(tag)} style={{ cursor: 'pointer' }}>
                 <Tag size={14} suppressHydrationWarning/>{` ${tag}`}
               </span>
             ))}
