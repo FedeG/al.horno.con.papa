@@ -20,8 +20,8 @@ const SEO = ({
   
   const fullTitle = title ? `${title} | Al Horno Con Papá` : siteName;
   const fullDescription = description || 'Al Horno Con Papá - Cocina en familia. Recetas deliciosas compartidas con amor.';
-  const fullImageUrl = (imageUrl ? `${siteUrl}/${imageUrl}` : defaultImage).replace(/\/\//g, '/');
-  const fullCanonicalUrl = (canonicalUrl || siteUrl).replace(/\/\//g, '/');
+  const fullImageUrl = (imageUrl ? `${siteUrl}/${imageUrl}` : defaultImage).replace(/([^:])\/\//g, '$1/');
+  const fullCanonicalUrl = (canonicalUrl || siteUrl).replace(/([^:])\/\//g, '$1/');
 
   return (
     <Helmet>

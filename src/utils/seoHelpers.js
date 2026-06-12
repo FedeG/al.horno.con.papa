@@ -40,7 +40,7 @@ const generateOrganizationSchema = (baseUrl = BASE_URL) => {
     },
     founder: {
       '@type': 'Person',
-      name: ORGANIZATION.name,
+      name: ORGANIZATION.founderName,
     },
   };
 };
