@@ -40,6 +40,7 @@ export const SOCIAL_MEDIA = {
 // Handles/Usernames para redes sociales
 export const SOCIAL_HANDLES = {
   instagram: 'al.horno.con.papa',
+  facebook: 'alhornoconpapa',
   facebookId: '105051402450049',
 };
 
