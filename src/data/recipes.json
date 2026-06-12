@@ -1,13 +1,71 @@
 [
   {
+    "id": 3917508021809950567,
+    "name": "🎂 Red Velvet, parte 2: Cream cheese 🍰",
+    "description": "🎂 Red Velvet, parte 2: Cream cheese 🍰\nCrema de queso 👨‍🍳\n\n⏳ Tiempo: 5 minutos ⏳\n\n🥣 Ingredientes 🥣\n\n• 220g de queso crema (a temperatura ambiente)\n• 100g manteca (a temperatura ambiente)\n• 100g de azúcar impalpable\n• Esencia de vainilla\n\n👣 Pasos 👣\n\n• Mezclar la manteca con el azúcar impalpable tamizada, y batir hasta hacer una crema\n• Agregar el queso crema y batir hasta obtener una crema homogénea\n\n💡 Tip 💡\n\n• Combina de 10 con el biscochuelo que hicimos en la parte 1 y para rellenos de cualquier torta.\n• Si te gusta el dulce de leche, podes agregarle dos cucharas de dulce de leche y hacer una crema de queso y dulce riquísima.\n\nSeguime para más recetas dulces y caseras\n\n¡ Espero que les guste !\nCualquier duda les leo 🧐\n\n",
+    "tags": [
+      "Desayuno y merienda",
+      "Dulce",
+      "Facil",
+      "Pasteleria",
+      "Postres",
+      "Reposteria",
+      "Torta"
+    ],
+    "instagramUrl": "https://www.instagram.com/reel/DZdyMo8ua9n/",
+    "facebookUrl": "",
+    "imageUrl": "images/DZdyMo8ua9n.jpg",
+    "ingredients": [
+      "220g de queso crema (a temperatura ambiente)",
+      "100g manteca (a temperatura ambiente)",
+      "100g de azúcar impalpable",
+      "Esencia de vainilla"
+    ],
+    "date": "2026-06-11T21:16:50-03:00",
+    "easy": true,
+    "hidden": false,
+    "shortcode": "DZdyMo8ua9n",
+    "cleaned_ingredientes": [
+      "azúcar impalpable",
+      "esencia de vainilla",
+      "manteca",
+      "queso",
+      "queso crema"
+    ],
+    "slug": "red-velvet-parte-2-cream-cheese",
+    "related_recipes": [
+      {
+        "recipe_id": 3742112497752006485,
+        "recipe_name": "🍰 Cheesecake cocido clásico 🍰",
+        "score": 9
+      },
+      {
+        "recipe_id": 2883965321174385376,
+        "recipe_name": "Cream cheese 🍰",
+        "score": 9
+      },
+      {
+        "recipe_id": 3668670732125839585,
+        "recipe_name": "🍋 Galletitas crackeladas de limón 🍋",
+        "score": 8
+      }
+    ],
+    "old_tags": [
+      "Pasteleria",
+      "Redvelvet",
+      "Torta"
+    ]
+  },
+  {
     "id": 3912434246550696056,
     "name": "🎂 Red Velvet, parte 1: bizcochuelo 🍰",
     "description": "🎂 Red Velvet, parte 1: bizcochuelo 🍰\n\nUn clásico de la pastelería, súper húmedo, esponjoso y con ese color tan característico.\nIdeal para una merienda especial o para sorprender con una torta distinta.\n\n⏳ Tiempo: 45 minutos ⏳\n\n🥣 Ingredientes 🥣\nPara dos capas de 20 cm de diámetro\n\n• 200g de manteca\n• 300g de azúcar (1 tazas media)\n• 4 huevos\n• 320g de harina leudante (2 tazas y media )\n• 160 ml de leche (⅔ taza)\n• 1 cucharada de jugo de limón\n• 20g de cacao amargo (2 cucharadas colmadas)\n• Colorante rojo cantidad necesari\n• 1 cucharadita de bicarbonato de sodio\n• 1 cucharada de vinagre\n• 1 cucharadita de esencia de vainilla\n\n👣 Pasos 👣\n\n• Mezclamos la leche con el jugo de limón y dejamos reposar unos minutos\n• En un bowl batimos la manteca pomada con el azúcar hasta obtener una mezcla cremosa\n• Agregamos los huevos de a uno integrando bien entre cada incorporación\n• Sumamos la esencia de vainilla y el colorante rojo y mezclamos hasta obtener un color uniforme\n• Agregamos la mezcla de leche y limón y mezclamos hasta integrar\n• Incorporamos la harina y el cacao\n• Mezclamos hasta obtener una preparación homogénea\n• Justo antes de llevar al horno mezclamos el bicarbonato con el vinagre y lo agregamos a la preparación e integramos rápidamente\n• Pasamos a un molde enmantecado y enharinado\n• Llevamos a horno precalentado a 170°C durante aproximadamente 30 minutos\n• Retiramos cuando al pinchar con un cuchillo salga limpio\n• Dejamos enfriar antes de desmoldar\n\n💡 Tip 💡\n\n• El color se intensifica al enfriarse\n• No mezcles de más una vez agregada la harina para mantener la miga aireada\n• La combinación de bicarbonato y vinagre ayuda a que la torta quede súper esponjosa\n• No crece mucho, así que no te preocupes si no sube en el horno\n\n🎂 Esponjosa, húmeda y perfecta para cualquier ocasión 🎂\n\nProximamente la parte 2 con cream cheese casero para el relleno y cobertura!\n\nSeguime para más recetas dulces y caseras\n\n",
     "tags": [
-      "Pasteleria",
       "Desayuno y merienda",
-      "Reposteria",
       "Dulce",
+      "Pasteleria",
+      "Postres",
+      "Reposteria",
       "Torta"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DZLwjfgujB4/",
@@ -49,17 +107,17 @@
       {
         "recipe_id": 3871850009075814535,
         "recipe_name": "🍌🍫 Bizcochuelo marmolado de banana 🍌🍫",
-        "score": 7
+        "score": 12
       },
       {
-        "recipe_id": 2883186807995352076,
-        "recipe_name": "🥕 Carrot cake 🎂🥕",
-        "score": 7
+        "recipe_id": 3373890469131985035,
+        "recipe_name": "🍪 Alfajores Caseros 🍫",
+        "score": 10
       },
       {
-        "recipe_id": 3742112497752006485,
-        "recipe_name": "🍰 Cheesecake cocido clásico 🍰",
-        "score": 6
+        "recipe_id": 3668670732125839585,
+        "recipe_name": "🍋 Galletitas crackeladas de limón 🍋",
+        "score": 9
       }
     ],
     "old_tags": [
@@ -501,13 +559,13 @@
         "score": 9
       },
       {
-        "recipe_id": 2920860377060116266,
-        "recipe_name": "🍞 Segunda oportunidad: Pan 🥖",
+        "recipe_id": 3912434246550696056,
+        "recipe_name": "🎂 Red Velvet, parte 1: bizcochuelo 🍰",
         "score": 8
       },
       {
-        "recipe_id": 2904750811335808998,
-        "recipe_name": "🥖 Pan relleno 🧀🧅",
+        "recipe_id": 2920860377060116266,
+        "recipe_name": "🍞 Segunda oportunidad: Pan 🥖",
         "score": 8
       }
     ],
@@ -566,6 +624,11 @@
     ],
     "related_recipes": [
       {
+        "recipe_id": 3912434246550696056,
+        "recipe_name": "🎂 Red Velvet, parte 1: bizcochuelo 🍰",
+        "score": 11
+      },
+      {
         "recipe_id": 3625171213979661073,
         "recipe_name": "🍌 Budín de banana 🍌",
         "score": 10
@@ -573,11 +636,6 @@
       {
         "recipe_id": 3481833328178995898,
         "recipe_name": "🍫 Muffins marmolados 🍫",
-        "score": 10
-      },
-      {
-        "recipe_id": 2891865988744955692,
-        "recipe_name": "🍌 Budín de banana 🍌",
         "score": 10
       }
     ]
@@ -1532,7 +1590,6 @@
     "description": "🥔 Ensalada Rusa 🥕\n\n🎄 Seguimos armando la mesa de las fiestas, receta a receta 🎄\nDurante todo diciembre voy a ir subiendo una receta por vez para que llegues a Navidad y Año Nuevo con la mesa completa, combinando clásicos infaltables y opciones nuevas fáciles y rapidas.\n\n⏳ Tiempo: 30 minutos ⌛\n\n🥣 Ingredientes 🥣\n• 2 papas medianas\n• 1 zanahoria grande\n• 1 taza de arvejas cocidas\n• 2 cucharadas de mayonesa\n• Sal a gusto\n\n👣 Pasos 👣\n• Pelamos y cortamos las papas en cubitos de aproximadamente 1 cm y la zanahoria en cubos más chicos para que se cocinen parejo\n• Hervimos las papas y zanahorias en abundante agua con sal hasta que estén tiernas pero firmes, que se puedan pinchar sin romperse (unos 10 minutos)\n• Retiramos del fuego, colamos y pasamos por agua fría para cortar la cocción\n• Colamos bien todos los ingredientes\n• En un bowl grande mezclamos las papas, zanahorias y arvejas con la mayonesa, con cuidado de no romper la papa\n• Llevamos a la heladera al menos 1 hora antes de servir para que tome más sabor\n\n🧊 Conservación 🧊\n• Dura entre 3 y 4 días en heladera en un recipiente hermético\n• Si querés que dure más, podés guardar las verduras cocidas por separado y mezclar con la mayonesa justo antes de servir\n\n⚠️ Importante ⚠️\n• No dejar más de 2 horas fuera de la heladera\n\n🎄 Ideal para acompañar asados, la cena navideña o cualquier mesa fría de fiestas 🎄\n\n👉 Próxima receta: turrón de chocolate, listo en menos de 10 minutos y con solo 3 ingredientes 🍫✨\n\nSeguime para no perderte ninguna y armar juntos la mesa completa de las fiestas 🎅🎄\n\n",
     "tags": [
       "Acompañamiento",
-      "Acompañamientos",
       "Argentina",
       "Facil",
       "Navidad"
@@ -1549,7 +1606,7 @@
     ],
     "date": "2025-12-17T21:15:12-03:00",
     "old_tags": [
-      "Acompañamientos",
+      "Acompañamiento",
       "Cocinaargentina",
       "Cocinafacil",
       "Ensaladarusa",
@@ -1715,13 +1772,13 @@
         "score": 7
       },
       {
-        "recipe_id": 3680962510824535605,
-        "recipe_name": "🍫 Marquise de chocolate 🍫",
+        "recipe_id": 3710947766295199832,
+        "recipe_name": "🥩 Riñón a la provenzal 🧄🌿",
         "score": 7
       },
       {
-        "recipe_id": 3668670732125839585,
-        "recipe_name": "🍋 Galletitas crackeladas de limón 🍋",
+        "recipe_id": 3680962510824535605,
+        "recipe_name": "🍫 Marquise de chocolate 🍫",
         "score": 7
       }
     ]
@@ -2317,9 +2374,9 @@
         "score": 11
       },
       {
-        "recipe_id": 3696179700699961881,
-        "recipe_name": "🫑🍅 Salsa Criolla 🧅🍶",
-        "score": 10
+        "recipe_id": 3594727340463842331,
+        "recipe_name": "🍆 Berenjenas al escabeche 🍆",
+        "score": 11
       }
     ]
   },
@@ -2559,7 +2616,7 @@
     ],
     "date": "2025-08-10T12:17:00-03:00",
     "old_tags": [
-      "Acompañamientos",
+      "Acompañamiento",
       "Argentina",
       "Asado",
       "Asadoargentino",
@@ -6407,7 +6464,7 @@
     ],
     "date": "2024-11-29T13:48:30-03:00",
     "old_tags": [
-      "Acompañamientos",
+      "Acompañamiento",
       "Cocinaargentina",
       "Cocinafacil",
       "Ensaladarusa",
@@ -7931,6 +7988,11 @@
     "slug": "curado-de-mate-de-calabaza",
     "related_recipes": [
       {
+        "recipe_id": 3912434246550696056,
+        "recipe_name": "🎂 Red Velvet, parte 1: bizcochuelo 🍰",
+        "score": 5
+      },
+      {
         "recipe_id": 3876193966899473634,
         "recipe_name": "🍚 Arroz con leche 🍚",
         "score": 5
@@ -7938,11 +8000,6 @@
       {
         "recipe_id": 3814600790581882617,
         "recipe_name": "🍞 Levadura fresca vs. levadura seca 🍞",
-        "score": 5
-      },
-      {
-        "recipe_id": 3717488954980600869,
-        "recipe_name": "🥩 Hígado encebollado 🧅",
         "score": 5
       }
     ]
@@ -8374,6 +8431,11 @@
     "slug": "tipos-de-harina",
     "related_recipes": [
       {
+        "recipe_id": 3912434246550696056,
+        "recipe_name": "🎂 Red Velvet, parte 1: bizcochuelo 🍰",
+        "score": 5
+      },
+      {
         "recipe_id": 3880537320474983746,
         "recipe_name": "🌯 Canelones de carne 🌯",
         "score": 5
@@ -8381,11 +8443,6 @@
       {
         "recipe_id": 3814600790581882617,
         "recipe_name": "🍞 Levadura fresca vs. levadura seca 🍞",
-        "score": 5
-      },
-      {
-        "recipe_id": 3715296457089009804,
-        "recipe_name": "🍞 Pan integral 🍞",
         "score": 5
       }
     ]
@@ -10240,6 +10297,11 @@
     "slug": "queso-mascarpone-casero",
     "related_recipes": [
       {
+        "recipe_id": 3912434246550696056,
+        "recipe_name": "🎂 Red Velvet, parte 1: bizcochuelo 🍰",
+        "score": 6
+      },
+      {
         "recipe_id": 3884166691706281534,
         "recipe_name": "🥣 Vichyssoise (sopa de Ratatouille) 🥣",
         "score": 6
@@ -10247,11 +10309,6 @@
       {
         "recipe_id": 3876193966899473634,
         "recipe_name": "🍚 Arroz con leche 🍚",
-        "score": 6
-      },
-      {
-        "recipe_id": 3187627992033276556,
-        "recipe_name": "📖 ¿Cómo hacer un buen salteado? 📖",
         "score": 6
       }
     ]
@@ -11140,6 +11197,11 @@
     "slug": "multiplicar-yogurt",
     "related_recipes": [
       {
+        "recipe_id": 3912434246550696056,
+        "recipe_name": "🎂 Red Velvet, parte 1: bizcochuelo 🍰",
+        "score": 6
+      },
+      {
         "recipe_id": 3876193966899473634,
         "recipe_name": "🍚 Arroz con leche 🍚",
         "score": 6
@@ -11147,11 +11209,6 @@
       {
         "recipe_id": 3871850009075814535,
         "recipe_name": "🍌🍫 Bizcochuelo marmolado de banana 🍌🍫",
-        "score": 6
-      },
-      {
-        "recipe_id": 2920860377060116266,
-        "recipe_name": "🍞 Segunda oportunidad: Pan 🥖",
         "score": 6
       }
     ]
@@ -12035,6 +12092,11 @@
     "slug": "segunda-oportunidad-bizcochuelo",
     "related_recipes": [
       {
+        "recipe_id": 3912434246550696056,
+        "recipe_name": "🎂 Red Velvet, parte 1: bizcochuelo 🍰",
+        "score": 6
+      },
+      {
         "recipe_id": 3871850009075814535,
         "recipe_name": "🍌🍫 Bizcochuelo marmolado de banana 🍌🍫",
         "score": 6
@@ -12043,11 +12105,6 @@
         "recipe_id": 3678281787416195252,
         "recipe_name": "🍫 Chocotorta 🍫",
         "score": 6
-      },
-      {
-        "recipe_id": 3884166691706281534,
-        "recipe_name": "🥣 Vichyssoise (sopa de Ratatouille) 🥣",
-        "score": 5
       }
     ]
   },
@@ -12895,6 +12952,11 @@
     "slug": "cream-cheese",
     "related_recipes": [
       {
+        "recipe_id": 3917508021809950567,
+        "recipe_name": "🎂 Red Velvet, parte 2: Cream cheese 🍰",
+        "score": 9
+      },
+      {
         "recipe_id": 3742112497752006485,
         "recipe_name": "🍰 Cheesecake cocido clásico 🍰",
         "score": 8
@@ -12903,11 +12965,6 @@
         "recipe_id": 3668670732125839585,
         "recipe_name": "🍋 Galletitas crackeladas de limón 🍋",
         "score": 8
-      },
-      {
-        "recipe_id": 3589641815843205086,
-        "recipe_name": "🍎 Crumble de manzana 🍏",
-        "score": 7
       }
     ]
   },
