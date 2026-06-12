@@ -13,7 +13,7 @@ const Footer = () => {
   );
 
   const facebookUrl = useMemo(() => 
-    getFacebookProfileUrl(SOCIAL_HANDLES.instagram, SOCIAL_HANDLES.facebookId, isMobile),
+    getFacebookProfileUrl(SOCIAL_HANDLES.facebook, SOCIAL_HANDLES.facebookId, isMobile),
     [isMobile]
   );
   return (
