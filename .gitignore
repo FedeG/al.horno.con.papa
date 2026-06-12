@@ -19,6 +19,10 @@
 .env.test.local
 .env.production.local
 
+# credentials
+scripts/credentials/
+
+# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -34,3 +38,9 @@ scripts/__pycache__/
 *.pyo
 *.pyd
 .Python
+
+# ignore field txt files
+src/data/*.txt
+
+# ia
+.atl/
