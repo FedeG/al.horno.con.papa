@@ -41,15 +41,17 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="footer-section">
-          <h4>Contacto</h4>
-          <div className="contact-info">
-            <a href={`mailto:${CONTACT.email}`} className="contact-link">
-              <Mail size={18} suppressHydrationWarning/>
-              {CONTACT.email}
-            </a>
+        {CONTACT.email && (
+          <div className="footer-section">
+            <h4>Contacto</h4>
+            <div className="contact-info">
+              <a href={`mailto:${CONTACT.email}`} className="contact-link">
+                <Mail size={18} suppressHydrationWarning/>
+                {CONTACT.email}
+              </a>
+            </div>
           </div>
-        </div>
+        )}
       </div>
 
       <div className="footer-bottom">

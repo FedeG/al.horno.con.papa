@@ -1,6 +1,8 @@
-import React, { useCallback, useRef, useEffect } from 'react';
+import React, { useCallback, useRef, useEffect, useState } from 'react';
 import { Search, X } from 'lucide-react';
 import { trackSearchClear } from '../utils/analytics';
+
+const LISTBOX_ID = 'autocomplete-listbox';
 
 const SearchBar = ({ 
   value, 
@@ -11,6 +13,13 @@ const SearchBar = ({
   onSelectSuggestion 
 }) => {
   const wrapperRef = useRef(null);
+  const listboxRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(-1);
+
+  // Reset active index when suggestions change
+  useEffect(() => {
+    setActiveIndex(-1);
+  }, [autocompleteSuggestions]);
 
   // Cerrar autocomplete al hacer clic fuera
   useEffect(() => {
@@ -23,11 +32,49 @@ const SearchBar = ({
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [setShowAutocomplete]);
 
-  const handleKeyDown = useCallback((e) => {
-    if (e.key === 'Enter') {
-      setShowAutocomplete(false);
+  // Scroll active suggestion into view
+  useEffect(() => {
+    if (activeIndex >= 0 && listboxRef.current) {
+      const items = listboxRef.current.querySelectorAll('.autocomplete-item');
+      if (items[activeIndex]) {
+        items[activeIndex].scrollIntoView({ block: 'nearest' });
+      }
     }
-  }, [setShowAutocomplete]);
+  }, [activeIndex]);
+
+  const handleKeyDown = useCallback((e) => {
+    if (!showAutocomplete || autocompleteSuggestions.length === 0) {
+      if (e.key === 'Enter') {
+        setShowAutocomplete(false);
+      }
+      return;
+    }
+
+    switch (e.key) {
+      case 'ArrowDown':
+        e.preventDefault();
+        setActiveIndex(prev =>
+          prev < autocompleteSuggestions.length - 1 ? prev + 1 : 0
+        );
+        break;
+      case 'ArrowUp':
+        e.preventDefault();
+        setActiveIndex(prev =>
+          prev > 0 ? prev - 1 : autocompleteSuggestions.length - 1
+        );
+        break;
+      case 'Enter':
+        e.preventDefault();
+        if (activeIndex >= 0) {
+          onSelectSuggestion(autocompleteSuggestions[activeIndex]);
+        }
+        setShowAutocomplete(false);
+        break;
+      case 'Escape':
+        setShowAutocomplete(false);
+        break;
+    }
+  }, [showAutocomplete, autocompleteSuggestions, activeIndex, onSelectSuggestion, setShowAutocomplete]);
 
   const handleSuggestionClick = useCallback((suggestion) => {
     onSelectSuggestion(suggestion);
@@ -70,11 +117,18 @@ const SearchBar = ({
             onChange={handleInputChange}
             onFocus={handleFocus}
             onKeyDown={handleKeyDown}
+            role="combobox"
+            aria-expanded={showAutocomplete && autocompleteSuggestions.length > 0}
+            aria-haspopup="listbox"
+            aria-controls={LISTBOX_ID}
+            aria-activedescendant={activeIndex >= 0 ? `${LISTBOX_ID}-option-${activeIndex}` : undefined}
+            aria-autocomplete="list"
           />
           {value && (
             <button 
               className="clear-btn" 
               onClick={handleClear}
+              aria-label="Limpiar búsqueda"
             >
               <X size={18} suppressHydrationWarning/>
             </button>
@@ -82,11 +136,20 @@ const SearchBar = ({
         </div>
         
         {showAutocomplete && autocompleteSuggestions.length > 0 && (
-          <div className="autocomplete-dropdown">
-            {autocompleteSuggestions.map((suggestion) => (
+          <div 
+            className="autocomplete-dropdown"
+            id={LISTBOX_ID}
+            role="listbox"
+            aria-label="Sugerencias de búsqueda"
+            ref={listboxRef}
+          >
+            {autocompleteSuggestions.map((suggestion, index) => (
               <div
                 key={suggestion}
-                className="autocomplete-item"
+                className={`autocomplete-item${index === activeIndex ? ' autocomplete-item--active' : ''}`}
+                role="option"
+                id={`${LISTBOX_ID}-option-${index}`}
+                aria-selected={index === activeIndex}
                 onClick={() => handleSuggestionClick(suggestion)}
               >
                 <Search size={16} suppressHydrationWarning/>

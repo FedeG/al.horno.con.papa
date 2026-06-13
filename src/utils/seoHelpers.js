@@ -30,7 +30,7 @@ const generateOrganizationSchema = (baseUrl = BASE_URL) => {
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: CONTACT_POINT.type,
-      email: CONTACT_POINT.email,
+      ...(CONTACT_POINT.email && { email: CONTACT_POINT.email }),
       url: baseUrl,
     },
     address: {

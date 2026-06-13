@@ -9,6 +9,9 @@ import RecipeDetailPage from './pages/RecipeDetailPage';
 const App = () => {
   return (
     <>
+      <a href="#main-content" className="skip-link">
+        Saltar al contenido principal
+      </a>
       <HashRedirect />
       <Routes>
         <Route path="/" element={<RecipeList />} />

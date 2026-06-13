@@ -193,7 +193,7 @@ const RecipeList = () => {
         preloadImages={preloadImages}
       />
       <Header />
-      <main>
+      <main id="main-content">
       
       <SearchBar
         value={inputValue}

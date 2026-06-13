@@ -9,7 +9,7 @@ export const ORGANIZATION = {
   name: 'Al Horno Con Papá',
   founderName: 'Federico Gonzalez',
   url: BASE_URL,
-  email: 'contacto@alhornoconpapa.com.ar',
+  email: '',
   addressCountry: 'AR',
   addressLocality: 'Argentina',
   description: 'Recetas deliciosas compartidas con amor. Cocina en familia con recetas vegetarianas, veganas, fáciles y más.',
@@ -46,8 +46,8 @@ export const SOCIAL_HANDLES = {
 
 // Contact
 export const CONTACT = {
-  email: 'info@alhornoconpapa.com',
-  phoneSupport: 'contacto@alhornoconpapa.com.ar',
+  email: '',
+  phoneSupport: '',
 };
 
 // Rutas de archivos/imágenes estáticas

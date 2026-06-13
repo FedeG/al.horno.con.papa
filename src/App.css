@@ -69,6 +69,25 @@
   }
 }
 
+/* ♿ Skip to content — visible solo al focusear con teclado */
+.skip-link {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  z-index: 9999;
+  padding: 12px 24px;
+  background: var(--primary);
+  color: var(--text-white);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+}
+
+.skip-link:focus {
+  top: 8px;
+  left: 8px;
+}
+
 /* ========================================
    App Shell
    ======================================== */
@@ -214,7 +233,8 @@
   font-size: 15px;
 }
 
-.autocomplete-item:hover {
+.autocomplete-item:hover,
+.autocomplete-item--active {
   background: var(--bg-autocomplete-hover);
 }
 

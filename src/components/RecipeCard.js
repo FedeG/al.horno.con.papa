@@ -3,6 +3,12 @@ import { Clock } from 'lucide-react';
 
 const RecipeCard = ({ recipe, onClick, isHighPriority = false }) => {
   const handleClick = () => onClick(recipe);
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      handleClick();
+    }
+  };
   const baseUrl = (process.env.PUBLIC_URL || '').replace(/\/$/, '');
   const rawImageUrl = recipe.imageUrl || '';
   const isAbsoluteImageUrl = /^(?:[a-z]+:)?\/\//i.test(rawImageUrl);
@@ -12,7 +18,7 @@ const RecipeCard = ({ recipe, onClick, isHighPriority = false }) => {
   const webpUrl = imageUrl.replace(/\.(jpg|jpeg|png)$/i, '.webp');
 
   return (
-    <div className="recipe-card" onClick={handleClick}>
+    <div className="recipe-card" onClick={handleClick} onKeyDown={handleKeyDown} role="button" tabIndex={0}>
       <div className="card-image">
         <picture>
           <source srcSet={webpUrl} type="image/webp" />

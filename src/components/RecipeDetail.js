@@ -83,7 +83,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
         schema={recipeSchema}
         ogType="article"
       />
-      <main>
+      <main id="main-content">
       <div className="detail-header">
         <button className="back-btn" onClick={onBack} aria-label="Volver al listado de recetas">
           <ArrowLeft size={24} suppressHydrationWarning/>
@@ -171,7 +171,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
                 const relatedImageUrl = `${baseUrl}/${relatedRecipe.imageUrl}`;
                 const relatedWebpUrl = relatedImageUrl.replace(/\.(jpg|jpeg|png)$/i, '.webp');
                 return (
-                  <div key={relatedRecipe.id} className="related-card" onClick={() => handleSelectRecipe(relatedRecipe)}>
+                  <div key={relatedRecipe.id} className="related-card" onClick={() => handleSelectRecipe(relatedRecipe)} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleSelectRecipe(relatedRecipe); } }} role="button" tabIndex={0}>
                     <picture>
                       <source srcSet={relatedWebpUrl} type="image/webp" />
                       <img 
