@@ -14,7 +14,7 @@ import SEO from '../components/SEO';
 import {
   extractAllTags,
   generateAutocompleteSuggestions,
-  filterRecipes,
+  fuzzyFilterRecipes,
   paginateArray,
   scrollToTop
 } from '../utils';
@@ -82,7 +82,7 @@ const RecipeList = () => {
 
   // Filter recipes based on search and tag
   const filteredRecipes = useMemo(() => 
-    filterRecipes(recipesData, searchTerm, selectedTag, showEasyOnly),
+    fuzzyFilterRecipes(recipesData, searchTerm, selectedTag, showEasyOnly),
     [searchTerm, selectedTag, showEasyOnly, recipesData]
   );
 

@@ -1,3 +1,5 @@
+import Fuse from 'fuse.js';
+
 /**
  * Hace scroll al tope de la página respetando prefers-reduced-motion.
  * Si el usuario prefiere movimiento reducido, el scroll es instantáneo.
@@ -100,23 +102,77 @@ export const generateAutocompleteSuggestions = (inputValue, recipes, maxSuggesti
     return suggestions;
 };
 
+const STOPWORDS = new Set([
+  'de', 'la', 'el', 'en', 'y', 'a', 'al', 'con', 'por', 'para',
+  'un', 'una', 'las', 'los', 'del', 'su', 'que', 'es', 'e', 'o',
+  'le', 'lo', 'se', 'no', 'tu', 'mi', 'me', 'te', 'nos', 'les',
+  'como', 'mas', 'pero', 'sin', 'entre', 'todo', 'esta', 'este',
+  'muy', 'que', 'tan', 'cuando', 'donde', 'porque'
+]);
+
+const normalizeForFuse = (text) => {
+  if (!text) return '';
+  return text.toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/ñ/g, 'n');
+};
+
 /**
- * Filtra recetas según búsqueda, tag y facilidad
+ * Filtra recetas con fuzzy search (Fuse.js):
+ * - Tokeniza la búsqueda, filtra stopwords
+ * - Por cada token significativo, calcula threshold dinámico según su largo
+ * - Todos los tokens significativos deben matchear (intersección)
  * @param {Array} recipes - Array de recetas
  * @param {string} searchTerm - Término de búsqueda
  * @param {string} selectedTag - Tag seleccionada
  * @param {boolean} showEasyOnly - Mostrar solo recetas fáciles
  * @returns {Array} Array de recetas filtradas
  */
-export const filterRecipes = (recipes, searchTerm, selectedTag, showEasyOnly) => {
-    return recipes.filter(recipe => {
-        const matchesSearch = includesNormalized(recipe.name, searchTerm) ||
-            recipe.cleaned_ingredientes.some(ing => includesNormalized(ing, searchTerm)) ||
-            recipe.tags.some(tag => includesNormalized(tag, searchTerm));
-        const matchesTag = selectedTag === 'Todas' || recipe.tags.includes(selectedTag);
-        const matchesEasy = !showEasyOnly || recipe.easy;
-        return matchesSearch && matchesTag && matchesEasy;
+export const fuzzyFilterRecipes = (recipes, searchTerm, selectedTag, showEasyOnly) => {
+  // Aplicar filtros exactos primero (tag, easy)
+  let filtered = recipes;
+  if (selectedTag !== 'Todas') {
+    filtered = filtered.filter(r => r.tags.includes(selectedTag));
+  }
+  if (showEasyOnly) {
+    filtered = filtered.filter(r => r.easy);
+  }
+
+  if (!searchTerm || !searchTerm.trim()) return filtered;
+
+  const tokens = searchTerm.toLowerCase().trim().split(/\s+/).filter(Boolean);
+  const significantTokens = tokens.filter(t => t.length >= 2 && !STOPWORDS.has(t));
+
+  // Si solo hay stopwords, fallback a substring matching exacto
+  if (significantTokens.length === 0) {
+    return filtered.filter(recipe =>
+      tokens.some(t =>
+        includesNormalized(recipe.name, t) ||
+        recipe.cleaned_ingredientes.some(ing => includesNormalized(ing, t)) ||
+        recipe.tags.some(tag => includesNormalized(tag, t))
+      )
+    );
+  }
+
+  // Por cada token significativo, buscar con Fuse.js y threshold dinámico
+  const matchingIdSets = significantTokens.map(token => {
+    const threshold = Math.min(0.1 + (token.length - 1) * 0.035, 0.45);
+    const fuse = new Fuse(filtered, {
+      keys: [
+        { name: 'name', getFn: (item) => normalizeForFuse(item.name) },
+        { name: 'tags', getFn: (item) => item.tags.map(t => normalizeForFuse(t)) },
+        { name: 'cleaned_ingredientes', getFn: (item) => item.cleaned_ingredientes.map(i => normalizeForFuse(i)) },
+      ],
+      threshold,
     });
+    return new Set(fuse.search(normalizeForFuse(token)).map(r => r.item.id));
+  });
+
+  // Intersección: debe matchear TODOS los tokens significativos
+  return filtered.filter(recipe =>
+    matchingIdSets.every(idSet => idSet.has(recipe.id))
+  );
 };
 
 /**
