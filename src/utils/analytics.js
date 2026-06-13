@@ -10,25 +10,37 @@ export const initGA = () => {
     return;
   }
 
-  ReactGA.initialize(measurementId, {
-    gtagOptions: {
-      send_page_view: false, // Lo manejamos manualmente con SPA
-    }
-  });
+  try {
+    ReactGA.initialize(measurementId, {
+      gtagOptions: {
+        send_page_view: false, // Lo manejamos manualmente con SPA
+      }
+    });
+  } catch (err) {
+    // Silencioso — no romper UX por analytics
+  }
 };
 
 // Track pageview
 export const trackPageView = (path, title) => {
-  ReactGA.send({ 
-    hitType: 'pageview', 
-    page: path, 
-    title: title 
-  });
+  try {
+    ReactGA.send({ 
+      hitType: 'pageview', 
+      page: path, 
+      title: title 
+    });
+  } catch (err) {
+    // Silencioso — no romper UX por analytics
+  }
 };
 
 // Track eventos personalizados
 export const trackEvent = (eventName, eventParams = {}) => {
-  ReactGA.event(eventName, eventParams);
+  try {
+    ReactGA.event(eventName, eventParams);
+  } catch (err) {
+    // Silencioso — no romper UX por analytics
+  }
 };
 
 // Eventos específicos del proyecto
