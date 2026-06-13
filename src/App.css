@@ -778,6 +778,40 @@
   box-shadow: var(--shadow-sm);
 }
 
+.not-found {
+  text-align: center;
+  padding: 48px 20px;
+}
+
+.not-found h2 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.not-found p {
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+  font-size: 1rem;
+}
+
+.not-found .search-btn {
+  display: inline-block;
+  padding: 12px 32px;
+  background: var(--primary);
+  color: var(--text-white);
+  border: none;
+  border-radius: var(--radius-full);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.not-found .search-btn:hover {
+  background: var(--primary-dark);
+}
+
 .video-container {
   width: 100%;
   margin-bottom: 24px;

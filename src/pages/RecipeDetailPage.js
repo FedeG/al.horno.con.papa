@@ -54,19 +54,31 @@ const RecipeDetailPage = () => {
     scrollToTop();
   }, [navigate]);
 
+  const handleSearchSlug = useCallback(() => {
+    const searchQuery = id.replace(/[-_]/g, ' ');
+    navigate(`/?search=${encodeURIComponent(searchQuery)}`);
+    scrollToTop();
+  }, [navigate, id]);
+
   const handleTagClick = useCallback((tag) => {
     navigate(`/?tag=${encodeURIComponent(tag)}`);
     scrollToTop();
   }, [navigate]);
 
   if (!recipe) {
+    const searchQuery = id.replace(/[-_]/g, ' ');
     return (
       <div className="app">
         <Header />
-        <div className="detail-content">
-          <h2>Receta no encontrada</h2>
-          <button onClick={handleBackToList}>Volver al inicio</button>
-        </div>
+        <main id="main-content" className="detail-content">
+          <div className="not-found">
+            <h2>Receta no encontrada</h2>
+            <p>No hay ninguna receta con ese nombre. ¿Querés buscar "{searchQuery}"?</p>
+            <button className="search-btn" onClick={handleSearchSlug}>
+              Buscar
+            </button>
+          </div>
+        </main>
         <Footer />
       </div>
     );
