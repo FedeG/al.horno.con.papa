@@ -17,6 +17,26 @@ const emojiRegexPattern = emojiRegex();
 // Elimina emojis de un string usando un regex compatible con todos los navegadores soportados
 const removeEmojis = (str) => (str || '').replace(emojiRegexPattern, '').trim();
 
+// Extrae la primera línea de descripción real de una receta,
+// saltando el título con emoji y las líneas de sección (tiempo, ingredientes, pasos, tips)
+export const extractDescription = (description) => {
+  const lines = (description || '').split('\n').filter(line => line.trim().length > 0);
+  if (lines.length === 0) return '';
+
+  // Emojis que marcan el inicio de una sección (no una descripción real)
+  const sectionStarters = [RECIPE_EMOJIS.time, RECIPE_EMOJIS.ingredients, RECIPE_EMOJIS.steps, RECIPE_EMOJIS.tips, ...RECIPE_EMOJIS.sectionMarkers];
+  const sectionRegex = new RegExp(`^[${sectionStarters.join('')}]`);
+
+  // Arrancamos desde index 1 para saltar la línea del título con emoji
+  for (let i = 1; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (line.length > 0 && !sectionRegex.test(line)) {
+      return line;
+    }
+  }
+  return lines[0] || '';
+};
+
 // Genera el schema de Organization mejorado para SEO y AIO
 const generateOrganizationSchema = (baseUrl = BASE_URL) => {
   return {
@@ -209,7 +229,7 @@ export const generateRecipeSchema = (recipe, baseUrl = BASE_URL) => {
   const recipeSchema = {
     '@type': 'Recipe',
     name: removeEmojis(recipe.name),
-    description: recipe.description.split('\n').filter(line => line.trim().length > 0)[1] || 'Receta deliciosa lista para preparar',
+    description: extractDescription(recipe.description) || 'Receta deliciosa lista para preparar',
     image: URLS.getRecipeImageUrl(recipe.imageUrl),
     url: URLS.getRecipeUrl(recipe.slug),
     sameAs: URLS.getRecipeUrl(recipe.slug),
@@ -257,8 +277,7 @@ export const generateRecipeSchema = (recipe, baseUrl = BASE_URL) => {
       cssSelector: CSS_SELECTORS.recipe,
     },
     '@graph': [
-      generateWebSiteSchema(baseUrl),
-      recipeSchema
+      generateWebSiteSchema(baseUrl)
     ]
   };
   

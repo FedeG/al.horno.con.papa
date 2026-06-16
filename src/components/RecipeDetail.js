@@ -11,7 +11,7 @@ import {
   trackVideoEmbed 
 } from '../utils/analytics';
 import SEO from './SEO';
-import { generateRecipeSchema } from '../utils/seoHelpers';
+import { generateRecipeSchema, extractDescription } from '../utils/seoHelpers';
 import Footer from './Footer';
 
 const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagClick }) => {
@@ -67,8 +67,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
   );
 
   const shortDescription = useMemo(() => {
-    const descText = recipe.description.split('\n')[1] || '';
-    return descText.substring(0, 160).trim();
+    return extractDescription(recipe.description).substring(0, 160).trim();
   }, [recipe.description]);
 
   return (
