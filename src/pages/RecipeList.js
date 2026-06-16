@@ -194,7 +194,7 @@ const RecipeList = () => {
       />
       <Header />
       <main id="main-content">
-      
+
       <SearchBar
         value={inputValue}
         onChange={handleSearchChange}

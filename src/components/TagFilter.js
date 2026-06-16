@@ -1,4 +1,4 @@
-import React, { useRef, useCallback, useState, useEffect } from 'react';
+import React, { useRef, useCallback, useState, useEffect, useMemo } from 'react';
 import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
 import { trackTagScroll } from '../utils/analytics';
 
@@ -32,13 +32,17 @@ const TagFilter = ({ allTags, selectedTag, onSelectTag, featuredTags = [] }) => 
     };
   }, [updateScrollButtons]);
 
+  const prefersReducedMotion = useMemo(
+    () => window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+    []
+  );
+
   const scroll = useCallback((direction) => {
     if (scrollContainerRef.current) {
       const scrollAmount = 300;
-      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       scrollContainerRef.current.scrollBy({
         left: direction === 'left' ? -scrollAmount : scrollAmount,
-        behavior: prefersReduced ? 'auto' : 'smooth'
+        behavior: prefersReducedMotion ? 'auto' : 'smooth'
       });
       trackTagScroll(direction);
       // Actualizar botones después del scroll animado

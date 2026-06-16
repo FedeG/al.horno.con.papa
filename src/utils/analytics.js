@@ -1,12 +1,13 @@
 // Google Analytics utility functions usando react-ga4
 import ReactGA from 'react-ga4';
+import { log } from './index';
 
 // Inicializar Google Analytics
 export const initGA = () => {
   const measurementId = process.env.REACT_APP_GA_MEASUREMENT_ID;
   
   if (!measurementId) {
-    console.warn('Google Analytics Measurement ID no configurado');
+    log('warn', 'Google Analytics Measurement ID no configurado');
     return;
   }
 
@@ -17,7 +18,7 @@ export const initGA = () => {
       }
     });
   } catch (err) {
-    // Silencioso — no romper UX por analytics
+    log('error', 'Error al inicializar Google Analytics');
   }
 };
 
@@ -30,7 +31,7 @@ export const trackPageView = (path, title) => {
       title: title 
     });
   } catch (err) {
-    // Silencioso — no romper UX por analytics
+    log('warn', 'Error al trackear pageview:', err);
   }
 };
 
@@ -39,7 +40,7 @@ export const trackEvent = (eventName, eventParams = {}) => {
   try {
     ReactGA.event(eventName, eventParams);
   } catch (err) {
-    // Silencioso — no romper UX por analytics
+    log('warn', `Error al trackear evento "${eventName}":`, err);
   }
 };
 

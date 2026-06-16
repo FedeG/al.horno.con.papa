@@ -149,35 +149,6 @@ class ErrorBoundary extends React.Component {
                 Volver al inicio
               </button>
             </div>
-
-            {process.env.NODE_ENV === 'development' && this.state.error && (
-              <details style={{
-                marginTop: '32px',
-                textAlign: 'left',
-                background: '#f0f0f0',
-                borderRadius: '12px',
-                padding: '16px',
-              }}>
-                <summary style={{
-                  cursor: 'pointer',
-                  fontWeight: 600,
-                  fontSize: '13px',
-                  color: '#666',
-                }}>
-                  Detalles del error (solo desarrollo)
-                </summary>
-                <pre style={{
-                  fontSize: '12px',
-                  color: '#C4704F',
-                  marginTop: '12px',
-                  whiteSpace: 'pre-wrap',
-                  wordBreak: 'break-word',
-                }}>
-                  {this.state.error?.message}
-                  {this.state.error?.stack && `\n\n${this.state.error.stack}`}
-                </pre>
-              </details>
-            )}
           </div>
         </div>
       );

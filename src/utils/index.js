@@ -1,6 +1,17 @@
 import Fuse from 'fuse.js';
 
 /**
+ * Logger condicional que solo imprime en desarrollo.
+ * @param {'warn'|'error'|'log'|'info'} level - Nivel del console method
+ * @param {...any} args - Argumentos a pasar a console
+ */
+export const log = (level, ...args) => {
+  if (process.env.NODE_ENV !== 'production') {
+    console[level](...args);
+  }
+};
+
+/**
  * Hace scroll al tope de la página respetando prefers-reduced-motion.
  * Si el usuario prefiere movimiento reducido, el scroll es instantáneo.
  */
