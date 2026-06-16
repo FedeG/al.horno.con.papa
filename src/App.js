@@ -3,12 +3,13 @@ import { Routes, Route } from 'react-router-dom';
 
 import './App.css';
 import HashRedirect from './components/HashRedirect';
+import ErrorBoundary from './components/ErrorBoundary';
 import RecipeList from './pages/RecipeList';
 import RecipeDetailPage from './pages/RecipeDetailPage';
 
 const App = () => {
   return (
-    <>
+    <ErrorBoundary>
       <a href="#main-content" className="skip-link">
         Saltar al contenido principal
       </a>
@@ -17,7 +18,7 @@ const App = () => {
         <Route path="/" element={<RecipeList />} />
         <Route path="/recipe/:id/" element={<RecipeDetailPage />} />
       </Routes>
-    </>
+    </ErrorBoundary>
   );
 };
 
