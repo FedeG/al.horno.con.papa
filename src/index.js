@@ -10,6 +10,13 @@ import { initGA } from './utils/analytics';
 // Inicializar Google Analytics
 initGA();
 
+// Registrar Service Worker para PWA
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js');
+  });
+}
+
 const rootElement = document.getElementById('root');
 const app = (
   <React.StrictMode>

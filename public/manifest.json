@@ -1,6 +1,7 @@
 {
   "short_name": "Al Horno Con Papá",
   "name": "Al Horno Con Papá - Cocina en familia",
+  "description": "Recetas deliciosas compartidas con amor. Cocina en familia con recetas vegetarianas, veganas, fáciles y más.",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -13,8 +14,10 @@
       "type": "image/png"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "theme_color": "#667eea",
-  "background_color": "#ffffff"
+  "theme_color": "#6B7F5C",
+  "background_color": "#F5F3ED",
+  "categories": ["food", "lifestyle"]
 }
