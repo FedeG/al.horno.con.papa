@@ -48,7 +48,7 @@ const TagFilter = ({ allTags, selectedTag, onSelectTag, featuredTags = [] }) => 
       // Actualizar botones después del scroll animado
       requestAnimationFrame(updateScrollButtons);
     }
-  }, [updateScrollButtons]);
+  }, [updateScrollButtons, prefersReducedMotion]);
 
   const scrollLeft = useCallback(() => scroll('left'), [scroll]);
   const scrollRight = useCallback(() => scroll('right'), [scroll]);

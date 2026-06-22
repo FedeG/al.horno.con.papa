@@ -73,6 +73,8 @@ const SearchBar = ({
       case 'Escape':
         setShowAutocomplete(false);
         break;
+      default:
+        break;
     }
   }, [showAutocomplete, autocompleteSuggestions, activeIndex, onSelectSuggestion, setShowAutocomplete]);
 
