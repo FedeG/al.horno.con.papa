@@ -267,10 +267,14 @@ yarn test --watchAll=false --testNamePattern="integración"
 yarn test
 ```
 
-**Cobertura actual**: 88 tests
+**Cobertura actual**: 115 tests
 - **45** unit tests de utilidades (filtros, paginación, URLs, SEO, etc.)
-- **29** smoke tests de componentes (Header, Footer, RecipeCard, SearchBar, etc.)
-- **14** tests de integración (búsqueda, filtros por tag, easy filter, autocomplete, paginación, query params de URL)
+- **29** smoke tests de componentes (Header, Footer, RecipeCard, SearchBar, ErrorBoundary, etc.)
+- **14** tests de integración de RecipeList (búsqueda, filtros, paginación, autocomplete, query params)
+- **16** tests de RecipeDetailPage (slug, 404, relacionadas, navegación, case insensitive, ID numérico)
+- **8** tests de fuzzy filter con Fuse.js (typos, acentos, intersección de tokens, stopwords, thresholds)
+- **7** tests de helpers de SEO (extractDescription)
+- **2** tests de happy path completo (listado → detalle → listado)
 
 ---
 
