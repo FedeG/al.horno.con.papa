@@ -251,6 +251,29 @@ Ver [scripts/README.md](scripts/README.md) para documentación completa.
 
 ---
 
+## 🧪 Tests
+
+```bash
+# Asegurarse de usar Node 22
+nvm use 22
+
+# Ejecutar todos los tests
+yarn test --watchAll=false
+
+# Ejecutar un test específico
+yarn test --watchAll=false --testNamePattern="integración"
+
+# Modo interactivo (watch)
+yarn test
+```
+
+**Cobertura actual**: 88 tests
+- **45** unit tests de utilidades (filtros, paginación, URLs, SEO, etc.)
+- **29** smoke tests de componentes (Header, Footer, RecipeCard, SearchBar, etc.)
+- **14** tests de integración (búsqueda, filtros por tag, easy filter, autocomplete, paginación, query params de URL)
+
+---
+
 ## 🐛 Troubleshooting
 
 ### Build falla

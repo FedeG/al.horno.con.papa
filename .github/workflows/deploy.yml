@@ -33,11 +33,19 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Test
-        run: yarn test --watchAll=false --passWithNoTests
+        run: yarn test
         env:
           CI: true
       
+      - name: Cache Chromium
+        id: cache-chromium
+        uses: actions/cache@v4
+        with:
+          path: /usr/bin/chromium-browser
+          key: chromium-${{ runner.os }}
+
       - name: Install Chromium
+        if: steps.cache-chromium.outputs.cache-hit != 'true'
         run: |
           sudo apt-get update
           sudo apt-get install -y chromium-browser

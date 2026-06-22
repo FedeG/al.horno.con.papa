@@ -28,6 +28,13 @@
         "analyze": "npx cra-bundle-analyzer",
         "debug:hydrate": "node scripts/debug-hydration.js"
     },
+    "jest": {
+    "moduleNameMapper": {
+      "^react-router-dom$": "<rootDir>/node_modules/react-router-dom/dist/index.js",
+      "^react-router$": "<rootDir>/node_modules/react-router/dist/development/index.js",
+      "^react-router/dom$": "<rootDir>/node_modules/react-router/dist/development/dom-export.js"
+    }
+  },
     "reactSnap": {
         "source": "build",
         "destination": "build",
@@ -58,6 +65,10 @@
         ]
     },
     "devDependencies": {
+        "@testing-library/dom": "^10.4.1",
+        "@testing-library/jest-dom": "^6.9.1",
+        "@testing-library/react": "^16.3.2",
+        "@testing-library/user-event": "^14.6.1",
         "cra-bundle-analyzer": "^0.1.1",
         "express": "^5.2.1",
         "gh-pages": "^6.1.0",
