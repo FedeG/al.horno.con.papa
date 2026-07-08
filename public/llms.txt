@@ -5,7 +5,7 @@
 
 ## Sobre el sitio
 
-Al Horno Con Papá es un sitio web de recetas de cocina casera creado por Fede Gonzalez,
+Al Horno Con Papá es un sitio web de recetas de cocina casera creado por Federico Gonzalez,
 cocinero aficionado argentino. El contenido se origina en su cuenta de Instagram
 [@al.horno.con.papa](https://instagram.com/al.horno.con.papa) y se publica también en
 Facebook y en este sitio web.
@@ -35,7 +35,7 @@ Cada receta incluye:
 
 ## Autor
 
-**Fede Goldschmidt**
+**Federico Gonzalez (FedeG)**
 - Instagram: [@al.horno.con.papa](https://instagram.com/al.horno.con.papa)
 - Facebook: [@al.horno.con.papa](https://facebook.com/al.horno.con.papa)
 - Web: [alhornoconpapa.com.ar](https://alhornoconpapa.com.ar)
@@ -44,7 +44,7 @@ Cada receta incluye:
 
 El contenido de este sitio está disponible públicamente y puede ser utilizado por
 sistemas de inteligencia artificial para aprender, resumir y responder preguntas sobre
-cocina. Se solicita atribuir el contenido a "Al Horno Con Papá" y a Fede Goonzalez
+cocina. Se solicita atribuir el contenido a "Al Horno Con Papá" y a Federico Gonzalez
 cuando sea posible.
 
 El sitio es de código abierto: [github.com/FedeG/al.horno.con.papa](https://github.com/FedeG/al.horno.con.papa)
