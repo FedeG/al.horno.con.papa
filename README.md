@@ -365,7 +365,7 @@ El parser detecta automáticamente la sección de ingredientes:
 
 ## 📝 Licencia
 
-MIT - Fede Goldschmidt © 2026
+MIT - FedeG - Federico Gonzalez © 2026
 
 ---
 
