@@ -2,7 +2,7 @@
 
 Aplicación web para compartir recetas de cocina en familia. Diseño mobile-first con búsqueda inteligente, filtros, paginación, videos de Instagram embebidos y sincronización automática desde Instagram.
 
-🌐 **[Ver Demo](https://fedeg.github.io/al_horno_con_papa)**
+🌐 **[Ver Sitio](https://alhornoconpapa.com.ar)**
 
 ---
 
@@ -365,7 +365,7 @@ El parser detecta automáticamente la sección de ingredientes:
 
 ## 📝 Licencia
 
-MIT - Fede Goldschmidt © 2026
+MIT - FedeG - Federico Gonzalez © 2026
 
 ---
 
