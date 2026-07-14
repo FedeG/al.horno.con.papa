@@ -93,6 +93,11 @@ console.log(`📸 React-snap: pre-renderizando ${routes.length} rutas...`);
       fallback: 'index.html',
       include: routes,
       puppeteerArgs,
+      minifyHtml: {
+        collapseWhitespace: false,
+        sortAttributes: false,
+        sortClassName: false,
+      },
     });
     console.log('✅ React-snap completado exitosamente.');
   } catch (err) {
