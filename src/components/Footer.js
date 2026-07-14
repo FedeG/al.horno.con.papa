@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
-import { ChefHat, Instagram, Facebook, Mail } from 'lucide-react';
+import { ChefHat, Mail } from 'lucide-react';
+import { Instagram, Facebook } from './BrandIcon';
 import { getInstagramProfileUrl, getFacebookProfileUrl } from '../utils';
 import { ORGANIZATION, AUTHOR, SOCIAL_HANDLES, CONTACT } from '../utils/constants';
 import { useIsMobile } from '../hooks/useIsMobile';

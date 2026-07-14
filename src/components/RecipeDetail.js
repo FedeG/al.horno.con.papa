@@ -1,5 +1,6 @@
 import React, { useMemo, useCallback, useEffect } from 'react';
-import { ArrowLeft, Tag, Sparkles, ChefHat, Instagram, Facebook } from 'lucide-react';
+import { ArrowLeft, Tag, Sparkles, ChefHat } from 'lucide-react';
+import { Instagram, Facebook } from './BrandIcon';
 import { getInstagramEmbedUrl, getInstagramLinkUrl } from '../utils';
 import { URLS } from '../utils/constants';
 import { useIsMobile } from '../hooks/useIsMobile';

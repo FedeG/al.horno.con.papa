@@ -1,0 +1,26 @@
+diff --git a/node_modules/lucide-react/dist/cjs/lucide-react.js b/node_modules/lucide-react/dist/cjs/lucide-react.js
+index 62889ef..b47b372 100644
+--- a/node_modules/lucide-react/dist/cjs/lucide-react.js
++++ b/node_modules/lucide-react/dist/cjs/lucide-react.js
+@@ -33,7 +33,7 @@ const createLucideIcon = (iconName, iconNode) => {
+         height: size,
+         stroke: color,
+         strokeWidth: absoluteStrokeWidth ? Number(strokeWidth) * 24 / Number(size) : strokeWidth,
+-        className: ["lucide", `lucide-${toKebabCase(iconName)}`, className].join(" "),
++        className: ["lucide", `lucide-${toKebabCase(iconName)}`, className].filter(Boolean).join(" "),
+         ...rest
+       },
+       [
+diff --git a/node_modules/lucide-react/dist/esm/createLucideIcon.js b/node_modules/lucide-react/dist/esm/createLucideIcon.js
+index cc1650f..0dca9e8 100644
+--- a/node_modules/lucide-react/dist/esm/createLucideIcon.js
++++ b/node_modules/lucide-react/dist/esm/createLucideIcon.js
+@@ -20,7 +20,7 @@ const createLucideIcon = (iconName, iconNode) => {
+         height: size,
+         stroke: color,
+         strokeWidth: absoluteStrokeWidth ? Number(strokeWidth) * 24 / Number(size) : strokeWidth,
+-        className: ["lucide", `lucide-${toKebabCase(iconName)}`, className].join(" "),
++        className: ["lucide", `lucide-${toKebabCase(iconName)}`, className].filter(Boolean).join(" "),
+         ...rest
+       },
+       [
