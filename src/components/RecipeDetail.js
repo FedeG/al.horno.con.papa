@@ -49,19 +49,19 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
     onSelectRecipe(relatedRecipe);
   }, [onSelectRecipe, recipe.id]);
 
-  const descriptionLines = useMemo(() => 
+  const descriptionLines = useMemo(() =>
     recipe.description.split('\n'),
     [recipe.description]
   );
 
   const slug = recipe.slug;
 
-  const canonicalUrl = useMemo(() => 
+  const canonicalUrl = useMemo(() =>
     URLS.getRecipeUrl(slug),
     [slug]
   );
 
-  const recipeSchema = useMemo(() => 
+  const recipeSchema = useMemo(() =>
     generateRecipeSchema(recipe),
     [recipe]
   );
@@ -71,8 +71,8 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
   }, [recipe.description]);
 
   return (
-    <div className="detail-view" suppressHydrationWarning>
-      <SEO 
+    <div className="detail-view">
+      <SEO
         title={recipe.name}
         description={shortDescription}
         imageUrl={recipe.imageUrl}
