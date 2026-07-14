@@ -4,10 +4,20 @@
 Constants - Configuración centralizada del proyecto
 """
 
+import os
+from pathlib import Path
+from dotenv import load_dotenv
+
+# Cargar variables de entorno desde .env en la raíz del proyecto
+dotenv_path = Path(__file__).resolve().parent.parent / '.env'
+load_dotenv(dotenv_path)
+
+NOTA_ENV = "Estas variables ahora se leen desde ../.env. Copiá .env.example a .env y completalas."
+
 # Configuración de Instagram
-INSTAGRAM_USERNAME = "al.horno.con.papa"
-LOGIN_USERNAME = "al.horno.con.papa"
-LOGIN_PASSWORD = "xxxxxxxxxxxxxx"
+INSTAGRAM_USERNAME = os.getenv("INSTAGRAM_USERNAME", "al.horno.con.papa")
+LOGIN_USERNAME = os.getenv("INSTAGRAM_LOGIN_USERNAME", INSTAGRAM_USERNAME)
+LOGIN_PASSWORD = os.getenv("INSTAGRAM_LOGIN_PASSWORD", "")
 
 # Rutas de archivos
 RECIPES_FILE = "src/data/recipes.json"
@@ -418,13 +428,13 @@ PATRONES_INICIO = [
 ]
 
 # URL del sitio para indexación
-SITE_URL = "https://alhornoconpapa.com.ar/"
+SITE_URL = os.getenv("SITE_URL", "https://alhornoconpapa.com.ar/")
 
 # Archivo de credenciales de Google Cloud
-JSON_KEY_FILE = 'credentials/al-horno-con-papa-xxxxxxxxx.json'
+JSON_KEY_FILE = os.getenv("GOOGLE_CREDENTIALS_PATH", "credentials/al-horno-con-papa-xxxxxxxxx.json")
 
-# Reemplaza con tu API key de Bing
-BING_API_KEY = "xxxxxxxx"
+# API key de Bing Indexing API
+BING_API_KEY = os.getenv("BING_API_KEY", "")
 
 # Máximo de URLs por request en Bing Indexing API
 BING_BULK_SIZE = 10
