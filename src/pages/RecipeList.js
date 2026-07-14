@@ -182,7 +182,7 @@ const RecipeList = () => {
   );
 
   return (
-    <div className="app">
+    <div className="app" suppressHydrationWarning>
       <SEO 
         title={selectedTag !== 'Todas' ? `Recetas ${selectedTag}` : undefined}
         description={selectedTag !== 'Todas' 

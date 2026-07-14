@@ -71,7 +71,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
   }, [recipe.description]);
 
   return (
-    <div className="detail-view">
+    <div className="detail-view" suppressHydrationWarning>
       <SEO 
         title={recipe.name}
         description={shortDescription}

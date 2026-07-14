@@ -68,7 +68,7 @@ const RecipeDetailPage = () => {
   if (!recipe) {
     const searchQuery = id.replace(/[-_]/g, ' ');
     return (
-      <div className="app">
+      <div className="app" suppressHydrationWarning>
         <Header />
         <main id="main-content" className="detail-content">
           <div className="not-found">
