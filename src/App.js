@@ -10,7 +10,7 @@ import RecipeDetailPage from './pages/RecipeDetailPage';
 const App = () => {
   return (
     <ErrorBoundary>
-      <a href="#main-content" className="skip-link">
+      <a href="#main-content" className="skip-link" suppressHydrationWarning>
         Saltar al contenido principal
       </a>
       <HashRedirect />
