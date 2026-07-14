@@ -23,18 +23,16 @@
         "postbuild": "NODE_ENV=production node scripts/react-snap.js",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "predeploy": "yarn build",
-        "deploy": "gh-pages -d build",
         "analyze": "npx cra-bundle-analyzer",
         "debug:hydrate": "node scripts/debug-hydration.js"
     },
     "jest": {
-    "moduleNameMapper": {
-      "^react-router-dom$": "<rootDir>/node_modules/react-router-dom/dist/index.js",
-      "^react-router$": "<rootDir>/node_modules/react-router/dist/development/index.js",
-      "^react-router/dom$": "<rootDir>/node_modules/react-router/dist/development/dom-export.js"
-    }
-  },
+        "moduleNameMapper": {
+            "^react-router-dom$": "<rootDir>/node_modules/react-router-dom/dist/index.js",
+            "^react-router$": "<rootDir>/node_modules/react-router/dist/development/index.js",
+            "^react-router/dom$": "<rootDir>/node_modules/react-router/dist/development/dom-export.js"
+        }
+    },
     "reactSnap": {
         "source": "build",
         "destination": "build",
@@ -71,8 +69,8 @@
         "@testing-library/user-event": "^14.6.1",
         "cra-bundle-analyzer": "^0.1.1",
         "express": "^5.2.1",
-        "gh-pages": "^6.1.0",
         "source-map-explorer": "^2.5.3",
         "webpack-bundle-analyzer": "^5.3.0"
-    }
+    },
+    "packageManager": "yarn@4.17.1"
 }
