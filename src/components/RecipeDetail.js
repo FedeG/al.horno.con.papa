@@ -143,6 +143,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
               className="social-btn instagram"
               aria-label={`Ver esta receta en Instagram: ${recipe.name}`}
               onClick={() => trackSocialClick('instagram', recipe.id, recipe.name)}
+              suppressHydrationWarning
             >
               <Instagram size={20} suppressHydrationWarning/> Ver en Instagram
             </a>
@@ -155,6 +156,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
               className="social-btn facebook"
               aria-label={`Compartir esta receta en Facebook: ${recipe.name}`}
               onClick={() => trackSocialClick('facebook', recipe.id, recipe.name)}
+              suppressHydrationWarning
             >
               <Facebook size={20} suppressHydrationWarning/> Compartir en Facebook
             </a>

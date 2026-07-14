@@ -283,12 +283,13 @@
 }
 
 .tags-scroll {
-  display: flex;
   align-items: center;
+  display: flex;
+  flex: 1;
   gap: 12px;
+  margin-left: 20px;
   overflow-x: auto;
   padding: 2px 0 2px;
-  flex: 1;
   scrollbar-width: none;
 }
 
