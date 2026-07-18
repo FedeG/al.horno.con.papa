@@ -21,7 +21,7 @@
         "prebuild": "node optimize-images.js",
         "build": "NODE_ENV=production node scripts/generate-sitemap.js && react-scripts build",
         "postbuild": "NODE_ENV=production node scripts/react-snap.js",
-        "build:full": "NODE_ENV=production node scripts/generate-sitemap.js && react-scripts build && NODE_ENV=production node scripts/react-snap.js",
+        "build:full": "yarn prebuild && yarn build && yarn postbuild",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "analyze": "npx cra-bundle-analyzer",

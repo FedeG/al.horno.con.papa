@@ -1,57 +1,58 @@
 # 🍳 Al Horno Con Papá
 
-Aplicación web para compartir recetas de cocina en familia. Diseño mobile-first con búsqueda inteligente, filtros, paginación, videos de Instagram embebidos y sincronización automática desde Instagram.
+**SPA de mis recetas** — catálogo de recetas de mi cuenta de cocina [@al.horno.con.papa](https://instagram.com/al.horno.con.papa) con búsqueda inteligente.
 
-🌐 **[Ver Sitio](https://alhornoconpapa.com.ar)**
+🌐 **[Ver sitio →](https://alhornoconpapa.com.ar)**
 
----
+## 🏗️ Arquitectura y aspectos técnicos
 
-## ✨ Características
+| Área | Implementación |
+| ---- | -------------- |
+| **Frontend** | React 18 SPA con routing client-side, lazy loading de imágenes, responsive mobile-first |
+| **Búsqueda** | Fuzzy search con **Fuse.js** + threshold dinámico por token + autocomplete sobre ingredientes/nombres/tags |
+| **Accesibilidad** | Skip-to-content, keyboard navigation, ARIA roles (`listbox`/`option`/`button`), `prefers-reduced-motion`, WCAG compliant |
+| **PWA** | Service worker cache-first + network-first navigation, offline page, manifest con theme consistente |
+| **SEO** | Schema.org (Recipe + Organization + WebSite + BreadcrumbList), JSON-LD dinámico, OG tags, hreflang-ready, prerenderizado con react-snap |
+| **Hosting** | Cloudflare Pages con dominio personalizado, CDN global, HTTP/3 |
+| **Backend** | Python scraper + pipeline de sincronización automática desde Instagram con normalización de tags y extracción de ingredientes |
+| **CI/CD** | GitHub Actions: tests en cada push → Cloudflare Pages deploy automático desde `main` |
+| **Testing** | **Tests** (unit + integración + funcional) con `@testing-library/react`, corriendo en CI |
 
-### Frontend
+## 🧪 Calidad
 
-- 🔍 **Búsqueda inteligente** con autocompletado (ingredientes, nombres, tags)
-- 🏷️ **Filtros dinámicos** por tags con tags destacadas
-- ⚡ **Filtro rápido** para recetas fáciles y rápidas
-- 📄 **Paginación** (6 recetas por página)
-- 🎥 **Videos de Instagram embebidos** (reels y posts)
-- 🔗 **Recetas relacionadas** basadas en tags comunes
-- 📱 **Responsive design** optimizado para móviles
-- 🎨 **UI moderna** con gradientes y animaciones suaves
-- 🔗 **Deep linking** con soporte para compartir URLs específicas
+```bash
+yarn test
+```
 
-### Backend (Scripts)
-
-- 🤖 **Sincronización automática** desde Instagram
-- 🏷️ **Normalización inteligente** de tags (sinónimos, filtros)
-- 🥣 **Extracción automática** de ingredientes desde captions
-- 📸 **Descarga local** de imágenes para mejor performance
-- 🔄 **Actualización incremental** (solo posts nuevos)
-- 🔧 **Scripts de utilidad** para mantenimiento
-
----
+| Tipo | Qué cubren |
+| ---- | ---------- |
+| Unitarios (utils) | Filtros fuzzy, paginación, URLs, SEO helpers, autocomplete |
+| Componentes (smoke) | Header, Footer, RecipeCard, SearchBar, Pagination, TagFilter, ErrorBoundary |
+| Integración RecipeList | Búsqueda con debounce, filtros por tag/fácil, combinación, paginación, autocomplete, query params |
+| Integración RecipeDetail | Slug loading, 404, recetas relacionadas, navegación, case insensitive, ID retrocompat |
+| Fuzzy thresholds | Typos, acentos, multi-token intersección, stopwords, threshold dinámico |
+| Happy path | Flujo completo listado → detalle → volver |
+| SEO helpers | extractDescription edge cases |
 
 ## 🚀 Quick Start
 
-### Desarrollo Frontend
-
 ```bash
-# Instalar dependencias
+nvm use 22
 yarn install
-
-# Iniciar servidor de desarrollo
-yarn start
-
-# Build para producción
-yarn build
+yarn start        # Desarrollo (http://localhost:3000)
+yarn build        # Producción
+yarn build:full   # Producción completa (prebuild + build + postbuild)
+yarn test         # Tests
 ```
 
 ### Scripts de Sincronización
 
+**Nota:** `yarn build` solo ejecuta el build de React. Para el build completo de producción (optimize imágenes, sitemap, react-snap) usar `yarn build:full`.
+
 ```bash
 cd scripts
 python3 -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+source venv/bin/activate
 pip install -r requirements.txt
 
 # Sincronizar desde Instagram
@@ -66,93 +67,83 @@ python extract_field.py tags --unique
 
 Ver [scripts/README.md](scripts/README.md) para documentación completa de los scripts.
 
----
+## 🧩 Funcionalidades clave
 
-## 📁 Estructura del Proyecto
+### 🔍 Búsqueda inteligente
+
+Autocomplete prioriza ingredientes sobre nombres y tags. Fuzzy search con **Fuse.js**: tokens cortos usan threshold más estricto, tokens largos son más permisivos. Stopwords se filtran automáticamente.
+
+### ♿ Accesibilidad
+
+Skip-to-content link, navegación por teclado en tarjetas y autocomplete, roles ARIA (`listbox`, `option`, `button`), `prefers-reduced-motion` respetado en scroll y animaciones.
+
+### 📱 UI responsive
+
+Mobile-first con 6 recetas por página, CSS custom properties, gradientes consistentes, animaciones suaves.
+
+### 🔗 Deep linking
+
+Cada receta tiene URL única por slug. Tags y búsqueda se reflejan en query params. Compartir cualquier estado de filtro.
+
+### 📡 Offline-first (PWA)
+
+Service worker con estrategia cache-first para assets estáticos y network-first para navegación. Página offline personalizada con diseño de marca.
+
+## 🤖 Pipeline de datos (Python)
+
+`Instagram` → `Instaloader` → `ParserService` (normalización de tags, extracción de ingredientes, descarga de imágenes) → `recipes.json`
+
+### Normalización de Tags
+
+El `ParserService` normaliza tags automáticamente:
+
+- Aplica sinónimos: `vegan` → `vegano`
+- Filtra tags genéricos: `food`, `instagood`, etc.
+- Elimina tags redundantes con el nombre de la receta
+- Detecta tag `facil` para marcar recetas rápidas
+
+### Extracción de Ingredientes
+
+El parser detecta automáticamente la sección de ingredientes:
+
+- Soporta emoji 🥣 o 👨🏼‍🍳
+- Extrae bullets (•, -, 🔸)
+- Limpia cantidades, unidades, artículos
+- Singulariza palabras
+
+## 📁 Estructura del proyecto
 
 ```
-.
-├── public/
-│   ├── images/              # Imágenes descargadas de Instagram
-│   ├── index.html           # Template HTML con SPA routing
-│   ├── 404.html             # Página 404 para GitHub Pages
-│   └── manifest.json        # PWA manifest
-├── src/
-│   ├── components/          # Componentes React
-│   │   ├── Header.js
-│   │   ├── SearchBar.js
-│   │   ├── TagFilter.js
-│   │   ├── RecipeGrid.js
-│   │   ├── RecipeCard.js
-│   │   ├── RecipeDetail.js
-│   │   ├── Pagination.js
-│   │   └── Footer.js
-│   ├── data/
-│   │   ├── recipes.json     # Datos de recetas (generado por scripts)
-│   │   └── recipes.js       # Export + featured tags
-│   ├── utils/
-│   │   └── index.js         # Utilidades (filtros, paginación, etc)
-│   ├── App.js               # Componente principal con routing
-│   ├── App.css              # Estilos globales
-│   └── index.js             # Entry point
-├── scripts/
-│   ├── main.py               # Sincronización desde Instagram
-│   ├── ia_main.py           # Punto de entrada para features de IA
-│   ├── local_update.py      # Actualización local de recetas
-│   ├── extract_field.py     # Extractor de campos a txt
-│   ├── fix_reel_urls.py     # Corrector de URLs /p/ → /reel/
-│   ├── constants.py         # Configuración centralizada
-│   ├── requirements.txt     # Dependencias Python
-│   ├── ai/                  # Scripts de IA (Ollama, etc.)
-│   ├── services/
-│   │   ├── instagram_service.py  # Servicio de Instagram
-│   │   ├── parser_service.py     # Servicio de parsing
-│   │   └── ai_service.py         # Servicio de IA
-│   └── README.md            # Documentación de scripts
-├── ia.md                    # 🚀 Próxima feature: IA con Ollama
-├── deploy.sh                # Script de deploy manual
-└── package.json
+src/
+├── components/       # Header, SearchBar, TagFilter, RecipeCard, RecipeGrid, RecipeDetail, Pagination, Footer, ErrorBoundary
+├── pages/            # RecipeList, RecipeDetailPage
+├── context/          # RecipesContext
+├── hooks/            # Hooks personalizados
+├── utils/            # Filtros, paginación, SEO helpers, analytics, URL utils
+├── data/             # recipes.json + featured tags y rutas
+└── __tests__/        # 6 suites
+.github/workflows/    # CI con tests en cada push
+public/               # SW, manifest, offline page, assets, sitemap, robots.txt
+scripts/              # Python scraper + pipeline de datos + generación de sitemap
 ```
 
----
+## 🛠️ Stack
+
+| Capa | Tecnología |
+| ---- | ---------- |
+| **UI** | React 18, React Router 7, Lucide React |
+| **Testing** | Jest + @testing-library/react + @testing-library/user-event |
+| **Búsqueda** | Fuse.js con threshold dinámico y normalización NFKD |
+| **PWA** | Service Worker custom + manifest.json + offline page |
+| **Pre-renderizado** | react-snap para crawlers SEO |
+| **Hosting** | Cloudflare Pages + CDN global |
+| **CI** | GitHub Actions |
+| **Scraping** | Python 3, Instaloader |
+| **IA** | Ollama (planeado para enriquecimiento de recetas) |
 
 ## 🎨 Personalización
 
-### 1. Actualizar Recetas desde Instagram (Automático)
-
-El proyecto incluye scripts para sincronizar automáticamente desde tu cuenta de Instagram:
-
-```bash
-cd scripts
-
-# Editar configuración
-nano constants.py  # Actualiza INSTAGRAM_USERNAME, LOGIN_USERNAME, LOGIN_PASSWORD
-
-# Ejecutar sincronización
-python main.py
-```
-
-Esto:
-
-- ✅ Descarga posts nuevos desde Instagram
-- ✅ Extrae hashtags y los normaliza como tags
-- ✅ Extrae ingredientes de la sección 🥣 Ingredientes 🥣
-- ✅ Descarga imágenes localmente
-- ✅ Actualiza `src/data/recipes.json`
-
-Ver [scripts/README.md](scripts/README.md) para más detalles.
-
-### 2. Actualizar Recetas Existentes
-
-Para re-procesar recetas ya existentes (normalizar tags, generar campos faltantes, etc):
-
-```bash
-cd scripts
-python local_update.py          # Modo normal
-python local_update.py --force  # Forzar actualización de todos los campos
-```
-
-### 3. Tags Destacadas
+### 1. Tags Destacadas
 
 Edita `src/data/recipes.js`:
 
@@ -167,7 +158,7 @@ export const featuredTags = [
 ];
 ```
 
-### 4. Cambiar Colores
+### 2. Cambiar Colores
 
 En `src/App.css`, busca y modifica los gradientes:
 
@@ -179,104 +170,46 @@ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 background: linear-gradient(135deg, #C4704F 0%, #B85C3E 100%);
 ```
 
-### 5. Configurar Dominio Personalizado
-
-En `package.json`:
-
-```json
-"homepage": "https://TU_DOMINIO.com"
-```
-
-Y crea un archivo `public/CNAME` con tu dominio:
-
-```
-tudominio.com
-```
-
----
-
----
-
-## 🌐 Deploy a GitHub Pages
-
-### Método 1: Automático (GitHub Actions)
-
-Ya está configurado en `.github/workflows/deploy.yml`.
-
-1. Sube el código a GitHub
-2. Ve a Settings → Pages → Source: "GitHub Actions"
-3. Cada push a `main` despliega automáticamente
-
-### Método 2: Manual
+### 3. Contenido desde Instagram
 
 ```bash
-./deploy.sh
-# o
-yarn deploy
+cd scripts
+# Editar configuración
+nano constants.py  # Actualiza INSTAGRAM_USERNAME, LOGIN_USERNAME, LOGIN_PASSWORD
+
+# Sincronizar
+python main.py
 ```
 
-Espera 2-5 minutos para que GitHub Pages actualice el sitio.
+Esto:
 
----
+- Descarga posts nuevos desde Instagram
+- Extrae hashtags y los normaliza como tags
+- Extrae ingredientes de la sección 🥣 Ingredientes 🥣
+- Descarga imágenes localmente
+- Actualiza `src/data/recipes.json`
 
-## 🛠️ Stack Tecnológico
+## 🌐 Deploy
 
-### Frontend
+**Automático** vía Cloudflare Pages en cada push a `main`:
 
-- **React 18** - UI library
-- **React Router** - Client-side routing con deep linking
-- **Lucide React** - Iconos modernos
-- **CSS3** - Estilos con gradientes y animaciones
-- **GitHub Pages** - Hosting estático
+1. GitHub Actions corre los tests
+2. Cloudflare Pages detecta el push, hace `yarn build:full` y deploya a producción
 
-### Backend (Scripts)
-
-- **Python 3** - Lenguaje de scripting
-- **Instaloader** - API de Instagram
-- **Requests** - Descarga de imágenes
-- **JSON** - Formato de datos
-
----
+La integración está configurada desde el dashboard de Cloudflare Pages con el repo de GitHub.
 
 ## 🔧 Scripts Disponibles
 
 | Script | Descripción |
-|--------|-------------|
+| ------ | ----------- |
+| `yarn build:full` | Build completo: optimize imágenes, sitemap, react-scripts build, react-snap |
+| `yarn build` | Solo react-scripts build (sin optimize ni sitemap) |
 | `main.py` | Sincroniza posts nuevos desde Instagram |
 | `local_update.py` | Actualiza recetas existentes (tags, campos faltantes) |
 | `extract_field.py` | Extrae un campo específico a archivo txt |
-| `fix_reel_urls.py` | Corrige URLs de /p/ a /reel/ para videos |
+| `generate-sitemap.js` | Genera sitemap.xml dinámico |
 
 Ver [scripts/README.md](scripts/README.md) para documentación completa.
-
----
-
-## 🧪 Tests
-
-```bash
-# Asegurarse de usar Node 22
-nvm use 22
-
-# Ejecutar todos los tests
-yarn test --watchAll=false
-
-# Ejecutar un test específico
-yarn test --watchAll=false --testNamePattern="integración"
-
-# Modo interactivo (watch)
-yarn test
-```
-
-**Cobertura actual**: 115 tests
-- **45** unit tests de utilidades (filtros, paginación, URLs, SEO, etc.)
-- **29** smoke tests de componentes (Header, Footer, RecipeCard, SearchBar, ErrorBoundary, etc.)
-- **14** tests de integración de RecipeList (búsqueda, filtros, paginación, autocomplete, query params)
-- **16** tests de RecipeDetailPage (slug, 404, relacionadas, navegación, case insensitive, ID numérico)
-- **8** tests de fuzzy filter con Fuse.js (typos, acentos, intersección de tokens, stopwords, thresholds)
-- **7** tests de helpers de SEO (extractDescription)
-- **2** tests de happy path completo (listado → detalle → listado)
-
----
 
 ## 🐛 Troubleshooting
 
@@ -285,25 +218,27 @@ yarn test
 ```bash
 rm -rf node_modules yarn.lock
 yarn install
-yarn build
+yarn build:full
 ```
 
-### Deploy falla
+### Tests fallan
 
-- Verifica que `homepage` en `package.json` sea correcto
-- Asegúrate de tener permisos de escritura en el repo
-- Espera 2-5 minutos después del deploy
-- Revisa los logs en Actions tab de GitHub
+```bash
+# Asegurarse de usar Node 22
+nvm use 22
+
+# Ver salida detallada
+yarn test --watchAll=false --verbose
+```
 
 ### Scripts de Python fallan
 
 ```bash
 cd scripts
-
-# Re-crear entorno virtual
 rm -rf venv
 python3 -m venv venv
 source venv/bin/activate
+
 pip install -r requirements.txt
 ```
 
@@ -312,8 +247,6 @@ pip install -r requirements.txt
 - Verifica `INSTAGRAM_USERNAME` en `constants.py`
 - Si es cuenta privada, configura `LOGIN_USERNAME` y `LOGIN_PASSWORD`
 - Instagram puede requerir verificación 2FA (el script lo detecta)
-
----
 
 ## 🚀 Próximas Features
 
@@ -331,43 +264,9 @@ En desarrollo: Sistema de enriquecimiento de recetas usando modelos de lenguaje 
 
 Ver [ia.md](ia.md) para documentación completa del roadmap de IA.
 
----
-
-## 📊 Features Destacados
-
-### Búsqueda Inteligente
-
-El componente `SearchBar` usa `generateAutocompleteSuggestions` que busca en:
-
-1. 🥕 **Ingredientes** (prioridad alta)
-2. 📝 **Nombres de recetas**
-3. 🏷️ **Tags**
-
-### Normalización de Tags
-
-El `ParserService` normaliza tags automáticamente:
-
-- ✅ Aplica sinónimos: `vegan` → `vegano`
-- ✅ Filtra tags genéricos: `food`, `instagood`, etc.
-- ✅ Elimina tags redundantes con el nombre de la receta
-- ✅ Detecta tag `facil` para marcar recetas rápidas
-
-### Extracción de Ingredientes
-
-El parser detecta automáticamente la sección de ingredientes:
-
-- Soporta emoji 🥣 o 👨🏼‍🍳
-- Extrae bullets (•, -, 🔸)
-- Limpia cantidades, unidades, artículos
-- Singulariza palabras
-
----
-
 ## 📝 Licencia
 
 MIT - FedeG - Federico Gonzalez © 2026
-
----
 
 ## 🤝 Contribuir
 
@@ -377,11 +276,8 @@ MIT - FedeG - Federico Gonzalez © 2026
 4. Push: `git push origin feature/nueva-feature`
 5. Abre un Pull Request
 
----
-
 ## 📧 Contacto
 
 - 🌐 Web: [alhornoconpapa.com.ar](https://alhornoconpapa.com.ar)
 - 📸 Instagram: [@al.horno.con.papa](https://instagram.com/al.horno.con.papa)
 - 📘 Facebook: [@al.horno.con.papa](https://facebook.com/al.horno.con.papa)
-
