@@ -265,9 +265,17 @@
   flex-shrink: 0;
   color: var(--primary);
   z-index: 10;
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.scroll-btn:hover {
+.scroll-btn:disabled {
+  opacity: 0.3;
+  pointer-events: none;
+  cursor: default;
+}
+
+.scroll-btn:hover:not(:disabled) {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
   border-color: var(--primary);
   color: var(--text-white);
@@ -287,7 +295,6 @@
   display: flex;
   flex: 1;
   gap: 12px;
-  margin-left: 20px;
   overflow-x: auto;
   padding: 2px 0 2px;
   scrollbar-width: none;
@@ -349,6 +356,30 @@
 
 .tag-chip.active .featured-icon {
   color: var(--text-white);
+}
+
+.clear-filters-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  padding: 8px 16px;
+  margin-right: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.clear-filters-btn:hover {
+  background: var(--bg-hover);
+  border-color: var(--primary);
+  color: var(--primary);
 }
 
 /* ========================================

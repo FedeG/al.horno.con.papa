@@ -1,8 +1,8 @@
 import React, { useRef, useCallback, useState, useEffect, useMemo } from 'react';
-import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Star, X } from 'lucide-react';
 import { trackTagScroll } from '../utils/analytics';
 
-const TagFilter = ({ allTags, selectedTag, onSelectTag, featuredTags = [] }) => {
+const TagFilter = ({ allTags, selectedTag, onSelectTag, featuredTags = [], hasActiveFilter = false, onClearFilters }) => {
   const scrollContainerRef = useRef(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(false);
@@ -55,11 +55,14 @@ const TagFilter = ({ allTags, selectedTag, onSelectTag, featuredTags = [] }) => 
 
   return (
     <div className="tags-container-wrapper">
-      {canScrollLeft && (
-        <button className="scroll-btn left" onClick={scrollLeft} aria-label="Scroll izquierda">
-          <ChevronLeft size={18} suppressHydrationWarning/>
-        </button>
-      )}
+      <button
+        className="scroll-btn left"
+        onClick={scrollLeft}
+        disabled={!canScrollLeft}
+        aria-label="Scroll izquierda"
+      >
+        <ChevronLeft size={18} suppressHydrationWarning/>
+      </button>
       <div className="tags-scroll" ref={scrollContainerRef}>
         {allTags.map((tag) => {
           const isFeatured = featuredTags.includes(tag);
@@ -75,9 +78,22 @@ const TagFilter = ({ allTags, selectedTag, onSelectTag, featuredTags = [] }) => 
           );
         })}
       </div>
-      {canScrollRight && (
-        <button className="scroll-btn right" onClick={scrollRight} aria-label="Scroll derecha">
-          <ChevronRight size={18} suppressHydrationWarning/>
+      <button
+        className="scroll-btn right"
+        onClick={scrollRight}
+        disabled={!canScrollRight}
+        aria-label="Scroll derecha"
+      >
+        <ChevronRight size={18} suppressHydrationWarning/>
+      </button>
+      {hasActiveFilter && onClearFilters && (
+        <button
+          className="clear-filters-btn"
+          onClick={onClearFilters}
+          aria-label="Limpiar filtros"
+        >
+          <X size={14} suppressHydrationWarning/>
+          <span>Limpiar filtros</span>
         </button>
       )}
     </div>

@@ -181,6 +181,16 @@ const RecipeList = () => {
     [paginatedRecipes]
   );
 
+  const handleClearFilters = useCallback(() => {
+    setInputValue('');
+    setSearchTerm('');
+    setSelectedTag('Todas');
+    setShowEasyOnly(false);
+    setCurrentPage(1);
+  }, []);
+
+  const hasActiveFilter = inputValue !== '' || selectedTag !== 'Todas' || showEasyOnly;
+
   return (
     <div className="app">
       <SEO 
@@ -212,6 +222,8 @@ const RecipeList = () => {
           trackTagClick(tag, tag !== 'Todas');
         }}
         featuredTags={featuredTags}
+        hasActiveFilter={hasActiveFilter}
+        onClearFilters={handleClearFilters}
       />
 
       <div className="results-header">
