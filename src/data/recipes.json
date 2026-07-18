@@ -1,5 +1,71 @@
 [
   {
+    "id": 3942905144571310457,
+    "name": "🌶️ Llajua 🌶️",
+    "description": "🌶️ Llajua 🌶️\n\nUna salsa fresca, picante y llena de sabor.\nPerfecta para acompañar empanadas, carnes, papas, arroz o cualquier comida que necesite un toque extra.\n\n⏳ Tiempo: 5 minutos ⏳\n\n🥣 Ingredientes 🥣\n\n• 1 tomate grande\n• Un pedacito de locoto\n• Un puñado de cilantro fresco\n• 1 cucharada de aceite\n• Sal\n\n👣 Pasos 👣\n\n• Rallamos el tomate\n• Picamos el locoto bien chiquito\n• Picamos finamente el cilantro\n• Mezclamos todo en un bowl\n• Agregamos el aceite y la sal\n• Integramos bien y llevamos unos minutos a la heladera antes de servir\n\n💡 Tip 💡\n\n• Las semillas del locoto son la parte que más pica. Si querés una versión más suave, retiralas antes de picarlo\n• Tradicionalmente se prepara con quirquiña o huacatay, pero el cilantro es una excelente alternativa y mucho más fácil de conseguir\n• Dura hasta 3 días en la heladera dentro de un recipiente hermético\n\n🌶 Una salsa simple que transforma cualquier plato 🌶\n\n👉 Atengo que el sábado subo la receta de las empanadas para el partido.\n\nSeguime para más recetas fáciles y caseras\n\n",
+    "tags": [
+      "Argentina",
+      "Facil",
+      "Internacional",
+      "Mundial",
+      "Salsas",
+      "Sin gluten",
+      "Vegano",
+      "Vegetariano"
+    ],
+    "instagramUrl": "https://www.instagram.com/reel/Da4A1atO7F5/",
+    "facebookUrl": "",
+    "imageUrl": "images/Da4A1atO7F5.jpg",
+    "ingredients": [
+      "1 tomate grande",
+      "Un pedacito de locoto",
+      "Un puñado de cilantro fresco",
+      "1 cucharada de aceite",
+      "Sal"
+    ],
+    "date": "2026-07-16T22:16:18-03:00",
+    "easy": true,
+    "hidden": false,
+    "shortcode": "Da4A1atO7F5",
+    "cleaned_ingredientes": [
+      "aceite",
+      "locoto",
+      "rocoto",
+      "aji picante",
+      "cilantro",
+      "sal",
+      "tomate"
+    ],
+    "slug": "llajua",
+    "related_recipes": [
+      {
+        "recipe_id": 3886363710766726947,
+        "recipe_name": "🥛 Lactonesa 🥛",
+        "score": 8
+      },
+      {
+        "recipe_id": 3819676244745536630,
+        "recipe_name": "🍕 Pizza 🍕",
+        "score": 8
+      },
+      {
+        "recipe_id": 3696179700699961881,
+        "recipe_name": "🫑🍅 Salsa Criolla 🧅🍶",
+        "score": 8
+      }
+    ],
+    "old_tags": [
+      "Argentina",
+      "Mundial",
+      "Salsas",
+      "Facil",
+      "Internacional",
+      "Sin gluten",
+      "Vegano",
+      "Vegetariano"
+    ]
+  },
+  {
     "id": 3934641873120492658,
     "name": "🥗 Bun Bo Xao (Ensalada vietnamita) 🥗",
     "description": "🥗 Bun Bo Xao (Ensalada vietnamita) 🥗\n\nUn plato fresco, lleno de verduras, carne marinada y fideos de arroz.\nIdeal para una comida completa, liviana y llena de sabor.\n\n⏳ Tiempo: 35 minutos ⏳\n\n🥣 Ingredientes 🥣\n\n• 500g de carne vacuna (de res)\n• 200g de fideos de arroz\n• 1 pepino\n• 2 zanahorias\n• 1 zucchini\n• 1 brócoli\n• 2 huevos\n\nPara la marinada:\n\n• 3 cucharadas de salsa de soja\n• 1 cucharadita de aceite de sésamo\n• 1 cucharada de pimentón\n• 1 cucharadita de ají molido\n• Medio limón\n• Pimienta\n• Sal\n\n👣 Pasos 👣\n\n• En un bowl mezclamos la salsa de soja, el aceite de sésamo, el pimentón, el ají molido, la pimienta, la sal y el jugo de limón\n• Agregamos la carne en fetas junto con un poco de aceite y mezclamos bien\n• Llevamos a la heladera mientras preparamos el resto de los ingredientes\n• Cortamos el pepino, la zanahoria y el zucchini en láminas finas con un pelapapas\n• Blanqueamos el brócoli unos minutos en agua hirviendo\n• Sellamos la carne marinada en una sartén bien caliente\n• En la misma sartén salteamos el zucchini y la zanahoria\n• Hidratamos y cocinamos los fideos de arroz según las indicaciones del paquete\n• Cortamos la cocción con agua fría y escurrimos bien\n• Emplatamos los fideos junto con las verduras, la carne y terminamos con un huevo por encima\n\n💡 Tip 💡\n\n• También podés agregar brotes de soja, maní tostado, cilantro o cebolla de verdeo\n• Cociná la carne a fuego bien fuerte para que se dore rápido y quede jugosa por dentro\n• Los fideos de arroz no deben pasarse de cocción porque se rompen con facilidad\n\n🥢 Un plato completo, fresco y lleno de sabor 🥢\n\nSeguime para más recetas fáciles y caseras\n\n",
@@ -224,7 +290,8 @@
       "Pasteleria",
       "Postres",
       "Reposteria",
-      "Torta"
+      "Torta",
+      "Vegetariano"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DZdyMo8ua9n/",
     "facebookUrl": "",
@@ -280,7 +347,8 @@
       "Pasteleria",
       "Postres",
       "Reposteria",
-      "Torta"
+      "Torta",
+      "Vegetariano"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DZLwjfgujB4/",
     "facebookUrl": "",
@@ -1418,6 +1486,11 @@
     "slug": "pizza",
     "related_recipes": [
       {
+        "recipe_id": 3696179700699961881,
+        "recipe_name": "🫑🍅 Salsa Criolla 🧅🍶",
+        "score": 12
+      },
+      {
         "recipe_id": 3675896022925121703,
         "recipe_name": "🍕 Matambre a la pizza 🍖",
         "score": 12
@@ -1425,11 +1498,6 @@
       {
         "recipe_id": 3635570338399134963,
         "recipe_name": "🥬 Buñuelos de espinaca 🥬",
-        "score": 12
-      },
-      {
-        "recipe_id": 2899119893145812759,
-        "recipe_name": "🫑🔥 Salsa tatemada 🍅🌶️",
         "score": 12
       }
     ]
@@ -1464,6 +1532,11 @@
     "slug": "levadura-fresca-vs-levadura-seca",
     "related_recipes": [
       {
+        "recipe_id": 3912434246550696056,
+        "recipe_name": "🎂 Red Velvet, parte 1: bizcochuelo 🍰",
+        "score": 5
+      },
+      {
         "recipe_id": 3884166691706281534,
         "recipe_name": "🥣 Vichyssoise (sopa de Ratatouille) 🥣",
         "score": 5
@@ -1471,11 +1544,6 @@
       {
         "recipe_id": 3876193966899473634,
         "recipe_name": "🍚 Arroz con leche 🍚",
-        "score": 5
-      },
-      {
-        "recipe_id": 3871850009075814535,
-        "recipe_name": "🍌🍫 Bizcochuelo marmolado de banana 🍌🍫",
         "score": 5
       }
     ]
@@ -2811,7 +2879,9 @@
       "Argentina",
       "Carne",
       "Facil",
-      "Salsas"
+      "Salsas",
+      "Vegano",
+      "Vegetariano"
     ],
     "instagramUrl": "https://www.instagram.com/reel/DNLd9rGOxoZ/",
     "facebookUrl": "",
@@ -2867,13 +2937,13 @@
         "score": 12
       },
       {
-        "recipe_id": 3659485693416813984,
-        "recipe_name": "🍝 Salsa boloñesa 🍅",
+        "recipe_id": 3819676244745536630,
+        "recipe_name": "🍕 Pizza 🍕",
         "score": 12
       },
       {
-        "recipe_id": 2899119893145812759,
-        "recipe_name": "🫑🔥 Salsa tatemada 🍅🌶️",
+        "recipe_id": 3659485693416813984,
+        "recipe_name": "🍝 Salsa boloñesa 🍅",
         "score": 12
       }
     ]
@@ -8110,6 +8180,11 @@
     "slug": "sanitizacion-de-verduras-y-frutas",
     "related_recipes": [
       {
+        "recipe_id": 3912434246550696056,
+        "recipe_name": "🎂 Red Velvet, parte 1: bizcochuelo 🍰",
+        "score": 5
+      },
+      {
         "recipe_id": 3884166691706281534,
         "recipe_name": "🥣 Vichyssoise (sopa de Ratatouille) 🥣",
         "score": 5
@@ -8117,11 +8192,6 @@
       {
         "recipe_id": 3876193966899473634,
         "recipe_name": "🍚 Arroz con leche 🍚",
-        "score": 5
-      },
-      {
-        "recipe_id": 3871850009075814535,
-        "recipe_name": "🍌🍫 Bizcochuelo marmolado de banana 🍌🍫",
         "score": 5
       }
     ]
@@ -8440,6 +8510,11 @@
     "slug": "reemplazos-veganos-para-huevo",
     "related_recipes": [
       {
+        "recipe_id": 3912434246550696056,
+        "recipe_name": "🎂 Red Velvet, parte 1: bizcochuelo 🍰",
+        "score": 5
+      },
+      {
         "recipe_id": 3884166691706281534,
         "recipe_name": "🥣 Vichyssoise (sopa de Ratatouille) 🥣",
         "score": 5
@@ -8447,11 +8522,6 @@
       {
         "recipe_id": 3876193966899473634,
         "recipe_name": "🍚 Arroz con leche 🍚",
-        "score": 5
-      },
-      {
-        "recipe_id": 3871850009075814535,
-        "recipe_name": "🍌🍫 Bizcochuelo marmolado de banana 🍌🍫",
         "score": 5
       }
     ]
@@ -12058,6 +12128,11 @@
     "slug": "segunda-oportunidad-pan",
     "related_recipes": [
       {
+        "recipe_id": 3912434246550696056,
+        "recipe_name": "🎂 Red Velvet, parte 1: bizcochuelo 🍰",
+        "score": 9
+      },
+      {
         "recipe_id": 3876193966899473634,
         "recipe_name": "🍚 Arroz con leche 🍚",
         "score": 8
@@ -12065,11 +12140,6 @@
       {
         "recipe_id": 3871850009075814535,
         "recipe_name": "🍌🍫 Bizcochuelo marmolado de banana 🍌🍫",
-        "score": 8
-      },
-      {
-        "recipe_id": 3378233336789026693,
-        "recipe_name": "🍗 Segunda oportunidad: Pollo 🍗",
         "score": 8
       }
     ]
@@ -12199,6 +12269,11 @@
     "slug": "dinoquesadilla",
     "related_recipes": [
       {
+        "recipe_id": 3912434246550696056,
+        "recipe_name": "🎂 Red Velvet, parte 1: bizcochuelo 🍰",
+        "score": 5
+      },
+      {
         "recipe_id": 3884166691706281534,
         "recipe_name": "🥣 Vichyssoise (sopa de Ratatouille) 🥣",
         "score": 5
@@ -12206,11 +12281,6 @@
       {
         "recipe_id": 3876193966899473634,
         "recipe_name": "🍚 Arroz con leche 🍚",
-        "score": 5
-      },
-      {
-        "recipe_id": 3871850009075814535,
-        "recipe_name": "🍌🍫 Bizcochuelo marmolado de banana 🍌🍫",
         "score": 5
       }
     ]
@@ -12433,6 +12503,11 @@
     "slug": "pan-relleno",
     "related_recipes": [
       {
+        "recipe_id": 3912434246550696056,
+        "recipe_name": "🎂 Red Velvet, parte 1: bizcochuelo 🍰",
+        "score": 9
+      },
+      {
         "recipe_id": 3871850009075814535,
         "recipe_name": "🍌🍫 Bizcochuelo marmolado de banana 🍌🍫",
         "score": 9
@@ -12440,11 +12515,6 @@
       {
         "recipe_id": 3876193966899473634,
         "recipe_name": "🍚 Arroz con leche 🍚",
-        "score": 8
-      },
-      {
-        "recipe_id": 3715296457089009804,
-        "recipe_name": "🍞 Pan integral 🍞",
         "score": 8
       }
     ]
