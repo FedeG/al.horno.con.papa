@@ -1,5 +1,85 @@
 [
   {
+    "id": 3944045635178294408,
+    "name": "🥟 Empanadas fritas de carne a cuchillo 🥟",
+    "description": "🥟 Empanadas fritas de carne a cuchillo 🥟\n\nJugosas por dentro, crocantes por fuera y perfectas para acompañar con una llajua casera.\nSe viene la final y qué mejor que unas empanadas bien argentinas.\n\n⏳ Tiempo: 1 hora ⏳\n\n🥣 Ingredientes 🥣\n\n• 500g de carne vacuna cortada a cuchillo (roast beef o paleta)\n• 500g de cebolla\n• 2 cebollas de verdeo\n• 2 huevos duros\n• 1 cucharada de ají molido\n• 2 cucharadas de pimentón\n• 1 cucharadita de comino\n• 1 cucharadita de pimienta blanca\n• Sal\n• Aceite\n• 12 tapas para empanadas\n• Grasa para freír\n\n👣 Pasos 👣\n\n• Picamos la cebolla en juliana\n• En una sartén a fuego medio-alto calentamos un poco de aceite\n• Agregamos la cebolla, condimentamos con ají molido, pimentón, pimienta blanca y comino y cocinamos hasta que quede bien transparente\n• Sumamos la carne cortada a cuchillo\n• Cocinamos hasta que la carne este cocida y recién ahí agregamos la sal\n• Dejamos enfriar el relleno mientras hervimos los huevos y cortamos el verdeo\n• Mezclamos con el huevo duro picado y la cebolla de verdeo\n• Rellenamos las tapas y repulgamos las empanadas\n• Calentamos la grasa y freímos por tandas hasta que queden bien doradas\n• Retiramos sobre una rejilla o papel absorbente\n\n💡 Tip 💡\n\n• Usar la misma cantidad de cebolla que de carne hace que el relleno quede mucho más jugoso\n• Dejá enfriar bien el relleno antes de armar las empanadas para que no se humedezcan las tapas\n• Quedan espectaculares con la salsa llajua que subí hace unos días (si no la encontrás, comentame y te paso la receta)\n\n🇦🇷 Un clásico argentino para disfrutar mirando otra final 🇦🇷\n\nSeguime para más recetas fáciles y caseras\n\n",
+    "tags": [
+      "Argentina",
+      "Empanadas",
+      "Facil",
+      "Frito",
+      "Mundial",
+      "Salsas",
+      "Sin gluten"
+    ],
+    "instagramUrl": "https://www.instagram.com/reel/Da8EJvWu2yI/",
+    "facebookUrl": "",
+    "imageUrl": "images/Da8EJvWu2yI.jpg",
+    "ingredients": [
+      "500g de carne vacuna cortada a cuchillo (roast beef o paleta)",
+      "500g de cebolla",
+      "2 cebollas de verdeo",
+      "2 huevos duros",
+      "1 cucharada de ají molido",
+      "2 cucharadas de pimentón",
+      "1 cucharadita de comino",
+      "1 cucharadita de pimienta blanca",
+      "Sal",
+      "Aceite",
+      "12 tapas para empanadas",
+      "Grasa para freír"
+    ],
+    "date": "2026-07-18T12:02:40-03:00",
+    "easy": true,
+    "hidden": false,
+    "shortcode": "Da8EJvWu2yI",
+    "cleaned_ingredientes": [
+      "aceite",
+      "ají molido",
+      "carne",
+      "roast beef",
+      "cebolla",
+      "cebolla de verdeo",
+      "comino",
+      "grasa",
+      "huevo",
+      "paleta",
+      "pimentón",
+      "pimienta",
+      "pimienta blanca",
+      "sal",
+      "tapa",
+      "tapa de empanadas"
+    ],
+    "slug": "empanadas-fritas-de-carne-a-cuchillo",
+    "related_recipes": [
+      {
+        "recipe_id": 3733422410486927572,
+        "recipe_name": "🥟 Empanadas tipo salteñas 🇦🇷🔥",
+        "score": 13
+      },
+      {
+        "recipe_id": 3659485693416813984,
+        "recipe_name": "🍝 Salsa boloñesa 🍅",
+        "score": 12
+      },
+      {
+        "recipe_id": 3610570869370927724,
+        "recipe_name": "🌱 Tortilla de zapallitos verdes 🌱",
+        "score": 12
+      }
+    ],
+    "old_tags": [
+      "Argentina",
+      "Empanadas",
+      "Facil",
+      "Frito",
+      "Mundial",
+      "Salsas",
+      "Sin gluten"
+    ]
+  },
+  {
     "id": 3942905144571310457,
     "name": "🌶️ Llajua 🌶️",
     "description": "🌶️ Llajua 🌶️\n\nUna salsa fresca, picante y llena de sabor.\nPerfecta para acompañar empanadas, carnes, papas, arroz o cualquier comida que necesite un toque extra.\n\n⏳ Tiempo: 5 minutos ⏳\n\n🥣 Ingredientes 🥣\n\n• 1 tomate grande\n• Un pedacito de locoto\n• Un puñado de cilantro fresco\n• 1 cucharada de aceite\n• Sal\n\n👣 Pasos 👣\n\n• Rallamos el tomate\n• Picamos el locoto bien chiquito\n• Picamos finamente el cilantro\n• Mezclamos todo en un bowl\n• Agregamos el aceite y la sal\n• Integramos bien y llevamos unos minutos a la heladera antes de servir\n\n💡 Tip 💡\n\n• Las semillas del locoto son la parte que más pica. Si querés una versión más suave, retiralas antes de picarlo\n• Tradicionalmente se prepara con quirquiña o huacatay, pero el cilantro es una excelente alternativa y mucho más fácil de conseguir\n• Dura hasta 3 días en la heladera dentro de un recipiente hermético\n\n🌶 Una salsa simple que transforma cualquier plato 🌶\n\n👉 Atengo que el sábado subo la receta de las empanadas para el partido.\n\nSeguime para más recetas fáciles y caseras\n\n",
@@ -131,8 +211,8 @@
         "score": 12
       },
       {
-        "recipe_id": 3707323832187256597,
-        "recipe_name": "🍗 Pechuga a la plancha 🍗",
+        "recipe_id": 3944045635178294408,
+        "recipe_name": "🥟 Empanadas fritas de carne a cuchillo 🥟",
         "score": 11
       }
     ],
@@ -262,13 +342,13 @@
         "score": 11
       },
       {
-        "recipe_id": 3869698535436761209,
-        "recipe_name": "🍲 Sopa de pollo 🍲",
+        "recipe_id": 3944045635178294408,
+        "recipe_name": "🥟 Empanadas fritas de carne a cuchillo 🥟",
         "score": 10
       },
       {
-        "recipe_id": 3696179700699961881,
-        "recipe_name": "🫑🍅 Salsa Criolla 🧅🍶",
+        "recipe_id": 3869698535436761209,
+        "recipe_name": "🍲 Sopa de pollo 🍲",
         "score": 10
       }
     ],
@@ -1052,8 +1132,8 @@
         "score": 11
       },
       {
-        "recipe_id": 3809505069079861469,
-        "recipe_name": "🍔 Hamburguesas de pollo 🍔",
+        "recipe_id": 3944045635178294408,
+        "recipe_name": "🥟 Empanadas fritas de carne a cuchillo 🥟",
         "score": 10
       }
     ]
@@ -2326,13 +2406,13 @@
         "score": 14
       },
       {
-        "recipe_id": 3869698535436761209,
-        "recipe_name": "🍲 Sopa de pollo 🍲",
+        "recipe_id": 3944045635178294408,
+        "recipe_name": "🥟 Empanadas fritas de carne a cuchillo 🥟",
         "score": 13
       },
       {
-        "recipe_id": 3650539507544591071,
-        "recipe_name": "🥟 Empanadas de carne a cuchillo 🥟",
+        "recipe_id": 3869698535436761209,
+        "recipe_name": "🍲 Sopa de pollo 🍲",
         "score": 13
       }
     ]
@@ -2469,13 +2549,13 @@
         "score": 11
       },
       {
-        "recipe_id": 3733422410486927572,
-        "recipe_name": "🥟 Empanadas tipo salteñas 🇦🇷🔥",
+        "recipe_id": 3944045635178294408,
+        "recipe_name": "🥟 Empanadas fritas de carne a cuchillo 🥟",
         "score": 10
       },
       {
-        "recipe_id": 3645452133613487393,
-        "recipe_name": "🥣 Guiso de lentejas 🥩🥔",
+        "recipe_id": 3733422410486927572,
+        "recipe_name": "🥟 Empanadas tipo salteñas 🇦🇷🔥",
         "score": 10
       }
     ]
@@ -3731,8 +3811,8 @@
         "score": 13
       },
       {
-        "recipe_id": 3696179700699961881,
-        "recipe_name": "🫑🍅 Salsa Criolla 🧅🍶",
+        "recipe_id": 3944045635178294408,
+        "recipe_name": "🥟 Empanadas fritas de carne a cuchillo 🥟",
         "score": 12
       }
     ]
@@ -5725,13 +5805,13 @@
         "score": 10
       },
       {
-        "recipe_id": 3858090832151088491,
-        "recipe_name": "🐟 Pescado frito 🐟",
+        "recipe_id": 3944045635178294408,
+        "recipe_name": "🥟 Empanadas fritas de carne a cuchillo 🥟",
         "score": 9
       },
       {
-        "recipe_id": 3645452133613487393,
-        "recipe_name": "🥣 Guiso de lentejas 🥩🥔",
+        "recipe_id": 3858090832151088491,
+        "recipe_name": "🐟 Pescado frito 🐟",
         "score": 9
       }
     ]
@@ -7027,6 +7107,11 @@
     "slug": "condimento-casero-para-carnes-rojas",
     "related_recipes": [
       {
+        "recipe_id": 3944045635178294408,
+        "recipe_name": "🥟 Empanadas fritas de carne a cuchillo 🥟",
+        "score": 9
+      },
+      {
         "recipe_id": 3934641873120492658,
         "recipe_name": "🥗 Bun Bo Xao (Ensalada vietnamita) 🥗",
         "score": 9
@@ -7034,11 +7119,6 @@
       {
         "recipe_id": 3841423351726646769,
         "recipe_name": "🔥 Brochetas a la parrilla 🔥",
-        "score": 9
-      },
-      {
-        "recipe_id": 3733422410486927572,
-        "recipe_name": "🥟 Empanadas tipo salteñas 🇦🇷🔥",
         "score": 9
       }
     ]
@@ -9630,8 +9710,8 @@
         "score": 12
       },
       {
-        "recipe_id": 3733422410486927572,
-        "recipe_name": "🥟 Empanadas tipo salteñas 🇦🇷🔥",
+        "recipe_id": 3944045635178294408,
+        "recipe_name": "🥟 Empanadas fritas de carne a cuchillo 🥟",
         "score": 11
       }
     ]
@@ -13376,8 +13456,8 @@
         "score": 12
       },
       {
-        "recipe_id": 3926208676699455586,
-        "recipe_name": "🥟 Empanadas de pollo 🥟",
+        "recipe_id": 3944045635178294408,
+        "recipe_name": "🥟 Empanadas fritas de carne a cuchillo 🥟",
         "score": 10
       }
     ]
@@ -13529,8 +13609,8 @@
         "score": 14
       },
       {
-        "recipe_id": 3841423351726646769,
-        "recipe_name": "🔥 Brochetas a la parrilla 🔥",
+        "recipe_id": 3944045635178294408,
+        "recipe_name": "🥟 Empanadas fritas de carne a cuchillo 🥟",
         "score": 12
       }
     ]
