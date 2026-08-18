@@ -22,6 +22,18 @@ INSTAGRAM_USERNAME = os.getenv("INSTAGRAM_USERNAME", "al.horno.con.papa")
 LOGIN_USERNAME = os.getenv("INSTAGRAM_LOGIN_USERNAME", "")
 LOGIN_PASSWORD = os.getenv("INSTAGRAM_LOGIN_PASSWORD", "")
 
+# Adapter a usar para traer posts: "apify" (por defecto) o "instaloader"
+INSTAGRAM_ADAPTER = os.getenv("INSTAGRAM_ADAPTER") or "apify"
+
+# Configuración de Apify (adapter alternativo a instaloader para traer posts)
+APIFY_TOKEN = os.getenv("APIFY_TOKEN", "")
+# Límite de posts por corrida del actor. Con 5 entran los 2 pinned (que se
+# filtran por PINNED_MEDIAIDS) → quedan ~3 válidos; con 8 quedan ~6.
+try:
+    APIFY_RESULTS_LIMIT = int(os.getenv("APIFY_RESULTS_LIMIT", "8"))
+except ValueError:
+    APIFY_RESULTS_LIMIT = 8
+
 # Rutas de archivos
 RECIPES_FILE = "src/data/recipes.json"
 IMAGES_DIR = "public/images"
