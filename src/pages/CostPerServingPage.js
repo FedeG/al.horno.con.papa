@@ -1,9 +1,10 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
+import ClearButton from '../components/ClearButton';
 import { ROUTES } from '../utils/constants';
 import {
   COST_UNITS,
@@ -12,27 +13,53 @@ import {
   totalCost,
 } from '../utils/costo';
 import { trackPageView } from '../utils/analytics';
+import { usePersistentState } from '../utils/usePersistentState';
 
 const EMPTY_ROW = { name: '', unit: 'gr', bought: '', price: '', used: '' };
 
+const DEFAULTS = {
+  rows: [{ id: 1, ...EMPTY_ROW }],
+  servings: '4',
+};
+
 const CostPerServingPage = () => {
   const nextId = useRef(1);
-  const [rows, setRows] = useState([
-    { id: nextId.current++, ...EMPTY_ROW },
-  ]);
-  const [servings, setServings] = useState('4');
+  const [state, setState] = usePersistentState('tool:costo', DEFAULTS);
+  const { rows, servings } = state;
+
+  const update = (patch) => setState((prev) => ({ ...prev, ...patch }));
+
+  // Si las filas vienen de localStorage, el contador de ids sigue desde el máximo.
+  useEffect(() => {
+    nextId.current = rows.reduce((max, r) => Math.max(max, r.id), 0) + 1;
+  }, [rows]);
 
   useEffect(() => {
     trackPageView('/herramientas/costo-porcion/', 'Costo por porción');
   }, []);
 
-  const updateRow = (id, patch) =>
-    setRows((prev) => prev.map((r) => (r.id === id ? { ...r, ...patch } : r)));
+  const hasValues =
+    servings !== DEFAULTS.servings ||
+    rows.length > 1 ||
+    rows.some((r) => r.name || r.bought || r.price || r.used || r.unit !== EMPTY_ROW.unit);
 
-  const addRow = () => setRows((prev) => [...prev, { id: nextId.current++, ...EMPTY_ROW }]);
+  const updateRow = (id, patch) =>
+    setState((prev) => ({
+      ...prev,
+      rows: prev.rows.map((r) => (r.id === id ? { ...r, ...patch } : r)),
+    }));
+
+  const addRow = () =>
+    setState((prev) => ({
+      ...prev,
+      rows: [...prev.rows, { id: nextId.current++, ...EMPTY_ROW }],
+    }));
 
   const removeRow = (id) =>
-    setRows((prev) => (prev.length > 1 ? prev.filter((r) => r.id !== id) : prev));
+    setState((prev) => ({
+      ...prev,
+      rows: prev.rows.length > 1 ? prev.rows.filter((r) => r.id !== id) : prev.rows,
+    }));
 
   const { total, invalidRows } = useMemo(
     () => totalCost(rows.map(({ id, ...row }) => row)),
@@ -70,7 +97,7 @@ const CostPerServingPage = () => {
               inputMode="decimal"
               placeholder="Ej: 4"
               value={servings}
-              onChange={(e) => setServings(e.target.value)}
+              onChange={(e) => update({ servings: e.target.value })}
             />
           </div>
 
@@ -150,6 +177,8 @@ const CostPerServingPage = () => {
           <button type="button" className="scalar-add" onClick={addRow}>
             + Agregar ingrediente
           </button>
+
+          <ClearButton show={hasValues} onClear={() => setState(DEFAULTS)} />
 
           <div className="converter-result" aria-live="polite">
             {total > 0 ? (

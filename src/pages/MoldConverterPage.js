@@ -1,9 +1,10 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
+import ClearButton from '../components/ClearButton';
 import { ROUTES } from '../utils/constants';
 import {
   areaFor,
@@ -12,15 +13,24 @@ import {
   timeGuidance,
 } from '../utils/moldes';
 import { trackPageView } from '../utils/analytics';
+import { usePersistentState } from '../utils/usePersistentState';
+
+const DEFAULTS = { shape: 'redondo', recipeSize: '24', mySize: '20' };
 
 const MoldConverterPage = () => {
-  const [shape, setShape] = useState('redondo');
-  const [recipeSize, setRecipeSize] = useState('24');
-  const [mySize, setMySize] = useState('20');
+  const [state, setState] = usePersistentState('tool:moldes', DEFAULTS);
+  const { shape, recipeSize, mySize } = state;
+
+  const update = (patch) => setState((prev) => ({ ...prev, ...patch }));
 
   useEffect(() => {
     trackPageView('/herramientas/moldes/', 'Conversor de moldes');
   }, []);
+
+  const hasValues =
+    shape !== DEFAULTS.shape ||
+    recipeSize !== DEFAULTS.recipeSize ||
+    mySize !== DEFAULTS.mySize;
 
   const factor = useMemo(() => {
     const recipeArea = areaFor(shape, recipeSize);
@@ -55,7 +65,7 @@ const MoldConverterPage = () => {
             <select
               id="mold-shape"
               value={shape}
-              onChange={(e) => setShape(e.target.value)}
+              onChange={(e) => update({ shape: e.target.value })}
             >
               <option value="redondo">Redondo (diámetro)</option>
               <option value="cuadrado">Cuadrado (lado)</option>
@@ -73,7 +83,7 @@ const MoldConverterPage = () => {
                 inputMode="decimal"
                 placeholder="Ej: 24"
                 value={recipeSize}
-                onChange={(e) => setRecipeSize(e.target.value)}
+                onChange={(e) => update({ recipeSize: e.target.value })}
               />
             </div>
             <div className="converter-field">
@@ -86,10 +96,12 @@ const MoldConverterPage = () => {
                 inputMode="decimal"
                 placeholder="Ej: 20"
                 value={mySize}
-                onChange={(e) => setMySize(e.target.value)}
+                onChange={(e) => update({ mySize: e.target.value })}
               />
             </div>
           </div>
+
+          <ClearButton show={hasValues} onClear={() => setState(DEFAULTS)} />
 
           <div className="converter-result" aria-live="polite">
             {factor === null ? (

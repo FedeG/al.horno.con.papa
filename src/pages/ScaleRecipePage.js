@@ -1,14 +1,22 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
+import ClearButton from '../components/ClearButton';
 import { ROUTES } from '../utils/constants';
 import { scaleFactor, scaleQuantity } from '../utils/escalado';
 import { trackPageView } from '../utils/analytics';
+import { usePersistentState } from '../utils/usePersistentState';
 
 const EMPTY_ROW = { name: '', amount: '', unit: 'gr' };
+
+const DEFAULTS = {
+  rows: [{ id: 1, ...EMPTY_ROW }],
+  original: '4',
+  target: '8',
+};
 
 const formatAmount = (value) => {
   if (value === null) return '—';
@@ -19,11 +27,15 @@ const formatAmount = (value) => {
 
 const ScaleRecipePage = () => {
   const nextId = useRef(1);
-  const [rows, setRows] = useState([
-    { id: nextId.current++, ...EMPTY_ROW },
-  ]);
-  const [original, setOriginal] = useState('4');
-  const [target, setTarget] = useState('8');
+  const [state, setState] = usePersistentState('tool:escalado', DEFAULTS);
+  const { rows, original, target } = state;
+
+  const update = (patch) => setState((prev) => ({ ...prev, ...patch }));
+
+  // Si las filas vienen de localStorage, el contador de ids sigue desde el máximo.
+  useEffect(() => {
+    nextId.current = rows.reduce((max, r) => Math.max(max, r.id), 0) + 1;
+  }, [rows]);
 
   useEffect(() => {
     trackPageView('/herramientas/escalar-receta/', 'Escalado de recetas');
@@ -31,13 +43,29 @@ const ScaleRecipePage = () => {
 
   const factor = useMemo(() => scaleFactor(original, target), [original, target]);
 
-  const updateRow = (id, patch) =>
-    setRows((prev) => prev.map((r) => (r.id === id ? { ...r, ...patch } : r)));
+  const hasValues =
+    original !== DEFAULTS.original ||
+    target !== DEFAULTS.target ||
+    rows.length > 1 ||
+    rows.some((r) => r.name || r.amount || r.unit !== EMPTY_ROW.unit);
 
-  const addRow = () => setRows((prev) => [...prev, { id: nextId.current++, ...EMPTY_ROW }]);
+  const updateRow = (id, patch) =>
+    setState((prev) => ({
+      ...prev,
+      rows: prev.rows.map((r) => (r.id === id ? { ...r, ...patch } : r)),
+    }));
+
+  const addRow = () =>
+    setState((prev) => ({
+      ...prev,
+      rows: [...prev.rows, { id: nextId.current++, ...EMPTY_ROW }],
+    }));
 
   const removeRow = (id) =>
-    setRows((prev) => (prev.length > 1 ? prev.filter((r) => r.id !== id) : prev));
+    setState((prev) => ({
+      ...prev,
+      rows: prev.rows.length > 1 ? prev.rows.filter((r) => r.id !== id) : prev.rows,
+    }));
 
   return (
     <div className="app">
@@ -70,7 +98,7 @@ const ScaleRecipePage = () => {
                 inputMode="decimal"
                 placeholder="Ej: 4"
                 value={original}
-                onChange={(e) => setOriginal(e.target.value)}
+                onChange={(e) => update({ original: e.target.value })}
               />
             </div>
             <div className="converter-field">
@@ -81,7 +109,7 @@ const ScaleRecipePage = () => {
                 inputMode="decimal"
                 placeholder="Ej: 8"
                 value={target}
-                onChange={(e) => setTarget(e.target.value)}
+                onChange={(e) => update({ target: e.target.value })}
               />
             </div>
           </div>
@@ -178,6 +206,8 @@ const ScaleRecipePage = () => {
           <button type="button" className="scalar-add" onClick={addRow}>
             + Agregar ingrediente
           </button>
+
+          <ClearButton show={hasValues} onClear={() => setState(DEFAULTS)} />
         </div>
 
         <p className="converter-note">

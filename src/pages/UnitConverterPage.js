@@ -1,22 +1,37 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
+import ClearButton from '../components/ClearButton';
 import { INGREDIENTS, ROUTES, UNITS } from '../utils/constants';
 import { convertUnits, formatCookingAmount } from '../utils/equivalencias';
 import { trackPageView } from '../utils/analytics';
+import { usePersistentState } from '../utils/usePersistentState';
+
+const DEFAULTS = {
+  value: '',
+  fromUnit: 'taza',
+  toUnit: 'ml',
+  ingredientId: 'agua',
+};
 
 const UnitConverterPage = () => {
-  const [value, setValue] = useState('');
-  const [fromUnit, setFromUnit] = useState('taza');
-  const [toUnit, setToUnit] = useState('ml');
-  const [ingredientId, setIngredientId] = useState('agua');
+  const [state, setState] = usePersistentState('tool:equivalencias', DEFAULTS);
+  const { value, fromUnit, toUnit, ingredientId } = state;
+
+  const update = (patch) => setState((prev) => ({ ...prev, ...patch }));
 
   useEffect(() => {
     trackPageView('/herramientas/equivalencias/', 'Equivalencias');
   }, []);
+
+  const hasValues =
+    value !== '' ||
+    fromUnit !== DEFAULTS.fromUnit ||
+    toUnit !== DEFAULTS.toUnit ||
+    ingredientId !== DEFAULTS.ingredientId;
 
   const result = useMemo(
     () => convertUnits({ value, fromUnit, toUnit, ingredientId }),
@@ -50,7 +65,7 @@ const UnitConverterPage = () => {
               inputMode="decimal"
               placeholder="Ej: 2"
               value={value}
-              onChange={(e) => setValue(e.target.value)}
+              onChange={(e) => update({ value: e.target.value })}
             />
           </div>
 
@@ -60,7 +75,7 @@ const UnitConverterPage = () => {
               <select
                 id="converter-from"
                 value={fromUnit}
-                onChange={(e) => setFromUnit(e.target.value)}
+                onChange={(e) => update({ fromUnit: e.target.value })}
               >
                 {UNITS.map((u) => (
                   <option key={u.id} value={u.id}>
@@ -75,7 +90,7 @@ const UnitConverterPage = () => {
               <select
                 id="converter-to"
                 value={toUnit}
-                onChange={(e) => setToUnit(e.target.value)}
+                onChange={(e) => update({ toUnit: e.target.value })}
               >
                 {UNITS.map((u) => (
                   <option key={u.id} value={u.id}>
@@ -91,7 +106,7 @@ const UnitConverterPage = () => {
             <select
               id="converter-ingredient"
               value={ingredientId}
-              onChange={(e) => setIngredientId(e.target.value)}
+              onChange={(e) => update({ ingredientId: e.target.value })}
             >
               {INGREDIENTS.map((i) => (
                 <option key={i.id} value={i.id}>
@@ -100,6 +115,11 @@ const UnitConverterPage = () => {
               ))}
             </select>
           </div>
+
+          <ClearButton
+            show={hasValues}
+            onClear={() => setState(DEFAULTS)}
+          />
 
           <div className="converter-result" aria-live="polite">
             {result === null ? (

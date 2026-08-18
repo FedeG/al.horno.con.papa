@@ -1,9 +1,10 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
+import ClearButton from '../components/ClearButton';
 import { ROUTES } from '../utils/constants';
 import {
   OVEN_SETTINGS,
@@ -11,10 +12,15 @@ import {
   settingForFahrenheit,
 } from '../utils/temperaturas';
 import { trackPageView } from '../utils/analytics';
+import { usePersistentState } from '../utils/usePersistentState';
+
+const DEFAULTS = { value: '', unit: 'C' };
 
 const TemperaturePage = () => {
-  const [value, setValue] = useState('');
-  const [unit, setUnit] = useState('C');
+  const [state, setState] = usePersistentState('tool:temperaturas', DEFAULTS);
+  const { value, unit } = state;
+
+  const update = (patch) => setState((prev) => ({ ...prev, ...patch }));
 
   useEffect(() => {
     trackPageView('/herramientas/temperaturas/', 'Temperaturas de horno');
@@ -22,6 +28,7 @@ const TemperaturePage = () => {
 
   const amount = parseFloat(value.replace(',', '.'));
   const hasValue = Number.isFinite(amount);
+  const hasValues = value !== '' || unit !== DEFAULTS.unit;
 
   const { setting } = useMemo(() => {
     if (!hasValue) return { setting: null };
@@ -61,7 +68,7 @@ const TemperaturePage = () => {
               inputMode="decimal"
               placeholder="Ej: 180"
               value={value}
-              onChange={(e) => setValue(e.target.value)}
+              onChange={(e) => update({ value: e.target.value })}
             />
           </div>
 
@@ -70,12 +77,14 @@ const TemperaturePage = () => {
             <select
               id="temp-unit"
               value={unit}
-              onChange={(e) => setUnit(e.target.value)}
+              onChange={(e) => update({ unit: e.target.value })}
             >
               <option value="C">Grados Celsius (°C)</option>
               <option value="F">Grados Fahrenheit (°F)</option>
             </select>
           </div>
+
+          <ClearButton show={hasValues} onClear={() => setState(DEFAULTS)} />
 
           <div className="converter-result" aria-live="polite">
             {!hasValue ? (
