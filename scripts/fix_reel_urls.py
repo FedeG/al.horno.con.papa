@@ -9,12 +9,49 @@ import random
 import instaloader
 from pathlib import Path
 from constants import LOGIN_USERNAME, LOGIN_PASSWORD, RECIPES_FILE
+from services.instagram_service import ConservativeRateController
+
+
+def ensure_session(loader):
+    """
+    Login seguro: reutiliza la sesión guardada si existe; solo hace login
+    fresco si no hay sesión y hay credenciales configuradas. Evita el login
+    con contraseña en cada corrida (patrón que Instagram marca como raro).
+    """
+    if not LOGIN_USERNAME or not LOGIN_PASSWORD:
+        print("🔓 Sin credenciales configuradas, usando acceso ANÓNIMO")
+        return False
+
+    try:
+        loader.load_session_from_file(LOGIN_USERNAME)
+        print(f"✅ Sesión reutilizada para @{LOGIN_USERNAME}")
+        return True
+    except FileNotFoundError:
+        pass
+    except Exception as e:
+        print(f"⚠️  Sesión inválida o expirada ({e}), intentando login fresco...")
+
+    try:
+        loader.login(LOGIN_USERNAME, LOGIN_PASSWORD)
+        loader.save_session_to_file()
+        print(f"✅ Login exitoso como @{LOGIN_USERNAME} (sesión guardada)")
+        return True
+    except instaloader.exceptions.TwoFactorAuthRequiredException:
+        print("❌ La cuenta exige 2FA. Completá el desafío una vez en forma interactiva:")
+        print("   python -c \"import instaloader; L=instaloader.Instaloader();"
+              " L.interactive_login('TU_USUARIO'); L.save_session_to_file()\"")
+        return False
+    except Exception as e:
+        print(f"❌ Error de login: {e}")
+        print("⚠️  Continuando sin autenticación")
+        return False
 
 
 def fix_reel_urls():
     """
-    Lee recipes.json, se loguea en Instagram y actualiza las URLs de /p/ a /reel/
-    cuando el post es un video (reel)
+    Lee recipes.json, consulta Instagram y actualiza las URLs de /p/ a /reel/
+    cuando el post es un video (reel). Usa acceso anónimo; solo hace login si
+    hay credenciales configuradas y Instagram lo exige (reutilizando la sesión).
     """
 
     # Cargar recipes.json
@@ -34,24 +71,13 @@ def fix_reel_urls():
 
     print(f"✅ Encontradas {len(recipes)} recetas")
 
-    # Inicializar Instaloader y hacer login
-    loader = instaloader.Instaloader()
+    # Inicializar Instaloader con rate limit conservador
+    loader = instaloader.Instaloader(
+        sleep=True,
+        rate_controller=lambda ctx: ConservativeRateController(ctx),
+    )
 
-    print(f"🔐 Intentando login como @{LOGIN_USERNAME}...")
-    try:
-        loader.login(LOGIN_USERNAME, LOGIN_PASSWORD)
-        print("✅ Login exitoso")
-    except instaloader.exceptions.TwoFactorAuthRequiredException:
-        two_factor_code = input("Ingresa el código de verificación de dos factores: ")
-        try:
-            loader.two_factor_login(two_factor_code)
-            print("✅ Login exitoso con 2FA")
-        except Exception as e:
-            print(f"❌ Error con 2FA: {e}")
-            return
-    except Exception as e:
-        print(f"❌ Error de login: {e}")
-        return
+    ensure_session(loader)
 
     # Procesar cada receta
     updated_count = 0

@@ -4,6 +4,8 @@ Main script - Instagram to Recipes.json Updater
 Orquesta los servicios de Instagram y Parser para actualizar el archivo de recetas
 """
 
+import argparse
+
 from constants import (
     INSTAGRAM_USERNAME,
     LOGIN_USERNAME,
@@ -17,15 +19,36 @@ from services.parser_service import ParserService
 
 def main():
     """Función principal que ejecuta el proceso de actualización"""
+    parser_args = argparse.ArgumentParser(
+        description="Actualiza recipes.json desde Instagram"
+    )
+    parser_args.add_argument(
+        "--force-login",
+        action="store_true",
+        help="Saltea el intento anónimo: usa la sesión guardada de "
+        "INSTAGRAM_LOGIN_USERNAME, o hace login fresco si no hay sesión previa. "
+        "Útil cuando Instagram rechaza el acceso anónimo (429).",
+    )
+    args = parser_args.parse_args()
+
     print("🍳 Instagram to Recipes.json Updater")
     print("=" * 50)
+    if args.force_login:
+        print("🔐 --force-login: salteando acceso anónimo, sesión/login directo")
 
-    # Inicializar servicios
-    instagram = InstagramService(INSTAGRAM_USERNAME, IMAGES_DIR)
+    # Inicializar servicios.
+    # Por defecto InstagramService intenta primero acceso anónimo (perfil
+    # público) y solo usa las credenciales si el perfil es privado o Instagram
+    # exige sesión (reutilizando el session file). Con --force-login se saltea
+    # el intento anónimo y se va directo a la sesión del usuario configurado.
+    instagram = InstagramService(
+        INSTAGRAM_USERNAME,
+        IMAGES_DIR,
+        login_username=LOGIN_USERNAME,
+        login_password=LOGIN_PASSWORD,
+        force_login=args.force_login,
+    )
     parser = ParserService(RECIPES_FILE)
-
-    # Login en Instagram (opcional pero recomendado para más datos)
-    instagram.login(LOGIN_USERNAME, LOGIN_PASSWORD)
 
     # Obtener recetas existentes
     existing_recipes, max_date = parser.get_existing_recipes()
@@ -41,7 +64,7 @@ def main():
     if not posts:
         print("\n⚠️  No se encontraron posts. Verifica:")
         print("   1. El usuario de Instagram es correcto")
-        print("   2. La cuenta es pública (o usa login si es privada)")
+        print("   2. La cuenta es pública (sin login) o configurá login en .env si es privada")
         print("   3. El perfil tiene posts recientes")
         return
 
@@ -54,7 +77,7 @@ def main():
             continue
 
         # Descargar imagen localmente
-        local_image = instagram.download_image(post.url, post.shortcode)
+        local_image = instagram.download_image(post.url, post.shortcode, post.date_local)
 
         # Convertir post a receta
         recipe = parser.post_to_recipe(post, local_image)

@@ -62,9 +62,16 @@ PINNED_MEDIAIDS = [3283787029367823611, ...]
 python main.py
 ```
 
+Si Instagram rechaza el acceso anónimo con 429 (común desde fines de 2024),
+forzando el uso de la sesión guardada (o login si no hay sesión previa):
+
+```bash
+python main.py --force-login
+```
+
 ### Lo que hace
 
-1. 🔐 **Login en Instagram** (opcional, mejora datos obtenidos)
+1. 🔍 **Consulta el perfil** (anónimo si es público; sin riesgo para ninguna cuenta)
 2. 📚 **Lee recetas existentes** en `recipes.json`
 3. 📅 **Obtiene fecha más reciente** de posts ya procesados
 4. 📸 **Descarga posts nuevos** desde Instagram (hasta encontrar uno más antiguo)
@@ -79,14 +86,16 @@ python main.py
 
 Maneja interacción con Instagram:
 
-- **`login(username, password)`** - Autenticación con soporte 2FA
-- **`get_posts(max_date)`** - Obtiene posts hasta fecha límite
-- **`download_image(url, shortcode)`** - Descarga imágenes localmente
+- **`login(username, password)`** - Opcional. Reutiliza sesión guardada; solo login fresco si no hay sesión. Usar únicamente para perfiles privados o si Instagram exige sesión
+- **`get_posts(max_date)`** - Obtiene posts hasta fecha límite (anónimo si el perfil es público)
+- **`download_image(url, shortcode, mtime)`** - Descarga imágenes localmente
 
 #### Características especiales
 
 - Respeta posts pineados (no los usa como límite de fecha)
-- Rate limiting automático para evitar bloqueos
+- Acceso anónimo por defecto para perfiles públicos (sin login, sin riesgo de bloqueo)
+- Rate limiting conservador (~1 request/30s anónimo) acorde a los límites de Instagram 2024+
+- Reutiliza el session file de instaloader: nunca login con contraseña en cada corrida
 - Soporta fotos, carruseles y reels
 - Descarga inteligente (no re-descarga imágenes existentes)
 

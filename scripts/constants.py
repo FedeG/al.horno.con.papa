@@ -15,8 +15,11 @@ load_dotenv(dotenv_path)
 NOTA_ENV = "Estas variables ahora se leen desde ../.env. Copiá .env.example a .env y completalas."
 
 # Configuración de Instagram
+# El login es OPCIONAL y se desaconseja para perfiles públicos: se corre
+# anónimo. Solo configurar credenciales si el perfil es privado o Instagram
+# exige sesión. El script reutiliza el session file (no hace login en cada corrida).
 INSTAGRAM_USERNAME = os.getenv("INSTAGRAM_USERNAME", "al.horno.con.papa")
-LOGIN_USERNAME = os.getenv("INSTAGRAM_LOGIN_USERNAME", INSTAGRAM_USERNAME)
+LOGIN_USERNAME = os.getenv("INSTAGRAM_LOGIN_USERNAME", "")
 LOGIN_PASSWORD = os.getenv("INSTAGRAM_LOGIN_PASSWORD", "")
 
 # Rutas de archivos
