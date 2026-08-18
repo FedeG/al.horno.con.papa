@@ -7,6 +7,48 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alhornoconpapa.com.ar/herramientas/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alhornoconpapa.com.ar/herramientas/equivalencias/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alhornoconpapa.com.ar/herramientas/temperaturas/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alhornoconpapa.com.ar/herramientas/escalar-receta/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alhornoconpapa.com.ar/herramientas/moldes/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alhornoconpapa.com.ar/herramientas/costo-porcion/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alhornoconpapa.com.ar/herramientas/que-cocino/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://alhornoconpapa.com.ar/recipe/muffins-caseros/</loc>
     <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -883,7 +925,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://alhornoconpapa.com.ar/images/DHe3N2SuMFr.webp</image:loc>
-      <image:title>🌎 Recetas del mundo: falso fonejo 🇧🇴</image:title>
+      <image:title>🌎 Recetas del mundo: falso conejo 🇧🇴</image:title>
     </image:image>
   </url>
   <url>

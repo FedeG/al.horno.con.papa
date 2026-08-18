@@ -28,6 +28,18 @@ function escapeXml(str) {
 const baseUrl = 'https://alhornoconpapa.com.ar';
 const today = new Date().toISOString().split('T')[0];
 
+// Rutas estáticas del sitio (no derivadas de recetas)
+// Se incluyen en sitemap.xml y en routes.json para react-snap.
+const staticRoutes = [
+  { path: '/herramientas/', changefreq: 'monthly', priority: 0.6 },
+  { path: '/herramientas/equivalencias/', changefreq: 'monthly', priority: 0.6 },
+  { path: '/herramientas/temperaturas/', changefreq: 'monthly', priority: 0.6 },
+  { path: '/herramientas/escalar-receta/', changefreq: 'monthly', priority: 0.6 },
+  { path: '/herramientas/moldes/', changefreq: 'monthly', priority: 0.6 },
+  { path: '/herramientas/costo-porcion/', changefreq: 'monthly', priority: 0.6 },
+  { path: '/herramientas/que-cocino/', changefreq: 'monthly', priority: 0.6 },
+];
+
 let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
 xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n';
 
@@ -38,6 +50,16 @@ xml += `    <lastmod>${today}</lastmod>\n`;
 xml += `    <changefreq>weekly</changefreq>\n`;
 xml += `    <priority>1.0</priority>\n`;
 xml += `  </url>\n`;
+
+// URLs estáticas (herramientas, etc.)
+staticRoutes.forEach((r) => {
+  xml += `  <url>\n`;
+  xml += `    <loc>${baseUrl}${r.path}</loc>\n`;
+  xml += `    <lastmod>${today}</lastmod>\n`;
+  xml += `    <changefreq>${r.changefreq}</changefreq>\n`;
+  xml += `    <priority>${r.priority}</priority>\n`;
+  xml += `  </url>\n`;
+});
 
 // URLs de recetas
 recipes.forEach((recipe) => {
@@ -73,7 +95,7 @@ console.log(`📋 Total de recetas indexadas: ${recipes.filter(r => !r.hidden).l
 
 // Generar routes.json para react-snap
 const urls = recipes.filter(r => !r.hidden).map(r => `${baseUrl}/recipe/${r.slug || r.id}/`);
-const routes = ['/'];
+const routes = ['/', ...staticRoutes.map(r => r.path)];
 urls.forEach(url => {
   const path = url
     .replace(baseUrl, '')

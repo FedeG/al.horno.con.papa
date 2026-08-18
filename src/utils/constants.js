@@ -113,3 +113,84 @@ export const URLS = {
   getRecipeUrl: (slug) => `${BASE_URL}/recipe/${slug}/`,
   getRecipeImageUrl: (imagePath) => `${BASE_URL}/${imagePath}`,
 };
+
+// Rutas internas de la app (para navegación con react-router)
+export const ROUTES = {
+  tools: '/herramientas/',
+  equivalencias: '/herramientas/equivalencias/',
+  temperaturas: '/herramientas/temperaturas/',
+  escalarReceta: '/herramientas/escalar-receta/',
+  moldes: '/herramientas/moldes/',
+  costoPorcion: '/herramientas/costo-porcion/',
+  queCocino: '/herramientas/que-cocino/',
+};
+
+// Herramientas disponibles (cards de /herramientas/)
+export const TOOLS = [
+  {
+    slug: 'equivalencias',
+    name: 'Equivalencias',
+    description:
+      'Convertí unidades de cocina: ml, gr, tazas, cucharadas y cucharaditas.',
+    path: ROUTES.equivalencias,
+  },
+  {
+    slug: 'temperaturas',
+    name: 'Temperaturas de horno',
+    description:
+      'Convertí grados Celsius/Fahrenheit y descubrí el nivel de horno.',
+    path: ROUTES.temperaturas,
+  },
+  {
+    slug: 'escalar',
+    name: 'Escalado de recetas',
+    description:
+      'Cambiá las porciones de una receta y recalculá todas las cantidades.',
+    path: ROUTES.escalarReceta,
+  },
+  {
+    slug: 'moldes',
+    name: 'Conversor de moldes',
+    description:
+      'Adaptá una receta a otro molde: cantidad y tiempo de cocción.',
+    path: ROUTES.moldes,
+  },
+  {
+    slug: 'costo',
+    name: 'Costo por porción',
+    description:
+      'Calculá cuánto sale cada porción según los precios de los ingredientes.',
+    path: ROUTES.costoPorcion,
+  },
+  {
+    slug: 'que-cocino',
+    name: 'Qué cocino con lo que tengo',
+    description:
+      'Ingresá lo que tenés en la heladera y te sugerimos recetas compatibles.',
+    path: ROUTES.queCocino,
+  },
+];
+
+// Unidades soportadas por el conversor. `ml` es la base de volumen.
+export const UNITS = [
+  { id: 'ml', label: 'Mililitros (ml)', ml: 1 },
+  { id: 'gr', label: 'Gramos (gr)' },
+  { id: 'taza', label: 'Tazas', ml: 240 },
+  { id: 'cucharada', label: 'Cucharadas', ml: 15 },
+  { id: 'cucharadita', label: 'Cucharaditas', ml: 5 },
+];
+
+// Densidad en g/ml por ingrediente (para convertir peso ↔ volumen).
+// "agua" es el valor por defecto: 1 g = 1 ml.
+export const INGREDIENTS = [
+  { id: 'agua', label: 'Agua / genérico', density: 1.0 },
+  { id: 'leche', label: 'Leche', density: 1.03 },
+  { id: 'aceite', label: 'Aceite', density: 0.92 },
+  { id: 'harina', label: 'Harina', density: 0.53 },
+  { id: 'azucar', label: 'Azúcar', density: 0.85 },
+  { id: 'sal', label: 'Sal', density: 1.21 },
+  { id: 'arroz', label: 'Arroz', density: 0.85 },
+  { id: 'mantequilla', label: 'Mantequilla', density: 0.91 },
+  { id: 'miel', label: 'Miel', density: 1.42 },
+  { id: 'cacao', label: 'Cacao', density: 0.4 },
+];

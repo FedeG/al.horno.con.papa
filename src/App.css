@@ -113,13 +113,17 @@
 .header-content {
   max-width: var(--max-width);
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .logo {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 8px;
   color: var(--text-white);
   background: none;
   border: none;
@@ -137,6 +141,30 @@
   opacity: 0.9;
   font-size: 14px;
   margin-top: 2px;
+}
+
+.header-tools-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--text-white);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.header-tools-button:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.header-tools-button:active {
+  transform: scale(0.97);
 }
 
 /* ========================================
@@ -1014,4 +1042,676 @@
   font-weight: 600;
   color: var(--text-primary);
   background: var(--bg-white);
+}
+
+/* ========================================
+   Herramientas
+   ======================================== */
+
+.tools-page,
+.converter-page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+}
+
+.tools-hero,
+.converter-hero {
+  margin-bottom: 28px;
+}
+
+.tools-hero h1,
+.converter-hero h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+.tools-hero p,
+.converter-hero p {
+  color: var(--text-secondary);
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 640px) {
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tool-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 24px;
+  text-align: left;
+  background: var(--bg-white);
+  border: 1px solid var(--bg-hover);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  color: var(--primary);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: inherit;
+}
+
+.tool-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.tool-card h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.tool-card p {
+  color: var(--text-body);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.tool-card-cta {
+  margin-top: auto;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* ========================================
+   Conversor de equivalencias
+   ======================================== */
+
+.converter-back {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.converter-back:hover {
+  text-decoration: underline;
+}
+
+.converter-card {
+  background: var(--bg-white);
+  border: 1px solid var(--bg-hover);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 520px;
+  margin: 0 auto;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.converter-card--full {
+  max-width: none;
+  width: 100%;
+}
+
+.converter-fields-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  min-width: 0;
+}
+
+.converter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.converter-field label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.converter-field input,
+.converter-field select {
+  padding: 12px 14px;
+  font-size: 16px;
+  color: var(--text-primary);
+  background: var(--bg-page);
+  border: 1px solid var(--bg-hover);
+  border-radius: var(--radius-md);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.converter-field input:focus,
+.converter-field select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(var(--primary-rgb), 0.15);
+}
+
+.converter-result {
+  padding: 18px;
+  background: var(--bg-page);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.converter-result p {
+  font-size: 18px;
+  color: var(--text-primary);
+}
+
+.converter-result strong {
+  font-size: 28px;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.converter-result-placeholder {
+  font-size: 15px !important;
+  color: var(--text-muted) !important;
+}
+
+.converter-note {
+  margin-top: 20px;
+  max-width: 520px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  .converter-fields-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========================================
+   Temperaturas de horno
+   ======================================== */
+
+.temp-setting {
+  margin-top: 8px;
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+
+.temp-heat {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.temp-scales {
+  margin-top: 6px;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.temp-converted {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.temp-table-title {
+  margin: 32px 0 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.temp-table-wrap {
+  overflow-x: auto;
+  max-width: 640px;
+}
+
+.temp-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-white);
+  border: 1px solid var(--bg-hover);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  font-size: 15px;
+}
+
+.temp-table th,
+.temp-table td {
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--bg-hover);
+}
+
+.temp-table th {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--text-secondary);
+  background: var(--bg-page);
+}
+
+.temp-table tr:last-child td {
+  border-bottom: none;
+}
+
+.temp-row-active {
+  background: rgba(var(--primary-rgb), 0.08);
+  font-weight: 600;
+}
+
+/* ========================================
+   Escalado de recetas y costo por porción
+   (filas dinámicas compartidas)
+   ======================================== */
+
+.scalar-rows,
+.costo-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 4px;
+  min-width: 0;
+}
+
+.scalar-row,
+.costo-row {
+  display: grid;
+  gap: 10px;
+  align-items: end;
+  padding: 14px;
+  background: var(--bg-page);
+  border: 1px solid var(--bg-hover);
+  border-radius: var(--radius-md);
+  min-width: 0;
+}
+
+.scalar-row {
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr auto;
+}
+
+.costo-row {
+  grid-template-columns: 1.3fr 1fr 0.9fr 0.9fr 0.9fr auto;
+}
+
+.scalar-row .converter-field,
+.costo-row .converter-field {
+  min-width: 0;
+}
+
+.scalar-row input,
+.scalar-row select,
+.costo-row input,
+.costo-row select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.scalar-row-remove {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px;
+  line-height: 1;
+}
+
+.scalar-row-remove:hover:not(:disabled) {
+  color: #d32f2f;
+}
+
+.scalar-row-remove:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.scalar-result-value {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary);
+  padding: 12px 14px;
+  background: var(--bg-white);
+  border: 1px solid var(--bg-hover);
+  border-radius: var(--radius-md);
+  min-height: 46px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.scalar-add {
+  align-self: flex-start;
+  margin-top: 4px;
+  padding: 10px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--primary);
+  background: var(--bg-page);
+  border: 1px dashed var(--primary);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.scalar-add:hover {
+  background: rgba(var(--primary-rgb), 0.08);
+}
+
+.costo-per-serving {
+  font-size: 24px;
+}
+
+/* Conversor de moldes: resultado con guía en varias líneas */
+
+.mold-cantidad {
+  font-size: 18px;
+  color: var(--text-primary);
+}
+
+.mold-guidance {
+  margin-top: 8px;
+  white-space: pre-line;
+  line-height: 1.7;
+  font-size: 15px;
+  color: var(--text-secondary);
+  text-align: left;
+}
+
+@media (max-width: 640px) {
+  .scalar-row,
+  .costo-row {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .scalar-row .scalar-result,
+  .costo-row .scalar-result {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ========================================
+   Qué cocino con lo que tengo
+   ======================================== */
+
+.qcc-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  min-width: 0;
+}
+
+@media (max-width: 640px) {
+  .qcc-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+.qcc-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.qcc-label {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--primary);
+  padding-bottom: 6px;
+  border-bottom: 2px solid rgba(var(--primary-rgb), 0.25);
+}
+
+.qcc-input-row {
+  display: flex;
+  gap: 8px;
+  min-width: 0;
+}
+
+.qcc-input-row input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 14px;
+  font-size: 16px;
+  color: var(--text-primary);
+  background: var(--bg-page);
+  border: 1px solid var(--bg-hover);
+  border-radius: var(--radius-md);
+  outline: none;
+  box-sizing: border-box;
+}
+
+.qcc-input-row input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(var(--primary-rgb), 0.15);
+}
+
+.qcc-add {
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--bg-white);
+  background: var(--primary);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.qcc-add:hover {
+  filter: brightness(1.05);
+}
+
+.qcc-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.qcc-suggestion {
+  padding: 6px 12px;
+  font-size: 13px;
+  color: var(--text-primary);
+  background: var(--bg-page);
+  border: 1px solid var(--bg-hover);
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: inherit;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  text-align: left;
+}
+
+.qcc-suggestion:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.qcc-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.qcc-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary);
+  background: rgba(var(--primary-rgb), 0.1);
+  border: 1px solid rgba(var(--primary-rgb), 0.3);
+  border-radius: 999px;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.qcc-chip-remove {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 0;
+  line-height: 1;
+}
+
+.qcc-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.qcc-search {
+  flex: 1;
+  min-width: 160px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--bg-white);
+  background: var(--primary);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.qcc-search:hover {
+  filter: brightness(1.05);
+}
+
+.qcc-surprise {
+  flex: 1;
+  min-width: 160px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary);
+  background: var(--bg-page);
+  border: 2px solid var(--primary);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.qcc-surprise:hover {
+  background: rgba(var(--primary-rgb), 0.08);
+}
+
+.qcc-surprise-result,
+.qcc-results {
+  margin-top: 28px;
+}
+
+.qcc-surprise-result {
+  padding: 20px;
+  background: rgba(var(--primary-rgb), 0.08);
+  border: 1px solid rgba(var(--primary-rgb), 0.3);
+  border-radius: var(--radius-lg);
+  max-width: 640px;
+}
+
+.qcc-surprise-result h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.qcc-surprise-result a {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.qcc-surprise-result a:hover {
+  text-decoration: underline;
+}
+
+.qcc-surprise-result p {
+  margin-top: 6px;
+  color: var(--text-secondary);
+  font-size: 15px;
+}
+
+.qcc-results h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+}
+
+.qcc-result-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.qcc-result-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px;
+  background: var(--bg-white);
+  border: 1px solid var(--bg-hover);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qcc-result-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.qcc-result-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.qcc-result-card p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.qcc-badge {
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 999px;
+}
+
+.qcc-badge-ok {
+  color: #2e7d32;
+  background: rgba(46, 125, 50, 0.12);
+}
+
+.qcc-badge-more {
+  color: var(--text-secondary);
+  background: var(--bg-page);
 }
