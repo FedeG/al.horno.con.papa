@@ -85,7 +85,7 @@ const RecipeDetail = ({ recipe, onBack, relatedRecipes, onSelectRecipe, onTagCli
       />
       <main id="main-content">
       <div className="detail-header">
-        <button className="back-btn" onClick={onBack} aria-label="Volver al listado de recetas">
+        <button className="back-btn" onClick={onBack} aria-label="Volver atrás">
           <ArrowLeft size={24} suppressHydrationWarning/>
         </button>
         <h1>{recipe.name}</h1>

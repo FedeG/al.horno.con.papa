@@ -1,5 +1,5 @@
 import React, { useMemo, useEffect, useCallback } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 
 import { useRecipes } from '../context/RecipesContext';
 import Header from '../components/Header';
@@ -16,6 +16,7 @@ import {
 const RecipeDetailPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
   const { recipesData } = useRecipes();
   
   const recipe = useMemo(() => {
@@ -50,9 +51,21 @@ const RecipeDetailPage = () => {
   }, [navigate]);
 
   const handleBackToList = useCallback(() => {
-    navigate('/');
+    // 1) Si vinimos desde "Qué cocino", volver ahí (sobrevive a cargas completas
+    //    de página porque el camino se guarda en sessionStorage al hacer clic).
+    const returnPath = sessionStorage.getItem('app:return-path');
+    if (returnPath) {
+      sessionStorage.removeItem('app:return-path');
+      navigate(returnPath);
+    } else if (location.key !== 'default') {
+      // 2) Navegación SPA: hay una página anterior dentro de la app.
+      navigate(-1);
+    } else {
+      // 3) Llegó directo a la receta (Google, refresh): ir al index.
+      navigate('/');
+    }
     scrollToTop();
-  }, [navigate]);
+  }, [navigate, location]);
 
   const handleSearchSlug = useCallback(() => {
     const searchQuery = id.replace(/[-_]/g, ' ');
