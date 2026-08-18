@@ -11,7 +11,6 @@ from constants import (
     LOGIN_USERNAME,
     LOGIN_PASSWORD,
     RECIPES_FILE,
-    IMAGES_DIR,
 )
 from services.instagram_service import InstagramService
 from services.parser_service import ParserService
@@ -43,7 +42,6 @@ def main():
     # el intento anónimo y se va directo a la sesión del usuario configurado.
     instagram = InstagramService(
         INSTAGRAM_USERNAME,
-        IMAGES_DIR,
         login_username=LOGIN_USERNAME,
         login_password=LOGIN_PASSWORD,
         force_login=args.force_login,
@@ -77,7 +75,7 @@ def main():
             continue
 
         # Descargar imagen localmente
-        local_image = instagram.download_image(post.url, post.shortcode, post.date_local)
+        local_image = instagram.download_image(post.url, post.shortcode)
 
         # Convertir post a receta
         recipe = parser.post_to_recipe(post, local_image)
