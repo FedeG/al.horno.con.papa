@@ -594,7 +594,7 @@
 
 .pagination {
   max-width: var(--max-width);
-  margin: 0 auto 40px;
+  margin: 30px auto 40px;
   padding: 0 20px;
   display: flex;
   align-items: center;
@@ -1236,6 +1236,34 @@
   line-height: 1.6;
 }
 
+/* Botón para limpiar los inputs de una herramienta */
+
+.card-clear {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tool-clear-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-page);
+  border: 1px solid var(--bg-hover);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-family: inherit;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.tool-clear-btn:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
 @media (max-width: 480px) {
   .converter-fields-row {
     grid-template-columns: 1fr;
@@ -1263,12 +1291,6 @@
   font-size: 17px;
   font-weight: 600;
   color: var(--text-primary);
-}
-
-.temp-converted {
-  margin-top: 10px;
-  font-size: 14px;
-  color: var(--text-muted);
 }
 
 .temp-table-title {
