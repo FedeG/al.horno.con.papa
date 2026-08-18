@@ -4,16 +4,28 @@ import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
+import ClearButton from '../components/ClearButton';
+import Pagination from '../components/Pagination';
 import recipesData from '../data/recipes.json';
 import { ROUTES } from '../utils/constants';
 import { ingredientsOptions, matchRecipes, randomRecipe } from '../utils/queCocino';
 import { trackPageView } from '../utils/analytics';
+import { usePersistentState } from '../utils/usePersistentState';
 
 const RECIPES_WITHOUT_LIST = recipesData.filter(
   (r) => !r.cleaned_ingredientes || !r.cleaned_ingredientes.length
 ).length;
 
-const WHAT_COOK_RESULTS_LIMIT = 10;
+const RESULTS_PER_PAGE = 12;
+
+const DEFAULTS = {
+  tengo: [],
+  noTengo: [],
+  results: [],
+  surprise: null,
+  searched: false,
+  page: 1,
+};
 
 const ChipInput = ({ label, id, options, chips, onAdd, onRemove }) => {
   const [query, setQuery] = useState('');
@@ -25,13 +37,17 @@ const ChipInput = ({ label, id, options, chips, onAdd, onRemove }) => {
     return options.filter((o) => o.includes(q)).slice(0, 8);
   }, [options, query]);
 
-  const handleAdd = () => {
-    const value = (query || suggestion).trim().toLowerCase();
-    if (value && !chips.includes(value) && options.includes(value)) {
-      onAdd(value);
+  const addIngredient = (value) => {
+    const v = value.trim().toLowerCase();
+    if (v && !chips.includes(v) && options.includes(v)) {
+      onAdd(v);
     }
     setQuery('');
     setSuggestion('');
+  };
+
+  const handleAdd = () => {
+    addIngredient(query || suggestion);
   };
 
   return (
@@ -65,10 +81,7 @@ const ChipInput = ({ label, id, options, chips, onAdd, onRemove }) => {
               key={o}
               type="button"
               className="qcc-suggestion"
-              onClick={() => {
-                setSuggestion(o);
-                setQuery(o);
-              }}
+              onClick={() => addIngredient(o)}
             >
               {o}
             </button>
@@ -97,11 +110,10 @@ const ChipInput = ({ label, id, options, chips, onAdd, onRemove }) => {
 };
 
 const WhatToCookPage = () => {
-  const [tengo, setTengo] = useState([]);
-  const [noTengo, setNoTengo] = useState([]);
-  const [results, setResults] = useState([]);
-  const [surprise, setSurprise] = useState(null);
-  const [searched, setSearched] = useState(false);
+  const [state, setState] = usePersistentState('tool:que-cocino', DEFAULTS);
+  const { tengo, noTengo, results, surprise, searched, page } = state;
+
+  const update = (patch) => setState((prev) => ({ ...prev, ...patch }));
 
   useEffect(() => {
     trackPageView('/herramientas/que-cocino/', 'Qué cocino con lo que tengo');
@@ -109,18 +121,40 @@ const WhatToCookPage = () => {
 
   const options = useMemo(() => ingredientsOptions(recipesData), []);
 
+  const hasValues = tengo.length > 0 || noTengo.length > 0 || searched;
+
+  const totalPages = Math.max(1, Math.ceil(results.length / RESULTS_PER_PAGE));
+  // Estados viejos persistidos pueden no tener `page`: asumir 1.
+  const pageNum = Number.isFinite(page) ? page : 1;
+  const safePage = Math.min(Math.max(pageNum, 1), totalPages);
+  const visibleResults = results.slice(
+    (safePage - 1) * RESULTS_PER_PAGE,
+    safePage * RESULTS_PER_PAGE
+  );
+
   const handleSearch = () => {
-    setResults(matchRecipes(recipesData, tengo, noTengo).slice(0, WHAT_COOK_RESULTS_LIMIT));
-    setSurprise(null);
-    setSearched(true);
+    update({
+      results: matchRecipes(recipesData, tengo, noTengo),
+      surprise: null,
+      searched: true,
+      page: 1,
+    });
   };
 
   const handleSurprise = () => {
-    if (surprise === null) {
-      setResults(matchRecipes(recipesData, tengo, noTengo));
-    }
-    setSurprise(randomRecipe(matchRecipes(recipesData, tengo, noTengo)));
-    setSearched(true);
+    const matches = matchRecipes(recipesData, tengo, noTengo);
+    update({
+      results: surprise === null ? matches : results,
+      surprise: randomRecipe(matches),
+      searched: true,
+      page: 1,
+    });
+  };
+
+  // Recordar de dónde venimos al entrar a una receta, para que su botón
+  // "volver" nos traiga de nuevo acá (incluso tras una carga completa de página).
+  const saveReturnPath = () => {
+    sessionStorage.setItem('app:return-path', ROUTES.queCocino);
   };
 
   return (
@@ -151,16 +185,16 @@ const WhatToCookPage = () => {
               id="qcc-tengo"
               options={options}
               chips={tengo}
-              onAdd={(v) => setTengo((prev) => [...prev, v])}
-              onRemove={(v) => setTengo((prev) => prev.filter((c) => c !== v))}
+              onAdd={(v) => update({ tengo: [...tengo, v] })}
+              onRemove={(v) => update({ tengo: tengo.filter((c) => c !== v) })}
             />
             <ChipInput
               label="Ingredientes que no tengo (opcional)"
               id="qcc-notengo"
               options={options}
               chips={noTengo}
-              onAdd={(v) => setNoTengo((prev) => [...prev, v])}
-              onRemove={(v) => setNoTengo((prev) => prev.filter((c) => c !== v))}
+              onAdd={(v) => update({ noTengo: [...noTengo, v] })}
+              onRemove={(v) => update({ noTengo: noTengo.filter((c) => c !== v) })}
             />
           </div>
 
@@ -172,12 +206,17 @@ const WhatToCookPage = () => {
               🎲 ¡Dame una sorpresa!
             </button>
           </div>
+
+          <ClearButton show={hasValues} onClear={() => setState(DEFAULTS)} />
         </div>
 
         {searched && surprise && (
           <div className="qcc-surprise-result">
             <h2>Receta sorpresa 🎉</h2>
-            <Link to={`/recipe/${surprise.recipe.slug}/`}>
+            <Link
+              to={`/recipe/${surprise.recipe.slug}/`}
+              onClick={saveReturnPath}
+            >
               {surprise.recipe.name}
             </Link>
             <p>
@@ -203,11 +242,12 @@ const WhatToCookPage = () => {
               </p>
             )}
             <div className="qcc-result-list">
-              {results.map(({ recipe, matched, extra }) => (
+              {visibleResults.map(({ recipe, matched, extra }) => (
                 <Link
                   to={`/recipe/${recipe.slug}/`}
                   key={recipe.id}
                   className="qcc-result-card"
+                  onClick={saveReturnPath}
                 >
                   <h3>{recipe.name}</h3>
                   <p>
@@ -223,6 +263,12 @@ const WhatToCookPage = () => {
                 </Link>
               ))}
             </div>
+
+            <Pagination
+              currentPage={safePage}
+              totalPages={totalPages}
+              onPageChange={(p) => update({ page: p })}
+            />
           </div>
         )}
 
