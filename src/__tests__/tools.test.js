@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import '@testing-library/jest-dom';
@@ -87,5 +87,16 @@ describe('WhatToCookPage', () => {
     expect(screen.getByLabelText('Ingredientes que no tengo (opcional)')).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'Buscar recetas' })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: '🎲 ¡Dame una sorpresa!' })).toBeInTheDocument();
+  });
+
+  it('agrega el ingrediente al tocar una sugerencia, sin botón "Agregar"', () => {
+    renderWithRouter(<WhatToCookPage />);
+    const input = screen.getByLabelText('Ingredientes que tengo');
+    fireEvent.change(input, { target: { value: 'hari' } });
+    const suggestion = screen.getByRole('button', { name: 'harina' });
+    fireEvent.click(suggestion);
+    // Queda como chip (con su botón de quitar) y el input se limpia
+    expect(screen.getByLabelText('Quitar harina')).toBeInTheDocument();
+    expect(input.value).toBe('');
   });
 });

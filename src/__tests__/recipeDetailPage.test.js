@@ -86,6 +86,10 @@ const renderDetailPage = (slug = 'torta-de-chocolate') =>
         <Routes>
           <Route path="/" element={<div data-testid="home-page" />} />
           <Route path="/recipe/:id/" element={<RecipeDetailPage />} />
+          <Route
+            path="/herramientas/que-cocino/"
+            element={<div data-testid="qcc-page" />}
+          />
         </Routes>
       </MemoryRouter>
     </HelmetProvider>
@@ -96,6 +100,7 @@ const renderDetailPage = (slug = 'torta-de-chocolate') =>
 describe('RecipeDetailPage', () => {
   beforeEach(() => {
     jest.clearAllMocks();
+    sessionStorage.clear();
   });
 
   // ── Recipe found ──────────────────────────────────────────────────────
@@ -155,9 +160,17 @@ describe('RecipeDetailPage', () => {
 
   it('navega al home al clickear "volver"', () => {
     renderDetailPage();
-    const backBtn = screen.getByLabelText('Volver al listado de recetas');
+    const backBtn = screen.getByLabelText('Volver atrás');
     fireEvent.click(backBtn);
     expect(screen.getByTestId('home-page')).toBeInTheDocument();
+  });
+
+  it('vuelve a qué cocino si vino desde ahí (camino guardado)', () => {
+    sessionStorage.setItem('app:return-path', '/herramientas/que-cocino/');
+    renderDetailPage();
+    fireEvent.click(screen.getByLabelText('Volver atrás'));
+    expect(screen.getByTestId('qcc-page')).toBeInTheDocument();
+    expect(sessionStorage.getItem('app:return-path')).toBeNull();
   });
 
   // ── Tag click ─────────────────────────────────────────────────────────

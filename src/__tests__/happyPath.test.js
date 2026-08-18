@@ -153,7 +153,7 @@ describe('Flujo completo — happy path', () => {
     });
 
     // Click en "volver"
-    const backBtn = screen.getByLabelText('Volver al listado de recetas');
+    const backBtn = screen.getByLabelText('Volver atrás');
     fireEvent.click(backBtn);
 
     // Debería volver al listado con todas las recetas
