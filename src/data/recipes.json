@@ -1,5 +1,147 @@
 [
   {
+    "id": 3997224729289817954,
+    "name": "🏠 Una nueva etapa 🏠",
+    "description": "🏠 Una nueva etapa 🏠\n\nParece mentira que después de más de 4 años haya llegado el momento de guardar todo lo que vivimos en esta cocina.\n\nAcá nació Al Horno con Papá.\n\nAcá cocinamos, grabamos, probamos recetas, nos equivocamos, aprendimos y compartimos muchísimo más que comida.\n\nCada cosa que guardo en esta caja tiene una historia, un plato, una herramienta, un utencillo, una receta, un recuerdo de todos los que fueron parte de este proyecto.\n\nHoy cierro una etapa con mucha emoción y también con muchísima ilusión por todo lo que viene.\n\nMe mudo a mi primera casa propia 🥹❤️\n\nY aunque dejo atrás esta cocina, todo lo que construimos juntos se viene conmigo.\n\nGracias por estar del otro lado durante todos estos años. Esto recién empieza ❤️\n\n",
+    "tags": [
+      "Casapropia",
+      "Mudanza",
+      "Nuevacasa",
+      "Nuevaetapa"
+    ],
+    "instagramUrl": "https://www.instagram.com/reel/Dd4_raMuf9i/",
+    "facebookUrl": "",
+    "imageUrl": "images/Dd4_raMuf9i.jpg",
+    "ingredients": [],
+    "date": "2026-09-29T21:01:17-03:00",
+    "easy": false,
+    "hidden": false,
+    "shortcode": "Dd4_raMuf9i",
+    "cleaned_ingredientes": [],
+    "slug": "una-nueva-etapa",
+    "related_recipes": [
+      {
+        "recipe_id": 3912434246550696056,
+        "recipe_name": "🎂 Red Velvet, parte 1: bizcochuelo 🍰",
+        "score": 2
+      },
+      {
+        "recipe_id": 3902279073337575125,
+        "recipe_name": "🍛 Pollo al curry 🍛",
+        "score": 2
+      },
+      {
+        "recipe_id": 3884166691706281534,
+        "recipe_name": "🥣 Vichyssoise (sopa de Ratatouille) 🥣",
+        "score": 2
+      }
+    ]
+  },
+  {
+    "id": 3988521176455108765,
+    "name": "🍌 Bizcochuelo de banana 🍌",
+    "description": "🍌 Bizcochuelo de banana 🍌\n\nUna receta simple, húmeda y súper esponjosa para aprovechar esas bananas que ya están bien maduras.\n\n⏳ Tiempo: 1 hora ⏳\n\n🥣 Ingredientes 🥣\n\n• 310g de harina leudante (aprox. 2 tazas y media)\n• 150g de azúcar (¾ taza)\n• 60g de manteca\n• 20ml de aceite (2 cucharadas)\n• 2 huevos\n• 180ml de leche (¾ taza)\n• 2 bananas chicas maduras o una grande\n• 1 cucharadita de esencia de vainilla\n\n👣 Pasos 👣\n\n• En un bowl batimos los huevos con el azúcar hasta obtener una mezcla cremosa\n• Pisamos las bananas hasta formar un puré. Cuanto más maduras estén, más sabor y dulzor van a aportar\n• Agregamos el puré de banana, la esencia de vainilla y la manteca derretida\n• Batimos nuevamente hasta integrar\n• Sumamos el aceite, la leche y mezclamos bien\n• Incorporamos la harina leudante de a poco y mezclamos hasta obtener una preparación uniforme\n• Precalentamos el horno a 180 °C\n• Enmantecamos y enharinamos un molde\n• Volcamos la mezcla y distribuimos bien\n• Llevamos al horno durante aproximadamente 45 minutos\n• Para comprobar que está listo, pinchamos el centro con un cuchillo o palito y tiene que salir limpio\n• Dejamos enfriar antes de desmoldar\n\n💡 Opciones y tips 💡\n\n• Podemos comerlo solo, acompañarlo con dulce de leche o armar una torta sumando crema\n• Para hacerlo de chocolate, podemos reemplazar una parte de la harina por cacao amargo\n• Las bananas bien maduras son ideales porque aportan más sabor y dulzor\n• No abramos el horno durante los primeros minutos de cocción para evitar que el bizcochuelo pierda volumen\n\n🍌 Ideal para la merienda, el desayuno o para transformar en una torta de cumpleaños 🍌\n\n¿Lo harías de banana o le agregarías chocolate? 👇\n\n",
+    "tags": [
+      "Bizcochuelodebanana",
+      "Frutas",
+      "Recetasdulces"
+    ],
+    "instagramUrl": "https://www.instagram.com/reel/DdaEuC9utid/",
+    "facebookUrl": "",
+    "imageUrl": "images/DdaEuC9utid.jpg",
+    "ingredients": [
+      "310g de harina leudante (aprox. 2 tazas y media)",
+      "150g de azúcar (¾ taza)",
+      "60g de manteca",
+      "20ml de aceite (2 cucharadas)",
+      "2 huevos",
+      "180ml de leche (¾ taza)",
+      "2 bananas chicas maduras o una grande",
+      "1 cucharadita de esencia de vainilla"
+    ],
+    "date": "2026-09-17T20:56:05-03:00",
+    "easy": false,
+    "hidden": false,
+    "shortcode": "DdaEuC9utid",
+    "cleaned_ingredientes": [
+      "aceite (2 cucharadas)",
+      "azúcar ( taza)",
+      "bananas chica",
+      "esencia de vainilla",
+      "harina leudante aprox. 2 taza",
+      "huevo",
+      "leche ( taza)",
+      "manteca",
+      "media",
+      "una"
+    ],
+    "slug": "bizcochuelo-de-banana",
+    "related_recipes": [
+      {
+        "recipe_id": 3871850009075814535,
+        "recipe_name": "🍌🍫 Bizcochuelo marmolado de banana 🍌🍫",
+        "score": 7
+      },
+      {
+        "recipe_id": 3742112497752006485,
+        "recipe_name": "🍰 Cheesecake cocido clásico 🍰",
+        "score": 6
+      },
+      {
+        "recipe_id": 3668670732125839585,
+        "recipe_name": "🍋 Galletitas crackeladas de limón 🍋",
+        "score": 6
+      }
+    ]
+  },
+  {
+    "id": 3971048072452234545,
+    "name": "🍫 Brownie de batata 🍠",
+    "description": "🍫 Brownie de batata 🍠\n\nPocos ingredientes, sin harina y sin azúcar agregada.\nSí, lleva batata, pero créeme que queda buenísimo 🤯\n\n⏳ Tiempo: 35 minutos ⏳\n\n🥣 Ingredientes 🥣\n\n• 400 g de batata boniato cocida (aprox. 2 unidades medianas)\n• 2 huevos\n• 50g de cacao amargo (aprox. media taza)\n• 1 cucharadita de polvo de hornear\n\n👣 Pasos 👣\n\n• Pelamos y cocinamos las batatas hasta que estén bien tiernas\n• Dejamos enfriar un poco y hacemos un puré\n• Agregamos los huevos, el cacao y el polvo de hornear\n• Mezclamos bien hasta integrar todo y obtener una preparación uniforme\n• Preparamos un molde con papel manteca en la base\n• Volcamos la mezcla y distribuimos bien\n• Llevamos al horno precalentado a 180 °C durante aproximadamente 25 minutos\n• Dejamos enfriar antes de cortar para que tome mejor consistencia\n\n💡 Tip 💡\n\n• Si las batatas tienen mucha agua, podemos dejarlas unos minutos más al horno para que pierdan humedad\n• No lo cocines de más: la idea es que quede húmedo y con textura de brownie\n• Podés agregar nueces, chips de chocolate o un poco de esencia de vainilla si querés darle otro toque\n\n🍫 Un brownie diferente, fácil y con muy pocos ingredientes 🍫\n\nProbalo y después contame si adivinaban que tenía batata 👇\n\n",
+    "tags": [
+      "Batata",
+      "Browniedebatata",
+      "Torta"
+    ],
+    "instagramUrl": "https://www.instagram.com/reel/Dcb_y6wg90x/",
+    "facebookUrl": "",
+    "imageUrl": "images/Dcb_y6wg90x.jpg",
+    "ingredients": [
+      "400 g de batata boniato cocida (aprox. 2 unidades medianas)",
+      "2 huevos",
+      "50g de cacao amargo (aprox. media taza)",
+      "1 cucharadita de polvo de hornear"
+    ],
+    "date": "2026-08-24T18:14:27-03:00",
+    "easy": false,
+    "hidden": false,
+    "shortcode": "Dcb_y6wg90x",
+    "cleaned_ingredientes": [
+      "batata boniato cocida (aprox. 2 unidades medianas)",
+      "cacao amargo (aprox. media taza)",
+      "huevo",
+      "polvo de hornear"
+    ],
+    "slug": "brownie-de-batata",
+    "related_recipes": [
+      {
+        "recipe_id": 3912434246550696056,
+        "recipe_name": "🎂 Red Velvet, parte 1: bizcochuelo 🍰",
+        "score": 6
+      },
+      {
+        "recipe_id": 3871850009075814535,
+        "recipe_name": "🍌🍫 Bizcochuelo marmolado de banana 🍌🍫",
+        "score": 6
+      },
+      {
+        "recipe_id": 2883186807995352076,
+        "recipe_name": "🥕 Carrot cake 🎂🥕",
+        "score": 6
+      }
+    ]
+  },
+  {
     "id": 3964525476919382072,
     "name": "🧁 Muffins caseros 🧁",
     "description": "🧁 Muffins caseros 🧁\n\nEsta receta queda súper esponjosa, es fácil de preparar y podés hacerla de mil formas.\n\n⏳ Tiempo: 35 minutos ⏳\n\n🥣 Ingredientes 🥣\n\n• 250g de harina leudante (aprox. 2 tazas)\n• 150g de azúcar (¾ taza)\n• 60g de manteca\n• 20ml de aceite (2 cucharadas)\n• 2 huevos\n• 180ml de leche (¾ taza)\n• 1 cucharadita de esencia de vainilla\n\n✨ Opcionales ✨\n\n• Chips de chocolate\n• Dulce de leche repostero\n• Frutos secos\n• Frutas\n• Lo que más te guste\n\n👣 Pasos 👣\n\n• En un bowl batimos los huevos con el azúcar hasta integrar bien y tener una mezcla cremosa\n• Agregamos la manteca derretida, el aceite y la esencia de vainilla\n• Batimos nuevamente hasta integrar\n• Incorporamos la leche y mezclamos\n• Sumamos la harina leudante\n• Integramos hasta obtener una mezcla uniforme\n• Si queremos, agregamos chips, dulce de leche, frutos secos o el agregado que más nos guste pero buscando mantener la textura (se se pone muy seco, podemos agregar un poco más de leche, si se pone muy líquido, un poco más de harina)\n• Preparamos una fuente con 12 pirotines\n• Distribuimos la mezcla sin llenar completamente los pirotines\n• Llevamos al horno precalentado a 180 °C durante aproximadamente 25 minutos\n• Para comprobar que están listos, pinchamos el centro con un cuchillo o palito y tiene que salir limpio\n• Dejamos enfriar y ya están listos para disfrutar\n\n💡 Tip 💡\n\n• La clave es no sobremezclar la masa después de agregar la harina para que los muffins queden bien esponjosos\n• Podemos dejarlos de vainilla, agregar chips, rellenarlos con dulce de leche o decorarlos\n• Son ideales para preparar con anticipación y tener algo casero para desayunos, meriendas, cumpleaños o para mandar al cole\n\n🧁 Una receta base que podés adaptar a lo que tengas en casa 🧁\n\n¿Con qué los harías? 👇\n\n",
